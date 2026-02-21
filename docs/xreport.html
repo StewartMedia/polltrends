@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PolTrends Australia — X Report</title>
+    <title>PolTrends Australia — News</title>
     <script src="https://cdn.plot.ly/plotly-2.35.0.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -81,8 +81,28 @@
         .rq-card th, .rq-card td { padding: 0.3rem 0.5rem; text-align: left; }
         .rq-card th { color: #888; font-weight: 500; border-bottom: 1px solid #eee; }
         .rq-card tr:nth-child(even) { background: #fafafa; }
-        .grok-report { white-space: pre-wrap; font-size: 0.9rem; }
-        .grok-report h2, .grok-report h3 { margin-top: 1rem; }
+        .news-item {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .news-item:last-child { border-bottom: none; }
+        .news-title {
+            display: block;
+            color: #1a1a2e;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        .news-title:hover { color: #e94560; }
+        .news-meta { font-size: 0.75rem; color: #999; }
+        .spike-header { margin-bottom: 0.5rem; }
+        .spike-ratio { font-size: 0.8rem; color: #888; margin-left: 0.5rem; }
+        .spike-news { list-style: none; padding: 0; }
+        .spike-news li { padding: 0.3rem 0; font-size: 0.85rem; }
+        .spike-news a { color: #1565C0; text-decoration: none; }
+        .spike-news a:hover { text-decoration: underline; }
+        .spike-no-news { font-size: 0.8rem; color: #999; font-style: italic; }
         .sentiment-bar {
             display: flex;
             height: 24px;
@@ -123,81 +143,359 @@
     <nav>
         <a href="index.html" class="">Dashboard</a>
         <a href="analysis.html" class="">Weekly Analysis</a>
-        <a href="xreport.html" class="active">X Report</a>
+        <a href="xreport.html" class="active">News</a>
     </nav>
     <main>
         
 <p class="updated">Last updated: 2026-02-21</p>
 
+
+
+
+
 <div class="card">
-    <h2>Daily X/Twitter Political Report (via Grok)</h2>
+    <h2 style="border-left: 4px solid #E53935; padding-left: 0.75rem;">
+        Labor — Latest News
+    </h2>
     
-    <div class="grok-report"><h3>Australian Political Discussion on X/Twitter (Last 24 Hours)</h3>
-<h4>Australian Labor Party (ALP)</h4>
-<ol>
-<li><strong>Key topics/events</strong>: Discussions focused on the federal budget's cost-of-living relief measures, including energy rebates and inflation responses, with some debate on Prime Minister Albanese's handling of international relations amid US-Australia tensions.</li>
-<li><strong>Sentiment</strong>: Mixed – Positive for budget initiatives praised by supporters, but negative criticism from opponents over perceived inadequacies in addressing housing affordability.</li>
-<li><strong>Trending hashtags/viral posts</strong>: #BudgetRelief trended moderately; a viral post from Albanese's account outlining rebate details gained 5K retweets.</li>
-</ol>
-<h4>Liberal Party of Australia</h4>
-<ol>
-<li><strong>Key topics/events</strong>: Opposition leader Peter Dutton's criticism of ALP's budget as "short-sighted" dominated, with debates on economic management and immigration policies, including calls for tougher border controls.</li>
-<li><strong>Sentiment</strong>: Negative – Primarily critical of the government, with party figures amplifying failures in inflation control, though some internal support for Dutton's leadership was evident.</li>
-<li><strong>Trending hashtags/viral posts</strong>: #DuttonStrong trended slightly; a viral thread from Dutton attacking the budget amassed 10K likes.</li>
-</ol>
-<h4>Australian Greens</h4>
-<ol>
-<li><strong>Key topics/events</strong>: Focus on climate policy, with calls for stronger emissions targets and criticism of ALP's fossil fuel subsidies; also, advocacy for Indigenous rights in light of upcoming Voice to Parliament discussions.</li>
-<li><strong>Sentiment</strong>: Positive – Greens' base rallied around environmental pledges, though mixed with frustration over lack of government action.</li>
-<li><strong>Trending hashtags/viral posts</strong>: #ClimateEmergency saw minor traction; a viral video from Greens leader Adam Bandt on coal phase-out received 8K shares.</li>
-</ol>
-<h4>Pauline Hanson's One Nation (PHON)</h4>
-<ol>
-<li><strong>Key topics/events</strong>: Debates centered on immigration and cultural issues, with Hanson reiterating anti-"woke" stances and concerns over foreign ownership of Australian land.</li>
-<li><strong>Sentiment</strong>: Mixed – Strong positive support from followers for her outspoken views, but negative backlash from mainstream users labeling her comments as divisive.</li>
-<li><strong>Trending hashtags/viral posts</strong>: #OneNationFirst trended locally; a provocative post from Hanson's account on immigration gained 4K retweets but sparked heated replies.</li>
-</ol>
-<p>No other parties mentioned had notable activity.</p>
-<p><strong>Front of Mind verdict</strong>: The Australian Labor Party dominated X discussion today due to high engagement on the federal budget announcement.</p></div>
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNMUI1UU1OMkd3N1hLeUhNVXdmVnhTVGQzVGpYZWY0d0w5M1B0SzkwR3VFNjZicGN6LUJGajhHRFlHREw4dnN0Y1dyd0ZZZUJiN0ZIaGpNWFlkZ0tOa1JZbm5RZVNkT3A4UHNhY0lKU0FaUmVLSTJxSmRNSWxiWGRGWThZNjZqZ1pRUVZtMzlxRDE?oc=5" target="_blank" rel="noopener" class="news-title">Victorian State Voting Intention: One Nation (26.5%) now ahead of ALP (25.5%) and L-NP Coalition (21.5%) on primary vote nine months before Victorian State Election</a>
+        <span class="news-meta">Roy Morgan Research — 2026-02-19</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWDdUVEo3NEU4dTFyMndMbDNHNkVoMTFJOWwweWFjeDRoRmxZLVdzWWpid0dpcVBjajVNdzF5R1VzNWdTR0Y5MFNxT0oxa3h0dWhnVjBaelNKUkNzV1B1aGdVSGhFa2JKNXFzbk5ZSUt4ZEE4RGVlX0diUHNkcWQxaEprSDdJVkFMNXlNc2pLdW0ybGdsRTF5SG42bFZoV215SFhHa2VSRFp2ODBMUDY1amVLS3BPbDE5aUtF?oc=5" target="_blank" rel="noopener" class="news-title">Fair work commission calls out Minns Labor Government unfair community preschool funding</a>
+        <span class="news-meta">NSW Liberals — 2026-02-17</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxPcFBDeXhaOEoySzN5RXU5Q1RyQkpkeC1XZTBkN1RrTFJFbDRKNkx1dDVhQ2FKV1psaUdNaDNyc1ltOTAxbGJGLWVEUU95M2dNdjJVN08zWGpHVVkxclFnMTNnWm5EV3M4WlBEQ3ltVXc5RzRqV3F0WlZHRkJBclJlMmlyR0F0bVRibjJlT1FfZXc0ZW5rMzNJcXQtREpXdkU4SnZZa0dXRDRlV2x0SEtWSEE1bkFjWXhha090Y283TG5IbnpobVpTNDlDWFJrOENwa3FoNHl2clVRR2pxS2hB?oc=5" target="_blank" rel="noopener" class="news-title">Opposition Leader Angus Taylor claims the Labor government has not answered basic questions on the ISIS bride crisis.</a>
+        <span class="news-meta">facebook.com — 2026-02-20</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE45bVZzaVU4MWFubmRmWlhWckhPWHEwRndsd2ZuZ21HOUwyXzRiMEJhZlpsbTdmc2ZISXZjN2lKX1REZEc1UVR2Vzc1UnhQdUNXNWUxRU5IWW1OQ195eDNBSEdDTGVhNU5N?oc=5" target="_blank" rel="noopener" class="news-title">Labor government moves to bar entry to Australian women and children interned in Syria</a>
+        <span class="news-meta">World Socialist Web Site — 2026-02-20</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOZFd5U3BnOWphSDM5ZlVtVHhBM2VVTWU1TW1heWtLOUlxR2l3ZDV1MXRFUFZJZGFac2QzanVtU1RTWHVtS0FNNUd2cWZWUUxLNmthWm9XZzlyT0FyTlRCQUd4dzBqSllVdERONnF4bjg1R1lPc0FId25sdktBYko3Vy1Ha1ZFbC1LRmJYellfSWk3S2lVVTVJRXVfeFBQMnJCVFRZQ0ZZalBZajJEWDU2cQ?oc=5" target="_blank" rel="noopener" class="news-title">Timid ALP must shift to centre left to survive</a>
+        <span class="news-meta">The Age — 2026-02-16</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNS2ZiV1U1OXUxSFVfaE8wd0ZEYXl2SDhPcWpUVW9oMTgyb2NhcFl2d1VhSEtLdEJHNzl6LWhGSnAwWFRTQXozeEo3eFpHX0duaUNxTWJ6bmpjcTJyU0ZQUHJvTzk2NDFrRkNVRlJ1eWpRTDJsdlNpUzNBWnI2Z2djODNKXzJJVFdja3hqeHZaZjJQdUlhczdubGdLdUdaRE91Sk9vdDM2S3YwZw?oc=5" target="_blank" rel="noopener" class="news-title">Nature protected in law, but climate liability for ALP remains</a>
+        <span class="news-meta">Climate Council — 2025-11-27</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNaGxSUWFSMGg2X2dIVU42Z3FxTmpnSzNWSHNjR0RvZC1tMFVLT1QxQ0l4SFI5TV9KS0ZoZklZRENCdlpsVTVxUFBQbG9sd1VUX0JXVFE3Y0lXRlBhTGtlMGt6WUwxUkZ0TFZ1YS02cl95X0pCbGstenV0czdMOVpBc3BOVkxYQ0lHcVhIM0ZNV2ROMlRpOEVyWWJpYkJKUHE1ZVE?oc=5" target="_blank" rel="noopener" class="news-title">Albanese Labor Government delivering record NT healthcare</a>
+        <span class="news-meta">Department of the Prime Minister and Cabinet | PM&C — 2026-01-27</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE1iODhCZmNJZkZ1X1RxSlJRYzhaajVRQXZMLXZvZjFTQ2lranFRYklsY0tKNk85RURRNGluclVJVmQ3Qmt1b2NERERKaldGWU82ZmFoazVSQU9Fbml4YkF2SkI3Zmo1TXVUaS0wdWhSWTNNOFE?oc=5" target="_blank" rel="noopener" class="news-title">Alp Lift brands reunited</a>
+        <span class="news-meta">Vertikal.net — 2026-02-19</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxORzFOck9MOWYyZUtQdm93VlZVUkJWT3hWTm8wRnVHMjQzWDlzdTdVMS1DSkZqdldIX1FlUjlRSVB5NXFWclJpVzV5SkpxVmtwWGUxQzlHZVNXOUlzWURqZC1kOVFEcWtRYzdOX0FyZlNpOThxUFJYWGx5TDNwU1h0MVdaS2tIOHhrU1E?oc=5" target="_blank" rel="noopener" class="news-title">Coalition back in front of One Nation following change of Liberal Leader and men swing heavily to the L-NP</a>
+        <span class="news-meta">Roy Morgan Research — 2026-02-16</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxOX2NCeHpiTmo2Sm1VMXFKaV9OdGt0M0VWeG1yYkh0MF9aQ2tGc3l5cThBaUctX00tWHJ1N2Z4ZEdWa21IbU1aZTlqSjBmSmhYZkJPeUlJckI0R1hVV0h2TUxyX01FR2VuN3ZsQ3VjNTFndHlXdFE3bzk1YjJIRmQ3enA4QllrYk5XdHI3Y1NUVFBFcl9JWEdaZUVYaVV5d0EyV09BTnNib3FKci00QVhUd3FzcHZVX0FET1N2bmthcjl3NzNJeEhDOXRXVjExZVZSS25ETGlfWkxLUHN1dFBB?oc=5" target="_blank" rel="noopener" class="news-title">Shadow Treasurer Tim Wilson claims the Labor government is currently the key driver for inflation in Australia.</a>
+        <span class="news-meta">facebook.com — 2026-02-18</span>
+    </div>
     
 </div>
 
 
+
+
 <div class="card">
-    <h2>Previous Reports</h2>
+    <h2 style="border-left: 4px solid #1565C0; padding-left: 0.75rem;">
+        Liberal — Latest News
+    </h2>
     
-    <details style="margin-bottom: 0.75rem;">
-        <summary style="cursor: pointer; font-weight: 500; font-size: 0.9rem;">2026-02-21</summary>
-        <div class="grok-report" style="margin-top: 0.5rem; padding-left: 1rem; border-left: 2px solid #eee;">
-            <h3>Australian Political Discussion on X/Twitter (Last 24 Hours)</h3>
-<h4>Australian Labor Party (ALP)</h4>
-<ol>
-<li><strong>Key topics/events</strong>: Discussions focused on the federal budget's cost-of-living relief measures, including energy rebates and inflation responses, with some debate on Prime Minister Albanese's handling of international relations amid US-Australia tensions.</li>
-<li><strong>Sentiment</strong>: Mixed – Positive for budget initiatives praised by supporters, but negative criticism from opponents over perceived inadequacies in addressing housing affordability.</li>
-<li><strong>Trending hashtags/viral posts</strong>: #BudgetRelief trended moderately; a viral post from Albanese's account outlining rebate details gained 5K retweets.</li>
-</ol>
-<h4>Liberal Party of Australia</h4>
-<ol>
-<li><strong>Key topics/events</strong>: Opposition leader Peter Dutton's criticism of ALP's budget as "short-sighted" dominated, with debates on economic management and immigration policies, including calls for tougher border controls.</li>
-<li><strong>Sentiment</strong>: Negative – Primarily critical of the government, with party figures amplifying failures in inflation control, though some internal support for Dutton's leadership was evident.</li>
-<li><strong>Trending hashtags/viral posts</strong>: #DuttonStrong trended slightly; a viral thread from Dutton attacking the budget amassed 10K likes.</li>
-</ol>
-<h4>Australian Greens</h4>
-<ol>
-<li><strong>Key topics/events</strong>: Focus on climate policy, with calls for stronger emissions targets and criticism of ALP's fossil fuel subsidies; also, advocacy for Indigenous rights in light of upcoming Voice to Parliament discussions.</li>
-<li><strong>Sentiment</strong>: Positive – Greens' base rallied around environmental pledges, though mixed with frustration over lack of government action.</li>
-<li><strong>Trending hashtags/viral posts</strong>: #ClimateEmergency saw minor traction; a viral video from Greens leader Adam Bandt on coal phase-out received 8K shares.</li>
-</ol>
-<h4>Pauline Hanson's One Nation (PHON)</h4>
-<ol>
-<li><strong>Key topics/events</strong>: Debates centered on immigration and cultural issues, with Hanson reiterating anti-"woke" stances and concerns over foreign ownership of Australian land.</li>
-<li><strong>Sentiment</strong>: Mixed – Strong positive support from followers for her outspoken views, but negative backlash from mainstream users labeling her comments as divisive.</li>
-<li><strong>Trending hashtags/viral posts</strong>: #OneNationFirst trended locally; a provocative post from Hanson's account on immigration gained 4K retweets but sparked heated replies.</li>
-</ol>
-<p>No other parties mentioned had notable activity.</p>
-<p><strong>Front of Mind verdict</strong>: The Australian Labor Party dominated X discussion today due to high engagement on the federal budget announcement.</p>
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxOR3dQTjNsa1RGVUdGQ0Vkc205SzhMVXl4YnlaRXVRVW9FbFZpRU9CU2NDNGtIZ19XdGJIWEstTzhFaVIza1hGT2IwLVdCNTc5RWx6Rk45eFdwQVNrbFR0VUFJR25MU3JLVVZXMTlPbWVyUkRENzNvUlJLdEdNcWVMVVFjelBiTzF5STFxYU5XdklEc3l3ZHBpUlRJYTJXT1NCTmk2ZjRNTVV4cDhISklneXFUbUtDU1FFaldsaUlJZy1GdGRD?oc=5" target="_blank" rel="noopener" class="news-title">Jane Hume on Liberal Party ‘misogyny’: ‘Plenty of those blokes supported me’</a>
+        <span class="news-meta">The Saturday Paper — 2026-02-20</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxPMEFFcEdnMDR4SUFQOEpyaVVON3ZNbGNJSVJVNmZtTWlRTU8yc0NaSFU5SXNfWG56V1BGYmUwSVU1VmphU1RpZXJKRXZGTEZ1NF94SFNMajIwNkU4cXZIUkhLMnpnaWFuU0EtYTk5OHExRkRwaGQ2MDVYOHRtRklvbkxuOWg3MUlzOXZQakh3T2ttZEt5d1FSeXJTbzJpcVJZUWlXUXFjbURMLTJnQUxsWERFZzVnVjRBeS11aDdzOG83NkxLTmlZZHdHd1Z3SzlMWGs4S3l3TXc?oc=5" target="_blank" rel="noopener" class="news-title">Angus Taylor unveils Coalition frontbench with Tim Wilson as shadow treasurer and Nationals returned</a>
+        <span class="news-meta">The Guardian — 2026-02-17</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxQQkx2UmNSM0R3dVZpU2ZkZ2dicVgyTUhocUtBaEhoN3J1SnRVUXlVZVlnVzE0VG1YNWluMXMwNEwya3NYRXA4YnlTUmEzcDczWHZTbVlwUkZ3eVhnU2VqLXRieEFCQXBjZnJoY0N0VFFsV2g0TmtIYnpUMzRxX3JsYWZNR0lDQ1VpRzRmUWlfZThWTk5tdl9lcWI3R1k0ODFyUEN2VGFHVHNub0pIdmVpOTdCMm1sUW1NcTJ6VmVDMDVDdFJTZl9GMDNlV2cwWTJ1YWhoRUREcDE2NzgtQ1hn?oc=5" target="_blank" rel="noopener" class="news-title">Former Queensland premier Campbell Newman says the South Australian Liberal Party is facing a lack of leadership as a result of poor “policy differentiation”.</a>
+        <span class="news-meta">facebook.com — 2026-02-20</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxORzFOck9MOWYyZUtQdm93VlZVUkJWT3hWTm8wRnVHMjQzWDlzdTdVMS1DSkZqdldIX1FlUjlRSVB5NXFWclJpVzV5SkpxVmtwWGUxQzlHZVNXOUlzWURqZC1kOVFEcWtRYzdOX0FyZlNpOThxUFJYWGx5TDNwU1h0MVdaS2tIOHhrU1E?oc=5" target="_blank" rel="noopener" class="news-title">Coalition back in front of One Nation following change of Liberal Leader and men swing heavily to the L-NP</a>
+        <span class="news-meta">Roy Morgan Research — 2026-02-16</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPMTdsaEhOeXczVW9lNFNaNjRENXVTQmo1R2FldFF6SkZRbVhOeVdMZElCWDl5SlNDLWRJX1lJUlBaNzJ6VWxUSnBJeFlMVzl0Nld2Z2Q0R1IxTWRKeERfbnFzVVlrRnhWZXpZN0JfVERydmJoMUt1ZU0wWTk0Rk53VEZOaHF3cTktXzg5QWg1TTJwVnVRUE02M0pYNFFuaGhsV2c?oc=5" target="_blank" rel="noopener" class="news-title">Taylor fails to offer original housing plan, denies knowledge of Ley immigration policy</a>
+        <span class="news-meta">Australian Broadcasting Corporation — 2026-02-16</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE04c0pHSk5NZnQyZUZIWDJTQThKSzhZNmpFajR4Mk8ySENzd0NwR1JnaThZLXZSYWFUcXpPSDZqV1hIM2xKbmxVQ1RkYnVOQmFyUGx0ZjM4VDVjX1dWQmRvTFFTZHdqTXY0ZFE?oc=5" target="_blank" rel="noopener" class="news-title">MAFS Coalition</a>
+        <span class="news-meta">Nambucca Valley News Of The Area — 2026-02-21</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNMGczT1NhZjRYNkdOY2ppSUVOU0p3RnlpT3EwMXo4b0JhdlF5Sm9faFdrQTJaNGMwSldCMlBfdkd2SXZBLXp3WlVLT1FmZW1nYlZidmFZSE5IYmtuSWtCZlczcEVMOXgwTGVGSkc2QjBsY19zcGxDeUNQY1lsOC1oVXRBemtFRnRzM1VTQ3ZMX25tYjFWUXY1bjVjMDhSSGhjSHVWeFpUREJLQQ?oc=5" target="_blank" rel="noopener" class="news-title">See the full list: Opposition leader Angus Taylor unveils fresh shadow ministry</a>
+        <span class="news-meta">SBS Australia — 2026-02-17</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPUTExeDZzRkNtWXFwNThzTzFZSDRacmcxakR6ckMxTUFqbzdvRUpUZGVKLTROYnphVFhLY21tZmJJT0d0WFAxUWtmN3dESWZvQVlVVlFVUmlLOFQ5UHF0U25UWi1tWk9pYlM1NmkwYVFBUFluOGVhV3ZKanVXZ2h0bGJ1QXNMaTFjNm9abzMtaEhCZnZtN1RETUJXb2Z3T014UnowbzhKY1cwbWs1bGU0eTN3TE1QUQ?oc=5" target="_blank" rel="noopener" class="news-title">The Coalition leads in Victorian DemosAU poll, with One Nation posting 21% support</a>
+        <span class="news-meta">The Conversation — 2026-02-15</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxNdWVmUUg1UFROVkw5QmliTnRQeWRicno0Z0dNZl9NOXBYeXpHVFhMcGhCdnBvY1JPUGFQUms2U014d2tkWFAySkpqdnk1R181bEVBU0FrdWtrdy0yaTluVjRSOXZMeURfdVhTaEJXbUllMk1jZWp1ZHhwMHBteE9WYVdHUlE5NW1yTGdDam9aY3hBQzRkUU1zYkh1LTZCU09GNlRwSEw1ZEhucFhrWTM1ckt2dmtDMFV6eXQ5ZA?oc=5" target="_blank" rel="noopener" class="news-title">Coalition proposal would lift student-visa work cap to 60 hours per fortnight</a>
+        <span class="news-meta">VisaHQ — 2026-02-20</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxNOGJKcWU1dkxEYm9kMkQ2YkZ0Wlk4aVlFVDNLZDZMZk9lUEhHMmx0TVVTbXIyajNpb0dlN1lOZGdCcUJ5Uno4M0FpaGs3UHhHbWtCOEZhV1dJRTZQYkNhVGNvRzMtSXNGV1pYbzBjTkFlOXBvampNRmVvNGkyV2stT0pOWVpSNmZ3U1BlY1B0TnM4UG1lWUtVSFVYdFM2M0ZS?oc=5" target="_blank" rel="noopener" class="news-title">Mark Coure MP condemns divisive remarks targeting muslim Australians</a>
+        <span class="news-meta">NSW Liberals — 2026-02-18</span>
+    </div>
+    
+</div>
+
+
+
+
+<div class="card">
+    <h2 style="border-left: 4px solid #43A047; padding-left: 0.75rem;">
+        Greens — Latest News
+    </h2>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNcDYyblN3dWdFM0RPVU5qTzAySnNoVWxIblFZZ0NiTU80NGF0eXNaWHhuQmlIYzRISi1hek10bEJTcG53WjZFY3hMdloxVHZJb3lnQjMwYTBGX18wT2ttaU51N3NvaEJMOW9lRVRpRjcyRjBtVjBRYmZ4RG1sdk5mQUMzTUZaY2FLeFA5djd5QTlIUQ?oc=5" target="_blank" rel="noopener" class="news-title">Greens Preferences Flow to Labor – 2010 and 2025 Compared</a>
+        <span class="news-meta">Antony Green's Election Blog — 2025-11-17</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMirAJBVV95cUxPRW10YlU1cnFnbnNSTmp3cUQ1WGQ3VFdPbjUybzhrTlEwdTM3RUEwY01PeDJSUzNNdndTR0llNlh1bkhGd1kwU0lWeDd2eC1sVlJVU2FDRTZ1d29WdmpUcmg4WXFleTUyQ2hyenppNExxVUtieVhBeFdVZjJPQUZrdWtoYW9Db0ctYXpfU3lRenNWUEpnY2M3alkyVkt4ekNubmFQMVZWVE00NDFPbVE3TmhKYkdRMzR0SFJ2TmVjdVlWRFZNWWoxSTZTTVVDM1I5dnU0dGEwcHFEWGNZTE9IVk9GbURwYVpRUlhWS1NLR0QxY2xzNHVTRUNMYnh2QWVUUGFIUk9YUmlQV0otdWRzWTduTEtQdVhaeWtCLWhUa3hQRjAyNFg3dzJ4Sk7SAbICQVVfeXFMTjJfOGo0dGlGQjBmMGtvNTVSek92QVVJM3ZBSTlISnNUUks2dlVGTUFwY0Y5UTBta1YzYV83THFDbHNvMVNCejRjeFNYNWFjQ0lBc2RjSnNvYUZBN0VPdi02c0ZkVmxvVUw3bElMZGdZSU5HWFVJZUQ0UFhNaWplSTNTamhrZFNZa1JiRFVTOVAxdXBZNVFBcTdEZkI4Ry1LdW9tQkxQMHJBV3BqS0ptbEdSQjVuT1JldndyNHExNXVuZnhvdHJ2MFRNLWxPQVN2S1RBam1qeUxobHVvSlJJZjQ1Z1lXZ29lUTkzWERJczE3TzFmeG1tTk9uSVB2cXMweWhrXzR1cTJXOXJuTzkyOWR2SUpjOVROOUgzSWFBdWRMSWlDZlc2WUV1ajdsYXpkSF9n?oc=5" target="_blank" rel="noopener" class="news-title">Labor sidelines Coalition, strikes deal with Greens on environmental laws</a>
+        <span class="news-meta">Sky News Australia — 2025-11-27</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxQWDVlWTYtRDlRZ2RKNGxJRVVTbGEySGNVWk5TWGZaM2pSOUw4XzA0RW9nS3JTa2NpOVU5VkkzdVVYbEJ3bGliUHZZb3dHN0IzcmxkY0hqTlRpWmdLY3dySVVxQ2ZHTVktMXhUZFdwU2RWWThxZnJVdlpGcHZKYlk1TmZGX0J1TVpYUDRWdU91aWxSY0FUUy10eHpZRmdjeldvVEQ3NGNKTUpobk1SZ2tMLW5vNS13TmxhaDEwOV9nVmR6aWdWYVBPblpvZVhfTW9WTzBXdVdsaFdiMGQw0gHiAUFVX3lxTFBNbXdITVdIRkJRVnRCMU5Kb0xlNmtEaUxpbi1zdmQ3UVM5SGdYQ1Z3WWg5aEYwRm1SdkxKMkxuRGJ5d1ZsWUNydWk5ano0SnFZVTBYR0RmbWI1R21iT29fWUxfM0RndEN3SC02cldJMGZaYVluMFJWTU8tbFBiSS1OQkFPRWlfSU54MEprMVhsYU1LX2h1UFZWbzU5WnlRdVVpT0ppUjRaeHYxSWxNcGZTT1p3SXRlb0F6U3lpa2RVUU0zMkxlRGlJWGQ0VEMtN0RJRk1PdFhfUWZXcDhuSktPVWc?oc=5" target="_blank" rel="noopener" class="news-title">Greens party room renos blow out … again</a>
+        <span class="news-meta">The Australian — 2026-02-09</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMi_AFBVV95cUxNYUQtS3JpMTdXWTBUY3lXNTA1a25DTzd3Q1QwcUFibWtFZnZRY01sUmZpV3E0T1R5anRYQ2FaeTVId19YMGpfcTFCN0JPdWlQTGNJbEZVMlphUmhzOWt5Y3ZLdThTNUtBNWdMQlBlYmUwWWprQjRVcnpvajlVZnZ1WDYzdE1KQTlsM2lpb0ducVNGNzRGOWVrMFNibEV1MkR5VnZsMmRuSU1iQ093QXhIVWFQVkFnWFF5WWwwcFRZTUM2bE5rMkdSeGdKdnd1OVZUT3Jtd1JrOWxCYXhnanJSeWhyMjU0U1JKeXI3WlhXd3BpZmhwbnNhN2Q1TVI?oc=5" target="_blank" rel="noopener" class="news-title">Germany's The Greens party holds traditional Ash Wednesday meeting in Biberach</a>
+        <span class="news-meta">Reuters Connect — 2026-02-18</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxONzdNNGVsMFk1WllmU3dSRGpfaHBYU2VPSGtMVmpJbkdBMTlVY1RjZnNQODA2MU9zRVRva3Fwc3gzaUFmbWZEaVlaRGtsakxLMGRKeFQtTlZKOEVySmdnM01leUtHREpQUzlPcThfWEpRZVZ2REhqS2RuNmVlczJDVHJ1bjJpWkdYX3ZlMXozOXQ1VzhxYTNlXzVhWkFCSEQ5RVdLMEZkUGZfZEhHZVk4cEtOU2NCcjk2Q3dR?oc=5" target="_blank" rel="noopener" class="news-title">Liberal Senator unleashes on eye-watering bill for Greens party room renovation</a>
+        <span class="news-meta">senatorpaterson.com.au — 2026-02-09</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxQLXVzN2xrdjEzNWt1RUtoZmJ3UzN0Q3hQTzRERnBsZ2YzcnNKcTdrM2ZYQzM3TEVPLWNfNUNYTHZiQlNyQTJXNmNJRWdFY1hndGtVMnduQVl2bGc0cnFOVlBGMWg1RnlQT2R4TEZIWjZuQlFCdUlrbWQ1ZURta1VWWnJjZXJpZGd6QjJNSjNkVmJGbFo4MXg0M3Q4Z09NbkczaDFyYlVFU05rdE52TUVJbHVPNVl2SkUwaVNwVXlNLWVuYVRkZDNoeFhVV3A1WUkwb2pGSXZDRzRaUnkzNjlj?oc=5" target="_blank" rel="noopener" class="news-title">Sky News host Freya Leach reacts to the Greens Party Leader Larissa Waters' statement regarding Australia Day.</a>
+        <span class="news-meta">facebook.com — 2026-01-27</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1HZHhiSjVSWU4xMUFkQWJNZnB6MkNEdVRHQmVXU2FDSVdYUTk2NGZJWE9WN1prdVR1YnBKS1QtRF9vZzNVTnNIb1pPd3BBcTZmRGpYZHZwZTZGYWN4ak5kZVV5SkFXZExDVjhiR3ZLRVdFV21rWDlB?oc=5" target="_blank" rel="noopener" class="news-title">The Australian Greens Are Staying the Course</a>
+        <span class="news-meta">Jacobin — 2025-06-05</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxPLU05T1ZtUVRSXzdGdHRtMi0xQ2tucy1fSlVjdGg5Tjk0WVZyVkFkdFNEajhWRVJMUGZ3M2R0SzBFOG1zQ3FURHZLN1ptTHg3cThtQUVsM3BCYTVXaEhCdDlqc0trNzlhNjUwWjFOc0JfbEtXZUdpa3JTS0pqVVJLNVFFd2llNjl0ME1sTUUxSGVTSUZlNGZvV0ZiYUliampxVWFuYlp1SGlpRmRHN1U4eDRkNmx2djhVQk5pYUFRR0J4bndBbjlYUWhNTVJnYmdyMC1fUllLMjRzVHNBUWM2RTBvX2NIVFlLVFE?oc=5" target="_blank" rel="noopener" class="news-title">Greens MP threatens legal action against WA newspaper over Herzog rally coverage</a>
+        <span class="news-meta">The Age — 2026-02-13</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxNb1dlNTZUVlYwV01HZUdBTjdxb2Zra2g4YjNfMDZZdExDdWhoQXVrb1pNSE5WQXFvd0w3bkYzVUg0eFJEMXhSb0tyOVc5Z25XYVhFNVNCdEtUUDBwazAyU0QwcGw3NjJmN3NrLVNJcFRRbVg2Ui1qQU9ub0V2eUFqbGoxUDByUDNnNVoyV2NWQXJjVXRNV2EwR09sb2J5dUc2cGppOG5SZy1valNTZmxmUnFqejRBdEI2OURKZUdsTENVUWIxNVBQOFBlb9IB0AFBVV95cUxQOVZkRTlmWFJCTWduZTZ0M3c3djFTSTRfMVVVSVBra3I1Tmk2MFZpaU5BOFJOYV9jb1BWZ2dLUVRlQ01XTDVwQVcycFczNlBaR25BbkQ3VXVhWHhrSUNWM3NVNmpyekhRQ0xCTEFXRWJseGZ0RFFmUVlWdmRLbnZmb0oteXZMaVVZVGY3R1dmbUZUWEN5MlFCUWVZdlBaalZUUmMtaU5SQXYxQ3ZlVFh6clYyUER1dVNWUVNpUzFDT2NkX25wN1dTcVZRM29yY3Bj?oc=5" target="_blank" rel="noopener" class="news-title">Greens party room renovations explode to $2.2m</a>
+        <span class="news-meta">dailytelegraph.com.au — 2026-02-08</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNMFFmczVFUmhFMmhaQ2lyVFNzTzFDZHUxbkdOZXV3Tm5oLUMyVzRCS1Z2c1FMbTJ6ay1GN0s1bENtVExieG1QdkJlZVQ0cGtseDRUWV9XWHA0TGRqdlFuN1FNSUxiMnNzdWQwa04wWXozUU5VMXVUX3B3aWlJTTFjN0VPUU15aFFrODJsLUxLaWV2dE5BUjhBSUVtYkNjUjUtTGc?oc=5" target="_blank" rel="noopener" class="news-title">Drew Hutton helped found the Australian Greens. So why has the troubled party booted him from its ranks?</a>
+        <span class="news-meta">The Guardian — 2025-07-12</span>
+    </div>
+    
+</div>
+
+
+
+
+<div class="card">
+    <h2 style="border-left: 4px solid #FF8F00; padding-left: 0.75rem;">
+        One Nation — Latest News
+    </h2>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWWRYMjNDQWllaFFrR1VfNHR5cVoyZDA4Y2swLW1ndXFqb1BRVWlkQXExeHdHaE9nYXBIZ1RldV9nbFI0T2E5a1hyaVhIbHllRjNUNDRmUTNiU0VPNHNsQU1ySVV4RUc5aXRDblNEdWhmOVJHTGlEa3U3eG1yWHRxOTFJVFkyS285N0FhaFlibWVMbGE5UkJmVkRHa3c3TjJmeWRyWVVsMWpyUQ?oc=5" target="_blank" rel="noopener" class="news-title">Police receive 'reports of crime' in relation to Hanson interview</a>
+        <span class="news-meta">Australian Broadcasting Corporation — 2026-02-20</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPeHJ3QkpFQjZmTURCNGk3VU40bDJMQ0ZfLTJDTG1fWGdDUXEzNkhiMFN2ZEs5bUp6bGctc1pJbkZQUmRpazJ3SlpabXh0ZlJzUDBPRVVIUU5hMzdDSUtfWFdhaGl2RmtxazBFczZEbFZ2Yjh1aXA1OFg5czFGRTktSFRhdE52ZDFYUnRUTGVjWF8yY0VlZ2ZhaVBsRS1Fd0FUQXVla0NkSXdOZjZNU3ZUbQ?oc=5" target="_blank" rel="noopener" class="news-title">Federal police ‘received reports of a crime’ in relation to Pauline Hanson’s comments about Muslims</a>
+        <span class="news-meta">The Guardian — 2026-02-20</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMisAJBVV95cUxQRUw2by1hbXozdnZxVUZXNE9kdHFOaXRwNXVNSzJmaG8wb3F1bHIzclM0aWNLM3FNVk5CVUZMbE1YTThob2MyOTNiMzJYclhkRVBNSl9EWGthRGdadUtpQWhKUjBmY2U2eUpmMEN5aGE5NlRVSFJYNEVCS3oxMTJKWWdPZWdaV3ZlMjM2eV82dW5mWHBBQUJTNTl4cjEyaUxnMGdTRXlhXzk4aElZUnAzVGF4YWxfUlU5Qkx2UzJyMEdlRnU2N0VsemRvdWhQeW9hcFRNcTJDaFVEazRxVlFRZmU0VUtCanZVMHVFMlNIeU1ReFU2dnhnOUE4NmpMYmNkY2hhZDRleVZRdFY0STAzOEdUS20wUC10dVVZWVlBMkdLS3VKUmwyUDA2eldFM1VK0gG2AkFVX3lxTE9uUFlyMmJDLXZkUFM2dTlJM0QxVjVLdUx3NC1wN1E4a3ZQQ3ZFdkhuR0hfS2N5cTlFNVY0SzR6WFlreVMydk5KSGh0aElJMXYxUHkwcjFJczM3Z1lLbVlfb0ZaemdsZ3dGYTlCMHU4cXVjNG0yaXhvTXFQanVaS1FxSGFucXVxU01DaU56blBZbk1EUzJwTXhEZ0Z1aFNxa2NpOG1BNlZEMGppeUVORGc0ZHNQb01HdElDY1RvbWNRLVJFdGxYMk1Lbldock9TbTFUbXZUNTJsMkMtVzdLTy1fWm0yWnhKZ3RuTkFGZktNZWVCVkw5V0xKRUxtUWRSa1c3YWpvaGl4NG13cDlLTWtXWVBWamV4NWJTU1pfUFYySlRIMGtPd1ZxY001UzhHa1lFdTZxSWc?oc=5" target="_blank" rel="noopener" class="news-title">Pauline Hanson, supporters bite back at Peter Malinauskas’ immigration comments</a>
+        <span class="news-meta">Sky News Australia — 2026-02-21</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMihgJBVV95cUxNYzFZd0I1dWIxam1KZFdtTmNRaGZRdDNac2duTW94eGNNdm9MaWpQZmtKcjJ3RWFiMFpSVmczaGpLMTNNa0c5UmFhTi1uZFJkMjhDSHQwSmJpd2doTjFCM2l0eGVzTjdaQkdTV3NBeGd2aEdzS2Jwc2l4dHREWWViRzRmcVRweXdTU1U1Z2UxTEsyd1N3d0EyanNaUkpfdVNiRHF6LTYzM2FiTkZWVUkxNUh3QTVNdnl6Wi1YR2h6NUR3ZkpFQVRoV2N2c1gxRTV0cDRzNUtUeHk3a1lBbUxLdnFtOHIzMkRPR3Q5QjBoQlBPTHJxZlBFVHhUSHdWSmdBXzUwbVl3?oc=5" target="_blank" rel="noopener" class="news-title">Joyce says he’s not aware of crime reports after Hanson comments – as it happened</a>
+        <span class="news-meta">The Guardian — 2026-02-20</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMigAJBVV95cUxQRldhcGt6a3JOZTA4ZG9fMDhLaG5zTV9oUmJlcE16eUhFdC1vcmJseS1fbTZSTnZON2dTR0otcDZDQUFsUXdBN09DS2kyLUNsN0VXWFlKMHJjd3J1YVJLZDh1V21CbG9FSEh6aHdpM0RXazFwODhFMEZ5bk02ckxZZkNqNTdONl9oYkRTSVBtOXFYdFUyMUNsVVRDUTBwVzRJckE2ckNFRVNGQjNNdWtyeVp0TUppZHlPV0dwU2I2LXFGZUN1dVV6eENiaTl6VTRDXzN3SFhqTXpfSnZQSU11U3ZtMmRnSE1qNXlqODM0TDYxWXdLOUQ2dm9GLVFhV0g00gGGAkFVX3lxTE4yR2RfNUFQVE9JbUNrOGJKU3lsbmtLNF83b1ZnblZibk9SUHRqNHZEaFdwMUdGM1hia28wV0Z1Z1BvZmFSaEs2VVlLRUtfa0NmTkx0Qnd6SmFXUEJybkJ3NmwzNGhBTndvbE1uYzFkREdzMkllZzhxcnRnTmlwemRYWWJtTXhpU3Nrd245d214REFEdlJ0alBLck9xeWVGQ3J2c1FXV2ZpQ2cwUFhJdFhYNkRPeUFHNUlENnYzTGVpWUMxczhiU2hKUkJzVlBDaEMxS3d5VFp1cVl1c3JHSzU4OEZDQ1NTbzlDU3ZySHpCSFhPdWZHbm1sLV9pV1pEbDM1NjgzeGc?oc=5" target="_blank" rel="noopener" class="news-title">One day to make or break Pauline Hanson</a>
+        <span class="news-meta">News.com.au — 2026-02-21</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMi9gFBVV95cUxOWEM1YzZOZFRIcnMxSGVDeGtaRHBMY2k4V2hIcnVhX3hwd1NLbjZTdnZLQWpiaW1jcF9YQ0hJd2NTc29JVEZVUHZsaWMwVE01a2VIUmw5LTVuZWhqdFdzc2JfV0hkMHdQUlk5QmdkbkgxaEhYWFFybnZZUnBUZUx2X3pjRUJ1U1l4X2hXcDF5Q1N5bnhvYVVYaV91bzgzU1V5SVhzWWl0dEFxcHZBZ2pGVlltMEV5NzEtbWEwYS03M0FKbEp2WmdldVVhajZDckhkZkFvaEVWU0FsRG5ldGh1cWVCd20tNWw3a2c5MjhSbDJOdmJwZ3fSAfsBQVVfeXFMTTdBMXlpVk45WnlGYUtvdDAzOXE0Uk9iNy1HQkhtV0IyWEsweFFmM2s2R1o5bmpWZmRxMWc3Um1zMlluWGE0Q3ZEQTcwU0MzZ0lCRGJfSWt3LWlCZktkWXhPQlN0akFfNC04T1RSQ0hUUFlUN2lBT0lOVnROaUo5dWExLVJfME56Vl9jbHgydjFDNDNQSjExQVB6SlFiVUJfN3d3S2lXOS03aTZuRldWQnJPLUdJVjFrT3dXZmwyTFk1WXZCRE45SDBOUTJ6SXlEUjJFdzZxZUUySGJMeFdUaV9KY05iZHpWRDlTNHk0SnFXNVY5T2tyODZCOXM?oc=5" target="_blank" rel="noopener" class="news-title">Pauline clause: what Barnaby demanded to join One Nation’s bonfire of the narcissists</a>
+        <span class="news-meta">The Australian — 2026-02-21</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxPTzFfS1kyRzVtd2pjdEhMUUVFdWJDS181Zlo3OFhZYS11bTE1clY5MVJVb0thVzBMYTZwMDdhNWx1VENtczNKR0dITG81Rmhpdm5ocjhnOV9nb1VEcWN2YW1ZM3kzQU52NFRTVVhEcG9jZlZESXhmcUZXUWd3ZnkyVFlsMEdsd09xTDR0Nmg3RlhoZV9fUzl5MFhPczNxbDJjYkJJY3NrUkN2QUpPYjNodEdFQnRWU2N4d0RGNEJSWXFfUlZnNVZJMkhzWGpNU1drWG1ZTA?oc=5" target="_blank" rel="noopener" class="news-title">No good Muslims? Pauline Hanson has removed her racism fig leaf and mulched it</a>
+        <span class="news-meta">SMH.com.au — 2026-02-19</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxONE5VYlZVVzNPUmtYTHVvRUNINW5odzF0RmtPWjloNTRJNjNpRTVjMjNlbWYzamFRQTJGaFFBUlNIdzRuWGtYSFlhSURrMVE4OTVNVUl2V2RYVWRBSTZRdWZJZGNrTDRISkM3R3JxMzlPZzJjYVdTakNWNi14dmJfNWFkNnV2S29QbzhDTmpEakpNalAtejR2QmhJNGFRNkFFRUE?oc=5" target="_blank" rel="noopener" class="news-title">Could One Nation soon become Australia’s most popular party?</a>
+        <span class="news-meta">The Economist — 2026-02-19</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxQZGpNU2ZHNnhqVjdaY2llZkwxUlJlLTFGS09RLU5oYXh0UW5vMTJpUm82cEZFZzgxV0ZDU0tFVEQ1ZDlVVTIybXBsdndTUkN5UG9pQTJGeWVEcVJGSmFQUkpRaWp3LTdjWXBHSmZFOVAza0ktaEZrY05KOFZUMFBhN19TTWpKcHFlT2tUVmpoNm96X1hBNmhsMHFYRFZoU3FnMFpvM3BGREVxcVlBVkstd0k1SEVKcDJzWS1lbENCeFNNa01wM2VEZFZuUVE?oc=5" target="_blank" rel="noopener" class="news-title">Hanson could become our Farage, our Trump. Or she could just flame out</a>
+        <span class="news-meta">The Age — 2026-02-20</span>
+    </div>
+    
+    <div class="news-item">
+        <a href="https://news.google.com/rss/articles/CBMiowJBVV95cUxOc0szeWlVUzZYZ1hCM3djekI2aUNMaE15UllvLWhHLVJmNUVVVFBRUUp5QUJEb3dKSTlYUm93NDFKaGNxbVg5eEthQi0yNmFRUVVfSXpmUEJNVmxWTVlXOGY1T1NDa3huUkRLMGJPTmh6aklzS196QUtxNGVZY25DT3JFOEpfNFp3RGQtWllGUDc3NTkzeDcyVWFQVm1MWXo1UnZJZFNMZ3lmeG56MHo0M0Iyeklub1RJSjV2RzhidGZtZExuN0h2TTZEclZJbllFMVI2Ukg3VHlaTUY0cHp5V3luQnlXdjNxUFBsREFUSFcyR2VDYmhPdU8za2RzZWF4b2F3OThkb3pvYzR2Z25YVE5Xc3ExemZXck4zR3AxMU5meVXSAagCQVVfeXFMTVhZVzhjOTQzemhjczNubC04ZGxMU1NGVE85WE1yaHZEZFVBU2FMMkIyVUNRbnE5XzRuSS1zVWNMX09hYnhHMzFYZGxzVWd5VEVwaWtRTmNQWEY2dUI2N1ZHMzlNWGpoaXZIc0RnY2ZEaXRNSFM4TmJ3a1lmLXpoS3hHX1VXUmg4bFFIUzJTcGdPdjZCNzZNUExUc1dkWDU2QW1qbmxLY3R3TDYwczNrSEtSRkxfUWVCT1MxWjRVMVBqSFNmc0QyZTZTcXd0WTBoU05SeVAycm9fVWczOW5XWXY2ZUpEQWJxZWd6UzRVQlg0NTM1aGJoTVVMdGxWNDUzTU5Td0VybmFUWTVfUURRMVFLRHZxbHNIQU1CeUxrN2VvRE5xakREZUY?oc=5" target="_blank" rel="noopener" class="news-title">One Nation most popular party in Victoria as support soars ahead of election</a>
+        <span class="news-meta">Sky News Australia — 2026-02-20</span>
+    </div>
+    
+</div>
+
+
+
+
+
+<div class="card">
+    <h2>Recent Spikes &amp; Associated News</h2>
+    
+    <div class="spike-item" style="border-left: 4px solid #FF8F00; padding-left: 1rem; margin-bottom: 1.5rem;">
+        <div class="spike-header">
+            <strong>One Nation</strong> — 2026-01-09
+            <span class="spike-ratio">7.6x above average (score: 36)</span>
         </div>
-    </details>
+        
+        <p class="spike-no-news">No matching news articles found for this date.</p>
+        
+    </div>
+    
+    <div class="spike-item" style="border-left: 4px solid #FF8F00; padding-left: 1rem; margin-bottom: 1.5rem;">
+        <div class="spike-header">
+            <strong>One Nation</strong> — 2026-01-10
+            <span class="spike-ratio">7.2x above average (score: 67)</span>
+        </div>
+        
+        <p class="spike-no-news">No matching news articles found for this date.</p>
+        
+    </div>
+    
+    <div class="spike-item" style="border-left: 4px solid #FF8F00; padding-left: 1rem; margin-bottom: 1.5rem;">
+        <div class="spike-header">
+            <strong>One Nation</strong> — 2025-12-08
+            <span class="spike-ratio">5.9x above average (score: 36)</span>
+        </div>
+        
+        <p class="spike-no-news">No matching news articles found for this date.</p>
+        
+    </div>
+    
+    <div class="spike-item" style="border-left: 4px solid #1565C0; padding-left: 1rem; margin-bottom: 1.5rem;">
+        <div class="spike-header">
+            <strong>Liberal</strong> — 2026-02-12
+            <span class="spike-ratio">5.8x above average (score: 81)</span>
+        </div>
+        
+        <p class="spike-no-news">No matching news articles found for this date.</p>
+        
+    </div>
+    
+    <div class="spike-item" style="border-left: 4px solid #1565C0; padding-left: 1rem; margin-bottom: 1.5rem;">
+        <div class="spike-header">
+            <strong>Liberal</strong> — 2026-01-21
+            <span class="spike-ratio">4.8x above average (score: 20)</span>
+        </div>
+        
+        <p class="spike-no-news">No matching news articles found for this date.</p>
+        
+    </div>
+    
+    <div class="spike-item" style="border-left: 4px solid #1565C0; padding-left: 1rem; margin-bottom: 1.5rem;">
+        <div class="spike-header">
+            <strong>Liberal</strong> — 2026-02-13
+            <span class="spike-ratio">4.2x above average (score: 100)</span>
+        </div>
+        
+        <p class="spike-no-news">No matching news articles found for this date.</p>
+        
+    </div>
+    
+    <div class="spike-item" style="border-left: 4px solid #1565C0; padding-left: 1rem; margin-bottom: 1.5rem;">
+        <div class="spike-header">
+            <strong>Liberal</strong> — 2026-01-22
+            <span class="spike-ratio">4.1x above average (score: 29)</span>
+        </div>
+        
+        <p class="spike-no-news">No matching news articles found for this date.</p>
+        
+    </div>
+    
+    <div class="spike-item" style="border-left: 4px solid #1565C0; padding-left: 1rem; margin-bottom: 1.5rem;">
+        <div class="spike-header">
+            <strong>Liberal</strong> — 2026-02-11
+            <span class="spike-ratio">3.6x above average (score: 35)</span>
+        </div>
+        
+        <p class="spike-no-news">No matching news articles found for this date.</p>
+        
+    </div>
+    
+    <div class="spike-item" style="border-left: 4px solid #FF8F00; padding-left: 1rem; margin-bottom: 1.5rem;">
+        <div class="spike-header">
+            <strong>One Nation</strong> — 2026-01-19
+            <span class="spike-ratio">3.3x above average (score: 48)</span>
+        </div>
+        
+        <p class="spike-no-news">No matching news articles found for this date.</p>
+        
+    </div>
+    
+    <div class="spike-item" style="border-left: 4px solid #1565C0; padding-left: 1rem; margin-bottom: 1.5rem;">
+        <div class="spike-header">
+            <strong>Liberal</strong> — 2026-02-10
+            <span class="spike-ratio">2.6x above average (score: 21)</span>
+        </div>
+        
+        <p class="spike-no-news">No matching news articles found for this date.</p>
+        
+    </div>
     
 </div>
 
