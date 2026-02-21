@@ -9,7 +9,7 @@ from jinja2 import Environment, FileSystemLoader
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from config.settings import ENTITIES, PARTY_COLORS, RAW_DIR, PROCESSED_DIR, TEMPLATES_DIR, OUTPUT_DIR
-from scripts.generate_charts import build_interest_chart, build_weekly_bars, build_related_queries_table
+from scripts.generate_charts import build_interest_chart, build_weekly_bars, build_related_queries_table, load_spikes
 
 
 def load_latest_file(directory: Path, filename: str) -> dict | str | None:
@@ -61,9 +61,12 @@ def build():
         winner_code = analysis.get("search_winner", "")
         analysis["search_winner_name"] = ENTITIES.get(winner_code, {}).get("short_name", winner_code)
 
+    # Load spike annotations
+    spikes = load_spikes()
+
     # Generate charts
     charts = {
-        "interest_over_time": build_interest_chart(iot_data) if iot_data else "<p>No data yet.</p>",
+        "interest_over_time": build_interest_chart(iot_data, spikes) if iot_data else "<p>No data yet.</p>",
         "weekly_bars": build_weekly_bars(iot_data) if iot_data else "<p>No data yet.</p>",
         "related_queries": build_related_queries_table(rq_data) if rq_data else "<p>No data yet.</p>",
     }

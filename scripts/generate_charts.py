@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from config.settings import ENTITIES, PARTY_COLORS, RAW_DIR, OUTPUT_DIR
+from config.settings import ENTITIES, PARTY_COLORS, RAW_DIR, PROCESSED_DIR, OUTPUT_DIR
 
 
 def load_latest_iot() -> dict:
@@ -30,13 +30,25 @@ def load_latest_related_queries() -> dict:
         return json.load(f)
 
 
-def build_interest_chart(iot_data: dict) -> str:
-    """Build the main interest-over-time comparison chart. Returns HTML string."""
+def load_spikes() -> list[dict]:
+    """Load spike annotations from processed data."""
+    proc_dirs = sorted(d for d in PROCESSED_DIR.iterdir() if d.is_dir())
+    for d in reversed(proc_dirs):
+        path = d / "spikes.json"
+        if path.exists():
+            with open(path) as f:
+                return json.load(f)
+    return []
+
+
+def build_interest_chart(iot_data: dict, spikes: list[dict] | None = None) -> str:
+    """Build the main interest-over-time comparison chart with news annotations."""
     records = iot_data.get("data", [])
     if not records:
         return "<p>No data available.</p>"
 
     dates = [r["date"] for r in records]
+    date_to_values = {r["date"]: r for r in records}
 
     fig = go.Figure()
 
@@ -50,6 +62,40 @@ def build_interest_chart(iot_data: dict) -> str:
             line=dict(color=PARTY_COLORS[code], width=2.5),
             hovertemplate=f"{ent['short_name']}: %{{y}}<br>%{{x}}<extra></extra>",
         ))
+
+    # Add spike annotations
+    annotations = []
+    if spikes:
+        for spike in spikes:
+            spike_date = spike["date"]
+            party_code = spike["party_code"]
+            explanation = spike.get("explanation", "Spike detected")
+            value = spike.get("value", 0)
+            color = PARTY_COLORS.get(party_code, "#333")
+
+            # Truncate explanation for annotation label
+            short_label = explanation[:60] + "..." if len(explanation) > 60 else explanation
+
+            annotations.append(dict(
+                x=spike_date,
+                y=value,
+                xref="x",
+                yref="y",
+                text=f"<b>{ENTITIES[party_code]['short_name']}</b><br>{short_label}",
+                showarrow=True,
+                arrowhead=2,
+                arrowsize=1,
+                arrowwidth=1.5,
+                arrowcolor=color,
+                ax=0,
+                ay=-60,
+                bordercolor=color,
+                borderwidth=1.5,
+                borderpad=4,
+                bgcolor="rgba(255,255,255,0.9)",
+                font=dict(size=10, color="#333"),
+                align="left",
+            ))
 
     fig.update_layout(
         title=dict(
@@ -68,7 +114,8 @@ def build_interest_chart(iot_data: dict) -> str:
             x=1,
         ),
         margin=dict(l=60, r=30, t=80, b=60),
-        height=500,
+        height=550,
+        annotations=annotations,
     )
 
     return fig.to_html(full_html=False, include_plotlyjs=False)
