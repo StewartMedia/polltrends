@@ -1,70 +1,50 @@
-"""Analyse sentiment of related queries using Grok API.
+"""Analyse sentiment of related queries using keyword-based classification.
 
 Classifies each related query as positive/negative/neutral for the associated party.
-Runs weekly as part of the analysis pipeline.
+Uses a simple keyword lexicon approach - no API dependencies.
 """
 import json
-import os
 import sys
-from datetime import date, timedelta
+from datetime import date
 from pathlib import Path
 
-import requests
-
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from config.settings import ENTITIES, GROK_API_URL, GROK_MODEL, RAW_DIR, PROCESSED_DIR
+from config.settings import ENTITIES, RAW_DIR, PROCESSED_DIR
 
-GROK_API_KEY = os.environ.get("GROK_API_KEY", "")
+# Keyword lexicons for political sentiment
+NEGATIVE_KEYWORDS = [
+    "scandal", "corruption", "fail", "crisis", "resign", "sack", "fired",
+    "controversy", "fraud", "lie", "lying", "racist", "racism", "sexist",
+    "attack", "slam", "blast", "reject", "oppose", "block", "protest",
+    "illegal", "crime", "criminal", "abuse", "hate", "worst", "disaster",
+    "collapse", "loss", "lose", "losing", "defeat", "drop", "fall",
+    "investigation", "probe", "inquiry", "charged", "arrested", "jail",
+    "ban", "penalty", "fine", "waste", "debt", "deficit", "inflation",
+    "cost of living", "housing crisis", "broken promise",
+]
 
-SENTIMENT_PROMPT_TEMPLATE = """You are an Australian political analyst. Classify the sentiment
-of each search query below as it relates to the party "{party_name}".
-
-For each query, respond with exactly one of: positive, negative, neutral
-Consider whether the query suggests favourable or unfavourable attention for the party.
-
-Queries:
-{queries}
-
-Respond as a JSON array of objects with "query" and "sentiment" keys. Nothing else."""
+POSITIVE_KEYWORDS = [
+    "win", "victory", "success", "boost", "surge", "lead", "ahead",
+    "popular", "support", "approve", "reform", "invest", "growth",
+    "plan", "policy", "announce", "launch", "pledge", "promise",
+    "improve", "better", "best", "strong", "unite", "build",
+    "fund", "funding", "deliver", "achieve", "progress", "new",
+    "innovation", "opportunity", "benefit", "protect", "save",
+]
 
 
-def classify_queries(party_name: str, queries: list[str]) -> list[dict]:
-    """Classify a batch of queries by sentiment using Grok."""
-    if not queries:
-        return []
+def classify_query(query: str) -> str:
+    """Classify a query as positive, negative, or neutral using keyword matching."""
+    q = query.lower()
 
-    if not GROK_API_KEY:
-        # Fallback: all neutral
-        return [{"query": q, "sentiment": "neutral"} for q in queries]
+    neg_score = sum(1 for kw in NEGATIVE_KEYWORDS if kw in q)
+    pos_score = sum(1 for kw in POSITIVE_KEYWORDS if kw in q)
 
-    query_text = "\n".join(f"- {q}" for q in queries)
-    prompt = SENTIMENT_PROMPT_TEMPLATE.format(party_name=party_name, queries=query_text)
-
-    headers = {
-        "Authorization": f"Bearer {GROK_API_KEY}",
-        "Content-Type": "application/json",
-    }
-
-    payload = {
-        "model": GROK_MODEL,
-        "messages": [{"role": "user", "content": prompt}],
-        "temperature": 0.1,
-    }
-
-    try:
-        resp = requests.post(GROK_API_URL, headers=headers, json=payload, timeout=60)
-        resp.raise_for_status()
-        content = resp.json()["choices"][0]["message"]["content"]
-
-        # Parse JSON from response (handle markdown code blocks)
-        content = content.strip()
-        if content.startswith("```"):
-            content = content.split("\n", 1)[1].rsplit("```", 1)[0]
-
-        return json.loads(content)
-    except Exception as e:
-        print(f"  Sentiment API error: {e}")
-        return [{"query": q, "sentiment": "neutral"} for q in queries]
+    if neg_score > pos_score:
+        return "negative"
+    elif pos_score > neg_score:
+        return "positive"
+    return "neutral"
 
 
 def analyse_week():
@@ -98,12 +78,15 @@ def analyse_week():
         # Deduplicate
         all_queries = list(dict.fromkeys(q for q in all_queries if q))
 
-        classified = classify_queries(ent["name"], all_queries)
+        classified = []
+        for q in all_queries:
+            sentiment = classify_query(q)
+            classified.append({"query": q, "sentiment": sentiment})
 
         # Tally
         sentiment_counts = {"positive": 0, "negative": 0, "neutral": 0}
         for item in classified:
-            s = item.get("sentiment", "neutral").lower()
+            s = item.get("sentiment", "neutral")
             if s in sentiment_counts:
                 sentiment_counts[s] += 1
 

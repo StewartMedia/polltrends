@@ -20,7 +20,3 @@ TIMEFRAME = _config["timeframe"]
 
 # Party colors for charts
 PARTY_COLORS = {code: ent["color"] for code, ent in ENTITIES.items()}
-
-# Grok API (xAI)
-GROK_API_URL = "https://api.x.ai/v1/chat/completions"
-GROK_MODEL = "grok-3-mini"

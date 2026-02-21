@@ -1,20 +1,15 @@
 """Detect significant spikes in entity search interest data.
 
 Identifies days where a party's interest is significantly above its rolling average,
-then asks Grok to explain the likely cause.
+then matches with real news headlines from Google News RSS.
 """
 import json
-import os
 import sys
-from datetime import date
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
-import requests
-
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from config.settings import ENTITIES, GROK_API_URL, GROK_MODEL, RAW_DIR, PROCESSED_DIR
-
-GROK_API_KEY = os.environ.get("GROK_API_KEY", "")
+from config.settings import ENTITIES, RAW_DIR, PROCESSED_DIR
 
 SPIKE_THRESHOLD = 2.0  # Must be this many times above the rolling average
 ROLLING_WINDOW = 7     # Days for rolling average
@@ -49,6 +44,7 @@ def detect_spikes(iot_data: dict) -> list[dict]:
                         "rolling_avg": round(rolling_avg, 1),
                         "ratio": round(ratio, 1),
                         "explanation": None,
+                        "news": [],
                     })
 
     # Sort by ratio descending, keep top 10 most significant
@@ -56,67 +52,43 @@ def detect_spikes(iot_data: dict) -> list[dict]:
     return spikes[:10]
 
 
-EXPLAIN_PROMPT_TEMPLATE = """You are an Australian political analyst with access to X/Twitter data.
+def match_news_to_spikes(spikes: list[dict], news_data: dict) -> list[dict]:
+    """Match real news headlines to spike dates.
 
-For each spike in Google search interest below, provide a brief (1-2 sentence) explanation
-of what likely caused it. Focus on specific news events, announcements, scandals, or media coverage.
+    For each spike, find news articles for that party published within
+    a 2-day window around the spike date (day before, day of, day after).
+    """
+    for spike in spikes:
+        party_code = spike["party_code"]
+        spike_date = datetime.strptime(spike["date"], "%Y-%m-%d").date()
+        articles = news_data.get(party_code, [])
 
-Spikes to explain:
-{spikes_text}
+        matching = []
+        for article in articles:
+            if not article.get("date"):
+                continue
+            try:
+                article_date = datetime.strptime(article["date"], "%Y-%m-%d").date()
+            except ValueError:
+                continue
 
-Respond as a JSON array of objects with "date", "party_code", and "explanation" keys. Nothing else."""
+            # Match articles within 2 days of the spike
+            delta = abs((article_date - spike_date).days)
+            if delta <= 2:
+                matching.append({
+                    "title": article["title"],
+                    "source": article.get("source", ""),
+                    "url": article.get("url", ""),
+                    "date": article["date"],
+                })
 
+        spike["news"] = matching[:3]  # Top 3 most relevant
 
-def explain_spikes(spikes: list[dict]) -> list[dict]:
-    """Ask Grok to explain detected spikes."""
-    if not spikes:
-        return []
-
-    if not GROK_API_KEY:
-        for s in spikes:
-            s["explanation"] = "Significant spike in search interest"
-        return spikes
-
-    spikes_text = "\n".join(
-        f"- {s['date']}: {s['party_name']} surged to {s['value']} "
-        f"({s['ratio']}x above 7-day average of {s['rolling_avg']})"
-        for s in spikes
-    )
-
-    headers = {
-        "Authorization": f"Bearer {GROK_API_KEY}",
-        "Content-Type": "application/json",
-    }
-
-    payload = {
-        "model": GROK_MODEL,
-        "messages": [{"role": "user", "content": EXPLAIN_PROMPT_TEMPLATE.format(spikes_text=spikes_text)}],
-        "temperature": 0.2,
-    }
-
-    try:
-        resp = requests.post(GROK_API_URL, headers=headers, json=payload, timeout=60)
-        resp.raise_for_status()
-        content = resp.json()["choices"][0]["message"]["content"].strip()
-
-        if content.startswith("```"):
-            content = content.split("\n", 1)[1].rsplit("```", 1)[0]
-
-        explanations = json.loads(content)
-        exp_map = {(e["date"], e["party_code"]): e["explanation"] for e in explanations}
-
-        for s in spikes:
-            key = (s["date"], s["party_code"])
-            if key in exp_map:
-                s["explanation"] = exp_map[key]
-            elif not s["explanation"]:
-                s["explanation"] = "Significant spike in search interest"
-
-    except Exception as e:
-        print(f"  Grok explanation error: {e}")
-        for s in spikes:
-            if not s["explanation"]:
-                s["explanation"] = "Significant spike in search interest"
+        # Build explanation from actual headlines
+        if matching:
+            spike["explanation"] = matching[0]["title"]
+        else:
+            spike["explanation"] = "Significant spike in search interest"
 
     return spikes
 
@@ -130,8 +102,24 @@ def main():
         return []
 
     latest = raw_dirs[-1]
-    with open(latest / "interest_over_time.json") as f:
+
+    # Load interest over time
+    iot_path = latest / "interest_over_time.json"
+    if not iot_path.exists():
+        print("No interest data found.")
+        return []
+
+    with open(iot_path) as f:
         iot_data = json.load(f)
+
+    # Load news data
+    news_data = {}
+    news_path = latest / "news.json"
+    if news_path.exists():
+        with open(news_path) as f:
+            news_data = json.load(f)
+    else:
+        print("  WARNING: No news data found. Run fetch_news.py first.")
 
     spikes = detect_spikes(iot_data)
     print(f"Found {len(spikes)} significant spikes")
@@ -140,7 +128,7 @@ def main():
         for s in spikes:
             print(f"  {s['date']} - {s['party_name']}: {s['value']} ({s['ratio']}x avg)")
 
-    spikes = explain_spikes(spikes)
+    spikes = match_news_to_spikes(spikes, news_data)
 
     # Save
     today = date.today().isoformat()

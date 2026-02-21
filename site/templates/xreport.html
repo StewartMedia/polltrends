@@ -1,27 +1,52 @@
 {% extends "base.html" %}
-{% block title %}PolTrends Australia — X Report{% endblock %}
+{% block title %}PolTrends Australia — News{% endblock %}
 {% block content %}
 <p class="updated">Last updated: {{ updated }}</p>
 
+{% if news %}
+{% for code, ent in entities.items() %}
+{% set articles = news.get(code, []) %}
+{% if articles %}
 <div class="card">
-    <h2>Daily X/Twitter Political Report (via Grok)</h2>
-    {% if grok_report %}
-    <div class="grok-report">{{ grok_report | safe }}</div>
-    {% else %}
-    <p style="color: #999;">No Grok report available yet. Reports are generated daily.</p>
-    {% endif %}
+    <h2 style="border-left: 4px solid {{ ent.color }}; padding-left: 0.75rem;">
+        {{ ent.short_name }} — Latest News
+    </h2>
+    {% for article in articles %}
+    <div class="news-item">
+        <a href="{{ article.url }}" target="_blank" rel="noopener" class="news-title">{{ article.title }}</a>
+        <span class="news-meta">{{ article.source }} — {{ article.date }}</span>
+    </div>
+    {% endfor %}
 </div>
-
-{% if grok_archive %}
+{% endif %}
+{% endfor %}
+{% else %}
 <div class="card">
-    <h2>Previous Reports</h2>
-    {% for entry in grok_archive %}
-    <details style="margin-bottom: 0.75rem;">
-        <summary style="cursor: pointer; font-weight: 500; font-size: 0.9rem;">{{ entry.date }}</summary>
-        <div class="grok-report" style="margin-top: 0.5rem; padding-left: 1rem; border-left: 2px solid #eee;">
-            {{ entry.report | safe }}
+    <p style="color: #999;">No news data available yet. News is fetched daily from Google News.</p>
+</div>
+{% endif %}
+
+{% if spikes %}
+<div class="card">
+    <h2>Recent Spikes &amp; Associated News</h2>
+    {% for spike in spikes %}
+    <div class="spike-item" style="border-left: 4px solid {{ entities[spike.party_code].color }}; padding-left: 1rem; margin-bottom: 1.5rem;">
+        <div class="spike-header">
+            <strong>{{ spike.party_name }}</strong> — {{ spike.date }}
+            <span class="spike-ratio">{{ spike.ratio }}x above average (score: {{ spike.value }})</span>
         </div>
-    </details>
+        {% if spike.news %}
+        <ul class="spike-news">
+            {% for article in spike.news %}
+            <li><a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title }}</a>
+                <span class="news-meta">{{ article.source }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p class="spike-no-news">No matching news articles found for this date.</p>
+        {% endif %}
+    </div>
     {% endfor %}
 </div>
 {% endif %}

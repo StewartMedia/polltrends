@@ -4,7 +4,6 @@ import sys
 from datetime import date, datetime
 from pathlib import Path
 
-import markdown
 from jinja2 import Environment, FileSystemLoader
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -27,20 +26,6 @@ def load_latest_file(directory: Path, filename: str) -> dict | str | None:
     return None
 
 
-def load_grok_archive() -> list[dict]:
-    """Load all grok reports for the archive section."""
-    archive = []
-    dirs = sorted(d for d in RAW_DIR.iterdir() if d.is_dir())
-    for d in reversed(dirs):
-        report_path = d / "grok_report.json"
-        if report_path.exists():
-            with open(report_path) as f:
-                data = json.load(f)
-                data["report"] = markdown.markdown(data.get("report", ""))
-                archive.append(data)
-    return archive[:14]  # Last 2 weeks
-
-
 def build():
     """Build all site pages."""
     env = Environment(loader=FileSystemLoader(str(TEMPLATES_DIR)))
@@ -51,10 +36,9 @@ def build():
     # Load data
     iot_data = load_latest_file(RAW_DIR, "interest_over_time.json") or {}
     rq_data = load_latest_file(RAW_DIR, "related_queries.json") or {}
+    news_data = load_latest_file(RAW_DIR, "news.json") or {}
     analysis = load_latest_file(PROCESSED_DIR, "weekly_analysis.json")
     sentiment = load_latest_file(PROCESSED_DIR, "sentiment_analysis.json")
-    grok_report_raw = load_latest_file(RAW_DIR, "grok_report.md")
-    grok_archive = load_grok_archive()
 
     # Add enriched fields to analysis
     if analysis:
@@ -70,9 +54,6 @@ def build():
         "weekly_bars": build_weekly_bars(iot_data) if iot_data else "<p>No data yet.</p>",
         "related_queries": build_related_queries_table(rq_data) if rq_data else "<p>No data yet.</p>",
     }
-
-    # Convert grok report markdown to HTML
-    grok_report_html = markdown.markdown(grok_report_raw) if grok_report_raw else None
 
     # Enrich entities with colors for templates
     entities_with_colors = {}
@@ -99,13 +80,13 @@ def build():
     with open(OUTPUT_DIR / "analysis.html", "w") as f:
         f.write(html)
 
-    # Build X report page
+    # Build news page
     tpl = env.get_template("xreport.html")
     html = tpl.render(
         **common_ctx,
         page="xreport",
-        grok_report=grok_report_html,
-        grok_archive=grok_archive,
+        news=news_data,
+        spikes=spikes,
     )
     with open(OUTPUT_DIR / "xreport.html", "w") as f:
         f.write(html)

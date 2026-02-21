@@ -24,8 +24,6 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run weekly pipeline
-        env:
-          GROK_API_KEY: ${{ secrets.GROK_API_KEY }}
         run: python scripts/run_weekly.py
 
       - name: Commit and push

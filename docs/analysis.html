@@ -81,8 +81,28 @@
         .rq-card th, .rq-card td { padding: 0.3rem 0.5rem; text-align: left; }
         .rq-card th { color: #888; font-weight: 500; border-bottom: 1px solid #eee; }
         .rq-card tr:nth-child(even) { background: #fafafa; }
-        .grok-report { white-space: pre-wrap; font-size: 0.9rem; }
-        .grok-report h2, .grok-report h3 { margin-top: 1rem; }
+        .news-item {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .news-item:last-child { border-bottom: none; }
+        .news-title {
+            display: block;
+            color: #1a1a2e;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        .news-title:hover { color: #e94560; }
+        .news-meta { font-size: 0.75rem; color: #999; }
+        .spike-header { margin-bottom: 0.5rem; }
+        .spike-ratio { font-size: 0.8rem; color: #888; margin-left: 0.5rem; }
+        .spike-news { list-style: none; padding: 0; }
+        .spike-news li { padding: 0.3rem 0; font-size: 0.85rem; }
+        .spike-news a { color: #1565C0; text-decoration: none; }
+        .spike-news a:hover { text-decoration: underline; }
+        .spike-no-news { font-size: 0.8rem; color: #999; font-style: italic; }
         .sentiment-bar {
             display: flex;
             height: 24px;
@@ -123,7 +143,7 @@
     <nav>
         <a href="index.html" class="">Dashboard</a>
         <a href="analysis.html" class="active">Weekly Analysis</a>
-        <a href="xreport.html" class="">X Report</a>
+        <a href="xreport.html" class="">News</a>
     </nav>
     <main>
         
