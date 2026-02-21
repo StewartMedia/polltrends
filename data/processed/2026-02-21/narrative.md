@@ -1,0 +1,15 @@
+**ALP Dominated Search Interest This Week**
+
+The Australian Labor Party (ALP) dominated search interest this week, consistently maintaining the highest search volume across all days from February 15 to February 21. The overall trend shows a slight fluctuation but no significant increase in ALP's search interest compared to previous weeks. Despite this, there was a notable spike on February 19, when the ALP's search interest dropped to its lowest point of the week at 7, which could be attributed to the news that One Nation is now ahead of Labor in primary vote intentions for the upcoming Victorian state election nine months before the election.
+
+**Connecting News Stories to Search Interest**
+
+The Liberal Party experienced several spikes in search interest, with a particularly significant increase on February 13, when their search volume reached an impressive 100. This spike can be directly linked to the news that the Coalition is now ahead of One Nation following the change of Liberal leader and men swinging heavily to the L-NP coalition (Roy Morgan Research). The surge in interest could also reflect public engagement with opposition leader Angus Taylor's claims against the Labor government on the ISIS bride crisis, as well as the fair work commission's criticism of the Minns Labor Government's unfair community preschool funding.
+
+**Interesting Patterns in Related Search Queries and Sentiment**
+
+The sentiment analysis for each party is predominantly neutral, with the ALP receiving 27 neutral queries, the Liberal Party having 25 neutral queries, and the Greens also experiencing 29 neutral queries. One Nation, however, received a slightly more positive response from searchers, with 3 positive queries out of a total of 35. This positivity could be related to the ongoing debate surrounding Pauline Hanson's comments and the subsequent reactions from her supporters and critics.
+
+**Forward-Looking Observation**
+
+Looking ahead, the upcoming Victorian state election nine months away will likely continue to drive search interest for both ALP and One Nation as the primary vote intentions remain closely watched. The Liberal Party may see further spikes in search volume if more significant news events emerge that challenge or support their leadership and policies.

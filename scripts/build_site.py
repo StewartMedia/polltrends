@@ -4,6 +4,7 @@ import sys
 from datetime import date, datetime
 from pathlib import Path
 
+import markdown
 from jinja2 import Environment, FileSystemLoader
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -45,7 +46,9 @@ def build():
         winner_code = analysis.get("search_winner", "")
         analysis["search_winner_name"] = ENTITIES.get(winner_code, {}).get("short_name", winner_code)
 
-    # Load spike annotations
+    # Load narrative and spike annotations
+    narrative_md = load_latest_file(PROCESSED_DIR, "narrative.md")
+    narrative_html = markdown.markdown(narrative_md) if narrative_md else None
     spikes = load_spikes()
 
     # Generate charts
@@ -76,7 +79,7 @@ def build():
 
     # Build analysis page
     tpl = env.get_template("analysis.html")
-    html = tpl.render(**common_ctx, page="analysis")
+    html = tpl.render(**common_ctx, page="analysis", narrative=narrative_html)
     with open(OUTPUT_DIR / "analysis.html", "w") as f:
         f.write(html)
 

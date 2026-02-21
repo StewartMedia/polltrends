@@ -47,9 +47,16 @@
 </div>
 {% endif %}
 
+{% if narrative %}
+<div class="card">
+    <h2>Weekly Narrative</h2>
+    <div class="narrative">{{ narrative | safe }}</div>
+</div>
+{% endif %}
+
 {% if analysis and analysis.summary %}
 <div class="card">
-    <h2>Summary</h2>
+    <h2>Data Summary</h2>
     <div style="font-size: 0.9rem; white-space: pre-wrap;">{{ analysis.summary }}</div>
 </div>
 {% endif %}
