@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}PolTrends Australia — Dashboard{% endblock %}
+{% block content %}
+<p class="updated">Last updated: {{ updated }}</p>
+
+{% if analysis %}
+<div class="winner-banner">
+    <h2>{{ analysis.search_winner_name }} is front of mind this week</h2>
+    <p>Avg search interest: {{ analysis.avg_interest[analysis.search_winner] }}
+    {% if analysis.momentum_pct[analysis.search_winner] > 0 %}
+     (up {{ analysis.momentum_pct[analysis.search_winner] }}% WoW)
+    {% elif analysis.momentum_pct[analysis.search_winner] < 0 %}
+     (down {{ analysis.momentum_pct[analysis.search_winner]|abs }}% WoW)
+    {% endif %}
+    </p>
+</div>
+
+<div class="card">
+    <div class="metric-grid">
+        {% for code, ent in entities.items() %}
+        <div class="metric-card" style="border-top: 3px solid {{ ent.color }}">
+            <div class="value" style="color: {{ ent.color }}">{{ analysis.avg_interest[code] }}</div>
+            <div class="label">{{ ent.short_name }}</div>
+            <div class="change {{ 'up' if analysis.momentum_pct[code] > 0 else 'down' }}">
+                {% if analysis.momentum_pct[code] > 0 %}&#9650;{% elif analysis.momentum_pct[code] < 0 %}&#9660;{% endif %}
+                {{ analysis.momentum_pct[code] }}% WoW
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+<div class="card">
+    <h2>Search Interest Over Time</h2>
+    {{ charts.interest_over_time | safe }}
+</div>
+
+<div class="card">
+    <h2>Last 7 Days Comparison</h2>
+    {{ charts.weekly_bars | safe }}
+</div>
+
+<div class="card">
+    <h2>Related Queries</h2>
+    {{ charts.related_queries | safe }}
+</div>
+{% endblock %}

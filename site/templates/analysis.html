@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}PolTrends Australia — Weekly Analysis{% endblock %}
+{% block content %}
+<p class="updated">Last updated: {{ updated }}</p>
+
+{% if analysis %}
+<div class="card">
+    <h2>Week in Review: {{ analysis.period.start }} to {{ analysis.period.end }}</h2>
+    <div class="metric-grid">
+        {% for code, ent in entities.items() %}
+        <div class="metric-card" style="border-top: 3px solid {{ ent.color }}">
+            <div class="value" style="color: {{ ent.color }}">{{ analysis.combined_scores[code] }}</div>
+            <div class="label">{{ ent.short_name }} (combined)</div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+{% if sentiment %}
+<div class="card">
+    <h2>Query Sentiment Analysis</h2>
+    {% for code, data in sentiment.items() %}
+    <div style="margin-bottom: 1.5rem;">
+        <h3 style="font-size: 0.95rem; margin-bottom: 0.5rem;">
+            <span style="color: {{ entities[code].color }}">&#9632;</span>
+            {{ entities[code].short_name }}
+            <span style="font-weight: 400; color: #999;">({{ data.queries_analysed }} queries)</span>
+        </h3>
+        {% set counts = data.sentiment_counts %}
+        {% set total = counts.positive + counts.negative + counts.neutral %}
+        {% if total > 0 %}
+        <div class="sentiment-bar">
+            <div class="pos" style="width: {{ (counts.positive / total * 100)|round }}%"></div>
+            <div class="neu" style="width: {{ (counts.neutral / total * 100)|round }}%"></div>
+            <div class="neg" style="width: {{ (counts.negative / total * 100)|round }}%"></div>
+        </div>
+        <div style="display: flex; gap: 1.5rem; font-size: 0.8rem; color: #666;">
+            <span>&#9632; Positive: {{ counts.positive }}</span>
+            <span style="color: #9E9E9E;">&#9632; Neutral: {{ counts.neutral }}</span>
+            <span style="color: #E53935;">&#9632; Negative: {{ counts.negative }}</span>
+            <span style="margin-left: auto;">Score: {{ data.sentiment_score }}</span>
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+{% if analysis and analysis.summary %}
+<div class="card">
+    <h2>Summary</h2>
+    <div style="font-size: 0.9rem; white-space: pre-wrap;">{{ analysis.summary }}</div>
+</div>
+{% endif %}
+{% endblock %}

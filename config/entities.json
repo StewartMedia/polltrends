@@ -1,0 +1,30 @@
+{
+  "entities": {
+    "ALP": {
+      "name": "Australian Labor Party",
+      "mid": "/m/0q96",
+      "color": "#E53935",
+      "short_name": "Labor"
+    },
+    "LIB": {
+      "name": "Liberal Party of Australia",
+      "mid": "/m/04p4r",
+      "color": "#1565C0",
+      "short_name": "Liberal"
+    },
+    "GRN": {
+      "name": "Australian Greens",
+      "mid": "/m/0171c7",
+      "color": "#43A047",
+      "short_name": "Greens"
+    },
+    "PHON": {
+      "name": "Pauline Hanson's One Nation",
+      "mid": "/m/0l8lg",
+      "color": "#FF8F00",
+      "short_name": "One Nation"
+    }
+  },
+  "geo": "AU",
+  "timeframe": "today 3-m"
+}

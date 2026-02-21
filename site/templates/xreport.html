@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}PolTrends Australia — X Report{% endblock %}
+{% block content %}
+<p class="updated">Last updated: {{ updated }}</p>
+
+<div class="card">
+    <h2>Daily X/Twitter Political Report (via Grok)</h2>
+    {% if grok_report %}
+    <div class="grok-report">{{ grok_report | safe }}</div>
+    {% else %}
+    <p style="color: #999;">No Grok report available yet. Reports are generated daily.</p>
+    {% endif %}
+</div>
+
+{% if grok_archive %}
+<div class="card">
+    <h2>Previous Reports</h2>
+    {% for entry in grok_archive %}
+    <details style="margin-bottom: 0.75rem;">
+        <summary style="cursor: pointer; font-weight: 500; font-size: 0.9rem;">{{ entry.date }}</summary>
+        <div class="grok-report" style="margin-top: 0.5rem; padding-left: 1rem; border-left: 2px solid #eee;">
+            {{ entry.report | safe }}
+        </div>
+    </details>
+    {% endfor %}
+</div>
+{% endif %}
+{% endblock %}

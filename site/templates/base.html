@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}PolTrends Australia{% endblock %}</title>
+    <script src="https://cdn.plot.ly/plotly-2.35.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f8f9fa;
+            color: #1a1a2e;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        header h1 { font-size: 1.6rem; font-weight: 700; }
+        header p { font-size: 0.9rem; opacity: 0.8; margin-top: 0.25rem; }
+        nav {
+            background: #16213e;
+            padding: 0.5rem 2rem;
+            display: flex;
+            gap: 1.5rem;
+        }
+        nav a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 0.3rem 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        nav a:hover, nav a.active {
+            color: white;
+            border-bottom-color: #e94560;
+        }
+        main { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .winner-banner {
+            background: linear-gradient(135deg, #e94560 0%, #c23152 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .winner-banner h2 { color: white; border: none; margin: 0; font-size: 1.4rem; }
+        .winner-banner p { opacity: 0.9; margin-top: 0.5rem; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+        .rq-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .rq-card h3 { font-size: 1rem; margin-bottom: 0.75rem; }
+        .rq-card h4 { font-size: 0.85rem; color: #666; margin-bottom: 0.5rem; }
+        .rq-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .rq-card table { width: 100%; font-size: 0.8rem; border-collapse: collapse; }
+        .rq-card th, .rq-card td { padding: 0.3rem 0.5rem; text-align: left; }
+        .rq-card th { color: #888; font-weight: 500; border-bottom: 1px solid #eee; }
+        .rq-card tr:nth-child(even) { background: #fafafa; }
+        .grok-report { white-space: pre-wrap; font-size: 0.9rem; }
+        .grok-report h2, .grok-report h3 { margin-top: 1rem; }
+        .sentiment-bar {
+            display: flex;
+            height: 24px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 0.5rem 0;
+        }
+        .sentiment-bar .pos { background: #43A047; }
+        .sentiment-bar .neu { background: #9E9E9E; }
+        .sentiment-bar .neg { background: #E53935; }
+        .metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+        @media (max-width: 768px) { .metric-grid { grid-template-columns: repeat(2, 1fr); } }
+        .metric-card {
+            text-align: center;
+            padding: 1rem;
+            border-radius: 8px;
+            background: #f8f9fa;
+        }
+        .metric-card .value { font-size: 1.8rem; font-weight: 700; }
+        .metric-card .label { font-size: 0.75rem; color: #666; margin-top: 0.25rem; }
+        .metric-card .change { font-size: 0.8rem; margin-top: 0.25rem; }
+        .change.up { color: #43A047; }
+        .change.down { color: #E53935; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #999;
+            font-size: 0.8rem;
+        }
+        .updated { font-size: 0.8rem; color: #999; text-align: right; margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PolTrends Australia</h1>
+        <p>Entity search interest tracking for Australian political parties</p>
+    </header>
+    <nav>
+        <a href="index.html" class="{{ 'active' if page == 'index' }}">Dashboard</a>
+        <a href="analysis.html" class="{{ 'active' if page == 'analysis' }}">Weekly Analysis</a>
+        <a href="xreport.html" class="{{ 'active' if page == 'xreport' }}">X Report</a>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        PolTrends Australia &mdash; Entity search data from Google Trends &mdash; Updated {{ updated }}
+    </footer>
+</body>
+</html>
