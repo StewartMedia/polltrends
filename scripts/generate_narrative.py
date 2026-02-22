@@ -2,6 +2,8 @@
 
 Feeds all real data (trends, spikes, news, sentiment) into the model and asks it
 to write a narrative connecting news events to search interest movements.
+
+Pre-computes rankings and key facts so the LLM cannot misinterpret the raw numbers.
 """
 import json
 import sys
@@ -16,14 +18,18 @@ from config.settings import ENTITIES, RAW_DIR, PROCESSED_DIR
 LM_STUDIO_URL = "http://localhost:1234/v1/chat/completions"
 LM_STUDIO_MODEL = "qwen2.5-7b-instruct"
 
-NARRATIVE_PROMPT = """You are an Australian political analyst writing a weekly briefing on how news events
-drove public search interest for political parties this week.
+SYSTEM_PROMPT = """You are an Australian political data analyst. You write factual weekly briefings
+based STRICTLY on the pre-computed facts and data provided. You MUST NOT contradict the rankings
+or numbers given in the VERIFIED FACTS section. If the facts say party X ranked #1, you must say
+party X ranked #1. Do not guess, infer, or invent any information not in the data."""
 
-You MUST only reference facts from the data provided below. Do not invent any events, names,
-or details. If the data doesn't explain a spike, say the cause is unclear from available data.
+NARRATIVE_PROMPT = """Write a weekly briefing on Australian political party search interest.
 
-## Search Interest Data (last 7 days)
-{interest_summary}
+## VERIFIED FACTS (you MUST use these exactly — do not contradict)
+{verified_facts}
+
+## Daily Search Interest Data
+{interest_table}
 
 ## Detected Spikes
 {spikes_summary}
@@ -36,37 +42,84 @@ or details. If the data doesn't explain a spike, say the cause is unclear from a
 
 ---
 
-Write a 3-5 paragraph weekly analysis in markdown format. Structure:
-1. Open with which party dominated search interest this week and the overall trend
-2. Connect specific news stories to observed spikes or changes in search interest
-3. Note any interesting patterns in related search queries and sentiment
-4. Close with a brief forward-looking observation
+Write a 3-5 paragraph weekly analysis in markdown format. Rules:
+1. Open with the #1 ranked party by search interest as stated in VERIFIED FACTS
+2. State the exact average scores and rankings from VERIFIED FACTS
+3. Connect specific news headlines to observed spikes or changes
+4. Note any interesting patterns in sentiment
+5. Close with a brief forward-looking observation
 
-Keep it factual, concise, and analytical. Australian English. No fluff."""
+CRITICAL: The rankings in VERIFIED FACTS are computed directly from the data and are correct.
+You must not reorder them or claim a different party was #1.
+Australian English. No fluff. Be concise."""
 
 
 def build_prompt_data() -> dict:
-    """Gather all data for the narrative prompt."""
+    """Gather all data for the narrative prompt, with pre-computed rankings."""
     raw_dirs = sorted(d for d in RAW_DIR.iterdir() if d.is_dir())
     proc_dirs = sorted(d for d in PROCESSED_DIR.iterdir() if d.is_dir())
 
     latest_raw = raw_dirs[-1] if raw_dirs else None
     latest_proc = proc_dirs[-1] if proc_dirs else None
 
-    # Interest over time - last 7 days
-    interest_summary = "No data available."
+    # Interest over time - last 7 days + pre-compute rankings
+    interest_table = "No data available."
+    verified_facts = "No data available."
     if latest_raw:
         iot_path = latest_raw / "interest_over_time.json"
         if iot_path.exists():
             with open(iot_path) as f:
                 iot = json.load(f)
             records = iot.get("data", [])[-7:]
+
+            # Build readable table
             lines = []
+            header = "Date       | " + " | ".join(
+                f"{ENTITIES[c]['short_name']:>12}" for c in ENTITIES
+            )
+            lines.append(header)
+            lines.append("-" * len(header))
             for r in records:
-                parts = [f"{code}: {r.get(code, 0)}" for code in ENTITIES]
-                lines.append(f"{r['date']} — {', '.join(parts)}")
-            if lines:
-                interest_summary = "\n".join(lines)
+                row = f"{r['date']} | " + " | ".join(
+                    f"{r.get(code, 0):>12}" for code in ENTITIES
+                )
+                lines.append(row)
+            interest_table = "\n".join(lines)
+
+            # Pre-compute verified facts the LLM MUST use
+            averages = {}
+            for code in ENTITIES:
+                vals = [r.get(code, 0) for r in records]
+                averages[code] = round(sum(vals) / len(vals), 1)
+
+            # Sort by average descending
+            ranked = sorted(averages.items(), key=lambda x: x[1], reverse=True)
+
+            # Build verified facts
+            fact_lines = []
+            period_start = records[0]["date"] if records else "N/A"
+            period_end = records[-1]["date"] if records else "N/A"
+            fact_lines.append(f"- Period: {period_start} to {period_end}")
+            fact_lines.append(f"- RANKING BY AVERAGE SEARCH INTEREST (highest to lowest):")
+            for rank, (code, avg) in enumerate(ranked, 1):
+                name = ENTITIES[code]["short_name"]
+                vals = [r.get(code, 0) for r in records]
+                peak = max(vals)
+                low = min(vals)
+                peak_date = records[vals.index(peak)]["date"]
+                fact_lines.append(
+                    f"  #{rank}: {name} — average {avg}, peak {peak} on {peak_date}, low {low}"
+                )
+
+            winner_name = ENTITIES[ranked[0][0]]["short_name"]
+            fact_lines.append(f"- THE #1 PARTY THIS WEEK IS: {winner_name} (avg: {ranked[0][1]})")
+            fact_lines.append(f"- THE #2 PARTY THIS WEEK IS: {ENTITIES[ranked[1][0]]['short_name']} (avg: {ranked[1][1]})")
+            if len(ranked) > 2:
+                fact_lines.append(f"- THE #3 PARTY THIS WEEK IS: {ENTITIES[ranked[2][0]]['short_name']} (avg: {ranked[2][1]})")
+            if len(ranked) > 3:
+                fact_lines.append(f"- THE #4 PARTY THIS WEEK IS: {ENTITIES[ranked[3][0]]['short_name']} (avg: {ranked[3][1]})")
+
+            verified_facts = "\n".join(fact_lines)
 
     # Spikes
     spikes_summary = "No significant spikes detected."
@@ -125,7 +178,8 @@ def build_prompt_data() -> dict:
                 sentiment_summary = "\n".join(lines)
 
     return {
-        "interest_summary": interest_summary,
+        "verified_facts": verified_facts,
+        "interest_table": interest_table,
         "spikes_summary": spikes_summary,
         "news_summary": news_summary,
         "sentiment_summary": sentiment_summary,
@@ -142,8 +196,11 @@ def generate_narrative() -> str:
             LM_STUDIO_URL,
             json={
                 "model": LM_STUDIO_MODEL,
-                "messages": [{"role": "user", "content": prompt}],
-                "temperature": 0.4,
+                "messages": [
+                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "user", "content": prompt},
+                ],
+                "temperature": 0.3,
                 "max_tokens": 1500,
             },
             timeout=120,
@@ -161,6 +218,11 @@ def generate_narrative() -> str:
 
 def main():
     print("Generating weekly narrative via local LLM...")
+
+    # Print the verified facts so the user can see what the LLM was given
+    data = build_prompt_data()
+    print(f"\nVerified facts:\n{data['verified_facts']}\n")
+
     narrative = generate_narrative()
 
     if not narrative:
