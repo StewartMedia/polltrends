@@ -1,39 +1,37 @@
-"""Weekly analysis: who won the week in search interest and sentiment."""
+"""Weekly analysis: who won the week in search interest and sentiment.
+
+Supports multi-geo: national (AU) and Victoria (AU-VIC).
+"""
 import json
 import sys
 from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from config.settings import ENTITIES, RAW_DIR, PROCESSED_DIR
+from config.settings import ENTITIES, RAW_DIR, PROCESSED_DIR, VIC_ENTITIES
 
 
-def load_latest_data():
-    """Load most recent interest-over-time and sentiment data."""
-    raw_dirs = sorted(d for d in RAW_DIR.iterdir() if d.is_dir())
-    proc_dirs = sorted(d for d in PROCESSED_DIR.iterdir() if d.is_dir())
-
+def load_data(raw_dir: Path, proc_dir: Path):
+    """Load interest-over-time and sentiment data from given directories."""
     iot_data = {}
-    if raw_dirs:
-        iot_path = raw_dirs[-1] / "interest_over_time.json"
-        if iot_path.exists():
-            with open(iot_path) as f:
-                iot_data = json.load(f)
+    iot_path = raw_dir / "interest_over_time.json"
+    if iot_path.exists():
+        with open(iot_path) as f:
+            iot_data = json.load(f)
 
     sentiment_data = {}
-    if proc_dirs:
-        sent_path = proc_dirs[-1] / "sentiment_analysis.json"
-        if sent_path.exists():
-            with open(sent_path) as f:
-                sentiment_data = json.load(f)
+    sent_path = proc_dir / "sentiment_analysis.json"
+    if sent_path.exists():
+        with open(sent_path) as f:
+            sentiment_data = json.load(f)
 
     return iot_data, sentiment_data
 
 
-def determine_winner(iot_data: dict, sentiment_data: dict) -> dict:
+def determine_winner(iot_data: dict, sentiment_data: dict, entities: dict) -> dict:
     """Determine who won the week based on search interest and sentiment."""
     records = iot_data.get("data", [])
-    codes = list(ENTITIES.keys())
+    codes = list(entities.keys())
 
     # Last 7 days average search interest
     last_7 = records[-7:] if len(records) >= 7 else records
@@ -94,16 +92,16 @@ def determine_winner(iot_data: dict, sentiment_data: dict) -> dict:
         "search_winner": search_winner,
         "overall_winner": overall_winner,
         "summary": build_summary(
-            overall_winner, avg_interest, momentum, sentiment_scores, period_start, period_end
+            overall_winner, avg_interest, momentum, sentiment_scores, period_start, period_end, entities
         ),
     }
 
     return analysis
 
 
-def build_summary(winner, avg_interest, momentum, sentiment_scores, start, end) -> str:
+def build_summary(winner, avg_interest, momentum, sentiment_scores, start, end, entities) -> str:
     """Build a human-readable weekly summary."""
-    ent = ENTITIES[winner]
+    ent = entities[winner]
     lines = [
         f"## Week in Review: {start} to {end}",
         "",
@@ -114,8 +112,8 @@ def build_summary(winner, avg_interest, momentum, sentiment_scores, start, end) 
         "",
     ]
 
-    for code in ENTITIES:
-        e = ENTITIES[code]
+    for code in entities:
+        e = entities[code]
         m = momentum.get(code, 0)
         m_str = f"+{m}%" if m > 0 else f"{m}%"
         s = sentiment_scores.get(code, 0)
@@ -128,26 +126,65 @@ def build_summary(winner, avg_interest, momentum, sentiment_scores, start, end) 
     return "\n".join(lines)
 
 
-def main():
-    print("Running weekly analysis...")
-    iot_data, sentiment_data = load_latest_data()
+def run_weekly_analysis(entities: dict, raw_dir: Path, proc_dir: Path, out_dir: Path, label: str = "national"):
+    """Run weekly analysis for a given geo."""
+    print(f"\nRunning {label} weekly analysis...")
+
+    iot_data, sentiment_data = load_data(raw_dir, proc_dir)
 
     if not iot_data.get("data"):
-        print("No interest data available. Run fetch_trends.py first.")
-        return
+        print(f"  No interest data available for {label}.")
+        return None
 
-    analysis = determine_winner(iot_data, sentiment_data)
+    analysis = determine_winner(iot_data, sentiment_data, entities)
 
-    today = date.today().isoformat()
-    out_dir = PROCESSED_DIR / today
     out_dir.mkdir(parents=True, exist_ok=True)
 
     with open(out_dir / "weekly_analysis.json", "w") as f:
         json.dump(analysis, f, indent=2)
 
-    print(f"\nWeekly analysis saved to {out_dir}")
+    print(f"  {label.title()} weekly analysis saved to {out_dir}")
     print(f"\n{analysis['summary']}")
     return analysis
+
+
+def main():
+    """Run national weekly analysis."""
+    raw_dirs = sorted(d for d in RAW_DIR.iterdir() if d.is_dir())
+    proc_dirs = sorted(d for d in PROCESSED_DIR.iterdir() if d.is_dir())
+
+    if not raw_dirs:
+        print("No data found.")
+        return
+
+    latest_raw = raw_dirs[-1]
+    latest_proc = proc_dirs[-1] if proc_dirs else None
+
+    today = date.today().isoformat()
+    out_dir = PROCESSED_DIR / today
+
+    return run_weekly_analysis(ENTITIES, latest_raw, latest_proc or out_dir, out_dir, label="national")
+
+
+def analyse_victoria():
+    """Run Victoria weekly analysis."""
+    raw_dirs = sorted(d for d in RAW_DIR.iterdir() if d.is_dir())
+    proc_dirs = sorted(d for d in PROCESSED_DIR.iterdir() if d.is_dir())
+
+    if not raw_dirs:
+        print("No data found.")
+        return
+
+    latest_raw = raw_dirs[-1]
+    vic_raw = latest_raw / "victoria"
+    if not vic_raw.exists():
+        print("No Victoria data found.")
+        return
+
+    today = date.today().isoformat()
+    vic_proc = PROCESSED_DIR / today / "victoria"
+
+    return run_weekly_analysis(VIC_ENTITIES, vic_raw, vic_proc, vic_proc, label="victoria")
 
 
 if __name__ == "__main__":

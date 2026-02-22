@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}PolTrends Australia{% endblock %}</title>
+    <title>PolTrends Australia — Victoria State Election</title>
     <script src="https://cdn.plot.ly/plotly-2.35.0.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -144,16 +144,37 @@
         <p>Entity search interest tracking for Australian political parties</p>
     </header>
     <nav>
-        <a href="index.html" class="{{ 'active' if page == 'index' }}">Dashboard</a>
-        <a href="analysis.html" class="{{ 'active' if page == 'analysis' }}">Weekly Analysis</a>
-        <a href="xreport.html" class="{{ 'active' if page == 'xreport' }}">News</a>
-        <a href="victoria.html" class="{{ 'active' if page == 'victoria' }}" style="border-left: 1px solid rgba(255,255,255,0.2); padding-left: 1.5rem;">Victoria</a>
+        <a href="index.html" class="">Dashboard</a>
+        <a href="analysis.html" class="">Weekly Analysis</a>
+        <a href="xreport.html" class="">News</a>
+        <a href="victoria.html" class="active" style="border-left: 1px solid rgba(255,255,255,0.2); padding-left: 1.5rem;">Victoria</a>
     </nav>
     <main>
-        {% block content %}{% endblock %}
+        
+<p class="updated">Last updated: 2026-02-22</p>
+
+<div class="card" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white;">
+    <h2 style="color: white; border-bottom-color: rgba(255,255,255,0.2);">Victoria — State Election Tracker</h2>
+    <p style="opacity: 0.8; font-size: 0.9rem;">Tracking entity search interest for Victorian political parties (geo: AU-VIC)</p>
+</div>
+
+
+
+
+<div class="card">
+    <p style="color: #999;">No Victoria trends data available yet. Data is fetched daily.</p>
+</div>
+
+
+
+
+
+
+
+
     </main>
     <footer>
-        PolTrends Australia &mdash; Entity search data from Google Trends &mdash; Updated {{ updated }}
+        PolTrends Australia &mdash; Entity search data from Google Trends &mdash; Updated 2026-02-22
     </footer>
 </body>
 </html>

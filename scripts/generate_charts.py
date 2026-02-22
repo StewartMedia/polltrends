@@ -1,4 +1,8 @@
-"""Generate interactive Plotly charts from trends data."""
+"""Generate interactive Plotly charts from trends data.
+
+All chart builders accept entities and party_colors as parameters
+so they can be reused for both national and Victoria data.
+"""
 import json
 import sys
 from datetime import date
@@ -8,58 +12,72 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from config.settings import ENTITIES, PARTY_COLORS, RAW_DIR, PROCESSED_DIR, OUTPUT_DIR
+from config.settings import (
+    ENTITIES, PARTY_COLORS, RAW_DIR, PROCESSED_DIR, OUTPUT_DIR,
+    VIC_ENTITIES, VIC_PARTY_COLORS,
+)
 
 
-def load_latest_iot() -> dict:
+def load_latest_iot(subdir: str | None = None) -> dict:
     """Load the most recent interest-over-time data."""
-    raw_dirs = sorted(RAW_DIR.iterdir())
+    raw_dirs = sorted(d for d in RAW_DIR.iterdir() if d.is_dir())
     if not raw_dirs:
         raise FileNotFoundError("No raw data found. Run fetch_trends.py first.")
 
     latest = raw_dirs[-1]
-    with open(latest / "interest_over_time.json") as f:
+    target = latest / subdir if subdir else latest
+    with open(target / "interest_over_time.json") as f:
         return json.load(f)
 
 
-def load_latest_related_queries() -> dict:
+def load_latest_related_queries(subdir: str | None = None) -> dict:
     """Load the most recent related queries data."""
-    raw_dirs = sorted(RAW_DIR.iterdir())
+    raw_dirs = sorted(d for d in RAW_DIR.iterdir() if d.is_dir())
     latest = raw_dirs[-1]
-    with open(latest / "related_queries.json") as f:
+    target = latest / subdir if subdir else latest
+    with open(target / "related_queries.json") as f:
         return json.load(f)
 
 
-def load_spikes() -> list[dict]:
+def load_spikes(subdir: str | None = None) -> list[dict]:
     """Load spike annotations from processed data."""
     proc_dirs = sorted(d for d in PROCESSED_DIR.iterdir() if d.is_dir())
     for d in reversed(proc_dirs):
-        path = d / "spikes.json"
+        target = d / subdir if subdir else d
+        path = target / "spikes.json"
         if path.exists():
             with open(path) as f:
                 return json.load(f)
     return []
 
 
-def build_interest_chart(iot_data: dict, spikes: list[dict] | None = None) -> str:
+def build_interest_chart(
+    iot_data: dict,
+    spikes: list[dict] | None = None,
+    entities: dict | None = None,
+    party_colors: dict | None = None,
+    title: str = "Australian Political Party Search Interest",
+) -> str:
     """Build the main interest-over-time comparison chart with news annotations."""
+    entities = entities or ENTITIES
+    party_colors = party_colors or PARTY_COLORS
+
     records = iot_data.get("data", [])
     if not records:
         return "<p>No data available.</p>"
 
     dates = [r["date"] for r in records]
-    date_to_values = {r["date"]: r for r in records}
 
     fig = go.Figure()
 
-    for code, ent in ENTITIES.items():
+    for code, ent in entities.items():
         values = [r.get(code, 0) for r in records]
         fig.add_trace(go.Scatter(
             x=dates,
             y=values,
             mode="lines",
             name=ent["short_name"],
-            line=dict(color=PARTY_COLORS[code], width=2.5),
+            line=dict(color=party_colors[code], width=2.5),
             hovertemplate=f"{ent['short_name']}: %{{y}}<br>%{{x}}<extra></extra>",
         ))
 
@@ -71,7 +89,11 @@ def build_interest_chart(iot_data: dict, spikes: list[dict] | None = None) -> st
             party_code = spike["party_code"]
             explanation = spike.get("explanation", "Spike detected")
             value = spike.get("value", 0)
-            color = PARTY_COLORS.get(party_code, "#333")
+            color = party_colors.get(party_code, "#333")
+
+            # Skip if party not in this entity set
+            if party_code not in entities:
+                continue
 
             # Truncate explanation for annotation label
             short_label = explanation[:60] + "..." if len(explanation) > 60 else explanation
@@ -81,7 +103,7 @@ def build_interest_chart(iot_data: dict, spikes: list[dict] | None = None) -> st
                 y=value,
                 xref="x",
                 yref="y",
-                text=f"<b>{ENTITIES[party_code]['short_name']}</b><br>{short_label}",
+                text=f"<b>{entities[party_code]['short_name']}</b><br>{short_label}",
                 showarrow=True,
                 arrowhead=2,
                 arrowsize=1,
@@ -99,7 +121,7 @@ def build_interest_chart(iot_data: dict, spikes: list[dict] | None = None) -> st
 
     fig.update_layout(
         title=dict(
-            text="Australian Political Party Search Interest",
+            text=title,
             font=dict(size=20),
         ),
         xaxis_title="Date",
@@ -121,14 +143,22 @@ def build_interest_chart(iot_data: dict, spikes: list[dict] | None = None) -> st
     return fig.to_html(full_html=False, include_plotlyjs=False)
 
 
-def build_weekly_bars(iot_data: dict) -> str:
+def build_weekly_bars(
+    iot_data: dict,
+    entities: dict | None = None,
+    party_colors: dict | None = None,
+    title_prefix: str = "Average Search Interest",
+) -> str:
     """Build a bar chart showing average search interest for the most recent 7 days."""
+    entities = entities or ENTITIES
+    party_colors = party_colors or PARTY_COLORS
+
     records = iot_data.get("data", [])
     if len(records) < 7:
         return "<p>Not enough data for weekly summary.</p>"
 
     last_7 = records[-7:]
-    codes = list(ENTITIES.keys())
+    codes = list(entities.keys())
 
     avgs = {}
     for code in codes:
@@ -136,9 +166,9 @@ def build_weekly_bars(iot_data: dict) -> str:
 
     fig = go.Figure()
     fig.add_trace(go.Bar(
-        x=[ENTITIES[c]["short_name"] for c in codes],
+        x=[entities[c]["short_name"] for c in codes],
         y=[avgs[c] for c in codes],
-        marker_color=[PARTY_COLORS[c] for c in codes],
+        marker_color=[party_colors[c] for c in codes],
         text=[f"{avgs[c]:.1f}" for c in codes],
         textposition="auto",
     ))
@@ -148,7 +178,7 @@ def build_weekly_bars(iot_data: dict) -> str:
 
     fig.update_layout(
         title=dict(
-            text=f"Average Search Interest — Last 7 Days ({period_start} to {period_end})",
+            text=f"{title_prefix} — Last 7 Days ({period_start} to {period_end})",
             font=dict(size=18),
         ),
         yaxis_title="Avg Search Interest",
@@ -160,15 +190,22 @@ def build_weekly_bars(iot_data: dict) -> str:
     return fig.to_html(full_html=False, include_plotlyjs=False)
 
 
-def build_related_queries_table(rq_data: dict) -> str:
+def build_related_queries_table(
+    rq_data: dict,
+    entities: dict | None = None,
+    party_colors: dict | None = None,
+) -> str:
     """Build an HTML table of top/rising related queries per party."""
+    entities = entities or ENTITIES
+    party_colors = party_colors or PARTY_COLORS
+
     html = ""
-    for code, ent in ENTITIES.items():
+    for code, ent in entities.items():
         queries = rq_data.get(code, {})
         top = queries.get("top", [])[:10]
         rising = queries.get("rising", [])[:10]
 
-        html += f'<div class="rq-card" style="border-left: 4px solid {PARTY_COLORS[code]}">\n'
+        html += f'<div class="rq-card" style="border-left: 4px solid {party_colors[code]}">\n'
         html += f'<h3>{ent["short_name"]} — Related Queries</h3>\n'
         html += '<div class="rq-columns">\n'
 

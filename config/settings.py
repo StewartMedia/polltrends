@@ -14,9 +14,14 @@ OUTPUT_DIR = ROOT_DIR / "docs"  # GitHub Pages serves from /docs
 with open(CONFIG_DIR / "entities.json") as f:
     _config = json.load(f)
 
+# Federal (national)
 ENTITIES = _config["entities"]
 GEO = _config["geo"]
 TIMEFRAME = _config["timeframe"]
-
-# Party colors for charts
 PARTY_COLORS = {code: ent["color"] for code, ent in ENTITIES.items()}
+
+# Victoria
+_vic = _config.get("victoria", {})
+VIC_ENTITIES = _vic.get("entities", {})
+VIC_GEO = _vic.get("geo", "AU-VIC")
+VIC_PARTY_COLORS = {code: ent["color"] for code, ent in VIC_ENTITIES.items()}

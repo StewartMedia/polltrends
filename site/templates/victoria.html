@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% block title %}PolTrends Australia — Victoria State Election{% endblock %}
+{% block content %}
+<p class="updated">Last updated: {{ updated }}</p>
+
+<div class="card" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white;">
+    <h2 style="color: white; border-bottom-color: rgba(255,255,255,0.2);">Victoria — State Election Tracker</h2>
+    <p style="opacity: 0.8; font-size: 0.9rem;">Tracking entity search interest for Victorian political parties (geo: AU-VIC)</p>
+</div>
+
+{% if vic_analysis %}
+<div class="winner-banner">
+    <h2>{{ vic_analysis.search_winner_name }} is front of mind this week in Victoria</h2>
+    <p>Avg search interest: {{ vic_analysis.avg_interest[vic_analysis.search_winner] }}
+    {% if vic_analysis.momentum_pct[vic_analysis.search_winner] > 0 %}
+     (up {{ vic_analysis.momentum_pct[vic_analysis.search_winner] }}% WoW)
+    {% elif vic_analysis.momentum_pct[vic_analysis.search_winner] < 0 %}
+     (down {{ vic_analysis.momentum_pct[vic_analysis.search_winner]|abs }}% WoW)
+    {% endif %}
+    </p>
+</div>
+
+<div class="card">
+    <div class="metric-grid" style="grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));">
+        {% for code, ent in vic_entities.items() %}
+        <div class="metric-card" style="border-top: 3px solid {{ ent.color }}">
+            <div class="value" style="color: {{ ent.color }}">{{ vic_analysis.avg_interest[code] }}</div>
+            <div class="label">{{ ent.short_name }}</div>
+            <div class="change {{ 'up' if vic_analysis.momentum_pct[code] > 0 else 'down' }}">
+                {% if vic_analysis.momentum_pct[code] > 0 %}&#9650;{% elif vic_analysis.momentum_pct[code] < 0 %}&#9660;{% endif %}
+                {{ vic_analysis.momentum_pct[code] }}% WoW
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+{% if vic_charts %}
+<div class="card">
+    <h2>Victoria — Search Interest Over Time</h2>
+    {{ vic_charts.interest_over_time | safe }}
+</div>
+
+<div class="card">
+    <h2>Victoria — Last 7 Days Comparison</h2>
+    {{ vic_charts.weekly_bars | safe }}
+</div>
+
+<div class="card">
+    <h2>Victoria — Related Queries</h2>
+    {{ vic_charts.related_queries | safe }}
+</div>
+{% else %}
+<div class="card">
+    <p style="color: #999;">No Victoria trends data available yet. Data is fetched daily.</p>
+</div>
+{% endif %}
+
+{% if vic_news %}
+<div class="card">
+    <h2>Victoria — Latest News</h2>
+    {% for code, ent in vic_entities.items() %}
+    {% set articles = vic_news.get(code, []) %}
+    {% if articles %}
+    <div style="margin-bottom: 1.5rem;">
+        <h3 style="font-size: 0.95rem; border-left: 4px solid {{ ent.color }}; padding-left: 0.75rem; margin-bottom: 0.5rem;">
+            {{ ent.short_name }}
+        </h3>
+        {% for article in articles[:5] %}
+        <div class="news-item">
+            <a href="{{ article.url }}" target="_blank" rel="noopener" class="news-title">{{ article.title }}</a>
+            <span class="news-meta">{{ article.source }} — {{ article.date }}</span>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+{% endif %}
+
+{% if vic_spikes %}
+<div class="card">
+    <h2>Victoria — Recent Spikes &amp; Associated News</h2>
+    {% for spike in vic_spikes %}
+    <div class="spike-item" style="border-left: 4px solid {{ vic_entities[spike.party_code].color }}; padding-left: 1rem; margin-bottom: 1.5rem;">
+        <div class="spike-header">
+            <strong>{{ spike.party_name }}</strong> — {{ spike.date }}
+            <span class="spike-ratio">{{ spike.ratio }}x above average (score: {{ spike.value }})</span>
+        </div>
+        {% if spike.news %}
+        <ul class="spike-news">
+            {% for article in spike.news %}
+            <li><a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title }}</a>
+                <span class="news-meta">{{ article.source }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p class="spike-no-news">No matching news articles found for this date.</p>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+{% if vic_sentiment %}
+<div class="card">
+    <h2>Victoria — Query Sentiment</h2>
+    {% for code, data in vic_sentiment.items() %}
+    <div style="margin-bottom: 1.5rem;">
+        <h3 style="font-size: 0.95rem; margin-bottom: 0.5rem;">
+            <span style="color: {{ vic_entities[code].color }}">&#9632;</span>
+            {{ vic_entities[code].short_name }}
+            <span style="font-weight: 400; color: #999;">({{ data.queries_analysed }} queries)</span>
+        </h3>
+        {% set counts = data.sentiment_counts %}
+        {% set total = counts.positive + counts.negative + counts.neutral %}
+        {% if total > 0 %}
+        <div class="sentiment-bar">
+            <div class="pos" style="width: {{ (counts.positive / total * 100)|round }}%"></div>
+            <div class="neu" style="width: {{ (counts.neutral / total * 100)|round }}%"></div>
+            <div class="neg" style="width: {{ (counts.negative / total * 100)|round }}%"></div>
+        </div>
+        <div style="display: flex; gap: 1.5rem; font-size: 0.8rem; color: #666;">
+            <span>&#9632; Positive: {{ counts.positive }}</span>
+            <span style="color: #9E9E9E;">&#9632; Neutral: {{ counts.neutral }}</span>
+            <span style="color: #E53935;">&#9632; Negative: {{ counts.negative }}</span>
+            <span style="margin-left: auto;">Score: {{ data.sentiment_score }}</span>
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+{% endblock %}

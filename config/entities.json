@@ -26,5 +26,52 @@
     }
   },
   "geo": "AU",
-  "timeframe": "today 3-m"
+  "timeframe": "today 3-m",
+  "victoria": {
+    "geo": "AU-VIC",
+    "entities": {
+      "ALP": {
+        "name": "Australian Labor Party",
+        "mid": "/m/0q96",
+        "color": "#E53935",
+        "short_name": "Labor"
+      },
+      "LIB": {
+        "name": "Liberal Party of Australia",
+        "mid": "/m/04p4r",
+        "color": "#1565C0",
+        "short_name": "Liberal"
+      },
+      "GRN": {
+        "name": "Australian Greens",
+        "mid": "/m/0171c7",
+        "color": "#43A047",
+        "short_name": "Greens"
+      },
+      "PHON": {
+        "name": "Pauline Hanson's One Nation",
+        "mid": "/m/0l8lg",
+        "color": "#FF8F00",
+        "short_name": "One Nation"
+      },
+      "AJP": {
+        "name": "Animal Justice Party",
+        "mid": "/m/0j3dlg7",
+        "color": "#8E24AA",
+        "short_name": "Animal Justice"
+      },
+      "RSN": {
+        "name": "Reason Party",
+        "mid": "/m/04zy__7",
+        "color": "#00ACC1",
+        "short_name": "Reason"
+      },
+      "LDP": {
+        "name": "Liberal Democratic Party",
+        "mid": "/m/09g1_s",
+        "color": "#F9A825",
+        "short_name": "Lib Dems"
+      }
+    }
+  }
 }

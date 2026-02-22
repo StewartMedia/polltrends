@@ -2,6 +2,7 @@
 
 Classifies each related query as positive/negative/neutral for the associated party.
 Uses a simple keyword lexicon approach - no API dependencies.
+Supports multi-geo: national (AU) and Victoria (AU-VIC).
 """
 import json
 import sys
@@ -9,7 +10,7 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from config.settings import ENTITIES, RAW_DIR, PROCESSED_DIR
+from config.settings import ENTITIES, RAW_DIR, PROCESSED_DIR, VIC_ENTITIES
 
 # Keyword lexicons for political sentiment
 NEGATIVE_KEYWORDS = [
@@ -47,26 +48,20 @@ def classify_query(query: str) -> str:
     return "neutral"
 
 
-def analyse_week():
-    """Analyse related queries from the most recent data."""
-    raw_dirs = sorted(d for d in RAW_DIR.iterdir() if d.is_dir())
-    if not raw_dirs:
-        print("No data found.")
-        return
-
-    latest = raw_dirs[-1]
-    rq_path = latest / "related_queries.json"
+def run_sentiment_analysis(entities: dict, raw_dir: Path, out_dir: Path, label: str = "national"):
+    """Analyse related queries sentiment for a given geo."""
+    rq_path = raw_dir / "related_queries.json"
     if not rq_path.exists():
-        print(f"No related queries in {latest}")
-        return
+        print(f"  No related queries at {rq_path}")
+        return None
 
     with open(rq_path) as f:
         rq_data = json.load(f)
 
     results = {}
 
-    for code, ent in ENTITIES.items():
-        print(f"Analysing sentiment for {ent['short_name']}...")
+    for code, ent in entities.items():
+        print(f"  Analysing sentiment for {ent['short_name']}...")
         party_queries = rq_data.get(code, {})
 
         all_queries = []
@@ -102,15 +97,46 @@ def analyse_week():
         }
 
     # Save
-    today = date.today().isoformat()
-    out_dir = PROCESSED_DIR / today
     out_dir.mkdir(parents=True, exist_ok=True)
 
     with open(out_dir / "sentiment_analysis.json", "w") as f:
         json.dump(results, f, indent=2)
 
-    print(f"Sentiment analysis saved to {out_dir}")
+    print(f"  {label.title()} sentiment analysis saved to {out_dir}")
     return results
+
+
+def analyse_week():
+    """Analyse related queries from the most recent national data."""
+    raw_dirs = sorted(d for d in RAW_DIR.iterdir() if d.is_dir())
+    if not raw_dirs:
+        print("No data found.")
+        return
+
+    latest = raw_dirs[-1]
+    today = date.today().isoformat()
+    out_dir = PROCESSED_DIR / today
+
+    return run_sentiment_analysis(ENTITIES, latest, out_dir, label="national")
+
+
+def analyse_victoria():
+    """Analyse related queries from the most recent Victoria data."""
+    raw_dirs = sorted(d for d in RAW_DIR.iterdir() if d.is_dir())
+    if not raw_dirs:
+        print("No data found.")
+        return
+
+    latest = raw_dirs[-1]
+    vic_raw = latest / "victoria"
+    if not vic_raw.exists():
+        print("No Victoria data found.")
+        return
+
+    today = date.today().isoformat()
+    out_dir = PROCESSED_DIR / today / "victoria"
+
+    return run_sentiment_analysis(VIC_ENTITIES, vic_raw, out_dir, label="victoria")
 
 
 def main():
