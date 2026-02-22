@@ -1,0 +1,109 @@
+[
+  {
+    "date": "2026-01-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 60,
+    "rolling_avg": 4.9,
+    "ratio": 12.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-21",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 18,
+    "rolling_avg": 1.7,
+    "ratio": 10.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2025-12-11",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 24,
+    "rolling_avg": 2.4,
+    "ratio": 9.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-13",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 13,
+    "rolling_avg": 1.6,
+    "ratio": 8.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-12",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 84,
+    "rolling_avg": 10.6,
+    "ratio": 7.9,
+    "explanation": "Former Victoria Liberal Party president Michael Kroger says Labor\u2019s playbook is to \u201cbuy election victories\u201d.",
+    "news": [
+      {
+        "title": "Former Victoria Liberal Party president Michael Kroger says Labor\u2019s playbook is to \u201cbuy election victories\u201d.",
+        "source": "facebook.com",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNOUNkRXBHa2h5U0Y1SkxmVVBqcVc1UFNpOHgzOGdpSEc1ZVYzVk5lU2pndmNoYzJaTzBqbHBqTS1qdUc1cGxrbFIzQ0xBMlNSQkV6YzEtX2w1M3NJbTAtQXRmNlhYRFNOU3J3QXpGVjNPcDJwMXdEaFhxeHRrQ2NyRV9UMFd1NmVvNzBybGxjNk15Z0pNeDNUMUhmb0h4aDhNdVpRM2xDUDRMdGFtQkJmbDljWjZhM0puNnkwV01KM2dIbFN2eFBqbTJsU19VTzhHNXFNRXhpVExEVExLby1V?oc=5",
+        "date": "2026-02-12"
+      }
+    ]
+  },
+  {
+    "date": "2025-12-26",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 16,
+    "rolling_avg": 2.1,
+    "ratio": 7.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-22",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 30,
+    "rolling_avg": 4.3,
+    "ratio": 7.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2025-12-08",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 23,
+    "rolling_avg": 3.3,
+    "ratio": 7.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2025-12-15",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 11,
+    "rolling_avg": 1.7,
+    "ratio": 6.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2025-12-23",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 15,
+    "rolling_avg": 2.4,
+    "ratio": 6.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]
