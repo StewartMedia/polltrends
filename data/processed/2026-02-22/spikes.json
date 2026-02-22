@@ -3,9 +3,9 @@
     "date": "2026-01-09",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 33,
+    "value": 34,
     "rolling_avg": 4.3,
-    "ratio": 7.7,
+    "ratio": 7.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -14,8 +14,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 62,
-    "rolling_avg": 8.6,
-    "ratio": 7.2,
+    "rolling_avg": 8.7,
+    "ratio": 7.1,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -34,8 +34,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 33,
-    "rolling_avg": 6.4,
-    "ratio": 5.1,
+    "rolling_avg": 6.6,
+    "ratio": 5.0,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -81,8 +81,8 @@
     "party_code": "LIB",
     "party_name": "Liberal",
     "value": 35,
-    "rolling_avg": 9.6,
-    "ratio": 3.7,
+    "rolling_avg": 9.7,
+    "ratio": 3.6,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -91,7 +91,7 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 44,
-    "rolling_avg": 13.7,
+    "rolling_avg": 13.9,
     "ratio": 3.2,
     "explanation": "Significant spike in search interest",
     "news": []
@@ -101,7 +101,7 @@
     "party_code": "LIB",
     "party_name": "Liberal",
     "value": 21,
-    "rolling_avg": 7.4,
+    "rolling_avg": 7.6,
     "ratio": 2.8,
     "explanation": "Significant spike in search interest",
     "news": []

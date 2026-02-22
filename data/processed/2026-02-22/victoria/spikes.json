@@ -67,6 +67,16 @@
     "news": []
   },
   {
+    "date": "2025-12-15",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 12,
+    "rolling_avg": 1.7,
+    "ratio": 7.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
     "date": "2026-01-22",
     "party_code": "LIB",
     "party_name": "Liberal",
@@ -83,16 +93,6 @@
     "value": 23,
     "rolling_avg": 3.3,
     "ratio": 7.0,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2025-12-15",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 11,
-    "rolling_avg": 1.7,
-    "ratio": 6.4,
     "explanation": "Significant spike in search interest",
     "news": []
   },
