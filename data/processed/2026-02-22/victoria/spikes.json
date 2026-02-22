@@ -1,38 +1,28 @@
 [
   {
+    "date": "2025-12-08",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 26,
+    "rolling_avg": 1.7,
+    "ratio": 15.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
     "date": "2026-01-10",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 60,
-    "rolling_avg": 4.9,
-    "ratio": 12.4,
+    "value": 58,
+    "rolling_avg": 4.4,
+    "ratio": 13.1,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-01-21",
+    "date": "2026-01-20",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 18,
-    "rolling_avg": 1.7,
-    "ratio": 10.5,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2025-12-11",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 24,
-    "rolling_avg": 2.4,
-    "ratio": 9.9,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-01-13",
-    "party_code": "ALP",
-    "party_name": "Labor",
     "value": 13,
     "rolling_avg": 1.6,
     "ratio": 8.3,
@@ -43,9 +33,9 @@
     "date": "2026-02-12",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 84,
-    "rolling_avg": 10.6,
-    "ratio": 7.9,
+    "value": 81,
+    "rolling_avg": 10.1,
+    "ratio": 8.0,
     "explanation": "Former Victoria Liberal Party president Michael Kroger says Labor\u2019s playbook is to \u201cbuy election victories\u201d.",
     "news": [
       {
@@ -57,52 +47,69 @@
     ]
   },
   {
-    "date": "2025-12-26",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 16,
-    "rolling_avg": 2.1,
-    "ratio": 7.5,
+    "date": "2025-12-21",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 25,
+    "rolling_avg": 3.3,
+    "ratio": 7.6,
     "explanation": "Significant spike in search interest",
     "news": []
+  },
+  {
+    "date": "2026-02-06",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 13,
+    "rolling_avg": 1.7,
+    "ratio": 7.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-13",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 11,
+    "rolling_avg": 1.6,
+    "ratio": 7.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-07",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 12,
+    "rolling_avg": 1.7,
+    "ratio": 7.0,
+    "explanation": "With a new leader and tired opponent, this should be the Victorian Liberals\u2019 year \u2013 if not for self-inflicted wounds",
+    "news": [
+      {
+        "title": "With a new leader and tired opponent, this should be the Victorian Liberals\u2019 year \u2013 if not for self-inflicted wounds",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZmVxX2NYZGlXV2NGN09hUjA2T0s3eDFBMkJjbGNUR2tzc1V5QVlZNk1FRjFlNGU4UHJnUkdwR3pWYTdlU2JXMnVIUnVlLS1pbjZYbGtWeHV5WDZYemdnRjJwZC03Q1JGMXh4NHlZR0tvVElxaVZWeDZhMWdPNFd0c1B2cVlyNS1JRDBMallCdnZWUUc4bEJ2VXZWX0FDYVc1Zlc1dWpNVnpZVFU?oc=5",
+        "date": "2026-01-09"
+      }
+    ]
   },
   {
     "date": "2025-12-15",
     "party_code": "ALP",
     "party_name": "Labor",
-    "value": 12,
+    "value": 11,
     "rolling_avg": 1.7,
-    "ratio": 7.0,
+    "ratio": 6.4,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-01-22",
+    "date": "2026-01-21",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 30,
-    "rolling_avg": 4.3,
-    "ratio": 7.0,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2025-12-08",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 23,
-    "rolling_avg": 3.3,
-    "ratio": 7.0,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2025-12-23",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 15,
-    "rolling_avg": 2.4,
-    "ratio": 6.2,
+    "value": 22,
+    "rolling_avg": 3.4,
+    "ratio": 6.4,
     "explanation": "Significant spike in search interest",
     "news": []
   }
