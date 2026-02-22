@@ -1,0 +1,7 @@
+# One Nation
+
+One Nation maintained its top position with an average search interest of 25.0, peaking at 28 on February 19th. This consistent high ranking is reflected in the daily data, where One Nation's scores were above their average for most days during the week. A notable spike occurred on February 19th when One Nation scored a peak of 28, which aligns with the news headline about One Nation being ahead of Labor and the Coalition in Victorian state voting intentions. This suggests that recent political developments have heightened interest in the party.
+
+The Liberal Party, ranked second with an average score of 16.1, showed significant fluctuations throughout the week. The highest daily score for the Liberals was on February 17th at 32, which is a 5.9x above average spike and coincides with the headline about the Coalition leading in Victorian DemosAU poll. This indicates that the party's performance has been closely tied to recent political polls and events. The Liberal Party's scores were generally lower on other days, such as February 18th and 20th, where they scored below their average.
+
+Overall, the search interest data for both One Nation and the Liberal Party reflects a high level of engagement with these parties during the week. The spikes in search interest suggest that specific political events and polls have significantly influenced public interest in these parties. As we move forward, it will be interesting to observe if this heightened interest continues or if it dissipates as other issues come to the forefront.
