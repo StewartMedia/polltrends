@@ -6,12 +6,28 @@
         "value": 100
       },
       {
+        "query": "labour",
+        "value": 46
+      },
+      {
         "query": "labor party",
         "value": 42
       },
       {
+        "query": "liberal",
+        "value": 35
+      },
+      {
         "query": "labor australia",
         "value": 23
+      },
+      {
+        "query": "australian labor",
+        "value": 18
+      },
+      {
+        "query": "labour australia",
+        "value": 16
       },
       {
         "query": "labour party",
@@ -19,10 +35,6 @@
       },
       {
         "query": "australian labor party",
-        "value": 12
-      },
-      {
-        "query": "the australian",
         "value": 12
       },
       {
@@ -36,6 +48,10 @@
       {
         "query": "alp",
         "value": 10
+      },
+      {
+        "query": "liberal party",
+        "value": 9
       },
       {
         "query": "australia labour party",
@@ -70,58 +86,54 @@
         "value": 4
       },
       {
+        "query": "greens",
+        "value": 4
+      },
+      {
         "query": "chris minns labor or liberal",
         "value": 3
       },
       {
-        "query": "one nation party",
+        "query": "is albanese labour",
         "value": 3
       },
       {
-        "query": "labor meaning",
+        "query": "labor ministers",
         "value": 3
-      },
-      {
-        "query": "is chris minns labor or liberal",
-        "value": 2
-      },
-      {
-        "query": "labor policies",
-        "value": 2
-      },
-      {
-        "query": "chris minns labour",
-        "value": 2
-      },
-      {
-        "query": "angus taylor",
-        "value": 0
-      },
-      {
-        "query": "jane hume",
-        "value": 0
       }
     ],
     "rising": [
       {
         "query": "is chris minns labor or liberal",
-        "value": 147500
+        "value": 147000
       },
       {
-        "query": "chris minns labour",
-        "value": 111350
+        "query": "worf",
+        "value": 61000
+      },
+      {
+        "query": "tony burke",
+        "value": 43700
+      },
+      {
+        "query": "david crisafulli",
+        "value": 36800
+      },
+      {
+        "query": "alp membership",
+        "value": 33500
       },
       {
         "query": "angus taylor",
-        "value": 30000
+        "value": 29200
+      },
+      {
+        "query": "one nation policies",
+        "value": 28500
       },
       {
         "query": "jane hume",
-        "value": 8750
-      },
-      {
-        "query": "sarah kaine",
-        "value": 5350
+        "value": 8400
       },
       {
         "query": "chris minns",
@@ -142,84 +154,216 @@
       {
         "query": "albanese",
         "value": 70
+      },
+      {
+        "query": "is albanese labour",
+        "value": 50
+      },
+      {
+        "query": "labor ministers",
+        "value": 40
       }
     ]
   },
   "LIB": {
     "top": [
       {
-        "query": "the liberal party",
+        "query": "liberal",
         "value": 100
       },
       {
+        "query": "liberal party",
+        "value": 73
+      },
+      {
+        "query": "the liberal party",
+        "value": 23
+      },
+      {
         "query": "liberal australia",
-        "value": 90
+        "value": 20
       },
       {
         "query": "liberal leader",
-        "value": 85
+        "value": 20
+      },
+      {
+        "query": "liberal party australia",
+        "value": 15
       },
       {
         "query": "liberal leadership",
-        "value": 65
+        "value": 15
+      },
+      {
+        "query": "liberal party leader",
+        "value": 12
       },
       {
         "query": "liberal party of australia",
-        "value": 38
+        "value": 8
       },
       {
         "query": "australian liberal party",
-        "value": 33
-      },
-      {
-        "query": "liberal spill",
-        "value": 30
-      },
-      {
-        "query": "leader of liberal party",
-        "value": 29
+        "value": 7
       },
       {
         "query": "angus taylor",
-        "value": 28
+        "value": 7
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 7
+      },
+      {
+        "query": "liberal spill",
+        "value": 6
+      },
+      {
+        "query": "liberals",
+        "value": 6
+      },
+      {
+        "query": "angus taylor liberal",
+        "value": 6
+      },
+      {
+        "query": "liberal party leadership",
+        "value": 5
+      },
+      {
+        "query": "liberal leadership spill",
+        "value": 5
+      },
+      {
+        "query": "federal liberal party",
+        "value": 4
+      },
+      {
+        "query": "leader of the liberal party",
+        "value": 4
       },
       {
         "query": "liberal leader australia",
-        "value": 17
+        "value": 4
+      },
+      {
+        "query": "one nation",
+        "value": 3
+      },
+      {
+        "query": "labour party",
+        "value": 3
+      },
+      {
+        "query": "labor party",
+        "value": 3
       },
       {
         "query": "liberal leaders",
-        "value": 14
+        "value": 3
       },
       {
-        "query": "jane hume",
-        "value": 9
-      },
-      {
-        "query": "erythritol sweetener",
-        "value": 2
+        "query": "angus taylor liberal party",
+        "value": 3
       }
     ],
     "rising": [
       {
+        "query": "liberal party leadership spill",
+        "value": 75600
+      },
+      {
+        "query": "new leader of liberal party",
+        "value": 68850
+      },
+      {
+        "query": "deputy leader of the liberal party",
+        "value": 60650
+      },
+      {
+        "query": "tim wilson liberal",
+        "value": 52200
+      },
+      {
+        "query": "who is angus taylor liberal",
+        "value": 36950
+      },
+      {
         "query": "erythritol sweetener",
-        "value": 36700
+        "value": 36850
+      },
+      {
+        "query": "jess collins liberal",
+        "value": 21650
+      },
+      {
+        "query": "who is the deputy leader of the liberal party",
+        "value": 21450
+      },
+      {
+        "query": "who is the new leader of the liberal party",
+        "value": 19150
+      },
+      {
+        "query": "charlotte mortlock",
+        "value": 18900
+      },
+      {
+        "query": "julie bishop",
+        "value": 17400
+      },
+      {
+        "query": "liberal party immigration policy",
+        "value": 11150
+      },
+      {
+        "query": "angus taylor liberal",
+        "value": 1100
       },
       {
         "query": "jane hume",
-        "value": 1000
+        "value": 1050
       },
       {
         "query": "angus taylor",
-        "value": 650
+        "value": 750
       },
       {
         "query": "liberal spill",
-        "value": 650
+        "value": 600
       },
       {
         "query": "liberal leadership",
         "value": 450
+      },
+      {
+        "query": "new liberal leader",
+        "value": 400
+      },
+      {
+        "query": "liberal party leadership",
+        "value": 400
+      },
+      {
+        "query": "angus taylor liberal party",
+        "value": 400
+      },
+      {
+        "query": "liberal leadership spill",
+        "value": 250
+      },
+      {
+        "query": "one nation",
+        "value": 200
+      },
+      {
+        "query": "liberal deputy leader",
+        "value": 100
+      },
+      {
+        "query": "liberals",
+        "value": 40
       }
     ]
   },
@@ -238,6 +382,10 @@
         "value": 18
       },
       {
+        "query": "greens party",
+        "value": 15
+      },
+      {
         "query": "australian greens",
         "value": 15
       },
@@ -254,7 +402,23 @@
         "value": 8
       },
       {
-        "query": "green",
+        "query": "the australian greens",
+        "value": 7
+      },
+      {
+        "query": "greens senator",
+        "value": 7
+      },
+      {
+        "query": "the greens leader",
+        "value": 5
+      },
+      {
+        "query": "australian greens party",
+        "value": 5
+      },
+      {
+        "query": "greens party australia",
         "value": 5
       },
       {
@@ -262,7 +426,23 @@
         "value": 5
       },
       {
+        "query": "leader of greens",
+        "value": 5
+      },
+      {
         "query": "leader of the greens",
+        "value": 4
+      },
+      {
+        "query": "liberal",
+        "value": 4
+      },
+      {
+        "query": "greens policies",
+        "value": 4
+      },
+      {
+        "query": "one nation",
         "value": 4
       },
       {
@@ -274,34 +454,46 @@
         "value": 3
       },
       {
+        "query": "greens policy",
+        "value": 3
+      },
+      {
         "query": "the greens party australia",
+        "value": 3
+      },
+      {
+        "query": "greens party leader",
         "value": 3
       },
       {
         "query": "greens mp",
         "value": 3
-      },
-      {
-        "query": "the greens political party",
-        "value": 2
-      },
-      {
-        "query": "liberal party",
-        "value": 2
-      },
-      {
-        "query": "one nation policies",
-        "value": 1
       }
     ],
     "rising": [
       {
-        "query": "one nation policies",
-        "value": 91500
+        "query": "join the greens",
+        "value": 45900
       },
       {
         "query": "greens senators",
         "value": 60
+      },
+      {
+        "query": "nationals",
+        "value": 60
+      },
+      {
+        "query": "one nation",
+        "value": 60
+      },
+      {
+        "query": "greens policies",
+        "value": 50
+      },
+      {
+        "query": "australian greens party",
+        "value": 40
       }
     ]
   },
@@ -321,11 +513,11 @@
       },
       {
         "query": "one nation polling",
-        "value": 10
+        "value": 11
       },
       {
         "query": "pauline hanson",
-        "value": 8
+        "value": 9
       },
       {
         "query": "pauline hanson one nation",
@@ -360,11 +552,23 @@
         "value": 3
       },
       {
+        "query": "vote one nation",
+        "value": 3
+      },
+      {
         "query": "one nation victoria",
         "value": 2
       },
       {
+        "query": "one nation membership",
+        "value": 2
+      },
+      {
         "query": "one nation poll",
+        "value": 2
+      },
+      {
+        "query": "one nation movie",
         "value": 2
       },
       {
@@ -384,46 +588,94 @@
         "value": 2
       },
       {
+        "query": "pauline hanson party",
+        "value": 2
+      },
+      {
         "query": "liberal party",
         "value": 2
       },
       {
         "query": "one nation leader",
         "value": 1
-      },
-      {
-        "query": "pauline hanson's one nation",
-        "value": 1
-      },
-      {
-        "query": "gina rinehart",
-        "value": 1
-      },
-      {
-        "query": "liam hall",
-        "value": 0
-      },
-      {
-        "query": "liam hall one nation",
-        "value": 0
       }
     ],
     "rising": [
       {
+        "query": "one nation movie",
+        "value": 174000
+      },
+      {
         "query": "gina rinehart",
-        "value": 61300
+        "value": 61850
+      },
+      {
+        "query": "tony abbott",
+        "value": 51100
+      },
+      {
+        "query": "rhode beauty",
+        "value": 45450
+      },
+      {
+        "query": "tony abbott one nation",
+        "value": 42900
+      },
+      {
+        "query": "pauline hansons movie",
+        "value": 39450
+      },
+      {
+        "query": "next federal election australia",
+        "value": 36950
+      },
+      {
+        "query": "what does one nation stand for",
+        "value": 36550
       },
       {
         "query": "liam hall",
-        "value": 34800
+        "value": 35550
       },
       {
         "query": "liam hall one nation",
-        "value": 33150
+        "value": 32750
+      },
+      {
+        "query": "pauline hansons song",
+        "value": 31350
+      },
+      {
+        "query": "sussan ley",
+        "value": 30100
+      },
+      {
+        "query": "tropical cyclone forecast",
+        "value": 28500
       },
       {
         "query": "cory bernardi",
-        "value": 28600
+        "value": 28400
+      },
+      {
+        "query": "pauline hanson movie",
+        "value": 26400
+      },
+      {
+        "query": "one natuon",
+        "value": 23200
+      },
+      {
+        "query": "angus taylor",
+        "value": 20250
+      },
+      {
+        "query": "hoodoo gurus one nation",
+        "value": 16550
+      },
+      {
+        "query": "nigel farage",
+        "value": 16400
       },
       {
         "query": "one nation polling",

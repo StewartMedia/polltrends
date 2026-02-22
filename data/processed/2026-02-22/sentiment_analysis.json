@@ -1,13 +1,13 @@
 {
   "ALP": {
     "party": "Labor",
-    "queries_analysed": 45,
+    "queries_analysed": 34,
     "sentiment_counts": {
       "positive": 0,
       "negative": 3,
-      "neutral": 42
+      "neutral": 31
     },
-    "sentiment_score": -0.07,
+    "sentiment_score": -0.09,
     "classified_queries": [
       {
         "query": "labor",
@@ -34,7 +34,7 @@
         "sentiment": "neutral"
       },
       {
-        "query": "australia labour",
+        "query": "labour australia",
         "sentiment": "neutral"
       },
       {
@@ -42,11 +42,11 @@
         "sentiment": "neutral"
       },
       {
-        "query": "labor party australia",
+        "query": "australian labor party",
         "sentiment": "neutral"
       },
       {
-        "query": "australian labor party",
+        "query": "labor party australia",
         "sentiment": "neutral"
       },
       {
@@ -62,11 +62,11 @@
         "sentiment": "neutral"
       },
       {
-        "query": "labor government",
+        "query": "australia labour party",
         "sentiment": "neutral"
       },
       {
-        "query": "labour party australia",
+        "query": "labor government",
         "sentiment": "neutral"
       },
       {
@@ -78,11 +78,11 @@
         "sentiment": "neutral"
       },
       {
-        "query": "one nation",
+        "query": "labor party of australia",
         "sentiment": "neutral"
       },
       {
-        "query": "labor party of australia",
+        "query": "one nation",
         "sentiment": "neutral"
       },
       {
@@ -90,19 +90,15 @@
         "sentiment": "neutral"
       },
       {
-        "query": "greens",
-        "sentiment": "neutral"
-      },
-      {
         "query": "anthony albanese",
         "sentiment": "negative"
       },
       {
-        "query": "labor candidate",
+        "query": "greens",
         "sentiment": "neutral"
       },
       {
-        "query": "australian liberal party",
+        "query": "chris minns labor or liberal",
         "sentiment": "neutral"
       },
       {
@@ -110,35 +106,11 @@
         "sentiment": "negative"
       },
       {
+        "query": "labor ministers",
+        "sentiment": "neutral"
+      },
+      {
         "query": "is chris minns labor or liberal",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "labor poll",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "pauline hanson",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "one nation policies",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "is nsw liberal or labour",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "kevin rudd labour or liberal",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "jim chalmers",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "angus taylor",
         "sentiment": "neutral"
       },
       {
@@ -146,23 +118,7 @@
         "sentiment": "neutral"
       },
       {
-        "query": "alp membership",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "stephen lawrence",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "katy gallagher",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "is one nation liberal or labour",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "labour vs liberal australia differences",
+        "query": "tony burke",
         "sentiment": "neutral"
       },
       {
@@ -170,36 +126,36 @@
         "sentiment": "neutral"
       },
       {
-        "query": "chris minns labour",
+        "query": "alp membership",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "angus taylor",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation policies",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "jane hume",
         "sentiment": "neutral"
       },
       {
         "query": "one nation party",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "federal labor ministers",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "labor party logo",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "labor ministers",
         "sentiment": "neutral"
       }
     ]
   },
   "LIB": {
     "party": "Liberal",
-    "queries_analysed": 42,
+    "queries_analysed": 40,
     "sentiment_counts": {
-      "positive": 14,
-      "negative": 0,
-      "neutral": 28
+      "positive": 17,
+      "negative": 1,
+      "neutral": 22
     },
-    "sentiment_score": 0.33,
+    "sentiment_score": 0.4,
     "classified_queries": [
       {
         "query": "liberal",
@@ -242,11 +198,15 @@
         "sentiment": "neutral"
       },
       {
+        "query": "angus taylor",
+        "sentiment": "neutral"
+      },
+      {
         "query": "leader of liberal party",
         "sentiment": "positive"
       },
       {
-        "query": "angus taylor",
+        "query": "liberal spill",
         "sentiment": "neutral"
       },
       {
@@ -254,7 +214,7 @@
         "sentiment": "neutral"
       },
       {
-        "query": "liberal angus taylor",
+        "query": "angus taylor liberal",
         "sentiment": "neutral"
       },
       {
@@ -266,55 +226,51 @@
         "sentiment": "positive"
       },
       {
-        "query": "leader of the liberal party",
-        "sentiment": "positive"
-      },
-      {
         "query": "federal liberal party",
         "sentiment": "neutral"
+      },
+      {
+        "query": "leader of the liberal party",
+        "sentiment": "positive"
       },
       {
         "query": "liberal leader australia",
         "sentiment": "positive"
       },
       {
-        "query": "labor party",
+        "query": "one nation",
         "sentiment": "neutral"
-      },
-      {
-        "query": "liberal party news",
-        "sentiment": "positive"
-      },
-      {
-        "query": "liberal leaders",
-        "sentiment": "positive"
       },
       {
         "query": "labour party",
         "sentiment": "neutral"
       },
       {
-        "query": "one nation",
+        "query": "labor party",
         "sentiment": "neutral"
+      },
+      {
+        "query": "liberal leaders",
+        "sentiment": "positive"
       },
       {
         "query": "angus taylor liberal party",
         "sentiment": "neutral"
       },
       {
-        "query": "liberal shadow cabinet",
-        "sentiment": "neutral"
+        "query": "liberal party leadership spill",
+        "sentiment": "positive"
+      },
+      {
+        "query": "new leader of liberal party",
+        "sentiment": "positive"
       },
       {
         "query": "deputy leader of the liberal party",
         "sentiment": "positive"
       },
       {
-        "query": "liberal candidates",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "woolworths shopping bag",
+        "query": "tim wilson liberal",
         "sentiment": "neutral"
       },
       {
@@ -322,39 +278,31 @@
         "sentiment": "neutral"
       },
       {
-        "query": "charlotte mortlock",
+        "query": "erythritol sweetener",
         "sentiment": "neutral"
+      },
+      {
+        "query": "jess collins liberal",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "who is the deputy leader of the liberal party",
+        "sentiment": "positive"
       },
       {
         "query": "who is the new leader of the liberal party",
         "sentiment": "positive"
       },
       {
-        "query": "erythritol",
+        "query": "charlotte mortlock",
         "sentiment": "neutral"
       },
       {
-        "query": "overwatch anran",
-        "sentiment": "neutral"
+        "query": "julie bishop",
+        "sentiment": "negative"
       },
       {
-        "query": "tropical cyclone mitchell",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "alex antic",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "melissa price",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "angus taylor net worth",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "new liberal leader",
+        "query": "liberal party immigration policy",
         "sentiment": "positive"
       },
       {
@@ -362,24 +310,24 @@
         "sentiment": "neutral"
       },
       {
-        "query": "liberal deputy leader",
+        "query": "new liberal leader",
         "sentiment": "positive"
       },
       {
-        "query": "nationals",
-        "sentiment": "neutral"
+        "query": "liberal deputy leader",
+        "sentiment": "positive"
       }
     ]
   },
   "GRN": {
     "party": "Greens",
-    "queries_analysed": 38,
+    "queries_analysed": 27,
     "sentiment_counts": {
-      "positive": 9,
+      "positive": 7,
       "negative": 0,
-      "neutral": 29
+      "neutral": 20
     },
-    "sentiment_score": 0.24,
+    "sentiment_score": 0.26,
     "classified_queries": [
       {
         "query": "greens",
@@ -390,7 +338,7 @@
         "sentiment": "neutral"
       },
       {
-        "query": "greens australia",
+        "query": "australia greens",
         "sentiment": "neutral"
       },
       {
@@ -422,10 +370,6 @@
         "sentiment": "neutral"
       },
       {
-        "query": "leader of greens",
-        "sentiment": "positive"
-      },
-      {
         "query": "the greens leader",
         "sentiment": "positive"
       },
@@ -434,11 +378,23 @@
         "sentiment": "neutral"
       },
       {
-        "query": "liberal",
+        "query": "greens party australia",
         "sentiment": "neutral"
       },
       {
-        "query": "green",
+        "query": "labor",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "leader of greens",
+        "sentiment": "positive"
+      },
+      {
+        "query": "leader of the greens",
+        "sentiment": "positive"
+      },
+      {
+        "query": "liberal",
         "sentiment": "neutral"
       },
       {
@@ -446,19 +402,23 @@
         "sentiment": "neutral"
       },
       {
-        "query": "leader of the greens",
+        "query": "one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "greens leader australia",
         "sentiment": "positive"
       },
       {
-        "query": "greens australia party",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "greens political party",
-        "sentiment": "neutral"
-      },
-      {
         "query": "greens senators",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "greens policy",
+        "sentiment": "positive"
+      },
+      {
+        "query": "the greens party australia",
         "sentiment": "neutral"
       },
       {
@@ -470,78 +430,22 @@
         "sentiment": "neutral"
       },
       {
-        "query": "one nation",
+        "query": "join the greens",
         "sentiment": "neutral"
       },
       {
-        "query": "labour",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "greens leader australia",
-        "sentiment": "positive"
-      },
-      {
-        "query": "australian greens policies",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "one nation policies",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "labour party australia",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "angus taylor",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "peter dutton",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "greens immigration policy",
-        "sentiment": "positive"
-      },
-      {
-        "query": "how many seats do the greens have",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "abigail boyd",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "united australia party",
-        "sentiment": "positive"
-      },
-      {
-        "query": "elizabeth watson brown",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "greens leaders",
-        "sentiment": "positive"
-      },
-      {
-        "query": "the greens policies",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "the greens political party",
+        "query": "nationals",
         "sentiment": "neutral"
       }
     ]
   },
   "PHON": {
     "party": "One Nation",
-    "queries_analysed": 44,
+    "queries_analysed": 43,
     "sentiment_counts": {
-      "positive": 4,
-      "negative": 1,
-      "neutral": 39
+      "positive": 3,
+      "negative": 0,
+      "neutral": 40
     },
     "sentiment_score": 0.07,
     "classified_queries": [
@@ -566,7 +470,7 @@
         "sentiment": "neutral"
       },
       {
-        "query": "one nation pauline hanson",
+        "query": "pauline hanson one nation",
         "sentiment": "neutral"
       },
       {
@@ -622,11 +526,11 @@
         "sentiment": "positive"
       },
       {
-        "query": "one nation south australia",
+        "query": "one nation candidates",
         "sentiment": "neutral"
       },
       {
-        "query": "one nation candidates",
+        "query": "one nation south australia",
         "sentiment": "neutral"
       },
       {
@@ -646,15 +550,15 @@
         "sentiment": "positive"
       },
       {
-        "query": "albanese",
-        "sentiment": "negative"
-      },
-      {
-        "query": "gina rinehart one nation",
+        "query": "gina rinehart",
         "sentiment": "neutral"
       },
       {
-        "query": "pauline hanson movie",
+        "query": "tony abbott",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "rhode beauty",
         "sentiment": "neutral"
       },
       {
@@ -666,7 +570,11 @@
         "sentiment": "neutral"
       },
       {
-        "query": "tony abbott",
+        "query": "next federal election australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "what does one nation stand for",
         "sentiment": "neutral"
       },
       {
@@ -674,31 +582,31 @@
         "sentiment": "neutral"
       },
       {
-        "query": "rhode beauty",
+        "query": "liam hall one nation",
         "sentiment": "neutral"
       },
       {
-        "query": "next federal election australia",
+        "query": "pauline hansons song",
         "sentiment": "neutral"
       },
       {
-        "query": "sky news",
-        "sentiment": "positive"
+        "query": "sussan ley",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "tropical cyclone forecast",
+        "sentiment": "neutral"
       },
       {
         "query": "cory bernardi",
         "sentiment": "neutral"
       },
       {
-        "query": "pauline hanson's song",
+        "query": "pauline hanson movie",
         "sentiment": "neutral"
       },
       {
-        "query": "samsung galaxy galaxy s26 ultra",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "hoodoo gurus one nation",
+        "query": "one natuon",
         "sentiment": "neutral"
       },
       {
@@ -706,19 +614,11 @@
         "sentiment": "neutral"
       },
       {
-        "query": "liam alexander hall",
+        "query": "hoodoo gurus one nation",
         "sentiment": "neutral"
       },
       {
-        "query": "nasa astronauts",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "pauline hanson net worth",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "one nation movie trailer",
+        "query": "nigel farage",
         "sentiment": "neutral"
       }
     ]
