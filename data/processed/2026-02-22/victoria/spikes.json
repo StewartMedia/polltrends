@@ -1,68 +1,21 @@
 [
   {
-    "date": "2025-12-08",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 26,
-    "rolling_avg": 1.7,
-    "ratio": 15.2,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
     "date": "2026-01-10",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 58,
-    "rolling_avg": 4.4,
-    "ratio": 13.1,
+    "value": 61,
+    "rolling_avg": 4.9,
+    "ratio": 12.6,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-01-20",
+    "date": "2026-01-22",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 13,
-    "rolling_avg": 1.6,
-    "ratio": 8.3,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-02-12",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 81,
-    "rolling_avg": 10.1,
-    "ratio": 8.0,
-    "explanation": "Former Victoria Liberal Party president Michael Kroger says Labor\u2019s playbook is to \u201cbuy election victories\u201d.",
-    "news": [
-      {
-        "title": "Former Victoria Liberal Party president Michael Kroger says Labor\u2019s playbook is to \u201cbuy election victories\u201d.",
-        "source": "facebook.com",
-        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNOUNkRXBHa2h5U0Y1SkxmVVBqcVc1UFNpOHgzOGdpSEc1ZVYzVk5lU2pndmNoYzJaTzBqbHBqTS1qdUc1cGxrbFIzQ0xBMlNSQkV6YzEtX2w1M3NJbTAtQXRmNlhYRFNOU3J3QXpGVjNPcDJwMXdEaFhxeHRrQ2NyRV9UMFd1NmVvNzBybGxjNk15Z0pNeDNUMUhmb0h4aDhNdVpRM2xDUDRMdGFtQkJmbDljWjZhM0puNnkwV01KM2dIbFN2eFBqbTJsU19VTzhHNXFNRXhpVExEVExLby1V?oc=5",
-        "date": "2026-02-12"
-      }
-    ]
-  },
-  {
-    "date": "2025-12-21",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 25,
-    "rolling_avg": 3.3,
-    "ratio": 7.6,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-02-06",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 13,
-    "rolling_avg": 1.7,
-    "ratio": 7.6,
+    "value": 28,
+    "rolling_avg": 2.4,
+    "ratio": 11.5,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -70,46 +23,100 @@
     "date": "2026-01-13",
     "party_code": "ALP",
     "party_name": "Labor",
-    "value": 11,
-    "rolling_avg": 1.6,
+    "value": 13,
+    "rolling_avg": 1.9,
     "ratio": 7.0,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-01-07",
+    "date": "2026-02-12",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 12,
-    "rolling_avg": 1.7,
-    "ratio": 7.0,
-    "explanation": "With a new leader and tired opponent, this should be the Victorian Liberals\u2019 year \u2013 if not for self-inflicted wounds",
+    "value": 83,
+    "rolling_avg": 12.1,
+    "ratio": 6.8,
+    "explanation": "Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
     "news": [
       {
-        "title": "With a new leader and tired opponent, this should be the Victorian Liberals\u2019 year \u2013 if not for self-inflicted wounds",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZmVxX2NYZGlXV2NGN09hUjA2T0s3eDFBMkJjbGNUR2tzc1V5QVlZNk1FRjFlNGU4UHJnUkdwR3pWYTdlU2JXMnVIUnVlLS1pbjZYbGtWeHV5WDZYemdnRjJwZC03Q1JGMXh4NHlZR0tvVElxaVZWeDZhMWdPNFd0c1B2cVlyNS1JRDBMallCdnZWUUc4bEJ2VXZWX0FDYVc1Zlc1dWpNVnpZVFU?oc=5",
-        "date": "2026-01-09"
+        "title": "Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+        "source": "facebook.com",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPWDBjeTZfU3REdEp5VXU1dG5FMWg2OGRONXdWZDhYNmk3VERteTFzOUUxSmM5aC03LWlGSTk0WG13eW5MTW1lSVpiWk50UVdWa0pXeHE3SjBsd2RnaUpIVUpKU21sUUpzalFkaEQ4Y3dkVzYyWTgwcDliVmg4MDZ6ZEVmOV85VjY4RFplM25ObWZLM3FWWWM4bUhXUG1Kci16ZjRERU5tUTBvb0k3Z1dXeFJPbTJ2R3FZVUZic2VTM1NlVFNpVklBQlc4TWI5TFA5T0FwZnZQamlGVUd1enpB?oc=5",
+        "date": "2026-02-11"
       }
     ]
+  },
+  {
+    "date": "2026-01-18",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 12,
+    "rolling_avg": 1.9,
+    "ratio": 6.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2025-12-14",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 24,
+    "rolling_avg": 3.7,
+    "ratio": 6.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
     "date": "2025-12-15",
     "party_code": "ALP",
     "party_name": "Labor",
-    "value": 11,
-    "rolling_avg": 1.7,
-    "ratio": 6.4,
+    "value": 14,
+    "rolling_avg": 2.4,
+    "ratio": 5.8,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-01-21",
+    "date": "2025-12-17",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 22,
-    "rolling_avg": 3.4,
-    "ratio": 6.4,
+    "value": 12,
+    "rolling_avg": 2.3,
+    "ratio": 5.2,
+    "explanation": "Hope fades for new-look Libs in \u201926 as court fight looms over Pesutto loan",
+    "news": [
+      {
+        "title": "Hope fades for new-look Libs in \u201926 as court fight looms over Pesutto loan",
+        "source": "Herald Sun",
+        "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNblF1WklQeE84YnFHbXZqZTZjRW1ZN0RzM1U5OG82TzN5V0NRRzNpVXFkWEQ0TF9Wc3NYaGM5YjIxS3RaYnMxOVRYdURJTWU4T2l1QmxZSVlFdHlPS285bmU1WnJxdERHQWxxSk9vdjlCN0luZWtCVWNnMEY2N3hjdzl1TGRhM193R2RLcTBuOWR0aVBMenZlaC1SSEFWOFFibXNxLVpJcUFVcXY3Q3ptamU3OXJsbk5DMkZLZERNQ3czc0J3WVNBaVNxTjF5NGMzVTZ4MDBFM2pidDlqdlk4cEFGQmdpUFFyNTlyUUI3aERibXNNNGJLYlZlMmlXMmRxZTNaR3VoMllMbm5iTC01ZVVyZknSAZoCQVVfeXFMUGl5SmVtdDdXbTAyY1dVUjBLdGI5Z1BJR3NhMHFlQ3VqWjZBbXgtUVQ3Y1lkREZ4ZWY3MG13T3dzMTVTRTFZQlZyenZ3cnNCVzdRZGhuSzR1ZEpLTWQzYTBxck9JeVNtSVlndXh4aTdJOVNMOEtMenlyb3JRSFoxQ08xUjBwUjg3VkluN3dSZ0RGRjFON2xHcXlMeEp0cWhGeF9aWEVnUUVhRGw3eTc0bDAzd01hc0dFc2hjb3ZpamNnUVpGX2d3VkxEX2Rncldkc2tjMVpqTXp1LWJ1bTVWMURyODMwMFlodU5MX3VfcHZZYjd6SUZMMUVUdnFDeUVYVmc4UHJhMmVjWDNHYURHbF9vMVV5c01ITnBR?oc=5",
+        "date": "2025-12-18"
+      }
+    ]
+  },
+  {
+    "date": "2026-02-13",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 100,
+    "rolling_avg": 22.3,
+    "ratio": 4.5,
+    "explanation": "Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+    "news": [
+      {
+        "title": "Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+        "source": "facebook.com",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPWDBjeTZfU3REdEp5VXU1dG5FMWg2OGRONXdWZDhYNmk3VERteTFzOUUxSmM5aC03LWlGSTk0WG13eW5MTW1lSVpiWk50UVdWa0pXeHE3SjBsd2RnaUpIVUpKU21sUUpzalFkaEQ4Y3dkVzYyWTgwcDliVmg4MDZ6ZEVmOV85VjY4RFplM25ObWZLM3FWWWM4bUhXUG1Kci16ZjRERU5tUTBvb0k3Z1dXeFJPbTJ2R3FZVUZic2VTM1NlVFNpVklBQlc4TWI5TFA5T0FwZnZQamlGVUd1enpB?oc=5",
+        "date": "2026-02-11"
+      }
+    ]
+  },
+  {
+    "date": "2025-12-15",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 29,
+    "rolling_avg": 7.1,
+    "ratio": 4.1,
     "explanation": "Significant spike in search interest",
     "news": []
   }

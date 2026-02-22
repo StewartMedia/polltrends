@@ -3,9 +3,9 @@
     "date": "2026-01-09",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 38,
-    "rolling_avg": 4.4,
-    "ratio": 8.6,
+    "value": 35,
+    "rolling_avg": 4.3,
+    "ratio": 8.2,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -13,9 +13,9 @@
     "date": "2026-01-10",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 67,
-    "rolling_avg": 9.0,
-    "ratio": 7.4,
+    "value": 66,
+    "rolling_avg": 8.9,
+    "ratio": 7.5,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -23,9 +23,9 @@
     "date": "2026-02-12",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 87,
-    "rolling_avg": 14.0,
-    "ratio": 6.2,
+    "value": 81,
+    "rolling_avg": 13.6,
+    "ratio": 6.0,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -33,9 +33,9 @@
     "date": "2025-12-08",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 35,
-    "rolling_avg": 7.3,
-    "ratio": 4.8,
+    "value": 34,
+    "rolling_avg": 6.4,
+    "ratio": 5.3,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -44,34 +44,17 @@
     "party_code": "LIB",
     "party_name": "Liberal",
     "value": 100,
-    "rolling_avg": 25.0,
-    "ratio": 4.0,
-    "explanation": "The Coalition leads in Victorian DemosAU poll, with One Nation posting 21% support",
-    "news": [
-      {
-        "title": "The Coalition leads in Victorian DemosAU poll, with One Nation posting 21% support",
-        "source": "The Conversation",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUTExeDZzRkNtWXFwNThzTzFZSDRacmcxakR6ckMxTUFqbzdvRUpUZGVKLTROYnphVFhLY21tZmJJT0d0WFAxUWtmN3dESWZvQVlVVlFVUmlLOFQ5UHF0U25UWi1tWk9pYlM1NmkwYVFBUFluOGVhV3ZKanVXZ2h0bGJ1QXNMaTFjNm9abzMtaEhCZnZtN1RETUJXb2Z3T014UnowbzhKY1cwbWs1bGU0eTN3TE1QUQ?oc=5",
-        "date": "2026-02-15"
-      }
-    ]
+    "rolling_avg": 23.9,
+    "ratio": 4.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
     "date": "2026-01-21",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 20,
-    "rolling_avg": 5.3,
-    "ratio": 3.8,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-01-22",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 29,
-    "rolling_avg": 7.7,
+    "value": 21,
+    "rolling_avg": 5.6,
     "ratio": 3.8,
     "explanation": "Significant spike in search interest",
     "news": []
@@ -81,8 +64,18 @@
     "party_code": "LIB",
     "party_name": "Liberal",
     "value": 36,
-    "rolling_avg": 10.1,
-    "ratio": 3.5,
+    "rolling_avg": 9.7,
+    "ratio": 3.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-22",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 29,
+    "rolling_avg": 8.1,
+    "ratio": 3.6,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -90,9 +83,9 @@
     "date": "2026-01-19",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 50,
-    "rolling_avg": 15.0,
-    "ratio": 3.3,
+    "value": 49,
+    "rolling_avg": 14.4,
+    "ratio": 3.4,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -100,9 +93,9 @@
     "date": "2026-02-10",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 22,
-    "rolling_avg": 8.1,
-    "ratio": 2.7,
+    "value": 21,
+    "rolling_avg": 7.6,
+    "ratio": 2.8,
     "explanation": "Significant spike in search interest",
     "news": []
   }

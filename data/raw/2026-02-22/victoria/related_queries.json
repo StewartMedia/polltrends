@@ -6,16 +6,12 @@
         "value": 100
       },
       {
-        "query": "labour",
-        "value": 48
-      },
-      {
         "query": "labor party",
         "value": 42
       },
       {
-        "query": "liberal",
-        "value": 38
+        "query": "labour party",
+        "value": 14
       },
       {
         "query": "labor party australia",
@@ -26,27 +22,19 @@
         "value": 12
       },
       {
-        "query": "liberal party",
+        "query": "alp",
         "value": 10
       },
       {
-        "query": "alp",
-        "value": 9
-      },
-      {
-        "query": "labor government",
-        "value": 8
-      },
-      {
         "query": "labour party australia",
-        "value": 7
+        "value": 8
       },
       {
         "query": "albanese",
         "value": 7
       },
       {
-        "query": "labor party of australia",
+        "query": "labor government",
         "value": 6
       },
       {
@@ -55,6 +43,18 @@
       },
       {
         "query": "liberal party australia",
+        "value": 6
+      },
+      {
+        "query": "one nation",
+        "value": 5
+      },
+      {
+        "query": "labor party of australia",
+        "value": 5
+      },
+      {
+        "query": "chris minns",
         "value": 5
       },
       {
@@ -62,15 +62,15 @@
         "value": 4
       },
       {
-        "query": "one nation",
+        "query": "is chris minns labor or liberal",
         "value": 4
       },
       {
-        "query": "one nation party",
-        "value": 3
+        "query": "australian liberal party",
+        "value": 4
       },
       {
-        "query": "alp membership",
+        "query": "liberal vs labour",
         "value": 3
       },
       {
@@ -78,320 +78,148 @@
         "value": 3
       },
       {
-        "query": "labor party leader",
-        "value": 3
-      },
-      {
-        "query": "alp party",
-        "value": 3
-      },
-      {
-        "query": "australian liberal party",
-        "value": 3
-      },
-      {
-        "query": "labour vs liberal",
-        "value": 3
-      },
-      {
         "query": "anthony albanese",
+        "value": 3
+      },
+      {
+        "query": "labor policies",
         "value": 2
       },
       {
-        "query": "labor vs labour",
+        "query": "one nation party",
         "value": 2
+      },
+      {
+        "query": "jane hume",
+        "value": 1
+      },
+      {
+        "query": "angus taylor",
+        "value": 1
       }
     ],
     "rising": [
       {
-        "query": "chris minns labor or liberal",
-        "value": 272200
-      },
-      {
-        "query": "one nation party",
-        "value": 221100
-      },
-      {
-        "query": "is chris minns labor or liberal",
-        "value": 145100
-      },
-      {
-        "query": "is albanese labour or liberal",
-        "value": 111700
-      },
-      {
-        "query": "labor candidate",
-        "value": 101050
-      },
-      {
-        "query": "angus taylor",
-        "value": 85850
-      },
-      {
-        "query": "cfmeu",
-        "value": 33850
-      },
-      {
-        "query": "labor party values",
-        "value": 24400
-      },
-      {
-        "query": "sussan ley",
-        "value": 16650
-      },
-      {
-        "query": "labor party membership",
-        "value": 15300
-      },
-      {
-        "query": "is one nation liberal or labour",
-        "value": 10250
-      },
-      {
-        "query": "tony abbott",
-        "value": 9450
-      },
-      {
-        "query": "jim chalmers",
-        "value": 7450
+        "query": "chris minns",
+        "value": 316300
       },
       {
         "query": "jane hume",
-        "value": 2500
+        "value": 73650
       },
       {
-        "query": "alp membership",
-        "value": 170
+        "query": "angus taylor",
+        "value": 33650
       },
       {
         "query": "one nation",
-        "value": 140
+        "value": 600
       },
       {
-        "query": "labor vs labour",
-        "value": 130
+        "query": "chris minns labor or liberal",
+        "value": 450
       },
       {
-        "query": "scott morrison",
-        "value": 120
+        "query": "is chris minns labor or liberal",
+        "value": 300
       },
       {
-        "query": "what does the labor party stand for",
+        "query": "australian liberal party",
+        "value": 300
+      },
+      {
+        "query": "liberal vs labour",
         "value": 100
       },
       {
-        "query": "labor ministers",
-        "value": 50
+        "query": "albanese",
+        "value": 60
       },
       {
         "query": "labor party of australia",
-        "value": 50
+        "value": 60
+      },
+      {
+        "query": "liberal party australia",
+        "value": 40
       }
     ]
   },
   "LIB": {
     "top": [
       {
-        "query": "liberal",
+        "query": "the liberal party",
         "value": 100
       },
       {
-        "query": "liberal party",
-        "value": 65
-      },
-      {
-        "query": "the liberal party",
-        "value": 19
-      },
-      {
         "query": "liberal leader",
-        "value": 18
-      },
-      {
-        "query": "liberal party australia",
-        "value": 15
+        "value": 91
       },
       {
         "query": "liberal leadership",
-        "value": 12
-      },
-      {
-        "query": "liberal party leader",
-        "value": 11
+        "value": 64
       },
       {
         "query": "liberal party of australia",
-        "value": 8
-      },
-      {
-        "query": "australian liberal party",
-        "value": 7
+        "value": 40
       },
       {
         "query": "liberal spill",
-        "value": 7
+        "value": 37
       },
       {
-        "query": "liberals",
-        "value": 6
-      },
-      {
-        "query": "liberal leadership spill",
-        "value": 6
+        "query": "australian liberal party",
+        "value": 37
       },
       {
         "query": "leader of liberal party",
-        "value": 5
-      },
-      {
-        "query": "federal liberal party",
-        "value": 5
+        "value": 33
       },
       {
         "query": "angus taylor",
-        "value": 5
-      },
-      {
-        "query": "liberal angus taylor",
-        "value": 5
-      },
-      {
-        "query": "liberal party victoria",
-        "value": 4
-      },
-      {
-        "query": "leader of the liberal party",
-        "value": 4
-      },
-      {
-        "query": "liberal party leadership",
-        "value": 4
+        "value": 30
       },
       {
         "query": "liberal leader australia",
-        "value": 4
+        "value": 20
       },
       {
-        "query": "deputy liberal leader",
-        "value": 4
+        "query": "jane hume",
+        "value": 15
       },
       {
-        "query": "labour party",
-        "value": 3
+        "query": "liberal leaders",
+        "value": 13
       },
       {
-        "query": "labor party",
-        "value": 3
-      },
-      {
-        "query": "one nation",
-        "value": 3
-      },
-      {
-        "query": "liberal party news",
-        "value": 3
+        "query": "liberal party spill",
+        "value": 8
       }
     ],
     "rising": [
       {
-        "query": "new leader of liberal party",
-        "value": 165450
+        "query": "jane hume",
+        "value": 250650
       },
       {
         "query": "liberal party spill",
-        "value": 163800
-      },
-      {
-        "query": "liberal opposition leader",
-        "value": 120600
-      },
-      {
-        "query": "jess wilson",
-        "value": 114100
-      },
-      {
-        "query": "liberal front bench",
-        "value": 90750
-      },
-      {
-        "query": "tim wilson",
-        "value": 76350
-      },
-      {
-        "query": "liberal shadow cabinet",
-        "value": 75000
-      },
-      {
-        "query": "labour vs liberal",
-        "value": 69250
-      },
-      {
-        "query": "liberal senators",
-        "value": 57900
-      },
-      {
-        "query": "liberal party membership",
-        "value": 53550
-      },
-      {
-        "query": "liberal party leadership spill",
-        "value": 46650
-      },
-      {
-        "query": "woolworths shopping bag",
-        "value": 33100
-      },
-      {
-        "query": "erythritol",
-        "value": 26350
-      },
-      {
-        "query": "charlotte mortlock",
-        "value": 23150
-      },
-      {
-        "query": "who is the deputy leader of the liberal party",
-        "value": 21650
-      },
-      {
-        "query": "liberal immigration policy",
-        "value": 17700
-      },
-      {
-        "query": "who is the new leader of the liberal party",
-        "value": 16150
-      },
-      {
-        "query": "liberal party factions",
-        "value": 15400
-      },
-      {
-        "query": "liberal party shadow cabinet",
-        "value": 13500
+        "value": 131200
       },
       {
         "query": "angus taylor",
-        "value": 950
+        "value": 850
       },
       {
-        "query": "liberal leadership spill",
-        "value": 700
-      },
-      {
-        "query": "liberal angus taylor",
-        "value": 500
-      },
-      {
-        "query": "one nation",
+        "query": "liberal spill",
         "value": 350
       },
       {
         "query": "liberal leadership",
-        "value": 300
+        "value": 250
       },
       {
-        "query": "deputy liberal leader",
-        "value": 300
+        "query": "leader of liberal party",
+        "value": 40
       }
     ]
   },
@@ -407,137 +235,65 @@
       },
       {
         "query": "greens australia",
-        "value": 20
+        "value": 18
       },
       {
         "query": "australian greens",
-        "value": 17
-      },
-      {
-        "query": "greens leader",
-        "value": 13
-      },
-      {
-        "query": "the greens party",
-        "value": 11
+        "value": 15
       },
       {
         "query": "the greens australia",
-        "value": 9
+        "value": 12
       },
       {
-        "query": "the greens leader",
-        "value": 8
+        "query": "greens leader",
+        "value": 11
+      },
+      {
+        "query": "the greens party",
+        "value": 10
       },
       {
         "query": "leader of the greens",
-        "value": 8
+        "value": 7
       },
       {
-        "query": "greens policies",
+        "query": "labor",
         "value": 6
       },
       {
         "query": "greens leader australia",
-        "value": 6
-      },
-      {
-        "query": "greens party leader",
         "value": 5
-      },
-      {
-        "query": "one nation",
-        "value": 5
-      },
-      {
-        "query": "the greens policies",
-        "value": 4
-      },
-      {
-        "query": "who is the leader of the greens",
-        "value": 4
-      },
-      {
-        "query": "larissa waters",
-        "value": 3
-      },
-      {
-        "query": "one nation policies",
-        "value": 3
       },
       {
         "query": "greens mp",
-        "value": 3
-      },
-      {
-        "query": "bob brown greens",
-        "value": 2
-      },
-      {
-        "query": "greens leaders",
-        "value": 1
+        "value": 5
       },
       {
         "query": "liberal party",
-        "value": 1
-      },
-      {
-        "query": "labour",
-        "value": 1
-      },
-      {
-        "query": "pauline hanson",
-        "value": 1
-      },
-      {
-        "query": "adam bandt",
-        "value": 0
+        "value": 2
       },
       {
         "query": "greens senators",
-        "value": 0
+        "value": 2
       }
     ],
     "rising": [
       {
-        "query": "pauline hanson",
-        "value": 61300
-      },
-      {
-        "query": "adam bandt",
-        "value": 34500
-      },
-      {
-        "query": "greens policies",
-        "value": 190
-      },
-      {
-        "query": "bob brown greens",
-        "value": 100
-      },
-      {
-        "query": "larissa waters",
-        "value": 70
-      },
-      {
-        "query": "the greens policies",
-        "value": 70
-      },
-      {
         "query": "greens leader australia",
-        "value": 60
+        "value": 70
       },
       {
-        "query": "one nation",
-        "value": 50
-      },
-      {
-        "query": "one nation policies",
-        "value": 50
+        "query": "greens mp",
+        "value": 70
       },
       {
         "query": "australian greens",
-        "value": 40
+        "value": 50
+      },
+      {
+        "query": "greens leader",
+        "value": 50
       }
     ]
   },
@@ -557,18 +313,18 @@
       },
       {
         "query": "one nation polling",
-        "value": 11
+        "value": 12
       },
       {
         "query": "pauline hanson",
-        "value": 9
-      },
-      {
-        "query": "one nation pauline hanson",
-        "value": 9
+        "value": 10
       },
       {
         "query": "one nation victoria",
+        "value": 8
+      },
+      {
+        "query": "one nation pauline hanson",
         "value": 8
       },
       {
@@ -577,7 +333,7 @@
       },
       {
         "query": "one nation polls",
-        "value": 5
+        "value": 4
       },
       {
         "query": "what is one nation",
@@ -592,23 +348,15 @@
         "value": 3
       },
       {
-        "query": "pauline hanson party",
+        "query": "one nation leader",
         "value": 3
       },
       {
         "query": "liberal party",
-        "value": 3
-      },
-      {
-        "query": "join one nation",
-        "value": 3
-      },
-      {
-        "query": "one nation membership",
         "value": 2
       },
       {
-        "query": "one nation movie",
+        "query": "join one nation",
         "value": 2
       },
       {
@@ -620,14 +368,6 @@
         "value": 2
       },
       {
-        "query": "one nation candidates",
-        "value": 2
-      },
-      {
-        "query": "one nation leader",
-        "value": 2
-      },
-      {
         "query": "barnaby joyce one nation",
         "value": 2
       },
@@ -636,92 +376,75 @@
         "value": 2
       },
       {
+        "query": "one nation candidates",
+        "value": 2
+      },
+      {
         "query": "what is one nation australia",
         "value": 2
       },
       {
-        "query": "one nation party policies",
+        "query": "one nation senators",
+        "value": 1
+      },
+      {
+        "query": "liam hall one nation",
+        "value": 1
+      },
+      {
+        "query": "one nation sa",
+        "value": 1
+      },
+      {
+        "query": "gina rinehart",
         "value": 1
       }
     ],
     "rising": [
       {
-        "query": "one nation movie",
-        "value": 202950
-      },
-      {
-        "query": "one nation party policies",
-        "value": 81850
-      },
-      {
-        "query": "how many seats does one nation have",
-        "value": 75900
-      },
-      {
-        "query": "rhode beauty",
-        "value": 59300
-      },
-      {
-        "query": "sky news",
-        "value": 52400
-      },
-      {
-        "query": "jacinta allan",
-        "value": 46150
-      },
-      {
-        "query": "tropical cyclone forecast",
-        "value": 42200
-      },
-      {
-        "query": "iran",
-        "value": 37400
-      },
-      {
-        "query": "one nation farrer",
-        "value": 32300
-      },
-      {
-        "query": "liam hall",
-        "value": 29050
+        "query": "one nation senators",
+        "value": 72650
       },
       {
         "query": "liam hall one nation",
-        "value": 26750
+        "value": 61200
       },
       {
-        "query": "when is the next federal election in australia",
-        "value": 26700
+        "query": "one nation sa",
+        "value": 51650
       },
       {
-        "query": "south australia election",
-        "value": 24950
+        "query": "gina rinehart",
+        "value": 48650
       },
       {
-        "query": "pauline hansons movie",
-        "value": 24850
+        "query": "sky news australia",
+        "value": 44250
+      },
+      {
+        "query": "one nation south australia",
+        "value": 41150
+      },
+      {
+        "query": "jacinta price",
+        "value": 29150
+      },
+      {
+        "query": "one nation polls",
+        "value": 550
       },
       {
         "query": "one nation polling",
         "value": 300
       },
       {
-        "query": "one nation pauline hanson",
-        "value": 60
+        "query": "one nation policies",
+        "value": 40
       }
     ]
   },
   "AJP": {
-    "top": [
-      {
-        "query": "animal justice party",
-        "value": 100
-      },
-      {
-        "query": "animal justice party victoria",
-        "value": 36
-      }
-    ],
+    "top": [],
     "rising": []
   },
   "RSN": {
