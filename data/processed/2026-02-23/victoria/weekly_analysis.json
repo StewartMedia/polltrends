@@ -1,0 +1,45 @@
+{
+  "period": {
+    "start": "2026-02-17",
+    "end": "2026-02-23"
+  },
+  "avg_interest": {
+    "ALP": 7.1,
+    "LIB": 14.1,
+    "GRN": 4.1,
+    "PHON": 26.3,
+    "AJP": 0.3,
+    "RSN": 0.0,
+    "LDP": 0.1
+  },
+  "momentum_pct": {
+    "ALP": -16.7,
+    "LIB": -68.2,
+    "GRN": -17.1,
+    "PHON": 0.5,
+    "AJP": 0,
+    "RSN": 0,
+    "LDP": -50.0
+  },
+  "sentiment_scores": {
+    "ALP": 0.03,
+    "LIB": 0.29,
+    "GRN": 0.19,
+    "PHON": 0.07,
+    "AJP": 0.0,
+    "RSN": 0.0,
+    "LDP": 0.0
+  },
+  "combined_scores": {
+    "ALP": 0.345,
+    "LIB": 0.57,
+    "GRN": 0.289,
+    "PHON": 0.86,
+    "AJP": 0.158,
+    "RSN": 0.15,
+    "LDP": 0.154
+  },
+  "search_winner": "PHON",
+  "overall_winner": "PHON",
+  "summary": "## Week in Review: 2026-02-17 to 2026-02-23\n\n**One Nation** dominated search interest this week with an average score of 26.3.\n\n### Party Breakdown\n\n- **Labor**: Avg interest 7.1 (-16.7% WoW), sentiment: neutral (+0.03)\n- **Liberal**: Avg interest 14.1 (-68.2% WoW), sentiment: positive (+0.29)\n- **Greens**: Avg interest 4.1 (-17.1% WoW), sentiment: positive (+0.19)\n- **One Nation**: Avg interest 26.3 (+0.5% WoW), sentiment: neutral (+0.07)\n- **Animal Justice**: Avg interest 0.3 (0% WoW), sentiment: neutral (+0.00)\n- **Reason**: Avg interest 0.0 (0% WoW), sentiment: neutral (+0.00)\n- **Lib Dems**: Avg interest 0.1 (-50.0% WoW), sentiment: neutral (+0.00)"
+}
