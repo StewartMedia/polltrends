@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PolTrends Australia — News</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="PolTrends Australia">
+    <meta property="og:title" content="PolTrends Australia — News & Spikes">
+    <meta property="og:description" content="Latest news headlines and search interest spikes for Australian political parties.">
+    <meta property="og:url" content="https://poltrends.stewartmedia.com.au/xreport.html">
+
+    <!-- Twitter/X Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="PolTrends Australia — News & Spikes">
+    <meta name="twitter:description" content="Latest news headlines and search interest spikes for Australian political parties.">
+
+    <meta name="description" content="Latest news headlines and search interest spikes for Australian political parties.">
+
     <script src="https://cdn.plot.ly/plotly-2.35.0.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -137,6 +152,41 @@
             font-size: 0.8rem;
         }
         .updated { font-size: 0.8rem; color: #999; text-align: right; margin-bottom: 1rem; }
+        .share-strip {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 0;
+            margin-top: 1rem;
+            border-top: 1px solid #f0f0f0;
+            font-size: 0.8rem;
+            color: #999;
+        }
+        .share-strip span { white-space: nowrap; }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-decoration: none;
+            border: 1px solid #e0e0e0;
+            color: #555;
+            background: #fafafa;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .share-btn:hover { background: #f0f0f0; border-color: #ccc; color: #333; }
+        .share-btn.x { border-color: #1d9bf0; color: #1d9bf0; }
+        .share-btn.x:hover { background: #e8f5fd; }
+        .share-btn.fb { border-color: #1877f2; color: #1877f2; }
+        .share-btn.fb:hover { background: #e7f0ff; }
+        .share-btn.li { border-color: #0a66c2; color: #0a66c2; }
+        .share-btn.li:hover { background: #e8f1fa; }
+        .share-btn.copy { border-color: #666; }
+        .share-btn.copy:hover { background: #eee; }
     </style>
 </head>
 <body>
@@ -505,9 +555,37 @@
 </div>
 
 
+<div class="card">
+    
+
+
+<div class="share-strip">
+    <span>Share:</span>
+    <a class="share-btn x"
+       href="https://twitter.com/intent/tweet?text=One%20Nation%20is%20the%20most-searched%20party%20this%20week.%20See%20the%20full%20data%20on%20PolTrends%20Australia&url=https%3A//poltrends.stewartmedia.com.au/xreport.html"
+       target="_blank" rel="noopener">X</a>
+    <a class="share-btn fb"
+       href="https://www.facebook.com/sharer/sharer.php?u=https%3A//poltrends.stewartmedia.com.au/xreport.html"
+       target="_blank" rel="noopener">Facebook</a>
+    <a class="share-btn li"
+       href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//poltrends.stewartmedia.com.au/xreport.html"
+       target="_blank" rel="noopener">LinkedIn</a>
+    <button class="share-btn copy" id="copy-btn" onclick="copyLink()">Copy link</button>
+</div>
+</div>
+
     </main>
     <footer>
         PolTrends Australia &mdash; Entity search data from Google Trends &mdash; Updated 2026-02-23
     </footer>
+    <script>
+    function copyLink(){
+        navigator.clipboard.writeText(window.location.href).then(function(){
+            var btn=document.getElementById('copy-btn');
+            btn.textContent='Copied!';
+            setTimeout(function(){btn.textContent='Copy link';},2000);
+        });
+    }
+    </script>
 </body>
 </html>
