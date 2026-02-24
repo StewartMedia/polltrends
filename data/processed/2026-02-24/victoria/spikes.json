@@ -1,0 +1,128 @@
+[
+  {
+    "date": "2026-01-22",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 31,
+    "rolling_avg": 2.0,
+    "ratio": 15.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 73,
+    "rolling_avg": 5.1,
+    "ratio": 14.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-30",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 21,
+    "rolling_avg": 1.7,
+    "ratio": 12.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2025-12-08",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 24,
+    "rolling_avg": 2.6,
+    "ratio": 9.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-12",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 85,
+    "rolling_avg": 9.4,
+    "ratio": 9.0,
+    "explanation": "Former Victoria Liberal Party president Michael Kroger says Labor\u2019s playbook is to \u201cbuy election victories\u201d.",
+    "news": [
+      {
+        "title": "Former Victoria Liberal Party president Michael Kroger says Labor\u2019s playbook is to \u201cbuy election victories\u201d.",
+        "source": "facebook.com",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNOUNkRXBHa2h5U0Y1SkxmVVBqcVc1UFNpOHgzOGdpSEc1ZVYzVk5lU2pndmNoYzJaTzBqbHBqTS1qdUc1cGxrbFIzQ0xBMlNSQkV6YzEtX2w1M3NJbTAtQXRmNlhYRFNOU3J3QXpGVjNPcDJwMXdEaFhxeHRrQ2NyRV9UMFd1NmVvNzBybGxjNk15Z0pNeDNUMUhmb0h4aDhNdVpRM2xDUDRMdGFtQkJmbDljWjZhM0puNnkwV01KM2dIbFN2eFBqbTJsU19VTzhHNXFNRXhpVExEVExLby1V?oc=5",
+        "date": "2026-02-12"
+      },
+      {
+        "title": "Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+        "source": "facebook.com",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPWDBjeTZfU3REdEp5VXU1dG5FMWg2OGRONXdWZDhYNmk3VERteTFzOUUxSmM5aC03LWlGSTk0WG13eW5MTW1lSVpiWk50UVdWa0pXeHE3SjBsd2RnaUpIVUpKU21sUUpzalFkaEQ4Y3dkVzYyWTgwcDliVmg4MDZ6ZEVmOV85VjY4RFplM25ObWZLM3FWWWM4bUhXUG1Kci16ZjRERU5tUTBvb0k3Z1dXeFJPbTJ2R3FZVUZic2VTM1NlVFNpVklBQlc4TWI5TFA5T0FwZnZQamlGVUd1enpB?oc=5",
+        "date": "2026-02-11"
+      }
+    ]
+  },
+  {
+    "date": "2025-12-04",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 18,
+    "rolling_avg": 2.0,
+    "ratio": 9.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2025-12-14",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 25,
+    "rolling_avg": 3.4,
+    "ratio": 7.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2025-12-16",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 11,
+    "rolling_avg": 2.0,
+    "ratio": 5.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-06",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 11,
+    "rolling_avg": 2.0,
+    "ratio": 5.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-10",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 20,
+    "rolling_avg": 4.0,
+    "ratio": 5.0,
+    "explanation": "Former Victoria Liberal Party president Michael Kroger says Labor\u2019s playbook is to \u201cbuy election victories\u201d.",
+    "news": [
+      {
+        "title": "Former Victoria Liberal Party president Michael Kroger says Labor\u2019s playbook is to \u201cbuy election victories\u201d.",
+        "source": "facebook.com",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNOUNkRXBHa2h5U0Y1SkxmVVBqcVc1UFNpOHgzOGdpSEc1ZVYzVk5lU2pndmNoYzJaTzBqbHBqTS1qdUc1cGxrbFIzQ0xBMlNSQkV6YzEtX2w1M3NJbTAtQXRmNlhYRFNOU3J3QXpGVjNPcDJwMXdEaFhxeHRrQ2NyRV9UMFd1NmVvNzBybGxjNk15Z0pNeDNUMUhmb0h4aDhNdVpRM2xDUDRMdGFtQkJmbDljWjZhM0puNnkwV01KM2dIbFN2eFBqbTJsU19VTzhHNXFNRXhpVExEVExLby1V?oc=5",
+        "date": "2026-02-12"
+      },
+      {
+        "title": "Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+        "source": "facebook.com",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPWDBjeTZfU3REdEp5VXU1dG5FMWg2OGRONXdWZDhYNmk3VERteTFzOUUxSmM5aC03LWlGSTk0WG13eW5MTW1lSVpiWk50UVdWa0pXeHE3SjBsd2RnaUpIVUpKU21sUUpzalFkaEQ4Y3dkVzYyWTgwcDliVmg4MDZ6ZEVmOV85VjY4RFplM25ObWZLM3FWWWM4bUhXUG1Kci16ZjRERU5tUTBvb0k3Z1dXeFJPbTJ2R3FZVUZic2VTM1NlVFNpVklBQlc4TWI5TFA5T0FwZnZQamlGVUd1enpB?oc=5",
+        "date": "2026-02-11"
+      }
+    ]
+  }
+]
