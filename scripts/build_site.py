@@ -15,6 +15,7 @@ from config.settings import (
 from scripts.generate_charts import (
     build_interest_chart, build_weekly_bars, build_related_queries_table, load_spikes,
 )
+from scripts.generate_og_image import generate_og_image
 
 
 def load_latest_file(directory: Path, filename: str, subdir: str | None = None) -> dict | str | None:
@@ -77,15 +78,28 @@ def build():
         "charts": charts,
     }
 
+    # Build share message from latest winner
+    winner_name = analysis.get("search_winner_name", "") if analysis else ""
+
     # Build index
     tpl = env.get_template("index.html")
-    html = tpl.render(**common_ctx, page="index")
+    html = tpl.render(
+        **common_ctx, page="index",
+        og_title="PolTrends Australia — Political Search Trends",
+        og_description=f"Daily Google Trends data tracking Australian political parties. {winner_name + ' leads this week.' if winner_name else ''}",
+        og_page="",
+    )
     with open(OUTPUT_DIR / "index.html", "w") as f:
         f.write(html)
 
     # Build analysis page
     tpl = env.get_template("analysis.html")
-    html = tpl.render(**common_ctx, page="analysis", narrative=narrative_html)
+    html = tpl.render(
+        **common_ctx, page="analysis", narrative=narrative_html,
+        og_title="PolTrends Australia — Weekly Analysis",
+        og_description="Weekly analysis of Australian political party search interest, sentiment, and news correlation.",
+        og_page="analysis.html",
+    )
     with open(OUTPUT_DIR / "analysis.html", "w") as f:
         f.write(html)
 
@@ -96,6 +110,9 @@ def build():
         page="xreport",
         news=news_data,
         spikes=spikes,
+        og_title="PolTrends Australia — News & Spikes",
+        og_description="Latest news headlines and search interest spikes for Australian political parties.",
+        og_page="xreport.html",
     )
     with open(OUTPUT_DIR / "xreport.html", "w") as f:
         f.write(html)
@@ -149,9 +166,15 @@ def build():
         vic_news=vic_news,
         vic_spikes=vic_spikes,
         vic_sentiment=vic_sentiment,
+        og_title="PolTrends Australia — Victoria State Election",
+        og_description="Track search interest for Victorian political parties ahead of the state election.",
+        og_page="victoria.html",
     )
     with open(OUTPUT_DIR / "victoria.html", "w") as f:
         f.write(html)
+
+    # Generate OG image for social sharing
+    generate_og_image(OUTPUT_DIR / "og-image.png")
 
     print(f"Site built to {OUTPUT_DIR}")
 
