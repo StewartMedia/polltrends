@@ -80,6 +80,10 @@ def build():
 
     # Build share message from latest winner
     winner_name = analysis.get("search_winner_name", "") if analysis else ""
+    if winner_name:
+        share_msg = f"{winner_name} is the most-searched party this week. See the full data on PolTrends Australia"
+    else:
+        share_msg = "Which Australian political party are voters searching for most? Check the data"
 
     # Build index
     tpl = env.get_template("index.html")
@@ -88,6 +92,7 @@ def build():
         og_title="PolTrends Australia — Political Search Trends",
         og_description=f"Daily Google Trends data tracking Australian political parties. {winner_name + ' leads this week.' if winner_name else ''}",
         og_page="",
+        share_message=share_msg,
     )
     with open(OUTPUT_DIR / "index.html", "w") as f:
         f.write(html)
@@ -99,6 +104,7 @@ def build():
         og_title="PolTrends Australia — Weekly Analysis",
         og_description="Weekly analysis of Australian political party search interest, sentiment, and news correlation.",
         og_page="analysis.html",
+        share_message=share_msg,
     )
     with open(OUTPUT_DIR / "analysis.html", "w") as f:
         f.write(html)
@@ -113,6 +119,7 @@ def build():
         og_title="PolTrends Australia — News & Spikes",
         og_description="Latest news headlines and search interest spikes for Australian political parties.",
         og_page="xreport.html",
+        share_message=share_msg,
     )
     with open(OUTPUT_DIR / "xreport.html", "w") as f:
         f.write(html)
@@ -154,6 +161,13 @@ def build():
             ),
         }
 
+    # Victoria share message
+    vic_winner = vic_analysis.get("search_winner_name", "") if vic_analysis else ""
+    if vic_winner:
+        vic_share = f"{vic_winner} leads Victorian political searches this week. See the data"
+    else:
+        vic_share = "Track Victorian state election search trends — which party are voters looking up?"
+
     # Build Victoria page
     tpl = env.get_template("victoria.html")
     html = tpl.render(
@@ -169,6 +183,7 @@ def build():
         og_title="PolTrends Australia — Victoria State Election",
         og_description="Track search interest for Victorian political parties ahead of the state election.",
         og_page="victoria.html",
+        share_message=vic_share,
     )
     with open(OUTPUT_DIR / "victoria.html", "w") as f:
         f.write(html)
