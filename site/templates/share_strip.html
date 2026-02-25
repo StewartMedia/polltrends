@@ -1,0 +1,16 @@
+{# Reusable share strip — include with: {% include "share_strip.html" %} #}
+{% set share_url = "https://poltrends.stewartmedia.com.au/" ~ (og_page | default("")) %}
+{% set share_text = share_message | default("Which Australian political party are voters searching for most? Check the data") %}
+<div class="share-strip">
+    <span>Share:</span>
+    <a class="share-btn x"
+       href="https://twitter.com/intent/tweet?text={{ share_text | urlencode }}&url={{ share_url | urlencode }}"
+       target="_blank" rel="noopener">X</a>
+    <a class="share-btn fb"
+       href="https://www.facebook.com/sharer/sharer.php?u={{ share_url | urlencode }}"
+       target="_blank" rel="noopener">Facebook</a>
+    <a class="share-btn li"
+       href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url | urlencode }}"
+       target="_blank" rel="noopener">LinkedIn</a>
+    <button class="share-btn copy" id="copy-btn" onclick="copyLink()">Copy link</button>
+</div>
