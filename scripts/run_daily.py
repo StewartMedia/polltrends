@@ -30,13 +30,22 @@ def main():
 
     # --- Victoria ---
     print("\n--- Step 4: Fetch Google Trends data (Victoria) ---")
-    fetch_trends_vic()
+    try:
+        fetch_trends_vic()
+    except Exception as e:
+        print(f"WARNING: Victoria trends fetch failed: {e}")
 
     print("\n--- Step 5: Fetch news headlines (Victoria) ---")
-    fetch_news_vic()
+    try:
+        fetch_news_vic()
+    except Exception as e:
+        print(f"WARNING: Victoria news fetch failed: {e}")
 
     print("\n--- Step 6: Detect spikes & match news (Victoria) ---")
-    detect_spikes_vic()
+    try:
+        detect_spikes_vic()
+    except Exception as e:
+        print(f"WARNING: Victoria spike detection failed: {e}")
 
     # --- Build site ---
     print("\n--- Step 7: Rebuild site ---")

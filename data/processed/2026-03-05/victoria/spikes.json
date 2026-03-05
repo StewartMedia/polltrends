@@ -1,0 +1,115 @@
+[
+  {
+    "date": "2026-01-22",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 38,
+    "rolling_avg": 1.6,
+    "ratio": 24.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 65,
+    "rolling_avg": 6.0,
+    "ratio": 10.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-04",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 18,
+    "rolling_avg": 1.7,
+    "ratio": 10.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2025-12-14",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 16,
+    "rolling_avg": 1.6,
+    "ratio": 10.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-04",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 17,
+    "rolling_avg": 1.7,
+    "ratio": 9.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-12",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 14,
+    "rolling_avg": 1.9,
+    "ratio": 7.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-12",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 82,
+    "rolling_avg": 12.0,
+    "ratio": 6.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-18",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 10,
+    "rolling_avg": 1.6,
+    "ratio": 6.4,
+    "explanation": "Premier's office learned of IBAC CFMEU referral rejection in 2024",
+    "news": [
+      {
+        "title": "Premier's office learned of IBAC CFMEU referral rejection in 2024",
+        "source": "Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOb3gyUW9pcEhGWWhWUkxrRXVPOUd2V3Z5MG0yT09hMWFGY1VzTllJakwwRXFxai15R3ZvZE9zbm1nOXFGNkhqc3BkZ3ZLZFhXWG5Ya0E2UXNYUFdSNmg5TVNNNFdHUzRSMXdSZEN4RE1SRWI5bnM1eHF4XzcyTlQ2SG8taUticnhCblhWU2wyVV85T2NpbTBUV3JTZUtiUENXbDRLOGZn?oc=5",
+        "date": "2026-02-16"
+      },
+      {
+        "title": "Victorian Greens Move To Establish Inquiry Into LGBTQIA+ Hate Crimes",
+        "source": "The National Tribune",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSVMyeHMyWXhCaUFkclNkR0J5cTlTR3JTSVpSTlZuSjZ2VXdtSEtMQ2FxNG1oLUVrS1kxeHN0ZXh6UUc5SWhld1l1Vk5ZSkdla1B1UDRxNGxXRXM2YWpSanozUkhCOERHZzlhV18yTFJOM3hKQ2I2YWI5Vl9OZWllZzFMWGdnelV6cFRlWGxsbE02SUhnRE9SNFJOSU44RU9VRFdic3dn?oc=5",
+        "date": "2026-02-18"
+      }
+    ]
+  },
+  {
+    "date": "2026-02-11",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 13,
+    "rolling_avg": 2.4,
+    "ratio": 5.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-05",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 13,
+    "rolling_avg": 2.6,
+    "ratio": 5.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]

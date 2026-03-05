@@ -1,0 +1,392 @@
+{
+  "ALP": {
+    "top": [],
+    "rising": []
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal leader",
+        "value": 100
+      },
+      {
+        "query": "liberal party australia",
+        "value": 87
+      },
+      {
+        "query": "liberal leadership",
+        "value": 81
+      },
+      {
+        "query": "angus taylor",
+        "value": 40
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 39
+      },
+      {
+        "query": "liberal spill",
+        "value": 36
+      },
+      {
+        "query": "liberals",
+        "value": 33
+      },
+      {
+        "query": "liberal leadership spill",
+        "value": 29
+      },
+      {
+        "query": "leader of the liberal party",
+        "value": 24
+      },
+      {
+        "query": "federal liberal party",
+        "value": 24
+      },
+      {
+        "query": "liberal leaders",
+        "value": 17
+      },
+      {
+        "query": "one nation party",
+        "value": 17
+      },
+      {
+        "query": "liberal party members",
+        "value": 15
+      },
+      {
+        "query": "liberal party shadow cabinet",
+        "value": 2
+      },
+      {
+        "query": "liberal party immigration policy",
+        "value": 2
+      },
+      {
+        "query": "charlotte mortlock",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "liberal party shadow cabinet",
+        "value": 28850
+      },
+      {
+        "query": "liberal party immigration policy",
+        "value": 21900
+      },
+      {
+        "query": "charlotte mortlock",
+        "value": 14400
+      },
+      {
+        "query": "angus taylor",
+        "value": 4150
+      },
+      {
+        "query": "liberal leadership spill",
+        "value": 550
+      },
+      {
+        "query": "liberal leadership",
+        "value": 500
+      },
+      {
+        "query": "liberal spill",
+        "value": 500
+      },
+      {
+        "query": "one nation party",
+        "value": 200
+      }
+    ]
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      },
+      {
+        "query": "the greens",
+        "value": 43
+      },
+      {
+        "query": "greens australia",
+        "value": 17
+      },
+      {
+        "query": "greens party",
+        "value": 16
+      },
+      {
+        "query": "australian greens",
+        "value": 15
+      },
+      {
+        "query": "the greens party",
+        "value": 11
+      },
+      {
+        "query": "greens leader",
+        "value": 10
+      },
+      {
+        "query": "the greens australia",
+        "value": 9
+      },
+      {
+        "query": "the australian greens",
+        "value": 8
+      },
+      {
+        "query": "greens senator",
+        "value": 6
+      },
+      {
+        "query": "liberal",
+        "value": 5
+      },
+      {
+        "query": "australian greens party",
+        "value": 5
+      },
+      {
+        "query": "one nation",
+        "value": 5
+      },
+      {
+        "query": "leader of greens",
+        "value": 5
+      },
+      {
+        "query": "greens policies",
+        "value": 5
+      },
+      {
+        "query": "the greens leader",
+        "value": 4
+      },
+      {
+        "query": "leader of the greens",
+        "value": 4
+      },
+      {
+        "query": "green",
+        "value": 4
+      },
+      {
+        "query": "greens party leader",
+        "value": 4
+      },
+      {
+        "query": "greens mp",
+        "value": 4
+      },
+      {
+        "query": "the greens party australia",
+        "value": 4
+      },
+      {
+        "query": "greens policy",
+        "value": 3
+      },
+      {
+        "query": "greens leader australia",
+        "value": 3
+      },
+      {
+        "query": "labour",
+        "value": 3
+      },
+      {
+        "query": "the greens political party",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation policies",
+        "value": 87400
+      },
+      {
+        "query": "adam bandt",
+        "value": 81150
+      },
+      {
+        "query": "sa election",
+        "value": 78950
+      },
+      {
+        "query": "peter dutton",
+        "value": 6050
+      },
+      {
+        "query": "greens mp",
+        "value": 120
+      },
+      {
+        "query": "one nation",
+        "value": 90
+      },
+      {
+        "query": "greens policies",
+        "value": 90
+      },
+      {
+        "query": "australian greens party",
+        "value": 60
+      }
+    ]
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation party",
+        "value": 12
+      },
+      {
+        "query": "one nation australia",
+        "value": 12
+      },
+      {
+        "query": "one nation polling",
+        "value": 11
+      },
+      {
+        "query": "pauline hanson",
+        "value": 8
+      },
+      {
+        "query": "pauline hanson one nation",
+        "value": 7
+      },
+      {
+        "query": "one nation policies",
+        "value": 5
+      },
+      {
+        "query": "one nation polls",
+        "value": 4
+      },
+      {
+        "query": "what is one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation news",
+        "value": 4
+      },
+      {
+        "query": "one nation seats",
+        "value": 3
+      },
+      {
+        "query": "one nation victoria",
+        "value": 2
+      },
+      {
+        "query": "one nation party australia",
+        "value": 2
+      },
+      {
+        "query": "one nation south australia",
+        "value": 2
+      },
+      {
+        "query": "one nation candidates",
+        "value": 2
+      },
+      {
+        "query": "barnaby joyce",
+        "value": 2
+      },
+      {
+        "query": "one nation policy",
+        "value": 2
+      },
+      {
+        "query": "one nation membership",
+        "value": 2
+      },
+      {
+        "query": "one nation sa",
+        "value": 2
+      },
+      {
+        "query": "one nation nsw",
+        "value": 2
+      },
+      {
+        "query": "liberal party",
+        "value": 2
+      },
+      {
+        "query": "pauline hanson party",
+        "value": 2
+      },
+      {
+        "query": "one nation leader",
+        "value": 1
+      },
+      {
+        "query": "rhode beauty",
+        "value": 0
+      },
+      {
+        "query": "one nation logo",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "rhode beauty",
+        "value": 31850
+      },
+      {
+        "query": "one nation logo",
+        "value": 24300
+      },
+      {
+        "query": "liam alexander hall",
+        "value": 21250
+      },
+      {
+        "query": "sky news australia",
+        "value": 14700
+      },
+      {
+        "query": "nasa astronauts",
+        "value": 14450
+      },
+      {
+        "query": "samsung galaxy galaxy s26 ultra",
+        "value": 11100
+      },
+      {
+        "query": "one nation polling",
+        "value": 350
+      },
+      {
+        "query": "one nation south australia",
+        "value": 300
+      },
+      {
+        "query": "one nation sa",
+        "value": 200
+      },
+      {
+        "query": "one nation policies",
+        "value": 70
+      }
+    ]
+  }
+}

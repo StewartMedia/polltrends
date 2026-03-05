@@ -14,6 +14,7 @@ from datetime import datetime, date
 from pathlib import Path
 
 from pytrends.request import TrendReq
+from pytrends.exceptions import TooManyRequestsError
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from config.settings import (
@@ -22,6 +23,19 @@ from config.settings import (
 )
 
 MAX_ENTITIES_PER_REQUEST = 5
+RETRY_DELAYS = [60, 120, 300]  # seconds to wait after 429 errors
+
+
+def _fetch_with_retry(pytrends, call_fn):
+    """Call call_fn() with retry on 429 rate limit errors."""
+    for attempt, delay in enumerate(RETRY_DELAYS + [None]):
+        try:
+            return call_fn()
+        except TooManyRequestsError:
+            if delay is None:
+                raise
+            print(f"  Rate limited (429). Waiting {delay}s before retry {attempt + 1}/{len(RETRY_DELAYS)}...")
+            time.sleep(delay)
 
 
 def _batch_entities(entities: dict) -> list[list[str]]:
@@ -70,7 +84,7 @@ def fetch_interest_over_time(
         # Simple case — all fit in one request
         mids = [entities[c]["mid"] for c in batches[0]]
         pytrends.build_payload(mids, geo=geo, timeframe=timeframe)
-        df = pytrends.interest_over_time()
+        df = _fetch_with_retry(pytrends, pytrends.interest_over_time)
 
         if df.empty:
             print("WARNING: Empty interest_over_time response")
@@ -98,7 +112,7 @@ def fetch_interest_over_time(
         mids = [entities[c]["mid"] for c in batch]
         print(f"  Fetching batch {i + 1}/{len(batches)}: {', '.join(batch)}")
         pytrends.build_payload(mids, geo=geo, timeframe=timeframe)
-        df = pytrends.interest_over_time()
+        df = _fetch_with_retry(pytrends, pytrends.interest_over_time)
 
         if df.empty:
             print(f"  WARNING: Empty response for batch {i + 1}")
@@ -145,7 +159,7 @@ def fetch_interest_over_time(
                 all_dfs[code] = values
 
         if i < len(batches) - 1:
-            time.sleep(3)  # Be gentle between batches
+            time.sleep(10)  # Be gentle between batches
 
     if not all_dfs:
         return {}
@@ -223,6 +237,7 @@ def fetch_and_save(entities: dict, geo: str, out_dir: Path, label: str = "nation
         json.dump(rq_data, f, indent=2)
 
     print(f"{label.title()} data saved to {out_dir}")
+    time.sleep(30)  # Cool down before any subsequent geo fetch
     return iot_data, rq_data
 
 
