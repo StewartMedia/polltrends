@@ -6,7 +6,6 @@ Supports multi-geo: national (AU) and Victoria (AU-VIC).
 """
 import json
 import sys
-from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -114,8 +113,7 @@ def analyse_week():
         return
 
     latest = raw_dirs[-1]
-    today = date.today().isoformat()
-    out_dir = PROCESSED_DIR / today
+    out_dir = PROCESSED_DIR / latest.name
 
     return run_sentiment_analysis(ENTITIES, latest, out_dir, label="national")
 
@@ -133,8 +131,7 @@ def analyse_victoria():
         print("No Victoria data found.")
         return
 
-    today = date.today().isoformat()
-    out_dir = PROCESSED_DIR / today / "victoria"
+    out_dir = PROCESSED_DIR / latest.name / "victoria"
 
     return run_sentiment_analysis(VIC_ENTITIES, vic_raw, out_dir, label="victoria")
 
