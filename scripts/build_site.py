@@ -1,16 +1,16 @@
 """Build the static site from templates and data."""
-import json
+import html as html_lib
 import sys
-from datetime import date, datetime
 from pathlib import Path
+from urllib.parse import urlparse
 
 import markdown
-from jinja2 import Environment, FileSystemLoader
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from config.settings import (
     ENTITIES, PARTY_COLORS, RAW_DIR, PROCESSED_DIR, TEMPLATES_DIR, OUTPUT_DIR,
-    VIC_ENTITIES, VIC_PARTY_COLORS,
+    VIC_ENTITIES, VIC_PARTY_COLORS, find_latest_snapshot_date, load_snapshot_file,
 )
 from scripts.generate_charts import (
     build_interest_chart, build_weekly_bars, build_related_queries_table, load_spikes,
@@ -18,35 +18,69 @@ from scripts.generate_charts import (
 from scripts.generate_og_image import generate_og_image
 
 
-def load_latest_file(directory: Path, filename: str, subdir: str | None = None) -> dict | str | None:
-    """Load a file from the most recent dated subdirectory."""
-    dirs = sorted(d for d in directory.iterdir() if d.is_dir())
-    for d in reversed(dirs):
-        target = d / subdir if subdir else d
-        path = target / filename
-        if path.exists():
-            if filename.endswith(".json"):
-                with open(path) as f:
-                    return json.load(f)
-            else:
-                with open(path) as f:
-                    return f.read()
-    return None
+def sanitize_url(url: str) -> str:
+    """Allow only absolute HTTP(S) URLs in rendered content."""
+    parsed = urlparse(url or "")
+    if parsed.scheme in {"http", "https"} and parsed.netloc:
+        return url
+    return ""
+
+
+def sanitize_news_items(news_data: dict | None) -> dict:
+    """Strip unsafe links from fetched news items."""
+    if not news_data:
+        return {}
+
+    sanitized = {}
+    for code, articles in news_data.items():
+        sanitized[code] = []
+        for article in articles:
+            sanitized[code].append({
+                **article,
+                "url": sanitize_url(article.get("url", "")),
+            })
+    return sanitized
+
+
+def sanitize_spikes(spikes: list[dict] | None) -> list[dict]:
+    """Strip unsafe links from spike-associated articles."""
+    if not spikes:
+        return []
+
+    sanitized = []
+    for spike in spikes:
+        spike_copy = {**spike}
+        spike_copy["news"] = [
+            {**article, "url": sanitize_url(article.get("url", ""))}
+            for article in spike.get("news", [])
+        ]
+        sanitized.append(spike_copy)
+    return sanitized
 
 
 def build():
     """Build all site pages."""
-    env = Environment(loader=FileSystemLoader(str(TEMPLATES_DIR)))
+    env = Environment(
+        loader=FileSystemLoader(str(TEMPLATES_DIR)),
+        autoescape=select_autoescape(["html", "xml"]),
+    )
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    today = date.today().isoformat()
+    national_snapshot = find_latest_snapshot_date(
+        raw_required=["interest_over_time.json", "related_queries.json", "news.json"],
+        processed_required=["weekly_analysis.json", "sentiment_analysis.json", "spikes.json"],
+    )
+    if not national_snapshot:
+        raise FileNotFoundError("No complete national snapshot found to build the site.")
 
     # --- National data ---
-    iot_data = load_latest_file(RAW_DIR, "interest_over_time.json") or {}
-    rq_data = load_latest_file(RAW_DIR, "related_queries.json") or {}
-    news_data = load_latest_file(RAW_DIR, "news.json") or {}
-    analysis = load_latest_file(PROCESSED_DIR, "weekly_analysis.json")
-    sentiment = load_latest_file(PROCESSED_DIR, "sentiment_analysis.json")
+    iot_data = load_snapshot_file(RAW_DIR, national_snapshot, "interest_over_time.json") or {}
+    rq_data = load_snapshot_file(RAW_DIR, national_snapshot, "related_queries.json") or {}
+    news_data = sanitize_news_items(
+        load_snapshot_file(RAW_DIR, national_snapshot, "news.json") or {}
+    )
+    analysis = load_snapshot_file(PROCESSED_DIR, national_snapshot, "weekly_analysis.json")
+    sentiment = load_snapshot_file(PROCESSED_DIR, national_snapshot, "sentiment_analysis.json")
 
     # Add enriched fields to analysis
     if analysis:
@@ -54,9 +88,9 @@ def build():
         analysis["search_winner_name"] = ENTITIES.get(winner_code, {}).get("short_name", winner_code)
 
     # Load narrative and spike annotations
-    narrative_md = load_latest_file(PROCESSED_DIR, "narrative.md")
-    narrative_html = markdown.markdown(narrative_md) if narrative_md else None
-    spikes = load_spikes()
+    narrative_md = load_snapshot_file(PROCESSED_DIR, national_snapshot, "narrative.md")
+    narrative_html = markdown.markdown(html_lib.escape(narrative_md)) if narrative_md else None
+    spikes = sanitize_spikes(load_spikes(snapshot_date=national_snapshot))
 
     # Generate national charts
     charts = {
@@ -71,7 +105,7 @@ def build():
         entities_with_colors[code] = {**ent, "color": PARTY_COLORS[code]}
 
     common_ctx = {
-        "updated": today,
+        "updated": national_snapshot,
         "entities": entities_with_colors,
         "analysis": analysis,
         "sentiment": sentiment,
@@ -125,12 +159,28 @@ def build():
         f.write(html)
 
     # --- Victoria data ---
-    vic_iot = load_latest_file(RAW_DIR, "interest_over_time.json", subdir="victoria") or {}
-    vic_rq = load_latest_file(RAW_DIR, "related_queries.json", subdir="victoria") or {}
-    vic_news = load_latest_file(RAW_DIR, "news.json", subdir="victoria") or {}
-    vic_analysis = load_latest_file(PROCESSED_DIR, "weekly_analysis.json", subdir="victoria")
-    vic_sentiment = load_latest_file(PROCESSED_DIR, "sentiment_analysis.json", subdir="victoria")
-    vic_spikes = load_spikes(subdir="victoria")
+    victoria_snapshot = find_latest_snapshot_date(
+        raw_required=["interest_over_time.json", "related_queries.json", "news.json"],
+        processed_required=["weekly_analysis.json", "sentiment_analysis.json", "spikes.json"],
+        raw_subdir="victoria",
+        processed_subdir="victoria",
+    )
+    if victoria_snapshot:
+        vic_iot = load_snapshot_file(RAW_DIR, victoria_snapshot, "interest_over_time.json", subdir="victoria") or {}
+        vic_rq = load_snapshot_file(RAW_DIR, victoria_snapshot, "related_queries.json", subdir="victoria") or {}
+        vic_news = sanitize_news_items(
+            load_snapshot_file(RAW_DIR, victoria_snapshot, "news.json", subdir="victoria") or {}
+        )
+        vic_analysis = load_snapshot_file(PROCESSED_DIR, victoria_snapshot, "weekly_analysis.json", subdir="victoria")
+        vic_sentiment = load_snapshot_file(PROCESSED_DIR, victoria_snapshot, "sentiment_analysis.json", subdir="victoria")
+        vic_spikes = sanitize_spikes(load_spikes(snapshot_date=victoria_snapshot, subdir="victoria"))
+    else:
+        vic_iot = {}
+        vic_rq = {}
+        vic_news = {}
+        vic_analysis = None
+        vic_sentiment = None
+        vic_spikes = []
 
     if vic_analysis:
         winner_code = vic_analysis.get("search_winner", "")
@@ -171,7 +221,7 @@ def build():
     # Build Victoria page
     tpl = env.get_template("victoria.html")
     html = tpl.render(
-        updated=today,
+        updated=victoria_snapshot or national_snapshot,
         entities=entities_with_colors,
         page="victoria",
         vic_entities=vic_entities_with_colors,
@@ -191,7 +241,10 @@ def build():
     # Generate OG image for social sharing
     generate_og_image(OUTPUT_DIR / "og-image.png")
 
-    print(f"Site built to {OUTPUT_DIR}")
+    print(
+        f"Site built to {OUTPUT_DIR} "
+        f"(national snapshot: {national_snapshot}, victoria snapshot: {victoria_snapshot or 'none'})"
+    )
 
 
 def main():

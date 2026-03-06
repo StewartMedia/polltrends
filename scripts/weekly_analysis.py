@@ -4,11 +4,10 @@ Supports multi-geo: national (AU) and Victoria (AU-VIC).
 """
 import json
 import sys
-from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from config.settings import ENTITIES, RAW_DIR, PROCESSED_DIR, VIC_ENTITIES
+from config.settings import ENTITIES, RAW_DIR, PROCESSED_DIR, VIC_ENTITIES, list_dated_directories
 
 
 def load_data(raw_dir: Path, proc_dir: Path):
@@ -92,21 +91,23 @@ def determine_winner(iot_data: dict, sentiment_data: dict, entities: dict) -> di
         "search_winner": search_winner,
         "overall_winner": overall_winner,
         "summary": build_summary(
-            overall_winner, avg_interest, momentum, sentiment_scores, period_start, period_end, entities
+            search_winner, overall_winner, avg_interest, momentum, sentiment_scores, period_start, period_end, entities
         ),
     }
 
     return analysis
 
 
-def build_summary(winner, avg_interest, momentum, sentiment_scores, start, end, entities) -> str:
+def build_summary(search_winner, overall_winner, avg_interest, momentum, sentiment_scores, start, end, entities) -> str:
     """Build a human-readable weekly summary."""
-    ent = entities[winner]
+    search_ent = entities[search_winner]
+    overall_ent = entities[overall_winner]
     lines = [
         f"## Week in Review: {start} to {end}",
         "",
-        f"**{ent['short_name']}** dominated search interest this week "
-        f"with an average score of {avg_interest[winner]:.1f}.",
+        f"**{search_ent['short_name']}** led search interest this week "
+        f"with an average score of {avg_interest[search_winner]:.1f}.",
+        f"The strongest combined search-and-sentiment score belonged to **{overall_ent['short_name']}**.",
         "",
         "### Party Breakdown",
         "",
@@ -150,26 +151,23 @@ def run_weekly_analysis(entities: dict, raw_dir: Path, proc_dir: Path, out_dir: 
 
 def main():
     """Run national weekly analysis."""
-    raw_dirs = sorted(d for d in RAW_DIR.iterdir() if d.is_dir())
-    proc_dirs = sorted(d for d in PROCESSED_DIR.iterdir() if d.is_dir())
+    raw_dirs = list_dated_directories(RAW_DIR)
 
     if not raw_dirs:
         print("No data found.")
         return
 
     latest_raw = raw_dirs[-1]
-    latest_proc = proc_dirs[-1] if proc_dirs else None
+    snapshot_date = latest_raw.name
+    proc_dir = PROCESSED_DIR / snapshot_date
+    out_dir = proc_dir
 
-    today = date.today().isoformat()
-    out_dir = PROCESSED_DIR / today
-
-    return run_weekly_analysis(ENTITIES, latest_raw, latest_proc or out_dir, out_dir, label="national")
+    return run_weekly_analysis(ENTITIES, latest_raw, proc_dir, out_dir, label="national")
 
 
 def analyse_victoria():
     """Run Victoria weekly analysis."""
-    raw_dirs = sorted(d for d in RAW_DIR.iterdir() if d.is_dir())
-    proc_dirs = sorted(d for d in PROCESSED_DIR.iterdir() if d.is_dir())
+    raw_dirs = list_dated_directories(RAW_DIR)
 
     if not raw_dirs:
         print("No data found.")
@@ -181,8 +179,8 @@ def analyse_victoria():
         print("No Victoria data found.")
         return
 
-    today = date.today().isoformat()
-    vic_proc = PROCESSED_DIR / today / "victoria"
+    snapshot_date = latest_raw.name
+    vic_proc = PROCESSED_DIR / snapshot_date / "victoria"
 
     return run_weekly_analysis(VIC_ENTITIES, vic_raw, vic_proc, vic_proc, label="victoria")
 

@@ -4,7 +4,7 @@ Runs the complete weekly pipeline plus local-only Qwen narrative,
 then rebuilds the site. Run this when you want the full analysis
 including the AI-generated weekly narrative.
 
-Requires LM Studio running locally at localhost:1234 with Qwen 2.5 7B.
+Requires LM Studio running locally at localhost:1234 with your configured Qwen model.
 """
 import sys
 from pathlib import Path
