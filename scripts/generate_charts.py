@@ -147,10 +147,16 @@ def build_interest_chart(
         ),
         margin=dict(l=60, r=30, t=80, b=60),
         height=550,
+        autosize=True,
         annotations=annotations,
     )
 
-    return fig.to_html(full_html=False, include_plotlyjs=False)
+    return fig.to_html(
+        full_html=False,
+        include_plotlyjs=False,
+        config={"responsive": True, "displayModeBar": False},
+        default_width="100%",
+    )
 
 
 def build_weekly_bars(
@@ -195,9 +201,15 @@ def build_weekly_bars(
         template="plotly_white",
         height=400,
         margin=dict(l=60, r=30, t=80, b=60),
+        autosize=True,
     )
 
-    return fig.to_html(full_html=False, include_plotlyjs=False)
+    return fig.to_html(
+        full_html=False,
+        include_plotlyjs=False,
+        config={"responsive": True, "displayModeBar": False},
+        default_width="100%",
+    )
 
 
 def build_related_queries_table(
@@ -220,20 +232,20 @@ def build_related_queries_table(
         html_output += '<div class="rq-columns">\n'
 
         # Top queries
-        html_output += '<div class="rq-col"><h4>Top</h4><table><tr><th>Query</th><th>Score</th></tr>\n'
+        html_output += '<div class="rq-col"><h4>Top</h4><div class="table-scroll"><table><tr><th>Query</th><th>Score</th></tr>\n'
         for q in top:
             query_text = html.escape(str(q.get("query", "")))
             value = html.escape(str(q.get("value", 0)))
             html_output += f"<tr><td>{query_text}</td><td>{value}</td></tr>\n"
-        html_output += "</table></div>\n"
+        html_output += "</table></div></div>\n"
 
         # Rising queries
-        html_output += '<div class="rq-col"><h4>Rising</h4><table><tr><th>Query</th><th>Change</th></tr>\n'
+        html_output += '<div class="rq-col"><h4>Rising</h4><div class="table-scroll"><table><tr><th>Query</th><th>Change</th></tr>\n'
         for q in rising:
             query_text = html.escape(str(q.get("query", "")))
             value = html.escape(str(q.get("value", "")))
             html_output += f"<tr><td>{query_text}</td><td>{value}</td></tr>\n"
-        html_output += "</table></div>\n"
+        html_output += "</table></div></div>\n"
 
         html_output += "</div></div>\n"
 

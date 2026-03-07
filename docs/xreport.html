@@ -34,6 +34,7 @@
             background: #f8f9fa;
             color: #1a1a2e;
             line-height: 1.6;
+            overflow-x: hidden;
         }
         header {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
@@ -48,6 +49,7 @@
             padding: 0.5rem 2rem;
             display: flex;
             gap: 1.5rem;
+            flex-wrap: wrap;
         }
         nav a {
             color: rgba(255,255,255,0.7);
@@ -97,6 +99,8 @@
         .rq-card h3 { font-size: 1rem; margin-bottom: 0.75rem; }
         .rq-card h4 { font-size: 0.85rem; color: #666; margin-bottom: 0.5rem; }
         .rq-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .rq-col { min-width: 0; }
+        .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
         .rq-card table { width: 100%; font-size: 0.8rem; border-collapse: collapse; }
         .rq-card th, .rq-card td { padding: 0.3rem 0.5rem; text-align: left; }
         .rq-card th { color: #888; font-weight: 500; border-bottom: 1px solid #eee; }
@@ -191,6 +195,71 @@
         .share-btn.li:hover { background: #e8f1fa; }
         .share-btn.copy { border-color: #666; }
         .share-btn.copy:hover { background: #eee; }
+        .js-plotly-plot, .plot-container { width: 100% !important; }
+        .js-plotly-plot .svg-container { width: 100% !important; max-width: 100% !important; }
+        @media (max-width: 768px) {
+            header {
+                padding: 1.2rem 1rem;
+            }
+            header h1 {
+                font-size: 1.3rem;
+            }
+            nav {
+                padding: 0.75rem 1rem;
+                gap: 0.75rem 1rem;
+            }
+            nav a {
+                font-size: 0.82rem;
+            }
+            main {
+                margin: 1rem auto 1.5rem;
+                padding: 0 0.85rem;
+            }
+            .card,
+            .winner-banner {
+                padding: 1rem;
+                border-radius: 10px;
+                margin-bottom: 1rem;
+            }
+            .card h2,
+            .winner-banner h2 {
+                font-size: 1.05rem;
+            }
+            .updated {
+                text-align: left;
+                margin-bottom: 0.75rem;
+            }
+            .rq-columns {
+                grid-template-columns: 1fr;
+            }
+            .metric-grid {
+                grid-template-columns: 1fr;
+            }
+            .metric-card .value {
+                font-size: 1.5rem;
+            }
+            .spike-header {
+                display: flex;
+                flex-direction: column;
+                gap: 0.2rem;
+            }
+            .spike-ratio {
+                margin-left: 0;
+            }
+            .share-strip {
+                flex-wrap: wrap;
+            }
+            .share-strip span {
+                width: 100%;
+            }
+            .share-btn {
+                flex: 1 1 calc(50% - 0.5rem);
+                justify-content: center;
+            }
+            footer {
+                padding: 1.5rem 1rem 2rem;
+            }
+        }
     </style>
 </head>
 <body>
