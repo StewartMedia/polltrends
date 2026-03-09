@@ -7,7 +7,9 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from config.settings import ENTITIES, RAW_DIR, PROCESSED_DIR, VIC_ENTITIES, list_dated_directories
+from config.settings import (
+    ENTITIES, RAW_DIR, PROCESSED_DIR, VIC_ENTITIES, find_latest_snapshot_date,
+)
 
 
 def load_data(raw_dir: Path, proc_dir: Path):
@@ -151,14 +153,12 @@ def run_weekly_analysis(entities: dict, raw_dir: Path, proc_dir: Path, out_dir: 
 
 def main():
     """Run national weekly analysis."""
-    raw_dirs = list_dated_directories(RAW_DIR)
-
-    if not raw_dirs:
+    snapshot_date = find_latest_snapshot_date(raw_required=["interest_over_time.json"])
+    if not snapshot_date:
         print("No data found.")
         return
 
-    latest_raw = raw_dirs[-1]
-    snapshot_date = latest_raw.name
+    latest_raw = RAW_DIR / snapshot_date
     proc_dir = PROCESSED_DIR / snapshot_date
     out_dir = proc_dir
 
@@ -167,19 +167,20 @@ def main():
 
 def analyse_victoria():
     """Run Victoria weekly analysis."""
-    raw_dirs = list_dated_directories(RAW_DIR)
-
-    if not raw_dirs:
+    snapshot_date = find_latest_snapshot_date(
+        raw_required=["interest_over_time.json"],
+        raw_subdir="victoria",
+    )
+    if not snapshot_date:
         print("No data found.")
         return
 
-    latest_raw = raw_dirs[-1]
+    latest_raw = RAW_DIR / snapshot_date
     vic_raw = latest_raw / "victoria"
     if not vic_raw.exists():
         print("No Victoria data found.")
         return
 
-    snapshot_date = latest_raw.name
     vic_proc = PROCESSED_DIR / snapshot_date / "victoria"
 
     return run_weekly_analysis(VIC_ENTITIES, vic_raw, vic_proc, vic_proc, label="victoria")

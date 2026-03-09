@@ -9,7 +9,9 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from config.settings import ENTITIES, RAW_DIR, PROCESSED_DIR, VIC_ENTITIES
+from config.settings import (
+    ENTITIES, RAW_DIR, PROCESSED_DIR, VIC_ENTITIES, find_latest_snapshot_date,
+)
 
 # Keyword lexicons for political sentiment
 NEGATIVE_KEYWORDS = [
@@ -107,12 +109,12 @@ def run_sentiment_analysis(entities: dict, raw_dir: Path, out_dir: Path, label: 
 
 def analyse_week():
     """Analyse related queries from the most recent national data."""
-    raw_dirs = sorted(d for d in RAW_DIR.iterdir() if d.is_dir())
-    if not raw_dirs:
+    snapshot_date = find_latest_snapshot_date(raw_required=["related_queries.json"])
+    if not snapshot_date:
         print("No data found.")
         return
 
-    latest = raw_dirs[-1]
+    latest = RAW_DIR / snapshot_date
     out_dir = PROCESSED_DIR / latest.name
 
     return run_sentiment_analysis(ENTITIES, latest, out_dir, label="national")
@@ -120,12 +122,15 @@ def analyse_week():
 
 def analyse_victoria():
     """Analyse related queries from the most recent Victoria data."""
-    raw_dirs = sorted(d for d in RAW_DIR.iterdir() if d.is_dir())
-    if not raw_dirs:
+    snapshot_date = find_latest_snapshot_date(
+        raw_required=["related_queries.json"],
+        raw_subdir="victoria",
+    )
+    if not snapshot_date:
         print("No data found.")
         return
 
-    latest = raw_dirs[-1]
+    latest = RAW_DIR / snapshot_date
     vic_raw = latest / "victoria"
     if not vic_raw.exists():
         print("No Victoria data found.")

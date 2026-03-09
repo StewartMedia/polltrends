@@ -10,7 +10,9 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from config.settings import ENTITIES, RAW_DIR, PROCESSED_DIR, VIC_ENTITIES
+from config.settings import (
+    ENTITIES, RAW_DIR, PROCESSED_DIR, VIC_ENTITIES, find_latest_snapshot_date,
+)
 
 SPIKE_THRESHOLD = 2.0  # Must be this many times above the rolling average
 ROLLING_WINDOW = 7     # Days for rolling average
@@ -137,12 +139,12 @@ def run_spike_detection(entities: dict, raw_dir: Path, out_dir: Path, label: str
 
 def main():
     """Run spike detection for national data."""
-    raw_dirs = sorted(d for d in RAW_DIR.iterdir() if d.is_dir())
-    if not raw_dirs:
+    snapshot_date = find_latest_snapshot_date(raw_required=["interest_over_time.json"])
+    if not snapshot_date:
         print("No data found.")
         return []
 
-    latest = raw_dirs[-1]
+    latest = RAW_DIR / snapshot_date
     today = date.today().isoformat()
     out_dir = PROCESSED_DIR / today
 
@@ -151,12 +153,15 @@ def main():
 
 def detect_victoria():
     """Run spike detection for Victoria data."""
-    raw_dirs = sorted(d for d in RAW_DIR.iterdir() if d.is_dir())
-    if not raw_dirs:
+    snapshot_date = find_latest_snapshot_date(
+        raw_required=["interest_over_time.json"],
+        raw_subdir="victoria",
+    )
+    if not snapshot_date:
         print("No data found.")
         return []
 
-    latest = raw_dirs[-1]
+    latest = RAW_DIR / snapshot_date
     vic_raw = latest / "victoria"
 
     if not vic_raw.exists():

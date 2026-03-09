@@ -20,7 +20,10 @@ def main():
 
     # --- National ---
     print("\n--- Step 1: Fetch Google Trends data (National) ---")
-    fetch_trends()
+    try:
+        fetch_trends()
+    except Exception as e:
+        print(f"WARNING: National trends fetch failed: {e}")
 
     print("\n--- Step 2: Fetch news headlines (National) ---")
     fetch_news()
