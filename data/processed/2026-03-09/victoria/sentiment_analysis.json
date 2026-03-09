@@ -1,0 +1,124 @@
+{
+  "ALP": {
+    "party": "Labor",
+    "queries_analysed": 11,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 1,
+      "neutral": 10
+    },
+    "sentiment_score": -0.09,
+    "classified_queries": [
+      {
+        "query": "labor",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "australian labor party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor government",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labour party australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labour vs liberal",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor policies",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor vs liberal",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "is albanese labour",
+        "sentiment": "negative"
+      },
+      {
+        "query": "is chris minns labor or liberal",
+        "sentiment": "neutral"
+      }
+    ]
+  },
+  "LIB": {
+    "party": "Liberal",
+    "queries_analysed": 0,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": []
+  },
+  "GRN": {
+    "party": "Greens",
+    "queries_analysed": 0,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": []
+  },
+  "PHON": {
+    "party": "One Nation",
+    "queries_analysed": 0,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": []
+  },
+  "AJP": {
+    "party": "Animal Justice",
+    "queries_analysed": 0,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": []
+  },
+  "RSN": {
+    "party": "Reason",
+    "queries_analysed": 0,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": []
+  },
+  "LDP": {
+    "party": "Lib Dems",
+    "queries_analysed": 0,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": []
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labor",
+        "value": 100
+      },
+      {
+        "query": "australian labor party",
+        "value": 12
+      },
+      {
+        "query": "liberal party",
+        "value": 11
+      },
+      {
+        "query": "labor government",
+        "value": 7
+      },
+      {
+        "query": "labour party australia",
+        "value": 7
+      },
+      {
+        "query": "one nation party",
+        "value": 4
+      },
+      {
+        "query": "labour vs liberal",
+        "value": 3
+      },
+      {
+        "query": "labor policies",
+        "value": 3
+      },
+      {
+        "query": "labor vs liberal",
+        "value": 2
+      },
+      {
+        "query": "is albanese labour",
+        "value": 2
+      },
+      {
+        "query": "is chris minns labor or liberal",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation party",
+        "value": 150
+      },
+      {
+        "query": "is chris minns labor or liberal",
+        "value": 140
+      },
+      {
+        "query": "labor vs liberal",
+        "value": 70
+      }
+    ]
+  },
+  "LIB": {
+    "top": [],
+    "rising": []
+  },
+  "GRN": {
+    "top": [],
+    "rising": []
+  },
+  "PHON": {
+    "top": [],
+    "rising": []
+  },
+  "AJP": {
+    "top": [],
+    "rising": []
+  },
+  "RSN": {
+    "top": [],
+    "rising": []
+  },
+  "LDP": {
+    "top": [],
+    "rising": []
+  }
+}

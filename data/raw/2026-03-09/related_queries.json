@@ -1,0 +1,268 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labor",
+        "value": 100
+      },
+      {
+        "query": "australian labor party",
+        "value": 14
+      },
+      {
+        "query": "albanese",
+        "value": 11
+      },
+      {
+        "query": "liberal party",
+        "value": 10
+      },
+      {
+        "query": "labor government",
+        "value": 8
+      },
+      {
+        "query": "labour party australia",
+        "value": 7
+      },
+      {
+        "query": "liberal party australia",
+        "value": 4
+      },
+      {
+        "query": "australian liberal party",
+        "value": 3
+      },
+      {
+        "query": "is albanese labour",
+        "value": 3
+      },
+      {
+        "query": "labor policies",
+        "value": 3
+      },
+      {
+        "query": "one nation party",
+        "value": 3
+      },
+      {
+        "query": "one nation policies",
+        "value": 1
+      },
+      {
+        "query": "angus taylor",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation policies",
+        "value": 37500
+      },
+      {
+        "query": "angus taylor",
+        "value": 7850
+      },
+      {
+        "query": "one nation party",
+        "value": 60
+      },
+      {
+        "query": "is albanese labour",
+        "value": 50
+      },
+      {
+        "query": "albanese",
+        "value": 40
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal party",
+        "value": 60
+      },
+      {
+        "query": "liberal leader",
+        "value": 15
+      },
+      {
+        "query": "liberal leadership",
+        "value": 12
+      },
+      {
+        "query": "liberal party leader",
+        "value": 11
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 7
+      },
+      {
+        "query": "angus taylor",
+        "value": 6
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 6
+      },
+      {
+        "query": "liberal party leadership",
+        "value": 5
+      },
+      {
+        "query": "liberals",
+        "value": 5
+      },
+      {
+        "query": "labor",
+        "value": 4
+      },
+      {
+        "query": "one nation",
+        "value": 4
+      },
+      {
+        "query": "federal liberal party",
+        "value": 4
+      },
+      {
+        "query": "labor party",
+        "value": 3
+      },
+      {
+        "query": "angus taylor liberal party",
+        "value": 3
+      },
+      {
+        "query": "liberal party members",
+        "value": 2
+      },
+      {
+        "query": "liberal party spill",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "angus taylor",
+        "value": 2250
+      },
+      {
+        "query": "angus taylor liberal party",
+        "value": 1550
+      },
+      {
+        "query": "liberal party spill",
+        "value": 600
+      },
+      {
+        "query": "liberal leadership",
+        "value": 450
+      },
+      {
+        "query": "liberal party leadership",
+        "value": 300
+      },
+      {
+        "query": "one nation",
+        "value": 200
+      }
+    ]
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      },
+      {
+        "query": "australian greens",
+        "value": 14
+      },
+      {
+        "query": "greens leader",
+        "value": 11
+      },
+      {
+        "query": "the greens party",
+        "value": 10
+      },
+      {
+        "query": "the greens australia",
+        "value": 8
+      },
+      {
+        "query": "greens senator",
+        "value": 6
+      },
+      {
+        "query": "leader of greens",
+        "value": 5
+      },
+      {
+        "query": "liberal",
+        "value": 5
+      },
+      {
+        "query": "greens policies",
+        "value": 5
+      },
+      {
+        "query": "leader of the greens",
+        "value": 4
+      },
+      {
+        "query": "greens mp",
+        "value": 4
+      },
+      {
+        "query": "one nation",
+        "value": 4
+      },
+      {
+        "query": "greens party leader",
+        "value": 4
+      },
+      {
+        "query": "the greens party australia",
+        "value": 3
+      },
+      {
+        "query": "liberal party",
+        "value": 3
+      },
+      {
+        "query": "greens leader australia",
+        "value": 3
+      },
+      {
+        "query": "greens policy",
+        "value": 3
+      },
+      {
+        "query": "greens senators",
+        "value": 2
+      },
+      {
+        "query": "one nation policies",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation policies",
+        "value": 56200
+      }
+    ]
+  },
+  "PHON": {
+    "top": [],
+    "rising": []
+  }
+}

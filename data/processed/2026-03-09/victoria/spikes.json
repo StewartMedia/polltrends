@@ -1,0 +1,109 @@
+[
+  {
+    "date": "2026-01-22",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 31,
+    "rolling_avg": 2.1,
+    "ratio": 14.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 68,
+    "rolling_avg": 5.1,
+    "ratio": 13.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2025-12-31",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 18,
+    "rolling_avg": 1.9,
+    "ratio": 9.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-12",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 13,
+    "rolling_avg": 1.6,
+    "ratio": 8.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2025-12-18",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 15,
+    "rolling_avg": 1.9,
+    "ratio": 8.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-12",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 84,
+    "rolling_avg": 10.6,
+    "ratio": 7.9,
+    "explanation": "Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+    "news": [
+      {
+        "title": "Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+        "source": "facebook.com",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPWDBjeTZfU3REdEp5VXU1dG5FMWg2OGRONXdWZDhYNmk3VERteTFzOUUxSmM5aC03LWlGSTk0WG13eW5MTW1lSVpiWk50UVdWa0pXeHE3SjBsd2RnaUpIVUpKU21sUUpzalFkaEQ4Y3dkVzYyWTgwcDliVmg4MDZ6ZEVmOV85VjY4RFplM25ObWZLM3FWWWM4bUhXUG1Kci16ZjRERU5tUTBvb0k3Z1dXeFJPbTJ2R3FZVUZic2VTM1NlVFNpVklBQlc4TWI5TFA5T0FwZnZQamlGVUd1enpB?oc=5",
+        "date": "2026-02-11"
+      }
+    ]
+  },
+  {
+    "date": "2026-01-19",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 13,
+    "rolling_avg": 1.9,
+    "ratio": 7.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-30",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 12,
+    "rolling_avg": 1.7,
+    "ratio": 7.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-09",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 11,
+    "rolling_avg": 1.7,
+    "ratio": 6.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-17",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 11,
+    "rolling_avg": 1.9,
+    "ratio": 5.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]
