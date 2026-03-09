@@ -7,74 +7,345 @@
       },
       {
         "query": "australian labor party",
-        "value": 12
+        "value": 13
       },
       {
         "query": "liberal party",
-        "value": 11
-      },
-      {
-        "query": "labor government",
-        "value": 7
+        "value": 12
       },
       {
         "query": "labour party australia",
-        "value": 7
+        "value": 8
       },
       {
-        "query": "one nation party",
-        "value": 4
+        "query": "labor government",
+        "value": 8
       },
       {
-        "query": "labour vs liberal",
-        "value": 3
+        "query": "liberal party australia",
+        "value": 5
       },
       {
         "query": "labor policies",
-        "value": 3
+        "value": 4
       },
       {
         "query": "labor vs liberal",
+        "value": 3
+      },
+      {
+        "query": "one nation party",
+        "value": 3
+      },
+      {
+        "query": "is chris minns labor or liberal",
         "value": 2
       },
       {
         "query": "is albanese labour",
-        "value": 2
-      },
-      {
-        "query": "is chris minns labor or liberal",
         "value": 2
       }
     ],
     "rising": [
       {
         "query": "one nation party",
-        "value": 150
-      },
-      {
-        "query": "is chris minns labor or liberal",
-        "value": 140
+        "value": 100
       },
       {
         "query": "labor vs liberal",
-        "value": 70
+        "value": 80
       }
     ]
   },
   "LIB": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal party",
+        "value": 66
+      },
+      {
+        "query": "liberal leader",
+        "value": 18
+      },
+      {
+        "query": "liberal leadership",
+        "value": 11
+      },
+      {
+        "query": "liberal party leader",
+        "value": 11
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 8
+      },
+      {
+        "query": "liberals",
+        "value": 6
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 5
+      },
+      {
+        "query": "angus taylor",
+        "value": 5
+      },
+      {
+        "query": "labor",
+        "value": 5
+      },
+      {
+        "query": "liberal party leadership",
+        "value": 4
+      },
+      {
+        "query": "labor party",
+        "value": 4
+      },
+      {
+        "query": "one nation",
+        "value": 4
+      },
+      {
+        "query": "liberal party members",
+        "value": 3
+      }
+    ],
+    "rising": [
+      {
+        "query": "angus taylor",
+        "value": 1050
+      },
+      {
+        "query": "liberal party leadership",
+        "value": 450
+      },
+      {
+        "query": "one nation",
+        "value": 350
+      },
+      {
+        "query": "liberal leadership",
+        "value": 300
+      }
+    ]
   },
   "GRN": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      },
+      {
+        "query": "greens australia",
+        "value": 18
+      },
+      {
+        "query": "australian greens",
+        "value": 14
+      },
+      {
+        "query": "greens leader",
+        "value": 11
+      },
+      {
+        "query": "the greens party",
+        "value": 11
+      },
+      {
+        "query": "the greens australia",
+        "value": 8
+      },
+      {
+        "query": "greens policies",
+        "value": 5
+      },
+      {
+        "query": "liberal party",
+        "value": 4
+      },
+      {
+        "query": "one nation",
+        "value": 4
+      },
+      {
+        "query": "greens policy",
+        "value": 3
+      },
+      {
+        "query": "greens senators",
+        "value": 2
+      },
+      {
+        "query": "pauline hanson",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "liberal party",
+        "value": 50
+      },
+      {
+        "query": "greens policies",
+        "value": 40
+      }
+    ]
   },
   "PHON": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation party",
+        "value": 14
+      },
+      {
+        "query": "one nation australia",
+        "value": 13
+      },
+      {
+        "query": "one nation polling",
+        "value": 12
+      },
+      {
+        "query": "pauline hanson",
+        "value": 10
+      },
+      {
+        "query": "one nation victoria",
+        "value": 10
+      },
+      {
+        "query": "pauline hanson one nation",
+        "value": 8
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "one nation polls",
+        "value": 5
+      },
+      {
+        "query": "what is one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation news",
+        "value": 3
+      },
+      {
+        "query": "one nation membership",
+        "value": 3
+      },
+      {
+        "query": "one nation party australia",
+        "value": 2
+      },
+      {
+        "query": "liberal party",
+        "value": 2
+      },
+      {
+        "query": "one nation leader",
+        "value": 2
+      },
+      {
+        "query": "one nation candidates",
+        "value": 2
+      },
+      {
+        "query": "one nation policy",
+        "value": 2
+      },
+      {
+        "query": "pauline hanson party",
+        "value": 2
+      },
+      {
+        "query": "barnaby joyce",
+        "value": 1
+      },
+      {
+        "query": "one nation farrer",
+        "value": 1
+      },
+      {
+        "query": "one nation sa",
+        "value": 1
+      },
+      {
+        "query": "one nation south australia",
+        "value": 1
+      },
+      {
+        "query": "pauline hanson's daughter",
+        "value": 1
+      },
+      {
+        "query": "david hirst one nation",
+        "value": 1
+      },
+      {
+        "query": "one nation nsw",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation policy",
+        "value": 152100
+      },
+      {
+        "query": "one nation farrer",
+        "value": 103600
+      },
+      {
+        "query": "one nation sa",
+        "value": 74350
+      },
+      {
+        "query": "one nation south australia",
+        "value": 63100
+      },
+      {
+        "query": "pauline hanson's daughter",
+        "value": 42700
+      },
+      {
+        "query": "david hirst one nation",
+        "value": 39550
+      },
+      {
+        "query": "one nation nsw",
+        "value": 33400
+      },
+      {
+        "query": "liam alexander hall",
+        "value": 26700
+      },
+      {
+        "query": "one nation polling",
+        "value": 300
+      }
+    ]
   },
   "AJP": {
-    "top": [],
+    "top": [
+      {
+        "query": "animal justice party",
+        "value": 100
+      }
+    ],
     "rising": []
   },
   "RSN": {

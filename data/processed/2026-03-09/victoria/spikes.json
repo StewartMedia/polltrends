@@ -1,11 +1,11 @@
 [
   {
-    "date": "2026-01-22",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 31,
-    "rolling_avg": 2.1,
-    "ratio": 14.5,
+    "date": "2026-01-09",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 34,
+    "rolling_avg": 3.6,
+    "ratio": 9.5,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -13,29 +13,29 @@
     "date": "2026-01-10",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 68,
-    "rolling_avg": 5.1,
-    "ratio": 13.2,
+    "value": 66,
+    "rolling_avg": 8.4,
+    "ratio": 7.8,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2025-12-31",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 18,
-    "rolling_avg": 1.9,
-    "ratio": 9.7,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-02-12",
+    "date": "2026-02-11",
     "party_code": "ALP",
     "party_name": "Labor",
     "value": 13,
+    "rolling_avg": 1.7,
+    "ratio": 7.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-08",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 12,
     "rolling_avg": 1.6,
-    "ratio": 8.3,
+    "ratio": 7.6,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -43,9 +43,9 @@
     "date": "2025-12-18",
     "party_code": "ALP",
     "party_name": "Labor",
-    "value": 15,
+    "value": 13,
     "rolling_avg": 1.9,
-    "ratio": 8.1,
+    "ratio": 7.0,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -53,9 +53,9 @@
     "date": "2026-02-12",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 84,
-    "rolling_avg": 10.6,
-    "ratio": 7.9,
+    "value": 82,
+    "rolling_avg": 12.0,
+    "ratio": 6.8,
     "explanation": "Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
     "news": [
       {
@@ -67,43 +67,57 @@
     ]
   },
   {
-    "date": "2026-01-19",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 13,
-    "rolling_avg": 1.9,
-    "ratio": 7.0,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-01-30",
-    "party_code": "ALP",
-    "party_name": "Labor",
+    "date": "2026-01-04",
+    "party_code": "PHON",
+    "party_name": "One Nation",
     "value": 12,
-    "rolling_avg": 1.7,
-    "ratio": 7.0,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-02-09",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 11,
-    "rolling_avg": 1.7,
-    "ratio": 6.4,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-02-17",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 11,
     "rolling_avg": 1.9,
-    "ratio": 5.9,
+    "ratio": 6.5,
     "explanation": "Significant spike in search interest",
     "news": []
+  },
+  {
+    "date": "2026-02-10",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 23,
+    "rolling_avg": 3.6,
+    "ratio": 6.4,
+    "explanation": "Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+    "news": [
+      {
+        "title": "Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+        "source": "facebook.com",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPWDBjeTZfU3REdEp5VXU1dG5FMWg2OGRONXdWZDhYNmk3VERteTFzOUUxSmM5aC03LWlGSTk0WG13eW5MTW1lSVpiWk50UVdWa0pXeHE3SjBsd2RnaUpIVUpKU21sUUpzalFkaEQ4Y3dkVzYyWTgwcDliVmg4MDZ6ZEVmOV85VjY4RFplM25ObWZLM3FWWWM4bUhXUG1Kci16ZjRERU5tUTBvb0k3Z1dXeFJPbTJ2R3FZVUZic2VTM1NlVFNpVklBQlc4TWI5TFA5T0FwZnZQamlGVUd1enpB?oc=5",
+        "date": "2026-02-11"
+      }
+    ]
+  },
+  {
+    "date": "2026-01-20",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 13,
+    "rolling_avg": 2.1,
+    "ratio": 6.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-11",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 36,
+    "rolling_avg": 6.9,
+    "ratio": 5.2,
+    "explanation": "Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+    "news": [
+      {
+        "title": "Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+        "source": "facebook.com",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPWDBjeTZfU3REdEp5VXU1dG5FMWg2OGRONXdWZDhYNmk3VERteTFzOUUxSmM5aC03LWlGSTk0WG13eW5MTW1lSVpiWk50UVdWa0pXeHE3SjBsd2RnaUpIVUpKU21sUUpzalFkaEQ4Y3dkVzYyWTgwcDliVmg4MDZ6ZEVmOV85VjY4RFplM25ObWZLM3FWWWM4bUhXUG1Kci16ZjRERU5tUTBvb0k3Z1dXeFJPbTJ2R3FZVUZic2VTM1NlVFNpVklBQlc4TWI5TFA5T0FwZnZQamlGVUd1enpB?oc=5",
+        "date": "2026-02-11"
+      }
+    ]
   }
 ]
