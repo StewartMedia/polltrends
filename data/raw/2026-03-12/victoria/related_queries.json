@@ -1,0 +1,188 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "australian labor party",
+        "value": 100
+      },
+      {
+        "query": "labor government",
+        "value": 51
+      },
+      {
+        "query": "labour party australia",
+        "value": 50
+      },
+      {
+        "query": "australian labour party",
+        "value": 33
+      },
+      {
+        "query": "one nation",
+        "value": 32
+      },
+      {
+        "query": "chris minns labor or liberal",
+        "value": 18
+      }
+    ],
+    "rising": [
+      {
+        "query": "chris minns labor or liberal",
+        "value": 151050
+      },
+      {
+        "query": "one nation",
+        "value": 350
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal australia",
+        "value": 21
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 7
+      },
+      {
+        "query": "labor",
+        "value": 5
+      },
+      {
+        "query": "labour",
+        "value": 5
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 4
+      }
+    ],
+    "rising": []
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      },
+      {
+        "query": "greens australia",
+        "value": 18
+      },
+      {
+        "query": "australian greens",
+        "value": 14
+      },
+      {
+        "query": "the greens party",
+        "value": 12
+      },
+      {
+        "query": "leader of the greens",
+        "value": 8
+      },
+      {
+        "query": "australian greens party",
+        "value": 6
+      },
+      {
+        "query": "the australian greens",
+        "value": 6
+      },
+      {
+        "query": "one nation",
+        "value": 4
+      },
+      {
+        "query": "larissa waters",
+        "value": 1
+      }
+    ],
+    "rising": []
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation party",
+        "value": 14
+      },
+      {
+        "query": "pauline hanson",
+        "value": 10
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "one nation polls",
+        "value": 5
+      },
+      {
+        "query": "what is one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation leader",
+        "value": 2
+      },
+      {
+        "query": "what is one nation australia",
+        "value": 2
+      },
+      {
+        "query": "barnaby joyce",
+        "value": 2
+      },
+      {
+        "query": "sky news",
+        "value": 1
+      },
+      {
+        "query": "one nation senators",
+        "value": 1
+      },
+      {
+        "query": "liam alexander hall",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "sky news",
+        "value": 92150
+      },
+      {
+        "query": "one nation senators",
+        "value": 69200
+      },
+      {
+        "query": "liam alexander hall",
+        "value": 21300
+      }
+    ]
+  },
+  "AJP": {
+    "top": [],
+    "rising": []
+  },
+  "RSN": {
+    "top": [],
+    "rising": []
+  },
+  "LDP": {
+    "top": [],
+    "rising": []
+  }
+}
