@@ -1,345 +1,297 @@
 {
   "ALP": {
-    "top": [
+    "party": "Labor",
+    "queries_analysed": 7,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 7
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": [
       {
         "query": "australian labor party",
-        "value": 100
+        "sentiment": "neutral"
       },
       {
         "query": "labor government",
-        "value": 51
+        "sentiment": "neutral"
       },
       {
         "query": "labour party australia",
-        "value": 49
+        "sentiment": "neutral"
       },
       {
         "query": "australian labour party",
-        "value": 46
+        "sentiment": "neutral"
       },
       {
         "query": "one nation",
-        "value": 38
+        "sentiment": "neutral"
       },
       {
         "query": "liberal party australia",
-        "value": 31
+        "sentiment": "neutral"
       },
       {
         "query": "chris minns labor or liberal",
-        "value": 24
-      }
-    ],
-    "rising": [
-      {
-        "query": "chris minns labor or liberal",
-        "value": 900
-      },
-      {
-        "query": "one nation",
-        "value": 120
+        "sentiment": "neutral"
       }
     ]
   },
   "LIB": {
-    "top": [
+    "party": "Liberal",
+    "queries_analysed": 6,
+    "sentiment_counts": {
+      "positive": 1,
+      "negative": 0,
+      "neutral": 5
+    },
+    "sentiment_score": 0.17,
+    "classified_queries": [
       {
         "query": "liberal",
-        "value": 100
+        "sentiment": "neutral"
       },
       {
         "query": "the liberal party",
-        "value": 20
+        "sentiment": "neutral"
       },
       {
         "query": "liberal party of australia",
-        "value": 7
+        "sentiment": "neutral"
       },
       {
         "query": "liberal leader australia",
-        "value": 4
+        "sentiment": "positive"
       },
       {
         "query": "liberal party spill",
-        "value": 2
+        "sentiment": "neutral"
       },
       {
         "query": "erythritol sweetener",
-        "value": 0
-      }
-    ],
-    "rising": [
-      {
-        "query": "erythritol sweetener",
-        "value": 13850
-      },
-      {
-        "query": "liberal party spill",
-        "value": 650
+        "sentiment": "neutral"
       }
     ]
   },
   "GRN": {
-    "top": [
+    "party": "Greens",
+    "queries_analysed": 21,
+    "sentiment_counts": {
+      "positive": 6,
+      "negative": 0,
+      "neutral": 15
+    },
+    "sentiment_score": 0.29,
+    "classified_queries": [
       {
         "query": "greens",
-        "value": 100
+        "sentiment": "neutral"
       },
       {
         "query": "greens australia",
-        "value": 18
+        "sentiment": "neutral"
       },
       {
         "query": "australian greens",
-        "value": 15
+        "sentiment": "neutral"
       },
       {
         "query": "greens leader",
-        "value": 10
+        "sentiment": "positive"
       },
       {
         "query": "the greens party",
-        "value": 10
+        "sentiment": "neutral"
       },
       {
         "query": "the greens australia",
-        "value": 9
+        "sentiment": "neutral"
       },
       {
         "query": "greens senator",
-        "value": 6
+        "sentiment": "neutral"
       },
       {
         "query": "labor",
-        "value": 5
+        "sentiment": "neutral"
       },
       {
         "query": "liberal",
-        "value": 5
+        "sentiment": "neutral"
       },
       {
         "query": "leader of greens",
-        "value": 4
+        "sentiment": "positive"
       },
       {
         "query": "leader of the greens",
-        "value": 4
+        "sentiment": "positive"
       },
       {
         "query": "one nation",
-        "value": 4
+        "sentiment": "neutral"
       },
       {
         "query": "greens party leader",
-        "value": 4
+        "sentiment": "positive"
       },
       {
         "query": "the greens party australia",
-        "value": 4
+        "sentiment": "neutral"
       },
       {
         "query": "greens mp",
-        "value": 4
+        "sentiment": "neutral"
       },
       {
         "query": "greens leader australia",
-        "value": 3
+        "sentiment": "positive"
       },
       {
         "query": "greens policy",
-        "value": 3
+        "sentiment": "positive"
       },
       {
         "query": "liberal party",
-        "value": 3
+        "sentiment": "neutral"
       },
       {
         "query": "greens senators",
-        "value": 3
+        "sentiment": "neutral"
       },
       {
         "query": "one nation policies",
-        "value": 2
+        "sentiment": "neutral"
       },
       {
         "query": "lidia thorpe",
-        "value": 1
-      }
-    ],
-    "rising": [
-      {
-        "query": "one nation policies",
-        "value": 144400
-      },
-      {
-        "query": "lidia thorpe",
-        "value": 59150
-      },
-      {
-        "query": "greens mp",
-        "value": 200
-      },
-      {
-        "query": "one nation",
-        "value": 50
-      },
-      {
-        "query": "greens senators",
-        "value": 40
-      },
-      {
-        "query": "greens leader australia",
-        "value": 40
+        "sentiment": "neutral"
       }
     ]
   },
   "PHON": {
-    "top": [
+    "party": "One Nation",
+    "queries_analysed": 28,
+    "sentiment_counts": {
+      "positive": 3,
+      "negative": 0,
+      "neutral": 25
+    },
+    "sentiment_score": 0.11,
+    "classified_queries": [
       {
         "query": "one nation",
-        "value": 100
+        "sentiment": "neutral"
       },
       {
         "query": "one nation australia",
-        "value": 14
+        "sentiment": "neutral"
       },
       {
         "query": "one nation party",
-        "value": 13
+        "sentiment": "neutral"
       },
       {
         "query": "one nation polling",
-        "value": 12
+        "sentiment": "neutral"
       },
       {
         "query": "pauline hanson",
-        "value": 8
+        "sentiment": "neutral"
       },
       {
         "query": "pauline hanson one nation",
-        "value": 7
+        "sentiment": "neutral"
       },
       {
         "query": "one nation policies",
-        "value": 6
+        "sentiment": "neutral"
       },
       {
         "query": "what is one nation",
-        "value": 5
+        "sentiment": "neutral"
       },
       {
         "query": "one nation polls",
-        "value": 5
+        "sentiment": "neutral"
       },
       {
         "query": "one nation news",
-        "value": 4
+        "sentiment": "positive"
       },
       {
         "query": "vote one nation",
-        "value": 4
+        "sentiment": "neutral"
       },
       {
         "query": "one nation south australia",
-        "value": 4
+        "sentiment": "neutral"
       },
       {
         "query": "one nation sa",
-        "value": 3
+        "sentiment": "neutral"
       },
       {
         "query": "one nation victoria",
-        "value": 3
+        "sentiment": "neutral"
       },
       {
         "query": "one nation party australia",
-        "value": 3
+        "sentiment": "neutral"
       },
       {
         "query": "one nation candidates",
-        "value": 3
+        "sentiment": "neutral"
       },
       {
         "query": "one nation policy",
-        "value": 2
+        "sentiment": "positive"
       },
       {
         "query": "one nation membership",
-        "value": 2
+        "sentiment": "neutral"
       },
       {
         "query": "one nation nsw",
-        "value": 2
+        "sentiment": "neutral"
       },
       {
         "query": "liberal party",
-        "value": 2
+        "sentiment": "neutral"
       },
       {
         "query": "one nation leader",
-        "value": 2
+        "sentiment": "positive"
       },
       {
         "query": "barnaby joyce",
-        "value": 2
+        "sentiment": "neutral"
       },
       {
         "query": "pauline hanson party",
-        "value": 2
+        "sentiment": "neutral"
       },
       {
         "query": "one nation farrer",
-        "value": 1
+        "sentiment": "neutral"
       },
       {
         "query": "rhode beauty",
-        "value": 0
-      }
-    ],
-    "rising": [
-      {
-        "query": "one nation farrer",
-        "value": 99400
-      },
-      {
-        "query": "rhode beauty",
-        "value": 34450
+        "sentiment": "neutral"
       },
       {
         "query": "liam alexander hall",
-        "value": 29300
+        "sentiment": "neutral"
       },
       {
         "query": "nasa astronauts",
-        "value": 17150
+        "sentiment": "neutral"
       },
       {
         "query": "samsung galaxy galaxy s26 ultra",
-        "value": 8650
-      },
-      {
-        "query": "one nation polling",
-        "value": 250
-      },
-      {
-        "query": "one nation sa",
-        "value": 200
-      },
-      {
-        "query": "one nation south australia",
-        "value": 190
-      },
-      {
-        "query": "one nation policies",
-        "value": 80
-      },
-      {
-        "query": "one nation candidates",
-        "value": 60
-      },
-      {
-        "query": "one nation policy",
-        "value": 60
+        "sentiment": "neutral"
       }
     ]
   }
