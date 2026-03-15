@@ -1,0 +1,236 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labour",
+        "value": 100
+      },
+      {
+        "query": "labor party",
+        "value": 87
+      },
+      {
+        "query": "liberal",
+        "value": 74
+      },
+      {
+        "query": "labour party",
+        "value": 34
+      },
+      {
+        "query": "australian labor party",
+        "value": 29
+      },
+      {
+        "query": "alp",
+        "value": 24
+      },
+      {
+        "query": "labor government",
+        "value": 17
+      },
+      {
+        "query": "labour party australia",
+        "value": 14
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 7
+      },
+      {
+        "query": "labor policies",
+        "value": 6
+      }
+    ],
+    "rising": []
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal leader",
+        "value": 100
+      },
+      {
+        "query": "liberal party australia",
+        "value": 85
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 33
+      },
+      {
+        "query": "angus taylor",
+        "value": 30
+      },
+      {
+        "query": "labour",
+        "value": 28
+      },
+      {
+        "query": "leader of the liberal party",
+        "value": 19
+      },
+      {
+        "query": "liberal leaders",
+        "value": 16
+      },
+      {
+        "query": "one nation party",
+        "value": 15
+      }
+    ],
+    "rising": [
+      {
+        "query": "angus taylor",
+        "value": 250
+      }
+    ]
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      },
+      {
+        "query": "greens australia",
+        "value": 18
+      },
+      {
+        "query": "australian greens",
+        "value": 15
+      },
+      {
+        "query": "the greens party",
+        "value": 10
+      },
+      {
+        "query": "leader of the greens",
+        "value": 6
+      },
+      {
+        "query": "one nation",
+        "value": 4
+      },
+      {
+        "query": "australian greens party",
+        "value": 3
+      },
+      {
+        "query": "greens senators",
+        "value": 3
+      },
+      {
+        "query": "greens leader australia",
+        "value": 3
+      },
+      {
+        "query": "labor party",
+        "value": 2
+      },
+      {
+        "query": "larissa waters",
+        "value": 0
+      }
+    ],
+    "rising": []
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation party",
+        "value": 100
+      },
+      {
+        "query": "pauline hanson",
+        "value": 71
+      },
+      {
+        "query": "one nation victoria",
+        "value": 70
+      },
+      {
+        "query": "one nation policies",
+        "value": 46
+      },
+      {
+        "query": "what is one nation",
+        "value": 34
+      },
+      {
+        "query": "one nation news",
+        "value": 25
+      },
+      {
+        "query": "vote one nation",
+        "value": 24
+      },
+      {
+        "query": "join one nation",
+        "value": 18
+      },
+      {
+        "query": "one nation party australia",
+        "value": 17
+      },
+      {
+        "query": "one nation candidates",
+        "value": 17
+      },
+      {
+        "query": "one nation poll",
+        "value": 17
+      },
+      {
+        "query": "one nation movie",
+        "value": 16
+      },
+      {
+        "query": "one nation policy",
+        "value": 15
+      },
+      {
+        "query": "barnaby joyce",
+        "value": 12
+      },
+      {
+        "query": "one nation south australia",
+        "value": 9
+      },
+      {
+        "query": "gina rinehart",
+        "value": 6
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation south australia",
+        "value": 93000
+      },
+      {
+        "query": "gina rinehart",
+        "value": 70400
+      },
+      {
+        "query": "one nation policies",
+        "value": 90
+      },
+      {
+        "query": "one nation movie",
+        "value": 60
+      }
+    ]
+  },
+  "AJP": {
+    "top": [],
+    "rising": []
+  },
+  "RSN": {
+    "top": [],
+    "rising": []
+  },
+  "LDP": {
+    "top": [],
+    "rising": []
+  }
+}
