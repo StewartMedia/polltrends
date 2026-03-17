@@ -54,10 +54,10 @@
 </div>
 {% endif %}
 
-{% if analysis and analysis.summary %}
+{% if summary_html %}
 <div class="card">
     <h2>Data Summary</h2>
-    <div style="font-size: 0.9rem; white-space: pre-wrap;">{{ analysis.summary }}</div>
+    <div class="narrative">{{ summary_html | safe }}</div>
 </div>
 {% endif %}
 

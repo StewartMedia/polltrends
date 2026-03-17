@@ -1,0 +1,282 @@
+{
+  "ALP": {
+    "top": [],
+    "rising": []
+  },
+  "LIB": {
+    "top": [],
+    "rising": []
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      },
+      {
+        "query": "the greens",
+        "value": 43
+      },
+      {
+        "query": "greens australia",
+        "value": 20
+      },
+      {
+        "query": "greens party",
+        "value": 16
+      },
+      {
+        "query": "australian greens",
+        "value": 15
+      },
+      {
+        "query": "the greens party",
+        "value": 10
+      },
+      {
+        "query": "the greens australia",
+        "value": 9
+      },
+      {
+        "query": "the australian greens",
+        "value": 8
+      },
+      {
+        "query": "greens senator",
+        "value": 6
+      },
+      {
+        "query": "liberal",
+        "value": 5
+      },
+      {
+        "query": "labor",
+        "value": 5
+      },
+      {
+        "query": "leader of greens",
+        "value": 5
+      },
+      {
+        "query": "greens policies",
+        "value": 5
+      },
+      {
+        "query": "labour",
+        "value": 3
+      },
+      {
+        "query": "greens political party",
+        "value": 3
+      },
+      {
+        "query": "greens mp",
+        "value": 3
+      },
+      {
+        "query": "greens policy",
+        "value": 3
+      },
+      {
+        "query": "greens party leader",
+        "value": 3
+      },
+      {
+        "query": "greens leader australia",
+        "value": 3
+      },
+      {
+        "query": "labor party",
+        "value": 3
+      },
+      {
+        "query": "greens senators",
+        "value": 3
+      },
+      {
+        "query": "australian greens leader",
+        "value": 2
+      },
+      {
+        "query": "greens senators australia",
+        "value": 2
+      },
+      {
+        "query": "how to vote greens",
+        "value": 1
+      },
+      {
+        "query": "greens party members",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "greens senators australia",
+        "value": 143300
+      },
+      {
+        "query": "how to vote greens",
+        "value": 86800
+      },
+      {
+        "query": "greens party members",
+        "value": 77250
+      },
+      {
+        "query": "lidia thorpe",
+        "value": 65300
+      },
+      {
+        "query": "greens immigration policy",
+        "value": 59900
+      },
+      {
+        "query": "fatima payman",
+        "value": 36550
+      },
+      {
+        "query": "greens mp",
+        "value": 110
+      },
+      {
+        "query": "australian greens leader",
+        "value": 100
+      }
+    ]
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation australia",
+        "value": 14
+      },
+      {
+        "query": "one nation party",
+        "value": 13
+      },
+      {
+        "query": "one nation polling",
+        "value": 11
+      },
+      {
+        "query": "pauline hanson",
+        "value": 8
+      },
+      {
+        "query": "pauline hanson one nation",
+        "value": 7
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "what is one nation",
+        "value": 5
+      },
+      {
+        "query": "one nation polls",
+        "value": 4
+      },
+      {
+        "query": "vote one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation south australia",
+        "value": 4
+      },
+      {
+        "query": "one nation news",
+        "value": 4
+      },
+      {
+        "query": "one nation sa",
+        "value": 3
+      },
+      {
+        "query": "one nation party australia",
+        "value": 3
+      },
+      {
+        "query": "one nation victoria",
+        "value": 3
+      },
+      {
+        "query": "one nation candidates",
+        "value": 3
+      },
+      {
+        "query": "one nation policy",
+        "value": 3
+      },
+      {
+        "query": "one nation membership",
+        "value": 2
+      },
+      {
+        "query": "one nation nsw",
+        "value": 2
+      },
+      {
+        "query": "liberal party",
+        "value": 2
+      },
+      {
+        "query": "one nation leader",
+        "value": 2
+      },
+      {
+        "query": "barnaby joyce",
+        "value": 2
+      },
+      {
+        "query": "what is one nation australia",
+        "value": 2
+      },
+      {
+        "query": "pauline hanson party",
+        "value": 1
+      },
+      {
+        "query": "sa election",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation farrer",
+        "value": 900
+      },
+      {
+        "query": "sa election",
+        "value": 500
+      },
+      {
+        "query": "one nation south australia",
+        "value": 400
+      },
+      {
+        "query": "one nation sa",
+        "value": 350
+      },
+      {
+        "query": "one nation polling",
+        "value": 160
+      },
+      {
+        "query": "one nation policies",
+        "value": 70
+      },
+      {
+        "query": "one nation candidates",
+        "value": 50
+      }
+    ]
+  }
+}

@@ -1,5 +1,4 @@
 """Build the static site from templates and data."""
-import html as html_lib
 import sys
 from pathlib import Path
 from urllib.parse import urlparse
@@ -96,12 +95,14 @@ def build():
         winner_code = analysis.get("search_winner", "")
         analysis["search_winner_name"] = ENTITIES.get(winner_code, {}).get("short_name", winner_code)
 
-    # Load narrative and spike annotations
+    # Load narrative and summary markdown plus spike annotations
     narrative_md = (
         load_snapshot_file(PROCESSED_DIR, national_snapshot, "narrative.md")
         if national_snapshot else None
     )
-    narrative_html = markdown.markdown(html_lib.escape(narrative_md)) if narrative_md else None
+    summary_md = analysis.get("summary") if analysis else None
+    narrative_html = markdown.markdown(narrative_md) if narrative_md else None
+    summary_html = markdown.markdown(summary_md) if summary_md else None
     spikes = sanitize_spikes(load_spikes(snapshot_date=latest_national_raw))
 
     # Generate national charts
@@ -146,7 +147,7 @@ def build():
     # Build analysis page
     tpl = env.get_template("analysis.html")
     html = tpl.render(
-        **common_ctx, page="analysis", narrative=narrative_html,
+        **common_ctx, page="analysis", narrative=narrative_html, summary_html=summary_html,
         og_title="PolTrends Australia — Weekly Analysis",
         og_description="Weekly analysis of Australian political party search interest, sentiment, and news correlation.",
         og_page="analysis.html",
