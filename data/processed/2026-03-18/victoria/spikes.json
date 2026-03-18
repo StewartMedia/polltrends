@@ -1,48 +1,91 @@
 [
   {
+    "date": "2026-02-02",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 18,
+    "rolling_avg": 1.6,
+    "ratio": 11.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
     "date": "2026-01-09",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 38,
-    "rolling_avg": 1.7,
-    "ratio": 22.2,
+    "value": 33,
+    "rolling_avg": 3.0,
+    "ratio": 11.0,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-01-15",
+    "date": "2026-02-22",
     "party_code": "ALP",
     "party_name": "Labor",
-    "value": 16,
+    "value": 12,
     "rolling_avg": 1.4,
-    "ratio": 11.2,
+    "ratio": 8.4,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-02-15",
-    "party_code": "GRN",
-    "party_name": "Greens",
-    "value": 17,
-    "rolling_avg": 1.7,
-    "ratio": 9.9,
-    "explanation": "Premier's office learned of IBAC CFMEU referral rejection in 2024",
-    "news": [
-      {
-        "title": "Premier's office learned of IBAC CFMEU referral rejection in 2024",
-        "source": "ABC News",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOb3gyUW9pcEhGWWhWUkxrRXVPOUd2V3Z5MG0yT09hMWFGY1VzTllJakwwRXFxai15R3ZvZE9zbm1nOXFGNkhqc3BkZ3ZLZFhXWG5Ya0E2UXNYUFdSNmg5TVNNNFdHUzRSMXdSZEN4RE1SRWI5bnM1eHF4XzcyTlQ2SG8taUticnhCblhWU2wyVV85T2NpbTBUV3JTZUtiUENXbDRLOGZn?oc=5",
-        "date": "2026-02-16"
-      }
-    ]
+    "date": "2026-01-21",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 16,
+    "rolling_avg": 2.0,
+    "ratio": 8.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 62,
+    "rolling_avg": 7.7,
+    "ratio": 8.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-10",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 13,
+    "rolling_avg": 1.9,
+    "ratio": 7.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-22",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 29,
+    "rolling_avg": 4.3,
+    "ratio": 6.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-04",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 15,
+    "rolling_avg": 2.3,
+    "ratio": 6.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
     "date": "2026-02-12",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 80,
-    "rolling_avg": 8.6,
-    "ratio": 9.3,
+    "value": 79,
+    "rolling_avg": 12.4,
+    "ratio": 6.4,
     "explanation": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
     "news": [
       {
@@ -54,62 +97,12 @@
     ]
   },
   {
-    "date": "2026-01-10",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 63,
-    "rolling_avg": 7.1,
-    "ratio": 8.8,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-01-19",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 12,
-    "rolling_avg": 1.6,
-    "ratio": 7.6,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-01-21",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 13,
-    "rolling_avg": 1.7,
-    "ratio": 7.6,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2025-12-26",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 17,
-    "rolling_avg": 2.3,
-    "ratio": 7.4,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-01-22",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 26,
-    "rolling_avg": 3.6,
-    "ratio": 7.3,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
     "date": "2026-02-05",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 11,
-    "rolling_avg": 1.6,
-    "ratio": 7.0,
+    "value": 13,
+    "rolling_avg": 2.1,
+    "ratio": 6.1,
     "explanation": "Significant spike in search interest",
     "news": []
   }
