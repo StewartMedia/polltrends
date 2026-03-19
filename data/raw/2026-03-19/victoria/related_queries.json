@@ -1,0 +1,153 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "alp",
+        "value": 100
+      },
+      {
+        "query": "australian labor party",
+        "value": 87
+      },
+      {
+        "query": "australian labour party",
+        "value": 40
+      },
+      {
+        "query": "labour party australia",
+        "value": 38
+      },
+      {
+        "query": "chris minns labor or liberal",
+        "value": 23
+      }
+    ],
+    "rising": [
+      {
+        "query": "chris minns labor or liberal",
+        "value": 235250
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "the liberal party",
+        "value": 20
+      },
+      {
+        "query": "liberal australia",
+        "value": 20
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 8
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 4
+      },
+      {
+        "query": "liberal party spill",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "liberal party spill",
+        "value": 90
+      }
+    ]
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "australia greens",
+        "value": 100
+      }
+    ],
+    "rising": []
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation party",
+        "value": 14
+      },
+      {
+        "query": "pauline hanson",
+        "value": 9
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "one nation polls",
+        "value": 5
+      },
+      {
+        "query": "what is one nation",
+        "value": 5
+      },
+      {
+        "query": "one nation leader",
+        "value": 2
+      },
+      {
+        "query": "barnaby joyce",
+        "value": 2
+      },
+      {
+        "query": "how to vote one nation",
+        "value": 2
+      },
+      {
+        "query": "one nation sa",
+        "value": 1
+      },
+      {
+        "query": "liam alexander hall",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "how to vote one nation",
+        "value": 119350
+      },
+      {
+        "query": "one nation sa",
+        "value": 81450
+      },
+      {
+        "query": "liam alexander hall",
+        "value": 35200
+      },
+      {
+        "query": "what is one nation",
+        "value": 40
+      }
+    ]
+  },
+  "AJP": {
+    "top": [],
+    "rising": []
+  },
+  "RSN": {
+    "top": [],
+    "rising": []
+  },
+  "LDP": {
+    "top": [],
+    "rising": []
+  }
+}
