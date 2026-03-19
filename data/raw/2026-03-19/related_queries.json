@@ -1,0 +1,161 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "australian labor party",
+        "value": 100
+      },
+      {
+        "query": "alp",
+        "value": 87
+      },
+      {
+        "query": "albanese",
+        "value": 62
+      },
+      {
+        "query": "australian labour party",
+        "value": 47
+      },
+      {
+        "query": "labour party australia",
+        "value": 45
+      },
+      {
+        "query": "one nation",
+        "value": 40
+      },
+      {
+        "query": "liberal party australia",
+        "value": 30
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation",
+        "value": 180
+      },
+      {
+        "query": "australian labor party",
+        "value": 40
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "the liberal party",
+        "value": 20
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 7
+      },
+      {
+        "query": "liberal spill",
+        "value": 5
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 4
+      },
+      {
+        "query": "erythritol sweetener",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "erythritol sweetener",
+        "value": 12950
+      },
+      {
+        "query": "liberal spill",
+        "value": 500
+      }
+    ]
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "australia greens",
+        "value": 100
+      },
+      {
+        "query": "the greens australia",
+        "value": 49
+      }
+    ],
+    "rising": []
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation party",
+        "value": 13
+      },
+      {
+        "query": "pauline hanson",
+        "value": 8
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "what is one nation",
+        "value": 5
+      },
+      {
+        "query": "one nation sa",
+        "value": 4
+      },
+      {
+        "query": "how to vote one nation",
+        "value": 2
+      },
+      {
+        "query": "one nation leader",
+        "value": 2
+      },
+      {
+        "query": "what is one nation australia",
+        "value": 2
+      },
+      {
+        "query": "barnaby joyce",
+        "value": 2
+      },
+      {
+        "query": "liam alexander hall",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "liam alexander hall",
+        "value": 23100
+      },
+      {
+        "query": "one nation sa",
+        "value": 1000
+      },
+      {
+        "query": "how to vote one nation",
+        "value": 150
+      },
+      {
+        "query": "one nation policies",
+        "value": 60
+      }
+    ]
+  }
+}
