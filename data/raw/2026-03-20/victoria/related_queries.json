@@ -74,10 +74,6 @@
         "value": 2
       },
       {
-        "query": "one nation party",
-        "value": 2
-      },
-      {
         "query": "alp membership",
         "value": 0
       },
@@ -89,15 +85,15 @@
     "rising": [
       {
         "query": "is chris minns labor or liberal",
-        "value": 176400
+        "value": 177700
       },
       {
         "query": "alp membership",
-        "value": 19950
+        "value": 14850
       },
       {
         "query": "is albanese labour or liberal",
-        "value": 12350
+        "value": 8400
       }
     ]
   },
@@ -109,7 +105,7 @@
       },
       {
         "query": "liberal party",
-        "value": 66
+        "value": 67
       },
       {
         "query": "liberal leader",
@@ -132,11 +128,11 @@
         "value": 6
       },
       {
-        "query": "liberals",
+        "query": "angus taylor",
         "value": 6
       },
       {
-        "query": "angus taylor",
+        "query": "liberals",
         "value": 6
       },
       {
@@ -163,11 +159,11 @@
     "rising": [
       {
         "query": "angus taylor",
-        "value": 495050
+        "value": 493600
       },
       {
         "query": "angus taylor liberal party",
-        "value": 236300
+        "value": 235800
       },
       {
         "query": "liberal leadership",
@@ -179,7 +175,7 @@
       },
       {
         "query": "one nation",
-        "value": 90
+        "value": 80
       }
     ]
   },
@@ -238,14 +234,14 @@
         "value": 2
       },
       {
-        "query": "one nation policies",
+        "query": "lidia thorpe",
         "value": 0
       }
     ],
     "rising": [
       {
-        "query": "one nation policies",
-        "value": 3850
+        "query": "lidia thorpe",
+        "value": 6400
       },
       {
         "query": "liberal",
@@ -269,7 +265,7 @@
       },
       {
         "query": "one nation australia",
-        "value": 13
+        "value": 14
       },
       {
         "query": "one nation polling",
@@ -300,10 +296,6 @@
         "value": 3
       },
       {
-        "query": "one nation party australia",
-        "value": 3
-      },
-      {
         "query": "liberal party",
         "value": 2
       },
@@ -324,10 +316,6 @@
         "value": 2
       },
       {
-        "query": "what is one nation australia",
-        "value": 2
-      },
-      {
         "query": "pauline hanson party",
         "value": 2
       },
@@ -336,7 +324,15 @@
         "value": 1
       },
       {
+        "query": "one nation farrer",
+        "value": 1
+      },
+      {
         "query": "one nation sa",
+        "value": 1
+      },
+      {
+        "query": "how to vote one nation",
         "value": 1
       },
       {
@@ -347,19 +343,27 @@
     "rising": [
       {
         "query": "one nation south australia",
-        "value": 116300
+        "value": 114550
       },
       {
         "query": "one nation sa",
-        "value": 89400
+        "value": 87050
+      },
+      {
+        "query": "how to vote one nation",
+        "value": 47950
       },
       {
         "query": "sa election",
-        "value": 24400
+        "value": 24650
       },
       {
         "query": "one nation polling",
         "value": 170
+      },
+      {
+        "query": "one nation farrer",
+        "value": 140
       },
       {
         "query": "pauline hanson party",
