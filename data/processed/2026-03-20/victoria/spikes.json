@@ -1,0 +1,116 @@
+[
+  {
+    "date": "2026-01-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 68,
+    "rolling_avg": 5.4,
+    "ratio": 12.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-04",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 19,
+    "rolling_avg": 1.7,
+    "ratio": 11.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-21",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 16,
+    "rolling_avg": 2.0,
+    "ratio": 8.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-26",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 12,
+    "rolling_avg": 1.6,
+    "ratio": 7.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-12",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 78,
+    "rolling_avg": 10.3,
+    "ratio": 7.6,
+    "explanation": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+    "news": [
+      {
+        "title": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+        "source": "facebook.com",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNcXBaU3NsOFAyZXBfMHQ4NkxjeG9wWTRRMllSVE1CRUVxbzhGTkZWYVVDTTZVRDZZZERZNUIxdjBBZ1V5amgyNXhreVZJMVl2cnJzM2lFT2Z3ZVFDTHVBSk5ydElvVkNqTVFzNzZrWW9ka1FCVzJvSEt2WHoyZFhhNW5oUE5UOWZ1U1NFOHR5c1MyXzJmMEZ6R3BpTUh1RV82VHlQTWctTHc2d0tpdVQ4NDdMQUVGZFBYWXc1ZVZKOFZYaV9SNkxESEl4R3NWN1VVMktwUWpDWnZXMUVndF9DZA?oc=5",
+        "date": "2026-02-11"
+      }
+    ]
+  },
+  {
+    "date": "2026-01-22",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 31,
+    "rolling_avg": 4.3,
+    "ratio": 7.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-01",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 16,
+    "rolling_avg": 2.9,
+    "ratio": 5.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-10",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 24,
+    "rolling_avg": 4.4,
+    "ratio": 5.4,
+    "explanation": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+    "news": [
+      {
+        "title": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+        "source": "facebook.com",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNcXBaU3NsOFAyZXBfMHQ4NkxjeG9wWTRRMllSVE1CRUVxbzhGTkZWYVVDTTZVRDZZZERZNUIxdjBBZ1V5amgyNXhreVZJMVl2cnJzM2lFT2Z3ZVFDTHVBSk5ydElvVkNqTVFzNzZrWW9ka1FCVzJvSEt2WHoyZFhhNW5oUE5UOWZ1U1NFOHR5c1MyXzJmMEZ6R3BpTUh1RV82VHlQTWctTHc2d0tpdVQ4NDdMQUVGZFBYWXc1ZVZKOFZYaV9SNkxESEl4R3NWN1VVMktwUWpDWnZXMUVndF9DZA?oc=5",
+        "date": "2026-02-11"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-05",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 20,
+    "rolling_avg": 4.0,
+    "ratio": 5.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-27",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 12,
+    "rolling_avg": 2.4,
+    "ratio": 4.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]
