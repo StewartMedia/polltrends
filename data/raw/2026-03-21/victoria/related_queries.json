@@ -81,7 +81,7 @@
     "rising": [
       {
         "query": "is albanese labour or liberal",
-        "value": 57550
+        "value": 63800
       },
       {
         "query": "labour or labor",
@@ -89,7 +89,7 @@
       },
       {
         "query": "is albanese labour",
-        "value": 60
+        "value": 70
       },
       {
         "query": "one nation",
@@ -155,7 +155,7 @@
     "rising": [
       {
         "query": "angus taylor",
-        "value": 404950
+        "value": 406050
       },
       {
         "query": "liberal party leadership",
@@ -186,16 +186,12 @@
         "value": 15
       },
       {
-        "query": "the greens party",
-        "value": 11
-      },
-      {
         "query": "greens leader",
         "value": 11
       },
       {
-        "query": "liberal",
-        "value": 7
+        "query": "the greens party",
+        "value": 11
       },
       {
         "query": "the greens australia",
@@ -214,6 +210,10 @@
         "value": 4
       },
       {
+        "query": "greens policy",
+        "value": 3
+      },
+      {
         "query": "liberal party",
         "value": 3
       },
@@ -228,8 +228,8 @@
     ],
     "rising": [
       {
-        "query": "liberal",
-        "value": 70
+        "query": "one nation policies",
+        "value": 40
       }
     ]
   },
@@ -280,10 +280,6 @@
         "value": 3
       },
       {
-        "query": "one nation party australia",
-        "value": 3
-      },
-      {
         "query": "one nation candidates",
         "value": 2
       },
@@ -328,38 +324,46 @@
         "value": 1
       },
       {
+        "query": "sa election",
+        "value": 1
+      },
+      {
         "query": "south australia election",
         "value": 1
       },
       {
-        "query": "sa election",
-        "value": 1
+        "query": "aoi baxter",
+        "value": 0
       }
     ],
     "rising": [
       {
         "query": "one nation south australia",
-        "value": 133850
+        "value": 133750
       },
       {
         "query": "one nation farrer",
-        "value": 126250
-      },
-      {
-        "query": "south australia election",
-        "value": 50850
+        "value": 125900
       },
       {
         "query": "sa election",
-        "value": 46850
+        "value": 50800
+      },
+      {
+        "query": "south australia election",
+        "value": 49000
       },
       {
         "query": "aoi baxter",
-        "value": 27600
+        "value": 25250
       },
       {
         "query": "liam alexander hall",
-        "value": 22550
+        "value": 21900
+      },
+      {
+        "query": "ashton hurn",
+        "value": 19050
       },
       {
         "query": "one nation policy",
