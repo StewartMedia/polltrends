@@ -1,0 +1,159 @@
+[
+  {
+    "date": "2026-01-09",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 13,
+    "rolling_avg": 1.6,
+    "ratio": 8.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 24,
+    "rolling_avg": 3.3,
+    "ratio": 7.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-21",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 100,
+    "rolling_avg": 14.0,
+    "ratio": 7.1,
+    "explanation": "Pauline \u2018vindicated\u2019 as One Nation wins seat",
+    "news": [
+      {
+        "title": "Pauline \u2018vindicated\u2019 as One Nation wins seat",
+        "source": "News.com.au",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOemZ0VldwRTZsWVY1eGZoOF9ZS1M4LXJOaVhpcS1wVENCRDdsNjhzR05tdHJzOUFlNlE4M3UwXzluUkJ6eDBFcG1IOEdZQlM2LXVPQ0tuUFFKMVlyWUFqLW45NlNUOWtwWDd0Y3k5bTZncEFPaDhGc2NucmNzcmVnY3FGaVQ2NWpEYXVvMUpsNTFuTk00QWt6eS1zcEIyOUtrcjQzUEttNmNNUGthdXg5Uy1hRmRvQW9HSEdERmV2RDE0cmxrZlp6aWlTbkVxaDVJX0FsY0dR0gHbAUFVX3lxTFBIQ0tKMktLcWRqWUNYUUkyV0xOVFBhdjN5NW9fYk9FZHRSLVNHcVNac1Y3bFNHcFBLVjFvNDJTaDNkTTFxVlFzU2IwenNOSnEtSTFRd2dZWW9acG8xdE9zWTJrSXhITWhTLXBEOXpYQmg0LThFX0NTb2hMSk5NSmRQYnZHUzJkOFNEUmdzRHhWbkZmMm9sb3VkSkpzZzhKUVNEcnlnQ3JENVpDUDRMbWVKb0JOSk82bWxMaUVzU041WVZJYjgwVUtGU2JaM0VtMWJwV21mdk9DN1ByUQ?oc=5",
+        "date": "2026-03-21"
+      },
+      {
+        "title": "\u2018I\u2019m going to leave you some landmines\u2019: Pauline Hanson sends SA premier a message amid jubilant supporters",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNRHNDalhsdmk1eGVGQkw1dmVvZ0xidnltajdsTzB1R1dCRXdRajFSbTdOY2tJUkgwV2h3eWxyOFIxNV8tZU05REtGaTVoMGxzVFRQS0FvNUhOZ0RoWkpoNURvS0xsS0RUYU5rakZsbVJ1WF8tY0pEVkRXZUhsX0E5M0hXd2MzYjB4bTZ4ZmJodDhRTjZ2TDcxY3FxenVxc1BXOGR3Z3Q0dDhPTlRjU1hBZ0Y4Z0tRckFDcmRDUXgwcWxoSDBTeTB1N20zMVFJV0tEakNWTy03cUNCWl9zSlJCZEwxQWpPajdxQ3djNkdNRQ?oc=5",
+        "date": "2026-03-21"
+      },
+      {
+        "title": "SA Election 2026 As It Happened: Labor wins state election in a landslide; Big swings to One Nation, Libs hit rock bottom",
+        "source": "9News",
+        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPVGVNN3hlX1l0MGhWaUN2Y0tydGZCOTEzNkJXbmtzRFg3VUM2eDAtb2hiM0s5eHIyT21tdG40UFY4a1hneGZvOUdKVUlCVXNkOWdZdWN2cUZSQVllSS1rUzQ5RU5SdUJmUUpuaGNBaHhDWTBBYTlrZl9LamMwTHBEcTEyYkEtdkpfUlB5Si1vMmpTVXMzSHFkcTExak9NM1Zyd1VlQl9TZzdaWk5oMWFzVGJEQkNlWGhBWXotRUZZNGZldFNxc3pMUXhfVWJ0cS12YmRITWVkYWZCempQUzBuaFBWVHp0R3dRQUhKVy1HQl9nd9IBe0FVX3lxTE9GQ2pHbTZRSVRwNDgtbE5iajVDMjNQSDktdzVxaHpJazJINzhLeWZfV25zOFFTbHZaSm42cUtHRzJudE11SUVub0hHVlpzTEQzSU9NaWVFSUVCaExWQnBwdU51b0JkemRXQ2RUV0lLQWM2b2lTdm5pdXgwSQ?oc=5",
+        "date": "2026-03-21"
+      }
+    ]
+  },
+  {
+    "date": "2026-02-12",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 30,
+    "rolling_avg": 5.4,
+    "ratio": 5.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-22",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 11,
+    "rolling_avg": 2.9,
+    "ratio": 3.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-13",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 34,
+    "rolling_avg": 9.1,
+    "ratio": 3.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-11",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 14,
+    "rolling_avg": 3.9,
+    "ratio": 3.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-19",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 18,
+    "rolling_avg": 5.4,
+    "ratio": 3.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-20",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 31,
+    "rolling_avg": 10.6,
+    "ratio": 2.9,
+    "explanation": "Pauline \u2018vindicated\u2019 as One Nation wins seat",
+    "news": [
+      {
+        "title": "Pauline \u2018vindicated\u2019 as One Nation wins seat",
+        "source": "News.com.au",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOemZ0VldwRTZsWVY1eGZoOF9ZS1M4LXJOaVhpcS1wVENCRDdsNjhzR05tdHJzOUFlNlE4M3UwXzluUkJ6eDBFcG1IOEdZQlM2LXVPQ0tuUFFKMVlyWUFqLW45NlNUOWtwWDd0Y3k5bTZncEFPaDhGc2NucmNzcmVnY3FGaVQ2NWpEYXVvMUpsNTFuTk00QWt6eS1zcEIyOUtrcjQzUEttNmNNUGthdXg5Uy1hRmRvQW9HSEdERmV2RDE0cmxrZlp6aWlTbkVxaDVJX0FsY0dR0gHbAUFVX3lxTFBIQ0tKMktLcWRqWUNYUUkyV0xOVFBhdjN5NW9fYk9FZHRSLVNHcVNac1Y3bFNHcFBLVjFvNDJTaDNkTTFxVlFzU2IwenNOSnEtSTFRd2dZWW9acG8xdE9zWTJrSXhITWhTLXBEOXpYQmg0LThFX0NTb2hMSk5NSmRQYnZHUzJkOFNEUmdzRHhWbkZmMm9sb3VkSkpzZzhKUVNEcnlnQ3JENVpDUDRMbWVKb0JOSk82bWxMaUVzU041WVZJYjgwVUtGU2JaM0VtMWJwV21mdk9DN1ByUQ?oc=5",
+        "date": "2026-03-21"
+      },
+      {
+        "title": "\u2018I\u2019m going to leave you some landmines\u2019: Pauline Hanson sends SA premier a message amid jubilant supporters",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNRHNDalhsdmk1eGVGQkw1dmVvZ0xidnltajdsTzB1R1dCRXdRajFSbTdOY2tJUkgwV2h3eWxyOFIxNV8tZU05REtGaTVoMGxzVFRQS0FvNUhOZ0RoWkpoNURvS0xsS0RUYU5rakZsbVJ1WF8tY0pEVkRXZUhsX0E5M0hXd2MzYjB4bTZ4ZmJodDhRTjZ2TDcxY3FxenVxc1BXOGR3Z3Q0dDhPTlRjU1hBZ0Y4Z0tRckFDcmRDUXgwcWxoSDBTeTB1N20zMVFJV0tEakNWTy03cUNCWl9zSlJCZEwxQWpPajdxQ3djNkdNRQ?oc=5",
+        "date": "2026-03-21"
+      },
+      {
+        "title": "SA Election 2026 As It Happened: Labor wins state election in a landslide; Big swings to One Nation, Libs hit rock bottom",
+        "source": "9News",
+        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPVGVNN3hlX1l0MGhWaUN2Y0tydGZCOTEzNkJXbmtzRFg3VUM2eDAtb2hiM0s5eHIyT21tdG40UFY4a1hneGZvOUdKVUlCVXNkOWdZdWN2cUZSQVllSS1rUzQ5RU5SdUJmUUpuaGNBaHhDWTBBYTlrZl9LamMwTHBEcTEyYkEtdkpfUlB5Si1vMmpTVXMzSHFkcTExak9NM1Zyd1VlQl9TZzdaWk5oMWFzVGJEQkNlWGhBWXotRUZZNGZldFNxc3pMUXhfVWJ0cS12YmRITWVkYWZCempQUzBuaFBWVHp0R3dRQUhKVy1HQl9nd9IBe0FVX3lxTE9GQ2pHbTZRSVRwNDgtbE5iajVDMjNQSDktdzVxaHpJazJINzhLeWZfV25zOFFTbHZaSm42cUtHRzJudE11SUVub0hHVlpzTEQzSU9NaWVFSUVCaExWQnBwdU51b0JkemRXQ2RUV0lLQWM2b2lTdm5pdXgwSQ?oc=5",
+        "date": "2026-03-21"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-21",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 3.7,
+    "ratio": 2.7,
+    "explanation": "Election call: Labor wins power as battleground seats see One Nation surge",
+    "news": [
+      {
+        "title": "Election call: Labor wins power as battleground seats see One Nation surge",
+        "source": "InDaily",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSENYZmY5SnhpSGtocVZlR2ZfR3BOZXRJV284d2lISnJoV0tXUWRjSktqb0t6MXFoNEVVdjgyYnVjU0JVc0NWZUNpbGFTMzVkSHFyUHFxa0Nma0dBaHltS3hGako3V2JIQ1U3SlJiVUdfaEJlWl9JM0VYUkpJXzVCQndFaUhSUDFrbmZfaTNwSHZjRmdlSXZmblQ4VGNDN3hiTmJFVkVB?oc=5",
+        "date": "2026-03-21"
+      },
+      {
+        "title": "Sky News Australia. . Sky News host Peta Credlin weighs in on the NSW Labor government\u2019s recent decision on coal mines in their pursuit of the green dream.",
+        "source": "Facebook",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPdkh6dDVRU1RPc29YVHp3LVN0TFIxZUNMVU5ldzlIZjRzaW1tSWhKc09RV2tOZGJBRjcwaWphdlU1WTVNV1cybGpNQXdEb05nY2hOcmhSMmtmdUgxMXM1RG9lRUVGblBYQ245RlVXMUlrOWx6bktWT1hOSGZueVhDdUM0VEQ2OUNZV3RIUUdJN1JPYUgtMjNiZ25jMlJnV25Qal9LMnhxOWVBdy1MY19Fd3pNZng3ZVppdkxveUw4T0ViSmxIamNpZ212SVFwVk1VOUwyU2ZwYnY?oc=5",
+        "date": "2026-03-19"
+      },
+      {
+        "title": "Basil Zempilas 10 Things: Secret squirrel Labor Government not what you voted for",
+        "source": "The West Australian",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNXJDakltZGtwSVNoOGNRbnlpdVVRTEFfeVhsUDVmakdYQkQ2TTJHQTl2b3A1eWdaQmluV2FNalBMdTBhWVBJYUZUVC1WaVJsTW9qdTNWVFdEcEM3Ny1Say1KZ2MxN2Q1bDVOWUQ1OWotZXB6SEg3bnNDMXZQYmJ6ZlBndllIVGdIUkxiaGw0RW1UcDQtLVZJQ1ZzQkY0WUY0Q2hHcUVsVG9rOEhoMzR0YlhHNzhvNXdzV1BCT1l0ZmFnOHFlQ2xmZ0xfMXB3emtZQzM3Yg?oc=5",
+        "date": "2026-03-19"
+      }
+    ]
+  }
+]
