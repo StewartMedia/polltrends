@@ -7,11 +7,7 @@
       },
       {
         "query": "australian labor party",
-        "value": 95
-      },
-      {
-        "query": "one nation",
-        "value": 50
+        "value": 94
       },
       {
         "query": "australian labour party",
@@ -19,25 +15,25 @@
       },
       {
         "query": "labour party australia",
-        "value": 48
+        "value": 49
       },
       {
-        "query": "albanese",
-        "value": 45
+        "query": "one nation",
+        "value": 24
       },
       {
         "query": "pauline hanson",
-        "value": 14
+        "value": 15
       }
     ],
     "rising": [
       {
         "query": "one nation",
-        "value": 160
+        "value": 250
       },
       {
         "query": "pauline hanson",
-        "value": 60
+        "value": 160
       }
     ]
   },
@@ -57,7 +53,11 @@
       },
       {
         "query": "liberal leader australia",
-        "value": 4
+        "value": 5
+      },
+      {
+        "query": "labour",
+        "value": 5
       },
       {
         "query": "liberal party spill",
@@ -67,7 +67,7 @@
     "rising": [
       {
         "query": "liberal party spill",
-        "value": 128700
+        "value": 110
       }
     ]
   },
@@ -79,17 +79,17 @@
       },
       {
         "query": "the greens australia",
-        "value": 46
+        "value": 44
       },
       {
         "query": "one nation policies",
-        "value": 6
+        "value": 1
       }
     ],
     "rising": [
       {
         "query": "one nation policies",
-        "value": 99850
+        "value": 15600
       }
     ]
   },
@@ -113,14 +113,14 @@
       },
       {
         "query": "one nation sa",
+        "value": 6
+      },
+      {
+        "query": "what is one nation",
         "value": 5
       },
       {
         "query": "one nation polls",
-        "value": 5
-      },
-      {
-        "query": "what is one nation",
         "value": 4
       },
       {
@@ -131,11 +131,11 @@
     "rising": [
       {
         "query": "one nation sa",
-        "value": 1100
+        "value": 800
       },
       {
-        "query": "one nation policies",
-        "value": 50
+        "query": "one nation leader",
+        "value": 120
       }
     ]
   },
