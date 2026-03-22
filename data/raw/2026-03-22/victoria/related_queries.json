@@ -1,0 +1,154 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "alp",
+        "value": 100
+      },
+      {
+        "query": "australian labor party",
+        "value": 95
+      },
+      {
+        "query": "one nation",
+        "value": 50
+      },
+      {
+        "query": "australian labour party",
+        "value": 50
+      },
+      {
+        "query": "labour party australia",
+        "value": 48
+      },
+      {
+        "query": "albanese",
+        "value": 45
+      },
+      {
+        "query": "pauline hanson",
+        "value": 14
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation",
+        "value": 160
+      },
+      {
+        "query": "pauline hanson",
+        "value": 60
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "the liberal party",
+        "value": 20
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 8
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 4
+      },
+      {
+        "query": "liberal party spill",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "liberal party spill",
+        "value": 128700
+      }
+    ]
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "australia greens",
+        "value": 100
+      },
+      {
+        "query": "the greens australia",
+        "value": 46
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation policies",
+        "value": 99850
+      }
+    ]
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation party",
+        "value": 13
+      },
+      {
+        "query": "pauline hanson",
+        "value": 8
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "one nation sa",
+        "value": 5
+      },
+      {
+        "query": "one nation polls",
+        "value": 5
+      },
+      {
+        "query": "what is one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation leader",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation sa",
+        "value": 1100
+      },
+      {
+        "query": "one nation policies",
+        "value": 50
+      }
+    ]
+  },
+  "AJP": {
+    "top": [],
+    "rising": []
+  },
+  "RSN": {
+    "top": [],
+    "rising": []
+  },
+  "LDP": {
+    "top": [],
+    "rising": []
+  }
+}

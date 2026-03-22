@@ -1,0 +1,175 @@
+{
+  "ALP": {
+    "party": "Labor",
+    "queries_analysed": 7,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 1,
+      "neutral": 6
+    },
+    "sentiment_score": -0.14,
+    "classified_queries": [
+      {
+        "query": "alp",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "australian labor party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "australian labour party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labour party australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "albanese",
+        "sentiment": "negative"
+      },
+      {
+        "query": "pauline hanson",
+        "sentiment": "neutral"
+      }
+    ]
+  },
+  "LIB": {
+    "party": "Liberal",
+    "queries_analysed": 5,
+    "sentiment_counts": {
+      "positive": 1,
+      "negative": 0,
+      "neutral": 4
+    },
+    "sentiment_score": 0.2,
+    "classified_queries": [
+      {
+        "query": "liberal",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "the liberal party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal party of australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal leader australia",
+        "sentiment": "positive"
+      },
+      {
+        "query": "liberal party spill",
+        "sentiment": "neutral"
+      }
+    ]
+  },
+  "GRN": {
+    "party": "Greens",
+    "queries_analysed": 3,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 3
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": [
+      {
+        "query": "australia greens",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "the greens australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation policies",
+        "sentiment": "neutral"
+      }
+    ]
+  },
+  "PHON": {
+    "party": "One Nation",
+    "queries_analysed": 8,
+    "sentiment_counts": {
+      "positive": 1,
+      "negative": 0,
+      "neutral": 7
+    },
+    "sentiment_score": 0.12,
+    "classified_queries": [
+      {
+        "query": "one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "pauline hanson",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation policies",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation sa",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation polls",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "what is one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation leader",
+        "sentiment": "positive"
+      }
+    ]
+  },
+  "AJP": {
+    "party": "Animal Justice",
+    "queries_analysed": 0,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": []
+  },
+  "RSN": {
+    "party": "Reason",
+    "queries_analysed": 0,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": []
+  },
+  "LDP": {
+    "party": "Lib Dems",
+    "queries_analysed": 0,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": []
+  }
+}

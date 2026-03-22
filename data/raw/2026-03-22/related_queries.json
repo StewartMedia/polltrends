@@ -1,0 +1,197 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labour",
+        "value": 100
+      },
+      {
+        "query": "labor party",
+        "value": 83
+      },
+      {
+        "query": "liberal",
+        "value": 69
+      },
+      {
+        "query": "australian labor",
+        "value": 38
+      },
+      {
+        "query": "labour party",
+        "value": 30
+      },
+      {
+        "query": "australian labor party",
+        "value": 27
+      },
+      {
+        "query": "alp",
+        "value": 24
+      },
+      {
+        "query": "albanese",
+        "value": 18
+      },
+      {
+        "query": "labor government",
+        "value": 13
+      },
+      {
+        "query": "labour party australia",
+        "value": 13
+      },
+      {
+        "query": "liberal party australia",
+        "value": 9
+      },
+      {
+        "query": "chris minns",
+        "value": 7
+      },
+      {
+        "query": "australian liberal party",
+        "value": 7
+      },
+      {
+        "query": "labor policies",
+        "value": 6
+      }
+    ],
+    "rising": [
+      {
+        "query": "australian liberal party",
+        "value": 70
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "the liberal party",
+        "value": 20
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 8
+      },
+      {
+        "query": "liberal spill",
+        "value": 5
+      },
+      {
+        "query": "labor",
+        "value": 5
+      },
+      {
+        "query": "labour",
+        "value": 5
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 4
+      },
+      {
+        "query": "liberal party spill",
+        "value": 2
+      },
+      {
+        "query": "erythritol sweetener",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "erythritol sweetener",
+        "value": 11700
+      },
+      {
+        "query": "liberal spill",
+        "value": 750
+      },
+      {
+        "query": "liberal party spill",
+        "value": 750
+      }
+    ]
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "the greens australia",
+        "value": 100
+      }
+    ],
+    "rising": []
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation party",
+        "value": 11
+      },
+      {
+        "query": "one nation sa",
+        "value": 8
+      },
+      {
+        "query": "pauline hanson",
+        "value": 7
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "what is one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation polls",
+        "value": 4
+      },
+      {
+        "query": "how to vote one nation",
+        "value": 2
+      },
+      {
+        "query": "one nation leader",
+        "value": 2
+      },
+      {
+        "query": "barnaby joyce",
+        "value": 1
+      },
+      {
+        "query": "liam alexander hall",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "liam alexander hall",
+        "value": 16850
+      },
+      {
+        "query": "one nation sa",
+        "value": 1600
+      },
+      {
+        "query": "how to vote one nation",
+        "value": 250
+      },
+      {
+        "query": "one nation policies",
+        "value": 70
+      }
+    ]
+  }
+}

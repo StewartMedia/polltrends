@@ -1,0 +1,190 @@
+{
+  "ALP": {
+    "party": "Labor",
+    "queries_analysed": 14,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 1,
+      "neutral": 13
+    },
+    "sentiment_score": -0.07,
+    "classified_queries": [
+      {
+        "query": "labour",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "australian labor",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labour party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "australian labor party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "alp",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "albanese",
+        "sentiment": "negative"
+      },
+      {
+        "query": "labor government",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labour party australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal party australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "chris minns",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "australian liberal party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor policies",
+        "sentiment": "neutral"
+      }
+    ]
+  },
+  "LIB": {
+    "party": "Liberal",
+    "queries_analysed": 9,
+    "sentiment_counts": {
+      "positive": 1,
+      "negative": 0,
+      "neutral": 8
+    },
+    "sentiment_score": 0.11,
+    "classified_queries": [
+      {
+        "query": "liberal",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "the liberal party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal party of australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal spill",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labour",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal leader australia",
+        "sentiment": "positive"
+      },
+      {
+        "query": "liberal party spill",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "erythritol sweetener",
+        "sentiment": "neutral"
+      }
+    ]
+  },
+  "GRN": {
+    "party": "Greens",
+    "queries_analysed": 1,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": [
+      {
+        "query": "the greens australia",
+        "sentiment": "neutral"
+      }
+    ]
+  },
+  "PHON": {
+    "party": "One Nation",
+    "queries_analysed": 11,
+    "sentiment_counts": {
+      "positive": 1,
+      "negative": 0,
+      "neutral": 10
+    },
+    "sentiment_score": 0.09,
+    "classified_queries": [
+      {
+        "query": "one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation sa",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "pauline hanson",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation policies",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "what is one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation polls",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "how to vote one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation leader",
+        "sentiment": "positive"
+      },
+      {
+        "query": "barnaby joyce",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liam alexander hall",
+        "sentiment": "neutral"
+      }
+    ]
+  }
+}
