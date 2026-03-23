@@ -1,11 +1,21 @@
 [
   {
-    "date": "2026-01-10",
+    "date": "2026-01-09",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 28,
-    "rolling_avg": 2.0,
-    "ratio": 14.0,
+    "value": 14,
+    "rolling_avg": 0.6,
+    "ratio": 24.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-22",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 13,
+    "rolling_avg": 1.0,
+    "ratio": 13.0,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -14,8 +24,18 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 8.7,
-    "ratio": 11.5,
+    "rolling_avg": 8.4,
+    "ratio": 11.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 24,
+    "rolling_avg": 2.6,
+    "ratio": 9.3,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -23,9 +43,9 @@
     "date": "2026-02-12",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 32,
-    "rolling_avg": 4.3,
-    "ratio": 7.5,
+    "value": 31,
+    "rolling_avg": 3.9,
+    "ratio": 8.0,
     "explanation": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
     "news": [
       {
@@ -37,22 +57,29 @@
     ]
   },
   {
-    "date": "2026-01-22",
+    "date": "2026-02-13",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 13,
-    "rolling_avg": 2.1,
-    "ratio": 6.1,
-    "explanation": "Significant spike in search interest",
-    "news": []
+    "value": 43,
+    "rolling_avg": 8.3,
+    "ratio": 5.2,
+    "explanation": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+    "news": [
+      {
+        "title": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+        "source": "Facebook",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNcXBaU3NsOFAyZXBfMHQ4NkxjeG9wWTRRMllSVE1CRUVxbzhGTkZWYVVDTTZVRDZZZERZNUIxdjBBZ1V5amgyNXhreVZJMVl2cnJzM2lFT2Z3ZVFDTHVBSk5ydElvVkNqTVFzNzZrWW9ka1FCVzJvSEt2WHoyZFhhNW5oUE5UOWZ1U1NFOHR5c1MyXzJmMEZ6R3BpTUh1RV82VHlQTWctTHc2d0tpdVQ4NDdMQUVGZFBYWXc1ZVZKOFZYaV9SNkxESEl4R3NWN1VVMktwUWpDWnZXMUVndF9DZA?oc=5",
+        "date": "2026-02-11"
+      }
+    ]
   },
   {
     "date": "2026-02-11",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 16,
+    "value": 13,
     "rolling_avg": 2.9,
-    "ratio": 5.6,
+    "ratio": 4.5,
     "explanation": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
     "news": [
       {
@@ -67,46 +94,19 @@
     "date": "2026-01-19",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 24,
-    "rolling_avg": 4.6,
-    "ratio": 5.2,
+    "value": 22,
+    "rolling_avg": 5.4,
+    "ratio": 4.1,
     "explanation": "Significant spike in search interest",
     "news": []
-  },
-  {
-    "date": "2026-02-13",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 40,
-    "rolling_avg": 8.9,
-    "ratio": 4.5,
-    "explanation": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
-    "news": [
-      {
-        "title": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
-        "source": "Facebook",
-        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNcXBaU3NsOFAyZXBfMHQ4NkxjeG9wWTRRMllSVE1CRUVxbzhGTkZWYVVDTTZVRDZZZERZNUIxdjBBZ1V5amgyNXhreVZJMVl2cnJzM2lFT2Z3ZVFDTHVBSk5ydElvVkNqTVFzNzZrWW9ka1FCVzJvSEt2WHoyZFhhNW5oUE5UOWZ1U1NFOHR5c1MyXzJmMEZ6R3BpTUh1RV82VHlQTWctTHc2d0tpdVQ4NDdMQUVGZFBYWXc1ZVZKOFZYaV9SNkxESEl4R3NWN1VVMktwUWpDWnZXMUVndF9DZA?oc=5",
-        "date": "2026-02-11"
-      }
-    ]
   },
   {
     "date": "2026-03-22",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 86,
-    "rolling_avg": 22.3,
-    "ratio": 3.9,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-01-21",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 18,
-    "rolling_avg": 8.3,
-    "ratio": 2.2,
+    "value": 82,
+    "rolling_avg": 22.0,
+    "ratio": 3.7,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -115,8 +115,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 16,
-    "rolling_avg": 7.3,
-    "ratio": 2.2,
+    "rolling_avg": 7.0,
+    "ratio": 2.3,
     "explanation": "Significant spike in search interest",
     "news": []
   }

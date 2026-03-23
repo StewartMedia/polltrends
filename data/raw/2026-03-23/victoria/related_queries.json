@@ -1,19 +1,150 @@
 {
   "ALP": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "alp",
+        "value": 100
+      },
+      {
+        "query": "australian labor party",
+        "value": 90
+      },
+      {
+        "query": "australian labour party",
+        "value": 46
+      },
+      {
+        "query": "labour party australia",
+        "value": 41
+      },
+      {
+        "query": "one nation",
+        "value": 36
+      },
+      {
+        "query": "albanese",
+        "value": 33
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation",
+        "value": 120
+      }
+    ]
   },
   "LIB": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "the liberal party",
+        "value": 21
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 8
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 5
+      }
+    ],
+    "rising": [
+      {
+        "query": "liberal leader australia",
+        "value": 50
+      }
+    ]
   },
   "GRN": {
-    "top": [],
+    "top": [
+      {
+        "query": "the greens australia",
+        "value": 100
+      },
+      {
+        "query": "one nation policies",
+        "value": 9
+      }
+    ],
     "rising": []
   },
   "PHON": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "one nation party",
+        "value": 100
+      },
+      {
+        "query": "one nation victoria",
+        "value": 75
+      },
+      {
+        "query": "pauline hanson",
+        "value": 65
+      },
+      {
+        "query": "pauline hanson one nation",
+        "value": 54
+      },
+      {
+        "query": "one nation policies",
+        "value": 53
+      },
+      {
+        "query": "one nation south australia",
+        "value": 48
+      },
+      {
+        "query": "what is one nation",
+        "value": 35
+      },
+      {
+        "query": "one nation news",
+        "value": 29
+      },
+      {
+        "query": "one nation party australia",
+        "value": 20
+      },
+      {
+        "query": "one nation candidates",
+        "value": 20
+      },
+      {
+        "query": "one nation policy",
+        "value": 18
+      },
+      {
+        "query": "one nation poll",
+        "value": 17
+      },
+      {
+        "query": "one nation farrer",
+        "value": 13
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation south australia",
+        "value": 469800
+      },
+      {
+        "query": "one nation farrer",
+        "value": 121900
+      },
+      {
+        "query": "one nation candidates",
+        "value": 90
+      },
+      {
+        "query": "one nation policies",
+        "value": 40
+      }
+    ]
   },
   "AJP": {
     "top": [],

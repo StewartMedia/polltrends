@@ -1,50 +1,50 @@
 [
   {
-    "date": "2026-01-09",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 11,
-    "rolling_avg": 1.3,
-    "ratio": 8.6,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
     "date": "2026-03-21",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 11.9,
-    "ratio": 8.4,
-    "explanation": "Election map shows how One Nation became Labor's main opposition in much of Adelaide",
+    "rolling_avg": 11.4,
+    "ratio": 8.8,
+    "explanation": "As One Nation's vote soars, SA supporters explain their reasons",
     "news": [
       {
-        "title": "Election map shows how One Nation became Labor's main opposition in much of Adelaide",
+        "title": "As One Nation's vote soars, SA supporters explain their reasons",
         "source": "ABC News",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1BSkpLYXBiYzlpRHJDUXgwTkF5YzExR2lRYnh5dm0yYVB2SF9RRlh3WVpfc3hQU2o4Q1hfbmZLZ0M3YzhvSnlJSF94RUZjSlptd0xsUlhYZ0UyZTg2M0d1b1VwaUs2eDFNMzFBenBXaEFaSFFZNno0?oc=5",
-        "date": "2026-03-22"
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNQV83YU0zNmJQSEM4Vm8zR2swVDAzQ2xkQkhjOGR1X2thdVg1c3VmN19FalJ2YnBrS0pUVXJFQkR1QkdJLU1EWlBJNDd4bFF4X2NVd3htekhLNkkweVk2TXZuYWNNc1NfQlVUTHBIVnFhd2NPSmNxVlhONlltMXNYTjBhZnViUFp6YUVpSjdGaUhlbTZHd2hENg?oc=5",
+        "date": "2026-03-23"
       },
       {
-        "title": "One Nation to join South Australian lower house after surging support in election",
-        "source": "9News",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWnY0T2N4b0tGeEw1QW1zcTg0NjVPaVBsaFZGc1k1TjVzeUttcGNfS1o1bEx0WGVOdXMzX3l3WlZIN1VVUHNfaHBWa0JGdVBPQkpmbFBYbE9ON3hIdEFYR2RkTHowLWRwTS1MU0tZekpLXzhxZHpJVl9mMDBha1kxTFRfRnQ4MGpiNGd4bGRLSktsaUN2eUcyRXJSZ2wwMWdhRER2RjY3NHJFVDdCYWNpTHpUUdIBeEFVX3lxTE9Td1FGaGdSellFdVoyR1JCbFVVMjZDQXdwaVhpSExsLWpZaWZFT3dzU3FIOHhrcTVjaWM3MEFkV1JjNDB1eFZ3UWJiTXNJMDlVdTlhOGxiSkdGYnpSZ1dVUkRjenVURU9ILVVGQ0gzYVdSRnd6bGI4NQ?oc=5",
-        "date": "2026-03-22"
-      },
-      {
-        "title": "Barnaby basks in One Nation\u2019s \u2018seismic\u2019 result",
+        "title": "One Nation wins big in historic SA vote",
         "source": "News.com.au",
-        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNZGRnc0ZmcjlTajN3Z3NicHJBZW8tU0lyQm16Wm5WYzNhQUlPSnJ2SDAyUlJoY1QtalA4RkxMU1htUHhBMXRZV0xwNHg4dUd1cjdjRmZtYU5tRkI5MlR0dUpEUU9xWXFuR0xxVEtuaThQckExTTc2YkhaUmI5R2VpY2VVaHhyVmtsQ0hhTjJKQ2dfNkJrWkE3Wk5DcE5rVHBqR0lZdTFsME9DeVJTNFVPMnRtQV9ZdjYzZ1hLWWRGXzhfM20wWl9oZDRucUFKa0JMMEdGWnNSZFB4aTNYZ0ZmZzhWYVNtQdIB6wFBVV95cUxQZDk0V0VSbElReFhYUGJCVFFIcDQyS3FNVy1lNTFRNXdBdm5UaE8wVVBuMDRVT2xyQlJCZnI4ZWU4cDNNZUQ5a3Y5UW5OS0hsWTE3Y0tPRkJpWURaTXRldG80NFFRNEVkdi00MHhDcU9QX0gtSGhfZDVnY1VkYnpnd1owQTk4LUpQak5pYlVnb1VrbXk2Y2lzR3hCREZzc212TkJRMXZEcUtraEpETFd2SzBYaUdRMUVrZnViMFB6MGdkWWE4RWMtS0s5R1pQUlozMk9uNGhGNUFsbXYtZ0JsZ0FoRTZxNnh0V2Qw?oc=5",
-        "date": "2026-03-22"
+        "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxOSGNIMWNES2I3R2hwX282clpGUzdQRGRDZjhuT1RlNjFHYzRENW9mbkstQmhaeGRiV21VcDVTV0wwSUtxeXFPYjNJTnFZa0s5S1EyVlAxWmVrWmpoVjhwMlVvQnRoNnpIVzlGSzNwMUdJQ294SGVMaWhxUVkyaHFMMWJfMFdDWkJhOVduT2M4eWdWS25fUUlYUWRuVmFIRG1ReFdQMkpYNjFMQU5JUG8yOTIzWjc0QVBwV0hPVjV5ZUhhVnE0clF3aHREMjM2UnJNdmRpeTN4WUpxdTZhMWxESUZZcW9yVkFDMUhva3QxRE5PMjU4alB4c0UzU09uVUVBdVQxSTM4RUV4OENuT003YjhhTk12QWc2RFHSAZ8CQVVfeXFMUDliblV2YzhlRkwwcE1BVER1OTNubU41elJnR2xYbHdFUkpTZkVLcjAzXzhRWVZ1clJCclhsUE85QVluSnVEUFUwU3ZTU0dLMnlmSWZlcW9BVmlSTkZ2ZnZycWJ3SlV3cWp2RlluTDF0TGFNTFd0clVtNTQ0b3ByNmkyWDJmZmF2T2J1MnVRamxPSVdYMGtVSzljbkRkM2hTSElsVFF1MWVhTE9xR2FEZlZaMzNKZlZPYnNDcVI5QWp2dXF3SHVkcVNKSzRsb19QdUx0QzhTQ21qS1JIV0FDdXJMV1hOc3dxTTgtcjUydWtWMGFzZzJQRTZDaDFPdU1faGJ6bHg2U0hWcjMxbndjRkdaa1EyTXA4M2lQc3BUTU0?oc=5",
+        "date": "2026-03-23"
+      },
+      {
+        "title": "Pauline Hanson marches past the party that once expelled her",
+        "source": "SMH.com.au",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZk1xT0ozUU1vQnVmTTNHZEpzNXVZYTB0S1ZlV3M0Vk45WG1EVDRYR3VmQml4c3NQZFFiUDJWVloxNGtBcjdxSkxKQnVlaVNWeHdxMm03ZDg4X1JoYWZpZk1DRzdYaEFaZ0VUVjZFMmxWTHZXS0RyTHZIRVRaWFczemY5cmMyOTYtM2lEREp1SUx6S28yTERmWlltbHhmMXFNeEsxZ3pKaTV4QVRNUGZTYmUxNHNBX1BGVzlCd2x3?oc=5",
+        "date": "2026-03-23"
       }
     ]
+  },
+  {
+    "date": "2026-01-09",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 11,
+    "rolling_avg": 1.6,
+    "ratio": 7.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
     "date": "2026-01-10",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 21,
-    "rolling_avg": 2.7,
-    "ratio": 7.7,
+    "value": 20,
+    "rolling_avg": 2.9,
+    "ratio": 7.0,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -52,9 +52,9 @@
     "date": "2026-02-12",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 26,
-    "rolling_avg": 4.3,
-    "ratio": 6.1,
+    "value": 25,
+    "rolling_avg": 4.0,
+    "ratio": 6.2,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -62,9 +62,9 @@
     "date": "2026-02-13",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 27,
-    "rolling_avg": 7.4,
-    "ratio": 3.6,
+    "value": 28,
+    "rolling_avg": 7.1,
+    "ratio": 3.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -75,27 +75,37 @@
     "value": 10,
     "rolling_avg": 3.0,
     "ratio": 3.3,
-    "explanation": "Sky News Australia. . Sky News host Paul Murray talks about the \u201cpretty amazing\u201d election results for the South Australian Labor Party.",
+    "explanation": "Swing to L-NP Coalition and One Nation closes the two-party preferred gap: ALP 52.5% cf. L-NP 47.5%",
     "news": [
       {
-        "title": "Sky News Australia. . Sky News host Paul Murray talks about the \u201cpretty amazing\u201d election results for the South Australian Labor Party.",
-        "source": "Facebook",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPa1d2TkZhZ3J6aU1GenZxbkVCb1p5M3ozY1V2c0tiZmZPWEp1cWhJalNnSGU1V2lDWmNrRC1jZTlmUklLMXJKbzlxeGJ0V01wNHdhNmdxUDNEMXFEb0hXTEtCRUhodVNRWklJWElEUUF5eXpCcDY4TFJIT3pYbkZRZUROMXZpT3ZESDQ3WmtyTkZpMVFhNll3UVpzV1RDeHptSjc4YXFUU2F0aUFFSkkzQTRUbHJPOVQ3akFWZUxCWlFrcVEtNm1F?oc=5",
-        "date": "2026-03-22"
+        "title": "Swing to L-NP Coalition and One Nation closes the two-party preferred gap: ALP 52.5% cf. L-NP 47.5%",
+        "source": "Roy Morgan Research",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQblRXWkMybVNCa043Z2hLUGpob0s1MkVpdHNZTzFBb1lKZzBQNUh1amphNFcyZkdWY0RDUUJIZG9PaVAzT29rTy1FelVGcWhEdGhaTVN3a1hzbHNUY0JEYnB5M0MtRHFscTUtZGhGR3dudDJiMks4a2VwNmVGMk5uSmVmTXlqQQ?oc=5",
+        "date": "2026-03-23"
       },
       {
-        "title": "\u2018They thumped the election\u2019: South Australian Labor Party \u2018won big\u2019",
-        "source": "Sky News Australia",
-        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQYlc1djRiZ1hqbEE1cWFiNzhONHVsdHJnR2RmNVp3WEVzWjNnSm9nRi1xY0VJSGk3M0huM0ptTWE3WDJvZGd3QmFpRmo2VkxxbVZmejZidU83T2JfdHV0b0VxS21qU1ptbE40c3QtUFBMWEstWGhYbVlweHBLZDF2N3R6T2J6QkFib1I2VGdsZGVQYmJteG00SVBHWlp3dzVSRmx1akpIRGpyVGFmcWsyZlhIbVhKYUplWUV4dkVZT2NpYkZyQ2I4RmpuM2tuczdKZkxiQUEwa0hrWHNXTTZfa3Nn0gHnAUFVX3lxTFBOcDFOdjlrcTNJcnYxM1VhcnJVa0dWaFRXV0h3MWlzaVBmMmh6ZFFvRGRqLThfc2dOV3U5b1RjaGY2MDlFVXI3S0dWSnRHQU5NLXYxcVU3eWtuRno5ZTZzV05hWXRqZEdRR2FhaVhoOG9FNFBrTjZBaTFDS1BKUnFnWHRmVjRDR3MwVTdkOXpaVHlweF9KRVlQc05LdlZ5WDJERTB6QkFEeUZMQjA0UG9MbGtKZk12WEoxTGFFRUN2dW5QSXhRSk4wLW9FdGdsQ2pvU2M1WkNhdk52VzdhYU10bm9aa1FyWQ?oc=5",
-        "date": "2026-03-22"
+        "title": "Minns Labor Government boosts Aboriginal-led heart research to drive improved health outcomes",
+        "source": "Office for Health and Medical Research",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOT0xMM1dBLVBSVThXbUhpb3BXUnJkYTlZVHc5c2lJTklSNmkteUtaQWVVcWdQZTh0N3BMQjZRWTFrYWVJUTJQcG1FVTRISWs3M0g0U21uVF9mV2d2blRLU2NJYVotVmo4WW10dFJONzFCNFRMbW5QYVJSU3NXWVNkZ0ZITmVTMV9sZDJLTk9PTG1fNS1WTWpkS2FpWGNhNzQ?oc=5",
+        "date": "2026-03-23"
       },
       {
-        "title": "Labor government retains South Australian leadership in election victory",
-        "source": "MSN",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNXzZMVFRaRWNOSEdvcDN4MHptTVlRcmZlZXFXWTRsM3ptTGhnS181a3gzYnFBa1l6NG1palBxQzBiZkdsWXBhN0UyMFNZQ0xobTFDMkN5VVUyOHE4djVYR2JEODF3cWdUWkcwc2JBR3d2SUk3eUF4bWhaTWlGS0FjYk5md3Y3dy02N1c3RG1uRG9iblhvY1I5bTF1UEVUMWZudnhuYTVuYlhuUWFLbzNlVHFWQ2FPWmtSM0RDekFGdzZEdHVDbkxObVZqWmxGOHdUNGc?oc=5",
-        "date": "2026-03-22"
+        "title": "Why the battle for NSW bowlos and surf clubs just got bigger",
+        "source": "SMH.com.au",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQMVRVOTZaYXZULUszalFibVMzeFJfOFlBRjNydlo3LV9zUVhKby1zQUZqUGNGOXBGSFBzYWlnb3lEVTFrbVliSXZXbU1pR3dYMHhlTUNUcExIUjVjRHRrZjNVT3hjWFNhREpPYzMwNE5WWktyQjlOMFJHdUlyOHA5MjhqQjg5MnVkLVByMmpveWlialpWOTdvQVhxakt1WkViM0V5QXFNQWIxdW9haTY3dFpZMkNGdkFk?oc=5",
+        "date": "2026-03-23"
       }
     ]
+  },
+  {
+    "date": "2026-02-11",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 10,
+    "rolling_avg": 3.0,
+    "ratio": 3.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
     "date": "2026-01-19",
@@ -108,70 +118,54 @@
     "news": []
   },
   {
-    "date": "2026-02-11",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 10,
-    "rolling_avg": 3.3,
-    "ratio": 3.0,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-03-22",
+    "date": "2026-03-20",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 75,
-    "rolling_avg": 25.3,
-    "ratio": 3.0,
-    "explanation": "Election map shows how One Nation became Labor's main opposition in much of Adelaide",
+    "value": 25,
+    "rolling_avg": 8.7,
+    "ratio": 2.9,
+    "explanation": "'They don't like any of us': One Nation's record popularity in South Australia threatens to spill across borders",
     "news": [
       {
-        "title": "Election map shows how One Nation became Labor's main opposition in much of Adelaide",
-        "source": "ABC News",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1BSkpLYXBiYzlpRHJDUXgwTkF5YzExR2lRYnh5dm0yYVB2SF9RRlh3WVpfc3hQU2o4Q1hfbmZLZ0M3YzhvSnlJSF94RUZjSlptd0xsUlhYZ0UyZTg2M0d1b1VwaUs2eDFNMzFBenBXaEFaSFFZNno0?oc=5",
-        "date": "2026-03-22"
-      },
-      {
-        "title": "One Nation to join South Australian lower house after surging support in election",
+        "title": "'They don't like any of us': One Nation's record popularity in South Australia threatens to spill across borders",
         "source": "9News",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWnY0T2N4b0tGeEw1QW1zcTg0NjVPaVBsaFZGc1k1TjVzeUttcGNfS1o1bEx0WGVOdXMzX3l3WlZIN1VVUHNfaHBWa0JGdVBPQkpmbFBYbE9ON3hIdEFYR2RkTHowLWRwTS1MU0tZekpLXzhxZHpJVl9mMDBha1kxTFRfRnQ4MGpiNGd4bGRLSktsaUN2eUcyRXJSZ2wwMWdhRER2RjY3NHJFVDdCYWNpTHpUUdIBeEFVX3lxTE9Td1FGaGdSellFdVoyR1JCbFVVMjZDQXdwaVhpSExsLWpZaWZFT3dzU3FIOHhrcTVjaWM3MEFkV1JjNDB1eFZ3UWJiTXNJMDlVdTlhOGxiSkdGYnpSZ1dVUkRjenVURU9ILVVGQ0gzYVdSRnd6bGI4NQ?oc=5",
-        "date": "2026-03-22"
+        "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOZlVqT191WHkwb1pLaE82a3BZNUk1Z2xRaFlvTDdiaVc5a1BYVjY5eTRHZ0VEN21Hc1Z1bXJRQ1lnV1JpUC1IYVpEY0stWEdCWXRSSWhFOUpoaFJwcXptT2Zsbkh3TnBRYk9reEV0TDBwMnFvMm9UV0NuMjEtcmhzcHY5TDdxVE54dGM3RDFzNHd1TXFBZ1dETmE1YkJtUmpwM3M1MTE5MVdkSEpnam1HcFd3dTRYcnZEX2sxUG14OG9lTTZvVHhDT3FNcXVFUExnN0ZueXBYZHFTTkl3enpSRlZhSEVoUkFoZTN1a9IBeEFVX3lxTFBhOE9JMTlPNnlxcEdvVF9kUmRYbk40M09pMThXU0tEQjVCdzI4bENQaHJoTlFiS3UtOGhXZC1OOE1uRHprSmluQjltekloV1Vra1hxN1B1OUhwQmNnQWw2akdRcDJVd2lWX05reTNfdWFwcjVfSHBNMA?oc=5",
+        "date": "2026-03-21"
       },
       {
-        "title": "Barnaby basks in One Nation\u2019s \u2018seismic\u2019 result",
-        "source": "News.com.au",
-        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNZGRnc0ZmcjlTajN3Z3NicHJBZW8tU0lyQm16Wm5WYzNhQUlPSnJ2SDAyUlJoY1QtalA4RkxMU1htUHhBMXRZV0xwNHg4dUd1cjdjRmZtYU5tRkI5MlR0dUpEUU9xWXFuR0xxVEtuaThQckExTTc2YkhaUmI5R2VpY2VVaHhyVmtsQ0hhTjJKQ2dfNkJrWkE3Wk5DcE5rVHBqR0lZdTFsME9DeVJTNFVPMnRtQV9ZdjYzZ1hLWWRGXzhfM20wWl9oZDRucUFKa0JMMEdGWnNSZFB4aTNYZ0ZmZzhWYVNtQdIB6wFBVV95cUxQZDk0V0VSbElReFhYUGJCVFFIcDQyS3FNVy1lNTFRNXdBdm5UaE8wVVBuMDRVT2xyQlJCZnI4ZWU4cDNNZUQ5a3Y5UW5OS0hsWTE3Y0tPRkJpWURaTXRldG80NFFRNEVkdi00MHhDcU9QX0gtSGhfZDVnY1VkYnpnd1owQTk4LUpQak5pYlVnb1VrbXk2Y2lzR3hCREZzc212TkJRMXZEcUtraEpETFd2SzBYaUdRMUVrZnViMFB6MGdkWWE4RWMtS0s5R1pQUlozMk9uNGhGNUFsbXYtZ0JsZ0FoRTZxNnh0V2Qw?oc=5",
+        "title": "Coalition plans assault on One Nation\u2019s credibility to avoid South Australia-style wipeout",
+        "source": "Brisbane Times",
+        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOVTRaVnVveGZ5MGZSVTJ6MUNYeXoxdTZheG95RVpwRFAzZDdnVzhRTlFHcHVNUjcxLXJOMlAtRy1yMW81RU5wMjRya2RjV1NiNTdlXzVQZ0lmRDFEWW5QVDh5d0xPWVVUTUZjMFM4cFZMWFJkX0JRMGVLdHZoYTE0aGZDdFFQcG5fS00yVnBRblJCSnIxSDQ2RXMxX0g1bDB3Rng2bHV3Y0tXUEwtdUN3VDBSM0M5ZTFFd0NhM1Y4VFNiMlh5Vnd6cFRpN2xCSDlHMEozdVNDOXJ1emhRZEotWEctX1RtZW1ndFM4c0dsVG11TVk?oc=5",
         "date": "2026-03-22"
       }
     ]
   },
   {
-    "date": "2026-03-20",
+    "date": "2026-03-22",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 26,
-    "rolling_avg": 9.0,
+    "value": 73,
+    "rolling_avg": 24.9,
     "ratio": 2.9,
-    "explanation": "Election map shows how One Nation became Labor's main opposition in much of Adelaide",
+    "explanation": "As One Nation's vote soars, SA supporters explain their reasons",
     "news": [
       {
-        "title": "Election map shows how One Nation became Labor's main opposition in much of Adelaide",
+        "title": "As One Nation's vote soars, SA supporters explain their reasons",
         "source": "ABC News",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1BSkpLYXBiYzlpRHJDUXgwTkF5YzExR2lRYnh5dm0yYVB2SF9RRlh3WVpfc3hQU2o4Q1hfbmZLZ0M3YzhvSnlJSF94RUZjSlptd0xsUlhYZ0UyZTg2M0d1b1VwaUs2eDFNMzFBenBXaEFaSFFZNno0?oc=5",
-        "date": "2026-03-22"
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNQV83YU0zNmJQSEM4Vm8zR2swVDAzQ2xkQkhjOGR1X2thdVg1c3VmN19FalJ2YnBrS0pUVXJFQkR1QkdJLU1EWlBJNDd4bFF4X2NVd3htekhLNkkweVk2TXZuYWNNc1NfQlVUTHBIVnFhd2NPSmNxVlhONlltMXNYTjBhZnViUFp6YUVpSjdGaUhlbTZHd2hENg?oc=5",
+        "date": "2026-03-23"
       },
       {
-        "title": "One Nation to join South Australian lower house after surging support in election",
-        "source": "9News",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWnY0T2N4b0tGeEw1QW1zcTg0NjVPaVBsaFZGc1k1TjVzeUttcGNfS1o1bEx0WGVOdXMzX3l3WlZIN1VVUHNfaHBWa0JGdVBPQkpmbFBYbE9ON3hIdEFYR2RkTHowLWRwTS1MU0tZekpLXzhxZHpJVl9mMDBha1kxTFRfRnQ4MGpiNGd4bGRLSktsaUN2eUcyRXJSZ2wwMWdhRER2RjY3NHJFVDdCYWNpTHpUUdIBeEFVX3lxTE9Td1FGaGdSellFdVoyR1JCbFVVMjZDQXdwaVhpSExsLWpZaWZFT3dzU3FIOHhrcTVjaWM3MEFkV1JjNDB1eFZ3UWJiTXNJMDlVdTlhOGxiSkdGYnpSZ1dVUkRjenVURU9ILVVGQ0gzYVdSRnd6bGI4NQ?oc=5",
-        "date": "2026-03-22"
-      },
-      {
-        "title": "Barnaby basks in One Nation\u2019s \u2018seismic\u2019 result",
+        "title": "One Nation wins big in historic SA vote",
         "source": "News.com.au",
-        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNZGRnc0ZmcjlTajN3Z3NicHJBZW8tU0lyQm16Wm5WYzNhQUlPSnJ2SDAyUlJoY1QtalA4RkxMU1htUHhBMXRZV0xwNHg4dUd1cjdjRmZtYU5tRkI5MlR0dUpEUU9xWXFuR0xxVEtuaThQckExTTc2YkhaUmI5R2VpY2VVaHhyVmtsQ0hhTjJKQ2dfNkJrWkE3Wk5DcE5rVHBqR0lZdTFsME9DeVJTNFVPMnRtQV9ZdjYzZ1hLWWRGXzhfM20wWl9oZDRucUFKa0JMMEdGWnNSZFB4aTNYZ0ZmZzhWYVNtQdIB6wFBVV95cUxQZDk0V0VSbElReFhYUGJCVFFIcDQyS3FNVy1lNTFRNXdBdm5UaE8wVVBuMDRVT2xyQlJCZnI4ZWU4cDNNZUQ5a3Y5UW5OS0hsWTE3Y0tPRkJpWURaTXRldG80NFFRNEVkdi00MHhDcU9QX0gtSGhfZDVnY1VkYnpnd1owQTk4LUpQak5pYlVnb1VrbXk2Y2lzR3hCREZzc212TkJRMXZEcUtraEpETFd2SzBYaUdRMUVrZnViMFB6MGdkWWE4RWMtS0s5R1pQUlozMk9uNGhGNUFsbXYtZ0JsZ0FoRTZxNnh0V2Qw?oc=5",
-        "date": "2026-03-22"
+        "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxOSGNIMWNES2I3R2hwX282clpGUzdQRGRDZjhuT1RlNjFHYzRENW9mbkstQmhaeGRiV21VcDVTV0wwSUtxeXFPYjNJTnFZa0s5S1EyVlAxWmVrWmpoVjhwMlVvQnRoNnpIVzlGSzNwMUdJQ294SGVMaWhxUVkyaHFMMWJfMFdDWkJhOVduT2M4eWdWS25fUUlYUWRuVmFIRG1ReFdQMkpYNjFMQU5JUG8yOTIzWjc0QVBwV0hPVjV5ZUhhVnE0clF3aHREMjM2UnJNdmRpeTN4WUpxdTZhMWxESUZZcW9yVkFDMUhva3QxRE5PMjU4alB4c0UzU09uVUVBdVQxSTM4RUV4OENuT003YjhhTk12QWc2RFHSAZ8CQVVfeXFMUDliblV2YzhlRkwwcE1BVER1OTNubU41elJnR2xYbHdFUkpTZkVLcjAzXzhRWVZ1clJCclhsUE85QVluSnVEUFUwU3ZTU0dLMnlmSWZlcW9BVmlSTkZ2ZnZycWJ3SlV3cWp2RlluTDF0TGFNTFd0clVtNTQ0b3ByNmkyWDJmZmF2T2J1MnVRamxPSVdYMGtVSzljbkRkM2hTSElsVFF1MWVhTE9xR2FEZlZaMzNKZlZPYnNDcVI5QWp2dXF3SHVkcVNKSzRsb19QdUx0QzhTQ21qS1JIV0FDdXJMV1hOc3dxTTgtcjUydWtWMGFzZzJQRTZDaDFPdU1faGJ6bHg2U0hWcjMxbndjRkdaa1EyTXA4M2lQc3BUTU0?oc=5",
+        "date": "2026-03-23"
+      },
+      {
+        "title": "Pauline Hanson marches past the party that once expelled her",
+        "source": "SMH.com.au",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZk1xT0ozUU1vQnVmTTNHZEpzNXVZYTB0S1ZlV3M0Vk45WG1EVDRYR3VmQml4c3NQZFFiUDJWVloxNGtBcjdxSkxKQnVlaVNWeHdxMm03ZDg4X1JoYWZpZk1DRzdYaEFaZ0VUVjZFMmxWTHZXS0RyTHZIRVRaWFczemY5cmMyOTYtM2lEREp1SUx6S28yTERmWlltbHhmMXFNeEsxZ3pKaTV4QVRNUGZTYmUxNHNBX1BGVzlCd2x3?oc=5",
+        "date": "2026-03-23"
       }
     ]
   }

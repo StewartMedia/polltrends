@@ -1,0 +1,153 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "australian labor party",
+        "value": 100
+      },
+      {
+        "query": "alp",
+        "value": 85
+      },
+      {
+        "query": "albanese",
+        "value": 65
+      },
+      {
+        "query": "australian labour party",
+        "value": 51
+      },
+      {
+        "query": "one nation",
+        "value": 51
+      },
+      {
+        "query": "labour party australia",
+        "value": 45
+      },
+      {
+        "query": "liberal party australia",
+        "value": 34
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation",
+        "value": 200
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "the liberal party",
+        "value": 21
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 8
+      },
+      {
+        "query": "liberal spill",
+        "value": 5
+      },
+      {
+        "query": "labor",
+        "value": 5
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 4
+      },
+      {
+        "query": "liberal party spill",
+        "value": 2
+      },
+      {
+        "query": "erythritol sweetener",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "erythritol sweetener",
+        "value": 9950
+      },
+      {
+        "query": "liberal party spill",
+        "value": 900
+      },
+      {
+        "query": "liberal spill",
+        "value": 500
+      }
+    ]
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "the greens australia",
+        "value": 100
+      }
+    ],
+    "rising": []
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation sa",
+        "value": 11
+      },
+      {
+        "query": "one nation party",
+        "value": 11
+      },
+      {
+        "query": "pauline hanson",
+        "value": 6
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "what is one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation polls",
+        "value": 4
+      },
+      {
+        "query": "one nation leader",
+        "value": 2
+      },
+      {
+        "query": "liam alexander hall",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "liam alexander hall",
+        "value": 13400
+      },
+      {
+        "query": "one nation sa",
+        "value": 1500
+      },
+      {
+        "query": "one nation policies",
+        "value": 90
+      }
+    ]
+  }
+}
