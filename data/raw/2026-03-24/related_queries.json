@@ -1,0 +1,141 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "australian labor party",
+        "value": 100
+      },
+      {
+        "query": "alp",
+        "value": 85
+      },
+      {
+        "query": "albanese",
+        "value": 63
+      },
+      {
+        "query": "australian labour party",
+        "value": 51
+      },
+      {
+        "query": "one nation",
+        "value": 48
+      },
+      {
+        "query": "labour party australia",
+        "value": 46
+      },
+      {
+        "query": "liberal party australia",
+        "value": 35
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation",
+        "value": 190
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "the liberal party",
+        "value": 20
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 8
+      },
+      {
+        "query": "liberal spill",
+        "value": 5
+      },
+      {
+        "query": "labor",
+        "value": 5
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 3
+      },
+      {
+        "query": "liberal party spill",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "liberal party spill",
+        "value": 650
+      },
+      {
+        "query": "liberal spill",
+        "value": 600
+      }
+    ]
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "australia greens",
+        "value": 100
+      },
+      {
+        "query": "the greens australia",
+        "value": 49
+      }
+    ],
+    "rising": []
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation sa",
+        "value": 12
+      },
+      {
+        "query": "one nation party",
+        "value": 10
+      },
+      {
+        "query": "pauline hanson",
+        "value": 6
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "what is one nation",
+        "value": 4
+      },
+      {
+        "query": "how to vote one nation",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation sa",
+        "value": 2700
+      },
+      {
+        "query": "how to vote one nation",
+        "value": 300
+      },
+      {
+        "query": "one nation policies",
+        "value": 70
+      }
+    ]
+  }
+}
