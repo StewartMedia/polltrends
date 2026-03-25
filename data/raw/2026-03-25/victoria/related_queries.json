@@ -1,0 +1,190 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "alp",
+        "value": 100
+      },
+      {
+        "query": "australian labor party",
+        "value": 91
+      },
+      {
+        "query": "labour party australia",
+        "value": 47
+      },
+      {
+        "query": "australian labour party",
+        "value": 40
+      },
+      {
+        "query": "albanese",
+        "value": 36
+      },
+      {
+        "query": "one nation",
+        "value": 32
+      },
+      {
+        "query": "pauline hanson",
+        "value": 9
+      }
+    ],
+    "rising": [
+      {
+        "query": "pauline hanson",
+        "value": 96800
+      },
+      {
+        "query": "one nation",
+        "value": 250
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "the liberal party",
+        "value": 21
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 8
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 5
+      },
+      {
+        "query": "labour",
+        "value": 5
+      },
+      {
+        "query": "liberal party spill",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "liberal party spill",
+        "value": 109850
+      }
+    ]
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "the greens australia",
+        "value": 100
+      },
+      {
+        "query": "one nation policies",
+        "value": 17
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation policies",
+        "value": 164750
+      }
+    ]
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation australia",
+        "value": 17
+      },
+      {
+        "query": "one nation party",
+        "value": 11
+      },
+      {
+        "query": "one nation sa",
+        "value": 9
+      },
+      {
+        "query": "one nation seats",
+        "value": 8
+      },
+      {
+        "query": "pauline hanson",
+        "value": 8
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "what is one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation polls",
+        "value": 4
+      },
+      {
+        "query": "sa election results",
+        "value": 2
+      },
+      {
+        "query": "one nation leader",
+        "value": 2
+      },
+      {
+        "query": "one nation south australia results",
+        "value": 1
+      },
+      {
+        "query": "did one nation win any seats in sa",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation sa",
+        "value": 713400
+      },
+      {
+        "query": "sa election results",
+        "value": 176950
+      },
+      {
+        "query": "one nation south australia results",
+        "value": 96050
+      },
+      {
+        "query": "did one nation win any seats in sa",
+        "value": 33850
+      },
+      {
+        "query": "one nation seats",
+        "value": 250
+      },
+      {
+        "query": "what is one nation",
+        "value": 100
+      }
+    ]
+  },
+  "AJP": {
+    "top": [],
+    "rising": []
+  },
+  "RSN": {
+    "top": [],
+    "rising": []
+  },
+  "LDP": {
+    "top": [],
+    "rising": []
+  }
+}
