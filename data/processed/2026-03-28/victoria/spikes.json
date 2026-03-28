@@ -3,9 +3,19 @@
     "date": "2026-01-10",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 26,
-    "rolling_avg": 1.7,
-    "ratio": 15.2,
+    "value": 29,
+    "rolling_avg": 2.0,
+    "ratio": 14.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-22",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 12,
+    "rolling_avg": 1.0,
+    "ratio": 12.0,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -14,18 +24,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 8.9,
-    "ratio": 11.3,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-01-22",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 11,
-    "rolling_avg": 1.0,
-    "ratio": 11.0,
+    "rolling_avg": 9.6,
+    "ratio": 10.4,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -33,15 +33,32 @@
     "date": "2026-02-12",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 32,
-    "rolling_avg": 4.3,
-    "ratio": 7.5,
-    "explanation": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger says Victorian Premier Jacinta Allan has \u201cbankrupted\u201d Victoria with her extravagant spending.",
+    "value": 36,
+    "rolling_avg": 4.0,
+    "ratio": 9.0,
+    "explanation": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
     "news": [
       {
-        "title": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger says Victorian Premier Jacinta Allan has \u201cbankrupted\u201d Victoria with her extravagant spending.",
+        "title": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
         "source": "facebook.com",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSWJ0WVQ2SHdkU1dMMGgxM09KNmFoeW1rZWlPbk0yN0VpUXJlZXFhcWZMV1BUTml0XzJXcFRFRUJXdlVBSnB4YVY4SE9fSVA4cC1HaTI5RDBUd3FHdHJkYjNKNExaUVd2ME5EVVQwRTVmZFFhdDdEVXQwQUxBZGg5RExXakVxQk1SNmlBc0stdU4yRlFhdGI3b1JVZzRBSmZxNWttemd4bFBzWWc1UlkydlRQMTF6UQ?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNcXBaU3NsOFAyZXBfMHQ4NkxjeG9wWTRRMllSVE1CRUVxbzhGTkZWYVVDTTZVRDZZZERZNUIxdjBBZ1V5amgyNXhreVZJMVl2cnJzM2lFT2Z3ZVFDTHVBSk5ydElvVkNqTVFzNzZrWW9ka1FCVzJvSEt2WHoyZFhhNW5oUE5UOWZ1U1NFOHR5c1MyXzJmMEZ6R3BpTUh1RV82VHlQTWctTHc2d0tpdVQ4NDdMQUVGZFBYWXc1ZVZKOFZYaV9SNkxESEl4R3NWN1VVMktwUWpDWnZXMUVndF9DZA?oc=5",
+        "date": "2026-02-11"
+      }
+    ]
+  },
+  {
+    "date": "2026-02-10",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 10,
+    "rolling_avg": 1.9,
+    "ratio": 5.4,
+    "explanation": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+    "news": [
+      {
+        "title": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
+        "source": "facebook.com",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNcXBaU3NsOFAyZXBfMHQ4NkxjeG9wWTRRMllSVE1CRUVxbzhGTkZWYVVDTTZVRDZZZERZNUIxdjBBZ1V5amgyNXhreVZJMVl2cnJzM2lFT2Z3ZVFDTHVBSk5ydElvVkNqTVFzNzZrWW9ka1FCVzJvSEt2WHoyZFhhNW5oUE5UOWZ1U1NFOHR5c1MyXzJmMEZ6R3BpTUh1RV82VHlQTWctTHc2d0tpdVQ4NDdMQUVGZFBYWXc1ZVZKOFZYaV9SNkxESEl4R3NWN1VVMktwUWpDWnZXMUVndF9DZA?oc=5",
         "date": "2026-02-11"
       }
     ]
@@ -50,9 +67,9 @@
     "date": "2026-01-19",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 24,
-    "rolling_avg": 4.4,
-    "ratio": 5.4,
+    "value": 26,
+    "rolling_avg": 5.0,
+    "ratio": 5.2,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -60,15 +77,15 @@
     "date": "2026-02-13",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 41,
-    "rolling_avg": 8.1,
-    "ratio": 5.0,
-    "explanation": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger says Victorian Premier Jacinta Allan has \u201cbankrupted\u201d Victoria with her extravagant spending.",
+    "value": 45,
+    "rolling_avg": 9.1,
+    "ratio": 4.9,
+    "explanation": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
     "news": [
       {
-        "title": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger says Victorian Premier Jacinta Allan has \u201cbankrupted\u201d Victoria with her extravagant spending.",
+        "title": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
         "source": "facebook.com",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSWJ0WVQ2SHdkU1dMMGgxM09KNmFoeW1rZWlPbk0yN0VpUXJlZXFhcWZMV1BUTml0XzJXcFRFRUJXdlVBSnB4YVY4SE9fSVA4cC1HaTI5RDBUd3FHdHJkYjNKNExaUVd2ME5EVVQwRTVmZFFhdDdEVXQwQUxBZGg5RExXakVxQk1SNmlBc0stdU4yRlFhdGI3b1JVZzRBSmZxNWttemd4bFBzWWc1UlkydlRQMTF6UQ?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNcXBaU3NsOFAyZXBfMHQ4NkxjeG9wWTRRMllSVE1CRUVxbzhGTkZWYVVDTTZVRDZZZERZNUIxdjBBZ1V5amgyNXhreVZJMVl2cnJzM2lFT2Z3ZVFDTHVBSk5ydElvVkNqTVFzNzZrWW9ka1FCVzJvSEt2WHoyZFhhNW5oUE5UOWZ1U1NFOHR5c1MyXzJmMEZ6R3BpTUh1RV82VHlQTWctTHc2d0tpdVQ4NDdMQUVGZFBYWXc1ZVZKOFZYaV9SNkxESEl4R3NWN1VVMktwUWpDWnZXMUVndF9DZA?oc=5",
         "date": "2026-02-11"
       }
     ]
@@ -77,9 +94,9 @@
     "date": "2026-03-22",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 85,
-    "rolling_avg": 22.4,
-    "ratio": 3.8,
+    "value": 93,
+    "rolling_avg": 23.1,
+    "ratio": 4.0,
     "explanation": "Why Barnaby Joyce WANTS Jacinta Allan to stay as Victorian Premier... for now",
     "news": [
       {
@@ -94,36 +111,26 @@
     "date": "2026-02-11",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 11,
-    "rolling_avg": 3.6,
-    "ratio": 3.1,
-    "explanation": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger says Victorian Premier Jacinta Allan has \u201cbankrupted\u201d Victoria with her extravagant spending.",
+    "value": 12,
+    "rolling_avg": 3.3,
+    "ratio": 3.7,
+    "explanation": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
     "news": [
       {
-        "title": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger says Victorian Premier Jacinta Allan has \u201cbankrupted\u201d Victoria with her extravagant spending.",
+        "title": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger describes Opposition Leader Sussan Ley as a \u201cclass act\u201d.",
         "source": "facebook.com",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSWJ0WVQ2SHdkU1dMMGgxM09KNmFoeW1rZWlPbk0yN0VpUXJlZXFhcWZMV1BUTml0XzJXcFRFRUJXdlVBSnB4YVY4SE9fSVA4cC1HaTI5RDBUd3FHdHJkYjNKNExaUVd2ME5EVVQwRTVmZFFhdDdEVXQwQUxBZGg5RExXakVxQk1SNmlBc0stdU4yRlFhdGI3b1JVZzRBSmZxNWttemd4bFBzWWc1UlkydlRQMTF6UQ?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNcXBaU3NsOFAyZXBfMHQ4NkxjeG9wWTRRMllSVE1CRUVxbzhGTkZWYVVDTTZVRDZZZERZNUIxdjBBZ1V5amgyNXhreVZJMVl2cnJzM2lFT2Z3ZVFDTHVBSk5ydElvVkNqTVFzNzZrWW9ka1FCVzJvSEt2WHoyZFhhNW5oUE5UOWZ1U1NFOHR5c1MyXzJmMEZ6R3BpTUh1RV82VHlQTWctTHc2d0tpdVQ4NDdMQUVGZFBYWXc1ZVZKOFZYaV9SNkxESEl4R3NWN1VVMktwUWpDWnZXMUVndF9DZA?oc=5",
         "date": "2026-02-11"
       }
     ]
   },
   {
-    "date": "2026-01-20",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 17,
-    "rolling_avg": 7.0,
-    "ratio": 2.4,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
     "date": "2026-03-20",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 16,
-    "rolling_avg": 6.6,
-    "ratio": 2.4,
+    "value": 18,
+    "rolling_avg": 7.0,
+    "ratio": 2.6,
     "explanation": "Significant spike in search interest",
     "news": []
   }
