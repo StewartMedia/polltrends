@@ -1,0 +1,7 @@
+# One Nation Ranks #1 by Search Interest
+
+One Nation continues to dominate search interest, with an average score of 23.7, significantly higher than the next closest party, Labor at 3.1. The peak for this period was on March 22nd when One Nation's average score reached 72, a substantial increase from its low of 8 during the week.
+
+The surge in search interest for One Nation aligns with recent news headlines, particularly the focus on their success in South Australian elections and the ongoing debate about defunding the ABC. The positive sentiment towards One Nation is notable, with a score of +0.10, indicating that public perception of the party remains favorable despite its strong standing.
+
+Looking ahead, it will be crucial for both major parties to address the concerns raised by One Nation voters in areas such as health, housing, and the economy. The upcoming period may see further shifts in search interest as these issues continue to be debated and discussed.
