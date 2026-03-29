@@ -1,11 +1,21 @@
 [
   {
+    "date": "2026-01-22",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 13,
+    "rolling_avg": 0.7,
+    "ratio": 18.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
     "date": "2026-01-10",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 26,
-    "rolling_avg": 2.1,
-    "ratio": 12.1,
+    "value": 25,
+    "rolling_avg": 1.7,
+    "ratio": 14.6,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -14,18 +24,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 9.1,
-    "ratio": 10.9,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-01-22",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 12,
-    "rolling_avg": 1.4,
-    "ratio": 8.4,
+    "rolling_avg": 9.0,
+    "ratio": 11.1,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -34,59 +34,48 @@
     "party_code": "LIB",
     "party_name": "Liberal",
     "value": 33,
-    "rolling_avg": 5.3,
-    "ratio": 6.2,
-    "explanation": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger says Victorian Premier Jacinta Allan has \u201cbankrupted\u201d Victoria with her extravagant spending.",
-    "news": [
-      {
-        "title": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger says Victorian Premier Jacinta Allan has \u201cbankrupted\u201d Victoria with her extravagant spending.",
-        "source": "facebook.com",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSWJ0WVQ2SHdkU1dMMGgxM09KNmFoeW1rZWlPbk0yN0VpUXJlZXFhcWZMV1BUTml0XzJXcFRFRUJXdlVBSnB4YVY4SE9fSVA4cC1HaTI5RDBUd3FHdHJkYjNKNExaUVd2ME5EVVQwRTVmZFFhdDdEVXQwQUxBZGg5RExXakVxQk1SNmlBc0stdU4yRlFhdGI3b1JVZzRBSmZxNWttemd4bFBzWWc1UlkydlRQMTF6UQ?oc=5",
-        "date": "2026-02-11"
-      }
-    ]
+    "rolling_avg": 4.4,
+    "ratio": 7.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
     "date": "2026-02-11",
     "party_code": "LIB",
     "party_name": "Liberal",
     "value": 16,
-    "rolling_avg": 3.6,
-    "ratio": 4.5,
-    "explanation": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger says Victorian Premier Jacinta Allan has \u201cbankrupted\u201d Victoria with her extravagant spending.",
-    "news": [
-      {
-        "title": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger says Victorian Premier Jacinta Allan has \u201cbankrupted\u201d Victoria with her extravagant spending.",
-        "source": "facebook.com",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSWJ0WVQ2SHdkU1dMMGgxM09KNmFoeW1rZWlPbk0yN0VpUXJlZXFhcWZMV1BUTml0XzJXcFRFRUJXdlVBSnB4YVY4SE9fSVA4cC1HaTI5RDBUd3FHdHJkYjNKNExaUVd2ME5EVVQwRTVmZFFhdDdEVXQwQUxBZGg5RExXakVxQk1SNmlBc0stdU4yRlFhdGI3b1JVZzRBSmZxNWttemd4bFBzWWc1UlkydlRQMTF6UQ?oc=5",
-        "date": "2026-02-11"
-      }
-    ]
+    "rolling_avg": 3.0,
+    "ratio": 5.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-19",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 25,
+    "rolling_avg": 4.9,
+    "ratio": 5.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
     "date": "2026-02-13",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 41,
-    "rolling_avg": 10.0,
-    "ratio": 4.1,
-    "explanation": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger says Victorian Premier Jacinta Allan has \u201cbankrupted\u201d Victoria with her extravagant spending.",
-    "news": [
-      {
-        "title": "Sky News Australia. . Former Victoria Liberal Party president Michael Kroger says Victorian Premier Jacinta Allan has \u201cbankrupted\u201d Victoria with her extravagant spending.",
-        "source": "facebook.com",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSWJ0WVQ2SHdkU1dMMGgxM09KNmFoeW1rZWlPbk0yN0VpUXJlZXFhcWZMV1BUTml0XzJXcFRFRUJXdlVBSnB4YVY4SE9fSVA4cC1HaTI5RDBUd3FHdHJkYjNKNExaUVd2ME5EVVQwRTVmZFFhdDdEVXQwQUxBZGg5RExXakVxQk1SNmlBc0stdU4yRlFhdGI3b1JVZzRBSmZxNWttemd4bFBzWWc1UlkydlRQMTF6UQ?oc=5",
-        "date": "2026-02-11"
-      }
-    ]
+    "value": 39,
+    "rolling_avg": 9.1,
+    "ratio": 4.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
     "date": "2026-03-22",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 91,
+    "value": 89,
     "rolling_avg": 22.6,
-    "ratio": 4.0,
+    "ratio": 3.9,
     "explanation": "Why Barnaby Joyce WANTS Jacinta Allan to stay as Victorian Premier... for now",
     "news": [
       {
@@ -98,22 +87,12 @@
     ]
   },
   {
-    "date": "2026-01-19",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 24,
-    "rolling_avg": 6.7,
-    "ratio": 3.6,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
     "date": "2026-03-20",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 17,
-    "rolling_avg": 7.6,
-    "ratio": 2.2,
+    "rolling_avg": 7.3,
+    "ratio": 2.3,
     "explanation": "Significant spike in search interest",
     "news": []
   }
