@@ -6,17 +6,17 @@
   "avg_interest": {
     "ALP": 3.3,
     "LIB": 3.1,
-    "GRN": 2.3,
-    "PHON": 19.3,
+    "GRN": 2.4,
+    "PHON": 19.4,
     "AJP": 0.0,
     "RSN": 0.0,
     "LDP": 0.0
   },
   "momentum_pct": {
     "ALP": -25.8,
-    "LIB": -26.7,
-    "GRN": -15.8,
-    "PHON": -44.2,
+    "LIB": -21.4,
+    "GRN": -10.5,
+    "PHON": -43.1,
     "AJP": 0,
     "RSN": 0,
     "LDP": 0
@@ -25,21 +25,21 @@
     "ALP": -0.14,
     "LIB": 0.2,
     "GRN": 0.0,
-    "PHON": 0.0,
+    "PHON": 0.07,
     "AJP": 0.0,
     "RSN": 0.0,
     "LDP": 0.0
   },
   "combined_scores": {
-    "ALP": 0.248,
-    "LIB": 0.294,
-    "GRN": 0.233,
-    "PHON": 0.85,
+    "ALP": 0.247,
+    "LIB": 0.293,
+    "GRN": 0.237,
+    "PHON": 0.86,
     "AJP": 0.15,
     "RSN": 0.15,
     "LDP": 0.15
   },
   "search_winner": "PHON",
   "overall_winner": "PHON",
-  "summary": "## Week in Review: 2026-03-23 to 2026-03-29\n\n**One Nation** led search interest this week with an average score of 19.3.\nThe strongest combined search-and-sentiment score belonged to **One Nation**.\n\n### Party Breakdown\n\n- **Labor**: Avg interest 3.3 (-25.8% WoW), sentiment: negative (-0.14)\n- **Liberal**: Avg interest 3.1 (-26.7% WoW), sentiment: positive (+0.20)\n- **Greens**: Avg interest 2.3 (-15.8% WoW), sentiment: neutral (+0.00)\n- **One Nation**: Avg interest 19.3 (-44.2% WoW), sentiment: neutral (+0.00)\n- **Animal Justice**: Avg interest 0.0 (0% WoW), sentiment: neutral (+0.00)\n- **Reason**: Avg interest 0.0 (0% WoW), sentiment: neutral (+0.00)\n- **Lib Dems**: Avg interest 0.0 (0% WoW), sentiment: neutral (+0.00)"
+  "summary": "## Week in Review: 2026-03-23 to 2026-03-29\n\n**One Nation** led search interest this week with an average score of 19.4.\nThe strongest combined search-and-sentiment score belonged to **One Nation**.\n\n### Party Breakdown\n\n- **Labor**: Avg interest 3.3 (-25.8% WoW), sentiment: negative (-0.14)\n- **Liberal**: Avg interest 3.1 (-21.4% WoW), sentiment: positive (+0.20)\n- **Greens**: Avg interest 2.4 (-10.5% WoW), sentiment: neutral (+0.00)\n- **One Nation**: Avg interest 19.4 (-43.1% WoW), sentiment: neutral (+0.07)\n- **Animal Justice**: Avg interest 0.0 (0% WoW), sentiment: neutral (+0.00)\n- **Reason**: Avg interest 0.0 (0% WoW), sentiment: neutral (+0.00)\n- **Lib Dems**: Avg interest 0.0 (0% WoW), sentiment: neutral (+0.00)"
 }

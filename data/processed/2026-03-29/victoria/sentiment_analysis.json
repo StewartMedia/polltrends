@@ -18,20 +18,20 @@
         "sentiment": "neutral"
       },
       {
+        "query": "australian labour party",
+        "sentiment": "neutral"
+      },
+      {
         "query": "labour party australia",
         "sentiment": "neutral"
       },
       {
-        "query": "australian labour party",
+        "query": "one nation",
         "sentiment": "neutral"
       },
       {
         "query": "albanese",
         "sentiment": "negative"
-      },
-      {
-        "query": "one nation",
-        "sentiment": "neutral"
       },
       {
         "query": "liberal party australia",
@@ -62,25 +62,29 @@
         "sentiment": "neutral"
       },
       {
-        "query": "liberal leader australia",
-        "sentiment": "positive"
+        "query": "labour",
+        "sentiment": "neutral"
       },
       {
-        "query": "moira deeming",
-        "sentiment": "neutral"
+        "query": "liberal leader australia",
+        "sentiment": "positive"
       }
     ]
   },
   "GRN": {
     "party": "Greens",
-    "queries_analysed": 1,
+    "queries_analysed": 2,
     "sentiment_counts": {
       "positive": 0,
       "negative": 0,
-      "neutral": 1
+      "neutral": 2
     },
     "sentiment_score": 0.0,
     "classified_queries": [
+      {
+        "query": "the greens australia",
+        "sentiment": "neutral"
+      },
       {
         "query": "one nation policies",
         "sentiment": "neutral"
@@ -89,13 +93,13 @@
   },
   "PHON": {
     "party": "One Nation",
-    "queries_analysed": 12,
+    "queries_analysed": 14,
     "sentiment_counts": {
-      "positive": 0,
+      "positive": 1,
       "negative": 0,
-      "neutral": 12
+      "neutral": 13
     },
-    "sentiment_score": 0.0,
+    "sentiment_score": 0.07,
     "classified_queries": [
       {
         "query": "one nation",
@@ -134,7 +138,15 @@
         "sentiment": "neutral"
       },
       {
+        "query": "one nation leader",
+        "sentiment": "positive"
+      },
+      {
         "query": "sa election results",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "sa election one nation seats",
         "sentiment": "neutral"
       },
       {
