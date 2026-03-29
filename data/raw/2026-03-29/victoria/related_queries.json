@@ -1,0 +1,173 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "alp",
+        "value": 100
+      },
+      {
+        "query": "australian labor party",
+        "value": 88
+      },
+      {
+        "query": "labour party australia",
+        "value": 41
+      },
+      {
+        "query": "australian labour party",
+        "value": 37
+      },
+      {
+        "query": "albanese",
+        "value": 37
+      },
+      {
+        "query": "one nation",
+        "value": 30
+      },
+      {
+        "query": "liberal party australia",
+        "value": 27
+      }
+    ],
+    "rising": [
+      {
+        "query": "australian labour party",
+        "value": 369600
+      },
+      {
+        "query": "one nation",
+        "value": 60
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "the liberal party",
+        "value": 22
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 8
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 4
+      },
+      {
+        "query": "moira deeming",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "moira deeming",
+        "value": 4600
+      }
+    ]
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "one nation policies",
+        "value": 100
+      }
+    ],
+    "rising": []
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation australia",
+        "value": 16
+      },
+      {
+        "query": "one nation party",
+        "value": 11
+      },
+      {
+        "query": "one nation sa",
+        "value": 10
+      },
+      {
+        "query": "one nation seats",
+        "value": 9
+      },
+      {
+        "query": "pauline hanson",
+        "value": 7
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "what is one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation polls",
+        "value": 4
+      },
+      {
+        "query": "sa election results",
+        "value": 2
+      },
+      {
+        "query": "one nation south australia results",
+        "value": 1
+      },
+      {
+        "query": "south australian election results",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "sa election results",
+        "value": 185650
+      },
+      {
+        "query": "one nation south australia results",
+        "value": 100550
+      },
+      {
+        "query": "south australian election results",
+        "value": 40950
+      },
+      {
+        "query": "one nation sa",
+        "value": 1650
+      },
+      {
+        "query": "one nation seats",
+        "value": 400
+      },
+      {
+        "query": "what is one nation",
+        "value": 40
+      }
+    ]
+  },
+  "AJP": {
+    "top": [],
+    "rising": []
+  },
+  "RSN": {
+    "top": [],
+    "rising": []
+  },
+  "LDP": {
+    "top": [],
+    "rising": []
+  }
+}
