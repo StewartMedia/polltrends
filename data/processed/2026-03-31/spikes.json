@@ -4,8 +4,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 11.3,
-    "ratio": 8.9,
+    "rolling_avg": 11.6,
+    "ratio": 8.6,
     "explanation": "SA Election 2026 As It Happened: Labor wins state election in a landslide; Big swings to One Nation, Libs hit rock bottom",
     "news": [
       {
@@ -20,8 +20,8 @@
     "date": "2026-01-09",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 10,
-    "rolling_avg": 1.4,
+    "value": 11,
+    "rolling_avg": 1.6,
     "ratio": 7.0,
     "explanation": "Significant spike in search interest",
     "news": []
@@ -30,9 +30,9 @@
     "date": "2026-01-10",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 19,
-    "rolling_avg": 2.7,
-    "ratio": 7.0,
+    "value": 20,
+    "rolling_avg": 3.0,
+    "ratio": 6.7,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -40,9 +40,19 @@
     "date": "2026-02-12",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 24,
-    "rolling_avg": 4.0,
+    "value": 25,
+    "rolling_avg": 4.1,
     "ratio": 6.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-13",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 28,
+    "rolling_avg": 7.3,
+    "ratio": 3.8,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -51,18 +61,8 @@
     "party_code": "LIB",
     "party_name": "Liberal",
     "value": 11,
-    "rolling_avg": 2.9,
-    "ratio": 3.9,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-02-13",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 27,
-    "rolling_avg": 7.0,
-    "ratio": 3.9,
+    "rolling_avg": 3.0,
+    "ratio": 3.7,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -70,26 +70,26 @@
     "date": "2026-01-19",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 14,
-    "rolling_avg": 4.1,
-    "ratio": 3.4,
+    "value": 15,
+    "rolling_avg": 4.3,
+    "ratio": 3.5,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-03-20",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 24,
-    "rolling_avg": 8.6,
-    "ratio": 2.8,
-    "explanation": "SA Election 2026 As It Happened: Labor wins state election in a landslide; Big swings to One Nation, Libs hit rock bottom",
+    "date": "2026-03-21",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 3.3,
+    "ratio": 3.0,
+    "explanation": "Minns Labor Government boosts Aboriginal-led heart research to drive improved health outcomes",
     "news": [
       {
-        "title": "SA Election 2026 As It Happened: Labor wins state election in a landslide; Big swings to One Nation, Libs hit rock bottom",
-        "source": "9News",
-        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPVGVNN3hlX1l0MGhWaUN2Y0tydGZCOTEzNkJXbmtzRFg3VUM2eDAtb2hiM0s5eHIyT21tdG40UFY4a1hneGZvOUdKVUlCVXNkOWdZdWN2cUZSQVllSS1rUzQ5RU5SdUJmUUpuaGNBaHhDWTBBYTlrZl9LamMwTHBEcTEyYkEtdkpfUlB5Si1vMmpTVXMzSHFkcTExak9NM1Zyd1VlQl9TZzdaWk5oMWFzVGJEQkNlWGhBWXotRUZZNGZldFNxc3pMUXhfVWJ0cS12YmRITWVkYWZCempQUzBuaFBWVHp0R3dRQUhKVy1HQl9nd9IBe0FVX3lxTE9GQ2pHbTZRSVRwNDgtbE5iajVDMjNQSDktdzVxaHpJazJINzhLeWZfV25zOFFTbHZaSm42cUtHRzJudE11SUVub0hHVlpzTEQzSU9NaWVFSUVCaExWQnBwdU51b0JkemRXQ2RUV0lLQWM2b2lTdm5pdXgwSQ?oc=5",
-        "date": "2026-03-21"
+        "title": "Minns Labor Government boosts Aboriginal-led heart research to drive improved health outcomes",
+        "source": "Office for Health and Medical Research",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOT0xMM1dBLVBSVThXbUhpb3BXUnJkYTlZVHc5c2lJTklSNmkteUtaQWVVcWdQZTh0N3BMQjZRWTFrYWVJUTJQcG1FVTRISWs3M0g0U21uVF9mV2d2blRLU2NJYVotVmo4WW10dFJONzFCNFRMbW5QYVJSU3NXWVNkZ0ZITmVTMV9sZDJLTk9PTG1fNS1WTWpkS2FpWGNhNzQ?oc=5",
+        "date": "2026-03-23"
       }
     ]
   },
@@ -97,9 +97,9 @@
     "date": "2026-03-22",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 69,
-    "rolling_avg": 24.7,
-    "ratio": 2.8,
+    "value": 74,
+    "rolling_avg": 25.0,
+    "ratio": 3.0,
     "explanation": "SA Election 2026 As It Happened: Labor wins state election in a landslide; Big swings to One Nation, Libs hit rock bottom",
     "news": [
       {
@@ -111,13 +111,20 @@
     ]
   },
   {
-    "date": "2026-01-21",
+    "date": "2026-03-20",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 13,
-    "rolling_avg": 6.1,
-    "ratio": 2.1,
-    "explanation": "Significant spike in search interest",
-    "news": []
+    "value": 25,
+    "rolling_avg": 8.9,
+    "ratio": 2.8,
+    "explanation": "SA Election 2026 As It Happened: Labor wins state election in a landslide; Big swings to One Nation, Libs hit rock bottom",
+    "news": [
+      {
+        "title": "SA Election 2026 As It Happened: Labor wins state election in a landslide; Big swings to One Nation, Libs hit rock bottom",
+        "source": "9News",
+        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPVGVNN3hlX1l0MGhWaUN2Y0tydGZCOTEzNkJXbmtzRFg3VUM2eDAtb2hiM0s5eHIyT21tdG40UFY4a1hneGZvOUdKVUlCVXNkOWdZdWN2cUZSQVllSS1rUzQ5RU5SdUJmUUpuaGNBaHhDWTBBYTlrZl9LamMwTHBEcTEyYkEtdkpfUlB5Si1vMmpTVXMzSHFkcTExak9NM1Zyd1VlQl9TZzdaWk5oMWFzVGJEQkNlWGhBWXotRUZZNGZldFNxc3pMUXhfVWJ0cS12YmRITWVkYWZCempQUzBuaFBWVHp0R3dRQUhKVy1HQl9nd9IBe0FVX3lxTE9GQ2pHbTZRSVRwNDgtbE5iajVDMjNQSDktdzVxaHpJazJINzhLeWZfV25zOFFTbHZaSm42cUtHRzJudE11SUVub0hHVlpzTEQzSU9NaWVFSUVCaExWQnBwdU51b0JkemRXQ2RUV0lLQWM2b2lTdm5pdXgwSQ?oc=5",
+        "date": "2026-03-21"
+      }
+    ]
   }
 ]
