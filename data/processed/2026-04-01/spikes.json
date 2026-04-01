@@ -4,8 +4,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 11,
-    "rolling_avg": 1.0,
-    "ratio": 11.0,
+    "rolling_avg": 1.1,
+    "ratio": 9.6,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -14,8 +14,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 11.7,
-    "ratio": 8.5,
+    "rolling_avg": 12.0,
+    "ratio": 8.3,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -24,8 +24,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 20,
-    "rolling_avg": 2.6,
-    "ratio": 7.8,
+    "rolling_avg": 2.7,
+    "ratio": 7.4,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -64,8 +64,18 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 16,
-    "rolling_avg": 4.3,
-    "ratio": 3.7,
+    "rolling_avg": 4.4,
+    "ratio": 3.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-22",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 75,
+    "rolling_avg": 25.3,
+    "ratio": 3.0,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -74,35 +84,25 @@
     "party_code": "ALP",
     "party_name": "Labor",
     "value": 10,
-    "rolling_avg": 3.3,
-    "ratio": 3.0,
+    "rolling_avg": 3.4,
+    "ratio": 2.9,
     "explanation": "Minns Labor Government boosts Aboriginal-led heart research to drive improved health outcomes",
     "news": [
       {
         "title": "Minns Labor Government boosts Aboriginal-led heart research to drive improved health outcomes",
-        "source": "Office for Health and Medical Research",
+        "source": "medicalresearch.nsw.gov.au",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOT0xMM1dBLVBSVThXbUhpb3BXUnJkYTlZVHc5c2lJTklSNmkteUtaQWVVcWdQZTh0N3BMQjZRWTFrYWVJUTJQcG1FVTRISWs3M0g0U21uVF9mV2d2blRLU2NJYVotVmo4WW10dFJONzFCNFRMbW5QYVJSU3NXWVNkZ0ZITmVTMV9sZDJLTk9PTG1fNS1WTWpkS2FpWGNhNzQ?oc=5",
         "date": "2026-03-23"
       }
     ]
   },
   {
-    "date": "2026-03-22",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 74,
-    "rolling_avg": 25.1,
-    "ratio": 2.9,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
     "date": "2026-03-20",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 25,
-    "rolling_avg": 8.9,
-    "ratio": 2.8,
+    "value": 26,
+    "rolling_avg": 9.0,
+    "ratio": 2.9,
     "explanation": "Significant spike in search interest",
     "news": []
   }

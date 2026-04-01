@@ -3,9 +3,9 @@
     "date": "2026-01-10",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 27,
+    "value": 26,
     "rolling_avg": 2.0,
-    "ratio": 13.5,
+    "ratio": 13.0,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -14,8 +14,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 10.4,
-    "ratio": 9.6,
+    "rolling_avg": 10.3,
+    "ratio": 9.7,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -23,8 +23,8 @@
     "date": "2026-02-12",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 36,
-    "rolling_avg": 5.0,
+    "value": 35,
+    "rolling_avg": 4.9,
     "ratio": 7.2,
     "explanation": "Significant spike in search interest",
     "news": []
@@ -33,8 +33,8 @@
     "date": "2026-01-19",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 24,
-    "rolling_avg": 3.9,
+    "value": 23,
+    "rolling_avg": 3.7,
     "ratio": 6.2,
     "explanation": "Significant spike in search interest",
     "news": []
@@ -43,9 +43,9 @@
     "date": "2026-02-11",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 16,
+    "value": 15,
     "rolling_avg": 2.7,
-    "ratio": 5.9,
+    "ratio": 5.5,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -53,8 +53,8 @@
     "date": "2026-02-13",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 43,
-    "rolling_avg": 9.4,
+    "value": 42,
+    "rolling_avg": 9.1,
     "ratio": 4.6,
     "explanation": "Significant spike in search interest",
     "news": []
@@ -63,9 +63,9 @@
     "date": "2026-03-22",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 87,
-    "rolling_avg": 23.3,
-    "ratio": 3.7,
+    "value": 84,
+    "rolling_avg": 23.1,
+    "ratio": 3.6,
     "explanation": "Why Barnaby Joyce WANTS Jacinta Allan to stay as Victorian Premier... for now",
     "news": [
       {
@@ -91,8 +91,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 16,
-    "rolling_avg": 6.3,
-    "ratio": 2.5,
+    "rolling_avg": 6.0,
+    "ratio": 2.7,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -101,8 +101,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 19,
-    "rolling_avg": 7.9,
-    "ratio": 2.4,
+    "rolling_avg": 7.6,
+    "ratio": 2.5,
     "explanation": "Significant spike in search interest",
     "news": []
   }
