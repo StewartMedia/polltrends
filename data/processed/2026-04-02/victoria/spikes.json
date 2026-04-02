@@ -1,0 +1,89 @@
+[
+  {
+    "date": "2026-02-10",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 11,
+    "rolling_avg": 0.7,
+    "ratio": 15.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 29,
+    "rolling_avg": 2.1,
+    "ratio": 13.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-12",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 36,
+    "rolling_avg": 3.1,
+    "ratio": 11.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-21",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 100,
+    "rolling_avg": 10.0,
+    "ratio": 10.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-13",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 44,
+    "rolling_avg": 8.3,
+    "ratio": 5.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-11",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 11,
+    "rolling_avg": 2.3,
+    "ratio": 4.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-01-19",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 26,
+    "rolling_avg": 6.1,
+    "ratio": 4.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-22",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 89,
+    "rolling_avg": 23.4,
+    "ratio": 3.8,
+    "explanation": "Why Barnaby Joyce WANTS Jacinta Allan to stay as Victorian Premier... for now",
+    "news": [
+      {
+        "title": "Why Barnaby Joyce WANTS Jacinta Allan to stay as Victorian Premier... for now",
+        "source": "Daily Mail",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOV1ZaN2ZkM0JMV05weFJRNUZRUmVlamt0ZlpTNUk5M1NxWUZ2a3hXNGZoRVJHX3M5dXNsTENZTHRXTVVWanpXUmhyNDFkRDJiUU4yd0hScFZYSFNiUV9sQTZoZnhTV19ybEF3U3JFdkY2a19NUUp0TExSclZDUVRqb2JURTl6M0FGTkVHUHItNGlUN2lLejNGOEt2TE45WklWX2NZUktOVm9sNEXSAbABQVVfeXFMT1NHdXp5a2NUdVZFWmwtb2JPcER2MmlkNDFJOUxzWkE0MzFGRnQxa0NBeHA5eUp1MkR6eXdwbUVuelpYaGRSLU53ZFkzNmZfV2gxcmQ5Yl9YV25nakdtc2tQR1hoZElLRkZxS25MM3dCcDFsUEJLaUduNkFWZTcwZVp6bURJdzAxZmdWMG1wRnI4dHM3YmY1TWY0MXdWbTNMenBVT1g1U3FnZEdiZmtUWVc?oc=5",
+        "date": "2026-03-24"
+      }
+    ]
+  }
+]
