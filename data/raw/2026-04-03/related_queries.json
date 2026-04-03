@@ -7,19 +7,19 @@
       },
       {
         "query": "alp",
-        "value": 93
+        "value": 94
       },
       {
         "query": "albanese",
         "value": 62
       },
       {
-        "query": "australian labour party",
+        "query": "one nation",
         "value": 52
       },
       {
-        "query": "one nation",
-        "value": 51
+        "query": "australian labour party",
+        "value": 52
       },
       {
         "query": "labour party australia",
@@ -27,7 +27,7 @@
       },
       {
         "query": "liberal party australia",
-        "value": 38
+        "value": 39
       }
     ],
     "rising": [
@@ -44,94 +44,38 @@
         "value": 100
       },
       {
-        "query": "liberal party",
-        "value": 72
-      },
-      {
-        "query": "liberal leader",
-        "value": 17
-      },
-      {
-        "query": "liberal party australia",
-        "value": 16
-      },
-      {
-        "query": "liberal party leader",
-        "value": 11
+        "query": "the liberal party",
+        "value": 22
       },
       {
         "query": "liberal party of australia",
         "value": 8
       },
       {
-        "query": "australian liberal party",
-        "value": 8
-      },
-      {
-        "query": "angus taylor",
-        "value": 7
-      },
-      {
-        "query": "leader of liberal party",
+        "query": "labor",
         "value": 6
       },
       {
-        "query": "one nation",
-        "value": 4
-      },
-      {
-        "query": "leader of the liberal party",
-        "value": 4
+        "query": "liberal spill",
+        "value": 6
       },
       {
         "query": "liberal leader australia",
         "value": 4
       },
       {
-        "query": "labour party",
-        "value": 4
-      },
-      {
-        "query": "labor party",
-        "value": 4
-      },
-      {
-        "query": "one nation party",
-        "value": 3
-      },
-      {
-        "query": "liberal party members",
-        "value": 2
-      },
-      {
-        "query": "liberal party leadership spill",
-        "value": 1
-      },
-      {
-        "query": "south australian election results",
+        "query": "erythritol sweetener",
         "value": 0
       }
     ],
     "rising": [
       {
-        "query": "angus taylor",
-        "value": 551450
+        "query": "erythritol sweetener",
+        "value": 11750
       },
       {
-        "query": "liberal party leadership spill",
-        "value": 87050
-      },
-      {
-        "query": "south australian election results",
-        "value": 6350
-      },
-      {
-        "query": "one nation",
-        "value": 250
-      },
-      {
-        "query": "one nation party",
-        "value": 150
+        "query": "liberal spill",
+        "value": 950
       }
     ]
   },
@@ -149,7 +93,7 @@
     "rising": [
       {
         "query": "one nation policies",
-        "value": 121050
+        "value": 120300
       }
     ]
   },
@@ -161,23 +105,19 @@
       },
       {
         "query": "one nation australia",
-        "value": 17
+        "value": 18
       },
       {
         "query": "one nation sa",
         "value": 13
       },
       {
-        "query": "one nation party",
-        "value": 9
-      },
-      {
         "query": "one nation seats",
-        "value": 9
+        "value": 10
       },
       {
-        "query": "sa election one nation",
-        "value": 6
+        "query": "one nation party",
+        "value": 10
       },
       {
         "query": "pauline hanson",
@@ -185,7 +125,7 @@
       },
       {
         "query": "one nation policies",
-        "value": 5
+        "value": 6
       },
       {
         "query": "what is one nation",
@@ -212,10 +152,6 @@
         "value": 1
       },
       {
-        "query": "how many seats has one nation won",
-        "value": 0
-      },
-      {
         "query": "did one nation win any seats in sa",
         "value": 0
       }
@@ -223,39 +159,31 @@
     "rising": [
       {
         "query": "sa election results",
-        "value": 185950
+        "value": 184500
       },
       {
         "query": "sa election one nation seats",
-        "value": 165950
+        "value": 176150
       },
       {
         "query": "one nation south australia results",
-        "value": 100550
+        "value": 96650
       },
       {
         "query": "south australian election results",
-        "value": 44800
-      },
-      {
-        "query": "how many seats has one nation won",
-        "value": 37750
+        "value": 44600
       },
       {
         "query": "did one nation win any seats in sa",
         "value": 35650
       },
       {
-        "query": "sa election one nation",
-        "value": 4000
-      },
-      {
         "query": "one nation sa",
-        "value": 2250
+        "value": 2200
       },
       {
         "query": "one nation seats",
-        "value": 250
+        "value": 300
       },
       {
         "query": "one nation policies",
@@ -263,7 +191,7 @@
       },
       {
         "query": "one nation australia",
-        "value": 40
+        "value": 50
       }
     ]
   }

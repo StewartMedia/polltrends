@@ -2,170 +2,38 @@
   "ALP": {
     "top": [
       {
-        "query": "labor",
+        "query": "australian labor party",
         "value": 100
       },
       {
-        "query": "labour",
-        "value": 53
-      },
-      {
-        "query": "labor party",
-        "value": 45
-      },
-      {
-        "query": "liberal",
-        "value": 35
-      },
-      {
-        "query": "labor australia",
-        "value": 24
-      },
-      {
-        "query": "labour australia",
-        "value": 17
-      },
-      {
-        "query": "labour party",
-        "value": 16
-      },
-      {
-        "query": "australian labor party",
-        "value": 14
-      },
-      {
         "query": "alp",
-        "value": 14
-      },
-      {
-        "query": "labor party australia",
-        "value": 12
-      },
-      {
-        "query": "liberal party",
-        "value": 12
+        "value": 100
       },
       {
         "query": "labour party australia",
-        "value": 7
+        "value": 48
       },
       {
         "query": "australian labour party",
-        "value": 6
+        "value": 44
       },
       {
         "query": "one nation",
+        "value": 39
+      },
+      {
+        "query": "pauline hanson",
         "value": 6
-      },
-      {
-        "query": "labor government",
-        "value": 5
-      },
-      {
-        "query": "albanese",
-        "value": 5
-      },
-      {
-        "query": "liberal vs labour",
-        "value": 5
-      },
-      {
-        "query": "labor policies",
-        "value": 5
-      },
-      {
-        "query": "labour or labor",
-        "value": 4
-      },
-      {
-        "query": "alp party",
-        "value": 4
-      },
-      {
-        "query": "labour vs labor",
-        "value": 4
-      },
-      {
-        "query": "one nation party",
-        "value": 3
-      },
-      {
-        "query": "liberal policies",
-        "value": 3
-      },
-      {
-        "query": "labor vs labour",
-        "value": 3
-      },
-      {
-        "query": "labor vs liberal",
-        "value": 3
       }
     ],
     "rising": [
       {
-        "query": "labour vs labor",
-        "value": 233700
-      },
-      {
-        "query": "is albanese labour or liberal",
-        "value": 88300
-      },
-      {
-        "query": "alp membership",
-        "value": 62350
-      },
-      {
-        "query": "south australia election",
-        "value": 52800
-      },
-      {
-        "query": "labour policies",
-        "value": 24750
-      },
-      {
-        "query": "sa election results",
-        "value": 21550
-      },
-      {
-        "query": "south australia election results",
-        "value": 15900
-      },
-      {
-        "query": "labor vs liberal australia",
-        "value": 15150
-      },
-      {
-        "query": "south australian election results",
-        "value": 14650
-      },
-      {
-        "query": "labor senators",
-        "value": 8450
-      },
-      {
-        "query": "labor vs labour",
-        "value": 250
-      },
-      {
-        "query": "labour or labor",
-        "value": 190
-      },
-      {
-        "query": "labor policies",
-        "value": 100
-      },
-      {
-        "query": "liberal vs labour",
-        "value": 60
+        "query": "pauline hanson",
+        "value": 49100
       },
       {
         "query": "one nation",
-        "value": 60
-      },
-      {
-        "query": "one nation party",
-        "value": 40
+        "value": 80
       }
     ]
   },
@@ -199,7 +67,7 @@
     "rising": [
       {
         "query": "moira deeming",
-        "value": 15700
+        "value": 16050
       }
     ]
   },
@@ -215,15 +83,15 @@
       },
       {
         "query": "one nation australia",
-        "value": 16
+        "value": 17
       },
       {
         "query": "one nation party",
-        "value": 11
+        "value": 12
       },
       {
         "query": "one nation seats",
-        "value": 9
+        "value": 10
       },
       {
         "query": "pauline hanson",
@@ -232,6 +100,10 @@
       {
         "query": "one nation policies",
         "value": 6
+      },
+      {
+        "query": "sa election one nation",
+        "value": 5
       },
       {
         "query": "what is one nation",
@@ -263,37 +135,33 @@
       },
       {
         "query": "south australian election results",
-        "value": 0
-      },
-      {
-        "query": "chantelle thomas",
-        "value": 0
+        "value": 1
       }
     ],
     "rising": [
       {
+        "query": "sa election one nation",
+        "value": 378150
+      },
+      {
         "query": "sa election results",
-        "value": 168100
+        "value": 162850
       },
       {
         "query": "sa election one nation seats",
-        "value": 155400
+        "value": 153850
       },
       {
         "query": "one nation south australia results",
-        "value": 103000
+        "value": 114650
       },
       {
         "query": "did one nation win any seats in sa",
-        "value": 53450
+        "value": 51050
       },
       {
         "query": "south australian election results",
-        "value": 40900
-      },
-      {
-        "query": "chantelle thomas",
-        "value": 38100
+        "value": 41750
       },
       {
         "query": "one nation seats",
