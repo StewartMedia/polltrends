@@ -1,1 +1,542 @@
-{"/m/0q96": {"top": "                         query  value\n0                        labor    100\n1                       labour     56\n2                  labor party     45\n3                      liberal     36\n4              labor australia     26\n5             australian labor     20\n6             labour australia     18\n7                 labour party     17\n8       australian labor party     15\n9                          alp     14\n10       australia labor party     12\n11           liberal or labour     12\n12               liberal party     12\n13              labor election     11\n14                    albanese      9\n15     australian labour party      8\n16                  one nation      8\n17      labour party australia      8\n18  the australian labor party      7\n19            labor government      7\n20     liberal party australia      6\n21                      greens      5\n22                 sa election      5\n23           labour vs liberal      4\n24    australian liberal party      4", "rising": "                                query   value\n0            election south australia  161950\n1          one nation south australia   45950\n2    south australia election results   38350\n3                        alp victoria   35450\n4   south australian election results   26200\n5             australian family party   14700\n6   was john howard liberal or labour    2700\n7                         sa election     900\n8       south australia election 2026     450\n9                    sa election 2026     450\n10                  how to vote labor     400\n11                     alp membership     250\n12                         one nation     200\n13                  labour vs liberal     120\n14           australian liberal party     110\n15                   one nation party      90\n16                   labor vs liberal      50\n17                     labor policies      40"}, "/m/04p4r": {"top": "                                query  value\n0                             liberal    100\n1                       liberal party     72\n2                      liberal leader     17\n3             liberal party australia     16\n4                liberal party leader     11\n5          liberal party of australia      8\n6            australian liberal party      8\n7                        angus taylor      7\n8             leader of liberal party      6\n9                          one nation      4\n10        leader of the liberal party      4\n11           liberal leader australia      4\n12                       labour party      4\n13                        labor party      4\n14                   one nation party      3\n15              liberal party members      2\n16     liberal party leadership spill      1\n17  south australian election results      0", "rising": "                               query   value\n0                       angus taylor  551350\n1     liberal party leadership spill   87050\n2  south australian election results    6350\n3                         one nation     250\n4                   one nation party     150"}, "/m/0171c7": {"top": "                      query  value\n0                    greens    100\n1                the greens     41\n2          greens australia     20\n3              greens party     16\n4         australian greens     14\n5          the greens party     10\n6      the greens australia     10\n7             greens leader      9\n8     the australian greens      7\n9           greens policies      6\n10               one nation      6\n11   greens party australia      6\n12              vote greens      6\n13                  liberal      6\n14                    labor      5\n15  australian greens party      5\n16           greens senator      4\n17        the greens leader      4\n18                   labour      4\n19              sa election      4\n20            greens policy      3\n21     leader of the greens      3\n22              labor party      3\n23  greens leader australia      3\n24       how to vote greens      2", "rising": "                         query   value\n0           how to vote greens  212200\n1          one nation policies  121050\n2   one nation south australia   91100\n3          sa election results   81850\n4      australian family party   43150\n5                  sa election     550\n6                the greens sa     550\n7                   one nation     110\n8                  vote greens      70\n9              greens policies      50\n10                     liberal      50"}, "/m/0l8lg": {"top": "                                  query  value\n0                            one nation    100\n1                  one nation australia     17\n2                         one nation sa     13\n3            south australia one nation     10\n4                      one nation party      9\n5                      one nation seats      9\n6                    one nation polling      8\n7                           sa election      6\n8                        pauline hanson      6\n9                   one nation policies      5\n10            one nation pauline hanson      5\n11                      vote one nation      5\n12                  one nation seats sa      4\n13                   what is one nation      4\n14                      one nation news      4\n15             south australia election      3\n16          one nation election results      3\n17  south australia election one nation      3\n18                     one nation polls      3\n19                one nation candidates      3\n20           one nation party australia      2\n21                  one nation victoria      2\n22                  sa election results      2\n23       sa election results one nation      2\n24         sa election one nation seats      2", "rising": "                                      query   value\n0                       sa election results  186200\n1            sa election results one nation  170300\n2              sa election one nation seats  166150\n3         how many seats did one nation win  147450\n4                          sa election 2026  138850\n5        one nation south australia results  100700\n6                         one nation farrer   95100\n7   how many seats did one nation win in sa   83350\n8                  sa election results 2026   58800\n9                   david farley one nation   52850\n10        south australian election results   44900\n11       did one nation win any seats in sa   35700\n12                   david paton one nation   31750\n13                              sa election    4850\n14                 south australia election    3000\n15                            one nation sa    2250\n16                      one nation seats sa    2100\n17      south australia election one nation    1500\n18               south australia one nation    1200\n19              one nation election results     450\n20                         one nation seats     250\n21                    one nation candidates     150\n22                          vote one nation      80\n23                       one nation polling      70\n24                      one nation policies      70"}}
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labor",
+        "value": 100
+      },
+      {
+        "query": "labour",
+        "value": 55
+      },
+      {
+        "query": "labor party",
+        "value": 46
+      },
+      {
+        "query": "liberal",
+        "value": 36
+      },
+      {
+        "query": "australian labor",
+        "value": 20
+      },
+      {
+        "query": "labour australia",
+        "value": 18
+      },
+      {
+        "query": "labour party",
+        "value": 17
+      },
+      {
+        "query": "alp",
+        "value": 14
+      },
+      {
+        "query": "labor party australia",
+        "value": 12
+      },
+      {
+        "query": "liberal or labour",
+        "value": 12
+      },
+      {
+        "query": "labor election",
+        "value": 11
+      },
+      {
+        "query": "albanese",
+        "value": 9
+      },
+      {
+        "query": "labour party australia",
+        "value": 7
+      },
+      {
+        "query": "australian labour party",
+        "value": 7
+      },
+      {
+        "query": "labor government",
+        "value": 7
+      },
+      {
+        "query": "liberal party australia",
+        "value": 5
+      },
+      {
+        "query": "sa election",
+        "value": 5
+      },
+      {
+        "query": "liberal vs labour",
+        "value": 4
+      },
+      {
+        "query": "labor policies",
+        "value": 4
+      },
+      {
+        "query": "australian liberal party",
+        "value": 4
+      },
+      {
+        "query": "alp party",
+        "value": 4
+      },
+      {
+        "query": "one nation party",
+        "value": 4
+      },
+      {
+        "query": "labor or labour",
+        "value": 3
+      },
+      {
+        "query": "labor vs liberal",
+        "value": 3
+      },
+      {
+        "query": "how to vote labour",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "how to vote labour",
+        "value": 78450
+      },
+      {
+        "query": "labor logo",
+        "value": 60700
+      },
+      {
+        "query": "liberal party sa",
+        "value": 57500
+      },
+      {
+        "query": "sa election results",
+        "value": 31300
+      },
+      {
+        "query": "is one nation liberal or labour",
+        "value": 31150
+      },
+      {
+        "query": "was scott morrison labour or liberal",
+        "value": 30650
+      },
+      {
+        "query": "australian family party",
+        "value": 18500
+      },
+      {
+        "query": "sa election",
+        "value": 650
+      },
+      {
+        "query": "one nation party",
+        "value": 120
+      },
+      {
+        "query": "labor policies",
+        "value": 70
+      },
+      {
+        "query": "liberal vs labour",
+        "value": 50
+      },
+      {
+        "query": "labor vs liberal",
+        "value": 50
+      },
+      {
+        "query": "alp party",
+        "value": 50
+      },
+      {
+        "query": "australian liberal party",
+        "value": 40
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal party",
+        "value": 75
+      },
+      {
+        "query": "liberal leader",
+        "value": 18
+      },
+      {
+        "query": "liberal leadership",
+        "value": 13
+      },
+      {
+        "query": "liberal party leader",
+        "value": 12
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 9
+      },
+      {
+        "query": "angus taylor",
+        "value": 7
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 7
+      },
+      {
+        "query": "labor",
+        "value": 6
+      },
+      {
+        "query": "liberals",
+        "value": 5
+      },
+      {
+        "query": "one nation",
+        "value": 5
+      },
+      {
+        "query": "labor party",
+        "value": 4
+      },
+      {
+        "query": "federal liberal party",
+        "value": 4
+      },
+      {
+        "query": "angus taylor liberal party",
+        "value": 3
+      },
+      {
+        "query": "liberal party members",
+        "value": 2
+      },
+      {
+        "query": "liberal party spill",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "liberal party spill",
+        "value": 142500
+      },
+      {
+        "query": "angus taylor liberal party",
+        "value": 800
+      },
+      {
+        "query": "angus taylor",
+        "value": 550
+      },
+      {
+        "query": "liberal leadership",
+        "value": 450
+      },
+      {
+        "query": "one nation",
+        "value": 140
+      }
+    ]
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      },
+      {
+        "query": "greens australia",
+        "value": 20
+      },
+      {
+        "query": "australian greens",
+        "value": 14
+      },
+      {
+        "query": "the greens party",
+        "value": 10
+      },
+      {
+        "query": "greens leader",
+        "value": 9
+      },
+      {
+        "query": "liberal",
+        "value": 6
+      },
+      {
+        "query": "one nation",
+        "value": 6
+      },
+      {
+        "query": "labor",
+        "value": 6
+      },
+      {
+        "query": "greens senator",
+        "value": 4
+      },
+      {
+        "query": "leader of greens",
+        "value": 4
+      },
+      {
+        "query": "greens policy",
+        "value": 4
+      },
+      {
+        "query": "leader of the greens",
+        "value": 4
+      },
+      {
+        "query": "greens mp",
+        "value": 3
+      },
+      {
+        "query": "greens party leader",
+        "value": 3
+      },
+      {
+        "query": "greens leader australia",
+        "value": 2
+      },
+      {
+        "query": "greens senators",
+        "value": 2
+      },
+      {
+        "query": "one nation policies",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation policies",
+        "value": 92600
+      },
+      {
+        "query": "one nation",
+        "value": 90
+      }
+    ]
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation australia",
+        "value": 17
+      },
+      {
+        "query": "one nation sa",
+        "value": 13
+      },
+      {
+        "query": "south australia one nation",
+        "value": 9
+      },
+      {
+        "query": "one nation party",
+        "value": 9
+      },
+      {
+        "query": "one nation seats",
+        "value": 9
+      },
+      {
+        "query": "one nation polling",
+        "value": 8
+      },
+      {
+        "query": "sa election",
+        "value": 6
+      },
+      {
+        "query": "one nation sa election",
+        "value": 6
+      },
+      {
+        "query": "pauline hanson",
+        "value": 6
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "one nation pauline hanson",
+        "value": 5
+      },
+      {
+        "query": "vote one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation seats sa",
+        "value": 4
+      },
+      {
+        "query": "what is one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation election results",
+        "value": 3
+      },
+      {
+        "query": "one nation news",
+        "value": 3
+      },
+      {
+        "query": "south australia election",
+        "value": 3
+      },
+      {
+        "query": "one nation polls",
+        "value": 3
+      },
+      {
+        "query": "one nation party australia",
+        "value": 2
+      },
+      {
+        "query": "one nation candidates",
+        "value": 2
+      },
+      {
+        "query": "one nation victoria",
+        "value": 2
+      },
+      {
+        "query": "sa election results",
+        "value": 2
+      },
+      {
+        "query": "how to vote one nation",
+        "value": 2
+      },
+      {
+        "query": "one nation south australia seats",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation sa election",
+        "value": 558750
+      },
+      {
+        "query": "sa election results",
+        "value": 194800
+      },
+      {
+        "query": "one nation south australia seats",
+        "value": 183000
+      },
+      {
+        "query": "sa election one nation seats",
+        "value": 170650
+      },
+      {
+        "query": "sa election 2026",
+        "value": 154250
+      },
+      {
+        "query": "how many seats did one nation win",
+        "value": 152700
+      },
+      {
+        "query": "south australia election 2026",
+        "value": 98900
+      },
+      {
+        "query": "how many seats did one nation win in sa",
+        "value": 90000
+      },
+      {
+        "query": "south australia election results",
+        "value": 86450
+      },
+      {
+        "query": "one nation sa candidates",
+        "value": 71200
+      },
+      {
+        "query": "did one nation win any seats",
+        "value": 70900
+      },
+      {
+        "query": "sa election results 2026 one nation",
+        "value": 55750
+      },
+      {
+        "query": "david farley one nation",
+        "value": 49600
+      },
+      {
+        "query": "one nation sa policies",
+        "value": 45800
+      },
+      {
+        "query": "south australian election results",
+        "value": 45100
+      },
+      {
+        "query": "did one nation win any seats in sa",
+        "value": 36200
+      },
+      {
+        "query": "how many seats did one nation win in sa election",
+        "value": 32700
+      },
+      {
+        "query": "david paton",
+        "value": 30450
+      },
+      {
+        "query": "david paton one nation",
+        "value": 29500
+      },
+      {
+        "query": "sa election",
+        "value": 2250
+      },
+      {
+        "query": "one nation sa",
+        "value": 2100
+      },
+      {
+        "query": "south australia one nation",
+        "value": 1200
+      },
+      {
+        "query": "one nation seats sa",
+        "value": 1200
+      },
+      {
+        "query": "south australia election",
+        "value": 1000
+      },
+      {
+        "query": "one nation election results",
+        "value": 400
+      }
+    ]
+  }
+}
