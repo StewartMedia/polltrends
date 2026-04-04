@@ -6,6 +6,7 @@ to write a narrative connecting news events to search interest movements.
 Pre-computes rankings and key facts so the LLM cannot misinterpret the raw numbers.
 """
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -16,6 +17,13 @@ from config.settings import (
     ENTITIES, RAW_DIR, PROCESSED_DIR, LM_STUDIO_MODEL, LM_STUDIO_URL,
     find_latest_snapshot_date, load_snapshot_file,
 )
+
+LM_STUDIO_TIMEOUT = int(os.getenv("LM_STUDIO_TIMEOUT", "90"))
+LM_STUDIO_MAX_TOKENS = int(os.getenv("LM_STUDIO_MAX_TOKENS", "700"))
+LM_STUDIO_TEMPERATURE = float(os.getenv("LM_STUDIO_TEMPERATURE", "0.2"))
+MAX_NEWS_ARTICLES_PER_PARTY = int(os.getenv("NARRATIVE_MAX_NEWS_PER_PARTY", "2"))
+MAX_SPIKES = int(os.getenv("NARRATIVE_MAX_SPIKES", "6"))
+MAX_SPIKE_NEWS_TITLES = int(os.getenv("NARRATIVE_MAX_SPIKE_NEWS_TITLES", "1"))
 
 SYSTEM_PROMPT = """You are an Australian political data analyst. You write factual weekly briefings
 based STRICTLY on the pre-computed facts and data provided. You MUST NOT contradict the rankings
@@ -51,6 +59,15 @@ Write a 3-5 paragraph weekly analysis in markdown format. Rules:
 CRITICAL: The rankings in VERIFIED FACTS are computed directly from the data and are correct.
 You must not reorder them or claim a different party was #1.
 Australian English. No fluff. Be concise."""
+
+
+def _truncate(text: str, limit: int) -> str:
+    """Trim text without cutting through the middle of a word where possible."""
+    if len(text) <= limit:
+        return text
+
+    clipped = text[: limit - 3].rsplit(" ", 1)[0].rstrip()
+    return (clipped or text[: limit - 3]).rstrip() + "..."
 
 
 def build_prompt_data(snapshot_date: str) -> dict:
@@ -116,10 +133,10 @@ def build_prompt_data(snapshot_date: str) -> dict:
     spikes = load_snapshot_file(PROCESSED_DIR, snapshot_date, "spikes.json") or []
     if spikes:
         lines = []
-        for s in spikes:
+        for s in spikes[:MAX_SPIKES]:
             news_str = ""
             if s.get("news"):
-                titles = [n["title"] for n in s["news"][:2]]
+                titles = [_truncate(n["title"], 110) for n in s["news"][:MAX_SPIKE_NEWS_TITLES]]
                 news_str = f" | Related news: {'; '.join(titles)}"
             lines.append(
                 f"- {s['date']}: {s['party_name']} scored {s['value']} "
@@ -132,11 +149,13 @@ def build_prompt_data(snapshot_date: str) -> dict:
     news = load_snapshot_file(RAW_DIR, snapshot_date, "news.json") or {}
     lines = []
     for code, ent in ENTITIES.items():
-        articles = news.get(code, [])[:5]
+        articles = news.get(code, [])[:MAX_NEWS_ARTICLES_PER_PARTY]
         if articles:
             lines.append(f"\n### {ent['short_name']}")
             for a in articles:
-                lines.append(f"- [{a['date']}] {a['title']} ({a.get('source', '')})")
+                lines.append(
+                    f"- [{a['date']}] {_truncate(a['title'], 120)} ({a.get('source', '')})"
+                )
     if lines:
         news_summary = "\n".join(lines)
 
@@ -186,10 +205,10 @@ def generate_narrative() -> str:
                     {"role": "system", "content": SYSTEM_PROMPT},
                     {"role": "user", "content": prompt},
                 ],
-                "temperature": 0.3,
-                "max_tokens": 1500,
+                "temperature": LM_STUDIO_TEMPERATURE,
+                "max_tokens": LM_STUDIO_MAX_TOKENS,
             },
-            timeout=120,
+            timeout=LM_STUDIO_TIMEOUT,
         )
         resp.raise_for_status()
         return resp.json()["choices"][0]["message"]["content"]
@@ -205,6 +224,10 @@ def generate_narrative() -> str:
 def main():
     print("Generating weekly narrative via local LLM...")
     print(f"Using LM Studio model: {LM_STUDIO_MODEL}")
+    print(
+        f"Request settings: max_tokens={LM_STUDIO_MAX_TOKENS}, "
+        f"temperature={LM_STUDIO_TEMPERATURE}, timeout={LM_STUDIO_TIMEOUT}s"
+    )
 
     # Print the verified facts so the user can see what the LLM was given
     snapshot_date = find_latest_snapshot_date(
@@ -217,6 +240,8 @@ def main():
 
     data = build_prompt_data(snapshot_date)
     print(f"\nVerified facts:\n{data['verified_facts']}\n")
+    prompt = NARRATIVE_PROMPT.format(**data)
+    print(f"Prompt size: {len(prompt)} chars / {len(prompt.split())} words\n")
 
     narrative = generate_narrative()
 
