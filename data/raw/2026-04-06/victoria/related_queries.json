@@ -50,6 +50,10 @@
         "value": 4
       },
       {
+        "query": "australian liberal party",
+        "value": 4
+      },
+      {
         "query": "alp australia",
         "value": 3
       },
@@ -66,7 +70,15 @@
         "value": 2
       },
       {
+        "query": "labor logo",
+        "value": 1
+      },
+      {
         "query": "one nation policies",
+        "value": 1
+      },
+      {
+        "query": "is anthony albanese labour",
         "value": 1
       },
       {
@@ -77,15 +89,19 @@
     "rising": [
       {
         "query": "labor vs liberal",
-        "value": 166200
+        "value": 165200
       },
       {
         "query": "one nation policies",
-        "value": 61600
+        "value": 59950
+      },
+      {
+        "query": "is anthony albanese labour",
+        "value": 45050
       },
       {
         "query": "sa election results",
-        "value": 12650
+        "value": 11550
       }
     ]
   },
@@ -151,15 +167,15 @@
     "rising": [
       {
         "query": "angus taylor",
-        "value": 493850
+        "value": 493250
       },
       {
         "query": "angus taylor liberal party",
-        "value": 255500
+        "value": 257300
       },
       {
         "query": "liberal party spill",
-        "value": 141150
+        "value": 143100
       },
       {
         "query": "liberal leadership",
@@ -194,10 +210,6 @@
         "value": 10
       },
       {
-        "query": "greens senator",
-        "value": 6
-      },
-      {
         "query": "liberal",
         "value": 6
       },
@@ -206,11 +218,11 @@
         "value": 5
       },
       {
-        "query": "greens party leader",
+        "query": "leader of the greens",
         "value": 4
       },
       {
-        "query": "leader of the greens",
+        "query": "greens party leader",
         "value": 4
       },
       {
@@ -228,27 +240,19 @@
       {
         "query": "greens senators",
         "value": 1
-      },
-      {
-        "query": "one nation policies",
-        "value": 1
       }
     ],
     "rising": [
       {
-        "query": "one nation policies",
-        "value": 101750
+        "query": "greens policy",
+        "value": 70
       },
       {
-        "query": "greens policy",
+        "query": "greens mp",
         "value": 60
       },
       {
         "query": "one nation",
-        "value": 60
-      },
-      {
-        "query": "greens mp",
         "value": 60
       },
       {
@@ -329,11 +333,15 @@
       },
       {
         "query": "south australia election",
-        "value": 4
+        "value": 3
       },
       {
         "query": "one nation news",
         "value": 3
+      },
+      {
+        "query": "one nation south australia seats",
+        "value": 2
       },
       {
         "query": "one nation candidates",
@@ -354,68 +362,68 @@
       {
         "query": "sa election results",
         "value": 2
-      },
-      {
-        "query": "how many seats did one nation win",
-        "value": 2
       }
     ],
     "rising": [
       {
         "query": "sa one nation",
-        "value": 790650
+        "value": 793350
       },
       {
         "query": "south australia",
-        "value": 613400
+        "value": 605700
       },
       {
         "query": "one nation sa election",
-        "value": 377650
+        "value": 377050
       },
       {
         "query": "south australia election",
-        "value": 269000
+        "value": 266500
+      },
+      {
+        "query": "one nation south australia seats",
+        "value": 177750
       },
       {
         "query": "sa election results",
-        "value": 143950
+        "value": 142500
       },
       {
         "query": "how many seats did one nation win",
-        "value": 142700
+        "value": 141650
       },
       {
         "query": "sa election one nation seats",
-        "value": 140900
+        "value": 141250
       },
       {
         "query": "south australia election results",
-        "value": 124300
+        "value": 123650
       },
       {
         "query": "sa election 2026",
-        "value": 109500
-      },
-      {
-        "query": "how many seats did one nation win in sa",
-        "value": 64950
+        "value": 109550
       },
       {
         "query": "did one nation win any seats",
-        "value": 64300
+        "value": 64550
+      },
+      {
+        "query": "how many seats did one nation win in sa",
+        "value": 64350
       },
       {
         "query": "david farley one nation",
-        "value": 52650
+        "value": 53000
       },
       {
         "query": "sa election results 2026 one nation",
-        "value": 50450
+        "value": 49750
       },
       {
         "query": "south australian election results",
-        "value": 31650
+        "value": 30200
       },
       {
         "query": "sa election",
