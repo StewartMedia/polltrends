@@ -1,1 +1,136 @@
-{"/m/0q96": {"top": "                     query  value\n0   australian labor party    100\n1                      alp     87\n2   labour party australia     44\n3  australian labour party     39\n4               one nation     31\n5           pauline hanson     10", "rising": "                    query  value\n0              one nation     80\n1          pauline hanson     50\n2  australian labor party     50"}, "/m/04p4r": {"top": "                        query  value\n0                     liberal    100\n1  liberal party of australia      8\n2    liberal leader australia      4\n3               moira deeming      1", "rising": "           query  value\n0  moira deeming  98900"}, "/m/0171c7": {"top": "                 query  value\n0  one nation policies    100", "rising": "                 query  value\n0  one nation policies  26850"}, "/m/0l8lg": {"top": "                                 query  value\n0                           one nation    100\n1                 one nation australia     18\n2                     one nation party     11\n3                     one nation seats     10\n4                       pauline hanson      7\n5                  one nation policies      6\n6                   what is one nation      5\n7                     one nation polls      4\n8                    one nation leader      2\n9         sa election one nation seats      2\n10                 sa election results      2\n11  one nation south australia results      2", "rising": "                                query   value\n0        sa election one nation seats  174200\n1                 sa election results  147450\n2  one nation south australia results  135350\n3                    one nation seats     400"}, "/m/0j3dlg7": {"top": null, "rising": null}, "/m/04zy__7": {"top": null, "rising": null}, "/m/09g1_s": {"top": null, "rising": null}}
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labor",
+        "value": 100
+      },
+      {
+        "query": "labour",
+        "value": 53
+      },
+      {
+        "query": "labor party",
+        "value": 42
+      },
+      {
+        "query": "alp",
+        "value": 16
+      },
+      {
+        "query": "labour party",
+        "value": 15
+      },
+      {
+        "query": "labor party australia",
+        "value": 12
+      },
+      {
+        "query": "labour party australia",
+        "value": 7
+      },
+      {
+        "query": "labor or labour",
+        "value": 6
+      },
+      {
+        "query": "australian labour party",
+        "value": 6
+      },
+      {
+        "query": "labor government",
+        "value": 6
+      },
+      {
+        "query": "liberal party australia",
+        "value": 6
+      },
+      {
+        "query": "australian liberal party",
+        "value": 5
+      },
+      {
+        "query": "labour vs labor",
+        "value": 4
+      },
+      {
+        "query": "alp party",
+        "value": 4
+      },
+      {
+        "query": "labor vs liberal",
+        "value": 3
+      },
+      {
+        "query": "liberal vs labour",
+        "value": 3
+      },
+      {
+        "query": "labour policies",
+        "value": 2
+      },
+      {
+        "query": "labor logo",
+        "value": 1
+      },
+      {
+        "query": "is albanese labour or liberal",
+        "value": 1
+      },
+      {
+        "query": "sa election results",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "australian liberal party",
+        "value": 322950
+      },
+      {
+        "query": "is albanese labour or liberal",
+        "value": 76450
+      },
+      {
+        "query": "sa election results",
+        "value": 65200
+      },
+      {
+        "query": "labor or labour",
+        "value": 170
+      },
+      {
+        "query": "labour vs labor",
+        "value": 140
+      },
+      {
+        "query": "labor logo",
+        "value": 60
+      }
+    ]
+  },
+  "LIB": {
+    "top": [],
+    "rising": []
+  },
+  "GRN": {
+    "top": [],
+    "rising": []
+  },
+  "PHON": {
+    "top": [],
+    "rising": []
+  },
+  "AJP": {
+    "top": [],
+    "rising": []
+  },
+  "RSN": {
+    "top": [],
+    "rising": []
+  },
+  "LDP": {
+    "top": [],
+    "rising": []
+  }
+}
