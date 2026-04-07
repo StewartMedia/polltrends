@@ -2,124 +2,144 @@
   "ALP": {
     "top": [
       {
-        "query": "labor",
+        "query": "alp",
         "value": 100
       },
       {
-        "query": "labour",
-        "value": 53
-      },
-      {
-        "query": "labor party",
-        "value": 42
-      },
-      {
-        "query": "alp",
-        "value": 16
-      },
-      {
-        "query": "labour party",
-        "value": 15
-      },
-      {
-        "query": "labor party australia",
-        "value": 12
+        "query": "australian labor party",
+        "value": 95
       },
       {
         "query": "labour party australia",
-        "value": 7
-      },
-      {
-        "query": "labor or labour",
-        "value": 6
+        "value": 56
       },
       {
         "query": "australian labour party",
-        "value": 6
+        "value": 49
       },
       {
-        "query": "labor government",
-        "value": 6
+        "query": "one nation",
+        "value": 33
       },
       {
         "query": "liberal party australia",
-        "value": 6
-      },
-      {
-        "query": "australian liberal party",
-        "value": 5
-      },
-      {
-        "query": "labour vs labor",
-        "value": 4
-      },
-      {
-        "query": "alp party",
-        "value": 4
-      },
-      {
-        "query": "labor vs liberal",
-        "value": 3
-      },
-      {
-        "query": "liberal vs labour",
-        "value": 3
-      },
-      {
-        "query": "labour policies",
-        "value": 2
-      },
-      {
-        "query": "labor logo",
-        "value": 1
-      },
-      {
-        "query": "is albanese labour or liberal",
-        "value": 1
-      },
-      {
-        "query": "sa election results",
-        "value": 1
+        "value": 27
       }
     ],
     "rising": [
       {
-        "query": "australian liberal party",
-        "value": 322950
-      },
-      {
-        "query": "is albanese labour or liberal",
-        "value": 76450
-      },
-      {
-        "query": "sa election results",
-        "value": 65200
-      },
-      {
-        "query": "labor or labour",
-        "value": 170
-      },
-      {
-        "query": "labour vs labor",
-        "value": 140
-      },
-      {
-        "query": "labor logo",
+        "query": "one nation",
         "value": 60
       }
     ]
   },
   "LIB": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 8
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 5
+      },
+      {
+        "query": "liberal party spill",
+        "value": 1
+      },
+      {
+        "query": "moira deeming",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "liberal party spill",
+        "value": 124550
+      },
+      {
+        "query": "moira deeming",
+        "value": 15250
+      }
+    ]
   },
   "GRN": {
     "top": [],
     "rising": []
   },
   "PHON": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation australia",
+        "value": 16
+      },
+      {
+        "query": "one nation party",
+        "value": 10
+      },
+      {
+        "query": "one nation seats",
+        "value": 9
+      },
+      {
+        "query": "pauline hanson",
+        "value": 6
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "what is one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation polls",
+        "value": 4
+      },
+      {
+        "query": "one nation leader",
+        "value": 2
+      },
+      {
+        "query": "sa election one nation seats",
+        "value": 2
+      },
+      {
+        "query": "sa election results",
+        "value": 2
+      },
+      {
+        "query": "one nation south australia results",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "sa election results",
+        "value": 137600
+      },
+      {
+        "query": "one nation south australia results",
+        "value": 127750
+      },
+      {
+        "query": "one nation seats",
+        "value": 250
+      },
+      {
+        "query": "sa election one nation seats",
+        "value": 250
+      }
+    ]
   },
   "AJP": {
     "top": [],

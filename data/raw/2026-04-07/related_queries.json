@@ -1,1 +1,238 @@
-{"/m/0q96": {"top": "                     query  value\n0   australian labor party    100\n1                      alp     91\n2                 albanese     56\n3               one nation     50\n4   labour party australia     48\n5  australian labour party     46\n6  liberal party australia     39\n7           pauline hanson     12", "rising": "            query  value\n0  pauline hanson    350\n1      one nation    200"}, "/m/04p4r": {"top": "                        query  value\n0                     liberal    100\n1           the liberal party     21\n2  liberal party of australia      8\n3                       labor      6\n4               liberal spill      5\n5    liberal leader australia      4\n6         liberal party spill      1\n7        erythritol sweetener      0", "rising": "                  query  value\n0  erythritol sweetener   9900\n1         liberal spill    600\n2   liberal party spill    550"}, "/m/0171c7": {"top": "                  query  value\n0  the greens australia    100\n1   one nation policies     14", "rising": "                 query   value\n0  one nation policies  111250"}, "/m/0l8lg": {"top": "                           query  value\n0                     one nation    100\n1           one nation australia     16\n2                  sa one nation     12\n3               one nation seats      9\n4               one nation party      9\n5     south australia one nation      9\n6             one nation polling      8\n7                    sa election      7\n8         one nation sa election      6\n9                 pauline hanson      6\n10           one nation policies      5\n11            one nation results      5\n12     pauline hanson one nation      5\n13           one nation seats sa      4\n14            what is one nation      4\n15              election results      4\n16               one nation news      4\n17   one nation election results      4\n18              one nation polls      3\n19         one nation candidates      2\n20         one nation sa results      2\n21           one nation victoria      2\n22           sa election results      2\n23  sa election one nation seats      2\n24              sa election 2026      2", "rising": "                                      query   value\n0                    one nation sa election  596450\n1                       one nation seats sa  405350\n2                     one nation sa results  223250\n3                       sa election results  203700\n4              sa election one nation seats  198750\n5                          sa election 2026  186900\n6         how many seats did one nation win  168100\n7        one nation south australia results  153150\n8          south australia election results  135750\n9                         one nation farrer  102100\n10  how many seats did one nation win in sa   99300\n11                         chantelle thomas   52550\n12                  david farley one nation   52100\n13       did one nation win any seats in sa   36250\n14                       farrer by election   31400\n15                              sa election    2850\n16                            sa one nation    2200\n17               south australia one nation    1100\n18              one nation election results     650\n19                         election results     550\n20                         one nation seats     350\n21                       one nation results     300\n22                    one nation candidates     110\n23                      one nation policies      70\n24                       one nation polling      60"}}
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "australian labor party",
+        "value": 100
+      },
+      {
+        "query": "alp",
+        "value": 90
+      },
+      {
+        "query": "albanese",
+        "value": 58
+      },
+      {
+        "query": "labour party australia",
+        "value": 48
+      },
+      {
+        "query": "one nation",
+        "value": 47
+      },
+      {
+        "query": "australian labour party",
+        "value": 46
+      },
+      {
+        "query": "liberal party australia",
+        "value": 41
+      },
+      {
+        "query": "pauline hanson",
+        "value": 13
+      }
+    ],
+    "rising": [
+      {
+        "query": "pauline hanson",
+        "value": 300
+      },
+      {
+        "query": "one nation",
+        "value": 150
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "the liberal party",
+        "value": 20
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 7
+      },
+      {
+        "query": "labor",
+        "value": 5
+      },
+      {
+        "query": "liberal spill",
+        "value": 5
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 3
+      },
+      {
+        "query": "liberal party spill",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "liberal party spill",
+        "value": 154700
+      },
+      {
+        "query": "liberal spill",
+        "value": 750
+      }
+    ]
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "australia greens",
+        "value": 100
+      },
+      {
+        "query": "the greens australia",
+        "value": 47
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation policies",
+        "value": 96450
+      }
+    ]
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation australia",
+        "value": 16
+      },
+      {
+        "query": "one nation sa",
+        "value": 12
+      },
+      {
+        "query": "one nation seats",
+        "value": 9
+      },
+      {
+        "query": "one nation party",
+        "value": 9
+      },
+      {
+        "query": "pauline hanson",
+        "value": 6
+      },
+      {
+        "query": "one nation policies",
+        "value": 5
+      },
+      {
+        "query": "pauline hanson one nation",
+        "value": 5
+      },
+      {
+        "query": "what is one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation polls",
+        "value": 3
+      },
+      {
+        "query": "sa election results",
+        "value": 2
+      },
+      {
+        "query": "sa election one nation seats",
+        "value": 2
+      },
+      {
+        "query": "how to vote one nation",
+        "value": 2
+      },
+      {
+        "query": "one nation south australia results",
+        "value": 2
+      },
+      {
+        "query": "south australian election results",
+        "value": 1
+      },
+      {
+        "query": "chantelle thomas",
+        "value": 0
+      },
+      {
+        "query": "did one nation win any seats in sa",
+        "value": 0
+      },
+      {
+        "query": "how many seats has one nation won in sa",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "sa election results",
+        "value": 194700
+      },
+      {
+        "query": "one nation south australia results",
+        "value": 152800
+      },
+      {
+        "query": "south australian election results",
+        "value": 54500
+      },
+      {
+        "query": "chantelle thomas",
+        "value": 45000
+      },
+      {
+        "query": "did one nation win any seats in sa",
+        "value": 41550
+      },
+      {
+        "query": "how many seats has one nation won in sa",
+        "value": 19200
+      },
+      {
+        "query": "one nation sa",
+        "value": 3200
+      },
+      {
+        "query": "sa election one nation seats",
+        "value": 1150
+      },
+      {
+        "query": "one nation seats",
+        "value": 300
+      },
+      {
+        "query": "how to vote one nation",
+        "value": 160
+      },
+      {
+        "query": "one nation policies",
+        "value": 80
+      },
+      {
+        "query": "one nation australia",
+        "value": 50
+      }
+    ]
+  }
+}
