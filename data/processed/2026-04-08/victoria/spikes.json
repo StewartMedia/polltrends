@@ -1,0 +1,108 @@
+[
+  {
+    "date": "2026-03-21",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 100,
+    "rolling_avg": 8.1,
+    "ratio": 12.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-12",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 30,
+    "rolling_avg": 3.0,
+    "ratio": 10.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-21",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 11,
+    "rolling_avg": 1.4,
+    "ratio": 7.7,
+    "explanation": "Jacinta Allan attacks Labor MPs plotting leadership spill",
+    "news": [
+      {
+        "title": "Jacinta Allan attacks Labor MPs plotting leadership spill",
+        "source": "Sky News Australia",
+        "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOOWJlb0xoeEN2UnBCZWlGNjE2MllyRDFtU3ZjLWlsMGtYYXdMY2paTHJod2NVLWVKY3pxdGNyN20tYU93Qk4wMlNObE5xQXdMQ3ZhMHZPUFVrbnJacjRJNUVtajBIcFo2ejB5OWpoZTdnVDFvRFhFaTZkLTFCMkpmUzctalBkanVhU0t1eWN1OVV6dDdzUmcyc0pYYlAtbTlNNEJoUUtiZGZFd3pEbEhDTHFTYTJvQzA3LTRCa0Y2M3A3YndMekhyV05BYkZtdnVadEd3VXlDNm9XQ2VEZ281Q01NMmNQVnJReE8wV2ZOdUR3U3o3QnkzbFo1d3NCUTdkNGZlYW4wcHlNY3BxQUxicU9VaDdxcmkxSVQ3S3hqTlRrWlhEU1lfTE83T2tCQdIBswJBVV95cUxNZ2hrTjBuck02UUZabmpaQm94Z0p4Rk9TTG9ySVA2ZXFCajdKMEpVaDdsVzV1OG56bDYyQ2FSS0ZKUDBNY3hhWURVSkpIVWRQeFFHWmZERVU3VndiTnlYdmpTNTFmSWY1cUZtcE1ScEk1TE5oU29jX094T3RaWDJPejZHdTA4T2d1ek1OUWs5N1Z4NlZULWVnNnZMQjJ0U2pvRGFlcm0wRjJLVnRwQ0lRN3R3M3B1MVQ2ZngtZmw3TjN3bjNXRl9Sc01sZTY0QmoxNHlUTkUzaHZIUzJOOWNKM0xYSjNYT3VDRmtSNHB4NWgzeU9Deld4RWUySWxXUnJQWXZnb014UnFRV2Q0YlB1R0JFT01VcDZWVXd0ZDYtRzd2eVQ1X1hVSDJXdlU2eVJ1T04w?oc=5",
+        "date": "2026-03-19"
+      },
+      {
+        "title": "Victoria Premier Jacinta Allan digs in, Labor MPs can\u2019t see a path to unseat her",
+        "source": "AFR",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQNkNnMzdTNVBCS0hvYXJTSHMzUURKV0k1MFMxeWdXemdiWEMzZWpCdWczX1JNR2gyV296Vzh3STIzV3FmbVViWlFNMFRZUVY1UTFReXFsTXkyVFhRME9UaVZqRURFYUZ3V2FMVmtJZlJGeEZCNkdSb1RpdnFEbDdselhWU0t3UTJfcERWM2hrbWU5WndvaExVbGV0RzRWSkJuTzN5S29TNGJQZzBaNVpMMGt0VTZ1dw?oc=5",
+        "date": "2026-03-20"
+      },
+      {
+        "title": "Jacinta Allan's dumping can't come soon enough for Victorian taxpayers, or an increasingly desperate Labor",
+        "source": "Crikey",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcWxaTm1NT1RnOC05Nm5ESkstREd3VjZ2RHNyNkZqa0xOU3A5SVk4NkxlQUxfWWFIRXJZSTFPZWpRUTVMSUtsZV9ySnJFQUJJWVM5UFZoQXZwZXFMZkh1M25lV0JDOWkxZWxIRlJEUmpyWEZCQ1UySXhremZuaXA0eHBCSzBTaGM4N01Pc0VPUG5jcUlpenc?oc=5",
+        "date": "2026-03-20"
+      }
+    ]
+  },
+  {
+    "date": "2026-02-11",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 13,
+    "rolling_avg": 1.7,
+    "ratio": 7.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-02-13",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 37,
+    "rolling_avg": 7.3,
+    "ratio": 5.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-22",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 90,
+    "rolling_avg": 21.6,
+    "ratio": 4.2,
+    "explanation": "Why Barnaby Joyce WANTS Jacinta Allan to stay as Victorian Premier... for now",
+    "news": [
+      {
+        "title": "Why Barnaby Joyce WANTS Jacinta Allan to stay as Victorian Premier... for now",
+        "source": "Daily Mail",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOV1ZaN2ZkM0JMV05weFJRNUZRUmVlamt0ZlpTNUk5M1NxWUZ2a3hXNGZoRVJHX3M5dXNsTENZTHRXTVVWanpXUmhyNDFkRDJiUU4yd0hScFZYSFNiUV9sQTZoZnhTV19ybEF3U3JFdkY2a19NUUp0TExSclZDUVRqb2JURTl6M0FGTkVHUHItNGlUN2lLejNGOEt2TE45WklWX2NZUktOVm9sNEXSAbABQVVfeXFMT1NHdXp5a2NUdVZFWmwtb2JPcER2MmlkNDFJOUxzWkE0MzFGRnQxa0NBeHA5eUp1MkR6eXdwbUVuelpYaGRSLU53ZFkzNmZfV2gxcmQ5Yl9YV25nakdtc2tQR1hoZElLRkZxS25MM3dCcDFsUEJLaUduNkFWZTcwZVp6bURJdzAxZmdWMG1wRnI4dHM3YmY1TWY0MXdWbTNMenBVT1g1U3FnZEdiZmtUWVc?oc=5",
+        "date": "2026-03-24"
+      }
+    ]
+  },
+  {
+    "date": "2026-01-19",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 22,
+    "rolling_avg": 5.4,
+    "ratio": 4.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-20",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 15,
+    "rolling_avg": 6.7,
+    "ratio": 2.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]
