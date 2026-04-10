@@ -101,7 +101,7 @@
     "rising": [
       {
         "query": "sa election results",
-        "value": 56550
+        "value": 57600
       },
       {
         "query": "sa election",
@@ -234,10 +234,6 @@
         "value": 9
       },
       {
-        "query": "liberal",
-        "value": 7
-      },
-      {
         "query": "labor",
         "value": 6
       },
@@ -277,7 +273,7 @@
     "rising": [
       {
         "query": "one nation policies",
-        "value": 122200
+        "value": 122400
       },
       {
         "query": "one nation",
@@ -340,7 +336,11 @@
         "value": 5
       },
       {
-        "query": "pauline hanson one nation",
+        "query": "one nation results",
+        "value": 5
+      },
+      {
+        "query": "one nation pauline hanson",
         "value": 5
       },
       {
@@ -372,15 +372,11 @@
         "value": 2
       },
       {
-        "query": "one nation victoria",
-        "value": 2
-      },
-      {
         "query": "one nation candidates",
         "value": 2
       },
       {
-        "query": "one nation south australia seats",
+        "query": "one nation victoria",
         "value": 2
       },
       {
@@ -395,59 +391,55 @@
     "rising": [
       {
         "query": "one nation seats sa",
-        "value": 388700
-      },
-      {
-        "query": "one nation south australia seats",
-        "value": 209100
+        "value": 388150
       },
       {
         "query": "sa election one nation seats",
-        "value": 198300
+        "value": 197750
       },
       {
         "query": "how many seats did one nation win",
-        "value": 174250
+        "value": 174200
       },
       {
         "query": "south australia election 2026",
-        "value": 152350
+        "value": 152600
       },
       {
         "query": "south australia election results",
-        "value": 126500
+        "value": 126650
       },
       {
         "query": "how many seats did one nation win in sa",
-        "value": 98800
+        "value": 98850
       },
       {
         "query": "did one nation win any seats",
-        "value": 82450
+        "value": 82200
       },
       {
         "query": "sa election results 2026 one nation",
-        "value": 69600
+        "value": 69500
       },
       {
         "query": "south australian election results",
-        "value": 58350
+        "value": 57900
       },
       {
         "query": "how many seats did one nation win in sa election",
-        "value": 46900
+        "value": 47200
+      },
+      {
+        "query": "one nation sa policies",
+        "value": 46800
       },
       {
         "query": "david paton",
-        "value": 40200
+        "value": 39850
       },
       {
         "query": "david paton one nation",
-        "value": 35600
-      },
-      {
-        "query": "liam alexander hall",
-        "value": 16200
+        "value": 35750
       },
       {
         "query": "sa election",
@@ -484,6 +476,10 @@
       {
         "query": "one nation election results",
         "value": 550
+      },
+      {
+        "query": "one nation results",
+        "value": 250
       },
       {
         "query": "one nation seats",
