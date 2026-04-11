@@ -21,8 +21,8 @@
     "party_code": "LIB",
     "party_name": "Liberal",
     "value": 25,
-    "rolling_avg": 4.6,
-    "ratio": 5.5,
+    "rolling_avg": 4.4,
+    "ratio": 5.6,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -30,9 +30,9 @@
     "date": "2026-02-13",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 27,
-    "rolling_avg": 7.7,
-    "ratio": 3.5,
+    "value": 28,
+    "rolling_avg": 7.6,
+    "ratio": 3.7,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -41,8 +41,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 15,
-    "rolling_avg": 4.3,
-    "ratio": 3.5,
+    "rolling_avg": 4.4,
+    "ratio": 3.4,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -74,6 +74,23 @@
     ]
   },
   {
+    "date": "2026-03-21",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 3.4,
+    "ratio": 2.9,
+    "explanation": "Minns Labor Government boosts Aboriginal-led heart research to drive improved health outcomes",
+    "news": [
+      {
+        "title": "Minns Labor Government boosts Aboriginal-led heart research to drive improved health outcomes",
+        "source": "Office for Health and Medical Research",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOT0xMM1dBLVBSVThXbUhpb3BXUnJkYTlZVHc5c2lJTklSNmkteUtaQWVVcWdQZTh0N3BMQjZRWTFrYWVJUTJQcG1FVTRISWs3M0g0U21uVF9mV2d2blRLU2NJYVotVmo4WW10dFJONzFCNFRMbW5QYVJSU3NXWVNkZ0ZITmVTMV9sZDJLTk9PTG1fNS1WTWpkS2FpWGNhNzQ?oc=5",
+        "date": "2026-03-23"
+      }
+    ]
+  },
+  {
     "date": "2026-03-20",
     "party_code": "PHON",
     "party_name": "One Nation",
@@ -91,29 +108,12 @@
     ]
   },
   {
-    "date": "2026-03-21",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 10,
-    "rolling_avg": 3.7,
-    "ratio": 2.7,
-    "explanation": "Minns Labor Government boosts Aboriginal-led heart research to drive improved health outcomes",
-    "news": [
-      {
-        "title": "Minns Labor Government boosts Aboriginal-led heart research to drive improved health outcomes",
-        "source": "Office for Health and Medical Research",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOT0xMM1dBLVBSVThXbUhpb3BXUnJkYTlZVHc5c2lJTklSNmkteUtaQWVVcWdQZTh0N3BMQjZRWTFrYWVJUTJQcG1FVTRISWs3M0g0U21uVF9mV2d2blRLU2NJYVotVmo4WW10dFJONzFCNFRMbW5QYVJSU3NXWVNkZ0ZITmVTMV9sZDJLTk9PTG1fNS1WTWpkS2FpWGNhNzQ?oc=5",
-        "date": "2026-03-23"
-      }
-    ]
-  },
-  {
     "date": "2026-01-21",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 14,
-    "rolling_avg": 6.6,
-    "ratio": 2.1,
+    "value": 15,
+    "rolling_avg": 6.7,
+    "ratio": 2.2,
     "explanation": "Significant spike in search interest",
     "news": []
   }
