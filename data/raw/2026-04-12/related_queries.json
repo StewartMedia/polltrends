@@ -56,6 +56,10 @@
         "value": 6
       },
       {
+        "query": "liberal spill",
+        "value": 5
+      },
+      {
         "query": "liberal leader australia",
         "value": 4
       },
@@ -75,11 +79,15 @@
     "rising": [
       {
         "query": "erythritol sweetener",
-        "value": 11350
+        "value": 11400
       },
       {
         "query": "moira deeming",
-        "value": 8800
+        "value": 9050
+      },
+      {
+        "query": "liberal spill",
+        "value": 550
       },
       {
         "query": "liberal party spill",
@@ -174,15 +182,15 @@
     "rising": [
       {
         "query": "sa election results",
-        "value": 202650
+        "value": 203850
       },
       {
         "query": "sa election one nation seats",
-        "value": 198500
+        "value": 198250
       },
       {
         "query": "one nation south australia results",
-        "value": 153200
+        "value": 153300
       },
       {
         "query": "south australian election results",
@@ -194,7 +202,7 @@
       },
       {
         "query": "did one nation win any seats in sa",
-        "value": 41200
+        "value": 41400
       },
       {
         "query": "sa election one nation",

@@ -7,7 +7,7 @@
       },
       {
         "query": "australian labor party",
-        "value": 93
+        "value": 92
       },
       {
         "query": "labour party australia",
@@ -15,7 +15,7 @@
       },
       {
         "query": "australian labour party",
-        "value": 49
+        "value": 48
       },
       {
         "query": "one nation",
@@ -51,8 +51,18 @@
     "rising": []
   },
   "GRN": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "one nation policies",
+        "value": 100
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation policies",
+        "value": 93000
+      }
+    ]
   },
   "PHON": {
     "top": [
@@ -73,15 +83,39 @@
         "value": 10
       },
       {
+        "query": "one nation sa",
+        "value": 9
+      },
+      {
+        "query": "one nation victoria",
+        "value": 8
+      },
+      {
+        "query": "south australia one nation",
+        "value": 7
+      },
+      {
         "query": "pauline hanson",
-        "value": 6
+        "value": 7
       },
       {
         "query": "one nation policies",
         "value": 6
       },
       {
+        "query": "one nation polling",
+        "value": 6
+      },
+      {
         "query": "pauline hanson one nation",
+        "value": 6
+      },
+      {
+        "query": "sa election",
+        "value": 5
+      },
+      {
+        "query": "one nation sa election",
         "value": 5
       },
       {
@@ -89,54 +123,138 @@
         "value": 4
       },
       {
+        "query": "one nation sa seats",
+        "value": 4
+      },
+      {
         "query": "one nation polls",
+        "value": 4
+      },
+      {
+        "query": "one nation news",
+        "value": 4
+      },
+      {
+        "query": "one nation election results",
+        "value": 4
+      },
+      {
+        "query": "south australia election",
         "value": 3
       },
       {
+        "query": "one nation party australia",
+        "value": 2
+      },
+      {
+        "query": "one nation candidates",
+        "value": 2
+      },
+      {
         "query": "sa election one nation seats",
+        "value": 2
+      },
+      {
+        "query": "one nation policy",
+        "value": 2
+      },
+      {
+        "query": "how many seats did one nation win",
         "value": 2
       },
       {
         "query": "one nation leader",
         "value": 2
-      },
-      {
-        "query": "sa election results",
-        "value": 2
-      },
-      {
-        "query": "one nation south australia results",
-        "value": 1
-      },
-      {
-        "query": "south australian election results",
-        "value": 1
       }
     ],
     "rising": [
       {
+        "query": "south australia one nation",
+        "value": 633900
+      },
+      {
+        "query": "sa election",
+        "value": 417150
+      },
+      {
+        "query": "one nation sa election",
+        "value": 406450
+      },
+      {
+        "query": "one nation sa seats",
+        "value": 350900
+      },
+      {
+        "query": "south australia election",
+        "value": 293450
+      },
+      {
         "query": "sa election one nation seats",
-        "value": 183800
+        "value": 184650
+      },
+      {
+        "query": "how many seats did one nation win",
+        "value": 167050
       },
       {
         "query": "sa election results",
-        "value": 155300
+        "value": 153800
+      },
+      {
+        "query": "one nation farrer",
+        "value": 135750
+      },
+      {
+        "query": "sa election results one nation",
+        "value": 134950
+      },
+      {
+        "query": "south australia election results",
+        "value": 112650
+      },
+      {
+        "query": "south australian election",
+        "value": 110400
       },
       {
         "query": "one nation south australia results",
-        "value": 104750
+        "value": 104000
+      },
+      {
+        "query": "how many seats did one nation win in sa",
+        "value": 94450
+      },
+      {
+        "query": "david farley",
+        "value": 75950
       },
       {
         "query": "south australian election results",
-        "value": 46250
+        "value": 44900
+      },
+      {
+        "query": "farrer by election",
+        "value": 37850
+      },
+      {
+        "query": "one nation sa",
+        "value": 1250
       },
       {
         "query": "one nation seats",
         "value": 250
       },
       {
+        "query": "one nation election results",
+        "value": 100
+      },
+      {
+        "query": "one nation candidates",
+        "value": 90
+      },
+      {
         "query": "one nation policies",
-        "value": 50
+        "value": 40
       }
     ]
   },
