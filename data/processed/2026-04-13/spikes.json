@@ -21,8 +21,8 @@
     "party_code": "LIB",
     "party_name": "Liberal",
     "value": 25,
-    "rolling_avg": 4.4,
-    "ratio": 5.6,
+    "rolling_avg": 4.3,
+    "ratio": 5.8,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -31,8 +31,8 @@
     "party_code": "LIB",
     "party_name": "Liberal",
     "value": 28,
-    "rolling_avg": 7.6,
-    "ratio": 3.7,
+    "rolling_avg": 7.4,
+    "ratio": 3.8,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -41,8 +41,18 @@
     "party_code": "LIB",
     "party_name": "Liberal",
     "value": 11,
+    "rolling_avg": 3.1,
+    "ratio": 3.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-21",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
     "rolling_avg": 3.3,
-    "ratio": 3.3,
+    "ratio": 3.0,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -50,9 +60,9 @@
     "date": "2026-03-22",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 78,
+    "value": 77,
     "rolling_avg": 25.3,
-    "ratio": 3.1,
+    "ratio": 3.0,
     "explanation": "SA Election 2026 As It Happened: Labor wins state election in a landslide; Big swings to One Nation, Libs hit rock bottom",
     "news": [
       {
@@ -64,21 +74,11 @@
     ]
   },
   {
-    "date": "2026-03-21",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 10,
-    "rolling_avg": 3.6,
-    "ratio": 2.8,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
     "date": "2026-03-20",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 25,
-    "rolling_avg": 9.1,
+    "rolling_avg": 9.3,
     "ratio": 2.7,
     "explanation": "SA Election 2026 As It Happened: Labor wins state election in a landslide; Big swings to One Nation, Libs hit rock bottom",
     "news": [
@@ -95,8 +95,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 14,
-    "rolling_avg": 6.4,
-    "ratio": 2.2,
+    "rolling_avg": 6.6,
+    "ratio": 2.1,
     "explanation": "Significant spike in search interest",
     "news": []
   }
