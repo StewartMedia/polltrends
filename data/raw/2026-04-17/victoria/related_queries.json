@@ -1,0 +1,150 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labor",
+        "value": 100
+      },
+      {
+        "query": "labour",
+        "value": 51
+      },
+      {
+        "query": "labor party",
+        "value": 41
+      },
+      {
+        "query": "alp",
+        "value": 18
+      },
+      {
+        "query": "australian labor party",
+        "value": 14
+      },
+      {
+        "query": "labor party australia",
+        "value": 12
+      },
+      {
+        "query": "liberal party",
+        "value": 11
+      },
+      {
+        "query": "labour party australia",
+        "value": 7
+      },
+      {
+        "query": "albanese",
+        "value": 7
+      },
+      {
+        "query": "labor government",
+        "value": 6
+      },
+      {
+        "query": "australian labour party",
+        "value": 6
+      },
+      {
+        "query": "labor vs labour",
+        "value": 4
+      },
+      {
+        "query": "labor or labour",
+        "value": 3
+      },
+      {
+        "query": "is albanese labour",
+        "value": 3
+      },
+      {
+        "query": "labor vs liberal",
+        "value": 3
+      },
+      {
+        "query": "alp australia",
+        "value": 3
+      },
+      {
+        "query": "labour policies",
+        "value": 2
+      },
+      {
+        "query": "labor ministers",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "labor vs liberal",
+        "value": 167000
+      },
+      {
+        "query": "labor or labour",
+        "value": 180
+      },
+      {
+        "query": "alp australia",
+        "value": 60
+      },
+      {
+        "query": "labor vs labour",
+        "value": 50
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 8
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 4
+      },
+      {
+        "query": "liberal party spill",
+        "value": 1
+      },
+      {
+        "query": "moira deeming",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "liberal party spill",
+        "value": 71750
+      },
+      {
+        "query": "moira deeming",
+        "value": 5450
+      }
+    ]
+  },
+  "GRN": {
+    "top": [],
+    "rising": []
+  },
+  "PHON": {
+    "top": [],
+    "rising": []
+  },
+  "AJP": {
+    "top": [],
+    "rising": []
+  },
+  "RSN": {
+    "top": [],
+    "rising": []
+  },
+  "LDP": {
+    "top": [],
+    "rising": []
+  }
+}
