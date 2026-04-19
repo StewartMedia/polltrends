@@ -62,10 +62,6 @@
         "value": 4
       },
       {
-        "query": "labor or labour",
-        "value": 4
-      },
-      {
         "query": "alp australia",
         "value": 3
       },
@@ -85,11 +81,11 @@
     "rising": [
       {
         "query": "one nation policies",
-        "value": 72850
+        "value": 73700
       },
       {
         "query": "pauline hanson",
-        "value": 550
+        "value": 600
       },
       {
         "query": "one nation",
@@ -97,7 +93,7 @@
       },
       {
         "query": "labor vs liberal",
-        "value": 100
+        "value": 110
       }
     ]
   },
@@ -139,7 +135,7 @@
     "rising": [
       {
         "query": "liberal party spill",
-        "value": 146650
+        "value": 147150
       },
       {
         "query": "erythritol sweetener",
@@ -275,43 +271,43 @@
     "rising": [
       {
         "query": "sa election",
-        "value": 647000
+        "value": 646950
       },
       {
         "query": "one nation seats sa",
-        "value": 411700
+        "value": 411550
       },
       {
         "query": "sa election results",
-        "value": 209450
+        "value": 209400
       },
       {
         "query": "sa election one nation seats",
-        "value": 204050
+        "value": 204150
       },
       {
         "query": "one nation south australia results",
-        "value": 160400
+        "value": 160250
       },
       {
         "query": "south australia election results",
-        "value": 134600
+        "value": 134750
       },
       {
         "query": "how many seats did one nation win in sa",
-        "value": 110450
+        "value": 110650
       },
       {
         "query": "cory bernardi",
-        "value": 86450
+        "value": 86650
       },
       {
         "query": "did one nation win any seats",
-        "value": 83500
+        "value": 83150
       },
       {
         "query": "sa election results 2026 one nation",
-        "value": 69950
+        "value": 69700
       },
       {
         "query": "south australian election results",
@@ -319,15 +315,15 @@
       },
       {
         "query": "how many seats did one nation win in sa election",
-        "value": 48150
+        "value": 47950
       },
       {
         "query": "did one nation win any seats in sa",
-        "value": 38750
+        "value": 38450
       },
       {
         "query": "how many seats did one nation win in south australia",
-        "value": 38200
+        "value": 38300
       },
       {
         "query": "jason virgo one nation",
@@ -336,6 +332,10 @@
       {
         "query": "how many seats has one nation won in sa",
         "value": 19150
+      },
+      {
+        "query": "liam alexander hall",
+        "value": 16450
       },
       {
         "query": "sa election one nation",
@@ -368,10 +368,6 @@
       {
         "query": "one nation policies",
         "value": 90
-      },
-      {
-        "query": "one nation australia",
-        "value": 60
       }
     ]
   }

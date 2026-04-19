@@ -1,13 +1,13 @@
 {
   "ALP": {
     "party": "Labor",
-    "queries_analysed": 25,
+    "queries_analysed": 19,
     "sentiment_counts": {
       "positive": 0,
       "negative": 1,
-      "neutral": 24
+      "neutral": 18
     },
-    "sentiment_score": -0.04,
+    "sentiment_score": -0.05,
     "classified_queries": [
       {
         "query": "labor",
@@ -26,15 +26,7 @@
         "sentiment": "neutral"
       },
       {
-        "query": "australian labor",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "labour australia",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "labour party",
+        "query": "australian labor party",
         "sentiment": "neutral"
       },
       {
@@ -46,23 +38,23 @@
         "sentiment": "neutral"
       },
       {
-        "query": "liberal or labour",
+        "query": "liberal party",
         "sentiment": "neutral"
-      },
-      {
-        "query": "albanese",
-        "sentiment": "negative"
       },
       {
         "query": "labor government",
         "sentiment": "neutral"
       },
       {
-        "query": "australian labour party",
+        "query": "one nation",
         "sentiment": "neutral"
       },
       {
         "query": "labour party australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "australian labour party",
         "sentiment": "neutral"
       },
       {
@@ -74,35 +66,19 @@
         "sentiment": "neutral"
       },
       {
-        "query": "liberal vs labour",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "australian liberal party",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "labor or labour",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "one nation party",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "alp party",
-        "sentiment": "neutral"
-      },
-      {
         "query": "labor vs liberal",
         "sentiment": "neutral"
       },
       {
-        "query": "is one nation liberal or labour",
+        "query": "alp australia",
         "sentiment": "neutral"
       },
       {
-        "query": "how to vote labour",
+        "query": "anthony albanese",
+        "sentiment": "negative"
+      },
+      {
+        "query": "pauline hanson",
         "sentiment": "neutral"
       },
       {
@@ -113,137 +89,61 @@
   },
   "LIB": {
     "party": "Liberal",
-    "queries_analysed": 15,
+    "queries_analysed": 8,
     "sentiment_counts": {
-      "positive": 4,
+      "positive": 1,
       "negative": 0,
-      "neutral": 11
+      "neutral": 7
     },
-    "sentiment_score": 0.27,
+    "sentiment_score": 0.12,
     "classified_queries": [
       {
         "query": "liberal",
         "sentiment": "neutral"
       },
       {
-        "query": "liberal party",
+        "query": "the liberal party",
         "sentiment": "neutral"
-      },
-      {
-        "query": "liberal leader",
-        "sentiment": "positive"
-      },
-      {
-        "query": "liberal leadership",
-        "sentiment": "positive"
-      },
-      {
-        "query": "liberal party leader",
-        "sentiment": "positive"
       },
       {
         "query": "liberal party of australia",
         "sentiment": "neutral"
       },
       {
-        "query": "angus taylor",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "leader of liberal party",
-        "sentiment": "positive"
-      },
-      {
         "query": "labor",
         "sentiment": "neutral"
       },
       {
-        "query": "liberals",
+        "query": "liberal spill",
         "sentiment": "neutral"
       },
       {
-        "query": "one nation",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "labor party",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "federal liberal party",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "angus taylor liberal party",
-        "sentiment": "neutral"
+        "query": "liberal leader australia",
+        "sentiment": "positive"
       },
       {
         "query": "liberal party spill",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "erythritol sweetener",
         "sentiment": "neutral"
       }
     ]
   },
   "GRN": {
     "party": "Greens",
-    "queries_analysed": 14,
+    "queries_analysed": 2,
     "sentiment_counts": {
-      "positive": 6,
+      "positive": 0,
       "negative": 0,
-      "neutral": 8
+      "neutral": 2
     },
-    "sentiment_score": 0.43,
+    "sentiment_score": 0.0,
     "classified_queries": [
       {
-        "query": "greens",
+        "query": "the greens australia",
         "sentiment": "neutral"
-      },
-      {
-        "query": "greens australia",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "australian greens",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "the greens party",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "greens leader",
-        "sentiment": "positive"
-      },
-      {
-        "query": "one nation",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "greens policy",
-        "sentiment": "positive"
-      },
-      {
-        "query": "greens senator",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "leader of greens",
-        "sentiment": "positive"
-      },
-      {
-        "query": "leader of the greens",
-        "sentiment": "positive"
-      },
-      {
-        "query": "greens party leader",
-        "sentiment": "positive"
-      },
-      {
-        "query": "greens mp",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "greens leader australia",
-        "sentiment": "positive"
       },
       {
         "query": "one nation policies",
@@ -253,13 +153,13 @@
   },
   "PHON": {
     "party": "One Nation",
-    "queries_analysed": 37,
+    "queries_analysed": 34,
     "sentiment_counts": {
-      "positive": 5,
+      "positive": 7,
       "negative": 0,
-      "neutral": 32
+      "neutral": 27
     },
-    "sentiment_score": 0.14,
+    "sentiment_score": 0.21,
     "classified_queries": [
       {
         "query": "one nation",
@@ -306,10 +206,6 @@
         "sentiment": "neutral"
       },
       {
-        "query": "vote one nation",
-        "sentiment": "neutral"
-      },
-      {
         "query": "one nation pauline hanson",
         "sentiment": "neutral"
       },
@@ -338,18 +234,6 @@
         "sentiment": "neutral"
       },
       {
-        "query": "one nation victoria",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "one nation candidates",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "one nation party australia",
-        "sentiment": "neutral"
-      },
-      {
         "query": "sa election results",
         "sentiment": "neutral"
       },
@@ -358,12 +242,12 @@
         "sentiment": "neutral"
       },
       {
-        "query": "one nation how to vote",
-        "sentiment": "neutral"
-      },
-      {
         "query": "how many seats did one nation win",
         "sentiment": "positive"
+      },
+      {
+        "query": "one nation south australia results",
+        "sentiment": "neutral"
       },
       {
         "query": "south australia election results",
@@ -372,6 +256,10 @@
       {
         "query": "how many seats did one nation win in sa",
         "sentiment": "positive"
+      },
+      {
+        "query": "cory bernardi",
+        "sentiment": "neutral"
       },
       {
         "query": "did one nation win any seats",
@@ -386,27 +274,27 @@
         "sentiment": "neutral"
       },
       {
-        "query": "david farley one nation",
-        "sentiment": "neutral"
-      },
-      {
         "query": "how many seats did one nation win in sa election",
         "sentiment": "positive"
       },
       {
-        "query": "david paton one nation",
+        "query": "did one nation win any seats in sa",
+        "sentiment": "positive"
+      },
+      {
+        "query": "how many seats did one nation win in south australia",
+        "sentiment": "positive"
+      },
+      {
+        "query": "jason virgo one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "how many seats has one nation won in sa",
         "sentiment": "neutral"
       },
       {
         "query": "liam alexander hall",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "aoi baxter",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "sa election 2026",
         "sentiment": "neutral"
       }
     ]
