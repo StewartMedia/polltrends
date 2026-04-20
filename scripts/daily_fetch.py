@@ -9,6 +9,7 @@ from datetime import datetime
 import pandas as pd
 import pytrends.request
 from pytrends import exceptions
+from requests import exceptions as request_exceptions
 
 sys.path.insert(0, ".")
 
@@ -21,27 +22,45 @@ today_dir.mkdir(parents=True, exist_ok=True)
 
 
 MAX_KEYWORDS_PER_REQUEST = 5
+REQUEST_TIMEOUT = (10, 25)
+MAX_ATTEMPTS = 5
 
 
-def _build_payload(pytrends_instance, kw_list, geo, timeframe):
-    """build_payload wrapper with retry."""
-    for attempt in range(5):
+def _retry_google_call(action_name, fn):
+    """Retry pytrends calls for rate limits and transient network errors."""
+    for attempt in range(MAX_ATTEMPTS):
         try:
-            return pytrends_instance.build_payload(kw_list, geo=geo, timeframe=timeframe)
+            return fn()
         except exceptions.TooManyRequestsError:
-            if attempt < 4:
+            if attempt < MAX_ATTEMPTS - 1:
                 wait = (2 ** attempt) * 15
-                print(f"  ⚠️  429 rate limited, retrying in {wait}s (attempt {attempt+1}/5)...")
+                print(f"  ⚠️  {action_name}: 429 rate limited, retrying in {wait}s (attempt {attempt+1}/{MAX_ATTEMPTS})...")
                 time.sleep(wait)
             else:
                 raise
         except exceptions.ResponseError as e:
-            if attempt < 4:
+            if attempt < MAX_ATTEMPTS - 1:
                 wait = (2 ** attempt) * 15
-                print(f"  ⚠️  Google error {e.response.status_code}, retrying in {wait}s (attempt {attempt+1}/5)...")
+                status = getattr(e.response, "status_code", "unknown")
+                print(f"  ⚠️  {action_name}: Google error {status}, retrying in {wait}s (attempt {attempt+1}/{MAX_ATTEMPTS})...")
                 time.sleep(wait)
             else:
                 raise
+        except (request_exceptions.ReadTimeout, request_exceptions.ConnectTimeout, request_exceptions.ConnectionError) as e:
+            if attempt < MAX_ATTEMPTS - 1:
+                wait = (2 ** attempt) * 10
+                print(f"  ⚠️  {action_name}: transient network error ({e.__class__.__name__}), retrying in {wait}s (attempt {attempt+1}/{MAX_ATTEMPTS})...")
+                time.sleep(wait)
+            else:
+                raise
+
+
+def _build_payload(pytrends_instance, kw_list, geo, timeframe):
+    """build_payload wrapper with retry."""
+    return _retry_google_call(
+        "build_payload",
+        lambda: pytrends_instance.build_payload(kw_list, geo=geo, timeframe=timeframe),
+    )
 
 
 def fetch_for_geo(entities, geo, prefix):
@@ -58,46 +77,16 @@ def fetch_for_geo(entities, geo, prefix):
             print(f"  [{prefix or 'national'}] batch {batch_idx + 1}/{len(batches)} ({len(batch)} keywords)")
 
         # Fresh session per batch to avoid session-level exhaustion
-        pt = pytrends.request.TrendReq(hl='en-AU', tz=360)
+        pt = pytrends.request.TrendReq(hl='en-AU', tz=360, timeout=REQUEST_TIMEOUT)
         _build_payload(pt, batch, geo=geo, timeframe=TIMEFRAME)
 
-        for attempt in range(5):
-            try:
-                interest = pt.interest_over_time()
-                break
-            except exceptions.TooManyRequestsError:
-                if attempt < 4:
-                    wait = (2 ** attempt) * 15
-                    print(f"  ⚠️  429 rate limited, retrying in {wait}s...")
-                    time.sleep(wait)
-                else:
-                    raise
+        interest = _retry_google_call("interest_over_time", pt.interest_over_time)
         all_interest_frames.append(interest)
 
-        for attempt in range(5):
-            try:
-                rq = pt.related_queries()
-                break
-            except exceptions.TooManyRequestsError:
-                if attempt < 4:
-                    wait = (2 ** attempt) * 15
-                    print(f"  ⚠️  429 rate limited, retrying in {wait}s...")
-                    time.sleep(wait)
-                else:
-                    raise
+        rq = _retry_google_call("related_queries", pt.related_queries)
         all_rq.update(rq)
 
-        for attempt in range(5):
-            try:
-                topics = pt.related_topics()
-                break
-            except exceptions.TooManyRequestsError:
-                if attempt < 4:
-                    wait = (2 ** attempt) * 15
-                    print(f"  ⚠️  429 rate limited, retrying in {wait}s...")
-                    time.sleep(wait)
-                else:
-                    raise
+        topics = _retry_google_call("related_topics", pt.related_topics)
         all_topics.update(topics)
 
     # Combine interest frames and transform to chart-compatible format
