@@ -1,0 +1,136 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labor",
+        "value": 100
+      },
+      {
+        "query": "labour",
+        "value": 54
+      },
+      {
+        "query": "labor party",
+        "value": 45
+      },
+      {
+        "query": "liberal",
+        "value": 36
+      },
+      {
+        "query": "labour australia",
+        "value": 18
+      },
+      {
+        "query": "labour party",
+        "value": 16
+      },
+      {
+        "query": "alp",
+        "value": 15
+      },
+      {
+        "query": "labor party australia",
+        "value": 13
+      },
+      {
+        "query": "labor government",
+        "value": 8
+      },
+      {
+        "query": "labour party australia",
+        "value": 7
+      },
+      {
+        "query": "australian labour party",
+        "value": 7
+      },
+      {
+        "query": "liberal party australia",
+        "value": 6
+      },
+      {
+        "query": "labor policies",
+        "value": 4
+      },
+      {
+        "query": "labour vs liberal",
+        "value": 4
+      },
+      {
+        "query": "australian liberal party",
+        "value": 4
+      },
+      {
+        "query": "labour or labor",
+        "value": 4
+      },
+      {
+        "query": "one nation party",
+        "value": 3
+      },
+      {
+        "query": "labor vs liberal",
+        "value": 3
+      },
+      {
+        "query": "alp australia",
+        "value": 3
+      },
+      {
+        "query": "one nation policies",
+        "value": 1
+      },
+      {
+        "query": "labor logo",
+        "value": 1
+      },
+      {
+        "query": "sa election results",
+        "value": 1
+      },
+      {
+        "query": "is one nation liberal or labour",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation policies",
+        "value": 62250
+      },
+      {
+        "query": "labor logo",
+        "value": 42500
+      },
+      {
+        "query": "sa election results",
+        "value": 39200
+      },
+      {
+        "query": "is one nation liberal or labour",
+        "value": 110
+      },
+      {
+        "query": "one nation party",
+        "value": 60
+      },
+      {
+        "query": "labour or labor",
+        "value": 40
+      }
+    ]
+  },
+  "LIB": {
+    "top": [],
+    "rising": []
+  },
+  "GRN": {
+    "top": [],
+    "rising": []
+  },
+  "PHON": {
+    "top": [],
+    "rising": []
+  }
+}

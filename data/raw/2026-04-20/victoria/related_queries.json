@@ -1,0 +1,320 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labor",
+        "value": 100
+      },
+      {
+        "query": "labour",
+        "value": 52
+      },
+      {
+        "query": "labor party",
+        "value": 41
+      },
+      {
+        "query": "alp",
+        "value": 17
+      },
+      {
+        "query": "australian labor party",
+        "value": 11
+      },
+      {
+        "query": "liberal party",
+        "value": 10
+      },
+      {
+        "query": "labor party australia",
+        "value": 10
+      },
+      {
+        "query": "labor government",
+        "value": 7
+      },
+      {
+        "query": "labour party australia",
+        "value": 7
+      },
+      {
+        "query": "australian labour party",
+        "value": 6
+      },
+      {
+        "query": "one nation",
+        "value": 6
+      },
+      {
+        "query": "labor vs liberal",
+        "value": 4
+      },
+      {
+        "query": "labor vs labour",
+        "value": 4
+      },
+      {
+        "query": "alp australia",
+        "value": 3
+      },
+      {
+        "query": "labor ministers",
+        "value": 3
+      },
+      {
+        "query": "is albanese labour",
+        "value": 2
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 2
+      },
+      {
+        "query": "labour policies",
+        "value": 2
+      },
+      {
+        "query": "anthony albanese",
+        "value": 2
+      },
+      {
+        "query": "pauline hanson",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "labor vs labour",
+        "value": 80
+      },
+      {
+        "query": "one nation",
+        "value": 80
+      },
+      {
+        "query": "alp australia",
+        "value": 50
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 7
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 4
+      },
+      {
+        "query": "liberal party spill",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "liberal party spill",
+        "value": 110
+      }
+    ]
+  },
+  "GRN": {
+    "top": [],
+    "rising": []
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation australia",
+        "value": 17
+      },
+      {
+        "query": "one nation seats",
+        "value": 10
+      },
+      {
+        "query": "one nation party",
+        "value": 10
+      },
+      {
+        "query": "one nation sa",
+        "value": 10
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "pauline hanson",
+        "value": 6
+      },
+      {
+        "query": "pauline hanson one nation",
+        "value": 5
+      },
+      {
+        "query": "sa election",
+        "value": 5
+      },
+      {
+        "query": "one nation polling",
+        "value": 5
+      },
+      {
+        "query": "what is one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation news",
+        "value": 4
+      },
+      {
+        "query": "south australia election",
+        "value": 3
+      },
+      {
+        "query": "one nation polls",
+        "value": 3
+      },
+      {
+        "query": "how many seats did one nation win",
+        "value": 2
+      },
+      {
+        "query": "sa election one nation seats",
+        "value": 2
+      },
+      {
+        "query": "one nation leader",
+        "value": 2
+      },
+      {
+        "query": "sa election results",
+        "value": 2
+      },
+      {
+        "query": "one nation south australia results",
+        "value": 2
+      },
+      {
+        "query": "south australia election results",
+        "value": 2
+      },
+      {
+        "query": "how many seats did one nation win in sa",
+        "value": 1
+      },
+      {
+        "query": "did one nation win any seats",
+        "value": 1
+      },
+      {
+        "query": "cory bernardi",
+        "value": 1
+      },
+      {
+        "query": "sa election results 2026",
+        "value": 1
+      },
+      {
+        "query": "how many seats did one nation win in sa election",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation sa",
+        "value": 832350
+      },
+      {
+        "query": "sa election",
+        "value": 436250
+      },
+      {
+        "query": "how many seats did one nation win",
+        "value": 185000
+      },
+      {
+        "query": "sa election one nation seats",
+        "value": 178950
+      },
+      {
+        "query": "sa election results",
+        "value": 152200
+      },
+      {
+        "query": "one nation south australia results",
+        "value": 144700
+      },
+      {
+        "query": "south australia election results",
+        "value": 131100
+      },
+      {
+        "query": "how many seats did one nation win in sa",
+        "value": 82450
+      },
+      {
+        "query": "did one nation win any seats",
+        "value": 77300
+      },
+      {
+        "query": "cory bernardi",
+        "value": 56700
+      },
+      {
+        "query": "sa election results 2026",
+        "value": 52100
+      },
+      {
+        "query": "how many seats did one nation win in sa election",
+        "value": 39250
+      },
+      {
+        "query": "chantelle thomas",
+        "value": 30150
+      },
+      {
+        "query": "south australian election results",
+        "value": 30050
+      },
+      {
+        "query": "did one nation win any seats in sa",
+        "value": 28850
+      },
+      {
+        "query": "south australia election",
+        "value": 550
+      },
+      {
+        "query": "one nation seats",
+        "value": 300
+      },
+      {
+        "query": "one nation policies",
+        "value": 50
+      }
+    ]
+  },
+  "AJP": {
+    "top": [],
+    "rising": []
+  },
+  "RSN": {
+    "top": [],
+    "rising": []
+  },
+  "LDP": {
+    "top": [],
+    "rising": []
+  }
+}
