@@ -1,7 +1,125 @@
 {
   "ALP": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "labor",
+        "value": 100
+      },
+      {
+        "query": "labour",
+        "value": 54
+      },
+      {
+        "query": "labor party",
+        "value": 45
+      },
+      {
+        "query": "liberal",
+        "value": 36
+      },
+      {
+        "query": "australian labor",
+        "value": 21
+      },
+      {
+        "query": "labour australia",
+        "value": 17
+      },
+      {
+        "query": "labour party",
+        "value": 16
+      },
+      {
+        "query": "alp",
+        "value": 15
+      },
+      {
+        "query": "liberal or labour",
+        "value": 12
+      },
+      {
+        "query": "labor party australia",
+        "value": 12
+      },
+      {
+        "query": "albanese",
+        "value": 8
+      },
+      {
+        "query": "labor government",
+        "value": 8
+      },
+      {
+        "query": "labour party australia",
+        "value": 7
+      },
+      {
+        "query": "australian labour party",
+        "value": 7
+      },
+      {
+        "query": "liberal party australia",
+        "value": 6
+      },
+      {
+        "query": "labor policies",
+        "value": 5
+      },
+      {
+        "query": "labour vs liberal",
+        "value": 4
+      },
+      {
+        "query": "labour or labor",
+        "value": 4
+      },
+      {
+        "query": "australian liberal party",
+        "value": 4
+      },
+      {
+        "query": "labor vs liberal",
+        "value": 3
+      },
+      {
+        "query": "alp party",
+        "value": 3
+      },
+      {
+        "query": "how to vote labour",
+        "value": 1
+      },
+      {
+        "query": "is one nation liberal or labour",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "how to vote labour",
+        "value": 68300
+      },
+      {
+        "query": "is one nation liberal or labour",
+        "value": 43350
+      },
+      {
+        "query": "labor policies",
+        "value": 80
+      },
+      {
+        "query": "labour vs liberal",
+        "value": 50
+      },
+      {
+        "query": "labour or labor",
+        "value": 50
+      },
+      {
+        "query": "labor vs liberal",
+        "value": 50
+      }
+    ]
   },
   "LIB": {
     "top": [],
