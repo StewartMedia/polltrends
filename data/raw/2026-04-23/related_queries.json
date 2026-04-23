@@ -15,7 +15,7 @@
       },
       {
         "query": "liberal",
-        "value": 36
+        "value": 35
       },
       {
         "query": "australian labor",
@@ -34,6 +34,10 @@
         "value": 15
       },
       {
+        "query": "liberal or labour",
+        "value": 12
+      },
+      {
         "query": "labor government",
         "value": 8
       },
@@ -43,7 +47,7 @@
       },
       {
         "query": "labour party australia",
-        "value": 7
+        "value": 6
       },
       {
         "query": "liberal party australia",
@@ -74,26 +78,22 @@
         "value": 3
       },
       {
-        "query": "one nation policies",
-        "value": 1
+        "query": "one nation party",
+        "value": 3
       },
       {
-        "query": "sa election results",
+        "query": "one nation policies",
         "value": 1
       }
     ],
     "rising": [
       {
-        "query": "sa election results",
-        "value": 29000
-      },
-      {
         "query": "one nation policies",
-        "value": 450
+        "value": 500
       },
       {
         "query": "labour vs liberal",
-        "value": 110
+        "value": 100
       },
       {
         "query": "labor vs liberal",
@@ -106,6 +106,10 @@
       {
         "query": "labor or labour",
         "value": 60
+      },
+      {
+        "query": "one nation party",
+        "value": 50
       },
       {
         "query": "alp australia",
@@ -129,7 +133,7 @@
       },
       {
         "query": "liberal leadership",
-        "value": 12
+        "value": 11
       },
       {
         "query": "liberal party leader",
@@ -183,7 +187,7 @@
     "rising": [
       {
         "query": "liberal party spill",
-        "value": 147550
+        "value": 147050
       },
       {
         "query": "angus taylor liberal party",
@@ -223,7 +227,7 @@
       },
       {
         "query": "greens leader",
-        "value": 10
+        "value": 9
       },
       {
         "query": "one nation",
@@ -375,51 +379,51 @@
     "rising": [
       {
         "query": "one nation seats sa",
-        "value": 410400
+        "value": 410350
       },
       {
         "query": "one nation south australia seats",
-        "value": 215350
+        "value": 215450
       },
       {
         "query": "sa election one nation seats",
-        "value": 198500
+        "value": 198700
       },
       {
         "query": "how many seats did one nation win in sa",
-        "value": 108650
+        "value": 108900
       },
       {
         "query": "david farley one nation",
-        "value": 66550
+        "value": 66300
       },
       {
         "query": "south australian election results",
-        "value": 57050
+        "value": 57350
       },
       {
         "query": "how many seats did one nation win in sa election",
-        "value": 45400
+        "value": 45500
       },
       {
         "query": "david paton",
-        "value": 42350
+        "value": 42450
       },
       {
         "query": "did one nation win any seats in sa",
-        "value": 39650
+        "value": 39800
       },
       {
         "query": "david paton one nation",
-        "value": 39450
+        "value": 39500
       },
       {
         "query": "aoi baxter",
-        "value": 15250
+        "value": 15400
       },
       {
         "query": "liam alexander hall",
-        "value": 14150
+        "value": 14400
       },
       {
         "query": "sa election 2026",
