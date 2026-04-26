@@ -18,22 +18,6 @@
         "value": 36
       },
       {
-        "query": "labor australia",
-        "value": 27
-      },
-      {
-        "query": "australian labor",
-        "value": 21
-      },
-      {
-        "query": "labour australia",
-        "value": 18
-      },
-      {
-        "query": "labour party",
-        "value": 16
-      },
-      {
         "query": "alp",
         "value": 15
       },
@@ -44,14 +28,6 @@
       {
         "query": "liberal party",
         "value": 13
-      },
-      {
-        "query": "liberal or labour",
-        "value": 12
-      },
-      {
-        "query": "labor party australia",
-        "value": 12
       },
       {
         "query": "labor government",
@@ -74,10 +50,6 @@
         "value": 6
       },
       {
-        "query": "greens",
-        "value": 5
-      },
-      {
         "query": "labor or labour",
         "value": 4
       },
@@ -86,42 +58,22 @@
         "value": 4
       },
       {
-        "query": "liberal vs labour",
-        "value": 4
-      },
-      {
-        "query": "alp party",
-        "value": 4
-      },
-      {
         "query": "labor vs liberal",
         "value": 3
       },
       {
-        "query": "one nation party",
+        "query": "anthony albanese",
         "value": 3
+      },
+      {
+        "query": "one nation policies",
+        "value": 1
       }
     ],
     "rising": [
       {
-        "query": "alp membership",
-        "value": 40650
-      },
-      {
         "query": "one nation policies",
         "value": 250
-      },
-      {
-        "query": "how to vote labor",
-        "value": 250
-      },
-      {
-        "query": "sa election results",
-        "value": 200
-      },
-      {
-        "query": "one nation party",
-        "value": 80
       },
       {
         "query": "one nation",
@@ -132,28 +84,12 @@
         "value": 70
       },
       {
-        "query": "liberal policies",
-        "value": 70
-      },
-      {
         "query": "labor or labour",
-        "value": 50
-      },
-      {
-        "query": "liberal vs labour",
         "value": 50
       },
       {
         "query": "labor vs liberal",
         "value": 50
-      },
-      {
-        "query": "greens",
-        "value": 50
-      },
-      {
-        "query": "alp party",
-        "value": 40
       }
     ]
   },
@@ -235,7 +171,7 @@
       },
       {
         "query": "liberal immigration policy",
-        "value": 350
+        "value": 300
       },
       {
         "query": "liberal party review",
@@ -263,7 +199,7 @@
       },
       {
         "query": "greens party",
-        "value": 17
+        "value": 18
       },
       {
         "query": "australian greens",
@@ -302,6 +238,10 @@
         "value": 6
       },
       {
+        "query": "green",
+        "value": 5
+      },
+      {
         "query": "the greens leader",
         "value": 5
       },
@@ -335,21 +275,21 @@
       },
       {
         "query": "greens immigration policy",
-        "value": 0
+        "value": 1
       }
     ],
     "rising": [
       {
         "query": "how to vote greens",
-        "value": 256750
+        "value": 252350
       },
       {
         "query": "larissa waters",
-        "value": 89850
+        "value": 88300
       },
       {
         "query": "greens immigration policy",
-        "value": 41650
+        "value": 42700
       },
       {
         "query": "one nation",
@@ -376,20 +316,16 @@
         "value": 100
       },
       {
+        "query": "one nation australia",
+        "value": 17
+      },
+      {
         "query": "one nation sa",
         "value": 12
       },
       {
         "query": "one nation seats",
         "value": 10
-      },
-      {
-        "query": "one nation party",
-        "value": 8
-      },
-      {
-        "query": "sa election",
-        "value": 7
       },
       {
         "query": "sa election one nation",
@@ -401,10 +337,6 @@
       },
       {
         "query": "pauline hanson",
-        "value": 5
-      },
-      {
-        "query": "vote one nation",
         "value": 5
       },
       {
@@ -432,44 +364,52 @@
         "value": 4
       },
       {
-        "query": "south australia election",
-        "value": 4
-      },
-      {
-        "query": "south australia election one nation",
-        "value": 4
-      },
-      {
         "query": "one nation polls",
         "value": 3
-      },
-      {
-        "query": "one nation victoria",
-        "value": 3
-      },
-      {
-        "query": "one nation sa results",
-        "value": 3
-      },
-      {
-        "query": "one nation candidates",
-        "value": 3
-      },
-      {
-        "query": "one nation party australia",
-        "value": 2
-      },
-      {
-        "query": "sa election results",
-        "value": 2
       },
       {
         "query": "sa election one nation seats",
         "value": 2
       },
       {
-        "query": "sa election results one nation",
+        "query": "how many seats did one nation win",
         "value": 2
+      },
+      {
+        "query": "south australia election results",
+        "value": 2
+      },
+      {
+        "query": "how many seats did one nation win in sa",
+        "value": 1
+      },
+      {
+        "query": "cory bernardi",
+        "value": 1
+      },
+      {
+        "query": "did one nation win any seats",
+        "value": 1
+      },
+      {
+        "query": "sa election results 2026",
+        "value": 1
+      },
+      {
+        "query": "sa election results 2026 one nation",
+        "value": 1
+      },
+      {
+        "query": "how many seats did one nation win in south australia",
+        "value": 0
+      },
+      {
+        "query": "how many seats has one nation won in sa",
+        "value": 0
+      },
+      {
+        "query": "jason virgo one nation",
+        "value": 0
       }
     ],
     "rising": [
@@ -478,60 +418,44 @@
         "value": 411350
       },
       {
-        "query": "sa election results",
-        "value": 211700
-      },
-      {
-        "query": "sa election results one nation",
-        "value": 202500
-      },
-      {
-        "query": "one nation farrer",
-        "value": 140000
-      },
-      {
         "query": "south australia election results",
-        "value": 134350
+        "value": 134450
+      },
+      {
+        "query": "how many seats did one nation win in sa",
+        "value": 109700
       },
       {
         "query": "cory bernardi",
-        "value": 88250
+        "value": 88150
       },
       {
         "query": "did one nation win any seats",
-        "value": 86250
+        "value": 86350
+      },
+      {
+        "query": "sa election results 2026",
+        "value": 74500
       },
       {
         "query": "sa election results 2026 one nation",
-        "value": 69800
-      },
-      {
-        "query": "did one nation win any seats in sa",
-        "value": 39250
+        "value": 69850
       },
       {
         "query": "how many seats did one nation win in south australia",
-        "value": 37800
+        "value": 37650
       },
       {
         "query": "how many seats has one nation won in sa",
-        "value": 19300
+        "value": 19150
       },
       {
         "query": "jason virgo one nation",
-        "value": 18350
+        "value": 18050
       },
       {
-        "query": "one nation sa results",
-        "value": 2600
-      },
-      {
-        "query": "sa election",
-        "value": 2500
-      },
-      {
-        "query": "sa election 2026",
-        "value": 2000
+        "query": "liam alexander hall",
+        "value": 14500
       },
       {
         "query": "sa election one nation",
@@ -539,10 +463,6 @@
       },
       {
         "query": "how many seats did one nation win",
-        "value": 1250
-      },
-      {
-        "query": "south australia election one nation",
         "value": 1250
       },
       {
@@ -554,10 +474,6 @@
         "value": 1050
       },
       {
-        "query": "south australia election",
-        "value": 950
-      },
-      {
         "query": "one nation election results",
         "value": 600
       },
@@ -566,12 +482,12 @@
         "value": 250
       },
       {
-        "query": "vote one nation",
-        "value": 100
+        "query": "one nation policies",
+        "value": 90
       },
       {
-        "query": "one nation candidates",
-        "value": 90
+        "query": "one nation australia",
+        "value": 50
       }
     ]
   }
