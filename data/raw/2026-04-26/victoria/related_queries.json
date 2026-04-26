@@ -58,6 +58,10 @@
         "value": 5
       },
       {
+        "query": "alp australia",
+        "value": 5
+      },
+      {
         "query": "labour vs liberal",
         "value": 4
       },
@@ -78,14 +82,6 @@
         "value": 3
       },
       {
-        "query": "labor vs labour",
-        "value": 3
-      },
-      {
-        "query": "anthony albanese",
-        "value": 2
-      },
-      {
         "query": "one nation party",
         "value": 2
       },
@@ -98,18 +94,26 @@
         "value": 2
       },
       {
+        "query": "alp membership",
+        "value": 1
+      },
+      {
         "query": "labor party membership",
         "value": 1
       }
     ],
     "rising": [
       {
-        "query": "labor party membership",
-        "value": 56050
+        "query": "alp membership",
+        "value": 87950
       },
       {
-        "query": "julia gillard",
-        "value": 45550
+        "query": "labor party membership",
+        "value": 55550
+      },
+      {
+        "query": "alp australia",
+        "value": 190
       },
       {
         "query": "labor or labour",
@@ -121,11 +125,11 @@
       },
       {
         "query": "alp party",
-        "value": 50
+        "value": 60
       },
       {
         "query": "labour vs liberal",
-        "value": 40
+        "value": 50
       },
       {
         "query": "alp",
@@ -176,8 +180,12 @@
         "value": 5
       },
       {
-        "query": "labor party",
+        "query": "labour party",
         "value": 5
+      },
+      {
+        "query": "labor party",
+        "value": 4
       },
       {
         "query": "one nation",
@@ -207,7 +215,7 @@
     "rising": [
       {
         "query": "is pauline hanson liberal or labour",
-        "value": 38500
+        "value": 38400
       },
       {
         "query": "angus taylor",
@@ -239,7 +247,7 @@
       },
       {
         "query": "the greens party",
-        "value": 11
+        "value": 10
       },
       {
         "query": "greens leader",
@@ -258,15 +266,11 @@
         "value": 5
       },
       {
-        "query": "greens immigration policy",
-        "value": 0
+        "query": "greens policy",
+        "value": 4
       }
     ],
     "rising": [
-      {
-        "query": "greens immigration policy",
-        "value": 10600
-      },
       {
         "query": "one nation",
         "value": 140
@@ -340,11 +344,11 @@
         "value": 3
       },
       {
-        "query": "one nation policy",
+        "query": "one nation candidates",
         "value": 3
       },
       {
-        "query": "one nation candidates",
+        "query": "one nation policy",
         "value": 3
       },
       {
@@ -360,11 +364,11 @@
         "value": 2
       },
       {
-        "query": "sa election results",
+        "query": "one nation farrer",
         "value": 2
       },
       {
-        "query": "one nation farrer",
+        "query": "sa election results",
         "value": 2
       },
       {
@@ -379,63 +383,63 @@
     "rising": [
       {
         "query": "south australia one nation",
-        "value": 643900
+        "value": 643550
       },
       {
         "query": "sa election",
-        "value": 442300
+        "value": 441650
       },
       {
         "query": "one nation sa election",
-        "value": 416450
+        "value": 416050
       },
       {
         "query": "south australia election",
-        "value": 279150
+        "value": 279200
       },
       {
         "query": "sa election one nation seats",
-        "value": 186300
+        "value": 187050
       },
       {
         "query": "how many seats did one nation win",
-        "value": 181650
+        "value": 181550
       },
       {
         "query": "one nation farrer",
-        "value": 163950
+        "value": 165500
       },
       {
         "query": "sa election results one nation",
-        "value": 158800
+        "value": 160700
       },
       {
         "query": "south australia election results",
-        "value": 118950
+        "value": 120550
       },
       {
         "query": "did one nation win any seats",
-        "value": 74700
+        "value": 74200
       },
       {
         "query": "david farley",
-        "value": 61050
+        "value": 60650
       },
       {
         "query": "cory bernardi",
-        "value": 50150
+        "value": 51600
       },
       {
         "query": "how many seats did one nation win in sa election",
-        "value": 42900
+        "value": 42050
       },
       {
         "query": "chantelle thomas",
-        "value": 39350
+        "value": 40000
       },
       {
         "query": "farrer by election",
-        "value": 38700
+        "value": 39850
       },
       {
         "query": "one nation sa",
