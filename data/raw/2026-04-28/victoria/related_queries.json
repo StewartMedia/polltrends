@@ -22,11 +22,27 @@
         "value": 19
       },
       {
+        "query": "australian labor",
+        "value": 19
+      },
+      {
+        "query": "labour party",
+        "value": 14
+      },
+      {
         "query": "australian labor party",
         "value": 13
       },
       {
+        "query": "liberal or labour",
+        "value": 11
+      },
+      {
         "query": "liberal party",
+        "value": 10
+      },
+      {
+        "query": "labor party australia",
         "value": 10
       },
       {
@@ -54,6 +70,10 @@
         "value": 5
       },
       {
+        "query": "alp party",
+        "value": 4
+      },
+      {
         "query": "labour policies",
         "value": 3
       },
@@ -66,22 +86,42 @@
         "value": 3
       },
       {
-        "query": "is albanese labour",
+        "query": "labour vs labor",
+        "value": 3
+      },
+      {
+        "query": "alp australia",
+        "value": 3
+      },
+      {
+        "query": "is anthony albanese labour",
         "value": 2
       },
       {
-        "query": "labor vs liberal",
-        "value": 2
-      },
-      {
-        "query": "liberal party of australia",
+        "query": "alp membership",
         "value": 2
       }
     ],
     "rising": [
       {
         "query": "labour policies",
-        "value": 208500
+        "value": 204000
+      },
+      {
+        "query": "alp membership",
+        "value": 124400
+      },
+      {
+        "query": "labor party membership",
+        "value": 56400
+      },
+      {
+        "query": "jacinta allan",
+        "value": 9700
+      },
+      {
+        "query": "was john howard liberal or labour",
+        "value": 3750
       },
       {
         "query": "labor ministers",
@@ -89,7 +129,7 @@
       },
       {
         "query": "one nation",
-        "value": 120
+        "value": 130
       },
       {
         "query": "alp",
@@ -98,6 +138,10 @@
       {
         "query": "labor or labour",
         "value": 60
+      },
+      {
+        "query": "alp australia",
+        "value": 50
       }
     ]
   },
@@ -108,106 +152,18 @@
         "value": 100
       },
       {
-        "query": "liberal party",
-        "value": 73
-      },
-      {
-        "query": "liberal leader",
-        "value": 16
-      },
-      {
-        "query": "liberal party leader",
-        "value": 10
-      },
-      {
         "query": "liberal party of australia",
         "value": 8
       },
       {
-        "query": "australian liberal party",
-        "value": 7
-      },
-      {
-        "query": "angus taylor",
-        "value": 6
-      },
-      {
-        "query": "liberal party victoria",
-        "value": 5
-      },
-      {
-        "query": "leader of liberal party",
-        "value": 5
-      },
-      {
-        "query": "liberal leader australia",
-        "value": 5
-      },
-      {
-        "query": "labor party",
-        "value": 4
-      },
-      {
-        "query": "labour party",
-        "value": 4
-      },
-      {
-        "query": "one nation",
-        "value": 4
-      },
-      {
-        "query": "leader of the liberal party",
-        "value": 4
-      },
-      {
-        "query": "one nation party",
-        "value": 3
-      },
-      {
-        "query": "liberal party members",
+        "query": "liberal party spill",
         "value": 2
-      },
-      {
-        "query": "liberal party review",
-        "value": 2
-      },
-      {
-        "query": "liberal immigration policy",
-        "value": 1
-      },
-      {
-        "query": "tony abbott",
-        "value": 0
-      },
-      {
-        "query": "liberal party immigration policy",
-        "value": 0
       }
     ],
     "rising": [
       {
-        "query": "liberal party review",
-        "value": 187950
-      },
-      {
-        "query": "liberal immigration policy",
-        "value": 61550
-      },
-      {
-        "query": "tony abbott",
-        "value": 34750
-      },
-      {
-        "query": "liberal party immigration policy",
-        "value": 33400
-      },
-      {
-        "query": "angus taylor",
-        "value": 550
-      },
-      {
-        "query": "leader of the liberal party",
-        "value": 70
+        "query": "liberal party spill",
+        "value": 153300
       }
     ]
   },
@@ -244,7 +200,7 @@
       },
       {
         "query": "pauline hanson",
-        "value": 5
+        "value": 6
       },
       {
         "query": "one nation polling",
@@ -306,35 +262,35 @@
     "rising": [
       {
         "query": "sa election one nation seats",
-        "value": 190650
+        "value": 190550
       },
       {
         "query": "one nation south australia results",
-        "value": 157400
+        "value": 157450
       },
       {
         "query": "how many seats did one nation win in sa",
-        "value": 119650
+        "value": 119350
       },
       {
         "query": "cory bernardi",
-        "value": 71250
+        "value": 71750
       },
       {
         "query": "south australian election results",
-        "value": 60150
+        "value": 58350
       },
       {
         "query": "how many seats did one nation win in sa election",
-        "value": 56850
+        "value": 57000
       },
       {
         "query": "sa election results 2026",
-        "value": 56400
+        "value": 55250
       },
       {
         "query": "did one nation win any seats",
-        "value": 52950
+        "value": 53050
       },
       {
         "query": "one nation sa",
@@ -346,7 +302,7 @@
       },
       {
         "query": "how many seats did one nation win",
-        "value": 180
+        "value": 170
       },
       {
         "query": "one nation policies",
