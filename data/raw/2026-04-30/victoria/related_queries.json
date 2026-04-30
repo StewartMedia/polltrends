@@ -10,12 +10,20 @@
         "value": 38
       },
       {
+        "query": "liberal",
+        "value": 33
+      },
+      {
+        "query": "australian labor",
+        "value": 18
+      },
+      {
         "query": "alp",
         "value": 17
       },
       {
-        "query": "australian labor",
-        "value": 17
+        "query": "australian labour party",
+        "value": 6
       },
       {
         "query": "albanese",
@@ -26,74 +34,28 @@
         "value": 6
       },
       {
-        "query": "australian labour party",
-        "value": 5
-      },
-      {
-        "query": "alp party",
-        "value": 4
-      },
-      {
         "query": "labour vs liberal",
         "value": 3
       },
       {
+        "query": "alp party",
+        "value": 3
+      },
+      {
         "query": "labor policies",
-        "value": 2
+        "value": 3
       }
     ],
     "rising": [
       {
         "query": "alp",
-        "value": 40
+        "value": 50
       }
     ]
   },
   "LIB": {
-    "top": [
-      {
-        "query": "liberal",
-        "value": 100
-      },
-      {
-        "query": "liberal leader",
-        "value": 16
-      },
-      {
-        "query": "liberal leadership",
-        "value": 9
-      },
-      {
-        "query": "liberal party of australia",
-        "value": 7
-      },
-      {
-        "query": "angus taylor",
-        "value": 5
-      },
-      {
-        "query": "leader of liberal party",
-        "value": 4
-      },
-      {
-        "query": "liberal party spill",
-        "value": 1
-      }
-    ],
-    "rising": [
-      {
-        "query": "angus taylor",
-        "value": 350
-      },
-      {
-        "query": "liberal leadership",
-        "value": 90
-      },
-      {
-        "query": "liberal party spill",
-        "value": 80
-      }
-    ]
+    "top": [],
+    "rising": []
   },
   "GRN": {
     "top": [
@@ -103,7 +65,7 @@
       },
       {
         "query": "greens leader",
-        "value": 56
+        "value": 57
       },
       {
         "query": "the greens party",
@@ -111,18 +73,23 @@
       },
       {
         "query": "leader of the greens",
-        "value": 32
+        "value": 34
       },
       {
         "query": "one nation",
-        "value": 28
+        "value": 30
       },
       {
         "query": "greens senators",
         "value": 11
       }
     ],
-    "rising": []
+    "rising": [
+      {
+        "query": "one nation",
+        "value": 70
+      }
+    ]
   },
   "PHON": {
     "top": [
@@ -132,11 +99,11 @@
       },
       {
         "query": "one nation sa",
-        "value": 10
+        "value": 9
       },
       {
         "query": "one nation party",
-        "value": 9
+        "value": 8
       },
       {
         "query": "one nation policies",
@@ -144,38 +111,38 @@
       },
       {
         "query": "pauline hanson",
-        "value": 6
+        "value": 5
       },
       {
         "query": "sa election",
-        "value": 6
-      },
-      {
-        "query": "one nation polling",
         "value": 5
       },
       {
         "query": "pauline hanson one nation",
+        "value": 5
+      },
+      {
+        "query": "one nation polling",
         "value": 4
       },
       {
         "query": "one nation news",
-        "value": 4
+        "value": 3
       },
       {
         "query": "one nation polls",
         "value": 3
       },
       {
-        "query": "one nation candidates",
-        "value": 3
-      },
-      {
-        "query": "sa election results",
+        "query": "how many seats did one nation win",
         "value": 2
       },
       {
-        "query": "how many seats did one nation win",
+        "query": "one nation candidates",
+        "value": 2
+      },
+      {
+        "query": "sa election results",
         "value": 2
       },
       {
@@ -191,56 +158,55 @@
         "value": 1
       },
       {
-        "query": "did one nation win any seats in sa",
+        "query": "david paton one nation",
         "value": 0
       }
     ],
     "rising": [
       {
-        "query": "one nation sa",
-        "value": 869200
-      },
-      {
-        "query": "sa election results",
-        "value": 176350
+        "query": "sa election",
+        "value": 481500
       },
       {
         "query": "how many seats did one nation win",
-        "value": 170850
+        "value": 197000
       },
       {
         "query": "how many seats did one nation win in sa",
-        "value": 123800
+        "value": 108100
       },
       {
         "query": "david farley one nation",
-        "value": 64200
+        "value": 83350
       },
       {
         "query": "did one nation win any seats",
-        "value": 62800
+        "value": 75350
       },
       {
-        "query": "did one nation win any seats in sa",
-        "value": 30400
+        "query": "david paton one nation",
+        "value": 25550
       },
       {
-        "query": "sa election",
-        "value": 2150
+        "query": "one nation sa",
+        "value": 2850
+      },
+      {
+        "query": "sa election results",
+        "value": 400
       },
       {
         "query": "one nation candidates",
-        "value": 100
+        "value": 80
+      },
+      {
+        "query": "one nation policies",
+        "value": 50
       }
     ]
   },
   "AJP": {
-    "top": [
-      {
-        "query": "animal justice party",
-        "value": 100
-      }
-    ],
+    "top": [],
     "rising": []
   },
   "RSN": {
