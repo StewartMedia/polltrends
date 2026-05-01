@@ -14,6 +14,10 @@
         "value": 40
       },
       {
+        "query": "liberal",
+        "value": 34
+      },
+      {
         "query": "alp",
         "value": 16
       },
@@ -30,10 +34,6 @@
         "value": 7
       },
       {
-        "query": "albanese",
-        "value": 6
-      },
-      {
         "query": "labor government",
         "value": 6
       },
@@ -43,10 +43,6 @@
       },
       {
         "query": "australian labour party",
-        "value": 5
-      },
-      {
-        "query": "labor ministers",
         "value": 5
       },
       {
@@ -60,13 +56,13 @@
       {
         "query": "labour policies",
         "value": 2
+      },
+      {
+        "query": "pauline hanson",
+        "value": 2
       }
     ],
     "rising": [
-      {
-        "query": "labor ministers",
-        "value": 250
-      },
       {
         "query": "labor or labour",
         "value": 200
@@ -99,7 +95,7 @@
     "rising": [
       {
         "query": "liberal party spill",
-        "value": 96100
+        "value": 99050
       }
     ]
   },
@@ -179,6 +175,10 @@
         "value": 1
       },
       {
+        "query": "did one nation win any seats",
+        "value": 1
+      },
+      {
         "query": "cory bernardi",
         "value": 1
       },
@@ -194,35 +194,39 @@
     "rising": [
       {
         "query": "one nation sa",
-        "value": 908950
+        "value": 912850
       },
       {
         "query": "how many seats did one nation win",
-        "value": 193250
+        "value": 193900
       },
       {
         "query": "sa election one nation seats",
-        "value": 180150
+        "value": 181550
       },
       {
         "query": "south australia election results",
-        "value": 124200
+        "value": 125300
       },
       {
         "query": "how many seats did one nation win in sa",
-        "value": 122550
+        "value": 125150
+      },
+      {
+        "query": "did one nation win any seats",
+        "value": 79900
       },
       {
         "query": "cory bernardi",
-        "value": 60000
+        "value": 60950
       },
       {
         "query": "south australian election results",
-        "value": 55000
+        "value": 55050
       },
       {
         "query": "chantelle thomas",
-        "value": 35400
+        "value": 38350
       },
       {
         "query": "one nation south australia results",
@@ -234,7 +238,7 @@
       },
       {
         "query": "one nation policies",
-        "value": 50
+        "value": 60
       }
     ]
   },

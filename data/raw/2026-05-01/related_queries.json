@@ -35,7 +35,7 @@
       },
       {
         "query": "albanese",
-        "value": 8
+        "value": 7
       },
       {
         "query": "one nation",
@@ -68,10 +68,6 @@
       {
         "query": "labour policies",
         "value": 3
-      },
-      {
-        "query": "one nation policies",
-        "value": 1
       }
     ],
     "rising": [
@@ -86,10 +82,6 @@
       {
         "query": "one nation",
         "value": 80
-      },
-      {
-        "query": "one nation policies",
-        "value": 70
       }
     ]
   },
@@ -128,6 +120,10 @@
       {
         "query": "greens",
         "value": 100
+      },
+      {
+        "query": "the greens party australia",
+        "value": 5
       }
     ],
     "rising": []
@@ -188,7 +184,7 @@
       },
       {
         "query": "sa election one nation seats",
-        "value": 2
+        "value": 3
       },
       {
         "query": "how many seats did one nation win",
@@ -215,6 +211,10 @@
         "value": 1
       },
       {
+        "query": "sa election results 2026 one nation",
+        "value": 1
+      },
+      {
         "query": "south australian election results",
         "value": 1
       },
@@ -224,10 +224,6 @@
       },
       {
         "query": "how many seats did one nation win in south australia",
-        "value": 0
-      },
-      {
-        "query": "how many seats has one nation won in sa",
         "value": 0
       },
       {
@@ -238,27 +234,27 @@
     "rising": [
       {
         "query": "one nation seats sa",
-        "value": 426700
+        "value": 427400
       },
       {
         "query": "sa election one nation seats",
-        "value": 214600
+        "value": 215000
       },
       {
         "query": "how many seats did one nation win",
-        "value": 194900
+        "value": 195300
       },
       {
         "query": "one nation south australia results",
-        "value": 168300
+        "value": 168600
       },
       {
         "query": "south australia election results",
-        "value": 140350
+        "value": 140400
       },
       {
         "query": "cory bernardi",
-        "value": 90400
+        "value": 90500
       },
       {
         "query": "did one nation win any seats",
@@ -266,27 +262,27 @@
       },
       {
         "query": "sa election results 2026",
-        "value": 75050
+        "value": 75200
+      },
+      {
+        "query": "sa election results 2026 one nation",
+        "value": 74700
       },
       {
         "query": "south australian election results",
-        "value": 65650
+        "value": 65850
       },
       {
         "query": "how many seats did one nation win in sa election",
-        "value": 48000
+        "value": 47850
       },
       {
         "query": "how many seats did one nation win in south australia",
-        "value": 37250
-      },
-      {
-        "query": "how many seats has one nation won in sa",
-        "value": 18950
+        "value": 37350
       },
       {
         "query": "liam alexander hall",
-        "value": 16250
+        "value": 16000
       },
       {
         "query": "sa election one nation",
