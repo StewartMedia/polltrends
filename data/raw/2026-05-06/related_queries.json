@@ -1,1 +1,82 @@
-{}
+{
+  "ALP": {
+    "top": [],
+    "rising": []
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal leader",
+        "value": 17
+      },
+      {
+        "query": "liberal leadership",
+        "value": 10
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 7
+      },
+      {
+        "query": "angus taylor",
+        "value": 7
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 6
+      }
+    ],
+    "rising": [
+      {
+        "query": "angus taylor",
+        "value": 400
+      },
+      {
+        "query": "liberal leadership",
+        "value": 90
+      }
+    ]
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "greens australia",
+        "value": 100
+      },
+      {
+        "query": "the greens party",
+        "value": 50
+      },
+      {
+        "query": "greens leader",
+        "value": 44
+      },
+      {
+        "query": "one nation",
+        "value": 29
+      },
+      {
+        "query": "leader of the greens",
+        "value": 15
+      },
+      {
+        "query": "greens mp",
+        "value": 14
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation",
+        "value": 130
+      }
+    ]
+  },
+  "PHON": {
+    "top": [],
+    "rising": []
+  }
+}
