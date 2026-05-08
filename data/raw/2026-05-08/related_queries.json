@@ -8,8 +8,34 @@
     "rising": []
   },
   "GRN": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "the greens party",
+        "value": 100
+      },
+      {
+        "query": "greens leader",
+        "value": 83
+      },
+      {
+        "query": "one nation",
+        "value": 54
+      },
+      {
+        "query": "greens mp",
+        "value": 29
+      },
+      {
+        "query": "leader of the greens",
+        "value": 29
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation",
+        "value": 60
+      }
+    ]
   },
   "PHON": {
     "top": [],
