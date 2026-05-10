@@ -1,1 +1,134 @@
-{}
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labor",
+        "value": 100
+      },
+      {
+        "query": "labor party",
+        "value": 41
+      },
+      {
+        "query": "liberal",
+        "value": 36
+      },
+      {
+        "query": "australian labor",
+        "value": 19
+      },
+      {
+        "query": "labour australia",
+        "value": 17
+      },
+      {
+        "query": "alp",
+        "value": 15
+      },
+      {
+        "query": "albanese",
+        "value": 8
+      },
+      {
+        "query": "labour party australia",
+        "value": 7
+      },
+      {
+        "query": "australian labour party",
+        "value": 6
+      },
+      {
+        "query": "liberal party australia",
+        "value": 6
+      },
+      {
+        "query": "labor or labour",
+        "value": 4
+      },
+      {
+        "query": "liberal vs labour",
+        "value": 4
+      },
+      {
+        "query": "labour vs liberal",
+        "value": 4
+      },
+      {
+        "query": "alp party",
+        "value": 4
+      },
+      {
+        "query": "labor policies",
+        "value": 4
+      }
+    ],
+    "rising": [
+      {
+        "query": "labor or labour",
+        "value": 70
+      },
+      {
+        "query": "labour vs liberal",
+        "value": 50
+      },
+      {
+        "query": "labor policies",
+        "value": 50
+      },
+      {
+        "query": "liberal vs labour",
+        "value": 40
+      },
+      {
+        "query": "alp party",
+        "value": 40
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal leader",
+        "value": 16
+      },
+      {
+        "query": "liberal leadership",
+        "value": 10
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 7
+      },
+      {
+        "query": "angus taylor",
+        "value": 7
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 6
+      }
+    ],
+    "rising": [
+      {
+        "query": "angus taylor",
+        "value": 350
+      },
+      {
+        "query": "liberal leadership",
+        "value": 90
+      }
+    ]
+  },
+  "GRN": {
+    "top": [],
+    "rising": []
+  },
+  "PHON": {
+    "top": [],
+    "rising": []
+  }
+}
