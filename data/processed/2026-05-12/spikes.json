@@ -1,0 +1,100 @@
+[
+  {
+    "date": "2026-03-21",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 100,
+    "rolling_avg": 11.7,
+    "ratio": 8.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-09",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 55,
+    "rolling_avg": 7.0,
+    "ratio": 7.9,
+    "explanation": "\u2018Flame-haired Farage\u2019: The One Nation shockwave felt across the world",
+    "news": [
+      {
+        "title": "\u2018Flame-haired Farage\u2019: The One Nation shockwave felt across the world",
+        "source": "SMH.com.au",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQNFJLX0ZWRklnM1pyZk5UYU9vRWx5UE9CQURYZlNMeFR6dDEzbFFqekt5dUp2MXlvTjQ5c1h4WHRXZXNrd0k0MTVoajVTSXNJNVlXWUhmbmo3R21nZVd2aDdIOFg2OWM4M2VQZTRTLTJGb2JNQWFvbVJFSFBhMm1OWWlWMkJXUllqSWcwc1ZhTTRHNDdrNHh2Szl2Vkc4b2xjRnVWYmY5RG9CN1JOcHhZYkxDOGc4eHZTUldDVjZZdjVrVl80TkU0dk56MC1oSVVCbFR0b0t2QTVZQVE?oc=5",
+        "date": "2026-05-11"
+      },
+      {
+        "title": "'A real mess': Pauline Hanson reveals reason for One Nation surge as Joyce highlights next target",
+        "source": "9News",
+        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOMTQ3WWNpUDBOejBhYnZpR3pUVGVKRzFfREllai1VTU5DLVVrdXFNVzZSQjF4eDJxbnhHMUpGb3NEOVd2RnlhVDhrWXFXYnRnT2xoM2hPMmpFZnF1QWt4UGZSTEVJSFBkSHNwV3BVQkVSaXkyQVdvVlFMMUZhZ05ETVg3OEdCSVBKRFJkVFRzRE56WFgyamtGT3d1M3Vzdk1lbXZzbTJ5UjZlelg4SjJPRzJDYWJ1c2FMRVFwMlZaWi1RY3V6R3FJM1ltM0hKYUdmYVBEZnpmN0ZNUG1QZWtma0VUQlpmRG9FYkNEb2hUYm3SAXhBVV95cUxNVU9CUGl1RGIyTHlaQV9yN0pIekRPenA4UmtXb2FhSzFmd3Y0YzlRZ0JMOGw0WTAxM2RVUlJlQkl1MjJMUGhPMFR6VkRxbmFHZjVGdER2UzJ2amF0Mk5WR1VXckhxaW9JYVd4TEYyQng3WjVjM2Rub2w?oc=5",
+        "date": "2026-05-11"
+      },
+      {
+        "title": "Budget to include extra $2bn for infrastructure \u2013 as it happened",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxOQVlvcnNUa1huQ1dpdHZ4aDV1V2dDM2JUX3pXRURlTU1XemRpaEk4QzFzRUI3cWQtZUduX21VNENTaXduM09lZGd3bGlhN1JWM2ZsbWVaSTVKT0pabVdyeFU0SmpBWXpSVXFiWm5Wa21nOTdUUlVaOWU2am5uUWtySDJQTmFLcERybXdDWjA3bGNFNi1velVSVkctcy1Ua2dFNmFJaGMtVGE2bjNZZGNySHlXRy0wSFJyeTZjdGtqdnZmUzhSU1VBbHpjOXJPek9kRF8xa3F4cWUwd0hIS3ZpOHR1M2FUSG55WGMweDBHcHBxSS1Bc1hEUnVqLVE2TjFGYm1mU0xNWXhoZ2N2UVRxMmQ2WGpKaWNaTHJTMEVLbGhTUmVhbVMtNm5CWWNZbVFvaHNjODJVMzN1aEpGV0JKcFh3?oc=5",
+        "date": "2026-05-10"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-22",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 76,
+    "rolling_avg": 25.0,
+    "ratio": 3.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-21",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 3.4,
+    "ratio": 2.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 40,
+    "rolling_avg": 13.6,
+    "ratio": 2.9,
+    "explanation": "\u2018Flame-haired Farage\u2019: The One Nation shockwave felt across the world",
+    "news": [
+      {
+        "title": "\u2018Flame-haired Farage\u2019: The One Nation shockwave felt across the world",
+        "source": "SMH.com.au",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQNFJLX0ZWRklnM1pyZk5UYU9vRWx5UE9CQURYZlNMeFR6dDEzbFFqekt5dUp2MXlvTjQ5c1h4WHRXZXNrd0k0MTVoajVTSXNJNVlXWUhmbmo3R21nZVd2aDdIOFg2OWM4M2VQZTRTLTJGb2JNQWFvbVJFSFBhMm1OWWlWMkJXUllqSWcwc1ZhTTRHNDdrNHh2Szl2Vkc4b2xjRnVWYmY5RG9CN1JOcHhZYkxDOGc4eHZTUldDVjZZdjVrVl80TkU0dk56MC1oSVVCbFR0b0t2QTVZQVE?oc=5",
+        "date": "2026-05-11"
+      },
+      {
+        "title": "'A real mess': Pauline Hanson reveals reason for One Nation surge as Joyce highlights next target",
+        "source": "9News",
+        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOMTQ3WWNpUDBOejBhYnZpR3pUVGVKRzFfREllai1VTU5DLVVrdXFNVzZSQjF4eDJxbnhHMUpGb3NEOVd2RnlhVDhrWXFXYnRnT2xoM2hPMmpFZnF1QWt4UGZSTEVJSFBkSHNwV3BVQkVSaXkyQVdvVlFMMUZhZ05ETVg3OEdCSVBKRFJkVFRzRE56WFgyamtGT3d1M3Vzdk1lbXZzbTJ5UjZlelg4SjJPRzJDYWJ1c2FMRVFwMlZaWi1RY3V6R3FJM1ltM0hKYUdmYVBEZnpmN0ZNUG1QZWtma0VUQlpmRG9FYkNEb2hUYm3SAXhBVV95cUxNVU9CUGl1RGIyTHlaQV9yN0pIekRPenA4UmtXb2FhSzFmd3Y0YzlRZ0JMOGw0WTAxM2RVUlJlQkl1MjJMUGhPMFR6VkRxbmFHZjVGdER2UzJ2amF0Mk5WR1VXckhxaW9JYVd4TEYyQng3WjVjM2Rub2w?oc=5",
+        "date": "2026-05-11"
+      },
+      {
+        "title": "Taylor has a way out for conservative politics with Hanson",
+        "source": "The Australian",
+        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQQk95SDk0THpsRWc0Y1ViRDVQbE5zTDUtOFRwYjZxQlpYeDA2WUF3eDN5QldQRV9YQ05oMUlhc0VBcDFaQ0lrUTY5cTFUME1xSEJqbDh1LUZTVlhJSURPRTZoMVFTaFNEVnpacHd6Mm1KbXVFYllrNGZ3ZE1kN3V3MjR6dzJfME5LWUs1cktSRi1IdHhzX00zZHBYNnpzTHpmYnFJdFBHSFRma1Y5UTlkeXh6U1NZX1ZzM3FEaHpMNHhsLUtjY2c5Nmd3V3Z6R0E4ZThNenpTeUxmVWlSSTJ5eEtMRXRtTXFvYmFOcHZuOUVhRlYtREw0bjBmREHSAYICQVVfeXFMT1NaWmc2MW9mMW5abTh6TnRhUFdFZlJNcXlNS2Jzc0pzRVQ3dG1sNDUxYU53SDZOYVNMMjlFZEpBejA0VzJDcGxNWEI0MTNGbW5rNDItakNoMFVuaHpmYlprWE9IVzZaWUtZV3dQRUpjUUNjM0JXVGcyY21lZWpKNlUzUnN4THdEQnoteXpua0RhdmxQRUhza0xiTlV1Mm1qNkI5S2NDakp2S2dkMThXdU9PYlRUd0t3YWpBR25udjBaQWhjVDFwTGVKaWxmZGlvcEZacUtneFprVmIwd0VoX1dpMHY1LTh2Q1RBY0Q0UnhkWjY3ZEhfYUl5cmwxeVBmLXR3?oc=5",
+        "date": "2026-05-12"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-20",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 25,
+    "rolling_avg": 8.9,
+    "ratio": 2.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]
