@@ -1,10 +1,77 @@
 {
   "ALP": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "labor",
+        "value": 100
+      },
+      {
+        "query": "labor party",
+        "value": 36
+      },
+      {
+        "query": "alp",
+        "value": 17
+      },
+      {
+        "query": "albanese",
+        "value": 7
+      },
+      {
+        "query": "labour party australia",
+        "value": 6
+      },
+      {
+        "query": "australian labour party",
+        "value": 5
+      },
+      {
+        "query": "alp party",
+        "value": 4
+      },
+      {
+        "query": "liberal vs labour",
+        "value": 3
+      }
+    ],
+    "rising": [
+      {
+        "query": "alp",
+        "value": 80
+      },
+      {
+        "query": "alp party",
+        "value": 40
+      }
+    ]
   },
   "LIB": {
-    "top": [],
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal leader",
+        "value": 18
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 8
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 6
+      },
+      {
+        "query": "angus taylor",
+        "value": 5
+      },
+      {
+        "query": "liberal leadership",
+        "value": 2
+      }
+    ],
     "rising": []
   },
   "GRN": {
@@ -19,14 +86,19 @@
       },
       {
         "query": "one nation",
-        "value": 47
+        "value": 48
       },
       {
         "query": "leader of the greens",
-        "value": 43
+        "value": 42
       }
     ],
-    "rising": []
+    "rising": [
+      {
+        "query": "one nation",
+        "value": 40
+      }
+    ]
   },
   "PHON": {
     "top": [
@@ -101,32 +173,40 @@
       {
         "query": "sa election results 2026",
         "value": 1
+      },
+      {
+        "query": "did one nation win any seats in sa",
+        "value": 0
       }
     ],
     "rising": [
       {
         "query": "sa election",
-        "value": 442100
+        "value": 444150
       },
       {
         "query": "how many seats did one nation win",
-        "value": 207350
+        "value": 207300
       },
       {
         "query": "david farley one nation",
-        "value": 188200
+        "value": 184900
       },
       {
         "query": "how many seats did one nation win in sa",
-        "value": 127750
+        "value": 127950
       },
       {
         "query": "did one nation win any seats",
-        "value": 60900
+        "value": 62400
       },
       {
         "query": "sa election results 2026",
-        "value": 58200
+        "value": 59150
+      },
+      {
+        "query": "did one nation win any seats in sa",
+        "value": 26700
       },
       {
         "query": "one nation sa",
