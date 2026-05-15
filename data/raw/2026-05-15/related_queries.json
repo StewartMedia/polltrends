@@ -102,11 +102,11 @@
       },
       {
         "query": "greens leader",
-        "value": 84
+        "value": 85
       },
       {
         "query": "one nation",
-        "value": 57
+        "value": 58
       },
       {
         "query": "leader of the greens",
@@ -135,7 +135,7 @@
         "value": 12
       },
       {
-        "query": "one nation south australia",
+        "query": "south australia one nation",
         "value": 9
       },
       {
@@ -156,7 +156,11 @@
       },
       {
         "query": "one nation seats sa",
-        "value": 5
+        "value": 4
+      },
+      {
+        "query": "election results",
+        "value": 4
       },
       {
         "query": "what is one nation",
@@ -218,35 +222,35 @@
     "rising": [
       {
         "query": "how many seats did one nation win",
-        "value": 183650
+        "value": 184500
       },
       {
         "query": "david farley one nation",
-        "value": 174050
+        "value": 164900
       },
       {
         "query": "how many seats did one nation win in sa",
-        "value": 102250
+        "value": 102650
       },
       {
         "query": "did one nation win any seats",
-        "value": 79650
+        "value": 80000
       },
       {
         "query": "sa election results 2026",
-        "value": 70900
+        "value": 71300
       },
       {
         "query": "sa election results 2026 one nation",
-        "value": 68200
+        "value": 68950
       },
       {
         "query": "david paton one nation",
-        "value": 39050
+        "value": 39250
       },
       {
         "query": "liam alexander hall",
-        "value": 15200
+        "value": 15300
       },
       {
         "query": "one nation seats sa",
@@ -257,11 +261,15 @@
         "value": 1200
       },
       {
+        "query": "election results",
+        "value": 950
+      },
+      {
         "query": "sa one nation",
         "value": 750
       },
       {
-        "query": "one nation south australia",
+        "query": "south australia one nation",
         "value": 400
       },
       {
