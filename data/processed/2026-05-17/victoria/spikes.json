@@ -1,0 +1,113 @@
+[
+  {
+    "date": "2026-03-21",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 100,
+    "rolling_avg": 8.0,
+    "ratio": 12.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-21",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 11,
+    "rolling_avg": 1.6,
+    "ratio": 7.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-09",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 70,
+    "rolling_avg": 10.3,
+    "ratio": 6.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-22",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 92,
+    "rolling_avg": 21.6,
+    "ratio": 4.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 56,
+    "rolling_avg": 17.7,
+    "ratio": 3.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-04-16",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 11,
+    "rolling_avg": 4.7,
+    "ratio": 2.3,
+    "explanation": "\u2018A One Nation hunting ground\u2019: Labor could be in serious trouble in Victoria",
+    "news": [
+      {
+        "title": "\u2018A One Nation hunting ground\u2019: Labor could be in serious trouble in Victoria",
+        "source": "Crikey",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZk1hVnM3TXd2TGxVaEFrTU9tMWdhSEtVNEVRZ0ZIdU5LaC1CbzNxRXZIcmpsZm5ZSk4xZk9qVkF4X01TdW9iUlA3c05kc2cwLUhHSld6azY0TnB6R1FQcHlxTlZ0WEliQ0QtcW9rTDNzT3UtNDhuMHZTYVhROFM1ejU0ZWdjeFNtbHVDUGtnaFFCaHZFTUMwMA?oc=5",
+        "date": "2026-04-14"
+      }
+    ]
+  },
+  {
+    "date": "2026-05-02",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 18,
+    "rolling_avg": 7.9,
+    "ratio": 2.3,
+    "explanation": "The Liberals stared down One Nation in Nepean \u2013 but they shouldn\u2019t be popping champagne just yet",
+    "news": [
+      {
+        "title": "The Liberals stared down One Nation in Nepean \u2013 but they shouldn\u2019t be popping champagne just yet",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPSGVfaXA1WmhrWUM0R0VldTEzNFBHUWFPYWFpaDNUSkpqMkVrdDQ3NGh5NE1qMEpiNmRURldrUkx6RjdhS1hheFo2T0lodnZXaDE1R1B6VWh2YlkxQnQ5cXdkSXJiU004OWJhU05VY1Z1YnRyRGVKQXFCLUwxeVJLeUVZUGR3dlV1cEltbDZRTjIxQ05FcmlJUkx4enRSd1dJQ0k3M2V4X0pjTndKQk5mNEpVUEhZMWFxY0lJbHp6TnN2RmU0YjY0RlMtYmxvdjlXYXFxLWZHd28?oc=5",
+        "date": "2026-05-03"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-20",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 14,
+    "rolling_avg": 6.7,
+    "ratio": 2.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-04-18",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 13,
+    "rolling_avg": 6.3,
+    "ratio": 2.1,
+    "explanation": "Don\u2019t think there\u2019s no support for Pauline Hanson in a seat like Nepean",
+    "news": [
+      {
+        "title": "Don\u2019t think there\u2019s no support for Pauline Hanson in a seat like Nepean",
+        "source": "Crikey",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPN29Pc01iLVEzUEtNTk8zdE1adGlxRmdzcGs1b0J5bHFIeUFfTWlMUnZrc1g2VUJYeGJHUTFtb2djV2s1YmtpQlRKck1jTnhmNHU5Y0NyaGhja2t6UGt1eUtKNHhZVEFkdUgyR2pUTE90dlRMQ08tbmpKaVo0WTZyZHRjdllMVjJUaFd3dlc4SVJlQjNxUVE?oc=5",
+        "date": "2026-04-20"
+      }
+    ]
+  }
+]
