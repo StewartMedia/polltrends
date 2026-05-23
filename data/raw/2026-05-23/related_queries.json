@@ -7,7 +7,7 @@
       },
       {
         "query": "labor party",
-        "value": 80
+        "value": 78
       },
       {
         "query": "alp",
@@ -19,7 +19,7 @@
       },
       {
         "query": "liberal party",
-        "value": 21
+        "value": 20
       },
       {
         "query": "labor government",
@@ -31,7 +31,7 @@
       },
       {
         "query": "one nation",
-        "value": 14
+        "value": 13
       },
       {
         "query": "australian labour party",
@@ -39,7 +39,7 @@
       },
       {
         "query": "liberal party australia",
-        "value": 11
+        "value": 10
       },
       {
         "query": "labor policies",
@@ -60,7 +60,7 @@
       },
       {
         "query": "the liberal party",
-        "value": 28
+        "value": 29
       },
       {
         "query": "liberal party of australia",
@@ -99,7 +99,7 @@
       },
       {
         "query": "one nation australia",
-        "value": 15
+        "value": 16
       },
       {
         "query": "sa one nation",
@@ -111,7 +111,7 @@
       },
       {
         "query": "one nation south australia",
-        "value": 8
+        "value": 9
       },
       {
         "query": "one nation party",
@@ -120,6 +120,10 @@
       {
         "query": "sa election",
         "value": 7
+      },
+      {
+        "query": "sa election one nation",
+        "value": 6
       },
       {
         "query": "one nation win",
@@ -147,6 +151,10 @@
       },
       {
         "query": "one nation seats sa",
+        "value": 4
+      },
+      {
+        "query": "election results",
         "value": 4
       },
       {
@@ -184,52 +192,44 @@
       {
         "query": "one nation seat",
         "value": 3
-      },
-      {
-        "query": "sa election results",
-        "value": 2
-      },
-      {
-        "query": "sa election one nation seats",
-        "value": 2
       }
     ],
     "rising": [
       {
         "query": "sa election results",
-        "value": 203700
+        "value": 203800
       },
       {
         "query": "how many seats did one nation win",
-        "value": 186900
+        "value": 187000
       },
       {
         "query": "david farley one nation",
-        "value": 177900
+        "value": 176950
       },
       {
         "query": "one nation south australia results",
-        "value": 159450
+        "value": 159700
       },
       {
         "query": "south australia election results",
-        "value": 130450
+        "value": 130400
       },
       {
         "query": "how many seats did one nation win in sa",
-        "value": 104800
+        "value": 104700
       },
       {
         "query": "sa election results 2026 one nation",
-        "value": 70800
+        "value": 70600
       },
       {
         "query": "south australian election results",
-        "value": 59750
+        "value": 59900
       },
       {
         "query": "david paton",
-        "value": 38450
+        "value": 38200
       },
       {
         "query": "how many seats has one nation won",
@@ -237,11 +237,11 @@
       },
       {
         "query": "how many seats did one nation win in south australia",
-        "value": 34500
+        "value": 34450
       },
       {
         "query": "one nation farrer by-election prediction",
-        "value": 22550
+        "value": 22200
       },
       {
         "query": "one nation seats sa",
@@ -249,11 +249,11 @@
       },
       {
         "query": "farrer electorate map",
-        "value": 4600
+        "value": 4650
       },
       {
         "query": "david farley",
-        "value": 3650
+        "value": 3600
       },
       {
         "query": "sa election one nation seats",
@@ -264,8 +264,12 @@
         "value": 1050
       },
       {
-        "query": "farrer",
+        "query": "sa election one nation",
         "value": 1050
+      },
+      {
+        "query": "farrer",
+        "value": 1000
       },
       {
         "query": "sa election",
@@ -274,6 +278,10 @@
       {
         "query": "south australia election",
         "value": 950
+      },
+      {
+        "query": "election results",
+        "value": 900
       },
       {
         "query": "one nation election results",
@@ -286,14 +294,6 @@
       {
         "query": "sa one nation",
         "value": 600
-      },
-      {
-        "query": "one nation results",
-        "value": 350
-      },
-      {
-        "query": "one nation win",
-        "value": 300
       }
     ]
   }
