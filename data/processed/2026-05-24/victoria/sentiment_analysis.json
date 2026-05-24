@@ -1,13 +1,13 @@
 {
   "ALP": {
     "party": "Labor",
-    "queries_analysed": 13,
+    "queries_analysed": 12,
     "sentiment_counts": {
       "positive": 0,
-      "negative": 2,
+      "negative": 1,
       "neutral": 11
     },
-    "sentiment_score": -0.15,
+    "sentiment_score": -0.08,
     "classified_queries": [
       {
         "query": "labour",
@@ -30,15 +30,15 @@
         "sentiment": "neutral"
       },
       {
-        "query": "labor government",
+        "query": "labour party australia",
         "sentiment": "neutral"
       },
       {
-        "query": "albanese",
-        "sentiment": "negative"
+        "query": "one nation",
+        "sentiment": "neutral"
       },
       {
-        "query": "one nation",
+        "query": "labor government",
         "sentiment": "neutral"
       },
       {
@@ -46,30 +46,26 @@
         "sentiment": "neutral"
       },
       {
-        "query": "labor policies",
-        "sentiment": "neutral"
+        "query": "albanese",
+        "sentiment": "negative"
       },
       {
         "query": "liberal party of australia",
         "sentiment": "neutral"
       },
       {
-        "query": "is albanese labour",
-        "sentiment": "negative"
-      },
-      {
-        "query": "labour policies",
+        "query": "labor policies",
         "sentiment": "neutral"
       }
     ]
   },
   "LIB": {
     "party": "Liberal",
-    "queries_analysed": 5,
+    "queries_analysed": 4,
     "sentiment_counts": {
       "positive": 0,
       "negative": 0,
-      "neutral": 5
+      "neutral": 4
     },
     "sentiment_score": 0.0,
     "classified_queries": [
@@ -83,10 +79,6 @@
       },
       {
         "query": "liberal party of australia",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "labor",
         "sentiment": "neutral"
       },
       {
@@ -115,14 +107,18 @@
     "party": "One Nation",
     "queries_analysed": 38,
     "sentiment_counts": {
-      "positive": 5,
+      "positive": 6,
       "negative": 0,
-      "neutral": 33
+      "neutral": 32
     },
-    "sentiment_score": 0.13,
+    "sentiment_score": 0.16,
     "classified_queries": [
       {
         "query": "one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation election",
         "sentiment": "neutral"
       },
       {
@@ -138,15 +134,11 @@
         "sentiment": "neutral"
       },
       {
-        "query": "one nation south australia",
-        "sentiment": "neutral"
-      },
-      {
         "query": "one nation party",
         "sentiment": "neutral"
       },
       {
-        "query": "sa election",
+        "query": "one nation victoria",
         "sentiment": "neutral"
       },
       {
@@ -154,11 +146,15 @@
         "sentiment": "positive"
       },
       {
+        "query": "one nation south australia",
+        "sentiment": "neutral"
+      },
+      {
         "query": "one nation policies",
         "sentiment": "neutral"
       },
       {
-        "query": "one nation results",
+        "query": "one nation farrer",
         "sentiment": "neutral"
       },
       {
@@ -170,28 +166,12 @@
         "sentiment": "neutral"
       },
       {
-        "query": "one nation farrer",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "one nation seats sa",
-        "sentiment": "neutral"
-      },
-      {
         "query": "what is one nation",
         "sentiment": "neutral"
       },
       {
-        "query": "election results",
+        "query": "sa election",
         "sentiment": "neutral"
-      },
-      {
-        "query": "one nation election results",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "one nation news",
-        "sentiment": "positive"
       },
       {
         "query": "pauline hanson one nation",
@@ -202,15 +182,11 @@
         "sentiment": "neutral"
       },
       {
+        "query": "one nation news",
+        "sentiment": "positive"
+      },
+      {
         "query": "south australia election",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "south australia election one nation",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "one nation victoria",
         "sentiment": "neutral"
       },
       {
@@ -218,51 +194,15 @@
         "sentiment": "neutral"
       },
       {
-        "query": "sa election results",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "sa election one nation seats",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "david farley",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "david farley one nation",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "one nation south australia results",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "how many seats did one nation win in sa",
+        "query": "one nation policy",
         "sentiment": "positive"
       },
       {
-        "query": "south australian election results",
+        "query": "one nation polls",
         "sentiment": "neutral"
       },
       {
-        "query": "how many seats has one nation won",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "how many seats did one nation win in sa election",
-        "sentiment": "positive"
-      },
-      {
-        "query": "one nation farrer by-election prediction",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "farrer by election results",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "farrer electorate map",
+        "query": "one nation candidates",
         "sentiment": "neutral"
       },
       {
@@ -270,9 +210,94 @@
         "sentiment": "positive"
       },
       {
+        "query": "david farley",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "sa election results one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "sa election one nation seats",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "sa election results",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation south australia results",
+        "sentiment": "neutral"
+      },
+      {
         "query": "south australia election results",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "how many seats did one nation win in sa",
+        "sentiment": "positive"
+      },
+      {
+        "query": "cory bernardi",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "sean black",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "cory bernardi one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "how many seats did one nation win in sa election",
+        "sentiment": "positive"
+      },
+      {
+        "query": "angus taylor",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation farrer by-election prediction",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "david farley one nation",
         "sentiment": "neutral"
       }
     ]
+  },
+  "AJP": {
+    "party": "Animal Justice",
+    "queries_analysed": 0,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": []
+  },
+  "RSN": {
+    "party": "Reason",
+    "queries_analysed": 0,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": []
+  },
+  "LDP": {
+    "party": "Lib Dems",
+    "queries_analysed": 0,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": []
   }
 }
