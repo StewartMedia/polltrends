@@ -4,8 +4,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 8.4,
-    "ratio": 11.9,
+    "rolling_avg": 7.9,
+    "ratio": 12.7,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -13,9 +13,9 @@
     "date": "2026-05-09",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 83,
-    "rolling_avg": 11.0,
-    "ratio": 7.5,
+    "value": 84,
+    "rolling_avg": 11.3,
+    "ratio": 7.4,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -24,8 +24,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 88,
-    "rolling_avg": 22.0,
-    "ratio": 4.0,
+    "rolling_avg": 21.4,
+    "ratio": 4.1,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -33,19 +33,9 @@
     "date": "2026-05-10",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 65,
-    "rolling_avg": 20.3,
+    "value": 66,
+    "rolling_avg": 20.7,
     "ratio": 3.2,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-03-20",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 16,
-    "rolling_avg": 6.1,
-    "ratio": 2.6,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -54,8 +44,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 13,
-    "rolling_avg": 5.4,
-    "ratio": 2.4,
+    "rolling_avg": 4.3,
+    "ratio": 3.0,
     "explanation": "\u2018A One Nation hunting ground\u2019: Labor could be in serious trouble in Victoria",
     "news": [
       {
@@ -67,19 +57,29 @@
     ]
   },
   {
-    "date": "2026-05-02",
+    "date": "2026-03-20",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 18,
-    "rolling_avg": 8.6,
-    "ratio": 2.1,
-    "explanation": "The Liberals stared down One Nation in Nepean \u2013 but they shouldn\u2019t be popping champagne just yet",
+    "value": 14,
+    "rolling_avg": 5.9,
+    "ratio": 2.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-07",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 12,
+    "rolling_avg": 5.9,
+    "ratio": 2.0,
+    "explanation": "One Nation Victoria powering ahead",
     "news": [
       {
-        "title": "The Liberals stared down One Nation in Nepean \u2013 but they shouldn\u2019t be popping champagne just yet",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPSGVfaXA1WmhrWUM0R0VldTEzNFBHUWFPYWFpaDNUSkpqMkVrdDQ3NGh5NE1qMEpiNmRURldrUkx6RjdhS1hheFo2T0lodnZXaDE1R1B6VWh2YlkxQnQ5cXdkSXJiU004OWJhU05VY1Z1YnRyRGVKQXFCLUwxeVJLeUVZUGR3dlV1cEltbDZRTjIxQ05FcmlJUkx4enRSd1dJQ0k3M2V4X0pjTndKQk5mNEpVUEhZMWFxY0lJbHp6TnN2RmU0YjY0RlMtYmxvdjlXYXFxLWZHd28?oc=5",
-        "date": "2026-05-03"
+        "title": "One Nation Victoria powering ahead",
+        "source": "Pauline Hanson's One Nation Party",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE96cjJJLWpzdzg4OVk4a1dGWGZLT0NzZTdhelBQa1l3WS1reFJoT0NsbHRFcXdWN2dUVW1vY2x3cTNSbWNnWk05S0dsMG9DdGxuM2kzTi11anhLcWZJSEZtaXZB?oc=5",
+        "date": "2026-03-06"
       }
     ]
   }
