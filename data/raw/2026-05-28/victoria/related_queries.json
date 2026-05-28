@@ -1,0 +1,337 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labor",
+        "value": 100
+      },
+      {
+        "query": "labour",
+        "value": 47
+      },
+      {
+        "query": "labor party",
+        "value": 36
+      },
+      {
+        "query": "labour australia",
+        "value": 15
+      },
+      {
+        "query": "alp",
+        "value": 13
+      },
+      {
+        "query": "labour party",
+        "value": 13
+      },
+      {
+        "query": "liberal party",
+        "value": 10
+      },
+      {
+        "query": "australian labor party",
+        "value": 9
+      },
+      {
+        "query": "labor party australia",
+        "value": 9
+      },
+      {
+        "query": "labor government",
+        "value": 7
+      },
+      {
+        "query": "one nation",
+        "value": 6
+      },
+      {
+        "query": "labour or labor",
+        "value": 4
+      },
+      {
+        "query": "greens",
+        "value": 4
+      },
+      {
+        "query": "australian labour party",
+        "value": 4
+      },
+      {
+        "query": "alp party",
+        "value": 2
+      },
+      {
+        "query": "alp victoria",
+        "value": 2
+      },
+      {
+        "query": "jim chalmers",
+        "value": 2
+      },
+      {
+        "query": "negative gearing",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "alp victoria",
+        "value": 152300
+      },
+      {
+        "query": "jim chalmers",
+        "value": 142850
+      },
+      {
+        "query": "negative gearing",
+        "value": 65150
+      },
+      {
+        "query": "labour or labor",
+        "value": 120
+      },
+      {
+        "query": "one nation",
+        "value": 80
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal leader",
+        "value": 14
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 10
+      },
+      {
+        "query": "angus taylor",
+        "value": 4
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 4
+      },
+      {
+        "query": "liberal leadership",
+        "value": 2
+      }
+    ],
+    "rising": []
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      },
+      {
+        "query": "the greens",
+        "value": 35
+      },
+      {
+        "query": "the greens party",
+        "value": 8
+      },
+      {
+        "query": "leader of the greens",
+        "value": 3
+      },
+      {
+        "query": "greens senators",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "greens senators",
+        "value": 27200
+      }
+    ]
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation australia",
+        "value": 15
+      },
+      {
+        "query": "one nation sa",
+        "value": 9
+      },
+      {
+        "query": "one nation seats",
+        "value": 9
+      },
+      {
+        "query": "one nation party",
+        "value": 8
+      },
+      {
+        "query": "one nation victoria",
+        "value": 8
+      },
+      {
+        "query": "one nation win",
+        "value": 7
+      },
+      {
+        "query": "south australia one nation",
+        "value": 7
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "farrer",
+        "value": 5
+      },
+      {
+        "query": "one nation farrer",
+        "value": 5
+      },
+      {
+        "query": "pauline hanson",
+        "value": 5
+      },
+      {
+        "query": "what is one nation",
+        "value": 4
+      },
+      {
+        "query": "pauline hanson one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation polling",
+        "value": 4
+      },
+      {
+        "query": "one nation policy",
+        "value": 3
+      },
+      {
+        "query": "one nation seat",
+        "value": 3
+      },
+      {
+        "query": "labor",
+        "value": 3
+      },
+      {
+        "query": "one nation polls",
+        "value": 2
+      },
+      {
+        "query": "david farley",
+        "value": 2
+      },
+      {
+        "query": "david farley one nation",
+        "value": 2
+      },
+      {
+        "query": "how many seats did one nation win",
+        "value": 2
+      },
+      {
+        "query": "one nation south australia results",
+        "value": 1
+      },
+      {
+        "query": "one nation farrer by-election prediction",
+        "value": 1
+      },
+      {
+        "query": "david paton one nation",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "david farley",
+        "value": 183800
+      },
+      {
+        "query": "david farley one nation",
+        "value": 177300
+      },
+      {
+        "query": "how many seats did one nation win",
+        "value": 169450
+      },
+      {
+        "query": "one nation south australia results",
+        "value": 113550
+      },
+      {
+        "query": "one nation farrer by-election prediction",
+        "value": 50600
+      },
+      {
+        "query": "david paton one nation",
+        "value": 26650
+      },
+      {
+        "query": "one nation sa",
+        "value": 1550
+      },
+      {
+        "query": "farrer",
+        "value": 1250
+      },
+      {
+        "query": "south australia one nation",
+        "value": 800
+      },
+      {
+        "query": "one nation farrer",
+        "value": 750
+      },
+      {
+        "query": "one nation win",
+        "value": 400
+      },
+      {
+        "query": "one nation seat",
+        "value": 250
+      },
+      {
+        "query": "one nation seats",
+        "value": 200
+      },
+      {
+        "query": "labor",
+        "value": 90
+      },
+      {
+        "query": "one nation policy",
+        "value": 70
+      }
+    ]
+  },
+  "AJP": {
+    "top": [],
+    "rising": []
+  },
+  "RSN": {
+    "top": [],
+    "rising": []
+  },
+  "LDP": {
+    "top": [],
+    "rising": []
+  }
+}

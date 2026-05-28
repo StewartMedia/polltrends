@@ -1,0 +1,86 @@
+[
+  {
+    "date": "2026-03-21",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 100,
+    "rolling_avg": 8.0,
+    "ratio": 12.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-09",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 85,
+    "rolling_avg": 10.4,
+    "ratio": 8.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-22",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 89,
+    "rolling_avg": 21.4,
+    "ratio": 4.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 65,
+    "rolling_avg": 20.1,
+    "ratio": 3.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-20",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 15,
+    "rolling_avg": 6.6,
+    "ratio": 2.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-07",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 12,
+    "rolling_avg": 5.6,
+    "ratio": 2.2,
+    "explanation": "One Nation Victoria powering ahead",
+    "news": [
+      {
+        "title": "One Nation Victoria powering ahead",
+        "source": "Pauline Hanson's One Nation Party",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE96cjJJLWpzdzg4OVk4a1dGWGZLT0NzZTdhelBQa1l3WS1reFJoT0NsbHRFcXdWN2dUVW1vY2x3cTNSbWNnWk05S0dsMG9DdGxuM2kzTi11anhLcWZJSEZtaXZB?oc=5",
+        "date": "2026-03-06"
+      }
+    ]
+  },
+  {
+    "date": "2026-05-02",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 17,
+    "rolling_avg": 8.3,
+    "ratio": 2.1,
+    "explanation": "The Liberals stared down One Nation in Nepean \u2013 but they shouldn\u2019t be popping champagne just yet",
+    "news": [
+      {
+        "title": "The Liberals stared down One Nation in Nepean \u2013 but they shouldn\u2019t be popping champagne just yet",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPSGVfaXA1WmhrWUM0R0VldTEzNFBHUWFPYWFpaDNUSkpqMkVrdDQ3NGh5NE1qMEpiNmRURldrUkx6RjdhS1hheFo2T0lodnZXaDE1R1B6VWh2YlkxQnQ5cXdkSXJiU004OWJhU05VY1Z1YnRyRGVKQXFCLUwxeVJLeUVZUGR3dlV1cEltbDZRTjIxQ05FcmlJUkx4enRSd1dJQ0k3M2V4X0pjTndKQk5mNEpVUEhZMWFxY0lJbHp6TnN2RmU0YjY0RlMtYmxvdjlXYXFxLWZHd28?oc=5",
+        "date": "2026-05-03"
+      }
+    ]
+  }
+]
