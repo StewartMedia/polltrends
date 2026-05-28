@@ -18,6 +18,10 @@
         "value": 15
       },
       {
+        "query": "australian labor",
+        "value": 14
+      },
+      {
         "query": "alp",
         "value": 13
       },
@@ -35,7 +39,7 @@
       },
       {
         "query": "labor party australia",
-        "value": 9
+        "value": 8
       },
       {
         "query": "labor government",
@@ -46,11 +50,11 @@
         "value": 6
       },
       {
-        "query": "labour or labor",
-        "value": 4
+        "query": "labor candidate",
+        "value": 5
       },
       {
-        "query": "greens",
+        "query": "labour or labor",
         "value": 4
       },
       {
@@ -62,11 +66,11 @@
         "value": 2
       },
       {
-        "query": "alp victoria",
+        "query": "jim chalmers",
         "value": 2
       },
       {
-        "query": "jim chalmers",
+        "query": "alp victoria",
         "value": 2
       },
       {
@@ -76,16 +80,20 @@
     ],
     "rising": [
       {
-        "query": "alp victoria",
-        "value": 152300
+        "query": "jim chalmers",
+        "value": 143700
       },
       {
-        "query": "jim chalmers",
-        "value": 142850
+        "query": "alp victoria",
+        "value": 143400
       },
       {
         "query": "negative gearing",
-        "value": 65150
+        "value": 67400
+      },
+      {
+        "query": "labor candidate",
+        "value": 160
       },
       {
         "query": "labour or labor",
@@ -152,7 +160,7 @@
     "rising": [
       {
         "query": "greens senators",
-        "value": 27200
+        "value": 20500
       }
     ]
   },
@@ -243,6 +251,10 @@
         "value": 2
       },
       {
+        "query": "one nation candidates",
+        "value": 2
+      },
+      {
         "query": "how many seats did one nation win",
         "value": 2
       },
@@ -253,36 +265,32 @@
       {
         "query": "one nation farrer by-election prediction",
         "value": 1
-      },
-      {
-        "query": "david paton one nation",
-        "value": 0
       }
     ],
     "rising": [
       {
         "query": "david farley",
-        "value": 183800
+        "value": 184900
       },
       {
         "query": "david farley one nation",
-        "value": 177300
+        "value": 178350
       },
       {
         "query": "how many seats did one nation win",
-        "value": 169450
+        "value": 169800
       },
       {
         "query": "one nation south australia results",
-        "value": 113550
+        "value": 114150
       },
       {
         "query": "one nation farrer by-election prediction",
-        "value": 50600
+        "value": 51800
       },
       {
         "query": "david paton one nation",
-        "value": 26650
+        "value": 25900
       },
       {
         "query": "one nation sa",
@@ -298,7 +306,7 @@
       },
       {
         "query": "one nation farrer",
-        "value": 750
+        "value": 800
       },
       {
         "query": "one nation win",
