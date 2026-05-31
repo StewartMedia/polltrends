@@ -1,11 +1,11 @@
 {
   "ALP": {
     "party": "Labor",
-    "queries_analysed": 24,
+    "queries_analysed": 23,
     "sentiment_counts": {
       "positive": 0,
       "negative": 1,
-      "neutral": 23
+      "neutral": 22
     },
     "sentiment_score": -0.04,
     "classified_queries": [
@@ -34,11 +34,11 @@
         "sentiment": "neutral"
       },
       {
-        "query": "australian labor party",
+        "query": "liberal party",
         "sentiment": "neutral"
       },
       {
-        "query": "liberal party",
+        "query": "australian labor party",
         "sentiment": "neutral"
       },
       {
@@ -46,39 +46,11 @@
         "sentiment": "neutral"
       },
       {
-        "query": "alp",
-        "sentiment": "neutral"
-      },
-      {
         "query": "albanese",
         "sentiment": "negative"
       },
       {
-        "query": "one nation",
-        "sentiment": "neutral"
-      },
-      {
         "query": "labor government",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "australian labour party",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "greens",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "labour or labor",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "labor mp",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "liberal vs labour",
         "sentiment": "neutral"
       },
       {
@@ -86,11 +58,27 @@
         "sentiment": "neutral"
       },
       {
-        "query": "labor policies",
+        "query": "one nation",
         "sentiment": "neutral"
       },
       {
-        "query": "the greens",
+        "query": "labor or labour",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "greens",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "australian labour party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal vs labour",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor policies",
         "sentiment": "neutral"
       },
       {
@@ -98,24 +86,32 @@
         "sentiment": "neutral"
       },
       {
-        "query": "tammy tyrrell",
+        "query": "the greens",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "alp victoria",
         "sentiment": "neutral"
       },
       {
         "query": "tammy tyrrell joins labor party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "jim chalmers",
         "sentiment": "neutral"
       }
     ]
   },
   "LIB": {
     "party": "Liberal",
-    "queries_analysed": 5,
+    "queries_analysed": 6,
     "sentiment_counts": {
-      "positive": 2,
+      "positive": 3,
       "negative": 0,
       "neutral": 3
     },
-    "sentiment_score": 0.4,
+    "sentiment_score": 0.5,
     "classified_queries": [
       {
         "query": "liberal",
@@ -136,18 +132,22 @@
       {
         "query": "angus taylor",
         "sentiment": "neutral"
+      },
+      {
+        "query": "liberal leadership",
+        "sentiment": "positive"
       }
     ]
   },
   "GRN": {
     "party": "Greens",
-    "queries_analysed": 5,
+    "queries_analysed": 6,
     "sentiment_counts": {
       "positive": 1,
       "negative": 0,
-      "neutral": 4
+      "neutral": 5
     },
-    "sentiment_score": 0.2,
+    "sentiment_score": 0.17,
     "classified_queries": [
       {
         "query": "greens",
@@ -167,6 +167,10 @@
       },
       {
         "query": "greens mp",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "greens senators",
         "sentiment": "neutral"
       }
     ]
@@ -190,11 +194,11 @@
         "sentiment": "neutral"
       },
       {
-        "query": "one nation seats",
+        "query": "one nation sa",
         "sentiment": "neutral"
       },
       {
-        "query": "south australia one nation",
+        "query": "one nation seats",
         "sentiment": "neutral"
       },
       {
@@ -202,19 +206,27 @@
         "sentiment": "neutral"
       },
       {
+        "query": "one nation victoria",
+        "sentiment": "neutral"
+      },
+      {
         "query": "one nation win",
         "sentiment": "positive"
+      },
+      {
+        "query": "south australia one nation",
+        "sentiment": "neutral"
       },
       {
         "query": "one nation policies",
         "sentiment": "neutral"
       },
       {
-        "query": "one nation results",
+        "query": "farrer",
         "sentiment": "neutral"
       },
       {
-        "query": "farrer",
+        "query": "one nation farrer",
         "sentiment": "neutral"
       },
       {
@@ -226,11 +238,7 @@
         "sentiment": "neutral"
       },
       {
-        "query": "one nation farrer",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "one nation seats sa",
+        "query": "pauline hanson one nation",
         "sentiment": "neutral"
       },
       {
@@ -242,31 +250,23 @@
         "sentiment": "neutral"
       },
       {
-        "query": "pauline hanson one nation",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "one nation victoria",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "one nation seat",
-        "sentiment": "neutral"
-      },
-      {
         "query": "one nation policy",
         "sentiment": "positive"
       },
       {
-        "query": "david farley",
+        "query": "labor",
         "sentiment": "neutral"
       },
       {
-        "query": "how many seats did one nation win",
-        "sentiment": "positive"
+        "query": "one nation polls",
+        "sentiment": "neutral"
       },
       {
-        "query": "one nation how to vote",
+        "query": "one nation candidates",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "david farley",
         "sentiment": "neutral"
       },
       {
@@ -274,17 +274,54 @@
         "sentiment": "neutral"
       },
       {
-        "query": "one nation south australia results",
-        "sentiment": "neutral"
+        "query": "how many seats did one nation win",
+        "sentiment": "positive"
       },
       {
         "query": "sa election results 2026",
         "sentiment": "neutral"
       },
       {
-        "query": "one nation farrer by-election prediction",
+        "query": "david paton one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "farrer by election results",
         "sentiment": "neutral"
       }
     ]
+  },
+  "AJP": {
+    "party": "Animal Justice",
+    "queries_analysed": 0,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": []
+  },
+  "RSN": {
+    "party": "Reason",
+    "queries_analysed": 0,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": []
+  },
+  "LDP": {
+    "party": "Lib Dems",
+    "queries_analysed": 0,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": []
   }
 }
