@@ -1,0 +1,120 @@
+[
+  {
+    "date": "2026-03-21",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 100,
+    "rolling_avg": 12.0,
+    "ratio": 8.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-09",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 56,
+    "rolling_avg": 7.4,
+    "ratio": 7.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-22",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 79,
+    "rolling_avg": 25.3,
+    "ratio": 3.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 42,
+    "rolling_avg": 14.0,
+    "ratio": 3.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-21",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 3.6,
+    "ratio": 2.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-20",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 25,
+    "rolling_avg": 9.3,
+    "ratio": 2.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-01",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 22,
+    "rolling_avg": 10.1,
+    "ratio": 2.2,
+    "explanation": "Hastie says falling house prices might not be \u2018all that encouraging\u2019 for recent buyers \u2013 as it happened",
+    "news": [
+      {
+        "title": "Hastie says falling house prices might not be \u2018all that encouraging\u2019 for recent buyers \u2013 as it happened",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPNGVucE0xQzFPUTM3OFBVQXBLbEt5NXZ4VURLbmtLOUVjM1pqZWV4U3YycEp2WnNyMXlyX1BOazRnRUN5RENiS2tPMHFWQ2JLX2dCMkFyWkdLY3A0TktoU0ZlVTJRb1NKYWlPeHpteHp6UGFRNkVpYS1WUktLUkxQWjJmVXpyck5qSlc5RmdFZUVyZ3h4cGdmX09EU3J1VVhoY29oZVNuY3pfYmlWZXladkhpTHRueFhMNkE4c05FcUlyczByd2tLYjNZY3V3ZFgzMURFZG9fQ24wM180d2NsQWNIWjg4bUI3WHhmRFhwaU1MdXFXTHln?oc=5",
+        "date": "2026-06-01"
+      },
+      {
+        "title": "Chalmers accepts voters 'legitimate concerns' as One Nation overtakes Labor",
+        "source": "Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQeFZqa2hWLVhDbFZWc2twRUpyNVdwLTdYZFVaVU5aalZKT3JxS3dVTTV2dXBuRENiYjZBMHljT0duZWU0OExXUlBHNS1LNTVXNFJLNjlLWG5tbUZ0Z3RwM1k4SDRYMHU4bV9aOTN6dlV2b1d0czg1a3pXSV8ybi04LVpuVFZhMmNGVHZHeWFQNUVDYUptbXBJV2hiVDl5a24xejJuSUk3QXlqMGo3Qnc?oc=5",
+        "date": "2026-05-31"
+      },
+      {
+        "title": "Could a One Nation deal defeat the Allan government?",
+        "source": "The Australian",
+        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOQng4eGZzemlJeHFINzlkemlnWWlIN0dpR3NqLUxOT25HQXJzZi1DdmtEaWdIdF9CTl84OHVtbUFaLTZCQXd0V3NUeTVHTERxX2YwZXFsQm5GMzFjbTFBTjA4WUU0cVdtS25mVHNWejNqM3FtNGhfSFFpS201ZXRmWmlTMDBPT2h3amRMSDMzejJtbV9zZ2dOWW5JSnBwbTlqWThXLURoWi1FRHFaR0hGWS1ibFp4NWdfTFRybU8xYWx4UGdXUFQzU0poY0kxTXlBbUNNWmcwQUxSXzNaZWF0bTYwZ0xUeWpaSERPYkFJc0xGZ9IB9wFBVV95cUxOOFRXTURKUjFjaGNnMzRvSUJvTjdMMWZnSldKRUdCSjQ0TUV4NDBoblNYWlFDaG5QSkprUW5TUWU4WV9pRHo3VEtIOXdWaXE5Rm9lNUNlbHVvNWlqdVBaRzJnMFJvYlJmb0VoaTdCeXlycE5BZ1NrODFrMS1lTUNxQ3lCZHk0VmM1Y0x3UFRjUFZhZFgwd2pFbnYxX0F4bEV3YkR2eWVMeHdhd2p2UkcxZEthUFRIQl9DUWxjS2hNOEZuWnJzMnBtNGZDT0tETlNUakt5c2FCSnA0aUpVQi1GSXM1U1pVcEc5RFEtQnpIdEVBRDk2QWdB?oc=5",
+        "date": "2026-06-01"
+      }
+    ]
+  },
+  {
+    "date": "2026-05-31",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 20,
+    "rolling_avg": 9.6,
+    "ratio": 2.1,
+    "explanation": "Hastie says falling house prices might not be \u2018all that encouraging\u2019 for recent buyers \u2013 as it happened",
+    "news": [
+      {
+        "title": "Hastie says falling house prices might not be \u2018all that encouraging\u2019 for recent buyers \u2013 as it happened",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPNGVucE0xQzFPUTM3OFBVQXBLbEt5NXZ4VURLbmtLOUVjM1pqZWV4U3YycEp2WnNyMXlyX1BOazRnRUN5RENiS2tPMHFWQ2JLX2dCMkFyWkdLY3A0TktoU0ZlVTJRb1NKYWlPeHpteHp6UGFRNkVpYS1WUktLUkxQWjJmVXpyck5qSlc5RmdFZUVyZ3h4cGdmX09EU3J1VVhoY29oZVNuY3pfYmlWZXladkhpTHRueFhMNkE4c05FcUlyczByd2tLYjNZY3V3ZFgzMURFZG9fQ24wM180d2NsQWNIWjg4bUI3WHhmRFhwaU1MdXFXTHln?oc=5",
+        "date": "2026-06-01"
+      },
+      {
+        "title": "Chalmers accepts voters 'legitimate concerns' as One Nation overtakes Labor",
+        "source": "Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQeFZqa2hWLVhDbFZWc2twRUpyNVdwLTdYZFVaVU5aalZKT3JxS3dVTTV2dXBuRENiYjZBMHljT0duZWU0OExXUlBHNS1LNTVXNFJLNjlLWG5tbUZ0Z3RwM1k4SDRYMHU4bV9aOTN6dlV2b1d0czg1a3pXSV8ybi04LVpuVFZhMmNGVHZHeWFQNUVDYUptbXBJV2hiVDl5a24xejJuSUk3QXlqMGo3Qnc?oc=5",
+        "date": "2026-05-31"
+      },
+      {
+        "title": "Could a One Nation deal defeat the Allan government?",
+        "source": "The Australian",
+        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOQng4eGZzemlJeHFINzlkemlnWWlIN0dpR3NqLUxOT25HQXJzZi1DdmtEaWdIdF9CTl84OHVtbUFaLTZCQXd0V3NUeTVHTERxX2YwZXFsQm5GMzFjbTFBTjA4WUU0cVdtS25mVHNWejNqM3FtNGhfSFFpS201ZXRmWmlTMDBPT2h3amRMSDMzejJtbV9zZ2dOWW5JSnBwbTlqWThXLURoWi1FRHFaR0hGWS1ibFp4NWdfTFRybU8xYWx4UGdXUFQzU0poY0kxTXlBbUNNWmcwQUxSXzNaZWF0bTYwZ0xUeWpaSERPYkFJc0xGZ9IB9wFBVV95cUxOOFRXTURKUjFjaGNnMzRvSUJvTjdMMWZnSldKRUdCSjQ0TUV4NDBoblNYWlFDaG5QSkprUW5TUWU4WV9pRHo3VEtIOXdWaXE5Rm9lNUNlbHVvNWlqdVBaRzJnMFJvYlJmb0VoaTdCeXlycE5BZ1NrODFrMS1lTUNxQ3lCZHk0VmM1Y0x3UFRjUFZhZFgwd2pFbnYxX0F4bEV3YkR2eWVMeHdhd2p2UkcxZEthUFRIQl9DUWxjS2hNOEZuWnJzMnBtNGZDT0tETlNUakt5c2FCSnA0aUpVQi1GSXM1U1pVcEc5RFEtQnpIdEVBRDk2QWdB?oc=5",
+        "date": "2026-06-01"
+      }
+    ]
+  }
+]
