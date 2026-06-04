@@ -1,1 +1,437 @@
-{"/m/0q96": {"top": "                         query  value\n0                        labor    100\n1                       labour     51\n2                  labor party     39\n3                      liberal     35\n4              labor australia     25\n5             australian labor     18\n6             labour australia     16\n7                 labour party     15\n8       australian labor party     12\n9                liberal party     11\n10                         alp     11\n11       australia labor party     10\n12                    albanese      8\n13                  one nation      7\n14            labor government      7\n15      labour party australia      7\n16     australian labour party      6\n17  the australian labor party      5\n18                      greens      5\n19             labour or labor      4\n20           liberal vs labour      4\n21           labour vs liberal      4\n22              labor policies      3\n23             labor candidate      3\n24            labor vs liberal      3", "rising": "                              query  value\n0   tammy tyrrell joins labor party  86250\n1                   labor death tax  52750\n2                  charlotte walker  27700\n3         labor death tax australia   2500\n4   labour vs liberal pros and cons    800\n5                      alp victoria    300\n6    how many seats does labor have    250\n7                how to vote labour    200\n8                        labor lies    200\n9                     jacinta allan    190\n10              one nation policies    150\n11                 liberal policies    120\n12                  labour or labor     80\n13                       one nation     50\n14                           greens     40\n15                liberal vs labour     40"}, "/m/04p4r": {"top": "                             query  value\n0                          liberal    100\n1                    liberal party     74\n2                liberal australia     26\n3          australia liberal party     20\n4                   liberal leader     17\n5             liberal party leader     13\n6       liberal party of australia     10\n7                            labor      9\n8         australian liberal party      8\n9                           labour      8\n10         leader of liberal party      7\n11                      one nation      6\n12                     labor party      6\n13                    labour party      5\n14                one nation party      5\n15        liberal leader australia      5\n16     leader of the liberal party      4\n17         liberal party president      4\n18           federal liberal party      4\n19                    angus taylor      4\n20                        liberals      3\n21  liberal party leader australia      3\n22                 liberal leaders      3\n23           labor party australia      3\n24          liberal party victoria      3", "rising": "                             query  value\n0       andrew hirst liberal party  44200\n1   liberal party how to vote card  43750\n2       tony abbott liberal leader  33100\n3                       john olsen  32050\n4                dinesh gourisetty  23050\n5   president of the liberal party   1050\n6          liberal party president    750\n7       president of liberal party    600\n8        tony abbott liberal party    600\n9                      tony abbott    400\n10                     sa election    400\n11              liberal party logo    350\n12                      tony abbot    300\n13   liberal party election review    300\n14             tony abbott liberal    300\n15            liberal party review    150\n16                one nation party    120\n17          liberal party policies    100\n18           labor party australia    100\n19                     labor party    100\n20                           labor     90\n21                    labour party     70\n22          liberal party victoria     70\n23                      one nation     70\n24                          labour     60"}, "/m/0171c7": {"top": "                      query  value\n0                    greens    100\n1                the greens     39\n2          greens australia     20\n3         australian greens     17\n4              greens party     15\n5          the greens party     10\n6             greens leader      8\n7                one nation      7\n8                     labor      6\n9     the australian greens      6\n10                  liberal      6\n11          greens policies      5\n12            greens policy      5\n13                   labour      4\n14        the greens leader      4\n15  australian greens party      4\n16           greens senator      4\n17            liberal party      3\n18         leader of greens      3\n19              labor party      3\n20  greens leader australia      2\n21      the greens policies      2\n22        greens candidates      2\n23         one nation party      2\n24     leader of the greens      2", "rising": "                          query   value\n0       greens negative gearing  120500\n1                     bob brown   40550\n2               join the greens   20450\n3  what do the greens stand for   20300\n4                 duncan turpie    4650\n5            how to vote greens     200\n6             greens candidates     180\n7                    one nation     100"}, "/m/0l8lg": {"top": "                           query  value\n0                     one nation    100\n1           one nation australia     16\n2                  one nation sa     10\n3               one nation seats      9\n4     one nation south australia      8\n5               one nation party      8\n6            one nation policies      6\n7                 pauline hanson      5\n8             what is one nation      4\n9                         farrer      4\n10             one nation farrer      4\n11            one nation polling      4\n12               one nation news      4\n13     one nation pauline hanson      4\n14           one nation victoria      3\n15                         labor      2\n16             one nation policy      2\n17    one nation party australia      2\n18              one nation polls      2\n19                  david farley      2\n20       david farley one nation      2\n21               one nation poll      2\n22         one nation candidates      2\n23  what is one nation australia      2\n24                 liberal party      1", "rising": "                            query  value\n0                     jason virgo  47550\n1   one nation mp south australia  10600\n2                  redbridge poll   8750\n3            stafford by election   7700\n4                   hollie hughes   6100\n5                    david farley   4400\n6                    holly hughes   2500\n7         david farley one nation   1850\n8               one nation farrer    600\n9                          farrer    550\n10                  one nation sa    450\n11             farrer by election    250\n12               one nation seats    250\n13          one nation gas policy    250\n14     one nation south australia    200\n15                  one nation mp     90\n16                          labor     60\n17                         greens     50"}}
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labour",
+        "value": 100
+      },
+      {
+        "query": "labor party",
+        "value": 80
+      },
+      {
+        "query": "labor australia",
+        "value": 49
+      },
+      {
+        "query": "labour party",
+        "value": 28
+      },
+      {
+        "query": "australian labor party",
+        "value": 24
+      },
+      {
+        "query": "liberal party",
+        "value": 21
+      },
+      {
+        "query": "alp",
+        "value": 20
+      },
+      {
+        "query": "one nation",
+        "value": 15
+      },
+      {
+        "query": "labor government",
+        "value": 14
+      },
+      {
+        "query": "australia labour party",
+        "value": 13
+      },
+      {
+        "query": "labor or labour",
+        "value": 8
+      },
+      {
+        "query": "labor policies",
+        "value": 6
+      },
+      {
+        "query": "is albanese labour",
+        "value": 6
+      },
+      {
+        "query": "labor government australia",
+        "value": 5
+      },
+      {
+        "query": "liberal policies",
+        "value": 5
+      },
+      {
+        "query": "labor death tax",
+        "value": 0
+      },
+      {
+        "query": "labor death tax australia",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "labor death tax",
+        "value": 10000
+      },
+      {
+        "query": "labor death tax australia",
+        "value": 1550
+      },
+      {
+        "query": "labor or labour",
+        "value": 70
+      },
+      {
+        "query": "one nation",
+        "value": 50
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal party",
+        "value": 76
+      },
+      {
+        "query": "liberal leader",
+        "value": 18
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 10
+      },
+      {
+        "query": "labor",
+        "value": 9
+      },
+      {
+        "query": "australian liberal party",
+        "value": 8
+      },
+      {
+        "query": "labour",
+        "value": 8
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 7
+      },
+      {
+        "query": "one nation",
+        "value": 7
+      },
+      {
+        "query": "labour party",
+        "value": 6
+      },
+      {
+        "query": "one nation party",
+        "value": 5
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 5
+      },
+      {
+        "query": "federal liberal party",
+        "value": 5
+      },
+      {
+        "query": "liberal party president",
+        "value": 4
+      },
+      {
+        "query": "liberal leaders",
+        "value": 4
+      },
+      {
+        "query": "angus taylor",
+        "value": 4
+      },
+      {
+        "query": "liberals",
+        "value": 4
+      },
+      {
+        "query": "liberal party policies",
+        "value": 3
+      },
+      {
+        "query": "tony abbott",
+        "value": 3
+      },
+      {
+        "query": "labour vs liberal",
+        "value": 1
+      },
+      {
+        "query": "liberal party logo",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "liberal party president",
+        "value": 850
+      },
+      {
+        "query": "tony abbott",
+        "value": 400
+      },
+      {
+        "query": "labour vs liberal",
+        "value": 300
+      },
+      {
+        "query": "liberal party logo",
+        "value": 250
+      },
+      {
+        "query": "liberal party policies",
+        "value": 190
+      },
+      {
+        "query": "one nation party",
+        "value": 70
+      },
+      {
+        "query": "labour party",
+        "value": 70
+      },
+      {
+        "query": "labor",
+        "value": 60
+      },
+      {
+        "query": "labour",
+        "value": 60
+      },
+      {
+        "query": "one nation",
+        "value": 50
+      }
+    ]
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      }
+    ],
+    "rising": []
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation australia",
+        "value": 15
+      },
+      {
+        "query": "sa one nation",
+        "value": 10
+      },
+      {
+        "query": "one nation seats",
+        "value": 9
+      },
+      {
+        "query": "one nation party",
+        "value": 8
+      },
+      {
+        "query": "south australia one nation",
+        "value": 8
+      },
+      {
+        "query": "one nation win",
+        "value": 6
+      },
+      {
+        "query": "sa election",
+        "value": 6
+      },
+      {
+        "query": "sa election one nation",
+        "value": 6
+      },
+      {
+        "query": "one nation policies",
+        "value": 5
+      },
+      {
+        "query": "one nation results",
+        "value": 5
+      },
+      {
+        "query": "pauline hanson",
+        "value": 5
+      },
+      {
+        "query": "what is one nation",
+        "value": 4
+      },
+      {
+        "query": "farrer",
+        "value": 4
+      },
+      {
+        "query": "one nation farrer",
+        "value": 4
+      },
+      {
+        "query": "one nation seats sa",
+        "value": 4
+      },
+      {
+        "query": "one nation polling",
+        "value": 4
+      },
+      {
+        "query": "one nation news",
+        "value": 4
+      },
+      {
+        "query": "one nation election results",
+        "value": 4
+      },
+      {
+        "query": "pauline hanson one nation",
+        "value": 4
+      },
+      {
+        "query": "south australia election",
+        "value": 3
+      },
+      {
+        "query": "one nation victoria",
+        "value": 3
+      },
+      {
+        "query": "one nation seat",
+        "value": 3
+      },
+      {
+        "query": "one nation policy",
+        "value": 2
+      },
+      {
+        "query": "one nation party australia",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation seats sa",
+        "value": 376150
+      },
+      {
+        "query": "david farley",
+        "value": 192250
+      },
+      {
+        "query": "david farley one nation",
+        "value": 189700
+      },
+      {
+        "query": "sa election one nation seats",
+        "value": 184350
+      },
+      {
+        "query": "how many seats did one nation win in sa",
+        "value": 101300
+      },
+      {
+        "query": "sa election results 2026",
+        "value": 71700
+      },
+      {
+        "query": "sa election results 2026 one nation",
+        "value": 67700
+      },
+      {
+        "query": "south australian election results",
+        "value": 52550
+      },
+      {
+        "query": "how many seats did one nation win in sa election",
+        "value": 42100
+      },
+      {
+        "query": "how many seats did one nation win in south australia",
+        "value": 32850
+      },
+      {
+        "query": "one nation farrer by-election prediction",
+        "value": 25850
+      },
+      {
+        "query": "farrer by election results",
+        "value": 11800
+      },
+      {
+        "query": "farrer electorate map",
+        "value": 5850
+      },
+      {
+        "query": "one nation south australia results",
+        "value": 4200
+      },
+      {
+        "query": "south australia election results",
+        "value": 2950
+      },
+      {
+        "query": "sa election results",
+        "value": 2900
+      },
+      {
+        "query": "how many seats did one nation win",
+        "value": 1650
+      },
+      {
+        "query": "one nation election results",
+        "value": 1050
+      },
+      {
+        "query": "sa election one nation",
+        "value": 800
+      },
+      {
+        "query": "one nation farrer",
+        "value": 650
+      },
+      {
+        "query": "sa election",
+        "value": 600
+      },
+      {
+        "query": "farrer",
+        "value": 550
+      },
+      {
+        "query": "sa one nation",
+        "value": 450
+      },
+      {
+        "query": "south australia election",
+        "value": 400
+      },
+      {
+        "query": "one nation results",
+        "value": 350
+      }
+    ]
+  }
+}
