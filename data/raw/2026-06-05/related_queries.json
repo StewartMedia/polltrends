@@ -7,7 +7,7 @@
       },
       {
         "query": "labor party",
-        "value": 80
+        "value": 81
       },
       {
         "query": "labor australia",
@@ -15,15 +15,11 @@
       },
       {
         "query": "labour party",
-        "value": 28
+        "value": 29
       },
       {
         "query": "australian labor party",
         "value": 25
-      },
-      {
-        "query": "the australian",
-        "value": 24
       },
       {
         "query": "liberal party",
@@ -46,7 +42,7 @@
         "value": 15
       },
       {
-        "query": "australia labour party",
+        "query": "labour party australia",
         "value": 13
       },
       {
@@ -78,30 +74,14 @@
         "value": 5
       },
       {
-        "query": "angus taylor",
-        "value": 2
-      },
-      {
         "query": "labor death tax",
         "value": 2
-      },
-      {
-        "query": "labor death tax australia",
-        "value": 1
       }
     ],
     "rising": [
       {
         "query": "labor death tax",
-        "value": 47400
-      },
-      {
-        "query": "labor death tax australia",
-        "value": 22100
-      },
-      {
-        "query": "angus taylor",
-        "value": 100
+        "value": 47450
       },
       {
         "query": "liberal policies",
@@ -144,10 +124,6 @@
         "value": 8
       },
       {
-        "query": "labour",
-        "value": 8
-      },
-      {
         "query": "leader of liberal party",
         "value": 7
       },
@@ -157,7 +133,7 @@
       },
       {
         "query": "labour party",
-        "value": 6
+        "value": 5
       },
       {
         "query": "one nation party",
@@ -177,7 +153,7 @@
       },
       {
         "query": "liberals",
-        "value": 4
+        "value": 3
       },
       {
         "query": "angus taylor",
@@ -196,6 +172,10 @@
         "value": 3
       },
       {
+        "query": "angus taylor liberal party",
+        "value": 2
+      },
+      {
         "query": "president of the liberal party",
         "value": 1
       }
@@ -203,39 +183,35 @@
     "rising": [
       {
         "query": "president of the liberal party",
-        "value": 500
+        "value": 1200
       },
       {
         "query": "liberal party president",
-        "value": 450
-      },
-      {
-        "query": "tony abbott",
-        "value": 450
+        "value": 800
       },
       {
         "query": "liberal party policies",
-        "value": 150
+        "value": 200
+      },
+      {
+        "query": "tony abbott",
+        "value": 180
       },
       {
         "query": "labor",
-        "value": 110
-      },
-      {
-        "query": "one nation party",
         "value": 100
       },
       {
-        "query": "labour party",
-        "value": 90
-      },
-      {
         "query": "one nation",
-        "value": 90
+        "value": 80
       },
       {
-        "query": "labour",
-        "value": 70
+        "query": "one nation party",
+        "value": 80
+      },
+      {
+        "query": "labour party",
+        "value": 60
       }
     ]
   },
@@ -244,9 +220,18 @@
       {
         "query": "greens",
         "value": 100
+      },
+      {
+        "query": "negative gearing",
+        "value": 1
       }
     ],
-    "rising": []
+    "rising": [
+      {
+        "query": "negative gearing",
+        "value": 81950
+      }
+    ]
   },
   "PHON": {
     "top": [
@@ -267,12 +252,12 @@
         "value": 9
       },
       {
-        "query": "one nation south australia",
+        "query": "south australia one nation",
         "value": 8
       },
       {
         "query": "one nation party",
-        "value": 7
+        "value": 8
       },
       {
         "query": "one nation win",
@@ -287,16 +272,12 @@
         "value": 6
       },
       {
-        "query": "sa election one nation",
-        "value": 5
-      },
-      {
         "query": "one nation results",
         "value": 5
       },
       {
         "query": "pauline hanson",
-        "value": 4
+        "value": 5
       },
       {
         "query": "what is one nation",
@@ -319,7 +300,7 @@
         "value": 4
       },
       {
-        "query": "pauline hanson one nation",
+        "query": "one nation election results",
         "value": 4
       },
       {
@@ -327,7 +308,7 @@
         "value": 4
       },
       {
-        "query": "one nation election results",
+        "query": "pauline hanson one nation",
         "value": 4
       },
       {
@@ -336,7 +317,7 @@
       },
       {
         "query": "one nation victoria",
-        "value": 2
+        "value": 3
       },
       {
         "query": "one nation seat",
@@ -349,108 +330,112 @@
       {
         "query": "one nation party australia",
         "value": 2
+      },
+      {
+        "query": "david farley",
+        "value": 2
       }
     ],
     "rising": [
       {
-        "query": "sa election results",
-        "value": 186150
+        "query": "david farley",
+        "value": 194750
       },
       {
-        "query": "sa election results one nation",
-        "value": 178800
+        "query": "sa election results",
+        "value": 192300
+      },
+      {
+        "query": "david farley one nation",
+        "value": 183300
       },
       {
         "query": "how many seats did one nation win",
-        "value": 171650
+        "value": 170550
       },
       {
         "query": "one nation south australia results",
-        "value": 143950
+        "value": 146500
       },
       {
         "query": "how many seats did one nation win in sa",
-        "value": 96700
+        "value": 96100
+      },
+      {
+        "query": "sa election results 2026",
+        "value": 64650
+      },
+      {
+        "query": "sa election results 2026 one nation",
+        "value": 62000
       },
       {
         "query": "south australian election results",
-        "value": 50550
+        "value": 53100
       },
       {
         "query": "how many seats did one nation win in sa election",
-        "value": 42200
+        "value": 39050
       },
       {
         "query": "how many seats has one nation won",
-        "value": 35450
-      },
-      {
-        "query": "how many seats did one nation win in south australia",
-        "value": 28100
+        "value": 37250
       },
       {
         "query": "one nation farrer by-election prediction",
-        "value": 18550
+        "value": 19800
+      },
+      {
+        "query": "farrer by election results",
+        "value": 12600
       },
       {
         "query": "one nation seats sa",
         "value": 9800
       },
       {
-        "query": "david farley",
-        "value": 6050
-      },
-      {
-        "query": "david farley one nation",
-        "value": 4100
+        "query": "farrer electorate map",
+        "value": 9600
       },
       {
         "query": "sa election one nation seats",
-        "value": 3550
+        "value": 5850
+      },
+      {
+        "query": "sa election results one nation",
+        "value": 2800
       },
       {
         "query": "south australia election results",
-        "value": 2900
-      },
-      {
-        "query": "sa election results 2026 one nation",
-        "value": 1650
-      },
-      {
-        "query": "sa election results 2026",
-        "value": 1150
+        "value": 2100
       },
       {
         "query": "one nation election results",
         "value": 950
       },
       {
-        "query": "sa election one nation",
-        "value": 650
-      },
-      {
-        "query": "farrer",
-        "value": 650
-      },
-      {
         "query": "sa election",
-        "value": 600
+        "value": 650
       },
       {
         "query": "one nation farrer",
+        "value": 600
+      },
+      {
+        "query": "farrer",
         "value": 550
       },
       {
         "query": "south australia election",
-        "value": 400
+        "value": 450
       },
       {
         "query": "sa one nation",
-        "value": 400
+        "value": 450
       },
       {
         "query": "one nation results",
-        "value": 350
+        "value": 400
       }
     ]
   }
