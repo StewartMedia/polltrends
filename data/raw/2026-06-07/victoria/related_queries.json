@@ -14,11 +14,11 @@
         "value": 36
       },
       {
-        "query": "australian labor",
+        "query": "labour australia",
         "value": 14
       },
       {
-        "query": "labour australia",
+        "query": "australian labor",
         "value": 14
       },
       {
@@ -30,15 +30,7 @@
         "value": 11
       },
       {
-        "query": "alp",
-        "value": 11
-      },
-      {
         "query": "labor government",
-        "value": 6
-      },
-      {
-        "query": "albanese",
         "value": 6
       },
       {
@@ -46,20 +38,12 @@
         "value": 6
       },
       {
+        "query": "albanese",
+        "value": 6
+      },
+      {
         "query": "labor candidate",
         "value": 5
-      },
-      {
-        "query": "greens",
-        "value": 4
-      },
-      {
-        "query": "labor mp",
-        "value": 4
-      },
-      {
-        "query": "the greens",
-        "value": 3
       },
       {
         "query": "labor or labour",
@@ -68,9 +52,17 @@
       {
         "query": "labour or labor",
         "value": 3
+      },
+      {
+        "query": "jim chalmers",
+        "value": 1
       }
     ],
     "rising": [
+      {
+        "query": "jim chalmers",
+        "value": 74350
+      },
       {
         "query": "labor candidate",
         "value": 120
@@ -78,10 +70,6 @@
       {
         "query": "one nation",
         "value": 80
-      },
-      {
-        "query": "labor mp",
-        "value": 60
       },
       {
         "query": "labor or labour",
@@ -135,7 +123,7 @@
       },
       {
         "query": "the greens party",
-        "value": 7
+        "value": 8
       },
       {
         "query": "leader of the greens",
@@ -171,16 +159,16 @@
         "value": 8
       },
       {
-        "query": "one nation sa",
-        "value": 8
-      },
-      {
         "query": "one nation party",
         "value": 8
       },
       {
-        "query": "one nation victoria",
+        "query": "one nation sa",
         "value": 8
+      },
+      {
+        "query": "one nation victoria",
+        "value": 7
       },
       {
         "query": "one nation win",
@@ -188,10 +176,6 @@
       },
       {
         "query": "one nation policies",
-        "value": 6
-      },
-      {
-        "query": "south australia one nation",
         "value": 6
       },
       {
@@ -208,7 +192,7 @@
       },
       {
         "query": "one nation farrer",
-        "value": 5
+        "value": 4
       },
       {
         "query": "pauline hanson one nation",
@@ -253,28 +237,32 @@
       {
         "query": "how many seats did one nation win in sa",
         "value": 1
+      },
+      {
+        "query": "sa election results 2026",
+        "value": 0
       }
     ],
     "rising": [
       {
         "query": "how many seats did one nation win",
-        "value": 168550
+        "value": 169150
       },
       {
         "query": "david farley one nation",
-        "value": 161450
+        "value": 160800
       },
       {
         "query": "how many seats did one nation win in sa",
-        "value": 98000
+        "value": 97950
       },
       {
         "query": "sa election results 2026",
-        "value": 42550
+        "value": 42950
       },
       {
         "query": "jason virgo",
-        "value": 27950
+        "value": 26950
       },
       {
         "query": "one nation farrer by-election prediction",
@@ -282,11 +270,11 @@
       },
       {
         "query": "farrer by election results",
-        "value": 24400
+        "value": 24500
       },
       {
         "query": "south australian election results",
-        "value": 13900
+        "value": 13850
       },
       {
         "query": "one nation sa",
@@ -299,10 +287,6 @@
       {
         "query": "sa election",
         "value": 1250
-      },
-      {
-        "query": "south australia one nation",
-        "value": 700
       },
       {
         "query": "south australia election",
@@ -318,7 +302,7 @@
       },
       {
         "query": "one nation win",
-        "value": 250
+        "value": 300
       },
       {
         "query": "one nation seats",
