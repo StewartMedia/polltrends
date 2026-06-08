@@ -23,7 +23,7 @@
       },
       {
         "query": "labour party",
-        "value": 15
+        "value": 14
       },
       {
         "query": "labor party australia",
@@ -62,10 +62,6 @@
         "value": 4
       },
       {
-        "query": "labor mp",
-        "value": 4
-      },
-      {
         "query": "labor policies",
         "value": 3
       },
@@ -83,13 +79,13 @@
       },
       {
         "query": "negative gearing",
-        "value": 2
+        "value": 1
       }
     ],
     "rising": [
       {
         "query": "negative gearing",
-        "value": 83950
+        "value": 83550
       },
       {
         "query": "tammy tyrrell joins labor party",
@@ -140,7 +136,28 @@
     ]
   },
   "GRN": {
-    "top": [],
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      },
+      {
+        "query": "the greens",
+        "value": 40
+      },
+      {
+        "query": "the greens party",
+        "value": 10
+      },
+      {
+        "query": "leader of the greens",
+        "value": 3
+      },
+      {
+        "query": "greens mp",
+        "value": 2
+      }
+    ],
     "rising": []
   },
   "PHON": {
@@ -187,7 +204,7 @@
       },
       {
         "query": "pauline hanson",
-        "value": 5
+        "value": 4
       },
       {
         "query": "what is one nation",
@@ -249,27 +266,27 @@
     "rising": [
       {
         "query": "how many seats did one nation win",
-        "value": 170350
+        "value": 170400
       },
       {
         "query": "south australia election results",
-        "value": 118950
+        "value": 119000
       },
       {
         "query": "how many seats did one nation win in sa",
-        "value": 96750
+        "value": 96600
       },
       {
         "query": "sa election results 2026",
-        "value": 62400
+        "value": 62350
       },
       {
         "query": "south australian election results",
-        "value": 51250
+        "value": 51550
       },
       {
         "query": "jason virgo",
-        "value": 46400
+        "value": 46150
       },
       {
         "query": "one nation farrer by-election prediction",
@@ -281,7 +298,7 @@
       },
       {
         "query": "farrer by election results",
-        "value": 8400
+        "value": 8300
       },
       {
         "query": "one nation election results",
@@ -290,10 +307,6 @@
       {
         "query": "david farley",
         "value": 800
-      },
-      {
-        "query": "david farley one nation",
-        "value": 650
       },
       {
         "query": "sa election one nation",
