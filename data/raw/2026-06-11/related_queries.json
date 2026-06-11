@@ -1,7 +1,145 @@
 {
   "ALP": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "labor",
+        "value": 100
+      },
+      {
+        "query": "labour",
+        "value": 49
+      },
+      {
+        "query": "labor party",
+        "value": 41
+      },
+      {
+        "query": "liberal",
+        "value": 34
+      },
+      {
+        "query": "labor australia",
+        "value": 25
+      },
+      {
+        "query": "australian labor",
+        "value": 17
+      },
+      {
+        "query": "labour party",
+        "value": 14
+      },
+      {
+        "query": "australian labor party",
+        "value": 12
+      },
+      {
+        "query": "australia labor party",
+        "value": 11
+      },
+      {
+        "query": "liberal party",
+        "value": 11
+      },
+      {
+        "query": "alp",
+        "value": 10
+      },
+      {
+        "query": "one nation",
+        "value": 9
+      },
+      {
+        "query": "albanese",
+        "value": 8
+      },
+      {
+        "query": "labour party australia",
+        "value": 7
+      },
+      {
+        "query": "australian labour party",
+        "value": 6
+      },
+      {
+        "query": "greens",
+        "value": 5
+      },
+      {
+        "query": "liberal party australia",
+        "value": 5
+      },
+      {
+        "query": "labour or labor",
+        "value": 4
+      },
+      {
+        "query": "liberal vs labour",
+        "value": 4
+      },
+      {
+        "query": "labor policies",
+        "value": 3
+      },
+      {
+        "query": "is albanese labour",
+        "value": 3
+      },
+      {
+        "query": "anthony albanese",
+        "value": 3
+      },
+      {
+        "query": "labor vs liberal",
+        "value": 3
+      },
+      {
+        "query": "liberal policies",
+        "value": 2
+      },
+      {
+        "query": "negative gearing",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "tammy tyrrell joins labor party",
+        "value": 91600
+      },
+      {
+        "query": "labour vs liberal pros and cons",
+        "value": 26400
+      },
+      {
+        "query": "was john howard liberal or labour",
+        "value": 750
+      },
+      {
+        "query": "negative gearing",
+        "value": 250
+      },
+      {
+        "query": "labour or labor",
+        "value": 90
+      },
+      {
+        "query": "liberal policies",
+        "value": 90
+      },
+      {
+        "query": "one nation",
+        "value": 70
+      },
+      {
+        "query": "liberal vs labour",
+        "value": 60
+      },
+      {
+        "query": "greens",
+        "value": 50
+      }
+    ]
   },
   "LIB": {
     "top": [
@@ -14,36 +152,16 @@
         "value": 74
       },
       {
-        "query": "the liberal party",
-        "value": 30
-      },
-      {
-        "query": "liberal australia",
-        "value": 27
-      },
-      {
         "query": "liberal party australia",
         "value": 21
       },
       {
         "query": "liberal leader",
-        "value": 17
+        "value": 18
       },
       {
         "query": "liberal party leader",
         "value": 13
-      },
-      {
-        "query": "labor",
-        "value": 10
-      },
-      {
-        "query": "liberal party of australia",
-        "value": 9
-      },
-      {
-        "query": "labour",
-        "value": 8
       },
       {
         "query": "australian liberal party",
@@ -66,10 +184,6 @@
         "value": 6
       },
       {
-        "query": "one nation party",
-        "value": 6
-      },
-      {
         "query": "liberal leader australia",
         "value": 5
       },
@@ -78,62 +192,22 @@
         "value": 5
       },
       {
-        "query": "liberal party president",
-        "value": 5
-      },
-      {
-        "query": "federal liberal party",
-        "value": 5
-      },
-      {
         "query": "angus taylor",
         "value": 4
-      },
-      {
-        "query": "liberal policies",
-        "value": 4
-      },
-      {
-        "query": "liberals",
-        "value": 3
       },
       {
         "query": "tony abbott",
         "value": 3
       },
       {
-        "query": "tony abbott liberal",
+        "query": "liberal party victoria",
         "value": 3
       }
     ],
     "rising": [
       {
-        "query": "john olsen liberal party",
-        "value": 3500
-      },
-      {
-        "query": "president of the liberal party",
-        "value": 1000
-      },
-      {
-        "query": "liberal party president",
-        "value": 800
-      },
-      {
         "query": "tony abbott",
         "value": 650
-      },
-      {
-        "query": "president of liberal party",
-        "value": 500
-      },
-      {
-        "query": "tony abbott liberal",
-        "value": 450
-      },
-      {
-        "query": "liberal policies",
-        "value": 110
       },
       {
         "query": "one nation",
@@ -144,20 +218,12 @@
         "value": 100
       },
       {
-        "query": "one nation party",
-        "value": 100
-      },
-      {
-        "query": "labor",
-        "value": 100
+        "query": "liberal party victoria",
+        "value": 90
       },
       {
         "query": "labour party",
         "value": 80
-      },
-      {
-        "query": "labour",
-        "value": 70
       }
     ]
   },
@@ -169,7 +235,7 @@
       },
       {
         "query": "the greens",
-        "value": 40
+        "value": 39
       },
       {
         "query": "the greens party",
@@ -253,7 +319,7 @@
         "value": 3
       },
       {
-        "query": "one nation policy",
+        "query": "fire the liar one nation",
         "value": 3
       },
       {
@@ -261,7 +327,7 @@
         "value": 3
       },
       {
-        "query": "fire the liar one nation",
+        "query": "one nation policy",
         "value": 3
       },
       {
@@ -288,39 +354,39 @@
     "rising": [
       {
         "query": "fire the liar one nation",
-        "value": 233100
+        "value": 246850
       },
       {
         "query": "sa election results one nation",
-        "value": 161350
+        "value": 161650
       },
       {
         "query": "how many seats did one nation win",
-        "value": 154050
+        "value": 154350
       },
       {
         "query": "did one nation win any seats",
-        "value": 70400
+        "value": 70300
       },
       {
         "query": "jason virgo one nation",
-        "value": 43200
+        "value": 43300
       },
       {
         "query": "david paton one nation",
-        "value": 36850
+        "value": 36750
       },
       {
         "query": "did one nation win any seats in sa",
-        "value": 35950
+        "value": 36450
       },
       {
         "query": "how many seats did one nation win in south australia",
-        "value": 24900
+        "value": 24950
       },
       {
         "query": "how many seats has one nation won in sa",
-        "value": 15550
+        "value": 15600
       },
       {
         "query": "one nation seats sa",
@@ -328,7 +394,7 @@
       },
       {
         "query": "sa election one nation seats",
-        "value": 4100
+        "value": 4150
       },
       {
         "query": "sa election results 2026",
