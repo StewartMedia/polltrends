@@ -1,0 +1,9 @@
+
+
+# Weekly Political Search Interest Briefing
+
+Labor leads the weekly search interest rankings for the period ending 2026-06-13T00:00:00. According to verified data, Labor holds the #1 position with an average score of 0.0, followed by Liberal at #2 (avg: 0.0), Greens at #3 (avg: 0.0), and One Nation at #4 (avg: 0.0). All parties recorded their peak search interest on 2026-06-07T00:00:00, with lows also occurring on that date.
+
+Daily search interest remained consistent throughout the week, with no significant spikes detected across any party. The daily table indicates uniform activity levels of 0 for Labor, Liberal, Greens, and One Nation from Monday through Sunday. As there were no news headlines available this period to drive variation, search volumes mirrored each other closely without deviation.
+
+Query sentiment remained neutral across the board, with all four parties recording a score of +0.00 based on zero positive, neutral, and negative indicators. With search interest stable and no external news drivers identified, attention may shift as new events emerge in subsequent weeks to differentiate party performance beyond the current baseline figures.

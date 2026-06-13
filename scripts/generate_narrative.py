@@ -207,6 +207,10 @@ def generate_narrative() -> str:
                 ],
                 "temperature": LM_STUDIO_TEMPERATURE,
                 "max_tokens": LM_STUDIO_MAX_TOKENS,
+                # LM Studio exposes thinking-model traces separately as
+                # reasoning_content. Without this hint some models spend the
+                # whole token budget there and return an empty message.content.
+                "reasoning": {"effort": "none"},
             },
             timeout=LM_STUDIO_TIMEOUT,
         )

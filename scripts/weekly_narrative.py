@@ -81,6 +81,7 @@ def commit_and_push(snapshot_date: str) -> None:
         "docs/xreport.html",
         "docs/victoria.html",
         "docs/og-image.png",
+        "scripts/generate_narrative.py",
         "scripts/weekly_narrative.py",
     ]
     run_git(["git", "add", *paths_to_add], check=False)
