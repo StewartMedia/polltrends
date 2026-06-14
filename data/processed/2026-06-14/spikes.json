@@ -1,1 +1,159 @@
-[]
+[
+  {
+    "date": "2026-03-21",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 100,
+    "rolling_avg": 11.6,
+    "ratio": 8.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-09",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 55,
+    "rolling_avg": 7.4,
+    "ratio": 7.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 71,
+    "rolling_avg": 14.3,
+    "ratio": 5.0,
+    "explanation": "Tony Abbott is back in town and the fallout is biblical",
+    "news": [
+      {
+        "title": "Tony Abbott is back in town and the fallout is biblical",
+        "source": "Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaVIwbGZMdWhZQkZFRWd2TWx6YzdSZHlIckZUZVRDX0dPYW0xNHpURVVINzFXMzFVVHJXRnIzMlFCaVhFd243MWF6bnNNamRubEt1R1d4WXpERk9QenI2R1V4ZE9YLXRMZ2xpQk9hZ1g4RDBtMlQtaER2MG1OOUhFaUdQM2VLVjFZLVd4VzVsSXpNMUZxVHpxeTJtUUxIbU1IV0E?oc=5",
+        "date": "2026-06-12"
+      },
+      {
+        "title": "One Nation and the Trump-Farage phenomena",
+        "source": "The Saturday Paper",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPcGhLbGo1WFY2YlBWMjNSTEZPYWViN1VJUGd5ZUgzTXlSdjlYd3JqaGlTQTZpbkxkRGhoUFctWi1ESDItY19JajhuSVN0cWtkUmJqYV80eHlVNDROUWREcGp3RnlHZE1HanhWY05BNVItdUZKM3JENmtydHZzaUZ2aGhDQTNNaUtCVzBDTVVKOUZFVEFlekxrOVdaQnZlWk0?oc=5",
+        "date": "2026-06-12"
+      },
+      {
+        "title": "\u2018Needed a bigger venue\u2019: One Nation Melbourne fundraising event to go ahead",
+        "source": "AFR",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQX0xUamtMNTBWZE80YWI5X1Z4TkhzZzBlcjc2RjdPbHptTGZfN2NNd3RWOEFKcndleXFxWHdNTTYzdmtHcjBhNk9FRi1tUzNQM2E2dzFjNXBwSjBCMXRJOG5yQ0swaHlBTXVuRUhZeEkzWjFVZXRyYUZ4SHJqSlRPX0VFVTQ0U0FaU0tEbWZZaVI2SzlQeXpDSE1OQUJFdmQ2aHYtTjBhS1BXSHVuWVlWLXBwSWFPMHc4WFoteGM2cGJzV3AybEo1dDhrWHQ?oc=5",
+        "date": "2026-06-12"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-22",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 77,
+    "rolling_avg": 25.0,
+    "ratio": 3.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 41,
+    "rolling_avg": 13.9,
+    "ratio": 3.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-01",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 30,
+    "rolling_avg": 9.9,
+    "ratio": 3.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-11",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 66,
+    "rolling_avg": 22.6,
+    "ratio": 2.9,
+    "explanation": "Tony Abbott is back in town and the fallout is biblical",
+    "news": [
+      {
+        "title": "Tony Abbott is back in town and the fallout is biblical",
+        "source": "Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaVIwbGZMdWhZQkZFRWd2TWx6YzdSZHlIckZUZVRDX0dPYW0xNHpURVVINzFXMzFVVHJXRnIzMlFCaVhFd243MWF6bnNNamRubEt1R1d4WXpERk9QenI2R1V4ZE9YLXRMZ2xpQk9hZ1g4RDBtMlQtaER2MG1OOUhFaUdQM2VLVjFZLVd4VzVsSXpNMUZxVHpxeTJtUUxIbU1IV0E?oc=5",
+        "date": "2026-06-12"
+      },
+      {
+        "title": "An orange wave is breaking over Victoria. Can Labor hold back the populist tide?",
+        "source": "The Age",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPVUVQa000RjRWWVRGa3Uyd3VZNkhEY3BuZ195T0x0X3BPWVk3bkRhVXdGTGlieWk5OV9ERURSYTFmdHoxc1BLU2R0M2MxMjFNUlphaWtMdENhTF9McEcyWm4wRFFjekVXbnlNaTZPV0hLVGE2YmxCMm9zWWVxQTRsSnBNN05hVi1JYVJpRUhNS0RFWUxGQW9GdU9fdXRhRThmM2otQTN3YWdHTkF2UG9mZkFiQ0RycXloWU9EeTA1Qll2V0k0VnB4dlJLaUtHaTh6Zk1iOWlGQzY5V1U?oc=5",
+        "date": "2026-06-13"
+      },
+      {
+        "title": "How Tony Abbott went from One Nation foe to friend",
+        "source": "The Australian",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNMHBQTGgwemhFbUQ3RU0zY2d6QnZza2RFNnBPOEJaUzlaOWVMVlpNTlByWFU3dnVlRHExcUNLaG5PV2wyaDNySHlxVWZ3R0VxQWhISXZacVFrLXhleENoRWg1OHFFRTJ6dFcyeGU0LVVkNlRaZ24yWXRIb1pjeWdLOU5HTDNfNjNSUEN1UEh5bVBDWG9oYk0ybjdOV213QU1ybUJXVGIwTVNRM0dsLUZLZ3JOU21XTGFHWWhBTHlpSml0M3dXdlVlMGRGVdIB0AFBVV95cUxNTWFlM1h6TTM3V05HUDdGUlVaM0RkbmJTQnVMQmRzRFNEbVBwbzZQeXlPMEsxNXBlck90V2FKS3F4NFJtLVFvQU5OMTl1ZmYyQUdBRXJhTFlIQmRqeEpaV2trVFdQUndESjJyVXNlMHkwdGZiRTFvR1YzQko2Y3I1d2d1OVRLSkY3dXV5R0ZGWDJMVkpwRVpydW9iY1JGWHVOSFlCYjEwN1F2TUNhTklkUDZwRm43YkphZm9ocFhFb2JraVpBaFpOaVY2OGNNYzcz?oc=5",
+        "date": "2026-06-13"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-21",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 3.6,
+    "ratio": 2.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-02",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 10,
+    "rolling_avg": 5.0,
+    "ratio": 2.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-12",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 62,
+    "rolling_avg": 30.3,
+    "ratio": 2.0,
+    "explanation": "Hanson overtakes Albanese as preferred PM, Coalition crashes to record low",
+    "news": [
+      {
+        "title": "Hanson overtakes Albanese as preferred PM, Coalition crashes to record low",
+        "source": "SMH.com.au",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUXp2S0YwN3BKcmJlWmpOWFcxUTJFamhLbG9lUHBJZEJDT2t2QW90QjlWR0tmQjN6MTVlQVpsQmFjeTgyT3ctN3c4aGRJT3RvUWNZS0lCaFhZYnRseG9tU19BY2Y5MHJYaEx4NnNabjU2eUNyRE9JOXZVX2FHUkF2dmFMRFJXdWtCaG8tNXdBallLbHRoZnNHaTcwVVBqSjVyX1d3UFFlbmdtS2lwbXdSUUJfeG5PaUtVZlRBR0pCNnZwd2NlZDU3d3BaMGJZY2M?oc=5",
+        "date": "2026-06-14"
+      },
+      {
+        "title": "Bombshell poll result for Pauline, Albo",
+        "source": "News.com.au",
+        "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQa2VEQzVwNGVrMnA5Y0g5cXFJZGtUXzJoR0F4emIwRUk2WVA2REljbGRFVFZacWlxRmpXRVR3MmFKNW9jUUxHdV9Zb0lZcFZZWlVmUFBjQV9NN1NjWGpaQjBNcVpnTDNmS1R4WGlIVERTOTBrdldpaEk1TEtFVEV3VzNpRDJvMFVrclJHbUtFVW5qSkVfWnZJNFhPRkN6eDg4YW9BN3IxSkU1bF9EbVVJdE5NWUh5N2x2cXV5Q0haZHF5TUpGVS0xTGxmMkpTNHZyOXdLQjl3TGxSSG50WFVzRUFzaktBYTliUGRvSzRWRdIB9AFBVV95cUxPZW1OeVFEenI0TkxGYU9FMFNjNzJmTDlIc19LY05wWC1uWERuX184eDNqeW5mMFdVNGM4ajgtUjVtdF9UNmo5aUUwbF81QzB2anMyVk1PQjItV1l6R1pnREhoamZSNGxNaXJJdUFBR0FYYVhEQ29MTUR4VmdCUldVdGdIcFhoUW02ajA0OEoyZFZhckREdkVxT3VTZTNRZmxmOGl6UGoyMzFQeU10Y01Dd2NaSlRxd3FfZ0tBRkY3bzRMUDlIUk1ONUhyS1ZNNm1NSV9jR09wN2lKa1RET2ViT0V2RWdIWjU3cWlERXhha1V6STlY?oc=5",
+        "date": "2026-06-14"
+      },
+      {
+        "title": "We laughed at Trump\u2019s run for president and marvel at the rise of Pauline Hanson. Why didn\u2019t we see the sleeping threat? | Zoe Daniel",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQb1ZlM3kxMDBVaTBaUE1WWll4T0hoQUdHQWpVSm1zc2dpckpzd2xodG9WaHhCQlVFd3JDbEdzMC1STk82dTJTRU4teWYtTVBMRG5mS2UzMDFMZWlMREY1Vy1BSWgtX2NPRkt3SWRyb2VraDFmb2Z5WlhUQ053UnRqakV0MFhzNVZFT0lzT3FsWnlmV2ZBRHZOSVJ5anpuaFNfWHJIdk94bW0tRi1IMmdnN2hZQ1ZIZXVjN2ZFTnUxRXg?oc=5",
+        "date": "2026-06-14"
+      }
+    ]
+  }
+]
