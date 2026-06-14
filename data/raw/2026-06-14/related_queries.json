@@ -7,7 +7,7 @@
       },
       {
         "query": "labor party",
-        "value": 84
+        "value": 85
       },
       {
         "query": "labor australia",
@@ -50,11 +50,11 @@
         "value": 8
       },
       {
-        "query": "labour vs liberal",
+        "query": "labor or labour",
         "value": 8
       },
       {
-        "query": "labor or labour",
+        "query": "labour vs liberal",
         "value": 8
       },
       {
@@ -78,30 +78,18 @@
         "value": 5
       },
       {
-        "query": "liberal party of australia",
-        "value": 5
-      },
-      {
-        "query": "labor death tax australia",
-        "value": 1
-      },
-      {
         "query": "labour vs liberal pros and cons",
         "value": 1
       }
     ],
     "rising": [
       {
-        "query": "labor death tax australia",
-        "value": 22500
-      },
-      {
         "query": "labour vs liberal pros and cons",
-        "value": 15500
+        "value": 16150
       },
       {
         "query": "liberal policies",
-        "value": 90
+        "value": 100
       },
       {
         "query": "one nation",
@@ -109,7 +97,7 @@
       },
       {
         "query": "labor or labour",
-        "value": 60
+        "value": 70
       }
     ]
   },
@@ -144,11 +132,11 @@
         "value": 10
       },
       {
-        "query": "australian liberal party",
+        "query": "one nation",
         "value": 8
       },
       {
-        "query": "one nation",
+        "query": "australian liberal party",
         "value": 8
       },
       {
@@ -215,11 +203,11 @@
     "rising": [
       {
         "query": "tony abbot",
-        "value": 52350
+        "value": 53400
       },
       {
         "query": "liberal party logo",
-        "value": 22700
+        "value": 21100
       },
       {
         "query": "liberal party president",
@@ -251,7 +239,7 @@
       },
       {
         "query": "labour party",
-        "value": 110
+        "value": 120
       },
       {
         "query": "labour",
@@ -285,7 +273,7 @@
     "rising": [
       {
         "query": "negative gearing",
-        "value": 148750
+        "value": 148900
       }
     ]
   },
@@ -380,62 +368,62 @@
         "value": 2
       },
       {
+        "query": "one nation seat",
+        "value": 2
+      },
+      {
         "query": "one nation party australia",
         "value": 2
       },
       {
         "query": "one nation polls",
         "value": 2
-      },
-      {
-        "query": "sa election results",
-        "value": 2
       }
     ],
     "rising": [
       {
         "query": "one nation seats sa",
-        "value": 300750
+        "value": 302200
       },
       {
         "query": "sa election results",
-        "value": 157750
+        "value": 158400
       },
       {
         "query": "sa election results one nation",
-        "value": 147150
+        "value": 147900
       },
       {
         "query": "how many seats did one nation win",
-        "value": 137450
+        "value": 137900
       },
       {
         "query": "one nation south australia results",
-        "value": 118100
+        "value": 119000
       },
       {
         "query": "south australia election results",
-        "value": 97700
+        "value": 97900
       },
       {
         "query": "how many seats did one nation win in sa",
-        "value": 77000
+        "value": 77100
       },
       {
         "query": "south australian election results",
-        "value": 44850
+        "value": 45050
       },
       {
         "query": "how many seats did one nation win in sa election",
-        "value": 32950
+        "value": 32900
       },
       {
         "query": "how many seats did one nation win in south australia",
-        "value": 24100
+        "value": 23950
       },
       {
         "query": "one nation farrer by-election prediction",
-        "value": 17100
+        "value": 17150
       },
       {
         "query": "sa election one nation seats",
@@ -478,12 +466,16 @@
         "value": 200
       },
       {
+        "query": "one nation seat",
+        "value": 170
+      },
+      {
         "query": "farrer",
         "value": 160
       },
       {
         "query": "south australia one nation",
-        "value": 100
+        "value": 110
       }
     ]
   }
