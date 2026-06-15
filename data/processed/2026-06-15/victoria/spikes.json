@@ -1,0 +1,99 @@
+[
+  {
+    "date": "2026-05-09",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 83,
+    "rolling_avg": 10.1,
+    "ratio": 8.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-03-22",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 89,
+    "rolling_avg": 21.7,
+    "ratio": 4.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 78,
+    "rolling_avg": 21.1,
+    "ratio": 3.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-29",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 10,
+    "rolling_avg": 3.0,
+    "ratio": 3.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 66,
+    "rolling_avg": 19.9,
+    "ratio": 3.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-01",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 42,
+    "rolling_avg": 14.1,
+    "ratio": 3.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-31",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 35,
+    "rolling_avg": 12.1,
+    "ratio": 2.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-11",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 72,
+    "rolling_avg": 29.6,
+    "ratio": 2.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-12",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 86,
+    "rolling_avg": 37.1,
+    "ratio": 2.3,
+    "explanation": "One Nation fields 1200 offers for Victorian election candidates",
+    "news": [
+      {
+        "title": "One Nation fields 1200 offers for Victorian election candidates",
+        "source": "AFR",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdmZFaUI0VzUyeThRUmFfV2VFTkRyLVB2NjBhREtySGxibXdYNF9ISEw1aUl5OC1EdWZOMExQdHNHUW4yRGxCczJxQ01HSGtISFAzZ1BUOWVBbHllbHNiWTFoN1JrbVZUZ0ZsNWVRSVFUU195Sk1iUGgzclp6TUVFZzByUGhVVFZuLUJueTZuNEFJLS1Ya3FyZ0pHZDJFU2xiV0NfbE0zS2oyTzBTbnVTWWE4bkRYek0?oc=5",
+        "date": "2026-06-14"
+      }
+    ]
+  }
+]
