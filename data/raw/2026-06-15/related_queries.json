@@ -7,7 +7,7 @@
       },
       {
         "query": "labour",
-        "value": 46
+        "value": 45
       },
       {
         "query": "liberal",
@@ -27,7 +27,7 @@
       },
       {
         "query": "labour party",
-        "value": 14
+        "value": 13
       },
       {
         "query": "australian labor party",
@@ -43,7 +43,7 @@
       },
       {
         "query": "alp",
-        "value": 10
+        "value": 9
       },
       {
         "query": "labor government",
@@ -52,10 +52,6 @@
       {
         "query": "albanese",
         "value": 8
-      },
-      {
-        "query": "labour party australia",
-        "value": 6
       },
       {
         "query": "australian labour party",
@@ -67,7 +63,7 @@
       },
       {
         "query": "liberal party australia",
-        "value": 5
+        "value": 4
       },
       {
         "query": "one nation party",
@@ -100,28 +96,32 @@
       {
         "query": "tammy tyrrell joins labor party",
         "value": 1
+      },
+      {
+        "query": "labor death tax",
+        "value": 1
       }
     ],
     "rising": [
       {
         "query": "tammy tyrrell joins labor party",
-        "value": 89750
+        "value": 89950
       },
       {
         "query": "labor death tax",
-        "value": 63250
+        "value": 61250
       },
       {
         "query": "fire the liar",
-        "value": 41100
+        "value": 42750
       },
       {
         "query": "one nation versus labor membership",
-        "value": 31000
+        "value": 31350
       },
       {
         "query": "one nation donations",
-        "value": 27050
+        "value": 26050
       },
       {
         "query": "alp logo",
@@ -142,174 +142,8 @@
     ]
   },
   "LIB": {
-    "top": [
-      {
-        "query": "liberal",
-        "value": 100
-      },
-      {
-        "query": "liberal party",
-        "value": 74
-      },
-      {
-        "query": "the liberal party",
-        "value": 32
-      },
-      {
-        "query": "liberal australia",
-        "value": 27
-      },
-      {
-        "query": "liberal party australia",
-        "value": 21
-      },
-      {
-        "query": "liberal leader",
-        "value": 17
-      },
-      {
-        "query": "liberal party leader",
-        "value": 13
-      },
-      {
-        "query": "labor",
-        "value": 10
-      },
-      {
-        "query": "liberal party of australia",
-        "value": 10
-      },
-      {
-        "query": "australian liberal party",
-        "value": 8
-      },
-      {
-        "query": "one nation",
-        "value": 8
-      },
-      {
-        "query": "labour",
-        "value": 8
-      },
-      {
-        "query": "leader of liberal party",
-        "value": 7
-      },
-      {
-        "query": "labor party",
-        "value": 7
-      },
-      {
-        "query": "one nation party",
-        "value": 6
-      },
-      {
-        "query": "labour party",
-        "value": 6
-      },
-      {
-        "query": "liberal leader australia",
-        "value": 5
-      },
-      {
-        "query": "leader of the liberal party",
-        "value": 5
-      },
-      {
-        "query": "federal liberal party",
-        "value": 5
-      },
-      {
-        "query": "liberal party president",
-        "value": 5
-      },
-      {
-        "query": "liberal policies",
-        "value": 4
-      },
-      {
-        "query": "tony abbott",
-        "value": 4
-      },
-      {
-        "query": "liberals",
-        "value": 4
-      },
-      {
-        "query": "angus taylor",
-        "value": 4
-      },
-      {
-        "query": "tony abbott liberal",
-        "value": 3
-      }
-    ],
-    "rising": [
-      {
-        "query": "president of liberal party",
-        "value": 152400
-      },
-      {
-        "query": "president of the liberal party",
-        "value": 1450
-      },
-      {
-        "query": "liberal party president",
-        "value": 950
-      },
-      {
-        "query": "tony abbott liberal",
-        "value": 900
-      },
-      {
-        "query": "tony abbott",
-        "value": 800
-      },
-      {
-        "query": "one nation policies",
-        "value": 300
-      },
-      {
-        "query": "liberal policies",
-        "value": 160
-      },
-      {
-        "query": "one nation party",
-        "value": 140
-      },
-      {
-        "query": "one nation",
-        "value": 130
-      },
-      {
-        "query": "labor party",
-        "value": 120
-      },
-      {
-        "query": "labor",
-        "value": 110
-      },
-      {
-        "query": "labour party",
-        "value": 80
-      },
-      {
-        "query": "labour",
-        "value": 60
-      },
-      {
-        "query": "the liberal party",
-        "value": 60
-      },
-      {
-        "query": "liberal party australia",
-        "value": 50
-      },
-      {
-        "query": "liberal australia",
-        "value": 40
-      }
-    ]
+    "top": [],
+    "rising": []
   },
   "GRN": {
     "top": [],

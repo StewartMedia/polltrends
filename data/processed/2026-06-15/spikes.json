@@ -14,8 +14,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 72,
-    "rolling_avg": 14.3,
-    "ratio": 5.0,
+    "rolling_avg": 14.6,
+    "ratio": 4.9,
     "explanation": "Exclusive: Inside Pauline Hanson\u2019s $219 million payday",
     "news": [
       {
@@ -47,22 +47,12 @@
     "news": []
   },
   {
-    "date": "2026-06-01",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 31,
-    "rolling_avg": 10.3,
-    "ratio": 3.0,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
     "date": "2026-06-11",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 65,
-    "rolling_avg": 22.7,
-    "ratio": 2.9,
+    "value": 69,
+    "rolling_avg": 23.0,
+    "ratio": 3.0,
     "explanation": "Exclusive: Inside Pauline Hanson\u2019s $219 million payday",
     "news": [
       {
@@ -72,6 +62,16 @@
         "date": "2026-06-12"
       }
     ]
+  },
+  {
+    "date": "2026-06-01",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 30,
+    "rolling_avg": 10.3,
+    "ratio": 2.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
     "date": "2026-05-31",
@@ -88,8 +88,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 63,
-    "rolling_avg": 30.3,
-    "ratio": 2.1,
+    "rolling_avg": 31.1,
+    "ratio": 2.0,
     "explanation": "We laughed at Trump\u2019s run for president and marvel at the rise of Pauline Hanson. Why didn\u2019t we see the sleeping threat? | Zoe Daniel",
     "news": [
       {
