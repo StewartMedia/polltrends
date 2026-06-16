@@ -1,0 +1,79 @@
+[
+  {
+    "date": "2026-05-09",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 55,
+    "rolling_avg": 7.4,
+    "ratio": 7.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 73,
+    "rolling_avg": 14.9,
+    "ratio": 4.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 41,
+    "rolling_avg": 13.9,
+    "ratio": 3.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-01",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 30,
+    "rolling_avg": 10.1,
+    "ratio": 3.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-11",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 64,
+    "rolling_avg": 23.4,
+    "ratio": 2.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-31",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 23,
+    "rolling_avg": 9.3,
+    "ratio": 2.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-12",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 64,
+    "rolling_avg": 30.7,
+    "ratio": 2.1,
+    "explanation": "One Nation\u2019s anti-abortion turn shows MAGA\u2019s creeping power in Australia",
+    "news": [
+      {
+        "title": "One Nation\u2019s anti-abortion turn shows MAGA\u2019s creeping power in Australia",
+        "source": "The Conversation",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRkhkRTV3X0pHYkNUVWhfeWJGcURSQ2RZaGdyS1oxRC1WLWtpQVhqa2c5TmRCdFg4ckxwM3hCRjg0RllZQVBleVdZNnA4X0NGUEpFQUk2N3ZpQkRMMTFFenh5QnFaVEF1N2ZJSUpyNW1WaDlSMDV3VTNWX2RURzFzYmVjRDdOSHl4ODd4dVl0WkFlSk5yT3VoR1BBdDlKV2xheFEtQURpR3E?oc=5",
+        "date": "2026-06-14"
+      }
+    ]
+  }
+]
