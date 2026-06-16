@@ -10,24 +10,20 @@
         "value": 42
       },
       {
-        "query": "liberal",
-        "value": 33
-      },
-      {
         "query": "labor australia",
         "value": 23
       },
       {
         "query": "labour australia",
-        "value": 13
-      },
-      {
-        "query": "labour party",
         "value": 12
       },
       {
-        "query": "labor party australia",
+        "query": "labour party",
         "value": 11
+      },
+      {
+        "query": "labor party australia",
+        "value": 10
       },
       {
         "query": "alp",
@@ -43,14 +39,10 @@
       },
       {
         "query": "labor government",
-        "value": 9
+        "value": 8
       },
       {
         "query": "liberal party australia",
-        "value": 5
-      },
-      {
-        "query": "greens",
         "value": 5
       },
       {
@@ -105,27 +97,23 @@
     "rising": [
       {
         "query": "tammy tyrrell joins labor party",
-        "value": 136450
+        "value": 136600
       },
       {
         "query": "jim chalmers",
-        "value": 52500
+        "value": 57450
       },
       {
         "query": "angus taylor",
-        "value": 50750
+        "value": 55650
       },
       {
         "query": "fire the liar",
-        "value": 33850
+        "value": 32950
       },
       {
         "query": "one nation versus labor membership",
-        "value": 23850
-      },
-      {
-        "query": "one nation donations",
-        "value": 19700
+        "value": 20550
       },
       {
         "query": "one nation party",
@@ -133,7 +121,7 @@
       },
       {
         "query": "one nation",
-        "value": 100
+        "value": 90
       },
       {
         "query": "labor government",
@@ -180,10 +168,6 @@
         "value": 7
       },
       {
-        "query": "labour",
-        "value": 7
-      },
-      {
         "query": "labor party",
         "value": 7
       },
@@ -205,7 +189,7 @@
       },
       {
         "query": "labour party",
-        "value": 4
+        "value": 5
       },
       {
         "query": "liberal policies",
@@ -236,26 +220,30 @@
         "value": 3
       },
       {
-        "query": "liberal party leader australia",
+        "query": "tony abbott liberal",
         "value": 2
       },
       {
-        "query": "tony abbott liberal",
-        "value": 2
+        "query": "one nation policies",
+        "value": 1
+      },
+      {
+        "query": "president of liberal party",
+        "value": 1
       }
     ],
     "rising": [
       {
         "query": "liberal party president",
-        "value": 249800
+        "value": 245300
       },
       {
         "query": "one nation policies",
-        "value": 125050
+        "value": 122350
       },
       {
-        "query": "labour vs liberal",
-        "value": 90650
+        "query": "president of liberal party",
+        "value": 118900
       },
       {
         "query": "tony abbott",
@@ -340,7 +328,7 @@
       },
       {
         "query": "one nation sa",
-        "value": 7
+        "value": 6
       },
       {
         "query": "one nation win",
@@ -363,6 +351,10 @@
         "value": 5
       },
       {
+        "query": "fire the liar one nation",
+        "value": 5
+      },
+      {
         "query": "pauline hanson one nation",
         "value": 4
       },
@@ -372,7 +364,7 @@
       },
       {
         "query": "one nation farrer",
-        "value": 4
+        "value": 3
       },
       {
         "query": "sa election",
@@ -412,29 +404,29 @@
       },
       {
         "query": "liberal party",
-        "value": 2
-      },
-      {
-        "query": "david farley",
         "value": 1
       }
     ],
     "rising": [
       {
         "query": "fire the liar",
-        "value": 393950
+        "value": 400700
+      },
+      {
+        "query": "fire the liar one nation",
+        "value": 395250
       },
       {
         "query": "one nation donations",
-        "value": 178700
+        "value": 177350
       },
       {
         "query": "how many seats did one nation win in sa",
-        "value": 68000
+        "value": 67950
       },
       {
         "query": "labor party",
-        "value": 61400
+        "value": 61500
       },
       {
         "query": "jason virgo",
@@ -450,7 +442,7 @@
       },
       {
         "query": "one nation farrer by-election prediction",
-        "value": 20850
+        "value": 19800
       },
       {
         "query": "one nation sa",
@@ -458,7 +450,7 @@
       },
       {
         "query": "sa election",
-        "value": 700
+        "value": 650
       },
       {
         "query": "one nation election results",
