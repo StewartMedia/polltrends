@@ -50,10 +50,6 @@
         "value": 9
       },
       {
-        "query": "albanese",
-        "value": 7
-      },
-      {
         "query": "labour party australia",
         "value": 6
       },
@@ -100,32 +96,36 @@
       {
         "query": "tammy tyrrell joins labor party",
         "value": 1
+      },
+      {
+        "query": "angus taylor",
+        "value": 1
       }
     ],
     "rising": [
       {
         "query": "tammy tyrrell joins labor party",
-        "value": 84800
+        "value": 84750
       },
       {
         "query": "fire the liar",
-        "value": 40500
-      },
-      {
-        "query": "one nation fire the liar",
-        "value": 36950
+        "value": 39850
       },
       {
         "query": "one nation donations",
-        "value": 36650
+        "value": 37050
+      },
+      {
+        "query": "one nation fire the liar",
+        "value": 36900
       },
       {
         "query": "labor death tax",
-        "value": 25650
+        "value": 25400
       },
       {
         "query": "one nation versus labor membership",
-        "value": 21500
+        "value": 21850
       },
       {
         "query": "jim chalmers",
@@ -176,6 +176,10 @@
         "value": 18
       },
       {
+        "query": "liberal party leader",
+        "value": 14
+      },
+      {
         "query": "labor",
         "value": 10
       },
@@ -212,11 +216,11 @@
         "value": 6
       },
       {
-        "query": "federal liberal party",
+        "query": "liberal leader australia",
         "value": 5
       },
       {
-        "query": "liberal leader australia",
+        "query": "federal liberal party",
         "value": 5
       },
       {
@@ -246,16 +250,12 @@
       {
         "query": "president of liberal party",
         "value": 2
-      },
-      {
-        "query": "president of the liberal party",
-        "value": 1
       }
     ],
     "rising": [
       {
         "query": "president of the liberal party",
-        "value": 122400
+        "value": 124000
       },
       {
         "query": "one nation policies",
@@ -347,6 +347,10 @@
         "value": 8
       },
       {
+        "query": "one nation sa",
+        "value": 8
+      },
+      {
         "query": "fire the liar",
         "value": 7
       },
@@ -368,7 +372,7 @@
       },
       {
         "query": "sa election",
-        "value": 4
+        "value": 5
       },
       {
         "query": "what is one nation",
@@ -376,6 +380,10 @@
       },
       {
         "query": "pauline hanson one nation",
+        "value": 4
+      },
+      {
+        "query": "sa election one nation",
         "value": 4
       },
       {
@@ -407,15 +415,19 @@
         "value": 3
       },
       {
+        "query": "one nation victoria",
+        "value": 3
+      },
+      {
         "query": "one nation donations",
         "value": 2
       },
       {
-        "query": "one nation victoria",
+        "query": "south australia election",
         "value": 2
       },
       {
-        "query": "south australia election",
+        "query": "one nation party australia",
         "value": 2
       },
       {
@@ -425,40 +437,28 @@
       {
         "query": "one nation polls",
         "value": 2
-      },
-      {
-        "query": "one nation poll",
-        "value": 2
-      },
-      {
-        "query": "south australia election results",
-        "value": 1
-      },
-      {
-        "query": "how many seats did one nation win in sa",
-        "value": 1
       }
     ],
     "rising": [
       {
         "query": "fire the liar",
-        "value": 601650
+        "value": 579550
       },
       {
         "query": "jason virgo",
-        "value": 38250
+        "value": 38050
       },
       {
         "query": "south australian election results",
-        "value": 37300
+        "value": 37500
       },
       {
         "query": "one nation farrer by-election prediction",
-        "value": 13850
+        "value": 13900
       },
       {
         "query": "one nation seats sa",
-        "value": 9300
+        "value": 9350
       },
       {
         "query": "south australia election results",
@@ -470,7 +470,7 @@
       },
       {
         "query": "one nation donations",
-        "value": 1500
+        "value": 1400
       },
       {
         "query": "one nation election results",
@@ -479,6 +479,10 @@
       {
         "query": "one nation results",
         "value": 250
+      },
+      {
+        "query": "sa election one nation",
+        "value": 200
       },
       {
         "query": "sa election",
@@ -498,6 +502,10 @@
       },
       {
         "query": "south australia election",
+        "value": 140
+      },
+      {
+        "query": "one nation sa",
         "value": 140
       },
       {
