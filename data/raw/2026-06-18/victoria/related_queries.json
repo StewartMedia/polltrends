@@ -10,6 +10,10 @@
         "value": 92
       },
       {
+        "query": "labour party",
+        "value": 28
+      },
+      {
         "query": "liberal party",
         "value": 27
       },
@@ -23,27 +27,23 @@
       },
       {
         "query": "australian labor party",
-        "value": 22
+        "value": 21
       },
       {
         "query": "labor government",
         "value": 19
       },
       {
-        "query": "labour party australia",
+        "query": "australia labour party",
         "value": 14
       },
       {
         "query": "labor party of australia",
-        "value": 9
+        "value": 10
       },
       {
         "query": "australian labour party",
         "value": 9
-      },
-      {
-        "query": "is albanese labour",
-        "value": 8
       },
       {
         "query": "labor or labour",
@@ -54,52 +54,325 @@
         "value": 7
       },
       {
+        "query": "labor news",
+        "value": 7
+      },
+      {
         "query": "labor policies",
         "value": 7
       },
       {
         "query": "labor death tax",
         "value": 2
-      },
-      {
-        "query": "angus taylor",
-        "value": 2
       }
     ],
     "rising": [
       {
         "query": "labor death tax",
-        "value": 58200
-      },
-      {
-        "query": "angus taylor",
-        "value": 49200
+        "value": 57000
       },
       {
         "query": "one nation",
-        "value": 180
-      },
-      {
-        "query": "is albanese labour",
-        "value": 90
+        "value": 170
       },
       {
         "query": "labor or labour",
-        "value": 80
+        "value": 70
+      },
+      {
+        "query": "labor news",
+        "value": 60
       }
     ]
   },
   "LIB": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal party",
+        "value": 76
+      },
+      {
+        "query": "liberal party australia",
+        "value": 19
+      },
+      {
+        "query": "liberal leader",
+        "value": 15
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 8
+      },
+      {
+        "query": "australian liberal party",
+        "value": 6
+      },
+      {
+        "query": "one nation",
+        "value": 6
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 6
+      },
+      {
+        "query": "one nation party",
+        "value": 5
+      },
+      {
+        "query": "liberal leaders",
+        "value": 4
+      },
+      {
+        "query": "labour party",
+        "value": 4
+      },
+      {
+        "query": "angus taylor",
+        "value": 3
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 3
+      },
+      {
+        "query": "liberal party policies",
+        "value": 3
+      },
+      {
+        "query": "liberals",
+        "value": 3
+      },
+      {
+        "query": "tony abbott",
+        "value": 2
+      },
+      {
+        "query": "tony abbot",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "tony abbot",
+        "value": 7650
+      },
+      {
+        "query": "tony abbott",
+        "value": 750
+      },
+      {
+        "query": "one nation party",
+        "value": 150
+      },
+      {
+        "query": "liberal party policies",
+        "value": 120
+      },
+      {
+        "query": "one nation",
+        "value": 110
+      },
+      {
+        "query": "liberal leaders",
+        "value": 50
+      }
+    ]
   },
   "GRN": {
-    "top": [],
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      }
+    ],
     "rising": []
   },
   "PHON": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation australia",
+        "value": 12
+      },
+      {
+        "query": "one nation election",
+        "value": 11
+      },
+      {
+        "query": "one nation party",
+        "value": 8
+      },
+      {
+        "query": "one nation victoria",
+        "value": 6
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "one nation seats",
+        "value": 6
+      },
+      {
+        "query": "pauline hanson",
+        "value": 6
+      },
+      {
+        "query": "one nation sa",
+        "value": 6
+      },
+      {
+        "query": "one nation win",
+        "value": 5
+      },
+      {
+        "query": "what is one nation",
+        "value": 5
+      },
+      {
+        "query": "pauline hanson one nation",
+        "value": 5
+      },
+      {
+        "query": "south australia one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation news",
+        "value": 3
+      },
+      {
+        "query": "one nation polling",
+        "value": 3
+      },
+      {
+        "query": "one nation farrer",
+        "value": 3
+      },
+      {
+        "query": "sa election",
+        "value": 3
+      },
+      {
+        "query": "one nation policy",
+        "value": 3
+      },
+      {
+        "query": "one nation polls",
+        "value": 2
+      },
+      {
+        "query": "one nation seat",
+        "value": 2
+      },
+      {
+        "query": "south australia election",
+        "value": 2
+      },
+      {
+        "query": "one nation candidates",
+        "value": 1
+      },
+      {
+        "query": "how many seats did one nation win",
+        "value": 1
+      },
+      {
+        "query": "liberal party",
+        "value": 1
+      },
+      {
+        "query": "sa election results",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "south australia election",
+        "value": 163950
+      },
+      {
+        "query": "how many seats did one nation win",
+        "value": 133900
+      },
+      {
+        "query": "sa election results",
+        "value": 108850
+      },
+      {
+        "query": "sa election one nation seats",
+        "value": 107050
+      },
+      {
+        "query": "sa election results one nation",
+        "value": 93000
+      },
+      {
+        "query": "one nation south australia results",
+        "value": 78800
+      },
+      {
+        "query": "south australia election results",
+        "value": 72150
+      },
+      {
+        "query": "how many seats did one nation win in sa",
+        "value": 66700
+      },
+      {
+        "query": "sa election results 2026",
+        "value": 36800
+      },
+      {
+        "query": "south australian election results",
+        "value": 36250
+      },
+      {
+        "query": "one nation farrer by-election prediction",
+        "value": 21900
+      },
+      {
+        "query": "sa election",
+        "value": 550
+      },
+      {
+        "query": "one nation sa",
+        "value": 350
+      },
+      {
+        "query": "south australia one nation",
+        "value": 250
+      },
+      {
+        "query": "one nation win",
+        "value": 150
+      },
+      {
+        "query": "one nation seats",
+        "value": 120
+      },
+      {
+        "query": "one nation farrer",
+        "value": 100
+      },
+      {
+        "query": "one nation election",
+        "value": 70
+      },
+      {
+        "query": "one nation seat",
+        "value": 70
+      }
+    ]
   },
   "AJP": {
     "top": [],
