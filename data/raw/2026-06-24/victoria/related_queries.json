@@ -11,19 +11,19 @@
       },
       {
         "query": "labor party",
-        "value": 36
-      },
-      {
-        "query": "liberal",
-        "value": 32
+        "value": 37
       },
       {
         "query": "labour australia",
         "value": 12
       },
       {
+        "query": "labour party",
+        "value": 11
+      },
+      {
         "query": "liberal party",
-        "value": 10
+        "value": 11
       },
       {
         "query": "alp",
@@ -31,7 +31,7 @@
       },
       {
         "query": "one nation",
-        "value": 9
+        "value": 10
       },
       {
         "query": "australian labor party",
@@ -51,7 +51,7 @@
       },
       {
         "query": "greens",
-        "value": 5
+        "value": 6
       },
       {
         "query": "liberal party australia",
@@ -63,7 +63,7 @@
       },
       {
         "query": "australian labour party",
-        "value": 3
+        "value": 4
       },
       {
         "query": "pauline hanson",
@@ -71,6 +71,10 @@
       },
       {
         "query": "labor party of australia",
+        "value": 3
+      },
+      {
+        "query": "labor news",
         "value": 3
       },
       {
@@ -82,50 +86,30 @@
         "value": 2
       },
       {
-        "query": "labor news",
-        "value": 2
-      },
-      {
-        "query": "labor policies",
-        "value": 2
-      },
-      {
-        "query": "liberal party of australia",
-        "value": 2
-      },
-      {
         "query": "labor fundraiser",
         "value": 1
       },
       {
         "query": "labor government cgt changes",
         "value": 1
+      },
+      {
+        "query": "fire the liar",
+        "value": 0
       }
     ],
     "rising": [
       {
         "query": "labor fundraiser",
-        "value": 88600
+        "value": 91150
       },
       {
         "query": "labor government cgt changes",
-        "value": 85000
-      },
-      {
-        "query": "angus taylor",
-        "value": 60100
-      },
-      {
-        "query": "one nation versus labor membership",
-        "value": 48850
-      },
-      {
-        "query": "one nation fundraiser",
-        "value": 38900
+        "value": 87900
       },
       {
         "query": "fire the liar",
-        "value": 33150
+        "value": 31950
       },
       {
         "query": "one nation",
@@ -136,12 +120,12 @@
         "value": 150
       },
       {
-        "query": "one nation party",
-        "value": 100
+        "query": "labor news",
+        "value": 120
       },
       {
-        "query": "labor news",
-        "value": 80
+        "query": "one nation party",
+        "value": 100
       },
       {
         "query": "labor government",
@@ -231,7 +215,7 @@
       },
       {
         "query": "one nation party",
-        "value": 90
+        "value": 100
       },
       {
         "query": "one nation",
@@ -255,7 +239,7 @@
       },
       {
         "query": "greens party",
-        "value": 17
+        "value": 16
       },
       {
         "query": "australian greens",
@@ -283,14 +267,14 @@
       },
       {
         "query": "greens policy",
+        "value": 6
+      },
+      {
+        "query": "greens policies",
         "value": 5
       },
       {
         "query": "liberal",
-        "value": 5
-      },
-      {
-        "query": "greens policies",
         "value": 5
       },
       {
@@ -306,11 +290,11 @@
         "value": 4
       },
       {
-        "query": "australian greens party",
+        "query": "liberal party",
         "value": 3
       },
       {
-        "query": "liberal party",
+        "query": "australian greens party",
         "value": 3
       },
       {
@@ -333,11 +317,11 @@
     "rising": [
       {
         "query": "pauline hanson policies",
-        "value": 15900
+        "value": 18350
       },
       {
         "query": "hannah thomas greens",
-        "value": 8200
+        "value": 12300
       },
       {
         "query": "one nation",
@@ -380,7 +364,7 @@
         "value": 5
       },
       {
-        "query": "one nation fire the liar",
+        "query": "fire the liar one nation",
         "value": 5
       },
       {
@@ -444,42 +428,50 @@
         "value": 1
       },
       {
-        "query": "what is one nation australia",
+        "query": "one nation seat",
         "value": 1
       }
     ],
     "rising": [
       {
+        "query": "fire the liar one nation",
+        "value": 461150
+      },
+      {
         "query": "one nation donations",
-        "value": 215250
+        "value": 207750
       },
       {
         "query": "one nation fundraiser",
-        "value": 164150
+        "value": 160600
       },
       {
         "query": "one nation mp",
-        "value": 73150
+        "value": 73000
       },
       {
         "query": "one nation lower house projections",
-        "value": 69050
+        "value": 69300
       },
       {
         "query": "donate to one nation",
-        "value": 51750
+        "value": 53600
       },
       {
         "query": "fire the lair",
-        "value": 42750
+        "value": 43250
+      },
+      {
+        "query": "fire the liar campaign",
+        "value": 29050
       },
       {
         "query": "how much has one nation raised",
-        "value": 25400
+        "value": 27400
       },
       {
         "query": "how to donate to one nation",
-        "value": 20250
+        "value": 21050
       },
       {
         "query": "one nation fund raiser",
@@ -487,27 +479,15 @@
       },
       {
         "query": "how many seats did one nation win in sa election",
-        "value": 18550
+        "value": 19100
       },
       {
         "query": "farrer by election results",
         "value": 14750
       },
       {
-        "query": "kyle sandilands one nation",
-        "value": 11650
-      },
-      {
-        "query": "farrer electorate map",
-        "value": 10600
-      },
-      {
-        "query": "one nation fire the liar",
-        "value": 5200
-      },
-      {
         "query": "fire the liar",
-        "value": 2400
+        "value": 2350
       },
       {
         "query": "one nation farrer",
