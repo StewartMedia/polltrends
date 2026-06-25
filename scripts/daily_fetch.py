@@ -83,11 +83,19 @@ def fetch_for_geo(entities, geo, prefix):
         interest = _retry_google_call("interest_over_time", pt.interest_over_time)
         all_interest_frames.append(interest)
 
-        rq = _retry_google_call("related_queries", pt.related_queries)
-        all_rq.update(rq)
+        try:
+            rq = _retry_google_call("related_queries", pt.related_queries)
+        except (exceptions.TooManyRequestsError, exceptions.ResponseError, request_exceptions.ReadTimeout, request_exceptions.ConnectTimeout, request_exceptions.ConnectionError) as e:
+            print(f"  ⚠️  related_queries: optional enrichment unavailable after retries ({e.__class__.__name__}); writing empty fallback for this batch")
+            rq = {}
+        all_rq.update(rq or {})
 
-        topics = _retry_google_call("related_topics", pt.related_topics)
-        all_topics.update(topics)
+        try:
+            topics = _retry_google_call("related_topics", pt.related_topics)
+        except (exceptions.TooManyRequestsError, exceptions.ResponseError, request_exceptions.ReadTimeout, request_exceptions.ConnectTimeout, request_exceptions.ConnectionError) as e:
+            print(f"  ⚠️  related_topics: optional enrichment unavailable after retries ({e.__class__.__name__}); writing empty fallback for this batch")
+            topics = {}
+        all_topics.update(topics or {})
 
     # Combine interest frames and transform to chart-compatible format
     interest_combined = pd.concat(all_interest_frames, axis=1) if len(all_interest_frames) > 1 else all_interest_frames[0]
