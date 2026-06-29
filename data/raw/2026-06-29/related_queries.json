@@ -1,1 +1,634 @@
-{"/m/0q96": {"top": "                         query  value\n0                        labor    100\n1                       labour     41\n2                  labor party     40\n3                      liberal     26\n4             australian labor     16\n5                 labour party     13\n6             labour australia     12\n7        australia labor party     11\n8                   one nation     10\n9                liberal party      9\n10                         alp      9\n11            labor government      8\n12                    albanese      7\n13      labour party australia      6\n14     australian labour party      5\n15                      greens      4\n16     liberal party australia      4\n17    labor party of australia      4\n18             labour or labor      3\n19  labor government australia      3\n20           liberal vs labour      3\n21    australian liberal party      2\n22                  labor news      2\n23            anthony albanese      2\n24                  the greens      2", "rising": "                             query  value\n0  tammy tyrrell joins labor party  88850\n1                    fire the liar  68550\n2                   labor donation  55550\n3             one nation donations  46600\n4                  labor death tax  32150\n5            one nation fundraiser  26400\n6                       one nation     70"}, "/m/04p4r": {"top": "                             query  value\n0                          liberal    100\n1                    liberal party     75\n2                liberal australia     26\n3          liberal party australia     20\n4                   liberal leader     18\n5             leader liberal party     14\n6       liberal party of australia     10\n7                            labor     10\n8                           labour      9\n9                       one nation      8\n10        australian liberal party      8\n11         leader of liberal party      7\n12                one nation party      7\n13                     labor party      7\n14        liberal leader australia      6\n15                    labour party      6\n16         liberal party president      5\n17           federal liberal party      5\n18     leader of the liberal party      5\n19                    angus taylor      4\n20                     tony abbott      4\n21                liberal policies      4\n22  liberal party leader australia      4\n23                        liberals      4\n24           labor party australia      3", "rising": "                                  query  value\n0                     dinesh gourisetty  23350\n1                colleen harkin liberal  18000\n2            tina mcqueen liberal party  11150\n3                         teena mcqueen   6650\n4                           tony abbott   1100\n5               liberal party president   1000\n6                          paul keating    700\n7    tony abbott liberal party strategy    600\n8        president of the liberal party    500\n9                 head of liberal party    350\n10                        barnaby joyce    300\n11              pauline hanson policies    250\n12          prime minister of australia    200\n13         australian political parties    190\n14                  one nation policies    180\n15  is pauline hanson liberal or labour    150\n16                labor party australia    110\n17                     one nation party    100\n18               liberal party policies     90\n19                     liberal policies     90\n20                       pauline hanson     90\n21                           one nation     90\n22                          labor party     80\n23                                labor     70\n24               liberal party victoria     60"}, "/m/0171c7": {"top": "                         query  value\n0                       greens    100\n1                   the greens     41\n2             australia greens     18\n3            australian greens     17\n4                 greens party     15\n5             the greens party     10\n6         the greens australia      9\n7                greens leader      8\n8                 labor greens      7\n9                        labor      7\n10                  one nation      6\n11       the australian greens      6\n12      greens party australia      5\n13             greens policies      5\n14               greens policy      5\n15                       green      5\n16              greens senator      5\n17                      labour      5\n18                     liberal      5\n19     australian greens party      4\n20           the greens leader      3\n21            leader of greens      3\n22        leader of the greens      3\n23      greens political party      3\n24  the greens political party      3", "rising": "                                    query   value\n0                                    smsf  118100\n1                             greens smsf   96350\n2                           duncan turpie   55750\n3                                     lnp   53450\n4   how many greens senators in australia   41100\n5                          greens tapware   35500\n6                         join the greens   34900\n7                    hannah thomas greens   22200\n8                  senator larissa waters   18250\n9                            peter dutton    3400\n10             the greens political party      50"}, "/m/0l8lg": {"top": "                         query  value\n0                   one nation    100\n1         one nation australia      9\n2                fire the liar      7\n3     fire the liar one nation      7\n4             one nation party      7\n5               pauline hanson      6\n6          one nation policies      5\n7    pauline hanson one nation      4\n8           what is one nation      4\n9           one nation polling      3\n10             one nation news      3\n11        one nation donations      3\n12                      farrer      3\n13           one nation policy      3\n14           one nation farrer      3\n15              one nation win      2\n16            one nation seats      2\n17         one nation victoria      2\n18       one nation fundraiser      2\n19            one nation polls      2\n20               one nation sa      2\n21             one nation poll      2\n22  one nation south australia      1\n23                david farley      1\n24     david farley one nation      1", "rising": "                                       query   value\n0                              fire the liar  721400\n1                   fire the liar one nation  714950\n2                      one nation fundraiser  195450\n3                              fire the lair   54150\n4                   fire the lair one nation   51100\n5         one nation donations fire the liar   48500\n6             how much has one nation raised   36650\n7                     fire the liar campaign   28500\n8                    one nation fund raising   12250\n9         one nation versus labor membership    6300\n10                      one nation donations    1950\n11        one nation lower house projections    1850\n12                       one nation donation    1000\n13                      donate to one nation     750\n14                         one nation donate     750\n15               how to donate to one nation     650\n16  one nation farrer by-election prediction     450\n17                       one nation cartoons     350\n18                               jason virgo     300\n19                    jason virgo one nation     250\n20            one nation immigration polling     200\n21                         one nation rapist     170\n22                    james ashby one nation     170\n23        what are pauline hanson's policies     170\n24                   david farley one nation     160"}}
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labor",
+        "value": 100
+      },
+      {
+        "query": "labour",
+        "value": 36
+      },
+      {
+        "query": "labor party",
+        "value": 34
+      },
+      {
+        "query": "liberal",
+        "value": 23
+      },
+      {
+        "query": "labor australia",
+        "value": 19
+      },
+      {
+        "query": "australian labor",
+        "value": 13
+      },
+      {
+        "query": "labour party",
+        "value": 11
+      },
+      {
+        "query": "labour australia",
+        "value": 11
+      },
+      {
+        "query": "labor party australia",
+        "value": 9
+      },
+      {
+        "query": "australian labor party",
+        "value": 9
+      },
+      {
+        "query": "one nation",
+        "value": 9
+      },
+      {
+        "query": "alp",
+        "value": 8
+      },
+      {
+        "query": "liberal party",
+        "value": 8
+      },
+      {
+        "query": "labor government",
+        "value": 7
+      },
+      {
+        "query": "albanese",
+        "value": 6
+      },
+      {
+        "query": "australian labour party",
+        "value": 4
+      },
+      {
+        "query": "one nation party",
+        "value": 4
+      },
+      {
+        "query": "greens",
+        "value": 4
+      },
+      {
+        "query": "liberal party australia",
+        "value": 3
+      },
+      {
+        "query": "labour or labor",
+        "value": 3
+      },
+      {
+        "query": "labor party of australia",
+        "value": 3
+      },
+      {
+        "query": "labor greens",
+        "value": 3
+      },
+      {
+        "query": "labor government australia",
+        "value": 2
+      },
+      {
+        "query": "pauline hanson",
+        "value": 2
+      },
+      {
+        "query": "labor policies",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "labor government cgt changes",
+        "value": 92550
+      },
+      {
+        "query": "labor fundraiser",
+        "value": 73800
+      },
+      {
+        "query": "fire the liar",
+        "value": 50550
+      },
+      {
+        "query": "labor death tax",
+        "value": 43600
+      },
+      {
+        "query": "one nation versus labor membership",
+        "value": 36300
+      },
+      {
+        "query": "one nation fundraiser",
+        "value": 31000
+      },
+      {
+        "query": "tammy tyrrell joins labor party",
+        "value": 600
+      },
+      {
+        "query": "negative gearing",
+        "value": 300
+      },
+      {
+        "query": "one nation donations",
+        "value": 190
+      },
+      {
+        "query": "pauline hanson",
+        "value": 110
+      },
+      {
+        "query": "one nation",
+        "value": 60
+      },
+      {
+        "query": "one nation party",
+        "value": 40
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal party",
+        "value": 75
+      },
+      {
+        "query": "liberal australia",
+        "value": 26
+      },
+      {
+        "query": "liberal party australia",
+        "value": 20
+      },
+      {
+        "query": "liberal leader",
+        "value": 18
+      },
+      {
+        "query": "leader liberal party",
+        "value": 14
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 11
+      },
+      {
+        "query": "labor",
+        "value": 10
+      },
+      {
+        "query": "labour",
+        "value": 8
+      },
+      {
+        "query": "one nation",
+        "value": 8
+      },
+      {
+        "query": "australian liberal party",
+        "value": 8
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 7
+      },
+      {
+        "query": "labor party",
+        "value": 7
+      },
+      {
+        "query": "one nation party",
+        "value": 6
+      },
+      {
+        "query": "labour party",
+        "value": 6
+      },
+      {
+        "query": "liberal party president",
+        "value": 5
+      },
+      {
+        "query": "federal liberal party",
+        "value": 5
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 5
+      },
+      {
+        "query": "leader of the liberal party",
+        "value": 5
+      },
+      {
+        "query": "tony abbott",
+        "value": 4
+      },
+      {
+        "query": "angus taylor",
+        "value": 4
+      },
+      {
+        "query": "liberals",
+        "value": 4
+      },
+      {
+        "query": "liberal policies",
+        "value": 4
+      },
+      {
+        "query": "labor party australia",
+        "value": 3
+      },
+      {
+        "query": "pauline hanson",
+        "value": 3
+      }
+    ],
+    "rising": [
+      {
+        "query": "tony abbott liberal party strategy",
+        "value": 61350
+      },
+      {
+        "query": "liberal party president",
+        "value": 950
+      },
+      {
+        "query": "president of the liberal party",
+        "value": 850
+      },
+      {
+        "query": "tony abbott",
+        "value": 650
+      },
+      {
+        "query": "chris minns",
+        "value": 650
+      },
+      {
+        "query": "australian political parties",
+        "value": 250
+      },
+      {
+        "query": "one nation policies",
+        "value": 120
+      },
+      {
+        "query": "one nation party",
+        "value": 100
+      },
+      {
+        "query": "labor party",
+        "value": 90
+      },
+      {
+        "query": "one nation",
+        "value": 80
+      },
+      {
+        "query": "pauline hanson",
+        "value": 80
+      },
+      {
+        "query": "liberal policies",
+        "value": 70
+      },
+      {
+        "query": "labour party",
+        "value": 70
+      },
+      {
+        "query": "labor",
+        "value": 70
+      },
+      {
+        "query": "liberal party victoria",
+        "value": 60
+      },
+      {
+        "query": "labour",
+        "value": 50
+      },
+      {
+        "query": "labor party australia",
+        "value": 50
+      },
+      {
+        "query": "federal liberal party",
+        "value": 40
+      }
+    ]
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      },
+      {
+        "query": "the greens",
+        "value": 40
+      },
+      {
+        "query": "australian greens",
+        "value": 17
+      },
+      {
+        "query": "greens party",
+        "value": 15
+      },
+      {
+        "query": "the greens party",
+        "value": 9
+      },
+      {
+        "query": "the greens australia",
+        "value": 9
+      },
+      {
+        "query": "greens leader",
+        "value": 8
+      },
+      {
+        "query": "labor",
+        "value": 8
+      },
+      {
+        "query": "labor greens",
+        "value": 7
+      },
+      {
+        "query": "one nation",
+        "value": 7
+      },
+      {
+        "query": "the australian greens",
+        "value": 7
+      },
+      {
+        "query": "greens party australia",
+        "value": 6
+      },
+      {
+        "query": "greens policies",
+        "value": 5
+      },
+      {
+        "query": "green",
+        "value": 5
+      },
+      {
+        "query": "greens policy",
+        "value": 5
+      },
+      {
+        "query": "greens senator",
+        "value": 4
+      },
+      {
+        "query": "labour",
+        "value": 4
+      },
+      {
+        "query": "liberal",
+        "value": 4
+      },
+      {
+        "query": "the greens leader",
+        "value": 4
+      },
+      {
+        "query": "australian greens party",
+        "value": 4
+      },
+      {
+        "query": "leader of greens",
+        "value": 3
+      },
+      {
+        "query": "the greens party australia",
+        "value": 3
+      },
+      {
+        "query": "leader of the greens",
+        "value": 3
+      },
+      {
+        "query": "greens political party",
+        "value": 3
+      },
+      {
+        "query": "one nation party",
+        "value": 3
+      }
+    ],
+    "rising": [
+      {
+        "query": "smsf",
+        "value": 101100
+      },
+      {
+        "query": "greens smsf",
+        "value": 94650
+      },
+      {
+        "query": "duncan turpie",
+        "value": 6550
+      }
+    ]
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation australia",
+        "value": 9
+      },
+      {
+        "query": "fire the liar",
+        "value": 8
+      },
+      {
+        "query": "fire the liar one nation",
+        "value": 8
+      },
+      {
+        "query": "one nation party",
+        "value": 7
+      },
+      {
+        "query": "pauline hanson",
+        "value": 6
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "one nation pauline hanson",
+        "value": 5
+      },
+      {
+        "query": "what is one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation polling",
+        "value": 3
+      },
+      {
+        "query": "one nation news",
+        "value": 3
+      },
+      {
+        "query": "one nation donations",
+        "value": 3
+      },
+      {
+        "query": "farrer",
+        "value": 3
+      },
+      {
+        "query": "one nation policy",
+        "value": 3
+      },
+      {
+        "query": "one nation farrer",
+        "value": 3
+      },
+      {
+        "query": "one nation win",
+        "value": 3
+      },
+      {
+        "query": "one nation seats",
+        "value": 3
+      },
+      {
+        "query": "one nation victoria",
+        "value": 2
+      },
+      {
+        "query": "one nation fundraiser",
+        "value": 2
+      },
+      {
+        "query": "one nation polls",
+        "value": 2
+      },
+      {
+        "query": "one nation sa",
+        "value": 2
+      },
+      {
+        "query": "one nation poll",
+        "value": 2
+      },
+      {
+        "query": "david farley",
+        "value": 1
+      },
+      {
+        "query": "one nation donation",
+        "value": 1
+      },
+      {
+        "query": "one nation seat",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "fire the liar",
+        "value": 718150
+      },
+      {
+        "query": "fire the liar one nation",
+        "value": 699900
+      },
+      {
+        "query": "one nation fundraiser",
+        "value": 198500
+      },
+      {
+        "query": "one nation lower house projections",
+        "value": 76850
+      },
+      {
+        "query": "fire the lair",
+        "value": 53800
+      },
+      {
+        "query": "fire the lair one nation",
+        "value": 51050
+      },
+      {
+        "query": "one nation farrer by-election prediction",
+        "value": 14450
+      },
+      {
+        "query": "one nation donations",
+        "value": 1950
+      },
+      {
+        "query": "one nation donation",
+        "value": 750
+      },
+      {
+        "query": "how to donate to one nation",
+        "value": 500
+      },
+      {
+        "query": "one nation abortion policy",
+        "value": 200
+      },
+      {
+        "query": "one nation abortion",
+        "value": 190
+      },
+      {
+        "query": "sean black one nation",
+        "value": 170
+      },
+      {
+        "query": "david farley",
+        "value": 160
+      },
+      {
+        "query": "one nation labor poll",
+        "value": 160
+      },
+      {
+        "query": "jason virgo",
+        "value": 150
+      },
+      {
+        "query": "one nation farrer",
+        "value": 150
+      },
+      {
+        "query": "farrer",
+        "value": 140
+      },
+      {
+        "query": "one nation policy",
+        "value": 50
+      }
+    ]
+  }
+}
