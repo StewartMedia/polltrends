@@ -1,0 +1,121 @@
+[
+  {
+    "date": "2026-05-09",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 100,
+    "rolling_avg": 12.0,
+    "ratio": 8.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-29",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 10,
+    "rolling_avg": 2.6,
+    "ratio": 3.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 99,
+    "rolling_avg": 25.3,
+    "ratio": 3.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 75,
+    "rolling_avg": 23.3,
+    "ratio": 3.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-01",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 50,
+    "rolling_avg": 16.4,
+    "ratio": 3.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-23",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 10,
+    "rolling_avg": 3.6,
+    "ratio": 2.8,
+    "explanation": "Victorian Greens Demand Halt on New Large Data Centres",
+    "news": [
+      {
+        "title": "Victorian Greens Demand Halt on New Large Data Centres",
+        "source": "Mirage News",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNVBZZXEtNmdsbTZwemo2VjZYOEo4ZTJXZjBud1plQkF3d0RxSE9Rcy1abjRsTXpwYTNHZFh2UmhfcHBDWXdRTlZHM182UVJhbUxNOVMxRVNxdC1QSTBCVDMwMGRVNmN3NHhGVDFZQXpkcFQxbFhlRGY1ZEFoOHNjcFFscE1iWmtNSEE?oc=5",
+        "date": "2026-06-24"
+      },
+      {
+        "title": "Victorian Greens Push Laws to Close Logging Loopholes",
+        "source": "Mirage News",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRDJuRG4yMDN5X1pab240Ym9ZakhQbDJxV1AzS0VpeHdKR09Ub2NlQkpXOFhYOXVuMDRTODFrR3RRbE1NamJaOGZubjh2aGEwUmo5V3RHNjFXSm5FUWtwcXh4T3c5Ul9EWVNLNWJzWmhtRnZhdC1fdVFnNkRDaTBiZ2gyVHBlUQ?oc=5",
+        "date": "2026-06-23"
+      },
+      {
+        "title": "'Raise the age': Greens push for criminal responsibility change on first sitting of new Victorian parliament",
+        "source": "MSN",
+        "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPWGhCZ3I1NmI0WERRLXZoQmlMSDN0b1ZNcmg5MWFPdEdUZy02T3ozN2lic1RiZVJ5UndkcVRISl81SDhjQjJVdjgwWWRBdV8zd1BGaHBLNW9keFltRm55WUdpSElVQVNiTHRrYjdWWkdiUzV3TGFjXzNNZ19wY1V4a0ZVbFVVZldSZ1UtSlM0OWdJUHhROUVWNXFtVlo4aVNkdEpodUxJTUlINUhSMGx5TllNX3phRzJqUS1NUUwzOTdDVUhJa2NYeThVX3ZEUnRvdmljRlUtc1lrLXdVVE1DUk82QjBWOTRwVjFaYm9kdw?oc=5",
+        "date": "2026-06-23"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-10",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 3.7,
+    "ratio": 2.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-31",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 40,
+    "rolling_avg": 14.6,
+    "ratio": 2.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-13",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 11,
+    "rolling_avg": 4.3,
+    "ratio": 2.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-11",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 93,
+    "rolling_avg": 36.0,
+    "ratio": 2.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]
