@@ -1,19 +1,386 @@
 {
   "ALP": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "labor party",
+        "value": 100
+      },
+      {
+        "query": "liberal",
+        "value": 78
+      },
+      {
+        "query": "australian labor",
+        "value": 36
+      },
+      {
+        "query": "labour party",
+        "value": 30
+      },
+      {
+        "query": "one nation",
+        "value": 29
+      },
+      {
+        "query": "liberal party australia",
+        "value": 14
+      },
+      {
+        "query": "labour party australia",
+        "value": 13
+      },
+      {
+        "query": "albanese",
+        "value": 13
+      },
+      {
+        "query": "australian labour party",
+        "value": 11
+      },
+      {
+        "query": "greens",
+        "value": 11
+      },
+      {
+        "query": "labor party of australia",
+        "value": 10
+      },
+      {
+        "query": "labor or labour",
+        "value": 9
+      },
+      {
+        "query": "the greens",
+        "value": 8
+      },
+      {
+        "query": "liberal policies",
+        "value": 8
+      },
+      {
+        "query": "labor vs liberal",
+        "value": 7
+      },
+      {
+        "query": "labor news",
+        "value": 6
+      },
+      {
+        "query": "labor policies",
+        "value": 6
+      },
+      {
+        "query": "anthony albanese",
+        "value": 5
+      },
+      {
+        "query": "tammy tyrrell joins labor party",
+        "value": 3
+      },
+      {
+        "query": "labor fundraiser",
+        "value": 3
+      },
+      {
+        "query": "jim chalmers",
+        "value": 2
+      },
+      {
+        "query": "labor death tax",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "anthony albanese",
+        "value": 139350
+      },
+      {
+        "query": "tammy tyrrell joins labor party",
+        "value": 80450
+      },
+      {
+        "query": "labor fundraiser",
+        "value": 69300
+      },
+      {
+        "query": "jim chalmers",
+        "value": 66050
+      },
+      {
+        "query": "labor death tax",
+        "value": 45400
+      },
+      {
+        "query": "labor news",
+        "value": 190
+      },
+      {
+        "query": "liberal policies",
+        "value": 130
+      },
+      {
+        "query": "one nation",
+        "value": 120
+      },
+      {
+        "query": "the greens",
+        "value": 70
+      },
+      {
+        "query": "labor party of australia",
+        "value": 60
+      }
+    ]
   },
   "LIB": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal party",
+        "value": 78
+      },
+      {
+        "query": "liberal party australia",
+        "value": 18
+      },
+      {
+        "query": "one nation",
+        "value": 8
+      },
+      {
+        "query": "liberal party victoria",
+        "value": 7
+      },
+      {
+        "query": "labor party",
+        "value": 7
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 7
+      },
+      {
+        "query": "australian liberal party",
+        "value": 6
+      },
+      {
+        "query": "one nation party",
+        "value": 6
+      },
+      {
+        "query": "liberal policies",
+        "value": 5
+      },
+      {
+        "query": "labour party",
+        "value": 4
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 4
+      },
+      {
+        "query": "leader of the liberal party",
+        "value": 4
+      },
+      {
+        "query": "federal liberal party",
+        "value": 4
+      },
+      {
+        "query": "angus taylor",
+        "value": 4
+      },
+      {
+        "query": "liberal party policies",
+        "value": 4
+      },
+      {
+        "query": "liberals",
+        "value": 3
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation",
+        "value": 120
+      },
+      {
+        "query": "liberal party policies",
+        "value": 120
+      },
+      {
+        "query": "one nation party",
+        "value": 110
+      },
+      {
+        "query": "labor party",
+        "value": 100
+      },
+      {
+        "query": "liberal party victoria",
+        "value": 80
+      },
+      {
+        "query": "liberal policies",
+        "value": 80
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 70
+      }
+    ]
   },
   "GRN": {
-    "top": [],
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      },
+      {
+        "query": "the greens",
+        "value": 39
+      },
+      {
+        "query": "greens party",
+        "value": 17
+      },
+      {
+        "query": "greens australia",
+        "value": 15
+      },
+      {
+        "query": "the greens party",
+        "value": 10
+      },
+      {
+        "query": "one nation",
+        "value": 7
+      },
+      {
+        "query": "greens policies",
+        "value": 5
+      },
+      {
+        "query": "leader of the greens",
+        "value": 2
+      },
+      {
+        "query": "greens leader australia",
+        "value": 2
+      }
+    ],
     "rising": []
   },
   "PHON": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation australia",
+        "value": 11
+      },
+      {
+        "query": "one nation party",
+        "value": 8
+      },
+      {
+        "query": "one nation victoria",
+        "value": 7
+      },
+      {
+        "query": "pauline hanson",
+        "value": 7
+      },
+      {
+        "query": "one nation policies",
+        "value": 7
+      },
+      {
+        "query": "fire the liar",
+        "value": 6
+      },
+      {
+        "query": "one nation fire the liar",
+        "value": 6
+      },
+      {
+        "query": "one nation pauline hanson",
+        "value": 6
+      },
+      {
+        "query": "pauline hanson one nation",
+        "value": 6
+      },
+      {
+        "query": "one nation polling",
+        "value": 4
+      },
+      {
+        "query": "news one nation",
+        "value": 3
+      },
+      {
+        "query": "one nation farrer",
+        "value": 3
+      },
+      {
+        "query": "one nation policy",
+        "value": 3
+      },
+      {
+        "query": "one nation donations",
+        "value": 3
+      },
+      {
+        "query": "one nation poll",
+        "value": 2
+      },
+      {
+        "query": "one nation leader",
+        "value": 2
+      },
+      {
+        "query": "one nation candidates",
+        "value": 2
+      },
+      {
+        "query": "one nation lower house projections",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "fire the liar",
+        "value": 491600
+      },
+      {
+        "query": "one nation fire the liar",
+        "value": 479750
+      },
+      {
+        "query": "one nation donations",
+        "value": 258850
+      },
+      {
+        "query": "one nation lower house projections",
+        "value": 80250
+      },
+      {
+        "query": "one nation farrer",
+        "value": 130
+      },
+      {
+        "query": "one nation policy",
+        "value": 90
+      }
+    ]
   },
   "AJP": {
     "top": [],
