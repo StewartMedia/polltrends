@@ -50,10 +50,6 @@
         "value": 6
       },
       {
-        "query": "albanese",
-        "value": 5
-      },
-      {
         "query": "one nation party",
         "value": 5
       },
@@ -86,10 +82,6 @@
         "value": 2
       },
       {
-        "query": "the greens",
-        "value": 2
-      },
-      {
         "query": "anthony albanese",
         "value": 2
       },
@@ -100,20 +92,20 @@
       {
         "query": "jim chalmers",
         "value": 1
+      },
+      {
+        "query": "labor government cgt changes",
+        "value": 1
       }
     ],
     "rising": [
       {
         "query": "jim chalmers",
-        "value": 79100
+        "value": 81550
       },
       {
         "query": "labor government cgt changes",
-        "value": 68550
-      },
-      {
-        "query": "labor fundraiser",
-        "value": 1900
+        "value": 68450
       },
       {
         "query": "one nation party",
@@ -122,10 +114,6 @@
       {
         "query": "one nation",
         "value": 90
-      },
-      {
-        "query": "the greens",
-        "value": 50
       },
       {
         "query": "labor government",
@@ -145,15 +133,11 @@
       },
       {
         "query": "liberal party australia",
-        "value": 17
+        "value": 18
       },
       {
         "query": "liberal party leader",
         "value": 12
-      },
-      {
-        "query": "labor",
-        "value": 10
       },
       {
         "query": "liberal party of australia",
@@ -176,6 +160,10 @@
         "value": 6
       },
       {
+        "query": "one nation party",
+        "value": 6
+      },
+      {
         "query": "labour",
         "value": 6
       },
@@ -188,11 +176,11 @@
         "value": 5
       },
       {
-        "query": "leader of the liberal party",
+        "query": "federal liberal party",
         "value": 4
       },
       {
-        "query": "federal liberal party",
+        "query": "leader of the liberal party",
         "value": 4
       },
       {
@@ -216,26 +204,30 @@
         "value": 3
       },
       {
-        "query": "one nation policies",
+        "query": "tony abbott",
+        "value": 3
+      },
+      {
+        "query": "pauline hanson",
         "value": 2
       },
       {
-        "query": "tony abbott",
+        "query": "one nation policies",
         "value": 2
       }
     ],
     "rising": [
       {
         "query": "one nation policies",
-        "value": 166250
+        "value": 166900
       },
       {
         "query": "tony abbott",
-        "value": 120
+        "value": 200
       },
       {
-        "query": "labor",
-        "value": 80
+        "query": "one nation party",
+        "value": 100
       },
       {
         "query": "labor party australia",
@@ -247,14 +239,18 @@
       },
       {
         "query": "liberal policies",
-        "value": 80
-      },
-      {
-        "query": "one nation",
         "value": 70
       },
       {
+        "query": "pauline hanson",
+        "value": 50
+      },
+      {
         "query": "liberal party victoria",
+        "value": 50
+      },
+      {
+        "query": "one nation",
         "value": 50
       }
     ]
@@ -279,23 +275,19 @@
       },
       {
         "query": "greens leader",
-        "value": 21
+        "value": 20
       },
       {
-        "query": "labor greens",
-        "value": 17
-      },
-      {
-        "query": "greens policy",
-        "value": 15
+        "query": "the greens australia",
+        "value": 20
       },
       {
         "query": "one nation",
         "value": 15
       },
       {
-        "query": "greens party australia",
-        "value": 15
+        "query": "greens policy",
+        "value": 11
       },
       {
         "query": "greens policies",
@@ -307,14 +299,18 @@
       },
       {
         "query": "labour",
+        "value": 10
+      },
+      {
+        "query": "the greens political party",
         "value": 9
       },
       {
-        "query": "greens senator",
+        "query": "leader of the greens",
         "value": 8
       },
       {
-        "query": "leader of the greens",
+        "query": "greens senator",
         "value": 8
       },
       {
@@ -323,27 +319,14 @@
       },
       {
         "query": "liberal party",
-        "value": 6
+        "value": 7
       },
       {
         "query": "greens political party",
         "value": 6
-      },
-      {
-        "query": "greens smsf",
-        "value": 2
       }
     ],
-    "rising": [
-      {
-        "query": "greens smsf",
-        "value": 61550
-      },
-      {
-        "query": "greens policy",
-        "value": 70
-      }
-    ]
+    "rising": []
   },
   "PHON": {
     "top": [
@@ -357,11 +340,7 @@
       },
       {
         "query": "one nation party",
-        "value": 8
-      },
-      {
-        "query": "one nation election",
-        "value": 8
+        "value": 9
       },
       {
         "query": "one nation victoria",
@@ -408,11 +387,11 @@
         "value": 3
       },
       {
-        "query": "one nation win",
+        "query": "one nation donations",
         "value": 3
       },
       {
-        "query": "one nation donations",
+        "query": "one nation win",
         "value": 3
       },
       {
@@ -446,28 +425,36 @@
       {
         "query": "one nation donation",
         "value": 1
+      },
+      {
+        "query": "one nation lower house projections",
+        "value": 1
       }
     ],
     "rising": [
       {
         "query": "one nation fire the liar",
-        "value": 490400
+        "value": 490150
       },
       {
         "query": "fire the liar",
-        "value": 487150
+        "value": 487450
       },
       {
         "query": "one nation fundraiser",
-        "value": 177150
+        "value": 177600
       },
       {
         "query": "one nation lower house projections",
-        "value": 77650
+        "value": 78750
       },
       {
         "query": "fire the lair",
-        "value": 31000
+        "value": 31150
+      },
+      {
+        "query": "fire the lair one nation",
+        "value": 30550
       },
       {
         "query": "one nation farrer by-election prediction",
@@ -475,7 +462,7 @@
       },
       {
         "query": "one nation donations",
-        "value": 2350
+        "value": 2450
       },
       {
         "query": "one nation donation",
