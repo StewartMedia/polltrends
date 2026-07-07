@@ -58,6 +58,10 @@
         "value": 8
       },
       {
+        "query": "albanese",
+        "value": 7
+      },
+      {
         "query": "labour party australia",
         "value": 6
       },
@@ -96,36 +100,28 @@
       {
         "query": "labor government australia",
         "value": 3
-      },
-      {
-        "query": "pauline hanson",
-        "value": 2
       }
     ],
     "rising": [
       {
         "query": "labor government cgt changes",
-        "value": 88600
+        "value": 88800
       },
       {
         "query": "tammy tyrrell joins labor party",
-        "value": 83800
+        "value": 82900
       },
       {
         "query": "labor fundraiser",
-        "value": 74150
+        "value": 74100
       },
       {
         "query": "labor death tax",
-        "value": 52200
+        "value": 52250
       },
       {
         "query": "fire the liar",
-        "value": 52050
-      },
-      {
-        "query": "tanya plibersek",
-        "value": 1750
+        "value": 51450
       },
       {
         "query": "negative gearing",
@@ -164,7 +160,7 @@
         "value": 18
       },
       {
-        "query": "liberal party leader",
+        "query": "leader liberal party",
         "value": 14
       },
       {
@@ -247,7 +243,7 @@
     "rising": [
       {
         "query": "tony abbott liberal party strategy",
-        "value": 37200
+        "value": 38550
       },
       {
         "query": "tony abbott",
@@ -314,16 +310,12 @@
         "value": 100
       },
       {
-        "query": "australia greens",
-        "value": 46
-      },
-      {
         "query": "australian greens",
         "value": 41
       },
       {
         "query": "greens party",
-        "value": 40
+        "value": 39
       },
       {
         "query": "the greens party",
@@ -335,7 +327,7 @@
       },
       {
         "query": "greens leader",
-        "value": 21
+        "value": 20
       },
       {
         "query": "labor",
@@ -378,10 +370,6 @@
         "value": 12
       },
       {
-        "query": "liberal",
-        "value": 10
-      },
-      {
         "query": "the greens leader",
         "value": 10
       },
@@ -408,16 +396,24 @@
       {
         "query": "the greens policies",
         "value": 7
+      },
+      {
+        "query": "labor party",
+        "value": 6
+      },
+      {
+        "query": "liberal party",
+        "value": 6
       }
     ],
     "rising": [
       {
         "query": "smsf",
-        "value": 99300
+        "value": 98900
       },
       {
         "query": "greens smsf",
-        "value": 91800
+        "value": 91350
       },
       {
         "query": "labor",
@@ -512,11 +508,11 @@
         "value": 1
       },
       {
-        "query": "david farley one nation",
+        "query": "liberal party",
         "value": 1
       },
       {
-        "query": "liberal party",
+        "query": "david farley one nation",
         "value": 1
       },
       {
@@ -531,31 +527,31 @@
     "rising": [
       {
         "query": "fire the liar",
-        "value": 687850
+        "value": 687550
       },
       {
         "query": "one nation fire the liar",
-        "value": 676050
+        "value": 676200
       },
       {
         "query": "one nation fundraiser",
-        "value": 201550
+        "value": 201600
       },
       {
         "query": "one nation lower house projections",
-        "value": 82800
+        "value": 82700
       },
       {
         "query": "fire the lair",
-        "value": 52850
+        "value": 52900
       },
       {
         "query": "how much has one nation raised",
-        "value": 35300
+        "value": 34950
       },
       {
         "query": "fire the liar campaign",
-        "value": 34750
+        "value": 34650
       },
       {
         "query": "one nation farrer by-election prediction",
