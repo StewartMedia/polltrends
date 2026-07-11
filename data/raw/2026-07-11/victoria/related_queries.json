@@ -14,6 +14,10 @@
         "value": 36
       },
       {
+        "query": "liberal",
+        "value": 29
+      },
+      {
         "query": "australian labor",
         "value": 13
       },
@@ -42,6 +46,10 @@
         "value": 8
       },
       {
+        "query": "albanese",
+        "value": 6
+      },
+      {
         "query": "labour party australia",
         "value": 5
       },
@@ -58,10 +66,6 @@
         "value": 4
       },
       {
-        "query": "labor or labour",
-        "value": 3
-      },
-      {
         "query": "pauline hanson",
         "value": 3
       },
@@ -74,6 +78,10 @@
         "value": 2
       },
       {
+        "query": "labor vs liberal",
+        "value": 2
+      },
+      {
         "query": "labor government cgt changes",
         "value": 2
       },
@@ -82,38 +90,34 @@
         "value": 2
       },
       {
+        "query": "labor meaning",
+        "value": 2
+      },
+      {
         "query": "alp party",
         "value": 2
       },
       {
-        "query": "angus taylor",
+        "query": "labor fundraiser",
         "value": 1
-      },
-      {
-        "query": "one nation policies",
-        "value": 1
-      },
-      {
-        "query": "tammy tyrrell joins labor party",
-        "value": 1
-      },
-      {
-        "query": "anthony albanese labor leadership succession",
-        "value": 0
       }
     ],
     "rising": [
       {
         "query": "labor government cgt changes",
-        "value": 165950
+        "value": 166250
+      },
+      {
+        "query": "labor fundraiser",
+        "value": 104900
       },
       {
         "query": "tammy tyrrell joins labor party",
-        "value": 73450
+        "value": 73600
       },
       {
         "query": "anthony albanese labor leadership succession",
-        "value": 16650
+        "value": 16250
       },
       {
         "query": "one nation party",
@@ -138,10 +142,6 @@
       {
         "query": "labor party australia",
         "value": 50
-      },
-      {
-        "query": "anthony albanese",
-        "value": 40
       }
     ]
   },
@@ -184,10 +184,6 @@
         "value": 7
       },
       {
-        "query": "labour",
-        "value": 6
-      },
-      {
         "query": "australian liberal party",
         "value": 6
       },
@@ -220,6 +216,10 @@
         "value": 4
       },
       {
+        "query": "liberal party leader australia",
+        "value": 4
+      },
+      {
         "query": "liberals",
         "value": 3
       },
@@ -228,11 +228,11 @@
         "value": 3
       },
       {
-        "query": "tony abbott",
+        "query": "leader of liberal party australia",
         "value": 2
       },
       {
-        "query": "leader of liberal party australia",
+        "query": "tony abbott",
         "value": 2
       },
       {
@@ -251,27 +251,23 @@
     "rising": [
       {
         "query": "tony abbott",
-        "value": 221100
+        "value": 219150
       },
       {
         "query": "is pauline hanson liberal or labour",
-        "value": 3800
-      },
-      {
-        "query": "tina mcqueen liberal party",
-        "value": 2150
+        "value": 5400
       },
       {
         "query": "moira deeming",
-        "value": 160
+        "value": 180
+      },
+      {
+        "query": "labour party australia",
+        "value": 130
       },
       {
         "query": "liberal policies",
         "value": 130
-      },
-      {
-        "query": "labour party australia",
-        "value": 120
       },
       {
         "query": "labor party",
@@ -286,11 +282,11 @@
         "value": 90
       },
       {
-        "query": "liberal party policies",
+        "query": "liberal party victoria",
         "value": 80
       },
       {
-        "query": "liberal party victoria",
+        "query": "liberal party policies",
         "value": 80
       },
       {
@@ -322,10 +318,6 @@
         "value": 16
       },
       {
-        "query": "greens australia",
-        "value": 16
-      },
-      {
         "query": "the greens party",
         "value": 9
       },
@@ -339,10 +331,14 @@
       },
       {
         "query": "greens party australia",
-        "value": 6
+        "value": 5
       },
       {
         "query": "greens policies",
+        "value": 5
+      },
+      {
+        "query": "greens policy",
         "value": 5
       },
       {
@@ -360,6 +356,10 @@
       {
         "query": "greens political party",
         "value": 3
+      },
+      {
+        "query": "leader of the greens",
+        "value": 2
       },
       {
         "query": "greens party leader",
@@ -463,58 +463,54 @@
         "value": 1
       },
       {
-        "query": "one nation donations fire the liar",
+        "query": "david farley one nation",
         "value": 1
       },
       {
-        "query": "donate to one nation",
+        "query": "one nation donations fire the liar",
         "value": 1
       }
     ],
     "rising": [
       {
         "query": "fire the liar",
-        "value": 505100
+        "value": 505000
       },
       {
         "query": "one nation fundraiser",
-        "value": 180900
+        "value": 181950
       },
       {
         "query": "one nation donations fire the liar",
-        "value": 49150
+        "value": 49650
       },
       {
         "query": "donate to one nation",
-        "value": 46600
+        "value": 46500
       },
       {
         "query": "one nation lower house projections",
-        "value": 45250
+        "value": 44950
       },
       {
         "query": "fire the lair",
-        "value": 37100
-      },
-      {
-        "query": "one nation fund raiser",
-        "value": 17850
+        "value": 37400
       },
       {
         "query": "jason virgo one nation",
-        "value": 17050
+        "value": 17800
       },
       {
         "query": "farrer electorate map",
-        "value": 16150
+        "value": 16200
       },
       {
         "query": "farrer by election results",
-        "value": 14450
+        "value": 14200
       },
       {
         "query": "kyle sandilands",
-        "value": 13700
+        "value": 13550
       },
       {
         "query": "one nation farrer by-election prediction",
@@ -527,6 +523,10 @@
       {
         "query": "fire the liar one nation",
         "value": 1150
+      },
+      {
+        "query": "david farley one nation",
+        "value": 160
       },
       {
         "query": "one nation farrer",
