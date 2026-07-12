@@ -42,6 +42,10 @@
         "value": 6
       },
       {
+        "query": "albanese",
+        "value": 5
+      },
+      {
         "query": "one nation party",
         "value": 4
       },
@@ -78,6 +82,10 @@
         "value": 1
       },
       {
+        "query": "labor fundraiser",
+        "value": 1
+      },
+      {
         "query": "tammy tyrrell joins labor party",
         "value": 0
       }
@@ -85,19 +93,23 @@
     "rising": [
       {
         "query": "jim chalmers",
-        "value": 131100
+        "value": 130900
       },
       {
         "query": "labor government cgt changes",
-        "value": 87850
+        "value": 89700
+      },
+      {
+        "query": "labor fundraiser",
+        "value": 68850
       },
       {
         "query": "tammy tyrrell joins labor party",
-        "value": 32350
+        "value": 32300
       },
       {
         "query": "one nation party",
-        "value": 190
+        "value": 180
       },
       {
         "query": "one nation",
@@ -184,18 +196,18 @@
         "value": 2
       },
       {
-        "query": "tony abbott",
+        "query": "one nation policies",
         "value": 1
       },
       {
-        "query": "one nation policies",
+        "query": "tony abbott",
         "value": 1
       }
     ],
     "rising": [
       {
         "query": "one nation policies",
-        "value": 111800
+        "value": 112250
       },
       {
         "query": "tony abbott",
@@ -251,7 +263,7 @@
       },
       {
         "query": "greens leader",
-        "value": 8
+        "value": 7
       },
       {
         "query": "one nation",
@@ -278,20 +290,16 @@
         "value": 3
       },
       {
-        "query": "leader of the greens",
-        "value": 3
-      },
-      {
         "query": "greens political party",
         "value": 3
       },
       {
-        "query": "pauline hanson",
-        "value": 3
+        "query": "liberal party",
+        "value": 2
       },
       {
-        "query": "liberal party",
-        "value": 3
+        "query": "pauline hanson",
+        "value": 2
       },
       {
         "query": "greens leader australia",
@@ -306,15 +314,11 @@
         "value": 2
       },
       {
-        "query": "green australia",
-        "value": 2
-      },
-      {
-        "query": "one nation policies",
+        "query": "australian greens policies",
         "value": 1
       },
       {
-        "query": "australian greens policies",
+        "query": "one nation policies",
         "value": 1
       },
       {
@@ -324,13 +328,13 @@
       {
         "query": "larissa waters",
         "value": 1
+      },
+      {
+        "query": "australian greens leader",
+        "value": 1
       }
     ],
     "rising": [
-      {
-        "query": "green australia",
-        "value": 149350
-      },
       {
         "query": "greens policy",
         "value": 70
@@ -451,35 +455,35 @@
     "rising": [
       {
         "query": "fire the liar one nation",
-        "value": 485700
+        "value": 484950
       },
       {
         "query": "one nation fundraiser",
-        "value": 185250
+        "value": 184700
       },
       {
         "query": "one nation donation",
-        "value": 91050
+        "value": 91100
       },
       {
         "query": "one nation lower house projections",
-        "value": 57700
+        "value": 57550
       },
       {
         "query": "one nation gas policy",
-        "value": 39750
+        "value": 39300
       },
       {
         "query": "one nation farrer by-election prediction",
-        "value": 32650
+        "value": 32600
       },
       {
         "query": "fire the lair one nation",
-        "value": 32000
+        "value": 32150
       },
       {
         "query": "one nation abortion policy",
-        "value": 17800
+        "value": 17850
       },
       {
         "query": "fire the liar",
@@ -487,7 +491,7 @@
       },
       {
         "query": "one nation donations",
-        "value": 2050
+        "value": 2000
       },
       {
         "query": "one nation farrer",
