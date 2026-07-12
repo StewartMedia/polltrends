@@ -1,14 +1,147 @@
 {
   "ALP": {
     "party": "Labor",
-    "queries_analysed": 0,
+    "queries_analysed": 33,
     "sentiment_counts": {
-      "positive": 0,
-      "negative": 0,
-      "neutral": 0
+      "positive": 1,
+      "negative": 2,
+      "neutral": 30
     },
-    "sentiment_score": 0.0,
-    "classified_queries": []
+    "sentiment_score": -0.03,
+    "classified_queries": [
+      {
+        "query": "labor",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labour",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "australian labor",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labour party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labour australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "australian labor party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor party australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "the australian",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "alp",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor government",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "albanese",
+        "sentiment": "negative"
+      },
+      {
+        "query": "labour party australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "greens",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "australian labour party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor party of australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal party australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor or labour",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "anthony albanese",
+        "sentiment": "negative"
+      },
+      {
+        "query": "labor government australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "tammy tyrrell joins labor party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor government cgt changes",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation versus labor membership",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor fundraiser",
+        "sentiment": "positive"
+      },
+      {
+        "query": "fire the liar",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor death tax",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor cgt changes 2027",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "pauline hanson",
+        "sentiment": "neutral"
+      }
+    ]
   },
   "LIB": {
     "party": "Liberal",
