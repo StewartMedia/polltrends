@@ -1,1 +1,89 @@
-[]
+[
+  {
+    "date": "2026-05-09",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 74,
+    "rolling_avg": 10.4,
+    "ratio": 7.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 100,
+    "rolling_avg": 20.1,
+    "ratio": 5.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-23",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 10,
+    "rolling_avg": 3.1,
+    "ratio": 3.2,
+    "explanation": "Sky News Australia. . TV star Jeremy Clarkson has revealed he is in remission after recently disclosing a prostate cancer diagnosis.",
+    "news": [
+      {
+        "title": "Sky News Australia. . TV star Jeremy Clarkson has revealed he is in remission after recently disclosing a prostate cancer diagnosis.",
+        "source": "facebook.com",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOSUk4TDZUQlV2QVFlUnBoMlBGV1NHNFhtUUhSTWhFRDlOQ2NGWnhweU91MU5Vc3Y0T2xmd2QzbkxuVUxudV9RcHd1R1AyTmhNbHlwemw1NDVnQV85YlhDbEFZb2VPUTFieFdwSUVpSWVMOTlDb0xtLXp2dVRrMlFvd1dlcTRRUXhGRUJBZUUyVVhuMVdTeG1nWFpwR2l1NW4xbXlDYlNlT1h3Rko4VVNzTzYtS2FTbllXajVHY3BPeHJuSDJaNU1GTjE5cVZFYUhpN0l0TnZ3S05hQmJyaVpTWA?oc=5",
+        "date": "2026-06-22"
+      }
+    ]
+  },
+  {
+    "date": "2026-05-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 55,
+    "rolling_avg": 19.0,
+    "ratio": 2.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-01",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 40,
+    "rolling_avg": 14.0,
+    "ratio": 2.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-11",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 87,
+    "rolling_avg": 31.9,
+    "ratio": 2.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-31",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 31,
+    "rolling_avg": 12.9,
+    "ratio": 2.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-12",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 84,
+    "rolling_avg": 41.4,
+    "ratio": 2.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]
