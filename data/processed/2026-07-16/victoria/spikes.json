@@ -1,11 +1,21 @@
 [
   {
+    "date": "2026-05-09",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 97,
+    "rolling_avg": 12.7,
+    "ratio": 7.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
     "date": "2026-06-23",
     "party_code": "GRN",
     "party_name": "Greens",
-    "value": 12,
-    "rolling_avg": 0.7,
-    "ratio": 16.8,
+    "value": 11,
+    "rolling_avg": 2.3,
+    "ratio": 4.8,
     "explanation": "Victorian Greens Demand Halt on New Large Data Centres",
     "news": [
       {
@@ -23,52 +33,12 @@
     ]
   },
   {
-    "date": "2026-05-09",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 95,
-    "rolling_avg": 12.1,
-    "ratio": 7.8,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-05-29",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 10,
-    "rolling_avg": 2.4,
-    "ratio": 4.1,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
     "date": "2026-06-10",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 97,
-    "rolling_avg": 24.9,
+    "value": 98,
+    "rolling_avg": 25.1,
     "ratio": 3.9,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-06-10",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 11,
-    "rolling_avg": 3.4,
-    "ratio": 3.2,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-06-11",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 13,
-    "rolling_avg": 4.0,
-    "ratio": 3.2,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -76,19 +46,9 @@
     "date": "2026-05-10",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 74,
-    "rolling_avg": 22.9,
+    "value": 75,
+    "rolling_avg": 23.4,
     "ratio": 3.2,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-05-14",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 13,
-    "rolling_avg": 4.1,
-    "ratio": 3.1,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -96,19 +56,59 @@
     "date": "2026-06-01",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 50,
-    "rolling_avg": 16.7,
-    "ratio": 3.0,
+    "value": 52,
+    "rolling_avg": 16.9,
+    "ratio": 3.1,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-05-13",
+    "date": "2026-05-14",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 11,
+    "rolling_avg": 3.9,
+    "ratio": 2.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-06",
     "party_code": "ALP",
     "party_name": "Labor",
     "value": 10,
-    "rolling_avg": 3.6,
-    "ratio": 2.8,
+    "rolling_avg": 3.4,
+    "ratio": 2.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-31",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 42,
+    "rolling_avg": 14.6,
+    "ratio": 2.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-10",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 3.7,
+    "ratio": 2.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-11",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 93,
+    "rolling_avg": 36.0,
+    "ratio": 2.6,
     "explanation": "Significant spike in search interest",
     "news": []
   }
