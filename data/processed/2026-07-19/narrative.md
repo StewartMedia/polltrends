@@ -1,0 +1,7 @@
+
+
+Labor ranked #1 in search interest for the week commencing 12 July 2026. The party recorded an average search interest score of 0.0, with a peak value of 0 on 2026-07-12T00:00:00. The Liberal Party ranked #2, the Greens ranked #3, and One Nation ranked #4. All four parties reported an identical average score of 0.0 for the period between 2026-07-12 and 2026-07-18.
+
+Daily data indicates zero search interest across all parties for every day of the reporting week. No significant spikes were detected in the volume data, and no news headlines were available to correlate with search activity. Consequently, there were no observable changes in public attention linked to specific media events or announcements during this timeframe.
+
+Sentiment analysis remained flat, with Labor, Liberal, Greens, and One Nation each showing 0 positive, 0 neutral, and 0 negative queries. This resulted in a uniform sentiment score of +0.00 across the board. Future analysis will monitor whether this baseline of zero activity persists or if search volume begins to register in the coming weeks.
