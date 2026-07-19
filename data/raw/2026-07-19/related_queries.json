@@ -109,11 +109,11 @@
       },
       {
         "query": "labor fundraiser",
-        "value": 67000
+        "value": 67750
       },
       {
         "query": "fire the liar",
-        "value": 55400
+        "value": 55750
       },
       {
         "query": "labor government cgt changes",
@@ -232,6 +232,10 @@
         "value": 1
       },
       {
+        "query": "australian political parties",
+        "value": 1
+      },
+      {
         "query": "tony abbott liberal party strategy",
         "value": 1
       }
@@ -239,7 +243,7 @@
     "rising": [
       {
         "query": "tony abbott liberal party strategy",
-        "value": 46250
+        "value": 46000
       },
       {
         "query": "president of the liberal party",
@@ -252,6 +256,10 @@
       {
         "query": "liberal party president",
         "value": 750
+      },
+      {
+        "query": "australian political parties",
+        "value": 350
       },
       {
         "query": "one nation policies",
@@ -271,7 +279,7 @@
       },
       {
         "query": "liberal policies",
-        "value": 80
+        "value": 70
       },
       {
         "query": "liberal party victoria",
@@ -279,7 +287,7 @@
       },
       {
         "query": "labour party",
-        "value": 70
+        "value": 60
       },
       {
         "query": "labor party",
@@ -292,10 +300,6 @@
       {
         "query": "labor",
         "value": 40
-      },
-      {
-        "query": "liberal party of australia",
-        "value": 40
       }
     ]
   },
@@ -307,7 +311,7 @@
       },
       {
         "query": "the greens",
-        "value": 45
+        "value": 44
       },
       {
         "query": "greens australia",
@@ -324,6 +328,10 @@
       {
         "query": "the greens australia",
         "value": 10
+      },
+      {
+        "query": "labor",
+        "value": 9
       },
       {
         "query": "greens leader",
@@ -396,16 +404,12 @@
       {
         "query": "the greens political party",
         "value": 2
-      },
-      {
-        "query": "pauline hanson",
-        "value": 2
       }
     ],
     "rising": [
       {
         "query": "greens smsf",
-        "value": 193700
+        "value": 192950
       },
       {
         "query": "duncan turpie",
@@ -531,27 +535,27 @@
     "rising": [
       {
         "query": "fire the liar",
-        "value": 685200
+        "value": 685550
       },
       {
         "query": "one nation fire the liar",
-        "value": 678700
+        "value": 679000
       },
       {
         "query": "one nation fundraiser",
-        "value": 199800
+        "value": 199900
       },
       {
         "query": "one nation lower house projections",
-        "value": 70800
+        "value": 70850
       },
       {
         "query": "fire the lair",
-        "value": 49550
+        "value": 49700
       },
       {
         "query": "fire the lair one nation",
-        "value": 45350
+        "value": 45250
       },
       {
         "query": "fire the liar campaign",
@@ -563,11 +567,11 @@
       },
       {
         "query": "one nation farrer by-election prediction",
-        "value": 20100
+        "value": 20000
       },
       {
         "query": "one nation abortion policy",
-        "value": 19750
+        "value": 19850
       },
       {
         "query": "one nation donations",

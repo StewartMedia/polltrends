@@ -38,10 +38,6 @@
         "value": 7
       },
       {
-        "query": "liberal party australia",
-        "value": 6
-      },
-      {
         "query": "labour party australia",
         "value": 6
       },
@@ -66,11 +62,11 @@
         "value": 4
       },
       {
-        "query": "labor policies",
+        "query": "pauline hanson",
         "value": 3
       },
       {
-        "query": "pauline hanson",
+        "query": "labor policies",
         "value": 3
       },
       {
@@ -105,15 +101,15 @@
       },
       {
         "query": "tammy tyrrell joins labor party",
-        "value": 90600
+        "value": 90550
       },
       {
         "query": "labor fundraiser",
-        "value": 73850
+        "value": 71100
       },
       {
         "query": "jim chalmers",
-        "value": 57250
+        "value": 57950
       },
       {
         "query": "one nation",
@@ -156,19 +152,15 @@
         "value": 7
       },
       {
-        "query": "labour",
-        "value": 7
-      },
-      {
         "query": "liberal policies",
         "value": 6
       },
       {
-        "query": "labour party",
-        "value": 6
+        "query": "leader of liberal party",
+        "value": 5
       },
       {
-        "query": "leader of liberal party",
+        "query": "labour party",
         "value": 5
       },
       {
@@ -184,11 +176,11 @@
         "value": 4
       },
       {
-        "query": "labor party australia",
-        "value": 4
+        "query": "angus taylor",
+        "value": 3
       },
       {
-        "query": "angus taylor",
+        "query": "pauline hanson",
         "value": 3
       },
       {
@@ -203,15 +195,15 @@
     "rising": [
       {
         "query": "one nation policies",
-        "value": 650
+        "value": 600
+      },
+      {
+        "query": "pauline hanson",
+        "value": 170
       },
       {
         "query": "liberal policies",
         "value": 150
-      },
-      {
-        "query": "labor party australia",
-        "value": 130
       },
       {
         "query": "tony abbott",
@@ -227,11 +219,7 @@
       },
       {
         "query": "labour party",
-        "value": 70
-      },
-      {
-        "query": "labour",
-        "value": 50
+        "value": 60
       }
     ]
   },
@@ -272,10 +260,6 @@
       {
         "query": "greens senator",
         "value": 5
-      },
-      {
-        "query": "green",
-        "value": 4
       },
       {
         "query": "the greens policies",
@@ -321,7 +305,7 @@
     "rising": [
       {
         "query": "greens policies australia",
-        "value": 80
+        "value": 90
       }
     ]
   },
@@ -364,11 +348,11 @@
         "value": 6
       },
       {
-        "query": "one nation policy",
-        "value": 3
+        "query": "pauline hanson one nation",
+        "value": 6
       },
       {
-        "query": "labor",
+        "query": "one nation policy",
         "value": 3
       },
       {
@@ -392,11 +376,11 @@
         "value": 2
       },
       {
-        "query": "one nation leader",
+        "query": "one nation poll",
         "value": 2
       },
       {
-        "query": "one nation poll",
+        "query": "one nation leader",
         "value": 2
       },
       {
@@ -412,38 +396,38 @@
         "value": 2
       },
       {
-        "query": "one nation reddit",
-        "value": 1
-      },
-      {
         "query": "what is one nation australia",
         "value": 1
       },
       {
-        "query": "greens",
+        "query": "one nation reddit",
         "value": 1
       },
       {
         "query": "one nation lower house projections",
+        "value": 1
+      },
+      {
+        "query": "fire the lair",
         "value": 1
       }
     ],
     "rising": [
       {
         "query": "fire the liar",
-        "value": 535800
+        "value": 536100
       },
       {
         "query": "fire the liar one nation",
-        "value": 508550
+        "value": 508400
       },
       {
         "query": "one nation donations",
-        "value": 233300
+        "value": 232800
       },
       {
         "query": "one nation fundraiser",
-        "value": 174100
+        "value": 174450
       },
       {
         "query": "one nation lower house projections",
@@ -451,19 +435,15 @@
       },
       {
         "query": "fire the lair",
-        "value": 57100
-      },
-      {
-        "query": "fire the lair one nation",
-        "value": 30650
+        "value": 57800
       },
       {
         "query": "one nation abortion policy",
-        "value": 23050
+        "value": 23600
       },
       {
         "query": "one nation farrer by-election prediction",
-        "value": 21500
+        "value": 20600
       },
       {
         "query": "one nation farrer",
@@ -472,14 +452,6 @@
       {
         "query": "farrer",
         "value": 70
-      },
-      {
-        "query": "greens",
-        "value": 60
-      },
-      {
-        "query": "labor",
-        "value": 50
       }
     ]
   },
