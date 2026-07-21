@@ -1,0 +1,122 @@
+[
+  {
+    "date": "2026-05-09",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 99,
+    "rolling_avg": 12.6,
+    "ratio": 7.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-23",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 11,
+    "rolling_avg": 1.9,
+    "ratio": 5.9,
+    "explanation": "Victorian Greens Demand Halt on New Large Data Centres",
+    "news": [
+      {
+        "title": "Victorian Greens Demand Halt on New Large Data Centres",
+        "source": "Mirage News",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNVBZZXEtNmdsbTZwemo2VjZYOEo4ZTJXZjBud1plQkF3d0RxSE9Rcy1abjRsTXpwYTNHZFh2UmhfcHBDWXdRTlZHM182UVJhbUxNOVMxRVNxdC1QSTBCVDMwMGRVNmN3NHhGVDFZQXpkcFQxbFhlRGY1ZEFoOHNjcFFscE1iWmtNSEE?oc=5",
+        "date": "2026-06-24"
+      },
+      {
+        "title": "Victorian Greens Push Laws to Close Logging Loopholes",
+        "source": "Mirage News",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRDJuRG4yMDN5X1pab240Ym9ZakhQbDJxV1AzS0VpeHdKR09Ub2NlQkpXOFhYOXVuMDRTODFrR3RRbE1NamJaOGZubjh2aGEwUmo5V3RHNjFXSm5FUWtwcXh4T3c5Ul9EWVNLNWJzWmhtRnZhdC1fdVFnNkRDaTBiZ2gyVHBlUQ?oc=5",
+        "date": "2026-06-23"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 98,
+    "rolling_avg": 25.0,
+    "ratio": 3.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 81,
+    "rolling_avg": 23.7,
+    "ratio": 3.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-01",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 51,
+    "rolling_avg": 16.0,
+    "ratio": 3.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-13",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 12,
+    "rolling_avg": 4.1,
+    "ratio": 2.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-31",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 40,
+    "rolling_avg": 14.0,
+    "ratio": 2.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-11",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 96,
+    "rolling_avg": 35.6,
+    "ratio": 2.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-29",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 12,
+    "rolling_avg": 4.7,
+    "ratio": 2.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-12",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 100,
+    "rolling_avg": 45.7,
+    "ratio": 2.2,
+    "explanation": "One Nation fields 1200 offers for Victorian election candidates",
+    "news": [
+      {
+        "title": "One Nation fields 1200 offers for Victorian election candidates",
+        "source": "AFR",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdmZFaUI0VzUyeThRUmFfV2VFTkRyLVB2NjBhREtySGxibXdYNF9ISEw1aUl5OC1EdWZOMExQdHNHUW4yRGxCczJxQ01HSGtISFAzZ1BUOWVBbHllbHNiWTFoN1JrbVZUZ0ZsNWVRSVFUU195Sk1iUGgzclp6TUVFZzByUGhVVFZuLUJueTZuNEFJLS1Ya3FyZ0pHZDJFU2xiV0NfbE0zS2oyTzBTbnVTWWE4bkRYek0?oc=5",
+        "date": "2026-06-14"
+      }
+    ]
+  }
+]
