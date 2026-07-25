@@ -1,0 +1,33 @@
+{
+  "period": {
+    "start": "2026-07-19T00:00:00",
+    "end": "2026-07-25T00:00:00"
+  },
+  "avg_interest": {
+    "ALP": 3.7,
+    "LIB": 2.0,
+    "GRN": 1.0,
+    "PHON": 12.3
+  },
+  "momentum_pct": {
+    "ALP": 85.7,
+    "LIB": 0.0,
+    "GRN": 0.0,
+    "PHON": 1.2
+  },
+  "sentiment_scores": {
+    "ALP": -0.05,
+    "LIB": 0.13,
+    "GRN": 0.14,
+    "PHON": 0.16
+  },
+  "combined_scores": {
+    "ALP": 0.354,
+    "LIB": 0.283,
+    "GRN": 0.228,
+    "PHON": 0.874
+  },
+  "search_winner": "PHON",
+  "overall_winner": "PHON",
+  "summary": "## Week in Review: 2026-07-19T00:00:00 to 2026-07-25T00:00:00\n\n**One Nation** led search interest this week with an average score of 12.3.\nThe strongest combined search-and-sentiment score belonged to **One Nation**.\n\n### Party Breakdown\n\n- **Labor**: Avg interest 3.7 (+85.7% WoW), sentiment: neutral (-0.05)\n- **Liberal**: Avg interest 2.0 (0.0% WoW), sentiment: positive (+0.13)\n- **Greens**: Avg interest 1.0 (0.0% WoW), sentiment: positive (+0.14)\n- **One Nation**: Avg interest 12.3 (+1.2% WoW), sentiment: positive (+0.16)"
+}
