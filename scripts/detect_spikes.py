@@ -63,7 +63,12 @@ def match_news_to_spikes(spikes: list[dict], news_data: dict) -> list[dict]:
     """
     for spike in spikes:
         party_code = spike["party_code"]
-        spike_date = datetime.strptime(spike["date"], "%Y-%m-%d").date()
+        # Spike dates come from pytrends index isoformat ("2026-05-09T00:00:00");
+        # accept both full ISO timestamps and plain dates.
+        try:
+            spike_date = datetime.fromisoformat(spike["date"]).date()
+        except ValueError:
+            spike_date = datetime.strptime(spike["date"], "%Y-%m-%d").date()
         articles = news_data.get(party_code, [])
 
         matching = []

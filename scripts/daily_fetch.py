@@ -102,6 +102,33 @@ def fetch_for_geo(entities, geo, prefix):
     # Drop 'isPartial' column if present (metadata, not party data)
     if 'isPartial' in interest_combined.columns:
         interest_combined = interest_combined.drop(columns=['isPartial'])
+    # Normalise pytrends keyword columns (mids like /m/0q96) to party codes.
+    # Newer pytrends versions return mid-keyed columns; downstream scripts
+    # (detect_spikes, weekly_analysis, generate_narrative, analyse_sentiment)
+    # all expect code keys like "ALP".
+    mid_to_code = {ent["mid"]: code for code, ent in entities.items()}
+    interest_combined = interest_combined.rename(columns=mid_to_code)
+
+    def _frame_to_records(x):
+        """pytrends returns DataFrames (or None); serialise as list of dicts."""
+        if x is None:
+            return []
+        if hasattr(x, "to_dict"):
+            return x.to_dict("records")
+        return x
+
+    def _normalise_related(data):
+        out = {}
+        for k, v in (data or {}).items():
+            code = mid_to_code.get(k, k)
+            if isinstance(v, dict):
+                out[code] = {part: _frame_to_records(df) for part, df in v.items()}
+            else:
+                out[code] = v
+        return out
+
+    all_rq = _normalise_related(all_rq)
+    all_topics = _normalise_related(all_topics)
     # Build {"data": [{"date": "...", "CODE": value, ...}, ...]} for chart compatibility
     records = []
     for date_idx, row in interest_combined.iterrows():
