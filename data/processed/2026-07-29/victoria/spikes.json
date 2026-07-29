@@ -1,11 +1,21 @@
 [
   {
-    "date": "2026-06-23T00:00:00",
+    "date": "2026-05-09",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 95,
+    "rolling_avg": 10.7,
+    "ratio": 8.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-23",
     "party_code": "GRN",
     "party_name": "Greens",
     "value": 11,
-    "rolling_avg": 0.7,
-    "ratio": 15.4,
+    "rolling_avg": 1.7,
+    "ratio": 6.4,
     "explanation": "Victorian Greens call for a moratorium on all new large scale data centres",
     "news": [
       {
@@ -17,99 +27,120 @@
     ]
   },
   {
-    "date": "2026-05-09T00:00:00",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 99,
-    "rolling_avg": 11.9,
-    "ratio": 8.3,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-06-10T00:00:00",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 96,
-    "rolling_avg": 24.0,
-    "ratio": 4.0,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-06-10T00:00:00",
+    "date": "2026-05-13",
     "party_code": "ALP",
     "party_name": "Labor",
-    "value": 10,
+    "value": 11,
     "rolling_avg": 2.7,
-    "ratio": 3.7,
+    "ratio": 4.1,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-05-13T00:00:00",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 10,
-    "rolling_avg": 2.9,
+    "date": "2026-06-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 100,
+    "rolling_avg": 24.1,
+    "ratio": 4.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 75,
+    "rolling_avg": 21.6,
     "ratio": 3.5,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-05-29T00:00:00",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 11,
-    "rolling_avg": 3.1,
-    "ratio": 3.5,
+    "date": "2026-06-01",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 49,
+    "rolling_avg": 15.9,
+    "ratio": 3.1,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-11T00:00:00",
+    "date": "2026-07-28",
     "party_code": "ALP",
     "party_name": "Labor",
-    "value": 10,
-    "rolling_avg": 3.0,
-    "ratio": 3.3,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-06-30T00:00:00",
-    "party_code": "GRN",
-    "party_name": "Greens",
-    "value": 11,
-    "rolling_avg": 3.3,
-    "ratio": 3.3,
-    "explanation": "The Victorian Greens are taking a page from Mamdani\u2019s policy playbook. Can they combat rising rightwing populism?",
+    "value": 18,
+    "rolling_avg": 6.3,
+    "ratio": 2.9,
+    "explanation": "'I'm not Jacinta Allan': Caroll pledges 'new direction' and calls a royal commission",
     "news": [
       {
-        "title": "The Victorian Greens are taking a page from Mamdani\u2019s policy playbook. Can they combat rising rightwing populism?",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNNXRReXpZWWVYWS02NmdCdmJwUG0tdGNHb2tBSkR4TUFsRTdqb1pBbVRjTmxHX1Nfd0U2bm9lR1JIQmxVVG5VbFhZUWxSY044LUctT0ZzR3V3Qkl1eko5Mmhad3V3a1BmdkQzZ2RpUS1IOUYzYkJ3cVF0bnhTb3luN2N4Sjdka1BjaGdYQWJkeUVFYkQ1SjlUT0dmQXpjUURlcUZYbndiNEh1dURjMHNoemZPRkVDdllIS3hiZGkxay1UV19CM0piNHNtMFE?oc=5",
-        "date": "2026-06-28"
+        "title": "'I'm not Jacinta Allan': Caroll pledges 'new direction' and calls a royal commission",
+        "source": "sbs.com.au",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRFFfVFBSaFVCSUR6Nm5vTGptTzFKQW1NX3RSaVcwQzZnT2xGMUo4THY3VTdBQWFtWGRQRnl0cGw0UmdNRG95QUpETUI4MFJ3RXZmcGhEWkliWjgxSldKS1R2STR6T1FEYUxGS2pWRUptRmpxZW5RRkpKNDJ6VkYydDlOaWxCTnZrTm84OXRn?oc=5",
+        "date": "2026-07-29"
+      },
+      {
+        "title": "Rise of Ben Carroll 'destroyed' Victorian Labor's Socialist Left, insiders say",
+        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWmlEbVVTTlZQbjJmV3d5b2p2djFWTnVIamM4UnQ5Uk1ZZlcyNFN5NXRFY0gxeEF5b0RkX1dtRjRtblVZTjVvNHQxNTdFZVlHZUJoVVdqUjJGV3FKR3FTaEdqTU5fb29kLUZUU1lZSV9xdk0xbmlJRklLd1Y2ckZDMXRHNXM2aE9kYXdreXFYeWVUc2RMUThUSFl5WExoRGdyODVPcGFFc1JFUQ?oc=5",
+        "date": "2026-07-29"
+      },
+      {
+        "title": "Jacinta\u2019s band of loyalists have already marched on",
+        "source": "The Australian",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZXdGVTd5ZE9qRF9LOEVERnhtUDlkVjh0ZW1qakFmNUUweTRJQ3VZUlRzVnBCa1NWaUFtR2ZWdFQ3eUwxOTVfS1l1aE53UHVIRlFjWkVOdXJIVTRNOXZtWm9qQ1NSZWc3RVM1VlNuY0dXYWtGLVJVX29rOUV4VUdNVWFWQ0RMZWVGcmdIT2pjRzZ6UzhCdFlweHJ6Y1VRNmhhWUhFNVdpU3U0RndUWm5UUkNkbVhhV3BXS0VWQ2psRS1XcV83VGhQMWVoNUF3aTNEZ3RUTtIB2gFBVV95cUxOUklnVXRpSG5mVGNyTGc1OGcxRmQ5c3Z3eVREdjdPUUpFVVFLR1Z4OXdXT21qUDliWFctYWdqMkM1ZG4tVlNteHljY0dFUmZlc1E3Y0VMTmFIWVh3dk9DeDFkX2MzUGg5V1ZTazE1cUlpemtVWGZ3QTlBRDNVSHdZemVxcFdjV3k0NnN5bDhRckx4TER2NVg2QUZlTTZQRVZEMlFMYUw4amNVVHc4NGZHZjdrQWdubjdTTWliU0h3VHJNMkpvWF9DZFlsN2l5bW1ZQlBHaEpJR1pxZw?oc=5",
+        "date": "2026-07-29"
       }
     ]
   },
   {
-    "date": "2026-05-10T00:00:00",
+    "date": "2026-05-31",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 75,
-    "rolling_avg": 23.0,
-    "ratio": 3.3,
+    "value": 40,
+    "rolling_avg": 13.7,
+    "ratio": 2.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-01T00:00:00",
+    "date": "2026-07-27",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 13,
+    "rolling_avg": 4.9,
+    "ratio": 2.7,
+    "explanation": "'I'm not Jacinta Allan': Caroll pledges 'new direction' and calls a royal commission",
+    "news": [
+      {
+        "title": "'I'm not Jacinta Allan': Caroll pledges 'new direction' and calls a royal commission",
+        "source": "sbs.com.au",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRFFfVFBSaFVCSUR6Nm5vTGptTzFKQW1NX3RSaVcwQzZnT2xGMUo4THY3VTdBQWFtWGRQRnl0cGw0UmdNRG95QUpETUI4MFJ3RXZmcGhEWkliWjgxSldKS1R2STR6T1FEYUxGS2pWRUptRmpxZW5RRkpKNDJ6VkYydDlOaWxCTnZrTm84OXRn?oc=5",
+        "date": "2026-07-29"
+      },
+      {
+        "title": "Rise of Ben Carroll 'destroyed' Victorian Labor's Socialist Left, insiders say",
+        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWmlEbVVTTlZQbjJmV3d5b2p2djFWTnVIamM4UnQ5Uk1ZZlcyNFN5NXRFY0gxeEF5b0RkX1dtRjRtblVZTjVvNHQxNTdFZVlHZUJoVVdqUjJGV3FKR3FTaEdqTU5fb29kLUZUU1lZSV9xdk0xbmlJRklLd1Y2ckZDMXRHNXM2aE9kYXdreXFYeWVUc2RMUThUSFl5WExoRGdyODVPcGFFc1JFUQ?oc=5",
+        "date": "2026-07-29"
+      },
+      {
+        "title": "Jacinta\u2019s band of loyalists have already marched on",
+        "source": "The Australian",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZXdGVTd5ZE9qRF9LOEVERnhtUDlkVjh0ZW1qakFmNUUweTRJQ3VZUlRzVnBCa1NWaUFtR2ZWdFQ3eUwxOTVfS1l1aE53UHVIRlFjWkVOdXJIVTRNOXZtWm9qQ1NSZWc3RVM1VlNuY0dXYWtGLVJVX29rOUV4VUdNVWFWQ0RMZWVGcmdIT2pjRzZ6UzhCdFlweHJ6Y1VRNmhhWUhFNVdpU3U0RndUWm5UUkNkbVhhV3BXS0VWQ2psRS1XcV83VGhQMWVoNUF3aTNEZ3RUTtIB2gFBVV95cUxOUklnVXRpSG5mVGNyTGc1OGcxRmQ5c3Z3eVREdjdPUUpFVVFLR1Z4OXdXT21qUDliWFctYWdqMkM1ZG4tVlNteHljY0dFUmZlc1E3Y0VMTmFIWVh3dk9DeDFkX2MzUGg5V1ZTazE1cUlpemtVWGZ3QTlBRDNVSHdZemVxcFdjV3k0NnN5bDhRckx4TER2NVg2QUZlTTZQRVZEMlFMYUw4amNVVHc4NGZHZjdrQWdubjdTTWliU0h3VHJNMkpvWF9DZFlsN2l5bW1ZQlBHaEpJR1pxZw?oc=5",
+        "date": "2026-07-29"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-11",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 48,
-    "rolling_avg": 15.9,
-    "ratio": 3.0,
+    "value": 91,
+    "rolling_avg": 35.1,
+    "ratio": 2.6,
     "explanation": "Significant spike in search interest",
     "news": []
   }

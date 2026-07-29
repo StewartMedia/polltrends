@@ -4,8 +4,166 @@
     "rising": []
   },
   "LIB": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal party",
+        "value": 72
+      },
+      {
+        "query": "the liberal party",
+        "value": 31
+      },
+      {
+        "query": "liberal leader",
+        "value": 17
+      },
+      {
+        "query": "liberal party leader",
+        "value": 13
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 11
+      },
+      {
+        "query": "labor",
+        "value": 9
+      },
+      {
+        "query": "one nation",
+        "value": 9
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 8
+      },
+      {
+        "query": "australian liberal party",
+        "value": 7
+      },
+      {
+        "query": "one nation party",
+        "value": 7
+      },
+      {
+        "query": "labor party",
+        "value": 6
+      },
+      {
+        "query": "labour party",
+        "value": 6
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 5
+      },
+      {
+        "query": "leader of the liberal party",
+        "value": 5
+      },
+      {
+        "query": "tony abbott",
+        "value": 4
+      },
+      {
+        "query": "angus taylor",
+        "value": 4
+      },
+      {
+        "query": "liberal policies",
+        "value": 4
+      },
+      {
+        "query": "liberal party leader australia",
+        "value": 4
+      },
+      {
+        "query": "liberals",
+        "value": 4
+      },
+      {
+        "query": "angus taylor liberal party",
+        "value": 4
+      },
+      {
+        "query": "liberal leaders",
+        "value": 3
+      },
+      {
+        "query": "pauline hanson",
+        "value": 3
+      },
+      {
+        "query": "liberal party policies",
+        "value": 3
+      },
+      {
+        "query": "leader of liberal party australia",
+        "value": 3
+      }
+    ],
+    "rising": [
+      {
+        "query": "tony abbott",
+        "value": 950
+      },
+      {
+        "query": "moira deeming",
+        "value": 350
+      },
+      {
+        "query": "jess wilson",
+        "value": 250
+      },
+      {
+        "query": "australian political parties",
+        "value": 190
+      },
+      {
+        "query": "liberal party plan",
+        "value": 140
+      },
+      {
+        "query": "pauline hanson",
+        "value": 130
+      },
+      {
+        "query": "one nation party",
+        "value": 110
+      },
+      {
+        "query": "one nation",
+        "value": 90
+      },
+      {
+        "query": "liberal policies",
+        "value": 60
+      },
+      {
+        "query": "labour party",
+        "value": 60
+      },
+      {
+        "query": "liberal party policies",
+        "value": 50
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 40
+      },
+      {
+        "query": "the liberal party",
+        "value": 40
+      },
+      {
+        "query": "labor party",
+        "value": 40
+      }
+    ]
   },
   "GRN": {
     "top": [],
