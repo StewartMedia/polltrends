@@ -7,11 +7,11 @@
       },
       {
         "query": "labor party",
-        "value": 41
+        "value": 42
       },
       {
         "query": "labour",
-        "value": 35
+        "value": 36
       },
       {
         "query": "labor australia",
@@ -55,11 +55,15 @@
       },
       {
         "query": "greens",
-        "value": 4
+        "value": 5
       },
       {
         "query": "anthony albanese",
         "value": 4
+      },
+      {
+        "query": "labor policies",
+        "value": 3
       },
       {
         "query": "labor or labour",
@@ -85,11 +89,11 @@
     "rising": [
       {
         "query": "jacinta allen",
-        "value": 113050
+        "value": 114600
       },
       {
         "query": "labor fundraiser",
-        "value": 62100
+        "value": 64450
       },
       {
         "query": "one nation",
@@ -97,7 +101,7 @@
       },
       {
         "query": "anthony albanese",
-        "value": 70
+        "value": 80
       }
     ]
   },
@@ -171,11 +175,11 @@
     "rising": [
       {
         "query": "tony abbott",
-        "value": 243450
+        "value": 241350
       },
       {
         "query": "australian political parties",
-        "value": 126050
+        "value": 126650
       },
       {
         "query": "pauline hanson",
@@ -246,11 +250,7 @@
         "value": 6
       },
       {
-        "query": "greens policy",
-        "value": 5
-      },
-      {
-        "query": "green",
+        "query": "liberal",
         "value": 4
       },
       {
@@ -258,12 +258,28 @@
         "value": 4
       },
       {
+        "query": "green",
+        "value": 4
+      },
+      {
+        "query": "australian greens party",
+        "value": 3
+      },
+      {
         "query": "greens political party",
+        "value": 3
+      },
+      {
+        "query": "leader of the greens",
         "value": 3
       },
       {
         "query": "labor party",
         "value": 3
+      },
+      {
+        "query": "liberal party",
+        "value": 2
       },
       {
         "query": "pauline hanson",
@@ -281,7 +297,7 @@
     "rising": [
       {
         "query": "one nation policies",
-        "value": 80
+        "value": 90
       },
       {
         "query": "labor party",
@@ -294,134 +310,8 @@
     ]
   },
   "PHON": {
-    "top": [
-      {
-        "query": "one nation",
-        "value": 100
-      },
-      {
-        "query": "one nation australia",
-        "value": 11
-      },
-      {
-        "query": "one nation victoria",
-        "value": 8
-      },
-      {
-        "query": "one nation policies",
-        "value": 7
-      },
-      {
-        "query": "fire the liar",
-        "value": 6
-      },
-      {
-        "query": "one nation fire the liar",
-        "value": 6
-      },
-      {
-        "query": "what is one nation",
-        "value": 5
-      },
-      {
-        "query": "one nation policy",
-        "value": 3
-      },
-      {
-        "query": "one nation donations",
-        "value": 3
-      },
-      {
-        "query": "one nation win",
-        "value": 3
-      },
-      {
-        "query": "farrer",
-        "value": 3
-      },
-      {
-        "query": "one nation farrer",
-        "value": 3
-      },
-      {
-        "query": "one nation leader",
-        "value": 2
-      },
-      {
-        "query": "one nation fundraiser",
-        "value": 2
-      },
-      {
-        "query": "one nation seats",
-        "value": 2
-      },
-      {
-        "query": "the australian",
-        "value": 2
-      },
-      {
-        "query": "one nation poll",
-        "value": 2
-      },
-      {
-        "query": "liberal party",
-        "value": 2
-      },
-      {
-        "query": "what is one nation australia",
-        "value": 2
-      },
-      {
-        "query": "greens",
-        "value": 1
-      },
-      {
-        "query": "one nation reddit",
-        "value": 1
-      },
-      {
-        "query": "fire the lair one nation",
-        "value": 0
-      },
-      {
-        "query": "fire the lair",
-        "value": 0
-      },
-      {
-        "query": "one nation farrer by-election prediction",
-        "value": 0
-      }
-    ],
-    "rising": [
-      {
-        "query": "fire the liar",
-        "value": 488700
-      },
-      {
-        "query": "one nation fundraiser",
-        "value": 174400
-      },
-      {
-        "query": "fire the lair one nation",
-        "value": 33800
-      },
-      {
-        "query": "fire the lair",
-        "value": 29550
-      },
-      {
-        "query": "one nation farrer by-election prediction",
-        "value": 25300
-      },
-      {
-        "query": "one nation fire the liar",
-        "value": 2700
-      },
-      {
-        "query": "one nation donations",
-        "value": 1450
-      }
-    ]
+    "top": [],
+    "rising": []
   },
   "AJP": {
     "top": [],
