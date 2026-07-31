@@ -1,101 +1,101 @@
 [
   {
-    "date": "2026-06-23",
-    "party_code": "GRN",
-    "party_name": "Greens",
-    "value": 13,
-    "rolling_avg": 0.7,
-    "ratio": 18.2,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-05-23",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 10,
-    "rolling_avg": 0.7,
-    "ratio": 14.0,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-05-09",
+    "date": "2026-05-09T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 96,
-    "rolling_avg": 11.3,
-    "ratio": 8.5,
+    "rolling_avg": 13.1,
+    "ratio": 7.3,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-10",
+    "date": "2026-06-10T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 98,
-    "rolling_avg": 24.7,
+    "value": 96,
+    "rolling_avg": 24.1,
     "ratio": 4.0,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-30",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 10,
-    "rolling_avg": 2.6,
-    "ratio": 3.9,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-06-11",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 13,
-    "rolling_avg": 3.4,
-    "ratio": 3.8,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-05-22",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 10,
-    "rolling_avg": 2.7,
-    "ratio": 3.7,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-06-10",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 11,
-    "rolling_avg": 3.0,
-    "ratio": 3.7,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-06-01",
+    "date": "2026-06-01T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 51,
-    "rolling_avg": 14.6,
+    "value": 50,
+    "rolling_avg": 14.1,
     "ratio": 3.5,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-05-10",
+    "date": "2026-06-10T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 3.0,
+    "ratio": 3.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-10T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 74,
-    "rolling_avg": 22.1,
-    "ratio": 3.3,
+    "value": 76,
+    "rolling_avg": 23.7,
+    "ratio": 3.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-31T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 39,
+    "rolling_avg": 12.3,
+    "ratio": 3.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-14T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 12,
+    "rolling_avg": 4.1,
+    "ratio": 2.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-13T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 3.6,
+    "ratio": 2.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-12T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 11,
+    "rolling_avg": 4.0,
+    "ratio": 2.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-28T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 18,
+    "rolling_avg": 6.4,
+    "ratio": 2.8,
     "explanation": "Significant spike in search interest",
     "news": []
   }
