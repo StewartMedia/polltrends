@@ -1,0 +1,121 @@
+[
+  {
+    "date": "2026-05-09",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 96,
+    "rolling_avg": 12.4,
+    "ratio": 7.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-13",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 2.0,
+    "ratio": 5.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-23",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 11,
+    "rolling_avg": 2.7,
+    "ratio": 4.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 98,
+    "rolling_avg": 24.6,
+    "ratio": 4.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-14",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 11,
+    "rolling_avg": 3.4,
+    "ratio": 3.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-10",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 3.1,
+    "ratio": 3.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 75,
+    "rolling_avg": 23.3,
+    "ratio": 3.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-01",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 50,
+    "rolling_avg": 16.1,
+    "ratio": 3.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-28",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 18,
+    "rolling_avg": 6.4,
+    "ratio": 2.8,
+    "explanation": "'I'm not Jacinta Allan': Caroll pledges 'new direction' and calls a royal commission",
+    "news": [
+      {
+        "title": "'I'm not Jacinta Allan': Caroll pledges 'new direction' and calls a royal commission",
+        "source": "SBS",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRFFfVFBSaFVCSUR6Nm5vTGptTzFKQW1NX3RSaVcwQzZnT2xGMUo4THY3VTdBQWFtWGRQRnl0cGw0UmdNRG95QUpETUI4MFJ3RXZmcGhEWkliWjgxSldKS1R2STR6T1FEYUxGS2pWRUptRmpxZW5RRkpKNDJ6VkYydDlOaWxCTnZrTm84OXRn?oc=5",
+        "date": "2026-07-30"
+      },
+      {
+        "title": "Jacinta Allan's resignation triggers chaotic leadership spill",
+        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUkQ1UWZxdVlyYTNBaXhFZzR1TTBvYk9kOUhMRnZma1BDUTF3SThmR0FIMlZIYWY0Y3lUTXlmSk42UDNIX0RMeTVDTmhHbjNsbnlwcnNCcDNEX1hmaFVCQ08tQ2JhRmVweGxTcmtjRFU3MFdZbklSYTZmZ3hQWnl1SXVWQ0VBYVhlOW5RMzd5UVdHNFBYWW10ZUpNaTF6ZEFsS1AyM29YNm8?oc=5",
+        "date": "2026-07-27"
+      },
+      {
+        "title": "Ben Carroll announces royal commission into construction sector in first act as new Victorian premier",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPNWRxU1F2aVBFTjZiUTl6WEdGYU5abnMtVkpYLUI1TWhuYUZXb2d3WHlVY3R3R3JuVjc2cUwtQ2pSRUNkZ3lmU05xNDNiS3ZJQ0hnZWtrd2tNdTlZNDlKR25hRGRPMEJrWklfdGUwUE9UT2ItdXVOdHNaOVFLdDd0R0tsT1ZXRHc0VzJhdkVpU3dNYUtLVFNYTWs5eTNudWViQnNkWUpnbEZkNHlVMzE1YkVDTlJkS20wNVhkbUZoSy14RTZpS1hHaFVfMno?oc=5",
+        "date": "2026-07-28"
+      }
+    ]
+  },
+  {
+    "date": "2026-05-31",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 39,
+    "rolling_avg": 14.0,
+    "ratio": 2.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]
