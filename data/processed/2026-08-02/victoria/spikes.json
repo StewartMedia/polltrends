@@ -1,139 +1,101 @@
 [
   {
-    "date": "2026-05-09",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 10,
-    "rolling_avg": 1.0,
-    "ratio": 10.0,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-06-23",
-    "party_code": "GRN",
-    "party_name": "Greens",
-    "value": 13,
-    "rolling_avg": 1.4,
-    "ratio": 9.1,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-05-09",
+    "date": "2026-05-09T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 95,
-    "rolling_avg": 12.0,
+    "value": 96,
+    "rolling_avg": 12.1,
     "ratio": 7.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-10",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 98,
-    "rolling_avg": 25.0,
+    "date": "2026-05-29T00:00:00",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 11,
+    "rolling_avg": 1.6,
+    "ratio": 7.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-14T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 11,
+    "rolling_avg": 2.1,
+    "ratio": 5.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-10T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 2.0,
+    "ratio": 5.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-11T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 2.6,
     "ratio": 3.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-05-10",
+    "date": "2026-06-10T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 74,
-    "rolling_avg": 22.7,
+    "value": 96,
+    "rolling_avg": 24.9,
+    "ratio": 3.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-10T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 76,
+    "rolling_avg": 23.0,
     "ratio": 3.3,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-01",
+    "date": "2026-06-01T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 49,
-    "rolling_avg": 15.4,
-    "ratio": 3.2,
+    "rolling_avg": 15.9,
+    "ratio": 3.1,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-05-31",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 39,
-    "rolling_avg": 13.3,
+    "date": "2026-07-28T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 18,
+    "rolling_avg": 6.3,
     "ratio": 2.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-07-28",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 18,
-    "rolling_avg": 6.4,
-    "ratio": 2.8,
-    "explanation": "Ben Carroll announces royal commission into construction sector in first act as new Victorian premier",
-    "news": [
-      {
-        "title": "Ben Carroll announces royal commission into construction sector in first act as new Victorian premier",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPNWRxU1F2aVBFTjZiUTl6WEdGYU5abnMtVkpYLUI1TWhuYUZXb2d3WHlVY3R3R3JuVjc2cUwtQ2pSRUNkZ3lmU05xNDNiS3ZJQ0hnZWtrd2tNdTlZNDlKR25hRGRPMEJrWklfdGUwUE9UT2ItdXVOdHNaOVFLdDd0R0tsT1ZXRHc0VzJhdkVpU3dNYUtLVFNYTWs5eTNudWViQnNkWUpnbEZkNHlVMzE1YkVDTlJkS20wNVhkbUZoSy14RTZpS1hHaFVfMno?oc=5",
-        "date": "2026-07-28"
-      },
-      {
-        "title": "\u2018Poor cousins at Christmas\u2019: Victorian Labor on the nose with colleagues",
-        "source": "AFR",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPck9ZYmdfVTNrZ3RQYi1RZjAzMnVtN0pKX3UwcjZiTWxHY0JOT1FweDFoanJNVzVyYnpqRk1KR3F5cGNUUnZ3b0xBLWU0NUw5N1VPMTdVWXZWVFc0WVV3ZUtFT21xZFZOdl9KY1dKa3hrVnZvc1FHdExtQnd4M2NfQnZvWC1sb1hQb2FVU2hJTWxRX3ZRT21JQmlNVS1uSDdtZVc2eUJyNUV3RVhSenhhc09NRVFJYmswcWxhc19GSQ?oc=5",
-        "date": "2026-07-29"
-      },
-      {
-        "title": "Victorian Labor has wounded itself. Albanese would be wise to learn the lessons",
-        "source": "SMH.com.au",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNRnFnSEtXNXhTaTJJaGpCSTFsbTFrYy1BWWVTTHR2dVI2VGZYYVlLR0pidkFYV0Q0bGhLZFV5TmRXY2JoSG5OcUVQSFNUNEk5NEpnc0dlcXBQV1RTM2Qyd2R0WFRJcTlSaEJ0WHVqWWJucl9FLXpBOHJKNFRwM054bG9HNENsdmE2N1lfcGNOUkZEbjVPZ2hNamFZTFBaQTc5Vmh6SXNkVkNZYi1hWVdOWUxRVUZwTGwxMldBZ0pPSDBvb2JLbmQ4ZlhOV3lUQ1NWVHJReVBvekY?oc=5",
-        "date": "2026-07-29"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-27",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 13,
-    "rolling_avg": 5.0,
-    "ratio": 2.6,
-    "explanation": "Ben Carroll announces royal commission into construction sector in first act as new Victorian premier",
-    "news": [
-      {
-        "title": "Ben Carroll announces royal commission into construction sector in first act as new Victorian premier",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPNWRxU1F2aVBFTjZiUTl6WEdGYU5abnMtVkpYLUI1TWhuYUZXb2d3WHlVY3R3R3JuVjc2cUwtQ2pSRUNkZ3lmU05xNDNiS3ZJQ0hnZWtrd2tNdTlZNDlKR25hRGRPMEJrWklfdGUwUE9UT2ItdXVOdHNaOVFLdDd0R0tsT1ZXRHc0VzJhdkVpU3dNYUtLVFNYTWs5eTNudWViQnNkWUpnbEZkNHlVMzE1YkVDTlJkS20wNVhkbUZoSy14RTZpS1hHaFVfMno?oc=5",
-        "date": "2026-07-28"
-      },
-      {
-        "title": "\u2018Poor cousins at Christmas\u2019: Victorian Labor on the nose with colleagues",
-        "source": "AFR",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPck9ZYmdfVTNrZ3RQYi1RZjAzMnVtN0pKX3UwcjZiTWxHY0JOT1FweDFoanJNVzVyYnpqRk1KR3F5cGNUUnZ3b0xBLWU0NUw5N1VPMTdVWXZWVFc0WVV3ZUtFT21xZFZOdl9KY1dKa3hrVnZvc1FHdExtQnd4M2NfQnZvWC1sb1hQb2FVU2hJTWxRX3ZRT21JQmlNVS1uSDdtZVc2eUJyNUV3RVhSenhhc09NRVFJYmswcWxhc19GSQ?oc=5",
-        "date": "2026-07-29"
-      },
-      {
-        "title": "Victorian Labor has wounded itself. Albanese would be wise to learn the lessons",
-        "source": "SMH.com.au",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNRnFnSEtXNXhTaTJJaGpCSTFsbTFrYy1BWWVTTHR2dVI2VGZYYVlLR0pidkFYV0Q0bGhLZFV5TmRXY2JoSG5OcUVQSFNUNEk5NEpnc0dlcXBQV1RTM2Qyd2R0WFRJcTlSaEJ0WHVqWWJucl9FLXpBOHJKNFRwM054bG9HNENsdmE2N1lfcGNOUkZEbjVPZ2hNamFZTFBaQTc5Vmh6SXNkVkNZYi1hWVdOWUxRVUZwTGwxMldBZ0pPSDBvb2JLbmQ4ZlhOV3lUQ1NWVHJReVBvekY?oc=5",
-        "date": "2026-07-29"
-      }
-    ]
-  },
-  {
-    "date": "2026-06-11",
+    "date": "2026-05-31T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 93,
-    "rolling_avg": 35.9,
-    "ratio": 2.6,
+    "value": 39,
+    "rolling_avg": 13.9,
+    "ratio": 2.8,
     "explanation": "Significant spike in search interest",
     "news": []
   }
