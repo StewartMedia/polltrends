@@ -7,19 +7,19 @@
       },
       {
         "query": "labor party",
-        "value": 40
+        "value": 41
       },
       {
         "query": "labour",
-        "value": 36
+        "value": 37
       },
       {
         "query": "labor australia",
-        "value": 21
+        "value": 22
       },
       {
         "query": "labour party",
-        "value": 12
+        "value": 13
       },
       {
         "query": "australian labor party",
@@ -34,16 +34,16 @@
         "value": 11
       },
       {
-        "query": "one nation",
-        "value": 10
-      },
-      {
         "query": "alp",
         "value": 10
       },
       {
+        "query": "one nation",
+        "value": 10
+      },
+      {
         "query": "liberal party",
-        "value": 8
+        "value": 9
       },
       {
         "query": "albanese",
@@ -105,23 +105,23 @@
     "rising": [
       {
         "query": "labor government cgt changes",
-        "value": 84350
+        "value": 84400
       },
       {
         "query": "labor fundraiser",
-        "value": 77300
+        "value": 77200
       },
       {
         "query": "fire the liar",
-        "value": 64950
+        "value": 65150
       },
       {
         "query": "jacinta allen",
-        "value": 47500
+        "value": 46950
       },
       {
         "query": "luke gosling",
-        "value": 10300
+        "value": 10600
       },
       {
         "query": "pauline hanson",
@@ -208,11 +208,11 @@
         "value": 4
       },
       {
-        "query": "pauline hanson",
+        "query": "liberal party victoria",
         "value": 3
       },
       {
-        "query": "liberal party victoria",
+        "query": "pauline hanson",
         "value": 3
       },
       {
@@ -235,7 +235,7 @@
       },
       {
         "query": "tony abbott",
-        "value": 900
+        "value": 850
       },
       {
         "query": "one nation party",
@@ -272,118 +272,8 @@
     ]
   },
   "GRN": {
-    "top": [
-      {
-        "query": "greens",
-        "value": 100
-      },
-      {
-        "query": "the greens",
-        "value": 46
-      },
-      {
-        "query": "australian greens",
-        "value": 19
-      },
-      {
-        "query": "the greens party",
-        "value": 11
-      },
-      {
-        "query": "the greens australia",
-        "value": 10
-      },
-      {
-        "query": "labor",
-        "value": 8
-      },
-      {
-        "query": "one nation",
-        "value": 7
-      },
-      {
-        "query": "greens policies",
-        "value": 6
-      },
-      {
-        "query": "greens party australia",
-        "value": 6
-      },
-      {
-        "query": "green",
-        "value": 5
-      },
-      {
-        "query": "greens policy",
-        "value": 5
-      },
-      {
-        "query": "liberal",
-        "value": 5
-      },
-      {
-        "query": "greens senator",
-        "value": 5
-      },
-      {
-        "query": "australian greens party",
-        "value": 4
-      },
-      {
-        "query": "the greens leader",
-        "value": 4
-      },
-      {
-        "query": "the greens party australia",
-        "value": 4
-      },
-      {
-        "query": "greens political party",
-        "value": 4
-      },
-      {
-        "query": "liberal party",
-        "value": 3
-      },
-      {
-        "query": "leader of the greens",
-        "value": 3
-      },
-      {
-        "query": "labor party",
-        "value": 3
-      },
-      {
-        "query": "pauline hanson",
-        "value": 2
-      },
-      {
-        "query": "the greens political party",
-        "value": 2
-      },
-      {
-        "query": "anthony albanese",
-        "value": 1
-      },
-      {
-        "query": "duncan turpie",
-        "value": 1
-      }
-    ],
-    "rising": [
-      {
-        "query": "anthony albanese",
-        "value": 450
-      },
-      {
-        "query": "duncan turpie",
-        "value": 250
-      },
-      {
-        "query": "pauline hanson",
-        "value": 50
-      }
-    ]
+    "top": [],
+    "rising": []
   },
   "PHON": {
     "top": [
@@ -491,15 +381,15 @@
     "rising": [
       {
         "query": "fire the liar one nation",
-        "value": 643400
+        "value": 643100
       },
       {
         "query": "one nation lower house projections",
-        "value": 69550
+        "value": 69500
       },
       {
         "query": "fire the lair",
-        "value": 49750
+        "value": 49600
       },
       {
         "query": "fire the lair one nation",
@@ -511,7 +401,7 @@
       },
       {
         "query": "fire the liar campaign",
-        "value": 28950
+        "value": 28650
       },
       {
         "query": "fire the liar",
@@ -519,7 +409,7 @@
       },
       {
         "query": "one nation farrer by-election prediction",
-        "value": 13950
+        "value": 14150
       },
       {
         "query": "one nation fundraiser",
