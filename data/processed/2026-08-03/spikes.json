@@ -1,0 +1,111 @@
+[
+  {
+    "date": "2026-06-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 100,
+    "rolling_avg": 20.3,
+    "ratio": 4.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-23",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 12,
+    "rolling_avg": 3.0,
+    "ratio": 4.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 56,
+    "rolling_avg": 18.7,
+    "ratio": 3.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-01",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 41,
+    "rolling_avg": 14.3,
+    "ratio": 2.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-11",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 89,
+    "rolling_avg": 31.9,
+    "ratio": 2.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-03",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 32,
+    "rolling_avg": 12.1,
+    "ratio": 2.6,
+    "explanation": "Protest at One Nation fundraiser after Vic leader, candidates announced",
+    "news": [
+      {
+        "title": "Protest at One Nation fundraiser after Vic leader, candidates announced",
+        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOR0x5eld6UVZ4UlFYSXlTNlltUEgyYWM1UHQ2dFVvRElhZEV5S2RZYjEwWXhSanJEOHFpTkk4dGtQLURicEg2SmN5VHZJcGs0LW44aEI2WFdEXzJiRm9tZDQwZDNYenQyeUFDWjFtdThUcFcwM1JpbXhhMHl3bjgyLXhTUlFUbDN6VkZRUExoLXc?oc=5",
+        "date": "2026-08-03"
+      },
+      {
+        "title": "One Nation names eight Victorian election candidates as Hanson bars ABC and Guardian from press conferences",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRkJMaWREMlpyLXlFWTBaM21iQTVPZzQwNTgxMTVaUVA3ZHRwNUQ4Zk1nM2JjY2g3aGdhN0lqR182b25FdDJvbFpGOW5rUHFRU2hydU9kNDZkX3JhaERIdjMwUFhkMk5HWF95VzlqajdleWJ4UGlyOFpodGdmbmxGRHZpZ3ZvQnhJZGVZazN2RDlXeG04ekk2ODlWeU1iWFJHd2ZEcVpsT3RGdWtMRmx5U0dB?oc=5",
+        "date": "2026-08-03"
+      },
+      {
+        "title": "Bombshell poll result for One Nation, Labor",
+        "source": "News.com.au",
+        "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNYjFrZ1RrTTBLTmRNQmpUOURHSzFraDJUQVpHTTJVaXBVU0lBYTVHYkp1SzQtZ0c4NXkzSkVtd0IxcEo5aHdGR29zNTZWaVhaaUdyR0s1SFNNeXJidkpBY2xwZWl4OGY0WW1FUmpDOGtLTTd4Q0VoUFI1NnpsaXJpX1dTY0Q0RjE1VUQyMC14cW1pWExQQkxSZ2dRQ1dKZDdIa1VWNlJlR2xxOTM3WUJheFFRUG5YY1Vkek1fb3I5U2dzMTRwcXd5dVBvdVlNTFFMX05HejVSU2VVRDY5S0VnSVhhQUlwQnBqNUkya01VVWZfOWFqaTA0SkdkXzlPYUtlcXJfNW12d1JxRzBtclVVdHRhVjBNYjY2Y0HSAZ8CQVVfeXFMTlRkaFoxbVM5LXhKdjQwWWx0WVdhcl9rYnpTVjd3Sk5PbkJnSnNseTV5UGxab1MxUjJVM0twUVduOW92Y2VrbVpZaU1jR1EtNXBqanh6dW5JY1pidWg5UFVfcnE5VE9SOVZWdWNKV1JDa3RhY3pidE5UM2xmTkpxcDRGckVVRFhrMGNZMUtFaS0wb1hLRXp4emJlMFd2eko1enJhejc4czRCTDRrOXltRGhRbEdGa3ZVbWhzaUt2ZkU5QmhsU2pEOWxuM1VvSE1kOG1waDkzODE4MHByY3JRQ3ozUlkxR3QtNTZ1WURsM1QzTDUwX0JHUWNVVG5XY1IxbHY3ZjVjaGtTUVdNNnR3QkJqeWpLUERTRmtvTlhBQXM?oc=5",
+        "date": "2026-08-03"
+      }
+    ]
+  },
+  {
+    "date": "2026-05-31",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 32,
+    "rolling_avg": 13.1,
+    "ratio": 2.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-14",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 11,
+    "rolling_avg": 5.4,
+    "ratio": 2.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-12",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 85,
+    "rolling_avg": 41.7,
+    "ratio": 2.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]
