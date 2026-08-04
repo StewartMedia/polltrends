@@ -1,19 +1,411 @@
 {
   "ALP": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "labor",
+        "value": 100
+      },
+      {
+        "query": "labor party",
+        "value": 42
+      },
+      {
+        "query": "labour",
+        "value": 36
+      },
+      {
+        "query": "labor australia",
+        "value": 19
+      },
+      {
+        "query": "labour party",
+        "value": 13
+      },
+      {
+        "query": "alp",
+        "value": 11
+      },
+      {
+        "query": "one nation",
+        "value": 11
+      },
+      {
+        "query": "australian labor party",
+        "value": 10
+      },
+      {
+        "query": "liberal party",
+        "value": 10
+      },
+      {
+        "query": "labor government",
+        "value": 7
+      },
+      {
+        "query": "labour party australia",
+        "value": 5
+      },
+      {
+        "query": "liberal party australia",
+        "value": 5
+      },
+      {
+        "query": "greens",
+        "value": 4
+      },
+      {
+        "query": "anthony albanese",
+        "value": 4
+      },
+      {
+        "query": "labor or labour",
+        "value": 4
+      },
+      {
+        "query": "labor policies",
+        "value": 3
+      },
+      {
+        "query": "labor candidate",
+        "value": 2
+      },
+      {
+        "query": "jacinta allen",
+        "value": 2
+      },
+      {
+        "query": "labor government cgt changes",
+        "value": 1
+      },
+      {
+        "query": "labor fundraiser",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "jacinta allen",
+        "value": 142950
+      },
+      {
+        "query": "labor government cgt changes",
+        "value": 87500
+      },
+      {
+        "query": "labor fundraiser",
+        "value": 72700
+      },
+      {
+        "query": "one nation",
+        "value": 120
+      },
+      {
+        "query": "anthony albanese",
+        "value": 80
+      }
+    ]
   },
   "LIB": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal party",
+        "value": 74
+      },
+      {
+        "query": "liberal australia",
+        "value": 25
+      },
+      {
+        "query": "liberal party australia",
+        "value": 20
+      },
+      {
+        "query": "liberal leader",
+        "value": 16
+      },
+      {
+        "query": "liberal party victoria",
+        "value": 8
+      },
+      {
+        "query": "one nation",
+        "value": 8
+      },
+      {
+        "query": "labor party",
+        "value": 7
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 7
+      },
+      {
+        "query": "labour party",
+        "value": 6
+      },
+      {
+        "query": "liberal policies",
+        "value": 6
+      },
+      {
+        "query": "liberals",
+        "value": 4
+      },
+      {
+        "query": "angus taylor",
+        "value": 3
+      },
+      {
+        "query": "tony abbott",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "tony abbott",
+        "value": 850
+      },
+      {
+        "query": "liberal policies",
+        "value": 150
+      },
+      {
+        "query": "one nation",
+        "value": 130
+      },
+      {
+        "query": "labour party",
+        "value": 70
+      },
+      {
+        "query": "liberal party victoria",
+        "value": 60
+      },
+      {
+        "query": "labor party",
+        "value": 50
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 40
+      }
+    ]
   },
   "GRN": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      },
+      {
+        "query": "the greens",
+        "value": 41
+      },
+      {
+        "query": "australian greens",
+        "value": 16
+      },
+      {
+        "query": "the greens party",
+        "value": 10
+      },
+      {
+        "query": "greens policies",
+        "value": 7
+      },
+      {
+        "query": "the greens australia",
+        "value": 6
+      },
+      {
+        "query": "one nation",
+        "value": 6
+      },
+      {
+        "query": "greens policy",
+        "value": 6
+      },
+      {
+        "query": "liberal",
+        "value": 5
+      },
+      {
+        "query": "greens senator",
+        "value": 5
+      },
+      {
+        "query": "australian greens party",
+        "value": 4
+      },
+      {
+        "query": "liberal party",
+        "value": 4
+      },
+      {
+        "query": "leader of the greens",
+        "value": 3
+      },
+      {
+        "query": "labor party",
+        "value": 2
+      },
+      {
+        "query": "greens political party",
+        "value": 2
+      },
+      {
+        "query": "one nation policies",
+        "value": 1
+      },
+      {
+        "query": "greens leader australia",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "greens policy",
+        "value": 100
+      }
+    ]
   },
   "PHON": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation australia",
+        "value": 10
+      },
+      {
+        "query": "one nation victoria",
+        "value": 9
+      },
+      {
+        "query": "one nation election",
+        "value": 7
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "fire the liar",
+        "value": 5
+      },
+      {
+        "query": "one nation fire the liar",
+        "value": 5
+      },
+      {
+        "query": "what is one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation policy",
+        "value": 3
+      },
+      {
+        "query": "one nation news",
+        "value": 3
+      },
+      {
+        "query": "one nation candidates",
+        "value": 3
+      },
+      {
+        "query": "one nation donations",
+        "value": 3
+      },
+      {
+        "query": "one nation win",
+        "value": 2
+      },
+      {
+        "query": "farrer",
+        "value": 2
+      },
+      {
+        "query": "one nation seats",
+        "value": 2
+      },
+      {
+        "query": "one nation fundraiser",
+        "value": 2
+      },
+      {
+        "query": "one nation poll",
+        "value": 2
+      },
+      {
+        "query": "what is one nation australia",
+        "value": 1
+      },
+      {
+        "query": "the australian",
+        "value": 1
+      },
+      {
+        "query": "one nation reddit",
+        "value": 1
+      },
+      {
+        "query": "one nation lower house projections",
+        "value": 1
+      },
+      {
+        "query": "fire the lair",
+        "value": 0
+      },
+      {
+        "query": "fire the lair one nation",
+        "value": 0
+      },
+      {
+        "query": "will one nation win the next election",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation fire the liar",
+        "value": 457900
+      },
+      {
+        "query": "one nation lower house projections",
+        "value": 54600
+      },
+      {
+        "query": "fire the lair",
+        "value": 32600
+      },
+      {
+        "query": "fire the lair one nation",
+        "value": 24900
+      },
+      {
+        "query": "will one nation win the next election",
+        "value": 10950
+      },
+      {
+        "query": "fire the liar",
+        "value": 5700
+      },
+      {
+        "query": "one nation donations",
+        "value": 1500
+      },
+      {
+        "query": "one nation fundraiser",
+        "value": 1450
+      }
+    ]
   },
   "AJP": {
     "top": [],

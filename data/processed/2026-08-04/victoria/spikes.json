@@ -1,0 +1,147 @@
+[
+  {
+    "date": "2026-06-10",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 11,
+    "rolling_avg": 0.7,
+    "ratio": 15.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-23",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 11,
+    "rolling_avg": 2.3,
+    "ratio": 4.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 98,
+    "rolling_avg": 23.6,
+    "ratio": 4.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-03",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 74,
+    "rolling_avg": 18.6,
+    "ratio": 4.0,
+    "explanation": "Protest at One Nation fundraiser after Vic leader, candidates announced",
+    "news": [
+      {
+        "title": "Protest at One Nation fundraiser after Vic leader, candidates announced",
+        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOR0x5eld6UVZ4UlFYSXlTNlltUEgyYWM1UHQ2dFVvRElhZEV5S2RZYjEwWXhSanJEOHFpTkk4dGtQLURicEg2SmN5VHZJcGs0LW44aEI2WFdEXzJiRm9tZDQwZDNYenQyeUFDWjFtdThUcFcwM1JpbXhhMHl3bjgyLXhTUlFUbDN6VkZRUExoLXc?oc=5",
+        "date": "2026-08-03"
+      },
+      {
+        "title": "One Nation Victoria leader to run for Pakenham",
+        "source": "Pakenham Gazette",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeHpjaFFiZkJBdlJrRTY3YXNWQS1lNUhUM0JXU3VGRExXOFI2R3JqcnpVVUt0bS1xVEJsaENhWEZBMmFaakx3eDFTT0d3cUpJSHA2Nm1HYlBLOUtGZHpSSHUyS1FOUFZCVHRuSjNSMFdGclYxZzE2MXhEQU9mN0wtU3NWc2xmUTFyODJBM3JjbmRidUZUdEhvMC1n?oc=5",
+        "date": "2026-08-03"
+      },
+      {
+        "title": "\u2018Shows how sorry this state has become\u2019: Violent protest group hijack ON function",
+        "source": "The Australian",
+        "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPMVNUZWN0T0dQdC16RjlEZ0xpZU9YOVNpWFNqSFp6WUUydV9RdkI0ZFNIaDRNWmFDYWpxaFBtMXpMcGZrNUwzYm1lM0NnRHJocndRckRlUldFWmJGOFRBUXpIb0FRSHg0OVpxZTRZeTh4eWhxX2ZvcDA0YWZFLWJVS3A2bEFmczdTdU9faEtnTE9hNk5RalV5OGtwMkpEekw1NV85OXQ1T1lHV0RON3c0MUdCc1o0UlVQMmJzenFKeXRrdTBPNHVHTjd2YlNrWldrcjBibmpQdGlibXFQWElMSHpxQzBFWWl4a0Y0X09nSHhvU2RPUnVQLW9sV25aVUHSAf8BQVVfeXFMTzFTVGVjdE9HUHQtekY5RGdMaWVPWDlTaVhTakhaellFMnVfUXZCNGRTSGg0TVphQ2FqcWhQbTF6THBmazVMM2JtZTNDZ0RyaHJ3UXJEZVJXRVpiRjhUQVF6SG9BUUh4NDlacWU0WXk4eHlocV9mb3AwNGFmRS1iVUtwNmxBZnM3U3VPX2hLZ0xPYTZOUWpVeThrcDJKRHpMNTVfOTl0NU9ZR1dETjd3NDFHQnNaNFJVUDJic3pxSnl0a3UwTzR1R043dmJTa1pXa3IwYm5qUHRpYm1xUFhJTEh6cUMwRVlpeGtGNF9PZ0h4b1NkT1J1UC1vbFduWlVB?oc=5",
+        "date": "2026-08-04"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-11",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 2.9,
+    "ratio": 3.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-13",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 11,
+    "rolling_avg": 3.4,
+    "ratio": 3.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-03",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 10,
+    "rolling_avg": 3.1,
+    "ratio": 3.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-01",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 50,
+    "rolling_avg": 15.4,
+    "ratio": 3.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-27",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 13,
+    "rolling_avg": 4.6,
+    "ratio": 2.8,
+    "explanation": "Ben Carroll announces royal commission into construction sector in first act as new Victorian premier",
+    "news": [
+      {
+        "title": "Ben Carroll announces royal commission into construction sector in first act as new Victorian premier",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPNWRxU1F2aVBFTjZiUTl6WEdGYU5abnMtVkpYLUI1TWhuYUZXb2d3WHlVY3R3R3JuVjc2cUwtQ2pSRUNkZ3lmU05xNDNiS3ZJQ0hnZWtrd2tNdTlZNDlKR25hRGRPMEJrWklfdGUwUE9UT2ItdXVOdHNaOVFLdDd0R0tsT1ZXRHc0VzJhdkVpU3dNYUtLVFNYTWs5eTNudWViQnNkWUpnbEZkNHlVMzE1YkVDTlJkS20wNVhkbUZoSy14RTZpS1hHaFVfMno?oc=5",
+        "date": "2026-07-28"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-28",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 18,
+    "rolling_avg": 6.4,
+    "ratio": 2.8,
+    "explanation": "Victorian Labor lurches further right under Carroll",
+    "news": [
+      {
+        "title": "Victorian Labor lurches further right under Carroll",
+        "source": "solidarity.net.au",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPRGJHdlE3ai1uRmxSZ2hyQTY1R1pSeHp0dmZ5cXF3ZG8xWVRGOFpadTU5WGg3YjNXYlhKYjQxX21VXzlsYzZOSEwzUzdmQlZKWW9kQzRYN3NTemVTTWtQc3hIS0JBclZJMHRSS2YzMlFiVExjejlDY3hDa2hQdWx3LUs5aHV5c3kzd1JOSnRRRjFIQnc?oc=5",
+        "date": "2026-07-30"
+      },
+      {
+        "title": "Jacinta Allan allies to quit politics after Labor coup",
+        "source": "The Canberra Times",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcXJMT3JtMnZmVEFZV3dYYjhwMncxTHRCNTFWdlo3VF9hbGhOeWY3elRaaXBvV2hRSjUtUEpVcEs3TXJVQnFRQlR6WWRRaVNxczhjdThnOERaanBrR1dueXUtb242bmFKT1hESkdlbnZVV3JOd3I1N0piUG1XdXBISEVNOXRuZ1A3NUs3QkRXU3RMdDdNbHVES1IxRWc1czkzdEZubg?oc=5",
+        "date": "2026-07-30"
+      },
+      {
+        "title": "Ben Carroll announces royal commission into construction sector in first act as new Victorian premier",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPNWRxU1F2aVBFTjZiUTl6WEdGYU5abnMtVkpYLUI1TWhuYUZXb2d3WHlVY3R3R3JuVjc2cUwtQ2pSRUNkZ3lmU05xNDNiS3ZJQ0hnZWtrd2tNdTlZNDlKR25hRGRPMEJrWklfdGUwUE9UT2ItdXVOdHNaOVFLdDd0R0tsT1ZXRHc0VzJhdkVpU3dNYUtLVFNYTWs5eTNudWViQnNkWUpnbEZkNHlVMzE1YkVDTlJkS20wNVhkbUZoSy14RTZpS1hHaFVfMno?oc=5",
+        "date": "2026-07-28"
+      }
+    ]
+  }
+]
