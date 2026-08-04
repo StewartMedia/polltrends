@@ -1,89 +1,70 @@
 [
   {
-    "date": "2026-06-10",
+    "date": "2026-06-10T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 20.3,
+    "rolling_avg": 20.6,
     "ratio": 4.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-23",
+    "date": "2026-06-23T00:00:00",
     "party_code": "GRN",
     "party_name": "Greens",
     "value": 11,
-    "rolling_avg": 3.1,
-    "ratio": 3.5,
+    "rolling_avg": 3.3,
+    "ratio": 3.3,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-01",
+    "date": "2026-06-01T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 40,
-    "rolling_avg": 14.0,
+    "value": 41,
+    "rolling_avg": 14.1,
     "ratio": 2.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-11",
+    "date": "2026-06-11T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 88,
-    "rolling_avg": 31.9,
-    "ratio": 2.8,
+    "value": 87,
+    "rolling_avg": 32.1,
+    "ratio": 2.7,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-03",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 33,
-    "rolling_avg": 11.9,
-    "ratio": 2.8,
-    "explanation": "'Script hasn't changed': Kevin Rudd derides Hanson's leadership capability",
-    "news": [
-      {
-        "title": "'Script hasn't changed': Kevin Rudd derides Hanson's leadership capability",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNazdwMHVrYnJjSmVEcXJqOGJUTGQxSUw3d1ppVjBHTzhrZndVckVncXFSckkzMVZ0UHI1ZkVhUjlGVVpCa296T2RWaGtHWHRkWGNvSlFwQWpJWWY1cmkwZEltYVVBRktudzVjQnBqMl9OV2pPcWItazFEbENXanFybWhxM01JZ3RiM3pJZmtQNEY5VG1nSzBDSU1DRlJNbDFFT3g4aUV5VzkxSVU?oc=5",
-        "date": "2026-08-04"
-      },
-      {
-        "title": "View from The Hill: Hanson announces One Nation Victorian leader, bans major media outlets",
-        "source": "The Conversation",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOR0o5MVJnOUxVQmdmZXh6elpoaV90M3M1MkVPLUgtS3lNcnV6cXE5Nk5kQUtiQnpZX0k4MTNqd0tzSWdBRlhfSVFTOWl5a3JDU2hmdzNxbXhaSU4zWUlyM1I2dWh3U1NwTXQ3SmEwQzdLWmdud1BCTGZWMVJScXhCcXhmUjFVd1d3YWFsYVEyQ2VINUlUcHlpYldHeGtaT05MVE90RUYxcmVFREY1ZE1SRVVNTHdiVWFKX2J3WkxlMUw?oc=5",
-        "date": "2026-08-03"
-      },
-      {
-        "title": "Greens senator brands Pauline Hanson a \u2018political coward\u2019 over press conference bans \u2013 as it happened",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxOdlRMLVV1Tjhobm5QRERJb053WXhEcEpza2lKVkJJVm1DRmt0Wnkyd01mMDVRUUljZlgwRVpJa2RTVGhJVm9pcEFXMndIbFhUMS1xOUt1ZDBUMHZjQnk3MVIzaTdZNHY1SlAwQ0ZMVDVyM01LV0kyMVhySkxINERhZlhCdmZveTNRSjVVWmh3V0M4VE1XUXRwejkzdVZvTmtzUW9kTWJSSmFzalc1d3dCNEJSMEdhX1Y0dWprS2ZDTXBXbmNtRENkUVRFREtQcF9kWVVwX2ZTRU16VFQ1bnFIUml0MG4xMnR2YjR2YVlfeVhRUTNZUkhuNTZEdTBNcjJyS1RYcjgyZURiOHRoRWtfYWh1bTRsUmNtTjRLRmNCendqOXVNS25TR05B?oc=5",
-        "date": "2026-08-02"
-      }
-    ]
-  },
-  {
-    "date": "2026-05-31",
+    "date": "2026-08-03T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 32,
-    "rolling_avg": 12.7,
+    "rolling_avg": 12.4,
+    "ratio": 2.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-31T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 32,
+    "rolling_avg": 13.0,
     "ratio": 2.5,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-12",
+    "date": "2026-06-12T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 85,
-    "rolling_avg": 41.6,
+    "value": 84,
+    "rolling_avg": 41.7,
     "ratio": 2.0,
     "explanation": "Significant spike in search interest",
     "news": []
