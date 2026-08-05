@@ -1,159 +1,102 @@
 [
   {
-    "date": "2026-06-10",
+    "date": "2026-05-29T00:00:00",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 10,
-    "rolling_avg": 0.9,
-    "ratio": 11.7,
+    "value": 13,
+    "rolling_avg": 1.6,
+    "ratio": 8.3,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-23",
+    "date": "2026-05-28T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 1.9,
+    "ratio": 5.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-23T00:00:00",
     "party_code": "GRN",
     "party_name": "Greens",
-    "value": 12,
-    "rolling_avg": 1.4,
-    "ratio": 8.4,
+    "value": 10,
+    "rolling_avg": 1.9,
+    "ratio": 5.4,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-05-14",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 16,
-    "rolling_avg": 3.0,
-    "ratio": 5.3,
+    "date": "2026-06-15T00:00:00",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 13,
+    "rolling_avg": 2.6,
+    "ratio": 5.1,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-03",
+    "date": "2026-06-10T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 78,
-    "rolling_avg": 18.7,
-    "ratio": 4.2,
-    "explanation": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
-    "news": [
-      {
-        "title": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYnFMaDJTWmYydUVwLTBhbXFQbXFoQ2NoM3lvbFFuX3dfWWdfSXkxRGhWVWNERDJjQnVYNmo0d1gzZHhSOTQyTFVhbnFMb2RMMWIyamJWUDRBdUxTbzJ5dUE0WnJLQU5KOW56ekZCQkRLTzNBcmNWTERyV0dVU2FRS2ZuMC1HR1ZGbFJaV2JWaU1iaXhXRXRUa0tQVDFxYkVISFpQb2Y0cXZHNkFiR2IxNUxidXM5OVByUFJ2VmVLcnotaU5wS1hpQWRNUmU?oc=5",
-        "date": "2026-08-05"
-      },
-      {
-        "title": "Protest at One Nation fundraiser after Vic leader, candidates announced",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOR0x5eld6UVZ4UlFYSXlTNlltUEgyYWM1UHQ2dFVvRElhZEV5S2RZYjEwWXhSanJEOHFpTkk4dGtQLURicEg2SmN5VHZJcGs0LW44aEI2WFdEXzJiRm9tZDQwZDNYenQyeUFDWjFtdThUcFcwM1JpbXhhMHl3bjgyLXhTUlFUbDN6VkZRUExoLXc?oc=5",
-        "date": "2026-08-03"
-      },
-      {
-        "title": "Protesters confront Hanson, hurl abuse at One Nation supporters",
-        "source": "The Australian",
-        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPN2VOOTRnODUwOC1McnROS0c4a2Q4bjduZ1BmYjFtSUxnSURsRG8yTTNST3hnQ25yTWM5blFrTWpCR0IwZ1R5ODdPSXRWSWN3VnpYSXdRUmVzcHZsMDl1QmdLSGdqdDYzQjBRckNodnFwMWo2MlQwTzRpenU3ZWdlU1hNVWpaYVU1Z25zc29Md1pvX3pScHdUc21wZjJVQzc1aDdadC1GN3hJU19oMnBLUU95Q3RXUWdTN2VIeHQtcGZpWnU5ZjVTUXBSczU3Z2h5NU1CU2VxdDNSYy1fQk93R2djdV9lT0lMbVo3QnZfOVQ1NnfSAfgBQVVfeXFMUEhXUGM2R2N3d0lIUUJHMkstei00NTkzMTUxTUxhLXR1eU1ERENlMjF6N25MTWM5QmVpTnh1cG95dGVUeTItY202enJLeUdrV28wTlprVjV2ZVBVNmxxbWdPWGs1azNhWjd1S1BHOFVKWXFBUFpGX0FTenVjOFZOTmtOY3p2bUl2dDVGQ3dNUlBWMjF1Z0MtTXl5Vnh3NFBxeHdmOFJYbWYtS2E1MkJOTTU4UXFrTzRHZThVRkstTmY2WHNISVU3YXZld0RscGthNTJJSTA4RmJFbWY1SWUtVHI2bFcyQURPYWJncE9pbWZtYTRNclJOTXE?oc=5",
-        "date": "2026-08-03"
-      }
-    ]
-  },
-  {
-    "date": "2026-06-10",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 99,
-    "rolling_avg": 24.9,
-    "ratio": 4.0,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-06-10",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 11,
-    "rolling_avg": 2.9,
+    "value": 96,
+    "rolling_avg": 24.4,
     "ratio": 3.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-01",
+    "date": "2026-08-03T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 51,
-    "rolling_avg": 15.4,
-    "ratio": 3.3,
+    "value": 71,
+    "rolling_avg": 18.4,
+    "ratio": 3.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-05-31",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 41,
-    "rolling_avg": 13.0,
+    "date": "2026-05-13T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 2.7,
+    "ratio": 3.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-24T00:00:00",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 12,
+    "rolling_avg": 3.3,
+    "ratio": 3.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-27T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 13,
+    "rolling_avg": 4.0,
     "ratio": 3.2,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-07-27",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 13,
-    "rolling_avg": 4.1,
-    "ratio": 3.1,
-    "explanation": "Jacinta Allan's resignation triggers chaotic leadership spill",
-    "news": [
-      {
-        "title": "Jacinta Allan's resignation triggers chaotic leadership spill",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUkQ1UWZxdVlyYTNBaXhFZzR1TTBvYk9kOUhMRnZma1BDUTF3SThmR0FIMlZIYWY0Y3lUTXlmSk42UDNIX0RMeTVDTmhHbjNsbnlwcnNCcDNEX1hmaFVCQ08tQ2JhRmVweGxTcmtjRFU3MFdZbklSYTZmZ3hQWnl1SXVWQ0VBYVhlOW5RMzd5UVdHNFBYWW10ZUpNaTF6ZEFsS1AyM29YNm8?oc=5",
-        "date": "2026-07-27"
-      },
-      {
-        "title": "Ben Carroll announces royal commission into construction sector in first act as new Victorian premier",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPNWRxU1F2aVBFTjZiUTl6WEdGYU5abnMtVkpYLUI1TWhuYUZXb2d3WHlVY3R3R3JuVjc2cUwtQ2pSRUNkZ3lmU05xNDNiS3ZJQ0hnZWtrd2tNdTlZNDlKR25hRGRPMEJrWklfdGUwUE9UT2ItdXVOdHNaOVFLdDd0R0tsT1ZXRHc0VzJhdkVpU3dNYUtLVFNYTWs5eTNudWViQnNkWUpnbEZkNHlVMzE1YkVDTlJkS20wNVhkbUZoSy14RTZpS1hHaFVfMno?oc=5",
-        "date": "2026-07-28"
-      },
-      {
-        "title": "'I'm not Jacinta Allan': Caroll pledges 'new direction' and calls a royal commission",
-        "source": "SBS",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRFFfVFBSaFVCSUR6Nm5vTGptTzFKQW1NX3RSaVcwQzZnT2xGMUo4THY3VTdBQWFtWGRQRnl0cGw0UmdNRG95QUpETUI4MFJ3RXZmcGhEWkliWjgxSldKS1R2STR6T1FEYUxGS2pWRUptRmpxZW5RRkpKNDJ6VkYydDlOaWxCTnZrTm84OXRn?oc=5",
-        "date": "2026-07-28"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-28",
+    "date": "2026-07-28T00:00:00",
     "party_code": "ALP",
     "party_name": "Labor",
     "value": 18,
-    "rolling_avg": 6.0,
-    "ratio": 3.0,
-    "explanation": "Jacinta Allan's resignation triggers chaotic leadership spill",
-    "news": [
-      {
-        "title": "Jacinta Allan's resignation triggers chaotic leadership spill",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUkQ1UWZxdVlyYTNBaXhFZzR1TTBvYk9kOUhMRnZma1BDUTF3SThmR0FIMlZIYWY0Y3lUTXlmSk42UDNIX0RMeTVDTmhHbjNsbnlwcnNCcDNEX1hmaFVCQ08tQ2JhRmVweGxTcmtjRFU3MFdZbklSYTZmZ3hQWnl1SXVWQ0VBYVhlOW5RMzd5UVdHNFBYWW10ZUpNaTF6ZEFsS1AyM29YNm8?oc=5",
-        "date": "2026-07-27"
-      },
-      {
-        "title": "Ben Carroll announces royal commission into construction sector in first act as new Victorian premier",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPNWRxU1F2aVBFTjZiUTl6WEdGYU5abnMtVkpYLUI1TWhuYUZXb2d3WHlVY3R3R3JuVjc2cUwtQ2pSRUNkZ3lmU05xNDNiS3ZJQ0hnZWtrd2tNdTlZNDlKR25hRGRPMEJrWklfdGUwUE9UT2ItdXVOdHNaOVFLdDd0R0tsT1ZXRHc0VzJhdkVpU3dNYUtLVFNYTWs5eTNudWViQnNkWUpnbEZkNHlVMzE1YkVDTlJkS20wNVhkbUZoSy14RTZpS1hHaFVfMno?oc=5",
-        "date": "2026-07-28"
-      },
-      {
-        "title": "Victorian Labor lurches further right under Carroll",
-        "source": "solidarity.net.au",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPRGJHdlE3ai1uRmxSZ2hyQTY1R1pSeHp0dmZ5cXF3ZG8xWVRGOFpadTU5WGg3YjNXYlhKYjQxX21VXzlsYzZOSEwzUzdmQlZKWW9kQzRYN3NTemVTTWtQc3hIS0JBclZJMHRSS2YzMlFiVExjejlDY3hDa2hQdWx3LUs5aHV5c3kzd1JOSnRRRjFIQnc?oc=5",
-        "date": "2026-07-30"
-      }
-    ]
+    "rolling_avg": 5.9,
+    "ratio": 3.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
   }
 ]

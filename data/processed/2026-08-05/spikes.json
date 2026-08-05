@@ -1,79 +1,70 @@
 [
   {
-    "date": "2026-06-10",
+    "date": "2026-06-10T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 19.9,
-    "ratio": 5.0,
+    "rolling_avg": 20.3,
+    "ratio": 4.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-01",
+    "date": "2026-06-23T00:00:00",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 11,
+    "rolling_avg": 3.0,
+    "ratio": 3.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-01T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 40,
-    "rolling_avg": 13.7,
+    "value": 41,
+    "rolling_avg": 14.3,
     "ratio": 2.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-11",
+    "date": "2026-06-11T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 85,
-    "rolling_avg": 31.6,
+    "value": 88,
+    "rolling_avg": 31.9,
+    "ratio": 2.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-03T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 32,
+    "rolling_avg": 11.9,
     "ratio": 2.7,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-03",
+    "date": "2026-05-31T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 31,
-    "rolling_avg": 11.6,
-    "ratio": 2.7,
-    "explanation": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
-    "news": [
-      {
-        "title": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYnFMaDJTWmYydUVwLTBhbXFQbXFoQ2NoM3lvbFFuX3dfWWdfSXkxRGhWVWNERDJjQnVYNmo0d1gzZHhSOTQyTFVhbnFMb2RMMWIyamJWUDRBdUxTbzJ5dUE0WnJLQU5KOW56ekZCQkRLTzNBcmNWTERyV0dVU2FRS2ZuMC1HR1ZGbFJaV2JWaU1iaXhXRXRUa0tQVDFxYkVISFpQb2Y0cXZHNkFiR2IxNUxidXM5OVByUFJ2VmVLcnotaU5wS1hpQWRNUmU?oc=5",
-        "date": "2026-08-05"
-      },
-      {
-        "title": "'Script hasn't changed': Kevin Rudd derides Hanson's leadership capability",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNazdwMHVrYnJjSmVEcXJqOGJUTGQxSUw3d1ppVjBHTzhrZndVckVncXFSckkzMVZ0UHI1ZkVhUjlGVVpCa296T2RWaGtHWHRkWGNvSlFwQWpJWWY1cmkwZEltYVVBRktudzVjQnBqMl9OV2pPcWItazFEbENXanFybWhxM01JZ3RiM3pJZmtQNEY5VG1nSzBDSU1DRlJNbDFFT3g4aUV5VzkxSVU?oc=5",
-        "date": "2026-08-04"
-      },
-      {
-        "title": "Media and political complacency is letting Pauline Hanson re-write the rules on accountability",
-        "source": "The Conversation",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNNm1ZQ2tHck9GRFNmUWZNTUZacEhvcXgxb2VKWjVrb0F1eURJcDFKMHlHbWNIc2k0czllRHVjbE1CUzFVZVNkRHJZUDQ3LWVBQTZiRmlnRHVHMnpfUXRCQ01oTTd1S1VqOFRHMlFXUURlRkFGNXYyY1NaSDlzRXRLdXkzYjNFaGROd3BmSDh4NWRnN1gzeHJrUGxkdFU0S05Zbk1MM2pQQXgxVWFFMVdlaTNOYV92eXA5d1lkeGlSREE2NEt0NXNxbA?oc=5",
-        "date": "2026-08-04"
-      }
-    ]
-  },
-  {
-    "date": "2026-05-31",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 31,
-    "rolling_avg": 12.6,
-    "ratio": 2.5,
+    "value": 33,
+    "rolling_avg": 12.9,
+    "ratio": 2.6,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-12",
+    "date": "2026-06-12T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 82,
-    "rolling_avg": 41.0,
+    "value": 84,
+    "rolling_avg": 41.6,
     "ratio": 2.0,
     "explanation": "Significant spike in search interest",
     "news": []
