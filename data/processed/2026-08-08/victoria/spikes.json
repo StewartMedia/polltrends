@@ -1,0 +1,159 @@
+[
+  {
+    "date": "2026-06-23",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 12,
+    "rolling_avg": 1.9,
+    "ratio": 6.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 99,
+    "rolling_avg": 24.0,
+    "ratio": 4.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-03",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 74,
+    "rolling_avg": 18.7,
+    "ratio": 4.0,
+    "explanation": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
+    "news": [
+      {
+        "title": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYnFMaDJTWmYydUVwLTBhbXFQbXFoQ2NoM3lvbFFuX3dfWWdfSXkxRGhWVWNERDJjQnVYNmo0d1gzZHhSOTQyTFVhbnFMb2RMMWIyamJWUDRBdUxTbzJ5dUE0WnJLQU5KOW56ekZCQkRLTzNBcmNWTERyV0dVU2FRS2ZuMC1HR1ZGbFJaV2JWaU1iaXhXRXRUa0tQVDFxYkVISFpQb2Y0cXZHNkFiR2IxNUxidXM5OVByUFJ2VmVLcnotaU5wS1hpQWRNUmU?oc=5",
+        "date": "2026-08-05"
+      },
+      {
+        "title": "Inside the world of the self-described conspiracy theorist anointed One Nation\u2019s Victorian leader",
+        "source": "The Age",
+        "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPUEZxY2hZTkM2T2JjV3FoWTZoZ1lhS1JyaVZVVndCd1E5aEFuT0QtcDR4bWhJQ1doNlowTlR4dHppZ0dMWDF5Y0szMmJWR0k1c1Q1ZTFVeVNHYUpHejVrQUJaWTd4NlNxTGQyUERReW5mbFdiWDZQR1R6VXNJb2ZvaDRiaE00M1MyOUdMdFFQcUJOb3ZtZGVnbUQxQUs3ZjBZeVpxazhNb3JqS0JxTmVac3hZSzhlRjZJV3dTdXVRMUI1a29sdFY3WEZ0RzRTbF91RVJDTk5GSTg1d010cXVhckR2WEg4Zi1VdWp0TVJ0STFEVE1k?oc=5",
+        "date": "2026-08-04"
+      },
+      {
+        "title": "Protesters confront Hanson, hurl abuse at One Nation supporters",
+        "source": "The Australian",
+        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPN2VOOTRnODUwOC1McnROS0c4a2Q4bjduZ1BmYjFtSUxnSURsRG8yTTNST3hnQ25yTWM5blFrTWpCR0IwZ1R5ODdPSXRWSWN3VnpYSXdRUmVzcHZsMDl1QmdLSGdqdDYzQjBRckNodnFwMWo2MlQwTzRpenU3ZWdlU1hNVWpaYVU1Z25zc29Md1pvX3pScHdUc21wZjJVQzc1aDdadC1GN3hJU19oMnBLUU95Q3RXUWdTN2VIeHQtcGZpWnU5ZjVTUXBSczU3Z2h5NU1CU2VxdDNSYy1fQk93R2djdV9lT0lMbVo3QnZfOVQ1NnfSAfgBQVVfeXFMUEhXUGM2R2N3d0lIUUJHMkstei00NTkzMTUxTUxhLXR1eU1ERENlMjF6N25MTWM5QmVpTnh1cG95dGVUeTItY202enJLeUdrV28wTlprVjV2ZVBVNmxxbWdPWGs1azNhWjd1S1BHOFVKWXFBUFpGX0FTenVjOFZOTmtOY3p2bUl2dDVGQ3dNUlBWMjF1Z0MtTXl5Vnh3NFBxeHdmOFJYbWYtS2E1MkJOTTU4UXFrTzRHZThVRkstTmY2WHNISVU3YXZld0RscGthNTJJSTA4RmJFbWY1SWUtVHI2bFcyQURPYWJncE9pbWZtYTRNclJOTXE?oc=5",
+        "date": "2026-08-03"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-27",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 13,
+    "rolling_avg": 3.6,
+    "ratio": 3.6,
+    "explanation": "Leadership contest could leave Victorian Labor in 'nightmare scenario'",
+    "news": [
+      {
+        "title": "Leadership contest could leave Victorian Labor in 'nightmare scenario'",
+        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQVl5ZVB4OXB6bDZZQ2NxS3I1UVcwX2JLNDZwbHdIT05kRzJmU3RNb0ZRbnpyR0xiR2daSEVvNlJ3NmZGbHpfTFVzcmhLUVBIUXRvVGNVNkpOYVY0dk9HLWJqT09HYl9Wcjc5aHVFRlpfUE5tclZXLU0wckhaZGJabzY4cXlqZzBCMktBUHYyekdLMzBTc1JlVzlOYUJpTVJYZHRrX2IwYjA?oc=5",
+        "date": "2026-07-26"
+      },
+      {
+        "title": "Who could replace Victorian premier Jacinta Allan \u2014 and the four-month test they'll face",
+        "source": "SBS",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPcEx5ZHZxUTNNVmMtTkRxSnlQd196ZzNrdWliVi1ob196QnNfRld3VmxSSVdxMFFockNHcl8zekJjQkxicWlnX3VrSzc0OW9oR1dTSTV2ajNyMDFtYUk0c25vWWt3dGpyMzNENjZqX05COVhnQk0xc3lsOV9ycy1YVWhBaFhqbzRQM0F1LU41UDBUdDFackdDRlBZbnZDeU1TRldwMllVSWFMTm8?oc=5",
+        "date": "2026-07-27"
+      },
+      {
+        "title": "Jacinta Allan leadership challenge: Ben Carroll confirms he will stand against Victorian premier",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUWhMR3hxczdVcVlGb3ZMUGRtQTdZZXdLUjl1Ymw4ZTIyeVh4ajJvQmRHWkVDc25LLTE5VUtzcXM4X2lmMnVSS0d2SUxlT3o5SnlmaWJJSnZEcGpERXFZM2REN1Z2cklHdjlBME5RLU1McElHR2Faby1TSG1WcE02ajJHdlpXQkpuT25Qa1pIc1dPbHpacHdoN1ROeVRqbmtrXzZORm1nSlRfTkpLclpadHZBamlKaFh1Y1ZhbWFxTm9FZURKY2JNTw?oc=5",
+        "date": "2026-07-26"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-13",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 11,
+    "rolling_avg": 3.1,
+    "ratio": 3.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-18",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 13,
+    "rolling_avg": 3.9,
+    "ratio": 3.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-28",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 18,
+    "rolling_avg": 5.4,
+    "ratio": 3.3,
+    "explanation": "Leadership contest could leave Victorian Labor in 'nightmare scenario'",
+    "news": [
+      {
+        "title": "Leadership contest could leave Victorian Labor in 'nightmare scenario'",
+        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQVl5ZVB4OXB6bDZZQ2NxS3I1UVcwX2JLNDZwbHdIT05kRzJmU3RNb0ZRbnpyR0xiR2daSEVvNlJ3NmZGbHpfTFVzcmhLUVBIUXRvVGNVNkpOYVY0dk9HLWJqT09HYl9Wcjc5aHVFRlpfUE5tclZXLU0wckhaZGJabzY4cXlqZzBCMktBUHYyekdLMzBTc1JlVzlOYUJpTVJYZHRrX2IwYjA?oc=5",
+        "date": "2026-07-26"
+      },
+      {
+        "title": "Who could replace Victorian premier Jacinta Allan \u2014 and the four-month test they'll face",
+        "source": "SBS",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPcEx5ZHZxUTNNVmMtTkRxSnlQd196ZzNrdWliVi1ob196QnNfRld3VmxSSVdxMFFockNHcl8zekJjQkxicWlnX3VrSzc0OW9oR1dTSTV2ajNyMDFtYUk0c25vWWt3dGpyMzNENjZqX05COVhnQk0xc3lsOV9ycy1YVWhBaFhqbzRQM0F1LU41UDBUdDFackdDRlBZbnZDeU1TRldwMllVSWFMTm8?oc=5",
+        "date": "2026-07-27"
+      },
+      {
+        "title": "Jacinta Allan leadership challenge: Ben Carroll confirms he will stand against Victorian premier",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUWhMR3hxczdVcVlGb3ZMUGRtQTdZZXdLUjl1Ymw4ZTIyeVh4ajJvQmRHWkVDc25LLTE5VUtzcXM4X2lmMnVSS0d2SUxlT3o5SnlmaWJJSnZEcGpERXFZM2REN1Z2cklHdjlBME5RLU1McElHR2Faby1TSG1WcE02ajJHdlpXQkpuT25Qa1pIc1dPbHpacHdoN1ROeVRqbmtrXzZORm1nSlRfTkpLclpadHZBamlKaFh1Y1ZhbWFxTm9FZURKY2JNTw?oc=5",
+        "date": "2026-07-26"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-01",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 49,
+    "rolling_avg": 16.3,
+    "ratio": 3.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-29",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 11,
+    "rolling_avg": 4.0,
+    "ratio": 2.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-31",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 40,
+    "rolling_avg": 14.3,
+    "ratio": 2.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]
