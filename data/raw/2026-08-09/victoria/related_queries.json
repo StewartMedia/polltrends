@@ -14,6 +14,10 @@
         "value": 34
       },
       {
+        "query": "labor australia",
+        "value": 20
+      },
+      {
         "query": "one nation",
         "value": 11
       },
@@ -40,6 +44,10 @@
       {
         "query": "labor government",
         "value": 6
+      },
+      {
+        "query": "one nation party",
+        "value": 5
       },
       {
         "query": "labour party australia",
@@ -77,7 +85,7 @@
     "rising": [
       {
         "query": "labor fundraiser",
-        "value": 75250
+        "value": 75350
       },
       {
         "query": "pauline hanson",
@@ -86,6 +94,10 @@
       {
         "query": "one nation",
         "value": 170
+      },
+      {
+        "query": "one nation party",
+        "value": 90
       }
     ]
   },
@@ -120,10 +132,6 @@
         "value": 8
       },
       {
-        "query": "labour",
-        "value": 7
-      },
-      {
         "query": "labor party",
         "value": 7
       },
@@ -152,10 +160,6 @@
         "value": 4
       },
       {
-        "query": "tony abbott",
-        "value": 2
-      },
-      {
         "query": "pauline hanson",
         "value": 2
       }
@@ -163,7 +167,7 @@
     "rising": [
       {
         "query": "one nation party",
-        "value": 120
+        "value": 130
       },
       {
         "query": "one nation",
@@ -171,10 +175,6 @@
       },
       {
         "query": "pauline hanson",
-        "value": 80
-      },
-      {
-        "query": "tony abbott",
         "value": 80
       },
       {
@@ -218,10 +218,6 @@
         "value": 11
       },
       {
-        "query": "the greens australia",
-        "value": 7
-      },
-      {
         "query": "one nation",
         "value": 6
       },
@@ -242,11 +238,11 @@
         "value": 5
       },
       {
-        "query": "labor party",
-        "value": 3
+        "query": "australian greens party",
+        "value": 4
       },
       {
-        "query": "leader of greens",
+        "query": "labor party",
         "value": 3
       },
       {
@@ -254,11 +250,11 @@
         "value": 3
       },
       {
-        "query": "greens senator",
+        "query": "pauline hanson",
         "value": 3
       },
       {
-        "query": "pauline hanson",
+        "query": "greens senator",
         "value": 3
       },
       {
@@ -270,11 +266,11 @@
         "value": 2
       },
       {
-        "query": "greens leader australia",
+        "query": "larissa waters",
         "value": 1
       },
       {
-        "query": "one nation policies",
+        "query": "greens leader australia",
         "value": 1
       }
     ],
@@ -285,7 +281,7 @@
       },
       {
         "query": "liberal party",
-        "value": 60
+        "value": 70
       }
     ]
   },
@@ -301,7 +297,7 @@
       },
       {
         "query": "one nation victoria",
-        "value": 9
+        "value": 10
       },
       {
         "query": "one nation election",
@@ -383,23 +379,23 @@
     "rising": [
       {
         "query": "fire the liar one nation",
-        "value": 462900
+        "value": 464800
       },
       {
         "query": "one nation fundraiser",
-        "value": 163750
+        "value": 164700
       },
       {
         "query": "one nation lower house projections",
-        "value": 57350
+        "value": 57700
       },
       {
         "query": "fire the lair",
-        "value": 46150
+        "value": 46650
       },
       {
         "query": "fire the lair one nation",
-        "value": 36100
+        "value": 36200
       },
       {
         "query": "one nation farrer by-election prediction",
