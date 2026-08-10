@@ -4,16 +4,244 @@
     "rising": []
   },
   "LIB": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "liberal party",
+        "value": 100
+      },
+      {
+        "query": "liberal leader",
+        "value": 21
+      },
+      {
+        "query": "liberal party leader",
+        "value": 17
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 12
+      },
+      {
+        "query": "one nation",
+        "value": 12
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 10
+      },
+      {
+        "query": "labor party",
+        "value": 9
+      },
+      {
+        "query": "australian liberal party",
+        "value": 8
+      },
+      {
+        "query": "labour party",
+        "value": 8
+      },
+      {
+        "query": "liberal policies",
+        "value": 7
+      },
+      {
+        "query": "leader of the liberal party",
+        "value": 6
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 6
+      },
+      {
+        "query": "liberals",
+        "value": 5
+      },
+      {
+        "query": "angus taylor",
+        "value": 5
+      },
+      {
+        "query": "liberal party policies",
+        "value": 5
+      },
+      {
+        "query": "liberal leaders",
+        "value": 5
+      },
+      {
+        "query": "liberal party leader australia",
+        "value": 4
+      },
+      {
+        "query": "moira deeming",
+        "value": 3
+      },
+      {
+        "query": "tony abbott",
+        "value": 3
+      },
+      {
+        "query": "leader of liberal party australia",
+        "value": 3
+      },
+      {
+        "query": "liberal opposition leader",
+        "value": 2
+      },
+      {
+        "query": "jess wilson",
+        "value": 2
+      },
+      {
+        "query": "greens policies",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "tony abbott",
+        "value": 217500
+      },
+      {
+        "query": "greens policies",
+        "value": 99050
+      },
+      {
+        "query": "moira deeming",
+        "value": 700
+      },
+      {
+        "query": "one nation",
+        "value": 110
+      },
+      {
+        "query": "liberal opposition leader",
+        "value": 90
+      },
+      {
+        "query": "jess wilson",
+        "value": 80
+      },
+      {
+        "query": "liberal policies",
+        "value": 70
+      },
+      {
+        "query": "labor party",
+        "value": 60
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 50
+      },
+      {
+        "query": "labour party",
+        "value": 50
+      }
+    ]
   },
   "GRN": {
     "top": [],
     "rising": []
   },
   "PHON": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation victoria",
+        "value": 10
+      },
+      {
+        "query": "one nation australia",
+        "value": 10
+      },
+      {
+        "query": "one nation party",
+        "value": 8
+      },
+      {
+        "query": "pauline hanson",
+        "value": 8
+      },
+      {
+        "query": "one nation election",
+        "value": 7
+      },
+      {
+        "query": "one nation policies",
+        "value": 7
+      },
+      {
+        "query": "pauline hanson one nation",
+        "value": 7
+      },
+      {
+        "query": "fire the liar",
+        "value": 6
+      },
+      {
+        "query": "one nation fire the liar",
+        "value": 6
+      },
+      {
+        "query": "what is one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation polling",
+        "value": 4
+      },
+      {
+        "query": "one nation candidates",
+        "value": 3
+      },
+      {
+        "query": "one nation news",
+        "value": 3
+      },
+      {
+        "query": "one nation policy",
+        "value": 3
+      },
+      {
+        "query": "one nation leader",
+        "value": 3
+      },
+      {
+        "query": "australia one nation party",
+        "value": 2
+      },
+      {
+        "query": "liberal party",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "fire the liar",
+        "value": 484000
+      },
+      {
+        "query": "one nation fire the liar",
+        "value": 476550
+      },
+      {
+        "query": "one nation candidates",
+        "value": 50
+      },
+      {
+        "query": "pauline hanson",
+        "value": 40
+      },
+      {
+        "query": "pauline hanson one nation",
+        "value": 40
+      }
+    ]
   },
   "AJP": {
     "top": [],
