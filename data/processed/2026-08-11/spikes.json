@@ -4,8 +4,8 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 20.3,
-    "ratio": 4.9,
+    "rolling_avg": 20.1,
+    "ratio": 5.0,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -13,8 +13,8 @@
     "date": "2026-06-23T00:00:00",
     "party_code": "GRN",
     "party_name": "Greens",
-    "value": 11,
-    "rolling_avg": 3.1,
+    "value": 10,
+    "rolling_avg": 2.9,
     "ratio": 3.5,
     "explanation": "Significant spike in search interest",
     "news": []
@@ -23,8 +23,8 @@
     "date": "2026-06-01T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 41,
-    "rolling_avg": 14.1,
+    "value": 40,
+    "rolling_avg": 13.9,
     "ratio": 2.9,
     "explanation": "Significant spike in search interest",
     "news": []
@@ -33,9 +33,9 @@
     "date": "2026-06-11T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 88,
-    "rolling_avg": 32.0,
-    "ratio": 2.8,
+    "value": 87,
+    "rolling_avg": 31.9,
+    "ratio": 2.7,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -43,38 +43,19 @@
     "date": "2026-08-03T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 31,
-    "rolling_avg": 11.9,
-    "ratio": 2.6,
-    "explanation": "Hanson 'lucky' to have former Scott Morrison staffer as chief of staff, Hume says \u2014 as it happened",
-    "news": [
-      {
-        "title": "Hanson 'lucky' to have former Scott Morrison staffer as chief of staff, Hume says \u2014 as it happened",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZVJqZ3ZscUlIcWJtYXptQ2J6bURhQWN2VGNkVmpwX1BGT3R4ckFhRUVPRWRGRWF2NFJnQmhBbXBVTG5MX0Q3Q0pWX2dGMjFhVFloTkhwMHgwUE9SN09Yc0RUX1RFNFdLemxNQ2tiN3p2VkI1S3ZUN3otcUJiYm5nYzVhX2ZyNC1IUkxNclAwZlRqYUdLT0lGaTRGTnRpX2JUWVNF?oc=5",
-        "date": "2026-08-02"
-      },
-      {
-        "title": "As it happened: Hanson bars media outlets from Melbourne press conference over \u2018character assassination attempts\u2019; Bird flu cases continue to rise",
-        "source": "SMH.com.au",
-        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOWDV4WjJNREI2N3pUNnd3YldFTjlfa1BDLXVwRjVUTjVkeHd4QXA4cWRlMVppV2NmZUk0VzZuYXZiSGtQd0twY1ZBT0d5SjVsSGJjWEVoV1FWLWNjWXB0RVB4elQ5UWl0N3dNTHRsaE1nd09XajBHUThMdlVhNzFaUUY5QXVDU3ktZHRlbVNZNzFIcjR1Q2xjMlowSDZwT09JdGNLT2NCYmxKS0pfZkFGZ3YwS3JSZHVkYUtGQXRYRUgwREdHZmZrY0NyVUFMdzV3dEdqbHJ3bmNZSGU5NlhMYTdBWUw0M19hN3k0?oc=5",
-        "date": "2026-08-03"
-      },
-      {
-        "title": "Hanson\u2019s migrant crackdown: \u2018We don\u2019t need more Uber drivers, nail technicians, dog walkers\u2019",
-        "source": "The Australian",
-        "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQQWc1NllPSFJoNnVELU5NNjZ1cTFMd0FXRkhabWxSS1pEUDVEbV9hSTJjLVJiT2lQTWpFTDA0YmwwTmxTWTlpQVpKeUE1VzN2dkRfT3E4b011QXIydHlRcUw2ZVAzOFRaSWVkWFkzSXZkWkt1MUN2QjBGTFQ3N2x0bE5XSVVsbHRoUUdZWG4zMS01YndMSVJoMzNpZHZqVDhidjVwUktXc3BHLTMta2IzT2ZfWjZIalJOejVNcnhWR0cwNm4yTHZhNzE3Wm84ajF6dXc5TWxHbmxjZk5aSGRLc2Q3LVFKeTNDRHRNMkgtRHFtR3h6M1ZsZWlzUFZWNEpJU1VXQk9yVUwyTGkt0gGSAkFVX3lxTE04NTR4Sm9BVGY0MkE1Q2Z1UW5XY290amRrZTZLR0w2Z1VVeXZuSFpCQVdfel9HdllZX2p1WkRyWkZBREQtTnQzR19oUk52RDZ5V3h0VXZFbUl2R2h3b2dNZXVwWVpkeFRaNElFTzlaY05MNGJrVFRfMlEyemNMUF9fT0dFSEk3dVBtNVRDQlhaZUZfamxGUWZ2eF96Q252RzRyQjFxT2JUWmp2VmdycXkzV0lxckJXald2RFhfSk5SRVVEV21jUW1BeU16Zko5amRmVEJBMjhnbmdEVE5MSzcyeGJZMS0zcElTM21BXy1pMWQ0RS1xblItVUlNSVlvbGFxTUVFNVB0UlBXRlhSeDhoNHc?oc=5",
-        "date": "2026-08-05"
-      }
-    ]
+    "value": 32,
+    "rolling_avg": 11.7,
+    "ratio": 2.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
     "date": "2026-05-31T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 32,
-    "rolling_avg": 12.9,
-    "ratio": 2.5,
+    "value": 31,
+    "rolling_avg": 12.7,
+    "ratio": 2.4,
     "explanation": "Significant spike in search interest",
     "news": []
   },
@@ -82,8 +63,8 @@
     "date": "2026-06-12T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 84,
-    "rolling_avg": 41.7,
+    "value": 83,
+    "rolling_avg": 41.4,
     "ratio": 2.0,
     "explanation": "Significant spike in search interest",
     "news": []
