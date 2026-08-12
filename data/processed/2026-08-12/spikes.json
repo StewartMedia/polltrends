@@ -1,0 +1,79 @@
+[
+  {
+    "date": "2026-06-10T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 100,
+    "rolling_avg": 20.1,
+    "ratio": 5.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-23T00:00:00",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 10,
+    "rolling_avg": 2.9,
+    "ratio": 3.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-01T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 40,
+    "rolling_avg": 13.9,
+    "ratio": 2.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-11T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 87,
+    "rolling_avg": 31.9,
+    "ratio": 2.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-03T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 32,
+    "rolling_avg": 11.7,
+    "ratio": 2.7,
+    "explanation": "Hanson 'doesn't care' if businesses are impacted by permanent migration cut \u2014 as it happened",
+    "news": [
+      {
+        "title": "Hanson 'doesn't care' if businesses are impacted by permanent migration cut \u2014 as it happened",
+        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVlpQY041b0xzSGFZb2FVdFNCU3g0R25rM3RzNk9Da0l5RzdIZmc0bzd3SG9lRWRUQlhod0k0Ni1LUUd0RGNQUDlhRzhSelBYUlZxRGRybkNDeTdzdHFtTldySWNKbS1yRkhNU25LRFRTa3BIc3NxMjkzc1V2SVF3RG1SdnFCMzY3NHU0UkZ6OTFLRnJ3cTdV?oc=5",
+        "date": "2026-08-05"
+      }
+    ]
+  },
+  {
+    "date": "2026-05-31T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 31,
+    "rolling_avg": 12.7,
+    "ratio": 2.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-12T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 83,
+    "rolling_avg": 41.4,
+    "ratio": 2.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]

@@ -1,0 +1,159 @@
+[
+  {
+    "date": "2026-06-10T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 13,
+    "rolling_avg": 1.6,
+    "ratio": 8.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-29T00:00:00",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 11,
+    "rolling_avg": 1.6,
+    "ratio": 7.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-11T00:00:00",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 11,
+    "rolling_avg": 2.0,
+    "ratio": 5.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-27T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 13,
+    "rolling_avg": 3.3,
+    "ratio": 4.0,
+    "explanation": "Jacinta Allan's resignation triggers chaotic leadership spill",
+    "news": [
+      {
+        "title": "Jacinta Allan's resignation triggers chaotic leadership spill",
+        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUkQ1UWZxdVlyYTNBaXhFZzR1TTBvYk9kOUhMRnZma1BDUTF3SThmR0FIMlZIYWY0Y3lUTXlmSk42UDNIX0RMeTVDTmhHbjNsbnlwcnNCcDNEX1hmaFVCQ08tQ2JhRmVweGxTcmtjRFU3MFdZbklSYTZmZ3hQWnl1SXVWQ0VBYVhlOW5RMzd5UVdHNFBYWW10ZUpNaTF6ZEFsS1AyM29YNm8?oc=5",
+        "date": "2026-07-27"
+      },
+      {
+        "title": "Slow, then fast: The downfall of a premier under siege",
+        "source": "The Age",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcmdaNEhTZ2VWWWVEbjJlZzhZS3RQVWZ6RHR2YTJWUHBEQlo1bGw5MlUwTkZJRkdkUF9xQmdtSFYtNE1CS2JzTFdabVFsLWp1OXNQMjB0Y2pndms1Y3N3eDRtWmVHMVRRVEttNmlqdjYtOWVGbnQwOEFoZkZoR3h4a3NGczhVaURLTFd6VXc1NEgxSkVaLWJBclBCZEZZUTdLYVZUR244Nlg1YUtwWFk0THhLWHB1ODNt?oc=5",
+        "date": "2026-07-28"
+      },
+      {
+        "title": "Jacinta Allan: how a \u2018daughter of workers\u2019 rose to Victorian premier \u2013 then came undone",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ21TRlQyYVZkeTBSU2Q2eTNYdkFCUE9IekpPNXhpWGdtcEZHc3E5djVmQkpjdGJWSUxkSVJLRG9ySWg3dHZvZ2RmLUpIeEFNaFNwUEt0bHpBTi1samxDMnJGMFIxSXpJXzBnODZ2eXd0b3dvZDZRZmFlMEJIMGV1Vk9EZXBrZXZxU1FRcS1qMnlQWkw1QUFxNndIUzMwRWNJRjdjS3F2TWgwSEVKWXRzVg?oc=5",
+        "date": "2026-07-28"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-10T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 97,
+    "rolling_avg": 24.3,
+    "ratio": 4.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-11T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 2.6,
+    "ratio": 3.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-03T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 72,
+    "rolling_avg": 18.3,
+    "ratio": 3.9,
+    "explanation": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
+    "news": [
+      {
+        "title": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYnFMaDJTWmYydUVwLTBhbXFQbXFoQ2NoM3lvbFFuX3dfWWdfSXkxRGhWVWNERDJjQnVYNmo0d1gzZHhSOTQyTFVhbnFMb2RMMWIyamJWUDRBdUxTbzJ5dUE0WnJLQU5KOW56ekZCQkRLTzNBcmNWTERyV0dVU2FRS2ZuMC1HR1ZGbFJaV2JWaU1iaXhXRXRUa0tQVDFxYkVISFpQb2Y0cXZHNkFiR2IxNUxidXM5OVByUFJ2VmVLcnotaU5wS1hpQWRNUmU?oc=5",
+        "date": "2026-08-04"
+      },
+      {
+        "title": "Protest at One Nation fundraiser after Vic leader, candidates announced",
+        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOR0x5eld6UVZ4UlFYSXlTNlltUEgyYWM1UHQ2dFVvRElhZEV5S2RZYjEwWXhSanJEOHFpTkk4dGtQLURicEg2SmN5VHZJcGs0LW44aEI2WFdEXzJiRm9tZDQwZDNYenQyeUFDWjFtdThUcFcwM1JpbXhhMHl3bjgyLXhTUlFUbDN6VkZRUExoLXc?oc=5",
+        "date": "2026-08-02"
+      },
+      {
+        "title": "Protesters confront Hanson, hurl abuse at One Nation supporters",
+        "source": "The Australian",
+        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPN2VOOTRnODUwOC1McnROS0c4a2Q4bjduZ1BmYjFtSUxnSURsRG8yTTNST3hnQ25yTWM5blFrTWpCR0IwZ1R5ODdPSXRWSWN3VnpYSXdRUmVzcHZsMDl1QmdLSGdqdDYzQjBRckNodnFwMWo2MlQwTzRpenU3ZWdlU1hNVWpaYVU1Z25zc29Md1pvX3pScHdUc21wZjJVQzc1aDdadC1GN3hJU19oMnBLUU95Q3RXUWdTN2VIeHQtcGZpWnU5ZjVTUXBSczU3Z2h5NU1CU2VxdDNSYy1fQk93R2djdV9lT0lMbVo3QnZfOVQ1NnfSAfgBQVVfeXFMUEhXUGM2R2N3d0lIUUJHMkstei00NTkzMTUxTUxhLXR1eU1ERENlMjF6N25MTWM5QmVpTnh1cG95dGVUeTItY202enJLeUdrV28wTlprVjV2ZVBVNmxxbWdPWGs1azNhWjd1S1BHOFVKWXFBUFpGX0FTenVjOFZOTmtOY3p2bUl2dDVGQ3dNUlBWMjF1Z0MtTXl5Vnh3NFBxeHdmOFJYbWYtS2E1MkJOTTU4UXFrTzRHZThVRkstTmY2WHNISVU3YXZld0RscGthNTJJSTA4RmJFbWY1SWUtVHI2bFcyQURPYWJncE9pbWZtYTRNclJOTXE?oc=5",
+        "date": "2026-08-03"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-28T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 18,
+    "rolling_avg": 5.1,
+    "ratio": 3.5,
+    "explanation": "Jacinta Allan's resignation triggers chaotic leadership spill",
+    "news": [
+      {
+        "title": "Jacinta Allan's resignation triggers chaotic leadership spill",
+        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUkQ1UWZxdVlyYTNBaXhFZzR1TTBvYk9kOUhMRnZma1BDUTF3SThmR0FIMlZIYWY0Y3lUTXlmSk42UDNIX0RMeTVDTmhHbjNsbnlwcnNCcDNEX1hmaFVCQ08tQ2JhRmVweGxTcmtjRFU3MFdZbklSYTZmZ3hQWnl1SXVWQ0VBYVhlOW5RMzd5UVdHNFBYWW10ZUpNaTF6ZEFsS1AyM29YNm8?oc=5",
+        "date": "2026-07-27"
+      },
+      {
+        "title": "Slow, then fast: The downfall of a premier under siege",
+        "source": "The Age",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcmdaNEhTZ2VWWWVEbjJlZzhZS3RQVWZ6RHR2YTJWUHBEQlo1bGw5MlUwTkZJRkdkUF9xQmdtSFYtNE1CS2JzTFdabVFsLWp1OXNQMjB0Y2pndms1Y3N3eDRtWmVHMVRRVEttNmlqdjYtOWVGbnQwOEFoZkZoR3h4a3NGczhVaURLTFd6VXc1NEgxSkVaLWJBclBCZEZZUTdLYVZUR244Nlg1YUtwWFk0THhLWHB1ODNt?oc=5",
+        "date": "2026-07-28"
+      },
+      {
+        "title": "Jacinta Allan: how a \u2018daughter of workers\u2019 rose to Victorian premier \u2013 then came undone",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ21TRlQyYVZkeTBSU2Q2eTNYdkFCUE9IekpPNXhpWGdtcEZHc3E5djVmQkpjdGJWSUxkSVJLRG9ySWg3dHZvZ2RmLUpIeEFNaFNwUEt0bHpBTi1samxDMnJGMFIxSXpJXzBnODZ2eXd0b3dvZDZRZmFlMEJIMGV1Vk9EZXBrZXZxU1FRcS1qMnlQWkw1QUFxNndIUzMwRWNJRjdjS3F2TWgwSEVKWXRzVg?oc=5",
+        "date": "2026-07-28"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-23T00:00:00",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 10,
+    "rolling_avg": 2.9,
+    "ratio": 3.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-31T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 42,
+    "rolling_avg": 13.7,
+    "ratio": 3.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]
