@@ -1,0 +1,134 @@
+[
+  {
+    "date": "2026-06-23",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 11,
+    "rolling_avg": 1.4,
+    "ratio": 7.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 96,
+    "rolling_avg": 25.3,
+    "ratio": 3.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-03",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 72,
+    "rolling_avg": 18.7,
+    "ratio": 3.8,
+    "explanation": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
+    "news": [
+      {
+        "title": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
+        "source": "theguardian.com",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYnFMaDJTWmYydUVwLTBhbXFQbXFoQ2NoM3lvbFFuX3dfWWdfSXkxRGhWVWNERDJjQnVYNmo0d1gzZHhSOTQyTFVhbnFMb2RMMWIyamJWUDRBdUxTbzJ5dUE0WnJLQU5KOW56ekZCQkRLTzNBcmNWTERyV0dVU2FRS2ZuMC1HR1ZGbFJaV2JWaU1iaXhXRXRUa0tQVDFxYkVISFpQb2Y0cXZHNkFiR2IxNUxidXM5OVByUFJ2VmVLcnotaU5wS1hpQWRNUmU?oc=5",
+        "date": "2026-08-04"
+      },
+      {
+        "title": "Protesters confront Hanson, hurl abuse at One Nation supporters",
+        "source": "The Australian",
+        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPN2VOOTRnODUwOC1McnROS0c4a2Q4bjduZ1BmYjFtSUxnSURsRG8yTTNST3hnQ25yTWM5blFrTWpCR0IwZ1R5ODdPSXRWSWN3VnpYSXdRUmVzcHZsMDl1QmdLSGdqdDYzQjBRckNodnFwMWo2MlQwTzRpenU3ZWdlU1hNVWpaYVU1Z25zc29Md1pvX3pScHdUc21wZjJVQzc1aDdadC1GN3hJU19oMnBLUU95Q3RXUWdTN2VIeHQtcGZpWnU5ZjVTUXBSczU3Z2h5NU1CU2VxdDNSYy1fQk93R2djdV9lT0lMbVo3QnZfOVQ1NnfSAfgBQVVfeXFMUEhXUGM2R2N3d0lIUUJHMkstei00NTkzMTUxTUxhLXR1eU1ERENlMjF6N25MTWM5QmVpTnh1cG95dGVUeTItY202enJLeUdrV28wTlprVjV2ZVBVNmxxbWdPWGs1azNhWjd1S1BHOFVKWXFBUFpGX0FTenVjOFZOTmtOY3p2bUl2dDVGQ3dNUlBWMjF1Z0MtTXl5Vnh3NFBxeHdmOFJYbWYtS2E1MkJOTTU4UXFrTzRHZThVRkstTmY2WHNISVU3YXZld0RscGthNTJJSTA4RmJFbWY1SWUtVHI2bFcyQURPYWJncE9pbWZtYTRNclJOTXE?oc=5",
+        "date": "2026-08-04"
+      },
+      {
+        "title": "One Nation Victoria leader to run for Pakenham",
+        "source": "Pakenham Gazette",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeHpjaFFiZkJBdlJrRTY3YXNWQS1lNUhUM0JXU3VGRExXOFI2R3JqcnpVVUt0bS1xVEJsaENhWEZBMmFaakx3eDFTT0d3cUpJSHA2Nm1HYlBLOUtGZHpSSHUyS1FOUFZCVHRuSjNSMFdGclYxZzE2MXhEQU9mN0wtU3NWc2xmUTFyODJBM3JjbmRidUZUdEhvMC1n?oc=5",
+        "date": "2026-08-03"
+      }
+    ]
+  },
+  {
+    "date": "2026-05-29",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 11,
+    "rolling_avg": 3.3,
+    "ratio": 3.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-01",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 51,
+    "rolling_avg": 16.4,
+    "ratio": 3.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-27",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 14,
+    "rolling_avg": 4.9,
+    "ratio": 2.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-31",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 41,
+    "rolling_avg": 14.1,
+    "ratio": 2.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-28",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 18,
+    "rolling_avg": 6.9,
+    "ratio": 2.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-11",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 94,
+    "rolling_avg": 36.0,
+    "ratio": 2.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-13",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 40,
+    "rolling_avg": 16.9,
+    "ratio": 2.4,
+    "explanation": "\u2018Really unsettling\u2019: Shocking student protests against Pauline Hanson",
+    "news": [
+      {
+        "title": "\u2018Really unsettling\u2019: Shocking student protests against Pauline Hanson",
+        "source": "The Weekly Times",
+        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQWVNlV19Bc2xVSjlIVVhXaExobWhHSlNFdDY5X2t1aTc4N3prZDZpNlY3MVBmeUstV0MyVWtnUlM5eEhiV0MwbXkwTnpQWVEtclFZMVVVaVFqYTdVR2FXZGdmNVpEakhSWGNYSGxmSnI5c2p0Z1pIendrT0NxaUhEYl9HX3h1QU1YNE9fTWZJdmVjLTk4RVNVaVBjQVlYTE9CVnV6UVdPNGQ1amttOTdFZ3Rtal9FUGhLbEdhZVUwa0MxMXhkWllmUEtoTG41QmwtejBrVkdkNnBZS0ZJZXJid1pDeVdvdkgxRmdsNXNR0gHuAUFVX3lxTFBZU2VXX0FzbFVKOUhVWFdoTGhtaEdKU0V0Njlfa3VpNzg3emtkNmk2VjcxUGZ5Sy1XQzJVa2dSUzl4SGJXQzBteTBOelBZUS1yUVkxVVVpUWphN1VHYVdkZ2Y1WkRqSFJYY1hIbGZKcjlzanRnWkh6d2tPQ3FpSERiX0dfeHVBTVg0T19NZkl2ZWMtOThFU1VpUGNBWVhMT0JWdXpRV080ZDVqa205N0VndG1qX0VQaEtsR2FlVTBrQzExeGRaWWZQS2hMbjVCbC16MGtWR2Q2cFlLRkllcmJ3WkN5V292SDFGZ2w1c1E?oc=5",
+        "date": "2026-08-13"
+      },
+      {
+        "title": "\u2018Remarkably different\u2019: Mark Nicholson reveals shocking reality joining One Nation",
+        "source": "Toowoomba Chronicle",
+        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQQmp0cUdrX1lUNXVIaXkteXB5OFdOcHpiT2Y4Q1BSQ2lVNmh2NlVoUDhjM0RKVHRMdTZpZVN0d3RJZW93ZjlnZjJhOTF2bDZsXzYwV0pRWTZuWHNuV3hDdUtQSDVlWFFtWWRIa3RmU2ljX1lzbDZ1UF9IeVdtRlpWaklEbVNteHRFSXFMbDhBbzR2d002YzQ5RGxoOG93LUNMYUVpOEVnU3NneXl0ZU9pWjVfNUR3NFZHNUJ5dlN0a1hpTjAwR01FdDVMaXQyYkY2VXNYeXZUTTZIV2g3eURmaFF0NXpXTGNVS1VSbDU1Wk05S2VjTlFpaHdOelPSAfwBQVVfeXFMUEJqdHFHa19ZVDV1SGl5LXlweThXTnB6Yk9mOENQUkNpVTZodjZVaFA4YzNESlR0THU2aWVTdHd0SWVvd2Y5Z2YyYTkxdmw2bF82MFdKUVk2blhzbld4Q3VLUEg1ZVhRbVlkSGt0ZlNpY19Zc2w2dVBfSHlXbUZaVmpJRG1TbXh0RUlxTGw4QW80dndNNmM0OURsaDhvdy1DTGFFaThFZ1NzZ3l5dGVPaVo1XzVEdzRWRzVCeXZTdGtYaU4wMEdNRXQ1TGl0MmJGNlVzWHl2VE02SFdoN3lEZmhRdDV6V0xjVUtVUmw1NVpNOUtlY05RaWh3TnpT?oc=5",
+        "date": "2026-08-13"
+      }
+    ]
+  }
+]
