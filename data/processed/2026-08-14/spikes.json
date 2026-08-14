@@ -1,99 +1,80 @@
 [
   {
-    "date": "2026-06-10",
+    "date": "2026-06-10T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 20.0,
+    "rolling_avg": 20.1,
     "ratio": 5.0,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-23",
+    "date": "2026-06-23T00:00:00",
     "party_code": "GRN",
     "party_name": "Greens",
     "value": 11,
-    "rolling_avg": 3.0,
-    "ratio": 3.7,
+    "rolling_avg": 3.1,
+    "ratio": 3.5,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-01",
+    "date": "2026-06-01T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 41,
-    "rolling_avg": 13.7,
-    "ratio": 3.0,
+    "rolling_avg": 14.1,
+    "ratio": 2.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-11",
+    "date": "2026-08-03T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 88,
-    "rolling_avg": 31.7,
+    "value": 33,
+    "rolling_avg": 11.9,
     "ratio": 2.8,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-03",
+    "date": "2026-06-11T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 32,
-    "rolling_avg": 12.1,
-    "ratio": 2.6,
+    "value": 87,
+    "rolling_avg": 31.7,
+    "ratio": 2.7,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-05-31",
+    "date": "2026-05-31T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 31,
-    "rolling_avg": 12.6,
-    "ratio": 2.5,
+    "rolling_avg": 13.0,
+    "ratio": 2.4,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-13",
+    "date": "2026-08-13T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 30,
+    "value": 29,
     "rolling_avg": 11.9,
-    "ratio": 2.5,
-    "explanation": "One Nation staffer accused of posing as leftwing content creator in \u2018undercover\u2019 videos",
-    "news": [
-      {
-        "title": "One Nation staffer accused of posing as leftwing content creator in \u2018undercover\u2019 videos",
-        "source": "theguardian.com",
-        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPdmEwWWF5UnFCX0dReG5XMURyOU9IYU5URDBmRzRXSGZtNUZIeTViaHFUNjJjdENpeTFrQXRJVDhFRGhHbXpoSThPYzhKQ2NMclV3aC1TX1FIM0E5OExEd1A4SmE5NV9Nbzk1WE43Y2xYUGtLVkJOUlZpSGZzdFFjQ2doYWM0TmFtd1d0Y25DRkZ3eDY1Y3V6MjU0UFdsMTN2YW55MWhuSmhsOFh2aEdNaWZCNk05Qk5KUzNSbGhiYmYwWDhESGExbVRTUkdOMm1GbVpQbV9tYzBmLTlPSnA4cQ?oc=5",
-        "date": "2026-08-14"
-      },
-      {
-        "title": "Students walk out of school around the country to protest One Nation",
-        "source": "abc.net.au",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNaUdVT0lsUjZYWm9ja25QSzc2VXRRbjhhVzdDSF9GQktYYldZNHR3bUlsWHdxX1NfQkVWNGg1RTlUWWRjSWdncHVjUkg5aXBpME1wVnRqSG1xbzRZbEpLMHBTblI1ZktEZUNlTFhSSU5iNDVCYWlkZlRpMzhvUlBfSEdkOVdJZldSRlNVU3g5YXFqNWxsYnc?oc=5",
-        "date": "2026-08-13"
-      },
-      {
-        "title": "Hanson unable to name leaders of Japan and Indonesia",
-        "source": "The Australian",
-        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOajd6V3JhWEJSdzZQOURrMzJ4MGdZOVRzUEdmbWYydi0zNWRRcmxncWdSYzlfemswSnlxTlkxR3FoQkFyVVVnSk00WG9tUUYwNHdEQUJRck1sY2hPc1J6WWRDam9vMGdCUjBjODJ4LXNGUFdkT3RoYlNmVUtXeTNJUzZhc3JMOU1KaEJwMkVpemE2c0xCSklQbDBRQWVJMjB6d3VYNjZ5ZnZUei01eFdCNnZaS3YxQmEwRkhEUlpWUHVzdVZ6RHZRNXMzN2dja245X0RXeXJHb01TRlV3LXdMaHNoTXhjeHd20gHuAUFVX3lxTFBLNWtXQTJta3QyVDRQNnlWZXMtM3FkdUlmNkJLWkZTRmVJR0huV3h6ZGt3TVVweU5XOWFvYzMyTmZaQkQ4NjZKMW1oUTlzMzBDOHdvU19vYnBmUDRPampIc19HVHdyZG9Zb3pKR0tNMjBJeEFRckZ0YjI3NmhwNklnZ01ycVB4THpwalR1RTVwcnRKUy1rdC1zSl9rNmZRenhhMDZUTDFoQmxuZVFEMndvYV9MSUR3SnVrZzZtRmxHd1k2VUE0dDFDcVNKeTZMbjVKNl8xT25mZEpOMDlLTE1WNUs0S2J3QkpOTXpOaFE?oc=5",
-        "date": "2026-08-13"
-      }
-    ]
+    "ratio": 2.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
-    "date": "2026-06-12",
+    "date": "2026-06-12T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 83,
-    "rolling_avg": 41.4,
+    "rolling_avg": 41.3,
     "ratio": 2.0,
     "explanation": "Significant spike in search interest",
     "news": []
