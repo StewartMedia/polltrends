@@ -1,106 +1,80 @@
 [
   {
-    "date": "2026-06-10",
+    "date": "2026-06-10T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 20.0,
-    "ratio": 5.0,
+    "rolling_avg": 20.4,
+    "ratio": 4.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-23",
+    "date": "2026-06-23T00:00:00",
     "party_code": "GRN",
     "party_name": "Greens",
-    "value": 11,
+    "value": 10,
     "rolling_avg": 3.1,
-    "ratio": 3.5,
+    "ratio": 3.2,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-01",
+    "date": "2026-06-01T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 40,
-    "rolling_avg": 14.0,
+    "value": 41,
+    "rolling_avg": 14.1,
     "ratio": 2.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-03",
+    "date": "2026-06-11T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 89,
+    "rolling_avg": 32.0,
+    "ratio": 2.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-03T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 33,
-    "rolling_avg": 12.0,
-    "ratio": 2.8,
-    "explanation": "Hanson 'doesn't care' if businesses are impacted by permanent migration cut \u2014 as it happened",
-    "news": [
-      {
-        "title": "Hanson 'doesn't care' if businesses are impacted by permanent migration cut \u2014 as it happened",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVlpQY041b0xzSGFZb2FVdFNCU3g0R25rM3RzNk9Da0l5RzdIZmc0bzd3SG9lRWRUQlhod0k0Ni1LUUd0RGNQUDlhRzhSelBYUlZxRGRybkNDeTdzdHFtTldySWNKbS1yRkhNU25LRFRTa3BIc3NxMjkzc1V2SVF3RG1SdnFCMzY3NHU0UkZ6OTFLRnJ3cTdV?oc=5",
-        "date": "2026-08-05"
-      }
-    ]
-  },
-  {
-    "date": "2026-06-11",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 87,
-    "rolling_avg": 31.7,
+    "rolling_avg": 12.4,
     "ratio": 2.7,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-13",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 32,
-    "rolling_avg": 11.9,
-    "ratio": 2.7,
-    "explanation": "Hanson\u2019s call to blow up compulsory super",
-    "news": [
-      {
-        "title": "Hanson\u2019s call to blow up compulsory super",
-        "source": "News.com.au",
-        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOTnFDQ1JudTk2R0FOM294QUswaFhzRWQ0SWxKYmpnNEduYUlpc1dqM1RINm1YSE9VT3NORmh6eHgtb0hkVDNmS3dMZHh3Mlk2MnctQl84azNHYkpqbWFmanE1N0tWTDZjampmZGEyekE0cHl6WVR6VWpMX2xoX3puYjZDMXZ0cnR6bkVRTUVwX2pLVGtkS0xTWGpveExjWWlpMWNrWUl2UGJBbXIxWl9wOENOaTFMQmZDa21fX2dPZmdzWW13d2pBdDFkLW9NU2pxcEdSdW9jREthbTdMOGxNSnJhYXYxWkxFanRlMzEtQzkxNWfSAfgBQVVfeXFMT0d4RUxHb1pvbnRkZ0syN1dNWlRpOGUzY2dIbXRUbERYd21hemloSkNIa2w1UzJjMjYwQUtReHpTeTFaTHY4bE9YeTVmYXk1VEN2UUFHN0RHeXVzeGRVTWdBZkdZR2UtZmdyaFRGU0JCS0FFTnV0NEJyeDROd2RDU1paeDlsV1p5UkJ4clJNTVE3cW9PY2JZVkZ1ZFc0NlZBV2sxYWdWYzlacHlxX2dXM2kwUmU5cVVmUWQ5Sjd4aVhySTc0UUxlTmZLajBqX2VOeUQyN0hpRjU5SFlJa3lZMVB2ZkhrNS05dS1fN0l5cGVBdW1XOUlqcjc?oc=5",
-        "date": "2026-08-15"
-      },
-      {
-        "title": "Australia news as it happened: Thousands of students walk out of class in protest of One Nation; PM has met \u2018zero\u2019 gambling lobbyists since unveiling reforms",
-        "source": "The Age",
-        "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxOb1J6QzVSeEEzYmhuV2NCcXVzSXF1TEs4WE10T2FZWllwUHRlTE4zanBCSGotRENTTFVGemE5LUhicWJtaTZSWDJEX1Bod0tEdHhkYjdsLTZkVGZtdU5DLUp2N0hmNk4wQ1MwMDF1MEtOdERtOUE0UDNzaVh2amI0RTQxUmh2TVQyeFp0RmNoYkFSY09WV2IxdWdaVUtsNDVZYTJEU3UyYUVFUWUxaVdheTM1ZGRVY2hhMEhRLWxQdkhRYXBzdURYUGtKdElacExfOGxJcXVSUjBrN2I2QXFsTjJ6Q2xLTENRR1BUZUhzRjVla1drQ1JBSjZ1TzdiLW1PZjkxZWRMZkdCbDlrUndIZFpTTTlLSHJ2MHpoR1hxNUFhVERMbl9yd0VLNWs4S2l6em5yZGY0VnEydEpRb3U2SkJWVEdTTDhsMmFN?oc=5",
-        "date": "2026-08-13"
-      },
-      {
-        "title": "Chalmers strikes back after Hanson calls for super access for loan costs",
-        "source": "The Australian",
-        "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOOFBNbnlLSVFrbnpkYWp4a0xDN084c0VKa3o3akZrdEV5X1E3eHl1Wkl5MmFJMjNZSkUzem5aeUM3V2FPOUFTRVNkWnd5dVhWZ1VhUGkyTXIwT2NhMDJNN0xDaG02anRsLWprbzRjbWhBeDVINl9ldnl4aFV1Z1E4Q3d2Rks5MjhVSTlwY3Y1UWJSRFRPM2V3cGZtZlYzWVBOY1RIeUVvQVEtNURsRnBUSVNMSzNkUG9TeTk3NDRDc3F2cEhpX2xCdzJWSnd5VkppZmlnTy1CbGJtejJlcFlkZ1NvSTdocmRhSWxnekhBUmVIQTdH?oc=5",
-        "date": "2026-08-15"
-      }
-    ]
-  },
-  {
-    "date": "2026-05-31",
+    "date": "2026-08-13T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 31,
-    "rolling_avg": 12.9,
+    "rolling_avg": 11.9,
+    "ratio": 2.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-31T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 31,
+    "rolling_avg": 13.1,
     "ratio": 2.4,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-12",
+    "date": "2026-06-12T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 83,
-    "rolling_avg": 41.3,
+    "value": 84,
+    "rolling_avg": 41.9,
     "ratio": 2.0,
     "explanation": "Significant spike in search interest",
     "news": []
