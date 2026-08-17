@@ -1,0 +1,89 @@
+[
+  {
+    "date": "2026-06-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 100,
+    "rolling_avg": 20.4,
+    "ratio": 4.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-23",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 10,
+    "rolling_avg": 3.1,
+    "ratio": 3.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-01",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 41,
+    "rolling_avg": 14.0,
+    "ratio": 2.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-03",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 33,
+    "rolling_avg": 12.0,
+    "ratio": 2.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-11",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 87,
+    "rolling_avg": 32.0,
+    "ratio": 2.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-31",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 31,
+    "rolling_avg": 12.9,
+    "ratio": 2.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-13",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 29,
+    "rolling_avg": 11.9,
+    "ratio": 2.4,
+    "explanation": "Australia news as it happened: Thousands of students walk out of class in protest of One Nation; PM has met \u2018zero\u2019 gambling lobbyists since unveiling reforms",
+    "news": [
+      {
+        "title": "Australia news as it happened: Thousands of students walk out of class in protest of One Nation; PM has met \u2018zero\u2019 gambling lobbyists since unveiling reforms",
+        "source": "The Age",
+        "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxNN0F4OU5LNG9CaVZJbTZQTkdCVkEtU2ktY3ZrWURTbUd6b0lwdHQwVjJ2ZUt4X041Nl9Xd1BJNlpIaE5oU3IwRzE3b2w1eTVzX0Uzb1ZkTTZraWU1c3hfRzVkVzhfVGxsNHRSS0dVcFZhQkJ5LS1yQ2ZQbnYzZHdpUnMySUlFbHAyMnlhWUdKYlU5enZXRzJDam1SdERpeW5ubk1HYW0xMjEwek00LUlEdFk3aGFlUkJhRWtWRThUdzIyMVQyNzV0aXZPNEFDVXVGclFnYWFQdjFhek1oTHFuN0FDVWFOSDZmNUxQX2pfZVRvY0ZtMDZVRW84Q3J4MGlIVzllOEtHVlhFVFNVR1lBQzBXcWNTUk5pWnFRTEl6dHhjY2h3RDVSRHV1allzT0NLUU9uVWEtSDVjRXRZQlU5VjdoN2czdmpfSzBj?oc=5",
+        "date": "2026-08-13"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-12",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 84,
+    "rolling_avg": 41.6,
+    "ratio": 2.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]
