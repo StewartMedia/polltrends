@@ -46,6 +46,10 @@
         "value": 6
       },
       {
+        "query": "liberal party australia",
+        "value": 5
+      },
+      {
         "query": "one nation party",
         "value": 5
       },
@@ -73,7 +77,7 @@
     "rising": [
       {
         "query": "labor fundraiser",
-        "value": 78850
+        "value": 76600
       },
       {
         "query": "one nation",
@@ -140,11 +144,19 @@
         "value": 4
       },
       {
+        "query": "pauline hanson",
+        "value": 4
+      },
+      {
         "query": "liberals",
         "value": 4
       }
     ],
     "rising": [
+      {
+        "query": "pauline hanson",
+        "value": 278350
+      },
       {
         "query": "one nation party",
         "value": 100
@@ -202,14 +214,6 @@
         "value": 5
       },
       {
-        "query": "australian greens party",
-        "value": 4
-      },
-      {
-        "query": "pauline hanson",
-        "value": 3
-      },
-      {
         "query": "leader of greens",
         "value": 3
       },
@@ -233,11 +237,11 @@
     "rising": [
       {
         "query": "one nation policies",
-        "value": 62300
+        "value": 57700
       },
       {
         "query": "the greens political party",
-        "value": 200
+        "value": 250
       },
       {
         "query": "labor party",
@@ -248,22 +252,136 @@
         "value": 130
       },
       {
-        "query": "pauline hanson",
-        "value": 90
-      },
-      {
         "query": "greens policies",
         "value": 80
       },
       {
         "query": "liberal party",
-        "value": 70
+        "value": 60
       }
     ]
   },
   "PHON": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation victoria",
+        "value": 10
+      },
+      {
+        "query": "one nation australia",
+        "value": 10
+      },
+      {
+        "query": "pauline hanson",
+        "value": 9
+      },
+      {
+        "query": "one nation policies",
+        "value": 7
+      },
+      {
+        "query": "fire the liar",
+        "value": 6
+      },
+      {
+        "query": "fire the liar one nation",
+        "value": 6
+      },
+      {
+        "query": "what is one nation",
+        "value": 5
+      },
+      {
+        "query": "one nation candidates",
+        "value": 4
+      },
+      {
+        "query": "one nation news",
+        "value": 3
+      },
+      {
+        "query": "one nation donations",
+        "value": 3
+      },
+      {
+        "query": "one nation policy",
+        "value": 3
+      },
+      {
+        "query": "one nation fundraiser",
+        "value": 2
+      },
+      {
+        "query": "one nation poll",
+        "value": 1
+      },
+      {
+        "query": "one nation reddit",
+        "value": 1
+      },
+      {
+        "query": "warren pickering",
+        "value": 1
+      },
+      {
+        "query": "one nation lower house projections",
+        "value": 1
+      },
+      {
+        "query": "fire the lair one nation",
+        "value": 0
+      },
+      {
+        "query": "fire the lair",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "fire the liar",
+        "value": 482750
+      },
+      {
+        "query": "fire the liar one nation",
+        "value": 460250
+      },
+      {
+        "query": "one nation donations",
+        "value": 259450
+      },
+      {
+        "query": "one nation fundraiser",
+        "value": 167750
+      },
+      {
+        "query": "one nation lower house projections",
+        "value": 58750
+      },
+      {
+        "query": "fire the lair one nation",
+        "value": 31500
+      },
+      {
+        "query": "fire the lair",
+        "value": 25700
+      },
+      {
+        "query": "warren pickering",
+        "value": 850
+      },
+      {
+        "query": "one nation candidates",
+        "value": 80
+      },
+      {
+        "query": "pauline hanson",
+        "value": 50
+      }
+    ]
   },
   "AJP": {
     "top": [],
