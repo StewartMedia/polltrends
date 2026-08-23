@@ -93,15 +93,15 @@
     "rising": [
       {
         "query": "labor government cgt changes",
-        "value": 86350
+        "value": 87100
       },
       {
         "query": "labor fundraiser",
-        "value": 78100
+        "value": 79200
       },
       {
         "query": "one nation versus labor membership",
-        "value": 42050
+        "value": 41700
       },
       {
         "query": "fire the liar",
@@ -173,7 +173,7 @@
       },
       {
         "query": "one nation party",
-        "value": 7
+        "value": 8
       },
       {
         "query": "australian liberal party",
@@ -189,10 +189,6 @@
       },
       {
         "query": "liberal leader australia",
-        "value": 6
-      },
-      {
-        "query": "the liberal party of australia",
         "value": 6
       },
       {
@@ -226,12 +222,16 @@
       {
         "query": "liberal party victoria",
         "value": 3
+      },
+      {
+        "query": "who is the liberal party leader",
+        "value": 3
       }
     ],
     "rising": [
       {
         "query": "tony abbott liberal party strategy",
-        "value": 84050
+        "value": 84350
       },
       {
         "query": "tony abbott",
@@ -248,6 +248,10 @@
       {
         "query": "who is the liberal party leader",
         "value": 40
+      },
+      {
+        "query": "one nation",
+        "value": 40
       }
     ]
   },
@@ -263,7 +267,7 @@
       },
       {
         "query": "australian greens",
-        "value": 19
+        "value": 20
       },
       {
         "query": "the greens party",
@@ -276,10 +280,6 @@
       {
         "query": "greens policies",
         "value": 7
-      },
-      {
-        "query": "greens party australia",
-        "value": 6
       },
       {
         "query": "one nation",
@@ -299,7 +299,7 @@
       },
       {
         "query": "australian greens party",
-        "value": 4
+        "value": 5
       },
       {
         "query": "the greens leader",
@@ -332,12 +332,20 @@
       {
         "query": "the greens political party",
         "value": 2
+      },
+      {
+        "query": "duncan turpie",
+        "value": 1
       }
     ],
     "rising": [
       {
-        "query": "pauline hanson",
+        "query": "duncan turpie",
         "value": 70
+      },
+      {
+        "query": "pauline hanson",
+        "value": 60
       },
       {
         "query": "greens political party",
@@ -431,27 +439,27 @@
     "rising": [
       {
         "query": "fire the liar",
-        "value": 688600
+        "value": 689700
       },
       {
         "query": "fire the liar one nation",
-        "value": 679100
+        "value": 680100
       },
       {
         "query": "one nation lower house projections",
-        "value": 73150
+        "value": 73450
       },
       {
         "query": "fire the lair",
-        "value": 48650
+        "value": 48750
       },
       {
         "query": "how much has one nation raised",
-        "value": 34050
+        "value": 34150
       },
       {
         "query": "fire the liar campaign",
-        "value": 32650
+        "value": 32900
       },
       {
         "query": "one nation fundraiser",

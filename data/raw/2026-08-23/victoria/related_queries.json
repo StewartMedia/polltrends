@@ -47,7 +47,7 @@
       },
       {
         "query": "anthony albanese",
-        "value": 4
+        "value": 5
       },
       {
         "query": "greens",
@@ -73,7 +73,7 @@
     "rising": [
       {
         "query": "labor government cgt changes",
-        "value": 55200
+        "value": 55400
       },
       {
         "query": "one nation",
@@ -110,6 +110,10 @@
       {
         "query": "liberal party australia",
         "value": 18
+      },
+      {
+        "query": "liberal leader",
+        "value": 16
       },
       {
         "query": "liberal party leader",
@@ -156,6 +160,10 @@
         "value": 5
       },
       {
+        "query": "greens",
+        "value": 4
+      },
+      {
         "query": "liberals",
         "value": 4
       },
@@ -173,10 +181,6 @@
       },
       {
         "query": "angus taylor",
-        "value": 3
-      },
-      {
-        "query": "who is the leader of the liberal party",
         "value": 3
       },
       {
@@ -199,11 +203,11 @@
     "rising": [
       {
         "query": "greens policies",
-        "value": 96850
+        "value": 97050
       },
       {
         "query": "peter dutton",
-        "value": 68750
+        "value": 72800
       },
       {
         "query": "pauline hanson",
@@ -211,19 +215,19 @@
       },
       {
         "query": "tony abbott",
-        "value": 160
-      },
-      {
-        "query": "who is the leader of the liberal party",
-        "value": 110
+        "value": 150
       },
       {
         "query": "liberals",
-        "value": 80
+        "value": 90
       },
       {
         "query": "labor party australia",
-        "value": 80
+        "value": 90
+      },
+      {
+        "query": "greens",
+        "value": 50
       },
       {
         "query": "liberal party policies",
@@ -248,10 +252,6 @@
       {
         "query": "the greens party",
         "value": 11
-      },
-      {
-        "query": "labor",
-        "value": 8
       },
       {
         "query": "greens policies",
@@ -290,7 +290,7 @@
         "value": 2
       },
       {
-        "query": "the greens political party",
+        "query": "leader of greens",
         "value": 2
       },
       {
@@ -301,19 +301,11 @@
     "rising": [
       {
         "query": "one nation policies",
-        "value": 63050
-      },
-      {
-        "query": "the greens political party",
-        "value": 250
-      },
-      {
-        "query": "labor",
-        "value": 80
+        "value": 63700
       },
       {
         "query": "greens policies",
-        "value": 80
+        "value": 70
       },
       {
         "query": "greens policy",
@@ -396,10 +388,6 @@
         "value": 1
       },
       {
-        "query": "fire the lair",
-        "value": 1
-      },
-      {
         "query": "fire the lair one nation",
         "value": 0
       }
@@ -407,27 +395,23 @@
     "rising": [
       {
         "query": "fire the liar",
-        "value": 491550
+        "value": 493050
       },
       {
         "query": "one nation donations",
-        "value": 257450
+        "value": 257900
       },
       {
         "query": "warren pickering",
-        "value": 88050
+        "value": 86900
       },
       {
         "query": "one nation lower house projections",
-        "value": 53850
-      },
-      {
-        "query": "fire the lair",
-        "value": 44400
+        "value": 54000
       },
       {
         "query": "fire the lair one nation",
-        "value": 33200
+        "value": 32650
       },
       {
         "query": "one nation fire the liar",
