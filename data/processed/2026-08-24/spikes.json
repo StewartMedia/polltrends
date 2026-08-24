@@ -1,6 +1,6 @@
 [
   {
-    "date": "2026-06-10",
+    "date": "2026-06-10T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
@@ -10,27 +10,27 @@
     "news": []
   },
   {
-    "date": "2026-06-23",
+    "date": "2026-06-23T00:00:00",
     "party_code": "GRN",
     "party_name": "Greens",
     "value": 11,
-    "rolling_avg": 2.9,
-    "ratio": 3.9,
+    "rolling_avg": 3.1,
+    "ratio": 3.5,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-01",
+    "date": "2026-06-01T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 40,
+    "value": 41,
     "rolling_avg": 14.0,
     "ratio": 2.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-11",
+    "date": "2026-06-11T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 87,
@@ -40,32 +40,42 @@
     "news": []
   },
   {
-    "date": "2026-08-13",
+    "date": "2026-08-13T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 31,
-    "rolling_avg": 11.1,
-    "ratio": 2.8,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-08-03",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 31,
-    "rolling_avg": 12.1,
+    "value": 30,
+    "rolling_avg": 11.6,
     "ratio": 2.6,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-05-31",
+    "date": "2026-08-03T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 32,
-    "rolling_avg": 12.7,
+    "value": 31,
+    "rolling_avg": 12.3,
     "ratio": 2.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-05-31T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 31,
+    "rolling_avg": 12.7,
+    "ratio": 2.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-12T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 84,
+    "rolling_avg": 41.1,
+    "ratio": 2.0,
     "explanation": "Significant spike in search interest",
     "news": []
   }
