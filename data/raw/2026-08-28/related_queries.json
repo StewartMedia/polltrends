@@ -15,23 +15,19 @@
         "value": 100
       },
       {
-        "query": "liberal australia",
-        "value": 27
+        "query": "liberal party",
+        "value": 77
       },
       {
-        "query": "liberal party leader",
-        "value": 14
+        "query": "liberal party australia",
+        "value": 22
       },
       {
-        "query": "liberal party of australia",
-        "value": 11
+        "query": "liberal leader",
+        "value": 18
       },
       {
         "query": "labor",
-        "value": 9
-      },
-      {
-        "query": "labour",
         "value": 9
       },
       {
@@ -55,20 +51,16 @@
         "value": 7
       },
       {
+        "query": "labour party",
+        "value": 6
+      },
+      {
         "query": "liberal leader australia",
         "value": 6
       },
       {
-        "query": "the liberal party of australia",
-        "value": 5
-      },
-      {
-        "query": "liberal party president",
-        "value": 5
-      },
-      {
-        "query": "liberal policies",
-        "value": 4
+        "query": "leader of the liberal party",
+        "value": 6
       },
       {
         "query": "tony abbott",
@@ -83,6 +75,10 @@
         "value": 4
       },
       {
+        "query": "liberals",
+        "value": 4
+      },
+      {
         "query": "pauline hanson",
         "value": 4
       },
@@ -91,31 +87,15 @@
         "value": 3
       },
       {
-        "query": "liberal party victoria",
-        "value": 3
-      },
-      {
-        "query": "greens",
-        "value": 3
-      },
-      {
-        "query": "who is the liberal party leader",
-        "value": 3
-      },
-      {
         "query": "liberal leaders",
         "value": 3
       },
       {
-        "query": "angus taylor liberal party",
-        "value": 3
+        "query": "moira deeming",
+        "value": 1
       }
     ],
     "rising": [
-      {
-        "query": "tony abbott liberal party strategy",
-        "value": 46750
-      },
       {
         "query": "tony abbott",
         "value": 400
@@ -127,90 +107,17 @@
       {
         "query": "pauline hanson",
         "value": 160
-      },
-      {
-        "query": "liberal party president",
-        "value": 80
       }
     ]
   },
   "GRN": {
     "top": [
       {
-        "query": "the greens",
+        "query": "greens",
         "value": 100
-      },
-      {
-        "query": "greens party",
-        "value": 35
-      },
-      {
-        "query": "the greens party",
-        "value": 24
-      },
-      {
-        "query": "the greens australia",
-        "value": 20
-      },
-      {
-        "query": "labor",
-        "value": 17
-      },
-      {
-        "query": "greens policies",
-        "value": 15
-      },
-      {
-        "query": "one nation",
-        "value": 15
-      },
-      {
-        "query": "australian greens party",
-        "value": 10
-      },
-      {
-        "query": "labour",
-        "value": 10
-      },
-      {
-        "query": "the greens policies",
-        "value": 9
-      },
-      {
-        "query": "pauline hanson",
-        "value": 7
-      },
-      {
-        "query": "liberal party",
-        "value": 6
-      },
-      {
-        "query": "one nation party",
-        "value": 6
-      },
-      {
-        "query": "leader of the greens",
-        "value": 6
-      },
-      {
-        "query": "labor party",
-        "value": 5
-      },
-      {
-        "query": "the greens political party",
-        "value": 5
       }
     ],
-    "rising": [
-      {
-        "query": "pauline hanson",
-        "value": 150
-      },
-      {
-        "query": "the greens policies",
-        "value": 80
-      }
-    ]
+    "rising": []
   },
   "PHON": {
     "top": [
@@ -274,7 +181,7 @@
     "rising": [
       {
         "query": "fire the liar",
-        "value": 698200
+        "value": 698450
       },
       {
         "query": "pauline hanson",
