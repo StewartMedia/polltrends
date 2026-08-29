@@ -1,0 +1,9 @@
+## Weekly Political Search Interest Briefing – August 23rd - 29th, 2026
+
+One Nation dominated this week’s political search interest landscape, maintaining the #1 position with an average of 15.6 searches and peaking at 34 on August 29th. This represents a significant lead over the #2 party, Labor, which averaged just 2.9 searches and peaked at 4 on August 28th. Liberal party search interest remained consistently low, averaging 1.9 searches and peaking at 2 on August 24th, while the Greens held steady with an average of 1.3 searches and a peak of 2 on the same date.
+
+The sustained high interest in One Nation is notable, particularly considering the detected spikes throughout the week. The most significant spike occurred on August 29th, with a score of 34 – representing a 2.8x increase above their average. While no specific news headlines were available for this week, the consistent high search volume suggests ongoing public engagement with the party’s platform and messaging. The Greens experienced a notable spike on August 23rd with an average of 11, representing a 4.1x increase above their average.
+
+Sentiment analysis reveals a generally positive outlook for the Liberal and Greens parties, with consistently high neutral sentiment scores. Labor’s sentiment is largely neutral, with a slight negative skew (-0.02). One Nation displays a predominantly neutral sentiment (8 positive, 34 neutral, 2 negative), indicating that while interest is high, it’s not necessarily driven by strong positive feelings.
+
+Looking ahead, the continued dominance of One Nation warrants close monitoring. The party’s sustained high search interest and recent spike suggest a potential for further growth in the coming weeks, particularly if they can capitalize on any upcoming political developments or media coverage.
