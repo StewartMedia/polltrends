@@ -1,6 +1,6 @@
 [
   {
-    "date": "2026-06-10",
+    "date": "2026-06-10T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
@@ -10,27 +10,37 @@
     "news": []
   },
   {
-    "date": "2026-06-23",
+    "date": "2026-06-23T00:00:00",
     "party_code": "GRN",
     "party_name": "Greens",
     "value": 11,
-    "rolling_avg": 2.9,
-    "ratio": 3.9,
+    "rolling_avg": 2.7,
+    "ratio": 4.1,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-11",
+    "date": "2026-08-29T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 34,
+    "rolling_avg": 12.1,
+    "ratio": 2.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-11T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 87,
-    "rolling_avg": 31.7,
+    "rolling_avg": 31.9,
     "ratio": 2.7,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-13",
+    "date": "2026-08-13T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 30,
@@ -40,50 +50,21 @@
     "news": []
   },
   {
-    "date": "2026-08-03",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 31,
-    "rolling_avg": 12.1,
-    "ratio": 2.6,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-08-29",
+    "date": "2026-08-03T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 30,
     "rolling_avg": 12.1,
     "ratio": 2.5,
-    "explanation": "One Nation claims historic by-election win",
-    "news": [
-      {
-        "title": "One Nation claims historic by-election win",
-        "source": "News.com.au",
-        "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQSDlYYlVaSEk5UG9oUE04OEl0NEhQSHlqbVA3VXBWMWlvaF9Ta2lNWVdsRDVIbFlhOXlFVklpZHh1VE04SmNBVk9YVTlqN0pGQ29QWmh1SFdSajh0dWhmY2Npdjc1ellyR1ZzcVh1UGF1YTJLSkNmNU9wWldiNVF3anBJV1pxS2xYWkR2QUxURjRKMkMyZzhfOEQ2VkFlT19ocVcyRWFWb3MwbTlzb2NtRGkwTkM3cnoxTVJ0VDIwWlk1b0stcHExOGFBN254aXdFV185ZEdTcXZyYUR3MmtCaXV4Z1ItQjA5X3lsMGFlaDNPUTNZQXlxTVdNaXJVeEQzWEFkS21qeERiVUwxR1ZzSThfRkgxdTlWbDVsQU1idWbSAaYCQVVfeXFMUHNKUkxBOGxnbWJTQmFOSTB4dlR5V3lvUmZDQlRhaVg3MFJwcXkxS3E4S3NvU1JvVVdBUXdpcWJTbVR4akJaTjdCbk5PN1BzbHFsQzJtcnNCZlBaUjg1ME5JSGY4dWVXbHRLamhsNDhiSkRpdTk0V2tEZ2t2MGhQelhhY1VqTTJQX0N6OWZmdGdLa1IxdWVhZkthMUYySzRFUVgyZkJMZ0F0QkJTMEF3eEo0S0ktU1BwaDhTZnZMbGVLdUtrTXFpRDkxUmNtdjBIckRtbjVvbFBSb3lGTThJRmlxUjgyellLQ19tNXBwSm5KcnJVTzM0bXJ0ZXI0VkIwbUluRVJGTXRvQThCVGhKWWtYQXU0Vm1yQnpwUmxrbUN2UjJ1c0JB?oc=5",
-        "date": "2026-08-29"
-      },
-      {
-        "title": "Pauline Hanson courts wealthy donors with $2,000 \u2018exclusive\u2019 Melbourne lunch, but where are the receipts?",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQVXFYY3NnZkpmOURoRUk5TTFNRVVLQUVabVBPSXctTGpoS1pOX3NvSFFhcE9MMnk4TEI4dVVyNEhlM0xkdkhCTnJlVnI0TTlNeG9CX3Fpalh5d3pIX0V6dTZxU3dGMHgxMVVxYUVTQmh2bVJTVm9JM051V2ZQLVZUbl9mTS02OEdSWkZLbHlEMlBIUDlSXzNxWDB4UzVUMDRkTW04bTg2ZnlIZEwzUFAzbEZ6ODU0dy1yaDM2UlpSbmNJTXhN?oc=5",
-        "date": "2026-08-28"
-      },
-      {
-        "title": "Polls close, counting underway in Secret Habour by-election",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRHk5amE0RzdtQlo2WWstSHRDM2FJaS0xR0c2LWphbjJwcG9HMUp3TmhxamJSQ3ItZHJTVmwyemhZVFJrZ1QwSGd2MXZxVS1GRjNMMkEzMGFUbk1PU1Bvb1E4bFBZVF9UcW1Cb0E4T3V1bzZuWXNUTjVHSEdIQzV3R3hyMWhuZHRyOTNrUllwUTFqdXhYSUl6OUtYaGFTcWlhM0xxNg?oc=5",
-        "date": "2026-08-28"
-      }
-    ]
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
-    "date": "2026-06-12",
+    "date": "2026-06-12T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 83,
-    "rolling_avg": 41.3,
+    "rolling_avg": 41.4,
     "ratio": 2.0,
     "explanation": "Significant spike in search interest",
     "news": []
