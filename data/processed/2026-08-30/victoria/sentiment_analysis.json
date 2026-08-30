@@ -1,29 +1,24 @@
 {
   "ALP": {
     "party": "Labor",
-    "queries_analysed": 1,
+    "queries_analysed": 0,
     "sentiment_counts": {
       "positive": 0,
-      "negative": 1,
+      "negative": 0,
       "neutral": 0
     },
-    "sentiment_score": -1.0,
-    "classified_queries": [
-      {
-        "query": "albanese",
-        "sentiment": "negative"
-      }
-    ]
+    "sentiment_score": 0.0,
+    "classified_queries": []
   },
   "LIB": {
     "party": "Liberal",
-    "queries_analysed": 21,
+    "queries_analysed": 16,
     "sentiment_counts": {
-      "positive": 6,
+      "positive": 3,
       "negative": 0,
-      "neutral": 15
+      "neutral": 13
     },
-    "sentiment_score": 0.29,
+    "sentiment_score": 0.19,
     "classified_queries": [
       {
         "query": "liberal",
@@ -38,28 +33,12 @@
         "sentiment": "neutral"
       },
       {
-        "query": "liberal leader",
-        "sentiment": "positive"
-      },
-      {
-        "query": "labor",
-        "sentiment": "neutral"
-      },
-      {
         "query": "one nation",
         "sentiment": "neutral"
       },
       {
         "query": "leader of liberal party",
         "sentiment": "positive"
-      },
-      {
-        "query": "australian liberal party",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "one nation party",
-        "sentiment": "neutral"
       },
       {
         "query": "labor party",
@@ -70,15 +49,15 @@
         "sentiment": "neutral"
       },
       {
-        "query": "liberal leader australia",
-        "sentiment": "positive"
+        "query": "australian liberal party",
+        "sentiment": "neutral"
       },
       {
         "query": "leader of the liberal party",
         "sentiment": "positive"
       },
       {
-        "query": "tony abbott",
+        "query": "liberal party policies",
         "sentiment": "neutral"
       },
       {
@@ -86,7 +65,7 @@
         "sentiment": "neutral"
       },
       {
-        "query": "liberal party leader australia",
+        "query": "liberal leader australia",
         "sentiment": "positive"
       },
       {
@@ -98,15 +77,11 @@
         "sentiment": "neutral"
       },
       {
-        "query": "liberal party policies",
+        "query": "moira deeming",
         "sentiment": "neutral"
       },
       {
-        "query": "liberal leaders",
-        "sentiment": "positive"
-      },
-      {
-        "query": "moira deeming",
+        "query": "greens policies",
         "sentiment": "neutral"
       }
     ]
@@ -129,28 +104,24 @@
   },
   "PHON": {
     "party": "One Nation",
-    "queries_analysed": 18,
+    "queries_analysed": 16,
     "sentiment_counts": {
       "positive": 3,
       "negative": 0,
-      "neutral": 15
+      "neutral": 13
     },
-    "sentiment_score": 0.17,
+    "sentiment_score": 0.19,
     "classified_queries": [
       {
         "query": "one nation",
         "sentiment": "neutral"
       },
       {
+        "query": "one nation victoria",
+        "sentiment": "neutral"
+      },
+      {
         "query": "one nation australia",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "fire the liar",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "one nation fire the liar",
         "sentiment": "neutral"
       },
       {
@@ -170,7 +141,7 @@
         "sentiment": "neutral"
       },
       {
-        "query": "one nation victoria",
+        "query": "fire the liar",
         "sentiment": "neutral"
       },
       {
@@ -178,11 +149,23 @@
         "sentiment": "neutral"
       },
       {
+        "query": "one nation candidates",
+        "sentiment": "neutral"
+      },
+      {
         "query": "one nation news",
         "sentiment": "positive"
       },
       {
+        "query": "labor",
+        "sentiment": "neutral"
+      },
+      {
         "query": "one nation policy",
+        "sentiment": "positive"
+      },
+      {
+        "query": "one nation leader",
         "sentiment": "positive"
       },
       {
@@ -190,25 +173,42 @@
         "sentiment": "neutral"
       },
       {
-        "query": "one nation candidates",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "one nation leader",
-        "sentiment": "positive"
-      },
-      {
         "query": "liberal party",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "pauline hanson party",
-        "sentiment": "neutral"
-      },
-      {
-        "query": "one nation wa",
         "sentiment": "neutral"
       }
     ]
+  },
+  "AJP": {
+    "party": "Animal Justice",
+    "queries_analysed": 0,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": []
+  },
+  "RSN": {
+    "party": "Reason",
+    "queries_analysed": 0,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": []
+  },
+  "LDP": {
+    "party": "Lib Dems",
+    "queries_analysed": 0,
+    "sentiment_counts": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": []
   }
 }
