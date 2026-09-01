@@ -1,118 +1,80 @@
 [
   {
-    "date": "2026-06-10",
+    "date": "2026-06-10T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 20.4,
+    "rolling_avg": 20.3,
     "ratio": 4.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-30",
+    "date": "2026-08-30T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 73,
-    "rolling_avg": 17.4,
+    "rolling_avg": 17.6,
     "ratio": 4.2,
-    "explanation": "Attorney-General calls on Pauline Hanson to reflect on her own behaviour",
-    "news": [
-      {
-        "title": "Attorney-General calls on Pauline Hanson to reflect on her own behaviour",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQUViaVEwci1KeFVsSHRfQVA2eW8ta3dDemFKVEZHRkZ1Y0NQWDRBcU5MTHR3SFduejZqc3VsQXU2bUtaM2NfclpzWkxIT3NMZEdNMElFSkl0VVZIczBLZWRVM2hGcFNHWmtVMW9vbDNIaDBtNjNsTUR3bkQ1MWY0ZE16YmVwV25ZWktuZlVGQ2hjQlpuSGlQZ2NMcFBNTlNMS1lIVzJ1UWZEZENLWWQw?oc=5",
-        "date": "2026-09-01"
-      },
-      {
-        "title": "More popular than Barnaby Joyce? This Australian has won over One Nation voters",
-        "source": "SBS",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbTczamtuSFItNEZQbzlCSEpleDJzSXZjV283NmlJTTZGVU0yVURteFMwbkFOc1pGbUdmZW9KR2lWMElwR0RtcHZldHBzaFVzTjJMVUphNzFUX3NRWEY1VVc1VTR5MVJ0V1VMRENPclVKOWRTMFJ1WGtqUzVHcFhvTW9XbmlaSlh3aU1aWFlTZnc0Nmp1RTNr?oc=5",
-        "date": "2026-08-31"
-      },
-      {
-        "title": "Pauline Hanson\u2019s One Nation rallies Melbourne elite at Vue de monde\u201d",
-        "source": "AFR",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNek9vZWJFdTBRY3FXejB0dXFFaGlFMWJRUGNxUGQwdXRQVE1wWklDNXJBQ1RqSHJUamtTTGpzcFhHcUs3Y05pT2dqSFZXd0cxMmJWQXBfS3pxbG1zRGt5Ylh6dEliQnNGTERFY29oMVk5VXRFYm9NX3Q2Q1lhY2VzYXcxcHJ1dzJYOFFZbHBmMllYSFE5d0MyNEhrVnJLaWdwc01LMWJRc0dRYzRjT3NqaF93STBFZw?oc=5",
-        "date": "2026-09-01"
-      }
-    ]
-  },
-  {
-    "date": "2026-06-23",
-    "party_code": "GRN",
-    "party_name": "Greens",
-    "value": 12,
-    "rolling_avg": 3.1,
-    "ratio": 3.8,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-29",
+    "date": "2026-08-29T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 46,
-    "rolling_avg": 12.4,
-    "ratio": 3.7,
-    "explanation": "More popular than Barnaby Joyce? This Australian has won over One Nation voters",
-    "news": [
-      {
-        "title": "More popular than Barnaby Joyce? This Australian has won over One Nation voters",
-        "source": "SBS",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbTczamtuSFItNEZQbzlCSEpleDJzSXZjV283NmlJTTZGVU0yVURteFMwbkFOc1pGbUdmZW9KR2lWMElwR0RtcHZldHBzaFVzTjJMVUphNzFUX3NRWEY1VVc1VTR5MVJ0V1VMRENPclVKOWRTMFJ1WGtqUzVHcFhvTW9XbmlaSlh3aU1aWFlTZnc0Nmp1RTNr?oc=5",
-        "date": "2026-08-31"
-      },
-      {
-        "title": "\u2018Abusing his power\u2019: Hanson accuses PM of sabotaging One Nation staff",
-        "source": "The Courier Mail",
-        "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNbDQxOGRPNXF3Mmdac04zTTYxaGZmQWIySEIwUmhYU3NZWmxLekVGVjdXTDBDRmZlckR1WGlVanFwaWVKVzNFZ3VQMFBhQldGZ1VuNjcyaWphN0xTSW1uX0w2X2RYaFIzbFZQS2dWVm9BdE5LaGhJWGR3NjZYaDNleklpcVMwdkROMThjaGhGQ2hOYlFTOWZ0b3Yxc0l0RTZDTml6b2V4NmhzX19BbmVzNXhVb0xvS2YwdUo2UjNUY2NpNlc5dDZUaTJqaDhaZlhUUG1QZ29rM0FtVjlncVZmaHRRVE5OVGZTUHVTTHhWeFdfa1A1VkRqaWhn?oc=5",
-        "date": "2026-08-31"
-      },
-      {
-        "title": "\u2018You can\u2019t just say we\u2019re evil\u2019: Joyce backs Hanson when she says PM is inciting violence",
-        "source": "brisbanetimes.com.au",
-        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOQWRNa3BhYVQyQlVwckZXaW5NeDJrYUNldEdhNWU0MmlyMXVvdWhuNi1EYTJwT0F2ZkJVRHBrSnpNSVhlekppcDdlSVFrbENYLWRLTHM0UGpoblF4MGhQWVJ3eXdWdlF0SUJBdmpCMndKSzFVX0laSXJyNGhzczBSU043MFFMRlFkRjEyWGF2OUszNlNCcjR4WTZub2p2NnZhOTh3VEFKNlB1RkVVVlREYV82WVV6bmxhcjhSTWVEYThSYlFST05aNC1MbmtNOENjdlVrT3Brclh0dnJWOExEbA?oc=5",
-        "date": "2026-08-31"
-      }
-    ]
+    "value": 48,
+    "rolling_avg": 12.3,
+    "ratio": 3.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
-    "date": "2026-06-11",
+    "date": "2026-06-23T00:00:00",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 11,
+    "rolling_avg": 3.1,
+    "ratio": 3.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-11T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 89,
-    "rolling_avg": 32.0,
+    "rolling_avg": 31.9,
     "ratio": 2.8,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-13",
+    "date": "2026-08-13T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 31,
-    "rolling_avg": 11.3,
+    "rolling_avg": 11.4,
     "ratio": 2.7,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-03",
+    "date": "2026-08-03T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 31,
-    "rolling_avg": 12.3,
+    "rolling_avg": 12.4,
     "ratio": 2.5,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-12",
+    "date": "2026-06-12T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 84,
-    "rolling_avg": 41.9,
+    "rolling_avg": 41.7,
     "ratio": 2.0,
     "explanation": "Significant spike in search interest",
     "news": []
