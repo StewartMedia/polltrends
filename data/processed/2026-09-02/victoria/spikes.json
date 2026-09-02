@@ -1,158 +1,101 @@
 [
   {
-    "date": "2026-07-12",
+    "date": "2026-06-10T00:00:00",
     "party_code": "ALP",
     "party_name": "Labor",
-    "value": 10,
-    "rolling_avg": 0.9,
-    "ratio": 11.7,
+    "value": 12,
+    "rolling_avg": 2.0,
+    "ratio": 6.0,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-23",
+    "date": "2026-06-23T00:00:00",
     "party_code": "GRN",
     "party_name": "Greens",
-    "value": 12,
+    "value": 11,
     "rolling_avg": 2.7,
-    "ratio": 4.4,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-08-03",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 80,
-    "rolling_avg": 19.6,
     "ratio": 4.1,
-    "explanation": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
-    "news": [
-      {
-        "title": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYnFMaDJTWmYydUVwLTBhbXFQbXFoQ2NoM3lvbFFuX3dfWWdfSXkxRGhWVWNERDJjQnVYNmo0d1gzZHhSOTQyTFVhbnFMb2RMMWIyamJWUDRBdUxTbzJ5dUE0WnJLQU5KOW56ekZCQkRLTzNBcmNWTERyV0dVU2FRS2ZuMC1HR1ZGbFJaV2JWaU1iaXhXRXRUa0tQVDFxYkVISFpQb2Y0cXZHNkFiR2IxNUxidXM5OVByUFJ2VmVLcnotaU5wS1hpQWRNUmU?oc=5",
-        "date": "2026-08-04"
-      },
-      {
-        "title": "I was allowed into, and quickly pushed out of, One Nation\u2019s \u2018Meet The Candidates\u2019 event",
-        "source": "Crikey",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxObFZJYTlacXJiMy0xMjdTNTNWbG80azVsNnhBaG1wVFRpbEhfcWQyY0RxSWVfdDcyZVd1cnNEal9jTW90S3Nkb0MtU0VId2tlRzZzM3BtQ1dyNmhMVlQ1aUJ2d1g4cG9qVThZWTVRdG84dTA3bmNJUmRFYjR4cTVGUjd1cXRTenJMUUJMTWhTNFg1NllMbEQ0?oc=5",
-        "date": "2026-08-04"
-      },
-      {
-        "title": "Protest at One Nation fundraiser after Vic leader, candidates announced",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOR0x5eld6UVZ4UlFYSXlTNlltUEgyYWM1UHQ2dFVvRElhZEV5S2RZYjEwWXhSanJEOHFpTkk4dGtQLURicEg2SmN5VHZJcGs0LW44aEI2WFdEXzJiRm9tZDQwZDNYenQyeUFDWjFtdThUcFcwM1JpbXhhMHl3bjgyLXhTUlFUbDN6VkZRUExoLXc?oc=5",
-        "date": "2026-08-02"
-      }
-    ]
-  },
-  {
-    "date": "2026-06-10",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 100,
-    "rolling_avg": 25.6,
-    "ratio": 3.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-30",
+    "date": "2026-06-10T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 99,
+    "rolling_avg": 25.0,
+    "ratio": 4.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-30T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 74,
-    "rolling_avg": 19.0,
-    "ratio": 3.9,
-    "explanation": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
-    "news": [
-      {
-        "title": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQakFFZ3dvLTRYMURyc1J2Nm9yS3R5d1RleGNieFNENjlfMkVoYlNiWGNpWFJpZFRQbnd6MmN2N3AxVk03UnVBXy1Mc0VBYkNOMzBmczQ5MXV6X2lzWFU5bTVCeS1Lbzg3RkRjMlJiWGVFaThXZk5DM0ptNGhVZjA1UDhDVldHb3QxNUNyM1BsaEVFODlBMU1kYjdTNA?oc=5",
-        "date": "2026-08-31"
-      },
-      {
-        "title": "\u2018They\u2019re giving up\u2019: One Nation sets its sights on Labor seats across Victoria",
-        "source": "news24.com.au",
-        "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQenBnMFp2b25fX0RFWkdEWXViVk9scU5IeUhpSWpvWDc5V3dtY3lkdm44R3I2ZnJmLUNUOW1oeDdjVFJUOGVNbHNyZXNVUFB5cHJrNmtxRnZPSjBFTk1KTlhhV2plaGVwQXFfTDFfLTgzTFdOMlpQLWZBbzMyUV9oYkl0WGMzRFR6LVFlRXNpYmZvVDNkVDk1cGtlYVgzWWEzWDF2ejVPSjJrdHNCV0w4VU03WGp5alNYY05WWVU4SDczdkVLb3plaXVYd09nUDBpdkxvMFNOY2k5X2dBRzVTYVQxS19ndHFUMmU1RzE3ckc0dmU4ZHljWEtUYzRSNzF5YmfSAYICQVVfeXFMUHpwZzBadm9uX19ERVpHRFl1YlZPbHFOSHlIaUlqb1g3OVd3bWN5ZHZuOEdyNmZyZi1DVDltaHg3Y1RSVDhlTWxzcmVzVVBQeXByazZrcUZ2T0owRU5NSk5YYVdqZWhlcEFxX0wxXy04M0xXTjJaUC1mQW8zMlFfaGJJdFhjM0RUei1RZUVzaWJmb1QzZFQ5NXBrZWFYM1lhM1gxdno1T0oya3RzQldMOFVNN1hqeWpTWGNOVllVOEg3M3ZFS296ZWl1WHdPZ1AwaXZMbzBTTmNpOV9nQUc1U2FUMUtfZ3RxVDJlNUcxN3JHNHZlOGR5Y1hLVGM0UjcxeWJn?oc=5",
-        "date": "2026-08-31"
-      },
-      {
-        "title": "\u2018The books are cooked\u2019: Victoria\u2019s spending blowouts spark calls for full investigation",
-        "source": "The Weekly Times",
-        "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOVnE1cUgySV8ybGZacXM4cGdzSkw1MzZRcTgtSDE4bmt3SHdvdHNzVXRSNERWbFFkSVJsTGljQkl6bFJRUzFUV1hnZWtNWkRRSGxTQjFEMmM4ZHhjaWp1dGlQeGRnVEZwTDYzVkZyTWJ4WElCaWt5dEJTTW9EMzRiTU9YVGV5dGxsZ2VkdjlnTkRjZ05CbU5lV3RfbGVLMElOU1JXUlVkYjNCVmFwaU5vS1F1ZnpvVHdHVGtPcy1scGwzemxNSEhBRl92dU40aXJhMlFDWXlzNUc5dWYzRDU4YzVmejRqNUo2NERGdVBab1NYZWlkQ2VjTkhyMnRMNnRSZjJUTdIBhAJBVV95cUxOVnE1cUgySV8ybGZacXM4cGdzSkw1MzZRcTgtSDE4bmt3SHdvdHNzVXRSNERWbFFkSVJsTGljQkl6bFJRUzFUV1hnZWtNWkRRSGxTQjFEMmM4ZHhjaWp1dGlQeGRnVEZwTDYzVkZyTWJ4WElCaWt5dEJTTW9EMzRiTU9YVGV5dGxsZ2VkdjlnTkRjZ05CbU5lV3RfbGVLMElOU1JXUlVkYjNCVmFwaU5vS1F1ZnpvVHdHVGtPcy1scGwzemxNSEhBRl92dU40aXJhMlFDWXlzNUc5dWYzRDU4YzVmejRqNUo2NERGdVBab1NYZWlkQ2VjTkhyMnRMNnRSZjJUTQ?oc=5",
-        "date": "2026-08-31"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-27",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 14,
-    "rolling_avg": 4.1,
-    "ratio": 3.4,
+    "rolling_avg": 18.7,
+    "ratio": 4.0,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-13",
+    "date": "2026-06-25T00:00:00",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 12,
+    "rolling_avg": 3.1,
+    "ratio": 3.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-03T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 47,
-    "rolling_avg": 15.4,
-    "ratio": 3.0,
+    "value": 73,
+    "rolling_avg": 19.9,
+    "ratio": 3.7,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-07-28",
+    "date": "2026-08-13T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 45,
+    "rolling_avg": 14.1,
+    "ratio": 3.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-29T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 42,
+    "rolling_avg": 14.7,
+    "ratio": 2.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-27T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 13,
+    "rolling_avg": 4.6,
+    "ratio": 2.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-28T00:00:00",
     "party_code": "ALP",
     "party_name": "Labor",
     "value": 18,
-    "rolling_avg": 6.1,
-    "ratio": 2.9,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-08-29",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 43,
-    "rolling_avg": 14.9,
-    "ratio": 2.9,
-    "explanation": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
-    "news": [
-      {
-        "title": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQakFFZ3dvLTRYMURyc1J2Nm9yS3R5d1RleGNieFNENjlfMkVoYlNiWGNpWFJpZFRQbnd6MmN2N3AxVk03UnVBXy1Mc0VBYkNOMzBmczQ5MXV6X2lzWFU5bTVCeS1Lbzg3RkRjMlJiWGVFaThXZk5DM0ptNGhVZjA1UDhDVldHb3QxNUNyM1BsaEVFODlBMU1kYjdTNA?oc=5",
-        "date": "2026-08-31"
-      },
-      {
-        "title": "\u2018They\u2019re giving up\u2019: One Nation sets its sights on Labor seats across Victoria",
-        "source": "news24.com.au",
-        "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQenBnMFp2b25fX0RFWkdEWXViVk9scU5IeUhpSWpvWDc5V3dtY3lkdm44R3I2ZnJmLUNUOW1oeDdjVFJUOGVNbHNyZXNVUFB5cHJrNmtxRnZPSjBFTk1KTlhhV2plaGVwQXFfTDFfLTgzTFdOMlpQLWZBbzMyUV9oYkl0WGMzRFR6LVFlRXNpYmZvVDNkVDk1cGtlYVgzWWEzWDF2ejVPSjJrdHNCV0w4VU03WGp5alNYY05WWVU4SDczdkVLb3plaXVYd09nUDBpdkxvMFNOY2k5X2dBRzVTYVQxS19ndHFUMmU1RzE3ckc0dmU4ZHljWEtUYzRSNzF5YmfSAYICQVVfeXFMUHpwZzBadm9uX19ERVpHRFl1YlZPbHFOSHlIaUlqb1g3OVd3bWN5ZHZuOEdyNmZyZi1DVDltaHg3Y1RSVDhlTWxzcmVzVVBQeXByazZrcUZ2T0owRU5NSk5YYVdqZWhlcEFxX0wxXy04M0xXTjJaUC1mQW8zMlFfaGJJdFhjM0RUei1RZUVzaWJmb1QzZFQ5NXBrZWFYM1lhM1gxdno1T0oya3RzQldMOFVNN1hqeWpTWGNOVllVOEg3M3ZFS296ZWl1WHdPZ1AwaXZMbzBTTmNpOV9nQUc1U2FUMUtfZ3RxVDJlNUcxN3JHNHZlOGR5Y1hLVGM0UjcxeWJn?oc=5",
-        "date": "2026-08-31"
-      },
-      {
-        "title": "\u2018The books are cooked\u2019: Victoria\u2019s spending blowouts spark calls for full investigation",
-        "source": "The Weekly Times",
-        "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOVnE1cUgySV8ybGZacXM4cGdzSkw1MzZRcTgtSDE4bmt3SHdvdHNzVXRSNERWbFFkSVJsTGljQkl6bFJRUzFUV1hnZWtNWkRRSGxTQjFEMmM4ZHhjaWp1dGlQeGRnVEZwTDYzVkZyTWJ4WElCaWt5dEJTTW9EMzRiTU9YVGV5dGxsZ2VkdjlnTkRjZ05CbU5lV3RfbGVLMElOU1JXUlVkYjNCVmFwaU5vS1F1ZnpvVHdHVGtPcy1scGwzemxNSEhBRl92dU40aXJhMlFDWXlzNUc5dWYzRDU4YzVmejRqNUo2NERGdVBab1NYZWlkQ2VjTkhyMnRMNnRSZjJUTdIBhAJBVV95cUxOVnE1cUgySV8ybGZacXM4cGdzSkw1MzZRcTgtSDE4bmt3SHdvdHNzVXRSNERWbFFkSVJsTGljQkl6bFJRUzFUV1hnZWtNWkRRSGxTQjFEMmM4ZHhjaWp1dGlQeGRnVEZwTDYzVkZyTWJ4WElCaWt5dEJTTW9EMzRiTU9YVGV5dGxsZ2VkdjlnTkRjZ05CbU5lV3RfbGVLMElOU1JXUlVkYjNCVmFwaU5vS1F1ZnpvVHdHVGtPcy1scGwzemxNSEhBRl92dU40aXJhMlFDWXlzNUc5dWYzRDU4YzVmejRqNUo2NERGdVBab1NYZWlkQ2VjTkhyMnRMNnRSZjJUTQ?oc=5",
-        "date": "2026-08-31"
-      }
-    ]
-  },
-  {
-    "date": "2026-06-11",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 95,
-    "rolling_avg": 36.6,
-    "ratio": 2.6,
+    "rolling_avg": 6.4,
+    "ratio": 2.8,
     "explanation": "Significant spike in search interest",
     "news": []
   }
