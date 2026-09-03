@@ -1,0 +1,154 @@
+[
+  {
+    "date": "2026-07-27",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 16,
+    "rolling_avg": 1.1,
+    "ratio": 14.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-28",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 18,
+    "rolling_avg": 3.4,
+    "ratio": 5.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-23",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 11,
+    "rolling_avg": 2.4,
+    "ratio": 4.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-03",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 79,
+    "rolling_avg": 20.0,
+    "ratio": 4.0,
+    "explanation": "Protesters confront Hanson, hurl abuse at One Nation supporters",
+    "news": [
+      {
+        "title": "Protesters confront Hanson, hurl abuse at One Nation supporters",
+        "source": "The Australian",
+        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPN2VOOTRnODUwOC1McnROS0c4a2Q4bjduZ1BmYjFtSUxnSURsRG8yTTNST3hnQ25yTWM5blFrTWpCR0IwZ1R5ODdPSXRWSWN3VnpYSXdRUmVzcHZsMDl1QmdLSGdqdDYzQjBRckNodnFwMWo2MlQwTzRpenU3ZWdlU1hNVWpaYVU1Z25zc29Md1pvX3pScHdUc21wZjJVQzc1aDdadC1GN3hJU19oMnBLUU95Q3RXUWdTN2VIeHQtcGZpWnU5ZjVTUXBSczU3Z2h5NU1CU2VxdDNSYy1fQk93R2djdV9lT0lMbVo3QnZfOVQ1NnfSAfgBQVVfeXFMUEhXUGM2R2N3d0lIUUJHMkstei00NTkzMTUxTUxhLXR1eU1ERENlMjF6N25MTWM5QmVpTnh1cG95dGVUeTItY202enJLeUdrV28wTlprVjV2ZVBVNmxxbWdPWGs1azNhWjd1S1BHOFVKWXFBUFpGX0FTenVjOFZOTmtOY3p2bUl2dDVGQ3dNUlBWMjF1Z0MtTXl5Vnh3NFBxeHdmOFJYbWYtS2E1MkJOTTU4UXFrTzRHZThVRkstTmY2WHNISVU3YXZld0RscGthNTJJSTA4RmJFbWY1SWUtVHI2bFcyQURPYWJncE9pbWZtYTRNclJOTXE?oc=5",
+        "date": "2026-08-04"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-10",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 100,
+    "rolling_avg": 25.6,
+    "ratio": 3.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-30",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 72,
+    "rolling_avg": 18.6,
+    "ratio": 3.9,
+    "explanation": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
+    "news": [
+      {
+        "title": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
+        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQakFFZ3dvLTRYMURyc1J2Nm9yS3R5d1RleGNieFNENjlfMkVoYlNiWGNpWFJpZFRQbnd6MmN2N3AxVk03UnVBXy1Mc0VBYkNOMzBmczQ5MXV6X2lzWFU5bTVCeS1Lbzg3RkRjMlJiWGVFaThXZk5DM0ptNGhVZjA1UDhDVldHb3QxNUNyM1BsaEVFODlBMU1kYjdTNA?oc=5",
+        "date": "2026-08-31"
+      },
+      {
+        "title": "\u2018The books are cooked\u2019: Victoria\u2019s spending blowouts spark calls for full investigation",
+        "source": "The Weekly Times",
+        "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOVnE1cUgySV8ybGZacXM4cGdzSkw1MzZRcTgtSDE4bmt3SHdvdHNzVXRSNERWbFFkSVJsTGljQkl6bFJRUzFUV1hnZWtNWkRRSGxTQjFEMmM4ZHhjaWp1dGlQeGRnVEZwTDYzVkZyTWJ4WElCaWt5dEJTTW9EMzRiTU9YVGV5dGxsZ2VkdjlnTkRjZ05CbU5lV3RfbGVLMElOU1JXUlVkYjNCVmFwaU5vS1F1ZnpvVHdHVGtPcy1scGwzemxNSEhBRl92dU40aXJhMlFDWXlzNUc5dWYzRDU4YzVmejRqNUo2NERGdVBab1NYZWlkQ2VjTkhyMnRMNnRSZjJUTdIBhAJBVV95cUxOVnE1cUgySV8ybGZacXM4cGdzSkw1MzZRcTgtSDE4bmt3SHdvdHNzVXRSNERWbFFkSVJsTGljQkl6bFJRUzFUV1hnZWtNWkRRSGxTQjFEMmM4ZHhjaWp1dGlQeGRnVEZwTDYzVkZyTWJ4WElCaWt5dEJTTW9EMzRiTU9YVGV5dGxsZ2VkdjlnTkRjZ05CbU5lV3RfbGVLMElOU1JXUlVkYjNCVmFwaU5vS1F1ZnpvVHdHVGtPcy1scGwzemxNSEhBRl92dU40aXJhMlFDWXlzNUc5dWYzRDU4YzVmejRqNUo2NERGdVBab1NYZWlkQ2VjTkhyMnRMNnRSZjJUTQ?oc=5",
+        "date": "2026-08-31"
+      },
+      {
+        "title": "\u2018They\u2019re giving up\u2019: One Nation sets its sights on Labor seats across Victoria",
+        "source": "Townsville Bulletin",
+        "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNWVUxcm9rUm1PQUFwdmI5Sy1rVUZFRTlIOXlqc3ppeVd4ZGZyNmt5RWx5TTI1SEpEREx6UE1UbF9ibDIyMjgxbTdRYnVCZUtnWndhLVlfR2dpcXAwQW9BQV94dHA3TElUT3lBa2oxYmI2TW1zWjJrR3E3RkxmV0VmR3puNWtRSmlDU2Z5eFhzaGpnWWFBZGlCWUpYQWQyN1ZZOHFsTjNzOVprUUNUVXRfQm9PVjd5bW9FM0lRVUs0a3JuRHdHWnk4dTVEQW5RMU8tTzdqbkJwZDlkdDJoTDhGVWpRR1pZOXZpRGlxMjJLZnpKTzBFcVUyMm13UjJBZ9IB_gFBVV95cUxNWVUxcm9rUm1PQUFwdmI5Sy1rVUZFRTlIOXlqc3ppeVd4ZGZyNmt5RWx5TTI1SEpEREx6UE1UbF9ibDIyMjgxbTdRYnVCZUtnWndhLVlfR2dpcXAwQW9BQV94dHA3TElUT3lBa2oxYmI2TW1zWjJrR3E3RkxmV0VmR3puNWtRSmlDU2Z5eFhzaGpnWWFBZGlCWUpYQWQyN1ZZOHFsTjNzOVprUUNUVXRfQm9PVjd5bW9FM0lRVUs0a3JuRHdHWnk4dTVEQW5RMU8tTzdqbkJwZDlkdDJoTDhGVWpRR1pZOXZpRGlxMjJLZnpKTzBFcVUyMm13UjJBZw?oc=5",
+        "date": "2026-08-31"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-10",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 3.0,
+    "ratio": 3.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-13",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 45,
+    "rolling_avg": 14.7,
+    "ratio": 3.1,
+    "explanation": "\u2018Really unsettling\u2019: Shocking student protests against Pauline Hanson",
+    "news": [
+      {
+        "title": "\u2018Really unsettling\u2019: Shocking student protests against Pauline Hanson",
+        "source": "The Weekly Times",
+        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQWVNlV19Bc2xVSjlIVVhXaExobWhHSlNFdDY5X2t1aTc4N3prZDZpNlY3MVBmeUstV0MyVWtnUlM5eEhiV0MwbXkwTnpQWVEtclFZMVVVaVFqYTdVR2FXZGdmNVpEakhSWGNYSGxmSnI5c2p0Z1pIendrT0NxaUhEYl9HX3h1QU1YNE9fTWZJdmVjLTk4RVNVaVBjQVlYTE9CVnV6UVdPNGQ1amttOTdFZ3Rtal9FUGhLbEdhZVUwa0MxMXhkWllmUEtoTG41QmwtejBrVkdkNnBZS0ZJZXJid1pDeVdvdkgxRmdsNXNR0gHuAUFVX3lxTFBZU2VXX0FzbFVKOUhVWFdoTGhtaEdKU0V0Njlfa3VpNzg3emtkNmk2VjcxUGZ5Sy1XQzJVa2dSUzl4SGJXQzBteTBOelBZUS1yUVkxVVVpUWphN1VHYVdkZ2Y1WkRqSFJYY1hIbGZKcjlzanRnWkh6d2tPQ3FpSERiX0dfeHVBTVg0T19NZkl2ZWMtOThFU1VpUGNBWVhMT0JWdXpRV080ZDVqa205N0VndG1qX0VQaEtsR2FlVTBrQzExeGRaWWZQS2hMbjVCbC16MGtWR2Q2cFlLRkllcmJ3WkN5V292SDFGZ2w1c1E?oc=5",
+        "date": "2026-08-13"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-29",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 42,
+    "rolling_avg": 14.6,
+    "ratio": 2.9,
+    "explanation": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
+    "news": [
+      {
+        "title": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
+        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQakFFZ3dvLTRYMURyc1J2Nm9yS3R5d1RleGNieFNENjlfMkVoYlNiWGNpWFJpZFRQbnd6MmN2N3AxVk03UnVBXy1Mc0VBYkNOMzBmczQ5MXV6X2lzWFU5bTVCeS1Lbzg3RkRjMlJiWGVFaThXZk5DM0ptNGhVZjA1UDhDVldHb3QxNUNyM1BsaEVFODlBMU1kYjdTNA?oc=5",
+        "date": "2026-08-31"
+      },
+      {
+        "title": "\u2018The books are cooked\u2019: Victoria\u2019s spending blowouts spark calls for full investigation",
+        "source": "The Weekly Times",
+        "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOVnE1cUgySV8ybGZacXM4cGdzSkw1MzZRcTgtSDE4bmt3SHdvdHNzVXRSNERWbFFkSVJsTGljQkl6bFJRUzFUV1hnZWtNWkRRSGxTQjFEMmM4ZHhjaWp1dGlQeGRnVEZwTDYzVkZyTWJ4WElCaWt5dEJTTW9EMzRiTU9YVGV5dGxsZ2VkdjlnTkRjZ05CbU5lV3RfbGVLMElOU1JXUlVkYjNCVmFwaU5vS1F1ZnpvVHdHVGtPcy1scGwzemxNSEhBRl92dU40aXJhMlFDWXlzNUc5dWYzRDU4YzVmejRqNUo2NERGdVBab1NYZWlkQ2VjTkhyMnRMNnRSZjJUTdIBhAJBVV95cUxOVnE1cUgySV8ybGZacXM4cGdzSkw1MzZRcTgtSDE4bmt3SHdvdHNzVXRSNERWbFFkSVJsTGljQkl6bFJRUzFUV1hnZWtNWkRRSGxTQjFEMmM4ZHhjaWp1dGlQeGRnVEZwTDYzVkZyTWJ4WElCaWt5dEJTTW9EMzRiTU9YVGV5dGxsZ2VkdjlnTkRjZ05CbU5lV3RfbGVLMElOU1JXUlVkYjNCVmFwaU5vS1F1ZnpvVHdHVGtPcy1scGwzemxNSEhBRl92dU40aXJhMlFDWXlzNUc5dWYzRDU4YzVmejRqNUo2NERGdVBab1NYZWlkQ2VjTkhyMnRMNnRSZjJUTQ?oc=5",
+        "date": "2026-08-31"
+      },
+      {
+        "title": "\u2018They\u2019re giving up\u2019: One Nation sets its sights on Labor seats across Victoria",
+        "source": "Townsville Bulletin",
+        "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNWVUxcm9rUm1PQUFwdmI5Sy1rVUZFRTlIOXlqc3ppeVd4ZGZyNmt5RWx5TTI1SEpEREx6UE1UbF9ibDIyMjgxbTdRYnVCZUtnWndhLVlfR2dpcXAwQW9BQV94dHA3TElUT3lBa2oxYmI2TW1zWjJrR3E3RkxmV0VmR3puNWtRSmlDU2Z5eFhzaGpnWWFBZGlCWUpYQWQyN1ZZOHFsTjNzOVprUUNUVXRfQm9PVjd5bW9FM0lRVUs0a3JuRHdHWnk4dTVEQW5RMU8tTzdqbkJwZDlkdDJoTDhGVWpRR1pZOXZpRGlxMjJLZnpKTzBFcVUyMm13UjJBZ9IB_gFBVV95cUxNWVUxcm9rUm1PQUFwdmI5Sy1rVUZFRTlIOXlqc3ppeVd4ZGZyNmt5RWx5TTI1SEpEREx6UE1UbF9ibDIyMjgxbTdRYnVCZUtnWndhLVlfR2dpcXAwQW9BQV94dHA3TElUT3lBa2oxYmI2TW1zWjJrR3E3RkxmV0VmR3puNWtRSmlDU2Z5eFhzaGpnWWFBZGlCWUpYQWQyN1ZZOHFsTjNzOVprUUNUVXRfQm9PVjd5bW9FM0lRVUs0a3JuRHdHWnk4dTVEQW5RMU8tTzdqbkJwZDlkdDJoTDhGVWpRR1pZOXZpRGlxMjJLZnpKTzBFcVUyMm13UjJBZw?oc=5",
+        "date": "2026-08-31"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-11",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 91,
+    "rolling_avg": 36.6,
+    "ratio": 2.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]
