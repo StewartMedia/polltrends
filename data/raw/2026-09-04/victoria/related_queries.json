@@ -1,7 +1,65 @@
 {
   "ALP": {
-    "top": [],
-    "rising": []
+    "top": [
+      {
+        "query": "labor",
+        "value": 100
+      },
+      {
+        "query": "labor party",
+        "value": 42
+      },
+      {
+        "query": "labour",
+        "value": 33
+      },
+      {
+        "query": "labour party",
+        "value": 12
+      },
+      {
+        "query": "alp",
+        "value": 11
+      },
+      {
+        "query": "liberal party",
+        "value": 10
+      },
+      {
+        "query": "one nation",
+        "value": 10
+      },
+      {
+        "query": "labour party australia",
+        "value": 4
+      },
+      {
+        "query": "greens",
+        "value": 4
+      },
+      {
+        "query": "anthony albanese",
+        "value": 4
+      },
+      {
+        "query": "labor policies",
+        "value": 2
+      }
+    ],
+    "rising": [
+      {
+        "query": "anthony albanese",
+        "value": 70
+      },
+      {
+        "query": "one nation",
+        "value": 50
+      },
+      {
+        "query": "greens",
+        "value": 40
+      }
+    ]
   },
   "LIB": {
     "top": [
@@ -22,10 +80,6 @@
         "value": 12
       },
       {
-        "query": "labour",
-        "value": 10
-      },
-      {
         "query": "one nation",
         "value": 9
       },
@@ -36,10 +90,6 @@
       {
         "query": "liberal party victoria",
         "value": 9
-      },
-      {
-        "query": "australian liberal party",
-        "value": 8
       },
       {
         "query": "leader of liberal party",
@@ -82,21 +132,21 @@
         "value": 3
       },
       {
-        "query": "liberal candidates",
-        "value": 3
-      },
-      {
         "query": "who is the leader of the liberal party",
         "value": 2
+      },
+      {
+        "query": "james patterson liberal",
+        "value": 0
       }
     ],
     "rising": [
       {
-        "query": "liberal candidates",
-        "value": 50
+        "query": "james patterson liberal",
+        "value": 5050
       },
       {
-        "query": "labour party",
+        "query": "who is the leader of the liberal party",
         "value": 50
       },
       {
@@ -104,16 +154,8 @@
         "value": 50
       },
       {
-        "query": "who is the leader of the liberal party",
-        "value": 50
-      },
-      {
         "query": "one nation",
-        "value": 40
-      },
-      {
-        "query": "labour",
-        "value": 40
+        "value": 50
       },
       {
         "query": "liberal candidate",
@@ -121,6 +163,10 @@
       },
       {
         "query": "leader of liberal party",
+        "value": 40
+      },
+      {
+        "query": "labour party",
         "value": 40
       }
     ]
@@ -142,6 +188,10 @@
       {
         "query": "the greens party",
         "value": 12
+      },
+      {
+        "query": "the australian greens",
+        "value": 10
       },
       {
         "query": "greens policies",
@@ -185,15 +235,15 @@
       },
       {
         "query": "greens candidates",
-        "value": 3
-      },
-      {
-        "query": "leader of the greens",
         "value": 2
       },
       {
         "query": "greens senator",
         "value": 2
+      },
+      {
+        "query": "nick mckim",
+        "value": 1
       },
       {
         "query": "liberal party",
@@ -206,43 +256,39 @@
       {
         "query": "greens senators",
         "value": 1
-      },
-      {
-        "query": "larissa waters",
-        "value": 1
-      },
-      {
-        "query": "bob brown greens",
-        "value": 1
       }
     ],
     "rising": [
       {
         "query": "labor party",
-        "value": 244200
+        "value": 244000
       },
       {
-        "query": "larissa waters",
-        "value": 68950
+        "query": "one nation policies",
+        "value": 121300
       },
       {
-        "query": "bob brown greens",
-        "value": 54700
-      },
-      {
-        "query": "greens political party",
+        "query": "the greens policies",
         "value": 250
+      },
+      {
+        "query": "nick mckim",
+        "value": 180
       },
       {
         "query": "greens policies",
         "value": 110
       },
       {
-        "query": "pauline hanson",
-        "value": 60
+        "query": "the australian greens",
+        "value": 90
       },
       {
-        "query": "the greens policies",
+        "query": "greens political party",
+        "value": 70
+      },
+      {
+        "query": "pauline hanson",
         "value": 60
       }
     ]
@@ -279,18 +325,22 @@
       },
       {
         "query": "what is one nation",
-        "value": 5
+        "value": 4
       },
       {
         "query": "one nation candidates",
-        "value": 5
+        "value": 4
+      },
+      {
+        "query": "one nation news",
+        "value": 3
       },
       {
         "query": "one nation polling",
         "value": 3
       },
       {
-        "query": "one nation news",
+        "query": "labor",
         "value": 3
       },
       {
@@ -318,11 +368,15 @@
         "value": 1
       },
       {
+        "query": "warren pickering",
+        "value": 1
+      },
+      {
         "query": "one nation poll",
         "value": 1
       },
       {
-        "query": "warren pickering",
+        "query": "one nation donation",
         "value": 1
       },
       {
@@ -345,27 +399,27 @@
     "rising": [
       {
         "query": "fire the liar one nation",
-        "value": 466750
+        "value": 467050
       },
       {
         "query": "one nation fundraiser",
-        "value": 169100
+        "value": 169500
       },
       {
         "query": "one nation protest",
-        "value": 88900
+        "value": 89350
       },
       {
         "query": "warren pickering one nation",
-        "value": 84450
+        "value": 83900
       },
       {
         "query": "one nation lower house projections",
-        "value": 51800
+        "value": 51900
       },
       {
         "query": "one nation donations fire the liar",
-        "value": 45600
+        "value": 45250
       },
       {
         "query": "fire the liar",
@@ -373,7 +427,11 @@
       },
       {
         "query": "warren pickering",
-        "value": 700
+        "value": 800
+      },
+      {
+        "query": "one nation donation",
+        "value": 750
       },
       {
         "query": "one nation candidates",
