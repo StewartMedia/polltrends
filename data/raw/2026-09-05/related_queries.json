@@ -7,7 +7,7 @@
       },
       {
         "query": "labor party",
-        "value": 42
+        "value": 43
       },
       {
         "query": "labour",
@@ -28,10 +28,6 @@
       {
         "query": "one nation",
         "value": 11
-      },
-      {
-        "query": "labour australia",
-        "value": 10
       },
       {
         "query": "liberal party",
@@ -55,10 +51,6 @@
       },
       {
         "query": "anthony albanese",
-        "value": 4
-      },
-      {
-        "query": "labor or labour",
         "value": 4
       },
       {
@@ -97,23 +89,23 @@
     "rising": [
       {
         "query": "labor government cgt changes",
-        "value": 89500
+        "value": 89450
       },
       {
         "query": "labor fundraiser",
-        "value": 79950
+        "value": 80600
       },
       {
         "query": "fire the liar",
-        "value": 65250
+        "value": 64100
       },
       {
         "query": "one nation versus labor membership",
-        "value": 54550
+        "value": 54500
       },
       {
         "query": "tanya plibersek",
-        "value": 1650
+        "value": 1100
       },
       {
         "query": "pauline hanson",
@@ -192,10 +184,6 @@
         "value": 7
       },
       {
-        "query": "the liberal party of australia",
-        "value": 6
-      },
-      {
         "query": "liberal leader australia",
         "value": 6
       },
@@ -234,6 +222,10 @@
       {
         "query": "labor party australia",
         "value": 3
+      },
+      {
+        "query": "liberal party policies",
+        "value": 3
       }
     ],
     "rising": [
@@ -243,11 +235,11 @@
       },
       {
         "query": "andrew bragg",
-        "value": 3550
+        "value": 3700
       },
       {
         "query": "james patterson liberal",
-        "value": 130
+        "value": 170
       },
       {
         "query": "greens party",
@@ -291,10 +283,6 @@
       },
       {
         "query": "greens policies",
-        "value": 8
-      },
-      {
-        "query": "the australian greens",
         "value": 8
       },
       {
@@ -360,20 +348,28 @@
       {
         "query": "greens political party",
         "value": 3
+      },
+      {
+        "query": "labor party",
+        "value": 2
       }
     ],
     "rising": [
       {
         "query": "david shoebridge greens",
-        "value": 59850
+        "value": 56650
       },
       {
         "query": "greens senators australia",
-        "value": 26350
+        "value": 25800
       },
       {
         "query": "pauline hanson",
         "value": 170
+      },
+      {
+        "query": "who are the greens",
+        "value": 50
       },
       {
         "query": "the greens policies",
@@ -479,11 +475,11 @@
     "rising": [
       {
         "query": "fire the liar",
-        "value": 676350
+        "value": 676850
       },
       {
         "query": "one nation fire the liar",
-        "value": 668600
+        "value": 669050
       },
       {
         "query": "one nation donations fire the liar",
@@ -491,7 +487,7 @@
       },
       {
         "query": "one nation fundraiser",
-        "value": 9900
+        "value": 9950
       },
       {
         "query": "one nation lower house projections",
