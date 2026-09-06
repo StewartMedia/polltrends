@@ -1,481 +1,433 @@
 {
   "ALP": {
-    "top": [
+    "party": "Labor",
+    "queries_analysed": 20,
+    "sentiment_counts": {
+      "positive": 1,
+      "negative": 2,
+      "neutral": 17
+    },
+    "sentiment_score": -0.05,
+    "classified_queries": [
       {
         "query": "labor",
-        "value": 100
+        "sentiment": "neutral"
       },
       {
         "query": "labor party",
-        "value": 42
+        "sentiment": "neutral"
       },
       {
         "query": "labour",
-        "value": 34
+        "sentiment": "neutral"
       },
       {
         "query": "labor australia",
-        "value": 21
+        "sentiment": "neutral"
       },
       {
         "query": "labour party",
-        "value": 12
+        "sentiment": "neutral"
       },
       {
         "query": "alp",
-        "value": 11
+        "sentiment": "neutral"
       },
       {
         "query": "one nation",
-        "value": 10
+        "sentiment": "neutral"
       },
       {
         "query": "albanese",
-        "value": 8
+        "sentiment": "negative"
       },
       {
         "query": "liberal party",
-        "value": 8
+        "sentiment": "neutral"
       },
       {
         "query": "labour party australia",
-        "value": 5
+        "sentiment": "neutral"
       },
       {
         "query": "one nation party",
-        "value": 5
+        "sentiment": "neutral"
       },
       {
         "query": "anthony albanese",
-        "value": 5
+        "sentiment": "negative"
       },
       {
         "query": "greens",
-        "value": 5
+        "sentiment": "neutral"
       },
       {
         "query": "liberal party australia",
-        "value": 4
+        "sentiment": "neutral"
       },
       {
         "query": "labor or labour",
-        "value": 4
+        "sentiment": "neutral"
       },
       {
         "query": "pauline hanson",
-        "value": 4
+        "sentiment": "neutral"
       },
       {
         "query": "labor policies",
-        "value": 3
+        "sentiment": "neutral"
       },
       {
         "query": "labor fundraiser",
-        "value": 2
+        "sentiment": "positive"
       },
       {
         "query": "fire the liar",
-        "value": 1
+        "sentiment": "neutral"
       },
       {
         "query": "labor government cgt changes",
-        "value": 1
-      }
-    ],
-    "rising": [
-      {
-        "query": "fire the liar",
-        "value": 74150
-      },
-      {
-        "query": "labor government cgt changes",
-        "value": 70550
-      },
-      {
-        "query": "labor fundraiser",
-        "value": 300
-      },
-      {
-        "query": "pauline hanson",
-        "value": 160
-      },
-      {
-        "query": "one nation party",
-        "value": 90
-      },
-      {
-        "query": "anthony albanese",
-        "value": 90
+        "sentiment": "neutral"
       }
     ]
   },
   "LIB": {
-    "top": [
+    "party": "Liberal",
+    "queries_analysed": 29,
+    "sentiment_counts": {
+      "positive": 5,
+      "negative": 0,
+      "neutral": 24
+    },
+    "sentiment_score": 0.17,
+    "classified_queries": [
       {
         "query": "liberal",
-        "value": 100
+        "sentiment": "neutral"
       },
       {
         "query": "liberal party",
-        "value": 78
+        "sentiment": "neutral"
       },
       {
         "query": "liberal australia",
-        "value": 28
+        "sentiment": "neutral"
       },
       {
         "query": "australia liberal party",
-        "value": 22
+        "sentiment": "neutral"
       },
       {
         "query": "liberal leader",
-        "value": 17
+        "sentiment": "positive"
       },
       {
         "query": "liberal party leader",
-        "value": 13
+        "sentiment": "positive"
       },
       {
         "query": "liberal party of australia",
-        "value": 11
+        "sentiment": "neutral"
       },
       {
         "query": "labour",
-        "value": 10
+        "sentiment": "neutral"
       },
       {
         "query": "labor",
-        "value": 10
+        "sentiment": "neutral"
       },
       {
         "query": "one nation",
-        "value": 9
+        "sentiment": "neutral"
       },
       {
         "query": "australian liberal party",
-        "value": 8
+        "sentiment": "neutral"
       },
       {
         "query": "leader of liberal party",
-        "value": 8
+        "sentiment": "positive"
       },
       {
         "query": "labour party",
-        "value": 7
+        "sentiment": "neutral"
       },
       {
         "query": "labor party",
-        "value": 7
+        "sentiment": "neutral"
       },
       {
         "query": "the liberal party of australia",
-        "value": 6
+        "sentiment": "neutral"
       },
       {
         "query": "liberal leader australia",
-        "value": 6
+        "sentiment": "positive"
       },
       {
         "query": "liberal policies",
-        "value": 4
+        "sentiment": "neutral"
       },
       {
         "query": "leader of the liberal party",
-        "value": 4
+        "sentiment": "positive"
       },
       {
         "query": "liberal candidate",
-        "value": 4
+        "sentiment": "neutral"
       },
       {
         "query": "angus taylor",
-        "value": 4
+        "sentiment": "neutral"
       },
       {
         "query": "greens",
-        "value": 4
+        "sentiment": "neutral"
       },
       {
         "query": "liberal party victoria",
-        "value": 3
+        "sentiment": "neutral"
       },
       {
         "query": "labor party australia",
-        "value": 3
+        "sentiment": "neutral"
       },
       {
         "query": "liberal national party",
-        "value": 3
+        "sentiment": "neutral"
       },
       {
         "query": "greens party",
-        "value": 3
-      }
-    ],
-    "rising": [
+        "sentiment": "neutral"
+      },
       {
         "query": "james patterson liberal",
-        "value": 35100
+        "sentiment": "neutral"
       },
       {
         "query": "michaelia cash",
-        "value": 2800
+        "sentiment": "neutral"
       },
       {
         "query": "andrew bragg",
-        "value": 800
+        "sentiment": "neutral"
       },
       {
         "query": "tony abbott liberal party strategy",
-        "value": 550
-      },
-      {
-        "query": "liberal party victoria",
-        "value": 40
-      },
-      {
-        "query": "greens",
-        "value": 40
-      },
-      {
-        "query": "greens party",
-        "value": 40
+        "sentiment": "neutral"
       }
     ]
   },
   "GRN": {
-    "top": [
+    "party": "Greens",
+    "queries_analysed": 25,
+    "sentiment_counts": {
+      "positive": 4,
+      "negative": 0,
+      "neutral": 21
+    },
+    "sentiment_score": 0.16,
+    "classified_queries": [
       {
         "query": "greens",
-        "value": 100
+        "sentiment": "neutral"
       },
       {
         "query": "the greens",
-        "value": 51
+        "sentiment": "neutral"
       },
       {
         "query": "greens party",
-        "value": 18
+        "sentiment": "neutral"
       },
       {
         "query": "australian greens",
-        "value": 18
+        "sentiment": "neutral"
       },
       {
         "query": "the greens party",
-        "value": 12
+        "sentiment": "neutral"
       },
       {
         "query": "the greens australia",
-        "value": 11
+        "sentiment": "neutral"
       },
       {
         "query": "labor",
-        "value": 9
+        "sentiment": "neutral"
       },
       {
         "query": "greens policies",
-        "value": 8
+        "sentiment": "neutral"
       },
       {
         "query": "one nation",
-        "value": 7
+        "sentiment": "neutral"
       },
       {
         "query": "greens leader",
-        "value": 7
+        "sentiment": "positive"
       },
       {
         "query": "greens party australia",
-        "value": 6
+        "sentiment": "neutral"
       },
       {
         "query": "labour",
-        "value": 6
+        "sentiment": "neutral"
       },
       {
         "query": "green",
-        "value": 5
+        "sentiment": "neutral"
       },
       {
         "query": "greens senator",
-        "value": 5
+        "sentiment": "neutral"
       },
       {
         "query": "liberal",
-        "value": 5
+        "sentiment": "neutral"
       },
       {
         "query": "australian greens party",
-        "value": 5
+        "sentiment": "neutral"
       },
       {
         "query": "greens policy",
-        "value": 5
+        "sentiment": "positive"
       },
       {
         "query": "the greens party australia",
-        "value": 4
+        "sentiment": "neutral"
       },
       {
         "query": "the greens policies",
-        "value": 4
+        "sentiment": "neutral"
       },
       {
         "query": "leader of greens",
-        "value": 4
+        "sentiment": "positive"
       },
       {
         "query": "liberal party",
-        "value": 3
+        "sentiment": "neutral"
       },
       {
         "query": "vote greens",
-        "value": 3
+        "sentiment": "neutral"
       },
       {
         "query": "pauline hanson",
-        "value": 3
+        "sentiment": "neutral"
       },
       {
         "query": "leader of the greens",
-        "value": 3
+        "sentiment": "positive"
       },
       {
         "query": "greens political party",
-        "value": 3
-      }
-    ],
-    "rising": [
-      {
-        "query": "pauline hanson",
-        "value": 180
+        "sentiment": "neutral"
       }
     ]
   },
   "PHON": {
-    "top": [
+    "party": "One Nation",
+    "queries_analysed": 22,
+    "sentiment_counts": {
+      "positive": 4,
+      "negative": 1,
+      "neutral": 17
+    },
+    "sentiment_score": 0.14,
+    "classified_queries": [
       {
         "query": "one nation",
-        "value": 100
+        "sentiment": "neutral"
       },
       {
         "query": "one nation australia",
-        "value": 8
+        "sentiment": "neutral"
       },
       {
         "query": "fire the liar",
-        "value": 8
+        "sentiment": "neutral"
       },
       {
         "query": "one nation fire the liar",
-        "value": 8
+        "sentiment": "neutral"
       },
       {
         "query": "pauline hanson",
-        "value": 8
+        "sentiment": "neutral"
       },
       {
         "query": "one nation policies",
-        "value": 5
+        "sentiment": "neutral"
       },
       {
         "query": "what is one nation",
-        "value": 4
+        "sentiment": "neutral"
       },
       {
         "query": "one nation news",
-        "value": 3
+        "sentiment": "positive"
       },
       {
         "query": "one nation polling",
-        "value": 3
+        "sentiment": "neutral"
       },
       {
         "query": "one nation win",
-        "value": 3
+        "sentiment": "positive"
       },
       {
         "query": "one nation fundraiser",
-        "value": 2
+        "sentiment": "positive"
       },
       {
         "query": "one nation candidates",
-        "value": 2
+        "sentiment": "neutral"
       },
       {
         "query": "one nation polls",
-        "value": 2
+        "sentiment": "neutral"
       },
       {
         "query": "one nation leader",
-        "value": 2
+        "sentiment": "positive"
       },
       {
         "query": "one nation donation",
-        "value": 1
+        "sentiment": "neutral"
       },
       {
         "query": "one nation poll",
-        "value": 1
+        "sentiment": "neutral"
       },
       {
         "query": "liberal party",
-        "value": 1
+        "sentiment": "neutral"
       },
       {
         "query": "pauline hanson party",
-        "value": 1
+        "sentiment": "neutral"
       },
       {
         "query": "one nation reddit",
-        "value": 1
+        "sentiment": "neutral"
       },
       {
         "query": "one nation protest",
-        "value": 1
+        "sentiment": "negative"
       },
       {
         "query": "one nation lower house projections",
-        "value": 1
+        "sentiment": "neutral"
       },
       {
         "query": "one nation donations fire the liar",
-        "value": 1
-      }
-    ],
-    "rising": [
-      {
-        "query": "fire the liar",
-        "value": 689000
-      },
-      {
-        "query": "one nation fundraiser",
-        "value": 206500
-      },
-      {
-        "query": "one nation lower house projections",
-        "value": 73550
-      },
-      {
-        "query": "one nation donations fire the liar",
-        "value": 54550
-      },
-      {
-        "query": "one nation fire the liar",
-        "value": 10000
-      },
-      {
-        "query": "one nation protest",
-        "value": 1250
-      },
-      {
-        "query": "one nation donation",
-        "value": 1100
-      },
-      {
-        "query": "pauline hanson",
-        "value": 50
+        "sentiment": "neutral"
       }
     ]
   }
