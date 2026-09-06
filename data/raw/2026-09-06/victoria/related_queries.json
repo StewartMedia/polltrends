@@ -1,61 +1,7 @@
 {
   "ALP": {
-    "top": [
-      {
-        "query": "labor",
-        "value": 100
-      },
-      {
-        "query": "labor party",
-        "value": 41
-      },
-      {
-        "query": "labour",
-        "value": 32
-      },
-      {
-        "query": "one nation",
-        "value": 10
-      },
-      {
-        "query": "alp",
-        "value": 10
-      },
-      {
-        "query": "liberal party",
-        "value": 9
-      },
-      {
-        "query": "labour party australia",
-        "value": 5
-      },
-      {
-        "query": "anthony albanese",
-        "value": 4
-      },
-      {
-        "query": "greens",
-        "value": 4
-      },
-      {
-        "query": "pauline hanson",
-        "value": 4
-      },
-      {
-        "query": "labor policies",
-        "value": 2
-      }
-    ],
-    "rising": [
-      {
-        "query": "anthony albanese",
-        "value": 90
-      },
-      {
-        "query": "pauline hanson",
-        "value": 80
-      }
-    ]
+    "top": [],
+    "rising": []
   },
   "LIB": {
     "top": [
@@ -64,16 +10,28 @@
         "value": 100
       },
       {
-        "query": "liberal party",
-        "value": 74
+        "query": "liberal australia",
+        "value": 25
       },
       {
-        "query": "liberal party australia",
-        "value": 18
+        "query": "liberal party leader",
+        "value": 11
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 11
+      },
+      {
+        "query": "labour",
+        "value": 9
       },
       {
         "query": "one nation",
         "value": 9
+      },
+      {
+        "query": "liberal party victoria",
+        "value": 8
       },
       {
         "query": "leader of liberal party",
@@ -88,16 +46,8 @@
         "value": 6
       },
       {
-        "query": "labour party",
-        "value": 6
-      },
-      {
-        "query": "leader of the liberal party",
+        "query": "liberal policies",
         "value": 5
-      },
-      {
-        "query": "liberals",
-        "value": 4
       },
       {
         "query": "liberal party policies",
@@ -116,33 +66,114 @@
         "value": 3
       },
       {
+        "query": "greens",
+        "value": 3
+      },
+      {
         "query": "liberal leaders",
         "value": 3
       },
       {
         "query": "moira deeming",
         "value": 2
+      },
+      {
+        "query": "liberal party leader victoria",
+        "value": 2
+      },
+      {
+        "query": "liberal party news",
+        "value": 1
       }
     ],
     "rising": [
       {
         "query": "moira deeming",
-        "value": 180250
+        "value": 180200
       },
       {
         "query": "pauline hanson",
         "value": 200
+      },
+      {
+        "query": "liberal party leader victoria",
+        "value": 60
+      },
+      {
+        "query": "labour",
+        "value": 50
+      },
+      {
+        "query": "liberal party victoria",
+        "value": 50
+      },
+      {
+        "query": "greens",
+        "value": 40
       }
     ]
   },
   "GRN": {
     "top": [
       {
-        "query": "greens",
+        "query": "the greens",
         "value": 100
+      },
+      {
+        "query": "the greens party",
+        "value": 22
+      },
+      {
+        "query": "greens policies",
+        "value": 19
+      },
+      {
+        "query": "one nation",
+        "value": 13
+      },
+      {
+        "query": "labour",
+        "value": 12
+      },
+      {
+        "query": "australian greens party",
+        "value": 10
+      },
+      {
+        "query": "the greens policies",
+        "value": 10
+      },
+      {
+        "query": "liberal party",
+        "value": 8
+      },
+      {
+        "query": "leader of the greens",
+        "value": 7
+      },
+      {
+        "query": "pauline hanson",
+        "value": 4
       }
     ],
-    "rising": []
+    "rising": [
+      {
+        "query": "greens policies",
+        "value": 100
+      },
+      {
+        "query": "labour",
+        "value": 80
+      },
+      {
+        "query": "pauline hanson",
+        "value": 70
+      },
+      {
+        "query": "the greens policies",
+        "value": 70
+      }
+    ]
   },
   "PHON": {
     "top": [
@@ -163,11 +194,11 @@
         "value": 6
       },
       {
-        "query": "one nation policies",
+        "query": "one nation fire the liar",
         "value": 6
       },
       {
-        "query": "one nation fire the liar",
+        "query": "one nation policies",
         "value": 6
       },
       {
@@ -183,7 +214,11 @@
         "value": 3
       },
       {
-        "query": "one nation polling",
+        "query": "one nation donations",
+        "value": 3
+      },
+      {
+        "query": "one nation policy",
         "value": 3
       },
       {
@@ -191,27 +226,23 @@
         "value": 3
       },
       {
-        "query": "labour",
-        "value": 2
-      },
-      {
-        "query": "one nation polls",
-        "value": 2
-      },
-      {
         "query": "one nation fundraiser",
         "value": 2
+      },
+      {
+        "query": "what is one nation australia",
+        "value": 1
       },
       {
         "query": "liberal party",
         "value": 1
       },
       {
-        "query": "warren pickering",
+        "query": "greens",
         "value": 1
       },
       {
-        "query": "one nation reddit",
+        "query": "warren pickering",
         "value": 1
       },
       {
@@ -223,7 +254,7 @@
         "value": 1
       },
       {
-        "query": "one nation protest",
+        "query": "one nation donate",
         "value": 1
       },
       {
@@ -231,30 +262,58 @@
         "value": 1
       },
       {
-        "query": "one nation donations fire the liar",
-        "value": 1
+        "query": "donate to one nation",
+        "value": 0
+      },
+      {
+        "query": "fire the lair one nation",
+        "value": 0
+      },
+      {
+        "query": "fire the lair",
+        "value": 0
+      },
+      {
+        "query": "what are pauline hanson's policies",
+        "value": 0
       }
     ],
     "rising": [
       {
         "query": "fire the liar",
-        "value": 491400
+        "value": 491300
       },
       {
         "query": "one nation donation",
-        "value": 97800
+        "value": 97700
       },
       {
-        "query": "one nation protest",
-        "value": 84650
+        "query": "one nation donate",
+        "value": 79550
       },
       {
         "query": "one nation lower house projections",
         "value": 58950
       },
       {
-        "query": "one nation donations fire the liar",
-        "value": 58400
+        "query": "donate to one nation",
+        "value": 42350
+      },
+      {
+        "query": "fire the lair one nation",
+        "value": 26850
+      },
+      {
+        "query": "fire the lair",
+        "value": 26350
+      },
+      {
+        "query": "what are pauline hanson's policies",
+        "value": 20150
+      },
+      {
+        "query": "one nation budget impact",
+        "value": 13150
       },
       {
         "query": "one nation fire the liar",
@@ -263,6 +322,10 @@
       {
         "query": "one nation fundraiser",
         "value": 2400
+      },
+      {
+        "query": "one nation donations",
+        "value": 1250
       },
       {
         "query": "warren pickering",
@@ -279,10 +342,6 @@
       {
         "query": "pauline hanson",
         "value": 50
-      },
-      {
-        "query": "labour",
-        "value": 40
       },
       {
         "query": "pauline hanson one nation",
