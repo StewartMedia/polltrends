@@ -1,36 +1,36 @@
 [
   {
-    "date": "2026-08-29",
+    "date": "2026-08-30T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 50,
-    "rolling_avg": 12.1,
+    "value": 71,
+    "rolling_avg": 17.3,
     "ratio": 4.1,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-30",
+    "date": "2026-08-29T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 74,
-    "rolling_avg": 18.0,
-    "ratio": 4.1,
+    "value": 47,
+    "rolling_avg": 12.0,
+    "ratio": 3.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-06-23",
+    "date": "2026-06-23T00:00:00",
     "party_code": "GRN",
     "party_name": "Greens",
-    "value": 10,
+    "value": 11,
     "rolling_avg": 3.1,
-    "ratio": 3.2,
+    "ratio": 3.5,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-13",
+    "date": "2026-08-13T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 30,
@@ -40,12 +40,12 @@
     "news": []
   },
   {
-    "date": "2026-08-03",
+    "date": "2026-08-03T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 30,
-    "rolling_avg": 12.0,
-    "ratio": 2.5,
+    "value": 31,
+    "rolling_avg": 11.9,
+    "ratio": 2.6,
     "explanation": "Significant spike in search interest",
     "news": []
   }
