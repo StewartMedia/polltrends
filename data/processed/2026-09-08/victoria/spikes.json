@@ -1,0 +1,85 @@
+[
+  {
+    "date": "2026-06-23",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 11,
+    "rolling_avg": 1.7,
+    "ratio": 6.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-30",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 75,
+    "rolling_avg": 18.0,
+    "ratio": 4.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-03",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 78,
+    "rolling_avg": 20.0,
+    "ratio": 3.9,
+    "explanation": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
+    "news": [
+      {
+        "title": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYnFMaDJTWmYydUVwLTBhbXFQbXFoQ2NoM3lvbFFuX3dfWWdfSXkxRGhWVWNERDJjQnVYNmo0d1gzZHhSOTQyTFVhbnFMb2RMMWIyamJWUDRBdUxTbzJ5dUE0WnJLQU5KOW56ekZCQkRLTzNBcmNWTERyV0dVU2FRS2ZuMC1HR1ZGbFJaV2JWaU1iaXhXRXRUa0tQVDFxYkVISFpQb2Y0cXZHNkFiR2IxNUxidXM5OVByUFJ2VmVLcnotaU5wS1hpQWRNUmU?oc=5",
+        "date": "2026-08-04"
+      },
+      {
+        "title": "Protest at One Nation fundraiser after Vic leader, candidates announced",
+        "source": "abc.net.au",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOR0x5eld6UVZ4UlFYSXlTNlltUEgyYWM1UHQ2dFVvRElhZEV5S2RZYjEwWXhSanJEOHFpTkk4dGtQLURicEg2SmN5VHZJcGs0LW44aEI2WFdEXzJiRm9tZDQwZDNYenQyeUFDWjFtdThUcFcwM1JpbXhhMHl3bjgyLXhTUlFUbDN6VkZRUExoLXc?oc=5",
+        "date": "2026-08-02"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-28",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 19,
+    "rolling_avg": 5.1,
+    "ratio": 3.7,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-27",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 11,
+    "rolling_avg": 3.6,
+    "ratio": 3.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-13",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 45,
+    "rolling_avg": 15.1,
+    "ratio": 3.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-29",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 42,
+    "rolling_avg": 13.9,
+    "ratio": 3.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]
