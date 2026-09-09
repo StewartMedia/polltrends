@@ -38,7 +38,7 @@
         "value": 5
       },
       {
-        "query": "one nation party",
+        "query": "liberal party australia",
         "value": 4
       },
       {
@@ -65,11 +65,11 @@
     "rising": [
       {
         "query": "labor fundraiser",
-        "value": 67600
+        "value": 67300
       },
       {
         "query": "labor policies",
-        "value": 120
+        "value": 130
       },
       {
         "query": "anthony albanese",
@@ -120,6 +120,10 @@
         "value": 9
       },
       {
+        "query": "labour",
+        "value": 8
+      },
+      {
         "query": "leader of liberal party",
         "value": 7
       },
@@ -164,10 +168,6 @@
         "value": 3
       },
       {
-        "query": "liberal candidates",
-        "value": 2
-      },
-      {
         "query": "james patterson liberal",
         "value": 0
       }
@@ -175,7 +175,7 @@
     "rising": [
       {
         "query": "james patterson liberal",
-        "value": 7200
+        "value": 4500
       },
       {
         "query": "the greens",
@@ -218,10 +218,6 @@
         "value": 9
       },
       {
-        "query": "labor",
-        "value": 9
-      },
-      {
         "query": "the australian greens",
         "value": 8
       },
@@ -250,6 +246,10 @@
         "value": 4
       },
       {
+        "query": "labour",
+        "value": 4
+      },
+      {
         "query": "greens senator",
         "value": 4
       },
@@ -262,19 +262,23 @@
         "value": 2
       },
       {
+        "query": "greens candidates",
+        "value": 2
+      },
+      {
         "query": "leader of the greens",
         "value": 2
       },
       {
-        "query": "greens candidates",
-        "value": 2
+        "query": "adam bandt",
+        "value": 1
       },
       {
         "query": "greens senators",
         "value": 1
       },
       {
-        "query": "adam bandt",
+        "query": "one nation policies",
         "value": 1
       }
     ],
@@ -289,11 +293,7 @@
       },
       {
         "query": "liberal party",
-        "value": 90
-      },
-      {
-        "query": "labor",
-        "value": 60
+        "value": 100
       },
       {
         "query": "australian greens party",
@@ -403,11 +403,11 @@
     "rising": [
       {
         "query": "fire the liar",
-        "value": 481350
+        "value": 484150
       },
       {
         "query": "fire the liar one nation",
-        "value": 469800
+        "value": 472300
       },
       {
         "query": "one nation donation",
@@ -415,11 +415,11 @@
       },
       {
         "query": "one nation lower house projections",
-        "value": 63200
+        "value": 63950
       },
       {
         "query": "one nation donations fire the liar",
-        "value": 41600
+        "value": 42150
       },
       {
         "query": "one nation fundraiser",
