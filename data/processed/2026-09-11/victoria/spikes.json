@@ -1,0 +1,123 @@
+[
+  {
+    "date": "2026-06-23",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 11,
+    "rolling_avg": 0.7,
+    "ratio": 15.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-28",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 10,
+    "rolling_avg": 1.0,
+    "ratio": 10.0,
+    "explanation": "Moira Deeming quits the Liberal party after being dropped as a candidate",
+    "news": [
+      {
+        "title": "Moira Deeming quits the Liberal party after being dropped as a candidate",
+        "source": "OUTinPerth",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMDZDenpIMmFPbjJhQ21VNEFheDRkU1VZRF9xd2FWYVBSQ2VYZ2pIdlBhZTlMb0dPUGhDTnU5THlBLW9HWEhwc3Nod3Brb0hKLUxOYVQxVFpEWUEwMjFMakpROGRGOHhrQk1sbDhYYnFqQ3ZsNy15OUpxSWJpLXVMYnl1bV81Ykl2UXp5bFlGLW1tbFMwYTBST0pXT2hTc2NkcWc?oc=5",
+        "date": "2026-07-28"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-03",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 77,
+    "rolling_avg": 18.7,
+    "ratio": 4.1,
+    "explanation": "Protest at One Nation fundraiser after Vic leader, candidates announced",
+    "news": [
+      {
+        "title": "Protest at One Nation fundraiser after Vic leader, candidates announced",
+        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOR0x5eld6UVZ4UlFYSXlTNlltUEgyYWM1UHQ2dFVvRElhZEV5S2RZYjEwWXhSanJEOHFpTkk4dGtQLURicEg2SmN5VHZJcGs0LW44aEI2WFdEXzJiRm9tZDQwZDNYenQyeUFDWjFtdThUcFcwM1JpbXhhMHl3bjgyLXhTUlFUbDN6VkZRUExoLXc?oc=5",
+        "date": "2026-08-02"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-30",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 74,
+    "rolling_avg": 18.3,
+    "ratio": 4.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-26",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 2.6,
+    "ratio": 3.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-01",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 11,
+    "rolling_avg": 2.9,
+    "ratio": 3.9,
+    "explanation": "Victorian Liberals can't keep on track even with a prize in sight",
+    "news": [
+      {
+        "title": "Victorian Liberals can't keep on track even with a prize in sight",
+        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWGpqekY3eDRzaTN4MjBSajRMVGhSeURxZ2dxdFRUNS1kdWh1RHZzSERzU1VzRUpsajJrTzNFM0FBNV9jZlNmem9salpzWndZeEZud0FIejFLZW1wWkM4bThadUc3eTdtX0FCM1pLYTZvam1JSE9nVy1zQ3Nxc2x3X1JEVk5RWWdxU3J6dUdKaDh5LUtuUWNR?oc=5",
+        "date": "2026-06-30"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-27",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 15,
+    "rolling_avg": 4.0,
+    "ratio": 3.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-29",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 43,
+    "rolling_avg": 13.7,
+    "ratio": 3.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-13",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 46,
+    "rolling_avg": 15.3,
+    "ratio": 3.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-28",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 18,
+    "rolling_avg": 6.1,
+    "ratio": 2.9,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]
