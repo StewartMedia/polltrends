@@ -1,131 +1,101 @@
 [
   {
-    "date": "2026-06-23",
+    "date": "2026-07-20T00:00:00",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 12,
+    "rolling_avg": 1.0,
+    "ratio": 12.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-01T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 1.0,
+    "ratio": 10.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-26T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 12,
+    "rolling_avg": 1.6,
+    "ratio": 7.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-27T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 17,
+    "rolling_avg": 3.3,
+    "ratio": 5.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-23T00:00:00",
     "party_code": "GRN",
     "party_name": "Greens",
-    "value": 15,
-    "rolling_avg": 0.9,
-    "ratio": 17.5,
-    "explanation": "Victorian Greens Demand Halt on New Large Data Centres",
-    "news": [
-      {
-        "title": "Victorian Greens Demand Halt on New Large Data Centres",
-        "source": "Mirage News",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNVBZZXEtNmdsbTZwemo2VjZYOEo4ZTJXZjBud1plQkF3d0RxSE9Rcy1abjRsTXpwYTNHZFh2UmhfcHBDWXdRTlZHM182UVJhbUxNOVMxRVNxdC1QSTBCVDMwMGRVNmN3NHhGVDFZQXpkcFQxbFhlRGY1ZEFoOHNjcFFscE1iWmtNSEE?oc=5",
-        "date": "2026-06-24"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-27",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 11,
-    "rolling_avg": 0.9,
-    "ratio": 12.8,
+    "value": 14,
+    "rolling_avg": 3.0,
+    "ratio": 4.7,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-07-10",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 11,
-    "rolling_avg": 1.0,
-    "ratio": 11.0,
+    "date": "2026-07-28T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 25,
+    "rolling_avg": 5.7,
+    "ratio": 4.4,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-30",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 95,
-    "rolling_avg": 22.4,
-    "ratio": 4.2,
-    "explanation": "Soft judges, youth crime, corruption: What One Nation\u2019s new Vic leader will pressure Libs on",
-    "news": [
-      {
-        "title": "Soft judges, youth crime, corruption: What One Nation\u2019s new Vic leader will pressure Libs on",
-        "source": "Herald Sun",
-        "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPX1Y0LWxLNjJHaS1wXzRwdXFKd01aNW02Rzc4U1h2SzdWWTVIMDZ6cXYxbWJTS2VNdlBsY1lNVkoxV2JhSDdvVTNBdnpPQ0xSV2l3UERRZ1NpUVo4dWJPanRVbFNRTXdBNmpBNUxNX2FNRDBfcl9aMzU5aGpYcHN6UlNWWUpnZ3JIdmZ0dDJlSXAxc1FfSlE5OG92M05pU3IwUkFUbDF0WjFVcHdkeklUVjlYMWZYNDlQMi1TVFRxRGxWUzZKTGt4UXdTQnlublZnY09xdVRnTVVHNUVINDFxUEJxQ09vTXNoY3p6dVpqdVdtR0VXMzVaV2VGcDRPa3E4UU1pdWM0T2FXN1F3OTBtMjR3c2RFQUFpOUpNbC13?oc=5",
-        "date": "2026-08-28"
-      }
-    ]
+    "date": "2026-06-22T00:00:00",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 13,
+    "rolling_avg": 3.1,
+    "ratio": 4.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
-    "date": "2026-08-03",
+    "date": "2026-08-03T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 25.6,
-    "ratio": 3.9,
-    "explanation": "Protest at One Nation fundraiser after Vic leader, candidates announced",
-    "news": [
-      {
-        "title": "Protest at One Nation fundraiser after Vic leader, candidates announced",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOR0x5eld6UVZ4UlFYSXlTNlltUEgyYWM1UHQ2dFVvRElhZEV5S2RZYjEwWXhSanJEOHFpTkk4dGtQLURicEg2SmN5VHZJcGs0LW44aEI2WFdEXzJiRm9tZDQwZDNYenQyeUFDWjFtdThUcFcwM1JpbXhhMHl3bjgyLXhTUlFUbDN6VkZRUExoLXc?oc=5",
-        "date": "2026-08-02"
-      },
-      {
-        "title": "One Nation Victoria leader to run for Pakenham",
-        "source": "Pakenham Gazette",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeHpjaFFiZkJBdlJrRTY3YXNWQS1lNUhUM0JXU3VGRExXOFI2R3JqcnpVVUt0bS1xVEJsaENhWEZBMmFaakx3eDFTT0d3cUpJSHA2Nm1HYlBLOUtGZHpSSHUyS1FOUFZCVHRuSjNSMFdGclYxZzE2MXhEQU9mN0wtU3NWc2xmUTFyODJBM3JjbmRidUZUdEhvMC1n?oc=5",
-        "date": "2026-08-03"
-      },
-      {
-        "title": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYnFMaDJTWmYydUVwLTBhbXFQbXFoQ2NoM3lvbFFuX3dfWWdfSXkxRGhWVWNERDJjQnVYNmo0d1gzZHhSOTQyTFVhbnFMb2RMMWIyamJWUDRBdUxTbzJ5dUE0WnJLQU5KOW56ekZCQkRLTzNBcmNWTERyV0dVU2FRS2ZuMC1HR1ZGbFJaV2JWaU1iaXhXRXRUa0tQVDFxYkVISFpQb2Y0cXZHNkFiR2IxNUxidXM5OVByUFJ2VmVLcnotaU5wS1hpQWRNUmU?oc=5",
-        "date": "2026-08-04"
-      }
-    ]
+    "rolling_avg": 25.1,
+    "ratio": 4.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
-    "date": "2026-07-27",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 21,
-    "rolling_avg": 5.6,
+    "date": "2026-08-30T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 94,
+    "rolling_avg": 24.9,
     "ratio": 3.8,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-29",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 60,
-    "rolling_avg": 16.0,
-    "ratio": 3.8,
-    "explanation": "Soft judges, youth crime, corruption: What One Nation\u2019s new Vic leader will pressure Libs on",
-    "news": [
-      {
-        "title": "Soft judges, youth crime, corruption: What One Nation\u2019s new Vic leader will pressure Libs on",
-        "source": "Herald Sun",
-        "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPX1Y0LWxLNjJHaS1wXzRwdXFKd01aNW02Rzc4U1h2SzdWWTVIMDZ6cXYxbWJTS2VNdlBsY1lNVkoxV2JhSDdvVTNBdnpPQ0xSV2l3UERRZ1NpUVo4dWJPanRVbFNRTXdBNmpBNUxNX2FNRDBfcl9aMzU5aGpYcHN6UlNWWUpnZ3JIdmZ0dDJlSXAxc1FfSlE5OG92M05pU3IwUkFUbDF0WjFVcHdkeklUVjlYMWZYNDlQMi1TVFRxRGxWUzZKTGt4UXdTQnlublZnY09xdVRnTVVHNUVINDFxUEJxQ09vTXNoY3p6dVpqdVdtR0VXMzVaV2VGcDRPa3E4UU1pdWM0T2FXN1F3OTBtMjR3c2RFQUFpOUpNbC13?oc=5",
-        "date": "2026-08-28"
-      }
-    ]
-  },
-  {
-    "date": "2026-08-13",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 54,
-    "rolling_avg": 18.7,
-    "ratio": 2.9,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-07-28",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 24,
-    "rolling_avg": 8.6,
-    "ratio": 2.8,
+    "date": "2026-06-25T00:00:00",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 10,
+    "rolling_avg": 2.9,
+    "ratio": 3.5,
     "explanation": "Significant spike in search interest",
     "news": []
   }
