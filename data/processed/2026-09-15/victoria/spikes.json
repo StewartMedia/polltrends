@@ -1,0 +1,147 @@
+[
+  {
+    "date": "2026-08-17",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 1.1,
+    "ratio": 8.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-06-23",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 14,
+    "rolling_avg": 3.1,
+    "ratio": 4.5,
+    "explanation": "Victorian Greens Demand Halt on New Large Data Centres",
+    "news": [
+      {
+        "title": "Victorian Greens Demand Halt on New Large Data Centres",
+        "source": "Mirage News",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNVBZZXEtNmdsbTZwemo2VjZYOEo4ZTJXZjBud1plQkF3d0RxSE9Rcy1abjRsTXpwYTNHZFh2UmhfcHBDWXdRTlZHM182UVJhbUxNOVMxRVNxdC1QSTBCVDMwMGRVNmN3NHhGVDFZQXpkcFQxbFhlRGY1ZEFoOHNjcFFscE1iWmtNSEE?oc=5",
+        "date": "2026-06-24"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-30",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 100,
+    "rolling_avg": 22.4,
+    "ratio": 4.5,
+    "explanation": "Soft judges, youth crime, corruption: What One Nation\u2019s new Vic leader will pressure Libs on",
+    "news": [
+      {
+        "title": "Soft judges, youth crime, corruption: What One Nation\u2019s new Vic leader will pressure Libs on",
+        "source": "Herald Sun",
+        "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPX1Y0LWxLNjJHaS1wXzRwdXFKd01aNW02Rzc4U1h2SzdWWTVIMDZ6cXYxbWJTS2VNdlBsY1lNVkoxV2JhSDdvVTNBdnpPQ0xSV2l3UERRZ1NpUVo4dWJPanRVbFNRTXdBNmpBNUxNX2FNRDBfcl9aMzU5aGpYcHN6UlNWWUpnZ3JIdmZ0dDJlSXAxc1FfSlE5OG92M05pU3IwUkFUbDF0WjFVcHdkeklUVjlYMWZYNDlQMi1TVFRxRGxWUzZKTGt4UXdTQnlublZnY09xdVRnTVVHNUVINDFxUEJxQ09vTXNoY3p6dVpqdVdtR0VXMzVaV2VGcDRPa3E4UU1pdWM0T2FXN1F3OTBtMjR3c2RFQUFpOUpNbC13?oc=5",
+        "date": "2026-08-28"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-03",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 92,
+    "rolling_avg": 22.7,
+    "ratio": 4.1,
+    "explanation": "Protest at One Nation fundraiser after Vic leader, candidates announced",
+    "news": [
+      {
+        "title": "Protest at One Nation fundraiser after Vic leader, candidates announced",
+        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOR0x5eld6UVZ4UlFYSXlTNlltUEgyYWM1UHQ2dFVvRElhZEV5S2RZYjEwWXhSanJEOHFpTkk4dGtQLURicEg2SmN5VHZJcGs0LW44aEI2WFdEXzJiRm9tZDQwZDNYenQyeUFDWjFtdThUcFcwM1JpbXhhMHl3bjgyLXhTUlFUbDN6VkZRUExoLXc?oc=5",
+        "date": "2026-08-03"
+      },
+      {
+        "title": "I was allowed into, and quickly pushed out of, One Nation\u2019s \u2018Meet The Candidates\u2019 event",
+        "source": "Crikey",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxObFZJYTlacXJiMy0xMjdTNTNWbG80azVsNnhBaG1wVFRpbEhfcWQyY0RxSWVfdDcyZVd1cnNEal9jTW90S3Nkb0MtU0VId2tlRzZzM3BtQ1dyNmhMVlQ1aUJ2d1g4cG9qVThZWTVRdG84dTA3bmNJUmRFYjR4cTVGUjd1cXRTenJMUUJMTWhTNFg1NllMbEQ0?oc=5",
+        "date": "2026-08-04"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-27",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 16,
+    "rolling_avg": 4.3,
+    "ratio": 3.7,
+    "explanation": "The Victorian Labor government had many successes. But it has also had its failures \u2013 and these have lost the voters",
+    "news": [
+      {
+        "title": "The Victorian Labor government had many successes. But it has also had its failures \u2013 and these have lost the voters",
+        "source": "The Conversation",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQUHdOV1FkX1llcVJlZkNRTmxnWGhHdVltdERFXzA4eS12YXMyRG10WTVIM3ltemZMTGhPbU91eDFKZnFLa1JQaDdnZC1oVTRzNTlhQjZoekx0OEJNYUhSY1pXZnRvaDVtY21jcHBiVDdrWmVCVzZVN2M4MkRNUzN5MVNlOEcyV1UzeU9sdVNqMXBwUTFZUmhQbTViRmpkUFZzbHkzQU1uZmFxSmZpZ29fcW10dlBDMDV2bDJCR2R6RXB2bk9ILXRhempGdmVPX3Fld1JKV05tWTZjbXJXcmpnMWF3?oc=5",
+        "date": "2026-07-27"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-26",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 10,
+    "rolling_avg": 2.9,
+    "ratio": 3.5,
+    "explanation": "The Victorian Labor government had many successes. But it has also had its failures \u2013 and these have lost the voters",
+    "news": [
+      {
+        "title": "The Victorian Labor government had many successes. But it has also had its failures \u2013 and these have lost the voters",
+        "source": "The Conversation",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQUHdOV1FkX1llcVJlZkNRTmxnWGhHdVltdERFXzA4eS12YXMyRG10WTVIM3ltemZMTGhPbU91eDFKZnFLa1JQaDdnZC1oVTRzNTlhQjZoekx0OEJNYUhSY1pXZnRvaDVtY21jcHBiVDdrWmVCVzZVN2M4MkRNUzN5MVNlOEcyV1UzeU9sdVNqMXBwUTFZUmhQbTViRmpkUFZzbHkzQU1uZmFxSmZpZ29fcW10dlBDMDV2bDJCR2R6RXB2bk9ILXRhempGdmVPX3Fld1JKV05tWTZjbXJXcmpnMWF3?oc=5",
+        "date": "2026-07-27"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-28",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 23,
+    "rolling_avg": 6.6,
+    "ratio": 3.5,
+    "explanation": "The Victorian Labor government had many successes. But it has also had its failures \u2013 and these have lost the voters",
+    "news": [
+      {
+        "title": "The Victorian Labor government had many successes. But it has also had its failures \u2013 and these have lost the voters",
+        "source": "The Conversation",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQUHdOV1FkX1llcVJlZkNRTmxnWGhHdVltdERFXzA4eS12YXMyRG10WTVIM3ltemZMTGhPbU91eDFKZnFLa1JQaDdnZC1oVTRzNTlhQjZoekx0OEJNYUhSY1pXZnRvaDVtY21jcHBiVDdrWmVCVzZVN2M4MkRNUzN5MVNlOEcyV1UzeU9sdVNqMXBwUTFZUmhQbTViRmpkUFZzbHkzQU1uZmFxSmZpZ29fcW10dlBDMDV2bDJCR2R6RXB2bk9ILXRhempGdmVPX3Fld1JKV05tWTZjbXJXcmpnMWF3?oc=5",
+        "date": "2026-07-27"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-29",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 56,
+    "rolling_avg": 16.6,
+    "ratio": 3.4,
+    "explanation": "Soft judges, youth crime, corruption: What One Nation\u2019s new Vic leader will pressure Libs on",
+    "news": [
+      {
+        "title": "Soft judges, youth crime, corruption: What One Nation\u2019s new Vic leader will pressure Libs on",
+        "source": "Herald Sun",
+        "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPX1Y0LWxLNjJHaS1wXzRwdXFKd01aNW02Rzc4U1h2SzdWWTVIMDZ6cXYxbWJTS2VNdlBsY1lNVkoxV2JhSDdvVTNBdnpPQ0xSV2l3UERRZ1NpUVo4dWJPanRVbFNRTXdBNmpBNUxNX2FNRDBfcl9aMzU5aGpYcHN6UlNWWUpnZ3JIdmZ0dDJlSXAxc1FfSlE5OG92M05pU3IwUkFUbDF0WjFVcHdkeklUVjlYMWZYNDlQMi1TVFRxRGxWUzZKTGt4UXdTQnlublZnY09xdVRnTVVHNUVINDFxUEJxQ09vTXNoY3p6dVpqdVdtR0VXMzVaV2VGcDRPa3E4UU1pdWM0T2FXN1F3OTBtMjR3c2RFQUFpOUpNbC13?oc=5",
+        "date": "2026-08-28"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-13",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 56,
+    "rolling_avg": 18.3,
+    "ratio": 3.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]
