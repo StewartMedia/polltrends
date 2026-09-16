@@ -1,0 +1,139 @@
+[
+  {
+    "date": "2026-07-29",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 12,
+    "rolling_avg": 2.1,
+    "ratio": 5.6,
+    "explanation": "Moira Deeming quits the Liberal party after being dropped as a candidate",
+    "news": [
+      {
+        "title": "Moira Deeming quits the Liberal party after being dropped as a candidate",
+        "source": "OUTinPerth",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMDZDenpIMmFPbjJhQ21VNEFheDRkU1VZRF9xd2FWYVBSQ2VYZ2pIdlBhZTlMb0dPUGhDTnU5THlBLW9HWEhwc3Nod3Brb0hKLUxOYVQxVFpEWUEwMjFMakpROGRGOHhrQk1sbDhYYnFqQ3ZsNy15OUpxSWJpLXVMYnl1bV81Ykl2UXp5bFlGLW1tbFMwYTBST0pXT2hTc2NkcWc?oc=5",
+        "date": "2026-07-28"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-27",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 17,
+    "rolling_avg": 3.3,
+    "ratio": 5.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-28",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 25,
+    "rolling_avg": 5.7,
+    "ratio": 4.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-30",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 100,
+    "rolling_avg": 23.1,
+    "ratio": 4.3,
+    "explanation": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
+    "news": [
+      {
+        "title": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
+        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQakFFZ3dvLTRYMURyc1J2Nm9yS3R5d1RleGNieFNENjlfMkVoYlNiWGNpWFJpZFRQbnd6MmN2N3AxVk03UnVBXy1Mc0VBYkNOMzBmczQ5MXV6X2lzWFU5bTVCeS1Lbzg3RkRjMlJiWGVFaThXZk5DM0ptNGhVZjA1UDhDVldHb3QxNUNyM1BsaEVFODlBMU1kYjdTNA?oc=5",
+        "date": "2026-08-31"
+      },
+      {
+        "title": "Soft judges, youth crime, corruption: What One Nation\u2019s new Vic leader will pressure Libs on",
+        "source": "Herald Sun",
+        "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPX1Y0LWxLNjJHaS1wXzRwdXFKd01aNW02Rzc4U1h2SzdWWTVIMDZ6cXYxbWJTS2VNdlBsY1lNVkoxV2JhSDdvVTNBdnpPQ0xSV2l3UERRZ1NpUVo4dWJPanRVbFNRTXdBNmpBNUxNX2FNRDBfcl9aMzU5aGpYcHN6UlNWWUpnZ3JIdmZ0dDJlSXAxc1FfSlE5OG92M05pU3IwUkFUbDF0WjFVcHdkeklUVjlYMWZYNDlQMi1TVFRxRGxWUzZKTGt4UXdTQnlublZnY09xdVRnTVVHNUVINDFxUEJxQ09vTXNoY3p6dVpqdVdtR0VXMzVaV2VGcDRPa3E4UU1pdWM0T2FXN1F3OTBtMjR3c2RFQUFpOUpNbC13?oc=5",
+        "date": "2026-08-28"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-03",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 93,
+    "rolling_avg": 23.9,
+    "ratio": 3.9,
+    "explanation": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
+    "news": [
+      {
+        "title": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYnFMaDJTWmYydUVwLTBhbXFQbXFoQ2NoM3lvbFFuX3dfWWdfSXkxRGhWVWNERDJjQnVYNmo0d1gzZHhSOTQyTFVhbnFMb2RMMWIyamJWUDRBdUxTbzJ5dUE0WnJLQU5KOW56ekZCQkRLTzNBcmNWTERyV0dVU2FRS2ZuMC1HR1ZGbFJaV2JWaU1iaXhXRXRUa0tQVDFxYkVISFpQb2Y0cXZHNkFiR2IxNUxidXM5OVByUFJ2VmVLcnotaU5wS1hpQWRNUmU?oc=5",
+        "date": "2026-08-04"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-23",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 14,
+    "rolling_avg": 3.9,
+    "ratio": 3.6,
+    "explanation": "Victorian Greens Demand Halt on New Large Data Centres",
+    "news": [
+      {
+        "title": "Victorian Greens Demand Halt on New Large Data Centres",
+        "source": "Mirage News",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNVBZZXEtNmdsbTZwemo2VjZYOEo4ZTJXZjBud1plQkF3d0RxSE9Rcy1abjRsTXpwYTNHZFh2UmhfcHBDWXdRTlZHM182UVJhbUxNOVMxRVNxdC1QSTBCVDMwMGRVNmN3NHhGVDFZQXpkcFQxbFhlRGY1ZEFoOHNjcFFscE1iWmtNSEE?oc=5",
+        "date": "2026-06-24"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-29",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 59,
+    "rolling_avg": 17.0,
+    "ratio": 3.5,
+    "explanation": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
+    "news": [
+      {
+        "title": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
+        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQakFFZ3dvLTRYMURyc1J2Nm9yS3R5d1RleGNieFNENjlfMkVoYlNiWGNpWFJpZFRQbnd6MmN2N3AxVk03UnVBXy1Mc0VBYkNOMzBmczQ5MXV6X2lzWFU5bTVCeS1Lbzg3RkRjMlJiWGVFaThXZk5DM0ptNGhVZjA1UDhDVldHb3QxNUNyM1BsaEVFODlBMU1kYjdTNA?oc=5",
+        "date": "2026-08-31"
+      },
+      {
+        "title": "Soft judges, youth crime, corruption: What One Nation\u2019s new Vic leader will pressure Libs on",
+        "source": "Herald Sun",
+        "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPX1Y0LWxLNjJHaS1wXzRwdXFKd01aNW02Rzc4U1h2SzdWWTVIMDZ6cXYxbWJTS2VNdlBsY1lNVkoxV2JhSDdvVTNBdnpPQ0xSV2l3UERRZ1NpUVo4dWJPanRVbFNRTXdBNmpBNUxNX2FNRDBfcl9aMzU5aGpYcHN6UlNWWUpnZ3JIdmZ0dDJlSXAxc1FfSlE5OG92M05pU3IwUkFUbDF0WjFVcHdkeklUVjlYMWZYNDlQMi1TVFRxRGxWUzZKTGt4UXdTQnlublZnY09xdVRnTVVHNUVINDFxUEJxQ09vTXNoY3p6dVpqdVdtR0VXMzVaV2VGcDRPa3E4UU1pdWM0T2FXN1F3OTBtMjR3c2RFQUFpOUpNbC13?oc=5",
+        "date": "2026-08-28"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-13",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 55,
+    "rolling_avg": 17.4,
+    "ratio": 3.2,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-28",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 37,
+    "rolling_avg": 18.4,
+    "ratio": 2.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  }
+]
