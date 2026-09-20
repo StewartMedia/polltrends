@@ -2,84 +2,11 @@
   "ALP": {
     "top": [
       {
-        "query": "labor party",
-        "value": 100
-      },
-      {
-        "query": "labour",
-        "value": 89
-      },
-      {
-        "query": "liberal",
-        "value": 61
-      },
-      {
-        "query": "labor australia",
-        "value": 45
-      },
-      {
-        "query": "australian labor party",
-        "value": 26
-      },
-      {
-        "query": "labour australia",
-        "value": 23
-      },
-      {
-        "query": "liberal party",
-        "value": 20
-      },
-      {
-        "query": "one nation",
-        "value": 17
-      },
-      {
         "query": "albanese",
-        "value": 17
-      },
-      {
-        "query": "labor government",
-        "value": 13
-      },
-      {
-        "query": "australian labour party",
-        "value": 13
-      },
-      {
-        "query": "anthony albanese",
-        "value": 11
-      },
-      {
-        "query": "labour party australia",
-        "value": 10
-      },
-      {
-        "query": "labor policies",
-        "value": 8
-      },
-      {
-        "query": "alp party",
-        "value": 5
+        "value": 100
       }
     ],
-    "rising": [
-      {
-        "query": "anthony albanese",
-        "value": 90
-      },
-      {
-        "query": "labor policies",
-        "value": 90
-      },
-      {
-        "query": "alp party",
-        "value": 60
-      },
-      {
-        "query": "australian labour party",
-        "value": 50
-      }
-    ]
+    "rising": []
   },
   "LIB": {
     "top": [
@@ -94,6 +21,10 @@
       {
         "query": "liberal party australia",
         "value": 18
+      },
+      {
+        "query": "liberal leader",
+        "value": 13
       },
       {
         "query": "one nation",
@@ -128,11 +59,11 @@
         "value": 3
       },
       {
-        "query": "liberal leader australia",
+        "query": "angus taylor",
         "value": 3
       },
       {
-        "query": "angus taylor",
+        "query": "liberal leader australia",
         "value": 3
       },
       {
@@ -166,52 +97,11 @@
   "GRN": {
     "top": [
       {
-        "query": "the greens",
+        "query": "greens",
         "value": 100
-      },
-      {
-        "query": "the greens party",
-        "value": 26
-      },
-      {
-        "query": "labor",
-        "value": 18
-      },
-      {
-        "query": "greens policies",
-        "value": 16
-      },
-      {
-        "query": "labour",
-        "value": 10
-      },
-      {
-        "query": "the greens policies",
-        "value": 9
-      },
-      {
-        "query": "one nation",
-        "value": 8
-      },
-      {
-        "query": "leader of the greens",
-        "value": 5
-      },
-      {
-        "query": "labor party",
-        "value": 4
       }
     ],
-    "rising": [
-      {
-        "query": "labour",
-        "value": 60
-      },
-      {
-        "query": "greens policies",
-        "value": 40
-      }
-    ]
+    "rising": []
   },
   "PHON": {
     "top": [
@@ -236,11 +126,11 @@
         "value": 7
       },
       {
-        "query": "pauline hanson one nation",
+        "query": "one nation candidates",
         "value": 6
       },
       {
-        "query": "one nation candidates",
+        "query": "pauline hanson one nation",
         "value": 6
       },
       {
@@ -264,19 +154,7 @@
         "value": 3
       },
       {
-        "query": "one nation polling",
-        "value": 3
-      },
-      {
-        "query": "labour",
-        "value": 2
-      },
-      {
-        "query": "warren pickering",
-        "value": 2
-      },
-      {
-        "query": "fire the liar one nation",
+        "query": "one nation polls",
         "value": 2
       },
       {
@@ -284,39 +162,11 @@
         "value": 1
       },
       {
-        "query": "what is one nation australia",
-        "value": 1
-      },
-      {
-        "query": "one nation poll",
-        "value": 1
-      },
-      {
         "query": "pauline hanson party",
         "value": 1
-      },
-      {
-        "query": "one nation lower house projections",
-        "value": 1
-      },
-      {
-        "query": "one nation coalition conservative tensions",
-        "value": 0
       }
     ],
     "rising": [
-      {
-        "query": "one nation coalition conservative tensions",
-        "value": 17250
-      },
-      {
-        "query": "one nation lower house projections",
-        "value": 1150
-      },
-      {
-        "query": "warren pickering",
-        "value": 850
-      },
       {
         "query": "one nation candidates",
         "value": 300

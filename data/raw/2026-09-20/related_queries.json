@@ -2,120 +2,11 @@
   "ALP": {
     "top": [
       {
-        "query": "labor party",
-        "value": 100
-      },
-      {
-        "query": "labour",
-        "value": 81
-      },
-      {
-        "query": "liberal",
-        "value": 53
-      },
-      {
-        "query": "labor australia",
-        "value": 48
-      },
-      {
-        "query": "australian labor",
-        "value": 44
-      },
-      {
-        "query": "australian labor party",
-        "value": 32
-      },
-      {
-        "query": "labour party",
-        "value": 28
-      },
-      {
-        "query": "labour australia",
-        "value": 24
-      },
-      {
         "query": "albanese",
-        "value": 21
-      },
-      {
-        "query": "liberal party",
-        "value": 18
-      },
-      {
-        "query": "one nation",
-        "value": 18
-      },
-      {
-        "query": "labor government",
-        "value": 15
-      },
-      {
-        "query": "labour party australia",
-        "value": 12
-      },
-      {
-        "query": "anthony albanese",
-        "value": 12
-      },
-      {
-        "query": "australian labour party",
-        "value": 11
-      },
-      {
-        "query": "labor or labour",
-        "value": 10
-      },
-      {
-        "query": "one nation party",
-        "value": 9
-      },
-      {
-        "query": "liberal party australia",
-        "value": 8
-      },
-      {
-        "query": "labor policies",
-        "value": 7
-      },
-      {
-        "query": "pauline hanson",
-        "value": 6
-      },
-      {
-        "query": "labor meaning",
-        "value": 6
-      },
-      {
-        "query": "alp party",
-        "value": 6
-      },
-      {
-        "query": "labor vs liberal",
-        "value": 5
-      },
-      {
-        "query": "anthony albanese labor leadership succession",
-        "value": 1
+        "value": 100
       }
     ],
-    "rising": [
-      {
-        "query": "anthony albanese labor leadership succession",
-        "value": 38650
-      },
-      {
-        "query": "anthony albanese",
-        "value": 110
-      },
-      {
-        "query": "labor or labour",
-        "value": 60
-      },
-      {
-        "query": "pauline hanson",
-        "value": 50
-      }
-    ]
+    "rising": []
   },
   "LIB": {
     "top": [
@@ -134,6 +25,10 @@
       {
         "query": "liberal leader",
         "value": 17
+      },
+      {
+        "query": "labor",
+        "value": 8
       },
       {
         "query": "leader of liberal party",
@@ -184,11 +79,11 @@
         "value": 3
       },
       {
-        "query": "liberal party policies",
+        "query": "liberal leaders",
         "value": 3
       },
       {
-        "query": "liberal leaders",
+        "query": "liberal party policies",
         "value": 3
       },
       {
@@ -235,6 +130,10 @@
         "value": 7
       },
       {
+        "query": "pauline hanson one nation",
+        "value": 6
+      },
+      {
         "query": "one nation victoria",
         "value": 6
       },
@@ -255,27 +154,19 @@
         "value": 4
       },
       {
-        "query": "one nation polling",
-        "value": 3
-      },
-      {
         "query": "one nation candidates",
         "value": 3
       },
       {
         "query": "one nation leader",
+        "value": 3
+      },
+      {
+        "query": "one nation polls",
         "value": 2
       },
       {
         "query": "one nation wa",
-        "value": 2
-      },
-      {
-        "query": "labour",
-        "value": 2
-      },
-      {
-        "query": "fire the liar one nation",
         "value": 2
       },
       {
@@ -287,63 +178,11 @@
         "value": 2
       },
       {
-        "query": "one nation poll",
-        "value": 1
-      },
-      {
-        "query": "what is one nation australia",
-        "value": 1
-      },
-      {
         "query": "pauline hanson party",
         "value": 1
-      },
-      {
-        "query": "one nation lower house projections",
-        "value": 1
-      },
-      {
-        "query": "andrew hastie",
-        "value": 1
-      },
-      {
-        "query": "warren pickering",
-        "value": 1
-      },
-      {
-        "query": "one nation budget impact",
-        "value": 0
-      },
-      {
-        "query": "one nation coalition conservative tensions",
-        "value": 0
       }
     ],
     "rising": [
-      {
-        "query": "one nation lower house projections",
-        "value": 97700
-      },
-      {
-        "query": "one nation primary vote sky news",
-        "value": 10900
-      },
-      {
-        "query": "warren pickering",
-        "value": 1750
-      },
-      {
-        "query": "andrew hastie",
-        "value": 1050
-      },
-      {
-        "query": "one nation budget impact",
-        "value": 950
-      },
-      {
-        "query": "one nation coalition conservative tensions",
-        "value": 950
-      },
       {
         "query": "one nation wa",
         "value": 350
