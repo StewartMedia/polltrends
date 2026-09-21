@@ -1,102 +1,101 @@
 [
   {
-    "date": "2026-07-25",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 11,
-    "rolling_avg": 2.3,
-    "ratio": 4.8,
+    "date": "2026-08-26T00:00:00",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 10,
+    "rolling_avg": 1.0,
+    "ratio": 10.0,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-30",
+    "date": "2026-08-13T00:00:00",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 10,
+    "rolling_avg": 1.1,
+    "ratio": 8.8,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-26T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 13,
+    "rolling_avg": 1.7,
+    "ratio": 7.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-07-27T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 18,
+    "rolling_avg": 3.6,
+    "ratio": 5.0,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-30T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
     "rolling_avg": 22.9,
     "ratio": 4.4,
-    "explanation": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
-    "news": [
-      {
-        "title": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQakFFZ3dvLTRYMURyc1J2Nm9yS3R5d1RleGNieFNENjlfMkVoYlNiWGNpWFJpZFRQbnd6MmN2N3AxVk03UnVBXy1Mc0VBYkNOMzBmczQ5MXV6X2lzWFU5bTVCeS1Lbzg3RkRjMlJiWGVFaThXZk5DM0ptNGhVZjA1UDhDVldHb3QxNUNyM1BsaEVFODlBMU1kYjdTNA?oc=5",
-        "date": "2026-08-31"
-      }
-    ]
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
-    "date": "2026-08-03",
+    "date": "2026-08-03T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 95,
-    "rolling_avg": 22.9,
-    "ratio": 4.2,
-    "explanation": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
-    "news": [
-      {
-        "title": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYnFMaDJTWmYydUVwLTBhbXFQbXFoQ2NoM3lvbFFuX3dfWWdfSXkxRGhWVWNERDJjQnVYNmo0d1gzZHhSOTQyTFVhbnFMb2RMMWIyamJWUDRBdUxTbzJ5dUE0WnJLQU5KOW56ekZCQkRLTzNBcmNWTERyV0dVU2FRS2ZuMC1HR1ZGbFJaV2JWaU1iaXhXRXRUa0tQVDFxYkVISFpQb2Y0cXZHNkFiR2IxNUxidXM5OVByUFJ2VmVLcnotaU5wS1hpQWRNUmU?oc=5",
-        "date": "2026-08-04"
-      }
-    ]
+    "value": 98,
+    "rolling_avg": 23.7,
+    "ratio": 4.1,
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
-    "date": "2026-08-29",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 57,
-    "rolling_avg": 16.6,
-    "ratio": 3.4,
-    "explanation": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
-    "news": [
-      {
-        "title": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQakFFZ3dvLTRYMURyc1J2Nm9yS3R5d1RleGNieFNENjlfMkVoYlNiWGNpWFJpZFRQbnd6MmN2N3AxVk03UnVBXy1Mc0VBYkNOMzBmczQ5MXV6X2lzWFU5bTVCeS1Lbzg3RkRjMlJiWGVFaThXZk5DM0ptNGhVZjA1UDhDVldHb3QxNUNyM1BsaEVFODlBMU1kYjdTNA?oc=5",
-        "date": "2026-08-31"
-      }
-    ]
+    "date": "2026-07-28T00:00:00",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 22,
+    "rolling_avg": 6.1,
+    "ratio": 3.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
-    "date": "2026-08-13",
+    "date": "2026-08-29T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 56,
-    "rolling_avg": 18.1,
+    "value": 59,
+    "rolling_avg": 16.4,
+    "ratio": 3.6,
+    "explanation": "Significant spike in search interest",
+    "news": []
+  },
+  {
+    "date": "2026-08-13T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 58,
+    "rolling_avg": 18.6,
     "ratio": 3.1,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-07-26",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 11,
-    "rolling_avg": 3.9,
-    "ratio": 2.9,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-07-28",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 20,
-    "rolling_avg": 7.4,
-    "ratio": 2.7,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-07-27",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 14,
-    "rolling_avg": 5.4,
-    "ratio": 2.6,
+    "date": "2026-08-31T00:00:00",
+    "party_code": "PHON",
+    "party_name": "One Nation",
+    "value": 69,
+    "rolling_avg": 33.7,
+    "ratio": 2.0,
     "explanation": "Significant spike in search interest",
     "news": []
   }
