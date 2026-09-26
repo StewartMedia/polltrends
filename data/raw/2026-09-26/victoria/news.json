@@ -1,1 +1,506 @@
-{}
+{
+  "ALP": [
+    {
+      "title": "Victorian Labor makes \u201ccommonsense\u201d pub election promises",
+      "source": "theshout.com.au",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNi1hTVc5MFg5aU5SZ0o4eF9pMC1WZjdHT1RUWDI0eWFseEt0M0dVUzBTSnc1UEtJMGdBUnFfSmxiVzg5elJaQ0w1eTUtVkRBS29FUWFpTWk5dnZtOUdGRHpacTBjODlxazZPZ2Y1ZmY4V2hCR2tmNEdfNjVnVzFXQkRIRHNvWTNOMzkycVlCQk81M2tqWnJxaFNCUFE3b1U0QVE?oc=5",
+      "date": "2026-09-24",
+      "party_code": "ALP"
+    },
+    {
+      "title": "Victorian Labor Party pledges to better support local music if re-elected",
+      "source": "ArtsHub",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOQ3B2X1BBeGhGaWpWU3ZVaEFZbmc2TG5DWVBIeHpTZERSRFZiUWg5d0tQY19PZmVrTWlhRTlGNXJiYTFkdlRJNURtUEtaODJCaWdpcTBZWUpiRGdVbG42RmV1V3FPdEVidkpoSkhFN2ZBWFZSSDN6dlM1bVRLUGFTOEFXczV6THh3OVdiY2QzMWxNY1AtTFE?oc=5",
+      "date": "2026-09-24",
+      "party_code": "ALP"
+    },
+    {
+      "title": "Victorian Labor makes abortion access easier amid fears One Nation could try to wind it back",
+      "source": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMHF6NDU5TGVFOFhaTm5jXzJEZGtPbnh3LU5zQ2ZQT3N6cWFuY3l2bnFNYnhCdC1Gbk80WDFRYTFuZ2FUYWxrTUJibGkwSXBYVWxac29hQUhwajR0ZzA4SDZnMVh2WFFKcWRzX2FNNjBFclZFUXZnQ1ZuMEdoNlh2cm1XanZ4X3h1b3cwMWxaYnVTZkNPbkZkT25lNEhZREtFS1RDNjBzX19TUQ?oc=5",
+      "date": "2026-09-24",
+      "party_code": "ALP"
+    },
+    {
+      "title": "Victorian Labor Pledges Local Music Mandate For Government Ads",
+      "source": "bandt.com.au",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNU0pvUEZGZTdiY0I3cWNiNjNvVU1uYWowZkNoa1dIazBQUTVPc0pjQjlJYWpHRnZjZ2VZVjZNMUphZGs1QzFtbFFxQm5SZHM0VU1GOWdwOXVaQk5xWkYzbVdYaWNBei0tSjlPaFlRLXlOYkl1X2ZOMmpxVnV2bnF1VUZ3Njhpdk9zS21pMG9DTVV0dw?oc=5",
+      "date": "2026-09-24",
+      "party_code": "ALP"
+    },
+    {
+      "title": "The Big Build RC: A low-key and officious beginning of the end for Victorian Labor",
+      "source": "Crikey",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOb21jQXR5ZlZmamJyYTBzQnVUQjV4V3BtamlFSjhkWHBBUWFoLVJlWjFFdGFpRFVfQTVrYlhNcG1uNTVpZ0t3dy1aaEZoSlFTcUFRYm5renBVQjFWSVZzWFBqazJ4bVJOZEp1dVl0Zll5SU81UmJHZlNFUVRER29wRWEtZjRndGZQd19oRDVIZjFWaWdrZ1B0R093SElXaUJod2ltNHFfMWlyUzVnOXAzVVYwMG5meDlPMnZpbG1tN1Y?oc=5",
+      "date": "2026-09-24",
+      "party_code": "ALP"
+    },
+    {
+      "title": "Victorian Labor Pledge $3m Taproom & Tourism Boost For State's Brewers",
+      "source": "craftypint.com",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWmxsZHV3WlBxNjdRdE9UVzBBcmtHRGJtYkZxQW5QaGplSE5QaEE2ZWhWdVFlaHFQeVZGb01VekpObG82LTF5UzhUY0wyXzhyX2Z4VTdjek9kdWc5TG9xMTdyNWxNY1dWamZ1Y3ZacUlMb1p1Z2RRc2pSY1pfeFlGNXlOUkJlTThHeTBFYXNKQzNzS1F1QnpVWXJvREJjSWhyN0lrWHh3?oc=5",
+      "date": "2026-09-20",
+      "party_code": "ALP"
+    },
+    {
+      "title": "Allan to be grilled, no election pause: Hot start for Victoria royal commission",
+      "source": "AFR",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQdTczTU12bVloQktSWFloX3psY1paTmZDYmgzRUEyVHZkbERHQjZkbVA4b1JKOWNvM05LV2pPWDdjZ0lnMWJxRGtFOWN4R05NMEJlaGpqREJwdlZxRlM0Sy1RdE1HMDNwYm5XOXB6U3pQcW1ZMzhuRTRORmJrTURCVDBZX1o3THB0bFhUMjVxaXhzOTRyTk9ELXBOc1otR0kwdHB4QmV2Nk50NHNuN0ZoOU9WZlA3UEYycWtFVmZuWDhXeWFtejg5dEJPQk0yMnNK?oc=5",
+      "date": "2026-09-23",
+      "party_code": "ALP"
+    },
+    {
+      "title": "Police say changing drinking habits mean 3am pub closures not a concern",
+      "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPb1FLZk5EUGUyWXdWdzhQbnM0V3J3S3VCUFpqa1IxQUNRZ1JCalhXTFZhbFY4NVhXck1laUdHUW9RT2RhYWpreU5NaEJlZ2RWVlpDeDRWcXhxR0NwUUtFNXBPVW42UndyTGZUWFdPVmg5SlY1d3NjbHVTWkQ0WTkwWWxURDBqWmVhYWRJVzk4b3JSU1dmdmpHbmI1VTgzNlN2bzRMS3NZeGs?oc=5",
+      "date": "2026-09-23",
+      "party_code": "ALP"
+    },
+    {
+      "title": "Big Build reckoning starts at Allan\u2019s door",
+      "source": "The Australian",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPaU95enhWbTRxQ1lha2JsOHR3OHZkUUFUZl9RbjNEZWVxQzFTNllwR0hOdGxNSks4OXlUZU9Za0FXcDlELXFqcm5Nbm1TNDhyUW9Ga1JFQ2hTaUY5c28temlyN3ZIM08yVHBiaTJYZV9ueEZ3azlLbV9VSXhMTDZPOEVWNnItcHQ4MUxmeFp0NWJ3NENpM0x3Y3FCQ2Nub0ppVTEwb2JMUVNvSjJOcm1pWDBnOXk1SUVMQTlFa1hfWjBnVktZVlRJLUZXNVRndw?oc=5",
+      "date": "2026-09-23",
+      "party_code": "ALP"
+    },
+    {
+      "title": "Jacinta Allan will be grilled by Royal Commission over corruption allegations",
+      "source": "The Weekly Times",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOVVE1M2wwTVg4SWhhV2M2d2pIQ2xlVDZKWE1PYnZmcnctbEY0WjluSk9wemhFVlQ3RDFGU2N3eUVoODZJRmo3dF84ZXBrTFpsbnF5WHlPRkU3U2MzQjVxVjhDVV96dE1JenJGNnVQcXBwWkp6NGc0SDFtTEhkT3kwYVVJWHE0UTR6b3ZmVldHRWY0a3p5T1BtUVZHa2VfeXIybWJ5dC1lUkd0MGFJN1Zqa1EyczJ4ZU9qX094emVwVHluMUhlNTk4bXN4MmVtS013WnlUdmhKdHZpYkpmVWdJQVlyVEdhd2liUVc3eTl1bWNVdEluRHpr?oc=5",
+      "date": "2026-09-24",
+      "party_code": "ALP"
+    }
+  ],
+  "LIB": [
+    {
+      "title": "Poll shows Hanson\u2019s \u2018bomb throwing\u2019 could help Victorian Liberals",
+      "source": "AFR",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNejN6VHdHMW5NaGE5aWt6YjBiajB3SWhrSjU3aGt4S3VDUXRHbkpMNURsb3gxOE9GS2JfODNVRVUxYi0tU3RtUFRQVTBxQkZ6aVhCM3JyUDI0SWpNV0ZNdGdwU0p5b2o2YkFMZEk5UEtRLWlDTmVGN1U3aW5BalN0RDc1U0FQZVZWTnBtODQxbGtZLXVUTG91MktXVUZDa0l3VlBhdzlnODZ0dkNF?oc=5",
+      "date": "2026-09-15",
+      "party_code": "LIB"
+    },
+    {
+      "title": "Victorian Liberals can't keep on track even with a prize in sight",
+      "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWGpqekY3eDRzaTN4MjBSajRMVGhSeURxZ2dxdFRUNS1kdWh1RHZzSERzU1VzRUpsajJrTzNFM0FBNV9jZlNmem9salpzWndZeEZud0FIejFLZW1wWkM4bThadUc3eTdtX0FCM1pLYTZvam1JSE9nVy1zQ3Nxc2x3X1JEVk5RWWdxU3J6dUdKaDh5LUtuUWNR?oc=5",
+      "date": "2026-06-30",
+      "party_code": "LIB"
+    },
+    {
+      "title": "Liberals set to disendorse MP Moira Deeming on Friday",
+      "source": "The Australian",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOdGxmNG03VENvQlNKLUVhdXRoR1VvN2FpLW5maUNfMzhoVXZCZnZqcDlOM0FmM2FKNFBQc2o1NVVST1FmN1RsSzBJRFpDdE5WR3Rkclk1RC1JSDJ2M29nZUdhaVM1ZmZ0R0RNUWswb1JIeDZqWklwWUlsNkRpSG5yWTBPcFJGUkpDVlpzbW1JVkdieGpjRXl5cEVBT2FYbDN4cmtiODZWcXFNQ1BuSjE4Q2g0RXRNNEFzM1lEMVVoTW1pZjZZZjNHQ3U1cnFoZjloQlp2OE15THZfeXpHc3RSYnEwNGlrS2VTZ05ldVJHcEs4YUhkdzl1WVNqMzhQd2pUSGE0dUFiaEFOdFY1anpJdjhiVQ?oc=5",
+      "date": "2026-07-17",
+      "party_code": "LIB"
+    },
+    {
+      "title": "Moira Deeming Disendorsed By Victorian Liberals In Just 13 Minutes",
+      "source": "starobserver.com.au",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVFNLSk1weVRSYldBLXJDRjhkSzhXOW1XdDRCdnRwZERyNW53eVZndEZ5TFlkV3pZOThmRFR0SmdHX0hnN0VPbTh1c0FLc040STgzVlJzM3RjYnRQQWlnQWZqUWNwdUF4Y0JOaE5teFNtWS1oZ2FOZDNpR0tzbWxQLW5rZEdURXpuZ0ZCNHh3c2RVZE5oU0NNcDNsdHJWY29WckI0NnJLS1pOMGx2RmlJ?oc=5",
+      "date": "2026-07-18",
+      "party_code": "LIB"
+    },
+    {
+      "title": "Victorian Liberals Commit to Rebuilding Rosebud Hospital for Local Families",
+      "source": "Victorian Liberal Party",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbTJqZWwxczhSYjRVUjVMRm5mWEplNE5KOXVTcnRwbmo5a0wxZ3RneUp2MDI5NkVfY29GTjQxUVg1aVJfT3BQYnJEZW1EYlJPOC1BaXlJZWFpdGoySGtqTXl6cHBaMmxKYl9qN0hqWldCd19LZDBZS0tIWlVVUV9VUDFEdVg0c0JjR3gxX1I4aUlYNER4QTNtd0I2T1lEV3VIcGxiYTZfTzAwNjA?oc=5",
+      "date": "2026-05-09",
+      "party_code": "LIB"
+    },
+    {
+      "title": "\u2018Strategy has to change\u2019: What Jess Wilson must do to defeat Ben Carroll",
+      "source": "AFR",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQLV9SVFFOZDh6cTlPS3ZVRE5XTmZIZE85ZnBsMWhDS0tURlllLXJFaUxYN2tCNnZ6TkdyTDR2c2NneHoya3Znd3dyMnBScG1mT1U3a0xRbjVaOWoyOEpTaWRQNkZ4TW1KQlFXczNyNmxxNGVFTzlGNUdUTHhITE5udHJiOGVjTUJpYmM2cVQ2WTdfZjdYeF9NZ013dmlnSmR3TTBXTTJUWHowQjNVNGJuMXlJVW4?oc=5",
+      "date": "2026-08-07",
+      "party_code": "LIB"
+    },
+    {
+      "title": "Victorian Liberals want a weekly red bin collection. Is it a wheelie good idea or a load of rubbish?",
+      "source": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNeEk4YVFDdmN0am9WbmdkX3lPYmRlbVdPTEgxUDg3VkNfazBhWXQ2Z0RkTlYwMFg5dVNoZm42bFVreTdJSEZrekowTkl3RXZFRFp1VlR3SzE5UHp6S19xNmo2N250QnA2S2ctSXR3N0JwaVZCSFNPamtDSV9VQ2d3cUZUc0YtamVIQjdRME9YM3NJaFhtT0dUY1B3OFJfdW1xS3V0alhUXzNoMDNTWVBlZlFZVGRNZWt5NE9RZTZkV3FUazlMbVNXWENxeXZ6TFhRQTNaNWhId2JlbGNHYWhMamJoZmM?oc=5",
+      "date": "2026-08-13",
+      "party_code": "LIB"
+    },
+    {
+      "title": "From culture warrior to lame duck \u2013 Deeming dumped by Liberals",
+      "source": "SMH.com.au",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQY293dlA1TTFkVzAyOTJjdWtVLTRyN3plS2szc0M3NUN5cUxMN0hxSGlVN1BlQUpHT0taRkp5X2tYejBXMXhnS3g4dUwzS3RZNkl2aU5kZUhkX1ZhSUxBQmhySUJ1SVZRUHJHODJ6ZWd0M2pmNzlQVEVDdUJ4MDdpT2U2b3JJWFVReVotMW5nY181OGtGeWU5eHZHQnEyWjZZNHJKQllfYlg3M2dJTVpJOURraHhuRE53TkNCSTBsSQ?oc=5",
+      "date": "2026-07-17",
+      "party_code": "LIB"
+    },
+    {
+      "title": "Victorian Liberal Party set to dump Moira Deeming as candidate following assault allegation",
+      "source": "news24.com.au",
+      "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxQa0lpSWhHRkhsUHBoU2p4QUdtWDhLVmV3SUFqcWVWTDEzMzFJbWZ3YmRzajh5OGNpZW9wSDFvZDBGUG1laXQwd3RyRmNOMFpKaEJUZlBVQXl3ZExTOFFBVHAyVkpVNUZrdGdvM1k4Vkc1amJPVDBVbHVOalZOdlVxaEJYMnd3MFRVQjFaZnNHbnhmbG1aVDhkU01mbTU1TW9ZYUNwb0ZCM1AyRFJhQXprTFNmQkUxSzNvR2Zsb2JvYkpHQkFZMzNuSUp2WmVZdmhLLXRWaDdaWkZfakpjLWFLU0xINFBOMlZuaHNrMWFOeXFHUFB1UjUyMEVYNWl2MG9fVnVHQThZUUdOS0JGMVJhTEZuTHdjVDI4VVlRTFljbnNHcXF10gGqAkFVX3lxTE9qbktZN1hsTmVmUEU1aHNTTnUtZzlfRHVQNk5fb0J4Y25xVFM1VXhhU0xSWWVZTXNNVHoyMXdxTlVJUnE0dFp1OGxvZHlIRjFkWngyam0wQUFVZ3FEd25jaXdFa3BWeFBoMXpHNFJKZ3RfMWxCNi1hckM5Tm42MDVsc0xzWDB0YzlFYVRkb3EzaFUtbkdlYWQ2YVk4LTM2RVR0bmEwTFVNTDhYMG51ZnpvLXpvWURvR05rcl9MVUg2aXlZVHhvQkFvdjZvUmxfQzRjX3huZjVZTVhCVWhtemFheEVQa2Jub1dMQjVBOGFuTlNQcHZ3TkxxMGtocFJLbkFvcHRxOWsweWk4VEV6UFJzZUNvaWVFQnoyUlNrQjhGa19HYmdFd29jYXc?oc=5",
+      "date": "2026-06-30",
+      "party_code": "LIB"
+    },
+    {
+      "title": "\u2018Unhelpful\u2019: Victorian Liberals embroiled in controversy as state election looms",
+      "source": "The Australian",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQc1R5SHlxZHdHSnBOWWxZbFNRT1JpSjdKT0hqMm9iNXBtcnFNajlpY2xUcFN6VFI4MTRqbXBQZzh1WHVDaW1JOEY4cnE3S0V4WE9GR2NwemlxY1N3eWs0S3diYUdMbzRCRWIzZGMwUTBIaW1sNkdfdGFZRzFRb2RJRWExZm5adUF4VGdycHlpUGVFamVlWDVjdHlPZU1UTkg4Mm9VTXlsQ054dk9xTDl2RlYtTEtIM0pHLVRNY0tjWnlWMk55TS0wcXlSX2ZVb0lVU3g4NWR5MVBwUnNWYzdHR2lZTXdEQlRUU1pKajh0VVBtUQ?oc=5",
+      "date": "2026-07-03",
+      "party_code": "LIB"
+    }
+  ],
+  "GRN": [
+    {
+      "title": "Victorian Greens oppose Labor\u2019s public housing plans",
+      "source": "BTR News Australia",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOOHlMSVJvelNkMmZNamgxT3g5U21Kd1pPYzJUMDU5dVNJTl9DNFZ5MmNaSjZNalV2bGNibVJVRUlRMDRDb1FPMzJTa0hhUzZMRTBzZEVXZkNwdFJGelVKV2txV2hIeE5aaXJ2T3VrUzlweWZ2X2VBX3VRTlZkRzI5Rg?oc=5",
+      "date": "2026-09-21",
+      "party_code": "GRN"
+    },
+    {
+      "title": "\u2018Man of conviction\u2019: Premier honours late Greens MP",
+      "source": "The Australian",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNellYU1l2YzV3UTVmZTZHMGVobkRFRzNWb0tucmdTUW1TUWNZcDJjczY2a1o4TGZ3cC1XNDh3LUdBRnNycUlpQ0pyQldaZTFtcm9UU0c0NVljWGFHazhycmRhS2ZyT2Z5RllTTUFFQVpuSzVoMW9YYmlUYW95YVNocF9ReXM3UHR3OHI5YmtDQy1uM0c3Y1RzampLRzl6Mm9pdmphdW90UFRLR2lTSXFwb3RoVmZPaGRLUE5SRGM1T3g0TWdVNFduRmFCQ05WZFFfUFFIVEpJNkN0MmFRcFFyWWMyWC10amxQc1BEa1drNjlTZWY0Q21OUzV5U1AyU0k?oc=5",
+      "date": "2026-09-20",
+      "party_code": "GRN"
+    },
+    {
+      "title": "Victorian Greens MP succumbs to cancer battle",
+      "source": "The Canberra Times",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOcFp2c0ZWRkYtblZYSEJyYzJoczduc2V5UWhIUWU2emFUV0JaLVZvRzZqQU9kOGhRT18zVEtxVWJLdmRoOEUya1hHYlFxRUp0THB3bndwU3Y4aVR3QnJzSE00MjlSV0xJOTVnWHFzSFlaclFibDdGdXRtUU9halpONk1sbWxvQm9NRU1STUFMc2FveTlFTTJIdw?oc=5",
+      "date": "2026-09-19",
+      "party_code": "GRN"
+    },
+    {
+      "title": "Victorian Greens MP Tim Read dies aged 64",
+      "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNcjJGdHlFdVM0U19YbUJtdFcyU2prRnYyTXlvSm9tQkxHRkhTSFVfZVZKOXdZTjJxUDR6ZFo1SEM5ZWN0QU4xaE1kZDhieUIyQVFmRVNDWW1NS3l2TS0tZmNZTk9yV3IyT2tycHpTeEFzNENxZzVGRzVDUlpPYUFOQURjMDBkTE8yUms2NHBlN2JTcVNf?oc=5",
+      "date": "2026-09-19",
+      "party_code": "GRN"
+    },
+    {
+      "title": "The Victorian Greens are taking a page from Mamdani\u2019s policy playbook. Can they combat rising rightwing populism?",
+      "source": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNNXRReXpZWWVYWS02NmdCdmJwUG0tdGNHb2tBSkR4TUFsRTdqb1pBbVRjTmxHX1Nfd0U2bm9lR1JIQmxVVG5VbFhZUWxSY044LUctT0ZzR3V3Qkl1eko5Mmhad3V3a1BmdkQzZ2RpUS1IOUYzYkJ3cVF0bnhTb3luN2N4Sjdka1BjaGdYQWJkeUVFYkQ1SjlUT0dmQXpjUURlcUZYbndiNEh1dURjMHNoemZPRkVDdllIS3hiZGkxay1UV19CM0piNHNtMFE?oc=5",
+      "date": "2026-06-28",
+      "party_code": "GRN"
+    },
+    {
+      "title": "Victorian Greens MP Tim Read dies aged 64 after battle with cancer",
+      "source": "7NEWS",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZUZtNU92Uk9STFA5d0dXUDEtekJlRThrNmFOX0oyaXpHY3E5dk9UcDdKYm1TTEcwWmlyQTUxcEE2QzVMM04ybVJZQmxpY0MxOWN5SjZYdzlJSUZyTHh3aU1zSWtEeEJTYkZ4V0NIcHBCZG9vaFJwWklEV3NyaHMwcmxsY1RYLXo4aXo3QUdYUVVfeGZCclVfZkF3U1V5N2lBRm51MW5R0gGrAUFVX3lxTE4tdTgzenNnWGtndGMtbkpud2VZWmxJV3FSXy1tZ2swZnV1M1VWeG9tQ3RuSy12amk0SHBXMzZzbzA0N2xGMERySUZvN0pGbm1CWW56cEVWUkhGeUFRRktoWTVEeU1qRXNIZWZCRVczNUVtTnByaGFmZFJDcHRkTzRVMHUzNU8xbXpPbjdLVng3aV9YRy05MnZuU1RSelJZNE9YX3MtY1RZRDFZTQ?oc=5",
+      "date": "2026-09-19",
+      "party_code": "GRN"
+    },
+    {
+      "title": "\u2018Man of conviction\u2019: Tributes flow as retiring Greens MP Tim Read dies aged 64",
+      "source": "Herald Sun",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNci1BYW0zVTdwR2pqZGYxT3ZkQmFQYUZYQjZsQS1SLW0zOVREMmQ0VnhLNHpfTzVoM0pNVW82U1Y3VmRkWWEycm40VF9SZV96OGtmWmVEWjV6OEpnSGZHeVlVdWVJVkdBWk4xYzNEa0M1ZG9Bc0FxYlhuOEtmWTBfMVFZR3BFbGJwZmR3UHVpcUowLTc2aWd4WGp0SC0xTjlUZ3IzbG9hbUw4Vk1yUWFGVjlWWEVoT1NodFFXanhQejZSeVUwdXpUZDhJdmcwZ0ZfT1loMTJwUGRkQUROM0pzZjVHUTR6LUJmSEp1eWFFMU1SVjktYmpN?oc=5",
+      "date": "2026-09-20",
+      "party_code": "GRN"
+    },
+    {
+      "title": "Victorian Greens MP Tim Read dies aged 64",
+      "source": "ua.news",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOX3RrXzZvcFcwOGhfTjRaejJLZnpaWl9CU19saWdKUjNVd2ZrbWJiU1ZEYkctRm5ETm05LUpkTGl6ZzhLcV9PRWZUeVNEVGFrRjRORUpXV0h4MVdfOHYwTmZCdWRoS3g0ZkdWT0VNaUZlR0RjczJYZVBrTVVmalRsZkE1dU1vRzJicXRWNDBfMHlJUmdtZzI4UQ?oc=5",
+      "date": "2026-09-19",
+      "party_code": "GRN"
+    },
+    {
+      "title": "Victorian Greens MP Tim Read Dies at 64",
+      "source": "Oz Arab Media",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5uR3lTOHJ6Z2hXSjU5SHRTZ3p0aWdaaWdzTGt3NTEyellfbmJZSGxMY01wemNMMWVfeTdRaU9RWjRuY1BiUzJabFlIbHJFcjVPamR3MU5ZTWZVckxxeldxZWtTNUMzTFRPXzVFQ2JR?oc=5",
+      "date": "2026-09-19",
+      "party_code": "GRN"
+    },
+    {
+      "title": "STOP AI Data Centres",
+      "source": "The Australian Greens",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE42Q3JiUFJDQ3ljN0k2eGkxTHRLTkFwTlktbHBWR1pFVHloNEZmdzM1bERrbUxydzQyZkttdjRpZm1KeEthSTRhbTNDcElNanM3R0hGbTNDZmU3dWVFQTU0?oc=5",
+      "date": "2026-08-01",
+      "party_code": "GRN"
+    }
+  ],
+  "PHON": [
+    {
+      "title": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
+      "source": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYnFMaDJTWmYydUVwLTBhbXFQbXFoQ2NoM3lvbFFuX3dfWWdfSXkxRGhWVWNERDJjQnVYNmo0d1gzZHhSOTQyTFVhbnFMb2RMMWIyamJWUDRBdUxTbzJ5dUE0WnJLQU5KOW56ekZCQkRLTzNBcmNWTERyV0dVU2FRS2ZuMC1HR1ZGbFJaV2JWaU1iaXhXRXRUa0tQVDFxYkVISFpQb2Y0cXZHNkFiR2IxNUxidXM5OVByUFJ2VmVLcnotaU5wS1hpQWRNUmU?oc=5",
+      "date": "2026-08-04",
+      "party_code": "PHON"
+    },
+    {
+      "title": "One Nation Victoria leader admits to drug use, drink-driving",
+      "source": "The Age",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNTlotNG5keTVqX0NQaUNha003alhLRWNrTEE1S01aVzZjNjZTbEYwblRSQnRnU1hhSUJ0WDc0bF9QRHlzNXJZZ1VNV1RFeTNTdmdTaGdpS1ZEQ1VxLWwyUmlGUmdpakd6VEdaWlM4RldtdUw5X3c5by1PYllsU0syamJ0bXpqa25ZMW9zM1h5MVN1ejdPSlB5MVRrSTlqQl96a1ZNSHRTLXEzdllfTndaUmF0NGM5WU9MWUtFaVNkSEN1UQ?oc=5",
+      "date": "2026-09-08",
+      "party_code": "PHON"
+    },
+    {
+      "title": "\u2018Personal matter\u2019: Hanson deflects on claims against her Vic leader",
+      "source": "The Australian",
+      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxONXBRc2NHMi1yeU9yb04xUHVpY0JyMmw4c0pKUElmZE1aVVZQMXBZNVEyMkphQ2JCS3hzN2U1eGJ5S1M4ZmNrQlFaOS1nVDBVX01mNjZDTTQtUmVUdmpYcV96NUljU0hYLVU2RDBqTDVuMjVQemhwMGczT1FCYmlDR0t0Qm9ZV2xNUzdFUDFaUS1BZGVWcmE2bkFHMl9Tb2g3dVRVM2daOTA5eTRUTzZldjdwa0Y0LWh0d1BHdk93bnR0c2h1eVZuWFFSWXJzSHo0U2NWRTh3cFd5OW1nQ3VBUFdEVHg0a1FLUkpXdWpQTTBGRXNrMVZIMFdpUTZpYjM0enZEWWprWTQwMmRWOEE4c2R4SEFPVDQ?oc=5",
+      "date": "2026-09-07",
+      "party_code": "PHON"
+    },
+    {
+      "title": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
+      "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQakFFZ3dvLTRYMURyc1J2Nm9yS3R5d1RleGNieFNENjlfMkVoYlNiWGNpWFJpZFRQbnd6MmN2N3AxVk03UnVBXy1Mc0VBYkNOMzBmczQ5MXV6X2lzWFU5bTVCeS1Lbzg3RkRjMlJiWGVFaThXZk5DM0ptNGhVZjA1UDhDVldHb3QxNUNyM1BsaEVFODlBMU1kYjdTNA?oc=5",
+      "date": "2026-08-31",
+      "party_code": "PHON"
+    },
+    {
+      "title": "Warren Pickering moves on from personal turmoil to outline One Nation agenda in Victoria",
+      "source": "news24.com.au",
+      "url": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxONWNDeTd5OUh1TkM1V2djd1c5RVFHbWtYREw4NUZsRWRBdHViQTBwVGRkT01yTE12ZVMwbDc3Ry05bmhkYVVGY0ZOUjZWTDVuZ3dzTUZLcmVGRzllUFJRWklWb3N1Wm5fazBOdFRjdy1jZjc5RGp2Zy1QVjIxMUdjTDc0Wmk3OGVESG1OM0ZVR0lKbnBZWjNVSVBsSnYzV3pSeTREaEVIbjJGX2NKU19SYXFjOEM3RmtUbzR6U3RmaW5OMGdaaGxGWkMwNUkzUkk2NWp6cEhKdnNxaGZtZ1QxT1hUUHRmU0JPVzVEaDQzWG92ckExYmhUc2tKcnp6SEdLNGRhQV9vSE1HRkRIZWwwSEQtN0I0T0ZHVkt2TmVpT1VTS3lfTklUMXJNVG9BR29wdlhRR0V5YUh0MmVoM0p1Y2NxUUdfRG16ZGpDNk8zR0R0NU1zZUJhdkxISk5IWXIxcEHSAecCQVVfeXFMTmtlb2VkcEM3X2k4RWxwd0x2bk9uZ3pjdmNUMFVKRkxnQ2JLSkhTS1Fac0NKdldtQlJiTllkMEtrb2UtVVlHaFFvY2U1Q0lDYVRpdG00dnhhS3Fjbl8xSXVVTExPNnlDTE4xVlJoVHAzY0Nzbmhvd2kwdWFDdU9KN3drR0RCX0ZKY0FNTFNVU3pPcnJjMVRhSmJ2UFR5TWtSY05taFI4NU90cDNlSExoVm9pVzNTRTNzUGtOT3ZTdkxIcURPYXpxQWRHcmttZk00OVN4bTJRQVF0WWFqTDRfYXE4a2dILWd2S0otRWNBUGYtNFI1ZzA5bGRDMEtxR2E0NUd3c1lrTVlfblRJaGRjM20yRC1WRy1QTUdyc01ON2M2ZXBlcWhyMExkYkxtbWxvQlJQeXhOZ1YtUVJQWE1rdmdRT3NDMWVPb2YzaWo0LW5qM1hjN0laVDE4YlpjTVhESS1zZ3RJLTA?oc=5",
+      "date": "2026-09-18",
+      "party_code": "PHON"
+    },
+    {
+      "title": "One Nation Victoria powering ahead",
+      "source": "One Nation",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE96cjJJLWpzdzg4OVk4a1dGWGZLT0NzZTdhelBQa1l3WS1reFJoT0NsbHRFcXdWN2dUVW1vY2x3cTNSbWNnWk05S0dsMG9DdGxuM2kzTi11anhLcWZJSEZtaXZB?oc=5",
+      "date": "2026-03-06",
+      "party_code": "PHON"
+    },
+    {
+      "title": "One Nation Victoria leader to run for Pakenham",
+      "source": "Pakenham Gazette",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeHpjaFFiZkJBdlJrRTY3YXNWQS1lNUhUM0JXU3VGRExXOFI2R3JqcnpVVUt0bS1xVEJsaENhWEZBMmFaakx3eDFTT0d3cUpJSHA2Nm1HYlBLOUtGZHpSSHUyS1FOUFZCVHRuSjNSMFdGclYxZzE2MXhEQU9mN0wtU3NWc2xmUTFyODJBM3JjbmRidUZUdEhvMC1n?oc=5",
+      "date": "2026-08-03",
+      "party_code": "PHON"
+    },
+    {
+      "title": "\u2018Never seen anyone\u2019: Inside One Nation\u2019s deserted Victorian headquarters",
+      "source": "Nine.com.au",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQNFVMRkc1LWRvSjB6M1RtbXRpOUNjX3Y0VTA0d0ExUUdOd2lQanJWZWRWWFdKMEtqUkd5U0hOcEQtM0hqZ1IzOG96U0pqRENmQUlqQU5vbkI3R0hRQXpfOVNXRDhEUDg1QU9OR2xzMUpfcXVmbDlVOHJwb0NnYTJkUV9EV1NSNGtGTEFac3JMWWNNVFl4ZXZTQ0ZwLTNONXBVckFVUzd5RlhKZjZBV2F2R1A2bXoyZFZkb1JYcHB6YXd2R0I5?oc=5",
+      "date": "2026-07-21",
+      "party_code": "PHON"
+    },
+    {
+      "title": "One Nation Victoria: meet the 2026 election team",
+      "source": "One News Australia",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5LdUt1dXhMQkg0MzdyNkprMmR2Yi05eWNWdWpFc0UtY2E5SEdlbGw0b0cyQlRXQU1jbE9CRnY1RmVrMDJGdTA2eVdmZ09iMFgwcUh0YW1FOUVlZG55R1ppRlVETkhjN2pSM2c4Nm5jT0JoSXZLWEE?oc=5",
+      "date": "2026-08-08",
+      "party_code": "PHON"
+    },
+    {
+      "title": "One Nation Victoria leader to run for Pakenham",
+      "source": "Endeavour Hills Hallam Doveton Star Journal",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPellWOUZlOVp1eWFzcHdnRkVJUlhOT2ZTMHhiWkM1dThuQk9acGQxS1d1bmZ5MFVqZ0NxemVJOGtNamdsZ19fU1Bac2FLNnkwMko4ZmVwc0lOZ2xreUpNa04wVHNxOTJhUXJsQjE1ZkswOHBnV0FQMWYzcnB0TlZIZnl1SFhZWTVGUEtsZ0llV0pyQzJuX1BhS1RDZHdEMHEtTDVqVkVpT3ZkUVVpb0VBdmFlZHJsWG5nN0cybw?oc=5",
+      "date": "2026-08-07",
+      "party_code": "PHON"
+    }
+  ],
+  "AJP": [
+    {
+      "title": "Jan Heald is back as the Animal Justice Party candidate for Evelyn",
+      "source": "Lilydale Star Mail",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTWdPQ0tQNzNkNnRKaTN4YkVIRDRZRmxNU1dPbWN3cW5wbm9vRHJnazNXQXo2MS0zVFlINXBIblJHaTZDLUxldGRiaEJqMENEQ2pXN1NncW0xZ2t1bXBHc2xDbVZqNjFjSVV5d01jSER5WDVkcHM1cXJJWjZiTmMwWXF4TkpWc1FjVk1jTjNYTEJJVkFZZWJxVWpQVk9LblFrMVE3U183azJQMk00X3hpTGhPb1ZOZmxHZUN2M1V3?oc=5",
+      "date": "2026-09-26",
+      "party_code": "AJP"
+    },
+    {
+      "title": "Chloe Bond returns as Animal Justice Party candidate for Eildon",
+      "source": "Mountain Views Star Mail",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOenVaVkM3bGJockoyWk9JQnhGZHFybEhsLWJWSWZaOEItUzlsdU5qbExfOWlpOUZmQlUyTHUtdmRrVUlaQ1d2blhYUHpxbFJYeTFFUElMMDdiS0dMUDdBV054eFBiOXJYU1VVRHJNNDh0YWpyS2RsUUlXVVNhSzBHWWV4Z0xiTXlFU21lUWFQZ3h1YXBleXhDeUstNmJnWkJZU3FMbll6V1BRbG5UeU4tdGgxaFRac3ExNHVZN05QR1Q?oc=5",
+      "date": "2026-09-17",
+      "party_code": "AJP"
+    },
+    {
+      "title": "Labor caught in dirty deal with Greens and Animal Justice Party as regional WA left defenceless against wild dogs",
+      "source": "nationalswa.com",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPeDl1Z3dlQmpOa3llaERSY3YwVjBKX20xRHpkdDdYd3VpRFItX2RvbTZQN3dnVUxaQnR0c1Vpbk5fa2VXNWJKeXFWZGVrczIzM051a0xtSGF6anM4QklnajRZaVg0Q3ZPZDRkOThfZjFSREcxWGh0QzB1aS1Cb005UnVBVDlvR05LX1VKTTQ4YlBfU0J4aWllS0l0WXd2cWVLazFmNnc5ZXViR09xc0laNE9aUDVyLXh0ck02eGxKWnNFNC0xOGthNnZ4eFp2S0NQWEJ3Wg?oc=5",
+      "date": "2026-05-14",
+      "party_code": "AJP"
+    },
+    {
+      "title": "Animal Justice Party renews call to ban duck hunting",
+      "source": "RNZ",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWHJ6bnJXck5ZYkxRVzRoQVBjOE9jbmhETWQySmtrY0tJejRaaEhyU2pwa2laTEROYTAtZnY4d1NTeUZVOENTNUp1U0VpR3FHaEsteGhrclZUT2d4bXFWelFOZmdLTDA1eXJIM2taTU90OVowdjZHVnhxMVd6NUhZbC1aV0xMMXlBbzNvblU5UXdOcWFReG5kUklJbHU4T0k?oc=5",
+      "date": "2026-05-02",
+      "party_code": "AJP"
+    },
+    {
+      "title": "Animal Justice Party\u2019s Alyssa Wormald hops into candidacy for Monbulk",
+      "source": "Ferntree Gully Star Mail",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxObUYzalgtQ3R0X1VSb3BXYzJaajJYcWJpeVRUckE2Q29VUUVmdndIZWREQlZyMjQ4VlN5SW9TbzJNZUVvTHU0VzFsQTdfOC1KRTY3WUpPVVhOS2YwZGFjSmxISDdZaVlXMjgxSVFEeXNfR0tFVWdxTVpld29HRGRmQVJGelAxNUFJNnIxclZGWm5zQlFYazZsb1Zvd0RqMURRWXMwODBGLW9uSHRmZ0Y4NDQycmpBcnNDR3VibW9yNVQtSWFITG5N?oc=5",
+      "date": "2026-09-17",
+      "party_code": "AJP"
+    },
+    {
+      "title": "Animal Justice Party renews call to ban duck shooting",
+      "source": "Chris Lynch Media",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPV3g1WWZwQmE4d3gxX3dEZXV4ZmxwMUhpdEQwWVFMMGtiT0ptd0lGNFVPdzRsN1pyTlRzQkY0ck1Xd09iaVctblREaVRELUREUnBUMVlZQ3k1a2FSemxrQ3c5OHJqZl9UOXJYalo2dk5mdXUtRUlnQlROREpkc1p2Sjk1SUU2VWNvTUlLMWVzVWFudnhCQi1TTU5faThQQQ?oc=5",
+      "date": "2026-05-13",
+      "party_code": "AJP"
+    },
+    {
+      "title": "\u2018Steal our policies\u2019: Sandra Kyle stands for Animal Justice Party",
+      "source": "NZ Herald",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQamZXSkxKZF9ET2h0a09zUnJvZ093LWZyalBVdTBKcEdXUW4yU2V0VE1BRDJnZFE3bGZvTXV0aDZSQk9KbF9kRVBOTlk1dEdVWXhIdHpYeHhpUnY2bEl1aVEtdzJEZVNmUG5MU1JvbTlCclZUR0poTnVtTWtTU0p2QXdnMGhSNEpxUFhjNzZPSGpJR1o5bmdQQ1lodllaLVFqWFpEV0p6SkkzdFk5SEdDWUxtSHVScTVjeXRONjVjVW42emlHRFhPcjVWUVNYRzRVYjBsN19SemVGXzZyRHZoZkhuREsxOWh4Q21JYW93bm90UQ?oc=5",
+      "date": "2026-06-10",
+      "party_code": "AJP"
+    },
+    {
+      "title": "Animal Justice Party names a candidate for Hammond",
+      "source": "murraybridge.news",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZWFtOERsR0Q2cmQ4cW9lYXh2U1hEbzFoV3Ywbk1neHBFRVB6TF9vdnBHWXQ1Q0hqZmdLYjhDLXlGeUNmNmR1RWh3cXZsSm9mTG5xMlVmclhBUG0yWEstUXhWVHBjdFktWTVfeGVIWW5fNFdDX1NIbVh6cUZqazVOTUY1M1hxOGo3?oc=5",
+      "date": "2026-01-21",
+      "party_code": "AJP"
+    },
+    {
+      "title": "Animal Justice Party solid behind deal claim, Watt in denial",
+      "source": "Sheep Central",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPazU5TzQ5aDVKMHkxdXNSSkwwZXdCbVJveUFwb3J0MW9NVGNyWkZCbHR5bGc5UU9wNmpvbkxjdnU1UFZEM3h2bmg1N1pjRlNwX1AwOFV0R2M5SzA1dlRjVVVDQ3E3ZGlpLVpnakZVTzZzWlFEQ0dkV1ZLbUJWSU9Qd1YwV2tpTG9aODVPRHF0bjVzUEU?oc=5",
+      "date": "2024-05-17",
+      "party_code": "AJP"
+    },
+    {
+      "title": "Jumps racing cost taxpayers $1.8m more than it returned",
+      "source": "The Age",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQ0RUQnZwel9ZUXp5azR6TjdLSGlwUW9IN2hvQXBjR1I5bWF5ZzR6aVdXQkxBcVNSdlZWS3JxeG5rb3dmWjNweUtaTVU2aXZkbUdqQzlZY2VPc3BEd2dzQzlscllXWkZXODhHWUpvbk1nMmYtR01FbmtaNWtTYmxST0YxTHBLUllpbV8tLTFCb0k0NDI3ekJvT0lTYlpjMktoY0dVSXRkNnFrUTU3TnhndnFBOUR2NF84OGhv?oc=5",
+      "date": "2026-02-16",
+      "party_code": "AJP"
+    }
+  ],
+  "RSN": [
+    {
+      "title": "A Funny Thing Happened...with Robbie Swan and Fiona Patten",
+      "source": "National Library of Australia",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVTU2R2EtODR3YlhoU0RGLW1wdXlsbzdRMVFjOTIySXVidjF2OXUyLWJqX1dUQ3ZwUm5tekEyM2N2dlRLeTlUcjVLb2oxMEo1eGFDd1FCc2lzV1Aza0JFc01NX0cwQ3RNVnNRUUNDeGJZcHFGMnVTODB4ZkJTVi16bUt1dEZ6Q3drVjNUZUxzd3lXNXF5WndMZ1ZubjU?oc=5",
+      "date": "2026-05-20",
+      "party_code": "RSN"
+    },
+    {
+      "title": "Fiona Patten named MCCA CEO after Gail Morgan resigns",
+      "source": "Cannabis News Australia",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQVc3cDgxaVoyaWdGaTFLTW5vUnFtVHFtZ05JclQ5VGNoNmlpX3Q1X1dFN3JIQlNCYWhqSGdSdFR3R2JGN2tISkJCRmdNeVdzWU8yUGNMU0NObTc4Z1RXOUM5OHRCVDZJaVRYYWtVSUtNMXVxb2hmV0hrTVFlQTRxS0tjcUV6T1FSU1RuWGxB?oc=5",
+      "date": "2026-07-21",
+      "party_code": "RSN"
+    },
+    {
+      "title": "A Funny Thing Happened \u2026 with Robbie Swan and Fiona Patten",
+      "source": "Books+Publishing",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPSkJYOTVkUEd5OTNqS1pVYkc3TElzU3IwUUtSbEdYRkczZXM0WUljRFgxbFdQT21BR0VYYjlFcnFtYjFQRGhHaWsxQnA4dXg1WkI5ajUtODhiZy1HUUNDSGFzNXY3RU4yV2dlbTc0T3ZFT3NCcFJBZkpLejdCSVdfZkIyVHN6a25KMFQ5RDkzWEd1RzdLbmV1eGFJV25Cd0dCT1p1aVZkU09jb2RnZjRaYVR4Q2dfcGFDM2xJYUR4aw?oc=5",
+      "date": "2026-06-10",
+      "party_code": "RSN"
+    },
+    {
+      "title": "A \u2018real romp\u2019: Fiona Patten tells of sex, politics and power in new book",
+      "source": "The Age",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRkVXOHJvRGVLNGhqWWhDN0ZIQVQ1ZDRTQkNBaHJGLVJnVmNsQ3FGZk5UYkxBV04wT09QaHlkcGlkV3BPeGEwYUpxVTJBQXFSMTRIWmRKeXpoVFhKLWdPWVRLaExOZ1I4dmZOZm9TLUhtY2FlWU43NUFNVFFFNFZtMVd4VjZkUUptVFZUaTFxV1hOT2lGckZDWnBObUcwTUFlS2haanNzaU14LXJodWU1aVpsMGlnSkhNR3h3NXYwRGsza3RsYXRuWFl0M0lTUQ?oc=5",
+      "date": "2026-06-17",
+      "party_code": "RSN"
+    },
+    {
+      "title": "Fiona Patten: \"Only medicinal marijuana prescribed by a doctor is legal, but the police turn a blind eye to middle-class white women like me\"",
+      "source": "Hotpress",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxON0ZCaEZMakNGWHJVZVBMbmpheTkwYVFSVnBhdi1WMkFRUTlsRGRYVEQwRFlqQlJ5cGNfbkpMU2tWcWRxZTNoaFpQS2R6M3o4VURDYzBYd0l2a1JPeVBxVWF3RnhybzlGQm5DTDdDRmpqejNhd2NGR3U1VnlRRVU0OTZIaW83eHMzelV1SFVvdkV0WWpwX3dTQk5UY0szTTlmWHhkSkltS2FldWZnb1R2VEMwYmxJXzRkRGNyZjBpZHVJdUU4bkJHTWNCNEZRS3pSN1VwN2dLcjh4X0NBMVZRYjJEM1VQeEkzVlM3VGthcWwzVk14UDdHcHdoZXcyeE1odW9Hd0ZiaFNpVzA?oc=5",
+      "date": "2026-08-31",
+      "party_code": "RSN"
+    },
+    {
+      "title": "MCCA role \u2018a privilege\u2019, says new CEO Fiona Patten",
+      "source": "Cannabis News Australia",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPcGF3b0pxcG4xWllQazJacGlCUUxWRm5lNDdiVk82b2NpdUJZQUVJRWppSnAteTVfbUlHS0ViUURXUE5Rdm51OGkxT3NSZDJkZXZRNk9YbmhHaTYzTFF4cTNNRjcxMUxDNnpCZGl3dXRIZHVsYVdOMFFKZDNFc0VlczJ3?oc=5",
+      "date": "2026-07-29",
+      "party_code": "RSN"
+    },
+    {
+      "title": "A FUNNY THING HAPPENED ON THE WAY TO THE SEX PARTY",
+      "source": "westender.com.au",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQQ1NiOXBoMi1DT0lFVW5TM3dpcXBUdHNqbkNxVVBZSU5yQ0Vob19FRDB2M3RDbndEYzZPVFpYOVMzVUZ1RWJUQ0tPQ3hwb0tUdDlyTnhTdUNKMy1vUmxYbkJnUEFNQ3k5UFVKNlRSamNtV2JidHlkVzJIVS1BcUFHWmFB?oc=5",
+      "date": "2026-05-05",
+      "party_code": "RSN"
+    },
+    {
+      "title": "A Funny Thing Happened...with Robbie Swan and Fiona Patten",
+      "source": "Region Canberra",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSXl4dFE2R0llaEgyRXFQbW5TZ2d1c3ljVnNKeWNlV3JmT2lXQnN0c25WUVV5MUNZNGpiaXMxRlNTclVJbS1HUkRsRlRCWkxTUXdIQlpnSWJFbEQ1b3l6YTBQYXdZTnQzRl9KV3pfRzNINTgySVUzMGFMT2dmdFppeHdDU0d5Y2pkUHVNSi13?oc=5",
+      "date": "2026-05-27",
+      "party_code": "RSN"
+    },
+    {
+      "title": "No longer a politician, Fiona Patten is not leaving behind politics",
+      "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbTBOX1VwWFROdlgtZ3FPWi00dnN5U2R4b2llUTFOVWNhRGdXRTRJZXVSdVN1OXY4emFSampBS2pyUUFrUXhZNzcxSjJxUjgtUmpQaFE0MW9JZTNmMXJvbUxjcWpnQWh0WWxyazRGUkxXSlhKR3JoTC1oR055cmhXc255WS00c2J0Y1RHTVRFU2g4aDdvbFB5dDBJQllVRnVCTU5BQQ?oc=5",
+      "date": "2023-03-11",
+      "party_code": "RSN"
+    },
+    {
+      "title": "Reason Party\u2019s Fiona Patten on Public Religious Hospitals Denying Abortion in Victoria, Which Andrews Will Continue",
+      "source": "Sydney Criminal Lawyers",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVFpNbjU0ZDl6M3VLamdiaTBRZ09TZ3ZPS01xREtZbXhCQ25UTkxjdXJLa2NTZDdtMXlwX1lkU1hreFZOTVZqNzRQTTZ4N3Jsc2ZuSDhNRS1Db1RlSUYybWpHYTVuaXJxTGFrT0N2SEhwcGw2Q1RBSUlsRlduYkluT3Vja3pOQnNoTDlTUzdiNElJMkxlWGNYMEhQTDNxak5HcjBXbkxYcHRwY211LWxJQXRHVUVHdlhZOUMxRHctUVVIRExGNERhU1hOM0trd1JGeHc?oc=5",
+      "date": "2022-08-17",
+      "party_code": "RSN"
+    }
+  ],
+  "LDP": [
+    {
+      "title": "Liberal Democrats pledge to \u201csupercharge\u201d Pharmacy First in England",
+      "source": "The Pharmaceutical Journal",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWUFaZzlyWTJWak1SVkYxWkw4T0QwSzFISGFYbDFxcF9YRERJOUlZY2l6UVVSZnpFYTZWX2RSMGRyX3ZSVjhqLWRaS3lidTZQX1pDNDFxUDdHMXM3R3cwcGN6ZFVIcmVtSENHeVU2SkowV0JrenFIVjVTNGJ3My1XaE1FMEFyTHAwR1kwRTZ4YUdCOXZ4YWp4dVNyR0xBLTVoU2RXb2l0VVlkakdwQkZTRWxlaw?oc=5",
+      "date": "2026-09-24",
+      "party_code": "LDP"
+    },
+    {
+      "title": "The Liberal Democrats are Britain\u2019s pointless party",
+      "source": "The Economist",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZlJWMnNIeFYtVUdjUWJBbnZ1MEhzY1FsT1lSZFJ6MzkzT3UtQVZabXIybFZJRkNrYzRyNDF0aEFJd2VCTWNCRVRUMzkxMWN1NHJQSDAyLWk2Z0ljem02LWJYT29KdHNwMEJXb0Q1NXNKeW4tRHRLRjlMcXBzVUdfZkxIZm5NTHk2eXpZa3BqSVpUY3VBMEJIR2hCcw?oc=5",
+      "date": "2026-09-24",
+      "party_code": "LDP"
+    },
+    {
+      "title": "Opinion: Liberal Democrats reflect profound political change in Britain",
+      "source": "Deseret News",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZ0o4U3lFRERHSUxwLWlDc2MxYU5kXzlGWlVYVGpLdl9zaG5PdGNBa09hd0wzNEotZ3hoYlRpTUZKV3g2aVgzdzdTUkpldDhqUURCNldUTnRmdW9nTXZfenFIUHVpSGZPQXRUVkVramZvUGp0RDhFS2QtVFFGRWNldUNfXy1UNGVRcHBHcDdlVzRLMHhDYXVUcFVTUGFpRXk3VnczTUtrMlE?oc=5",
+      "date": "2026-09-26",
+      "party_code": "LDP"
+    },
+    {
+      "title": "What are the Lib Dems for? They must champion localism to stay relevant in an age of single-issue politics",
+      "source": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPMjM3U0ZiMHNWNWtSckFUNzdNcDQ2TFNsTWUtZkpjMVk5ZlB0dHhBLUZPZWpxNTJPUWNEZllsY2xvOXdMMjVQNno3UGRNZVNaS3loNmdqalE3ZTRLelNJZXl2UTd6NUlmSnUzdmpXdmF5ZWxaVXNiZG9QcXpwZ2o2MnZacXBrLXZaV3JDallEUnVOczBnWkZqUzVTTmFkTGp6ZTRsc05wTmlZbzRVLVZlb0VNWVZoMnI4aDVaUjRELVM4TERJTHc?oc=5",
+      "date": "2026-09-25",
+      "party_code": "LDP"
+    },
+    {
+      "title": "The Liberal Democrats\u2019 unserious tax cut pledge",
+      "source": "Financial Times",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSElOVF9TQ1FLMkZOUXpwalNlZlNFek10UEtrTzZRSGMxZ1BMWjJBOEwyejRQcXBHOEEwcGJobVZtY25WY2tuWkM5bkFoWFcyZmlhUFJMTDRlamVRdTZVdDFoTVVZZnZjc19WaUJjNk9VMjNrRk5QRTBISUZCMEF4SmtnU3k?oc=5",
+      "date": "2026-09-23",
+      "party_code": "LDP"
+    },
+    {
+      "title": "Liberal Democrats fight for a breakthrough in Britain\u2019s fractured politics",
+      "source": "The Japan Times",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObmx1d1NVQUxtYkpUV1dDUEdsb3h5TUZGc0lUc2JMQjJVa21GMnNVamJqS2NiczR2WTV0QTI0N0xjYnlNa0VEQ0swQzZ6NC12cTZ0OER1TGJaT21aLXRPMmE1TWMydXRzTHp1UzItaEhUaEZ5QXA5UkRxTUFIYnpQd0NlWUVWNDVoMDZyTUJBbG5KVmpHX0t6V200c3U?oc=5",
+      "date": "2026-09-20",
+      "party_code": "LDP"
+    },
+    {
+      "title": "Liberal Democrats explore community pharmacy\u2019s role in care closer to home",
+      "source": "Community Pharmacy England",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbmlqeFNXaE94WEJzLXBjRGJucnpOVTIwRTdodjB3MFVmUk5DOHpDdVI2YzhFUUtIeW9BTm95OHhNX01MRWxyX2p0VDZXTnl4UkxIYXB6TUhiNE52V29JdEtMLS1RdThrcVhGNERPZG4yQmVXR0ZYc2gyN3hkX1ZOaFRrOFhhMEsweHJVXzQ2S19ZLWE3X3lvODJyM0lHNVUxdlRzdw?oc=5",
+      "date": "2026-09-23",
+      "party_code": "LDP"
+    },
+    {
+      "title": "What do the Liberal Democrats stand for?",
+      "source": "Prospect Magazine",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNHJYcjRDWWNwZXRaMWxRQXFTMEhxdUtXWkJhQ3VxU3BlUVU2OWQtd2wwU0JJendsQTNyVG5PUjdZdFhoNDNNY1VNNDFNcFEwYTlreXVXZWNsSm9xOE4ySkpkZkdGOXFVTml2cnlQUzcyZ3F5TDNpbHNINmQyQkR3WVVwbXF6aDR2NldLTl9QQlNjNnpBTUhIbEJKaWFSb2lNVDgzb2k3RFgySjg?oc=5",
+      "date": "2026-09-22",
+      "party_code": "LDP"
+    },
+    {
+      "title": "General election 2019 manifesto watch: The Liberal Democrats",
+      "source": "Wonkhe",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSlhVbG84X2FPeElkV2NCUjlmU2hMOWs3dks3dE56aUxpelZYd0syQ3pya2I5RThLUkQyeUI2YllEdlZkQS16dXhCU2dxOXFILWhpX244QWxPSnRpbzRYODA3NENKOUxqVEtENVdQc1ZjazJxeXNTcDV4YmRaWGtJVzkwYjFQTzNONnpUaVFoUnJZUQ?oc=5",
+      "date": "2026-09-24",
+      "party_code": "LDP"
+    },
+    {
+      "title": "Liberal Democrats Spy Path to Power as Kingmakers in Divided UK",
+      "source": "Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZ2VNX1hLelZzNG16OXFHRjRnUEhIcnR5eXBhdVdkWHBXTmJDOUR4dXpkUFFxS2lYTjZCaTlVUVBTLXd2Zk9IcWFNZDFRaVhEQ01QVjZmaVA5U2xaN0cyOEtVYVFnRDJjc09YOXZOLS03d2JpUGpndF8tdXZjU2ZjQS1MZ3p2VE5xSlBzMjI4ZDZNTXVlNWRvaXAteGlFM0dtZnhQTjNYeTJibHlXOVFpOG9fWVk?oc=5",
+      "date": "2026-09-22",
+      "party_code": "LDP"
+    }
+  ]
+}
