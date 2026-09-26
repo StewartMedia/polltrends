@@ -1,49 +1,42 @@
 [
   {
-    "date": "2026-08-30",
+    "date": "2026-08-30T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 24.3,
-    "ratio": 4.1,
+    "rolling_avg": 23.9,
+    "ratio": 4.2,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-29",
+    "date": "2026-08-29T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 64,
-    "rolling_avg": 17.0,
+    "value": 63,
+    "rolling_avg": 16.7,
     "ratio": 3.8,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-13",
+    "date": "2026-08-13T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 42,
-    "rolling_avg": 15.7,
-    "ratio": 2.7,
+    "value": 44,
+    "rolling_avg": 15.4,
+    "ratio": 2.9,
     "explanation": "Significant spike in search interest",
     "news": []
   },
   {
-    "date": "2026-08-03",
+    "date": "2026-08-03T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 43,
-    "rolling_avg": 16.7,
-    "ratio": 2.6,
-    "explanation": "View from The Hill: Hanson announces One Nation Victorian leader, bans major media outlets",
-    "news": [
-      {
-        "title": "View from The Hill: Hanson announces One Nation Victorian leader, bans major media outlets",
-        "source": "The Conversation",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOR0o5MVJnOUxVQmdmZXh6elpoaV90M3M1MkVPLUgtS3lNcnV6cXE5Nk5kQUtiQnpZX0k4MTNqd0tzSWdBRlhfSVFTOWl5a3JDU2hmdzNxbXhaSU4zWUlyM1I2dWh3U1NwTXQ3SmEwQzdLWmdud1BCTGZWMVJScXhCcXhmUjFVd1d3YWFsYVEyQ2VINUlUcHlpYldHeGtaT05MVE90RUYxcmVFREY1ZE1SRVVNTHdiVWFKX2J3WkxlMUw?oc=5",
-        "date": "2026-08-03"
-      }
-    ]
+    "rolling_avg": 17.0,
+    "ratio": 2.5,
+    "explanation": "Significant spike in search interest",
+    "news": []
   }
 ]
