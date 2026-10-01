@@ -1,23 +1,16 @@
 [
   {
-    "date": "2026-09-13",
+    "date": "2026-09-13T00:00:00",
     "party_code": "LIB",
     "party_name": "Liberal",
     "value": 12,
     "rolling_avg": 0.9,
     "ratio": 14.0,
-    "explanation": "Poll shows Hanson\u2019s \u2018bomb throwing\u2019 could help Victorian Liberals",
-    "news": [
-      {
-        "title": "Poll shows Hanson\u2019s \u2018bomb throwing\u2019 could help Victorian Liberals",
-        "source": "AFR",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNejN6VHdHMW5NaGE5aWt6YjBiajB3SWhrSjU3aGt4S3VDUXRHbkpMNURsb3gxOE9GS2JfODNVRVUxYi0tU3RtUFRQVTBxQkZ6aVhCM3JyUDI0SWpNV0ZNdGdwU0p5b2o2YkFMZEk5UEtRLWlDTmVGN1U3aW5BalN0RDc1U0FQZVZWTnBtODQxbGtZLXVUTG91MktXVUZDa0l3VlBhdzlnODZ0dkNF?oc=5",
-        "date": "2026-09-15"
-      }
-    ]
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
-    "date": "2026-07-24",
+    "date": "2026-07-24T00:00:00",
     "party_code": "ALP",
     "party_name": "Labor",
     "value": 10,
@@ -27,7 +20,7 @@
     "news": []
   },
   {
-    "date": "2026-07-28",
+    "date": "2026-07-28T00:00:00",
     "party_code": "LIB",
     "party_name": "Liberal",
     "value": 11,
@@ -37,24 +30,17 @@
     "news": []
   },
   {
-    "date": "2026-09-30",
+    "date": "2026-09-30T00:00:00",
     "party_code": "GRN",
     "party_name": "Greens",
     "value": 19,
     "rolling_avg": 3.3,
     "ratio": 5.8,
-    "explanation": "Victorian Greens\u2019 public transport proposal to ease cost-of-living crisis",
-    "news": [
-      {
-        "title": "Victorian Greens\u2019 public transport proposal to ease cost-of-living crisis",
-        "source": "3aw.com.au",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPaE9RTVZLUjQzU1N3WF9aQjQwWnU2YlVUMUMyWURxVlRzT0VDMFJjYkZaSFdiVjA1S3VDZmY2eDVENGI5RUMzZ0YyZ1RYa0lkd2ZZUlh0VVY1a3dlQXQxc25nMkRmSGxZTEE4OEZsUl9ERDhhT2Jic1BZRXVmYVdKX3dySUUxbmpwcEpvSUFmb3d3em0xZW9GRGYtM0g?oc=5",
-        "date": "2026-09-28"
-      }
-    ]
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
-    "date": "2026-09-09",
+    "date": "2026-09-09T00:00:00",
     "party_code": "ALP",
     "party_name": "Labor",
     "value": 10,
@@ -64,24 +50,17 @@
     "news": []
   },
   {
-    "date": "2026-08-30",
+    "date": "2026-08-30T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 23.6,
-    "ratio": 4.2,
-    "explanation": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
-    "news": [
-      {
-        "title": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQakFFZ3dvLTRYMURyc1J2Nm9yS3R5d1RleGNieFNENjlfMkVoYlNiWGNpWFJpZFRQbnd6MmN2N3AxVk03UnVBXy1Mc0VBYkNOMzBmczQ5MXV6X2lzWFU5bTVCeS1Lbzg3RkRjMlJiWGVFaThXZk5DM0ptNGhVZjA1UDhDVldHb3QxNUNyM1BsaEVFODlBMU1kYjdTNA?oc=5",
-        "date": "2026-08-31"
-      }
-    ]
+    "rolling_avg": 23.4,
+    "ratio": 4.3,
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
-    "date": "2026-07-27",
+    "date": "2026-07-27T00:00:00",
     "party_code": "ALP",
     "party_name": "Labor",
     "value": 18,
@@ -91,47 +70,27 @@
     "news": []
   },
   {
-    "date": "2026-08-03",
+    "date": "2026-08-03T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 94,
+    "value": 95,
     "rolling_avg": 25.0,
     "ratio": 3.8,
-    "explanation": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
-    "news": [
-      {
-        "title": "\u2018Won\u2019t happen\u2019: One Nation Victoria leader\u2019s comments raise questions about Hanson\u2019s mass deportations policy",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYnFMaDJTWmYydUVwLTBhbXFQbXFoQ2NoM3lvbFFuX3dfWWdfSXkxRGhWVWNERDJjQnVYNmo0d1gzZHhSOTQyTFVhbnFMb2RMMWIyamJWUDRBdUxTbzJ5dUE0WnJLQU5KOW56ekZCQkRLTzNBcmNWTERyV0dVU2FRS2ZuMC1HR1ZGbFJaV2JWaU1iaXhXRXRUa0tQVDFxYkVISFpQb2Y0cXZHNkFiR2IxNUxidXM5OVByUFJ2VmVLcnotaU5wS1hpQWRNUmU?oc=5",
-        "date": "2026-08-04"
-      },
-      {
-        "title": "One Nation Victoria leader to run for Pakenham",
-        "source": "Pakenham Gazette",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeHpjaFFiZkJBdlJrRTY3YXNWQS1lNUhUM0JXU3VGRExXOFI2R3JqcnpVVUt0bS1xVEJsaENhWEZBMmFaakx3eDFTT0d3cUpJSHA2Nm1HYlBLOUtGZHpSSHUyS1FOUFZCVHRuSjNSMFdGclYxZzE2MXhEQU9mN0wtU3NWc2xmUTFyODJBM3JjbmRidUZUdEhvMC1n?oc=5",
-        "date": "2026-08-03"
-      }
-    ]
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
-    "date": "2026-08-29",
+    "date": "2026-08-29T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 59,
-    "rolling_avg": 17.3,
+    "rolling_avg": 17.1,
     "ratio": 3.4,
-    "explanation": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
-    "news": [
-      {
-        "title": "One Nation commits to coal-fired power and lifting nuclear ban in Victoria",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQakFFZ3dvLTRYMURyc1J2Nm9yS3R5d1RleGNieFNENjlfMkVoYlNiWGNpWFJpZFRQbnd6MmN2N3AxVk03UnVBXy1Mc0VBYkNOMzBmczQ5MXV6X2lzWFU5bTVCeS1Lbzg3RkRjMlJiWGVFaThXZk5DM0ptNGhVZjA1UDhDVldHb3QxNUNyM1BsaEVFODlBMU1kYjdTNA?oc=5",
-        "date": "2026-08-31"
-      }
-    ]
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
-    "date": "2026-07-28",
+    "date": "2026-07-28T00:00:00",
     "party_code": "ALP",
     "party_name": "Labor",
     "value": 23,
