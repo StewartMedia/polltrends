@@ -77,15 +77,11 @@
       },
       {
         "query": "liberal party",
-        "value": 77
-      },
-      {
-        "query": "the liberal party",
-        "value": 30
+        "value": 79
       },
       {
         "query": "liberal australia",
-        "value": 28
+        "value": 27
       },
       {
         "query": "liberal party australia",
@@ -120,11 +116,11 @@
         "value": 6
       },
       {
-        "query": "labour party",
+        "query": "liberal candidate",
         "value": 6
       },
       {
-        "query": "liberal candidate",
+        "query": "labour party",
         "value": 6
       },
       {
@@ -142,10 +138,6 @@
       {
         "query": "liberal party victoria",
         "value": 4
-      },
-      {
-        "query": "greens",
-        "value": 3
       },
       {
         "query": "greens party",
@@ -171,7 +163,7 @@
       },
       {
         "query": "the greens",
-        "value": 70
+        "value": 60
       },
       {
         "query": "greens party",
@@ -187,7 +179,7 @@
       },
       {
         "query": "the greens",
-        "value": 53
+        "value": 52
       },
       {
         "query": "the greens party",
@@ -195,7 +187,7 @@
       },
       {
         "query": "greens leader",
-        "value": 12
+        "value": 11
       },
       {
         "query": "the greens australia",
@@ -223,7 +215,7 @@
       },
       {
         "query": "labour",
-        "value": 5
+        "value": 4
       },
       {
         "query": "green",
@@ -235,7 +227,7 @@
       },
       {
         "query": "liberal party",
-        "value": 4
+        "value": 3
       },
       {
         "query": "pauline hanson",
@@ -252,9 +244,21 @@
       {
         "query": "labor party",
         "value": 2
+      },
+      {
+        "query": "greens mp",
+        "value": 2
+      },
+      {
+        "query": "nick mckim",
+        "value": 1
       }
     ],
     "rising": [
+      {
+        "query": "nick mckim",
+        "value": 300
+      },
       {
         "query": "the greens policies",
         "value": 150
@@ -276,6 +280,14 @@
         "value": 80
       },
       {
+        "query": "greens mp",
+        "value": 80
+      },
+      {
+        "query": "australian greens party",
+        "value": 60
+      },
+      {
         "query": "leader of the greens",
         "value": 60
       },
@@ -285,10 +297,6 @@
       },
       {
         "query": "greens leader",
-        "value": 60
-      },
-      {
-        "query": "australian greens party",
         "value": 60
       },
       {
@@ -329,7 +337,7 @@
       },
       {
         "query": "one nation candidates",
-        "value": 4
+        "value": 3
       },
       {
         "query": "one nation news",

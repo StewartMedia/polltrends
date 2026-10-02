@@ -11,23 +11,23 @@
       },
       {
         "query": "labor australia",
-        "value": 44
+        "value": 43
+      },
+      {
+        "query": "alp",
+        "value": 29
       },
       {
         "query": "labour party",
         "value": 27
       },
       {
-        "query": "liberal party",
+        "query": "labour australia",
         "value": 20
       },
       {
-        "query": "one nation",
-        "value": 13
-      },
-      {
-        "query": "anthony albanese",
-        "value": 9
+        "query": "liberal party",
+        "value": 20
       },
       {
         "query": "labor policies",
@@ -36,8 +36,8 @@
     ],
     "rising": [
       {
-        "query": "anthony albanese",
-        "value": 40
+        "query": "alp",
+        "value": 60
       }
     ]
   },
@@ -53,11 +53,15 @@
       },
       {
         "query": "liberal party australia",
-        "value": 16
+        "value": 17
       },
       {
         "query": "liberal leader",
         "value": 12
+      },
+      {
+        "query": "liberal candidate",
+        "value": 10
       },
       {
         "query": "liberal party leader",
@@ -113,17 +117,21 @@
       },
       {
         "query": "james patterson liberal",
-        "value": 0
+        "value": 1
       }
     ],
     "rising": [
       {
         "query": "james patterson liberal",
-        "value": 44700
+        "value": 48450
       },
       {
         "query": "the greens",
         "value": 350
+      },
+      {
+        "query": "liberal candidate",
+        "value": 140
       }
     ]
   },
@@ -143,11 +151,11 @@
       },
       {
         "query": "greens policies",
-        "value": 10
+        "value": 9
       },
       {
         "query": "greens leader",
-        "value": 8
+        "value": 9
       },
       {
         "query": "one nation",
@@ -158,11 +166,11 @@
         "value": 4
       },
       {
-        "query": "australian greens party",
+        "query": "leader of the greens",
         "value": 4
       },
       {
-        "query": "leader of the greens",
+        "query": "australian greens party",
         "value": 4
       },
       {
@@ -171,18 +179,18 @@
       },
       {
         "query": "greens mp",
-        "value": 4
+        "value": 3
       },
       {
         "query": "green",
         "value": 3
       },
       {
-        "query": "greens candidates",
+        "query": "greens political party",
         "value": 2
       },
       {
-        "query": "greens political party",
+        "query": "greens candidates",
         "value": 2
       },
       {
@@ -197,15 +205,15 @@
     "rising": [
       {
         "query": "greens senators",
-        "value": 335950
+        "value": 339350
       },
       {
         "query": "greens candidates",
-        "value": 226200
+        "value": 221200
       },
       {
         "query": "larissa waters",
-        "value": 79300
+        "value": 82600
       },
       {
         "query": "greens mp",
@@ -294,10 +302,6 @@
       {
         "query": "liberal party",
         "value": 1
-      },
-      {
-        "query": "one nation reddit",
-        "value": 1
       }
     ],
     "rising": [
@@ -315,7 +319,7 @@
       },
       {
         "query": "one nation candidates",
-        "value": 400
+        "value": 350
       }
     ]
   },
