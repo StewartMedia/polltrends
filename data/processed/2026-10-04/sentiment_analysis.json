@@ -1,0 +1,466 @@
+{
+  "ALP": {
+    "party": "Labor",
+    "queries_analysed": 35,
+    "sentiment_counts": {
+      "positive": 1,
+      "negative": 1,
+      "neutral": 33
+    },
+    "sentiment_score": 0.0,
+    "classified_queries": [
+      {
+        "query": "labor party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labour",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "australian labor",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "australian labor party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "alp",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "the australian",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labour party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labour australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor government",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labour or labor",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "australian labour party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labour party australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "anthony albanese",
+        "sentiment": "negative"
+      },
+      {
+        "query": "greens",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor party of australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal party australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor immigration",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor policies",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor meaning",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "alp party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "ben carroll",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "mark butler",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "is chris minns labor or liberal",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor immigration reform tony burke",
+        "sentiment": "positive"
+      },
+      {
+        "query": "tony burke",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "jess wilson",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor vic",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor vs labour",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor politicians",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "bob hawke",
+        "sentiment": "neutral"
+      }
+    ]
+  },
+  "LIB": {
+    "party": "Liberal",
+    "queries_analysed": 26,
+    "sentiment_counts": {
+      "positive": 6,
+      "negative": 1,
+      "neutral": 19
+    },
+    "sentiment_score": 0.19,
+    "classified_queries": [
+      {
+        "query": "liberal",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "the liberal party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal leader",
+        "sentiment": "positive"
+      },
+      {
+        "query": "liberal party leader",
+        "sentiment": "positive"
+      },
+      {
+        "query": "liberal party of australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "leader of liberal party",
+        "sentiment": "positive"
+      },
+      {
+        "query": "australian liberal party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labour party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "labor party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "leader of the liberal party",
+        "sentiment": "positive"
+      },
+      {
+        "query": "liberals",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal leader australia",
+        "sentiment": "positive"
+      },
+      {
+        "query": "angus taylor",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal policies",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "pauline hanson",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal senator sarah henderson commentary",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "greens party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "liberal leaders",
+        "sentiment": "positive"
+      },
+      {
+        "query": "the greens",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "albanese",
+        "sentiment": "negative"
+      },
+      {
+        "query": "andrew hastie",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "is pauline hanson liberal or labour",
+        "sentiment": "neutral"
+      }
+    ]
+  },
+  "GRN": {
+    "party": "Greens",
+    "queries_analysed": 29,
+    "sentiment_counts": {
+      "positive": 6,
+      "negative": 0,
+      "neutral": 23
+    },
+    "sentiment_score": 0.21,
+    "classified_queries": [
+      {
+        "query": "greens",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "the greens",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "greens party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "australian greens",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "australia greens",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "the greens party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "greens leader",
+        "sentiment": "positive"
+      },
+      {
+        "query": "the australian greens",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "greens policies",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "the greens leader",
+        "sentiment": "positive"
+      },
+      {
+        "query": "greens senator",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "australian greens party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "the greens policies",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "leader of greens",
+        "sentiment": "positive"
+      },
+      {
+        "query": "labour",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "greens policy",
+        "sentiment": "positive"
+      },
+      {
+        "query": "liberal party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "greens party leader",
+        "sentiment": "positive"
+      },
+      {
+        "query": "pauline hanson",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "greens leader australia",
+        "sentiment": "positive"
+      },
+      {
+        "query": "shoebridge greens",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "greens political party",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "greens senators",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "mehreen faruqi",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "what do the greens stand for",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "greens candidates victoria",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "how many greens in federal parliament",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "greens members",
+        "sentiment": "neutral"
+      }
+    ]
+  },
+  "PHON": {
+    "party": "One Nation",
+    "queries_analysed": 14,
+    "sentiment_counts": {
+      "positive": 2,
+      "negative": 1,
+      "neutral": 11
+    },
+    "sentiment_score": 0.07,
+    "classified_queries": [
+      {
+        "query": "one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation australia",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "pauline hanson",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "what is one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation policies",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation candidates",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation news",
+        "sentiment": "positive"
+      },
+      {
+        "query": "one nation polling",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation leader",
+        "sentiment": "positive"
+      },
+      {
+        "query": "one nation polls",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation protest",
+        "sentiment": "negative"
+      },
+      {
+        "query": "warren pickering",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "warren pickering one nation",
+        "sentiment": "neutral"
+      },
+      {
+        "query": "one nation reddit",
+        "sentiment": "neutral"
+      }
+    ]
+  }
+}
