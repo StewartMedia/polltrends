@@ -7,11 +7,11 @@
       },
       {
         "query": "labour",
-        "value": 81
+        "value": 82
       },
       {
         "query": "liberal",
-        "value": 56
+        "value": 55
       },
       {
         "query": "australian labor",
@@ -23,19 +23,23 @@
       },
       {
         "query": "labour party",
-        "value": 26
+        "value": 25
       },
       {
         "query": "albanese",
         "value": 20
       },
       {
-        "query": "one nation",
-        "value": 18
-      },
-      {
         "query": "labor government",
         "value": 17
+      },
+      {
+        "query": "one nation",
+        "value": 17
+      },
+      {
+        "query": "labor or labour",
+        "value": 12
       },
       {
         "query": "labour party australia",
@@ -47,10 +51,14 @@
       },
       {
         "query": "anthony albanese",
-        "value": 10
+        "value": 11
       },
       {
         "query": "one nation party",
+        "value": 8
+      },
+      {
+        "query": "liberal party australia",
         "value": 8
       },
       {
@@ -62,11 +70,19 @@
         "value": 6
       },
       {
+        "query": "pauline hanson",
+        "value": 6
+      },
+      {
         "query": "labor meaning",
         "value": 5
       }
     ],
     "rising": [
+      {
+        "query": "labor or labour",
+        "value": 70
+      },
       {
         "query": "anthony albanese",
         "value": 60
@@ -84,27 +100,23 @@
         "value": 28
       },
       {
-        "query": "liberal party leader",
-        "value": 13
-      },
-      {
         "query": "liberal party of australia",
         "value": 10
-      },
-      {
-        "query": "labour",
-        "value": 9
       },
       {
         "query": "labor",
         "value": 8
       },
       {
-        "query": "australian liberal party",
+        "query": "labour",
         "value": 8
       },
       {
         "query": "leader of liberal party",
+        "value": 8
+      },
+      {
+        "query": "australian liberal party",
         "value": 8
       },
       {
@@ -120,6 +132,14 @@
         "value": 5
       },
       {
+        "query": "the liberal party of australia",
+        "value": 5
+      },
+      {
+        "query": "angus taylor",
+        "value": 4
+      },
+      {
         "query": "greens",
         "value": 4
       },
@@ -128,19 +148,11 @@
         "value": 4
       },
       {
-        "query": "liberal party victoria",
-        "value": 3
-      },
-      {
         "query": "pauline hanson",
         "value": 3
       },
       {
-        "query": "angus taylor",
-        "value": 3
-      },
-      {
-        "query": "liberal leaders",
+        "query": "liberal party victoria",
         "value": 3
       },
       {
@@ -148,14 +160,26 @@
         "value": 3
       },
       {
-        "query": "who is the liberal party leader",
+        "query": "liberal leaders",
         "value": 3
+      },
+      {
+        "query": "brazil election",
+        "value": 0
       }
     ],
     "rising": [
       {
+        "query": "brazil election",
+        "value": 1850
+      },
+      {
         "query": "greens",
-        "value": 70
+        "value": 50
+      },
+      {
+        "query": "pauline hanson",
+        "value": 40
       }
     ]
   },
@@ -171,11 +195,11 @@
       },
       {
         "query": "the greens party",
-        "value": 26
+        "value": 25
       },
       {
         "query": "greens policies",
-        "value": 15
+        "value": 14
       },
       {
         "query": "one nation",
@@ -190,38 +214,38 @@
         "value": 9
       },
       {
-        "query": "liberal party",
+        "query": "labour",
         "value": 7
+      },
+      {
+        "query": "liberal party",
+        "value": 6
       },
       {
         "query": "pauline hanson",
         "value": 6
-      },
-      {
-        "query": "mehreen faruqi",
-        "value": 5
       }
     ],
     "rising": [
       {
-        "query": "mehreen faruqi",
-        "value": 200
-      },
-      {
         "query": "leader of the greens",
-        "value": 120
+        "value": 130
       },
       {
         "query": "greens policies",
         "value": 70
       },
       {
+        "query": "pauline hanson",
+        "value": 60
+      },
+      {
         "query": "the greens party",
         "value": 60
       },
       {
-        "query": "liberal party",
-        "value": 50
+        "query": "the greens",
+        "value": 40
       }
     ]
   },
@@ -237,11 +261,11 @@
       },
       {
         "query": "pauline hanson",
-        "value": 7
+        "value": 8
       },
       {
         "query": "one nation victoria",
-        "value": 6
+        "value": 7
       },
       {
         "query": "one nation party",
@@ -265,15 +289,15 @@
       },
       {
         "query": "one nation candidates",
-        "value": 3
+        "value": 4
       },
       {
         "query": "one nation win",
-        "value": 3
+        "value": 4
       },
       {
         "query": "one nation news",
-        "value": 3
+        "value": 4
       },
       {
         "query": "one nation polling",
@@ -285,14 +309,14 @@
       },
       {
         "query": "one nation leader",
-        "value": 2
+        "value": 3
       },
       {
         "query": "one nation secret harbour",
-        "value": 2
+        "value": 3
       },
       {
-        "query": "one nation wa",
+        "query": "wa one nation",
         "value": 2
       },
       {
@@ -309,7 +333,7 @@
       },
       {
         "query": "greens",
-        "value": 1
+        "value": 2
       },
       {
         "query": "one nation by election",
@@ -324,42 +348,46 @@
         "value": 1
       },
       {
-        "query": "one nation poll",
+        "query": "andrew hastie",
         "value": 1
       }
     ],
     "rising": [
       {
-        "query": "one nation secret harbour",
-        "value": 223900
+        "query": "mike newman one nation",
+        "value": 88850
       },
       {
         "query": "mike newman",
-        "value": 85800
+        "value": 87300
       },
       {
-        "query": "mike newman one nation",
-        "value": 80000
+        "query": "one nation immigration policy dispute",
+        "value": 28600
       },
       {
         "query": "one nation budget impact",
-        "value": 18750
+        "value": 27800
       },
       {
         "query": "secret harbour",
-        "value": 17150
+        "value": 17600
       },
       {
-        "query": "one nation superannuation access proposal",
-        "value": 6650
+        "query": "one nation secret harbour",
+        "value": 15650
       },
       {
         "query": "secret harbour by election results",
-        "value": 6400
+        "value": 13350
+      },
+      {
+        "query": "one nation superannuation access proposal",
+        "value": 6150
       },
       {
         "query": "warren pickering",
-        "value": 1100
+        "value": 1000
       },
       {
         "query": "one nation cartoon",
@@ -367,10 +395,10 @@
       },
       {
         "query": "andrew hastie",
-        "value": 800
+        "value": 550
       },
       {
-        "query": "one nation wa",
+        "query": "wa one nation",
         "value": 350
       },
       {
@@ -379,11 +407,15 @@
       },
       {
         "query": "one nation victoria",
-        "value": 140
+        "value": 150
       },
       {
         "query": "one nation leader",
-        "value": 100
+        "value": 90
+      },
+      {
+        "query": "one nation win",
+        "value": 40
       }
     ]
   }
