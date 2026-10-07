@@ -46,6 +46,10 @@
         "value": 6
       },
       {
+        "query": "australian labour party",
+        "value": 5
+      },
+      {
         "query": "ben carroll",
         "value": 4
       },
@@ -62,30 +66,18 @@
         "value": 3
       },
       {
-        "query": "anthony albanese",
-        "value": 3
-      },
-      {
         "query": "labor immigration reform tony burke",
-        "value": 1
-      },
-      {
-        "query": "anthony albanese labor party discipline",
         "value": 1
       }
     ],
     "rising": [
       {
         "query": "ben carroll",
-        "value": 322250
+        "value": 315200
       },
       {
         "query": "labor immigration reform tony burke",
-        "value": 104100
-      },
-      {
-        "query": "anthony albanese labor party discipline",
-        "value": 50950
+        "value": 103200
       },
       {
         "query": "alp",
@@ -163,14 +155,14 @@
     "rising": [
       {
         "query": "james patterson liberal",
-        "value": 60650
-      },
-      {
-        "query": "liberal candidate",
-        "value": 150
+        "value": 62300
       },
       {
         "query": "greens party",
+        "value": 150
+      },
+      {
+        "query": "liberal candidate",
         "value": 150
       }
     ]
@@ -183,15 +175,15 @@
       },
       {
         "query": "greens leader",
-        "value": 9
+        "value": 10
       },
       {
         "query": "greens policies",
-        "value": 8
+        "value": 9
       },
       {
         "query": "one nation",
-        "value": 6
+        "value": 7
       },
       {
         "query": "the greens policies",
@@ -199,6 +191,10 @@
       },
       {
         "query": "the greens leader",
+        "value": 6
+      },
+      {
+        "query": "labor",
         "value": 5
       },
       {
@@ -214,15 +210,15 @@
         "value": 3
       },
       {
-        "query": "greens candidates",
-        "value": 3
-      },
-      {
         "query": "greens political party",
         "value": 2
       },
       {
         "query": "greens senators",
+        "value": 2
+      },
+      {
+        "query": "pauline hanson",
         "value": 2
       },
       {
@@ -237,19 +233,15 @@
     "rising": [
       {
         "query": "nick mckim",
-        "value": 21400
+        "value": 24600
       },
       {
         "query": "what do the greens stand for",
-        "value": 10750
+        "value": 9600
       },
       {
         "query": "greens mp",
         "value": 300
-      },
-      {
-        "query": "greens candidates",
-        "value": 140
       },
       {
         "query": "the greens policies",
@@ -257,18 +249,18 @@
       },
       {
         "query": "the greens leader",
-        "value": 90
+        "value": 100
       },
       {
         "query": "greens policies",
         "value": 70
       },
       {
-        "query": "greens senators",
+        "query": "leader of the greens",
         "value": 40
       },
       {
-        "query": "leader of the greens",
+        "query": "greens senators",
         "value": 40
       }
     ]
@@ -278,10 +270,6 @@
       {
         "query": "one nation",
         "value": 100
-      },
-      {
-        "query": "one nation victoria",
-        "value": 14
       },
       {
         "query": "one nation candidates",
@@ -374,52 +362,56 @@
       {
         "query": "liberal party",
         "value": 1
+      },
+      {
+        "query": "one nation reddit",
+        "value": 1
       }
     ],
     "rising": [
       {
         "query": "secret harbour",
-        "value": 102700
+        "value": 104150
       },
       {
         "query": "one nation 26 countries",
-        "value": 50350
+        "value": 50900
       },
       {
         "query": "mike newman",
-        "value": 41300
+        "value": 42050
       },
       {
         "query": "mike newman one nation",
-        "value": 39500
+        "value": 39800
       },
       {
         "query": "greg hansford one nation",
-        "value": 29750
+        "value": 30300
       },
       {
         "query": "greg hansford",
-        "value": 28950
+        "value": 30300
       },
       {
-        "query": "ben carroll",
-        "value": 26850
+        "query": "one nation cartoon andrew hastie",
+        "value": 29250
       },
       {
         "query": "luke herdegen one nation",
-        "value": 26850
+        "value": 25950
       },
       {
         "query": "aaron sanford",
-        "value": 23500
+        "value": 22650
       },
       {
         "query": "natalie adams one nation",
-        "value": 21400
+        "value": 21700
       },
       {
         "query": "one nation immigration policy dispute",
-        "value": 14650
+        "value": 15250
       },
       {
         "query": "one nation wa",
@@ -434,12 +426,16 @@
         "value": 550
       },
       {
+        "query": "one nation cartoon",
+        "value": 500
+      },
+      {
         "query": "one nation protest",
         "value": 500
       },
       {
         "query": "warren pickering",
-        "value": 450
+        "value": 400
       },
       {
         "query": "one nation victoria candidates",
@@ -452,10 +448,6 @@
       {
         "query": "victorian election",
         "value": 110
-      },
-      {
-        "query": "one nation victoria",
-        "value": 90
       },
       {
         "query": "one nation leader",
