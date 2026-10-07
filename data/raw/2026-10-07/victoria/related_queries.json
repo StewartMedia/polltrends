@@ -1,1 +1,478 @@
-{"ALP": {"top": [{"query": "labor", "value": 100}, {"query": "labor party", "value": 43}, {"query": "labour", "value": 35}, {"query": "liberal", "value": 22}, {"query": "labor australia", "value": 18}, {"query": "australian labor party", "value": 11}, {"query": "labour party", "value": 11}, {"query": "liberal party", "value": 9}, {"query": "labor government", "value": 6}, {"query": "one nation", "value": 6}, {"query": "australian labour party", "value": 5}, {"query": "greens", "value": 5}, {"query": "ben carroll", "value": 4}, {"query": "anthony albanese", "value": 4}, {"query": "labor immigration reform tony burke", "value": 1}], "rising": [{"query": "labor immigration reform tony burke", "value": 97850}, {"query": "ben carroll", "value": 600}]}, "LIB": {"top": [{"query": "liberal", "value": 100}, {"query": "liberal party", "value": 70}, {"query": "liberal party australia", "value": 15}, {"query": "liberal candidate", "value": 12}, {"query": "liberal party leader", "value": 10}, {"query": "liberal party victoria", "value": 8}, {"query": "liberal party of australia", "value": 7}, {"query": "one nation", "value": 7}, {"query": "australian liberal party", "value": 7}, {"query": "leader of liberal party", "value": 7}, {"query": "labour party", "value": 6}, {"query": "labor party", "value": 5}, {"query": "liberal party policies", "value": 4}, {"query": "greens party", "value": 3}, {"query": "the greens", "value": 3}, {"query": "angus taylor", "value": 3}, {"query": "liberal leader australia", "value": 3}, {"query": "who is the leader of the liberal party", "value": 2}, {"query": "james patterson liberal", "value": 1}], "rising": [{"query": "greens party", "value": 120}, {"query": "liberal candidate", "value": 120}, {"query": "the greens", "value": 70}]}, "GRN": {"top": [{"query": "greens", "value": 100}, {"query": "the greens", "value": 52}, {"query": "the greens party", "value": 14}, {"query": "greens leader", "value": 10}, {"query": "greens policies", "value": 9}, {"query": "one nation", "value": 6}, {"query": "the greens policies", "value": 5}, {"query": "the greens leader", "value": 5}, {"query": "australian greens party", "value": 4}, {"query": "liberal party", "value": 4}, {"query": "leader of the greens", "value": 4}, {"query": "greens political party", "value": 3}, {"query": "greens candidates", "value": 3}, {"query": "greens senators", "value": 3}, {"query": "one nation policies", "value": 2}, {"query": "greens mp", "value": 2}, {"query": "bob brown greens", "value": 1}, {"query": "nick mckim", "value": 0}], "rising": [{"query": "bob brown greens", "value": 97950}, {"query": "nick mckim", "value": 19750}, {"query": "greens senators", "value": 300}, {"query": "one nation policies", "value": 150}, {"query": "greens candidates", "value": 80}, {"query": "greens policies", "value": 70}, {"query": "liberal party", "value": 70}, {"query": "the greens policies", "value": 60}, {"query": "the greens party", "value": 50}]}, "PHON": {"top": [{"query": "one nation", "value": 100}, {"query": "one nation victoria", "value": 14}, {"query": "one nation australia", "value": 9}, {"query": "one nation candidates", "value": 7}, {"query": "pauline hanson", "value": 7}, {"query": "one nation party", "value": 6}, {"query": "pauline hanson one nation", "value": 6}, {"query": "one nation policies", "value": 5}, {"query": "what is one nation", "value": 5}, {"query": "one nation victoria candidates", "value": 4}, {"query": "one nation policy", "value": 4}, {"query": "one nation win", "value": 3}, {"query": "one nation leader", "value": 3}, {"query": "one nation news", "value": 3}, {"query": "one nation polling", "value": 3}, {"query": "labour", "value": 2}, {"query": "one nation polls", "value": 2}, {"query": "pickering one nation", "value": 2}, {"query": "victorian election", "value": 2}, {"query": "warren pickering", "value": 2}, {"query": "warren pickering one nation", "value": 2}, {"query": "one nation secret harbour", "value": 1}, {"query": "liberal party", "value": 1}, {"query": "one nation protest", "value": 1}, {"query": "what is one nation australia", "value": 1}], "rising": [{"query": "one nation hastie cartoon", "value": 50450}, {"query": "mike newman", "value": 44300}, {"query": "ben carroll", "value": 38900}, {"query": "greg hansford", "value": 30850}, {"query": "mark nicholson one nation", "value": 29100}, {"query": "mark nicholson", "value": 26350}, {"query": "luke herdegen one nation", "value": 23050}, {"query": "natalie adams one nation", "value": 20400}, {"query": "one nation immigration policy dispute", "value": 15100}, {"query": "one nation proposal international student caps", "value": 7550}, {"query": "one nation secret harbour", "value": 2450}, {"query": "warren pickering", "value": 1050}, {"query": "pickering one nation", "value": 700}, {"query": "warren pickering one nation", "value": 700}, {"query": "one nation protest", "value": 650}, {"query": "one nation victoria candidates", "value": 400}, {"query": "one nation candidates", "value": 400}, {"query": "victorian election", "value": 120}, {"query": "one nation victoria", "value": 100}, {"query": "one nation leader", "value": 60}]}, "AJP": {"top": [], "rising": []}, "RSN": {"top": [], "rising": []}, "LDP": {"top": [], "rising": []}}
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labor",
+        "value": 100
+      },
+      {
+        "query": "labor party",
+        "value": 43
+      },
+      {
+        "query": "liberal",
+        "value": 23
+      },
+      {
+        "query": "labor australia",
+        "value": 19
+      },
+      {
+        "query": "alp",
+        "value": 13
+      },
+      {
+        "query": "australian labor party",
+        "value": 12
+      },
+      {
+        "query": "labour party",
+        "value": 11
+      },
+      {
+        "query": "labour australia",
+        "value": 9
+      },
+      {
+        "query": "liberal party",
+        "value": 7
+      },
+      {
+        "query": "labor government",
+        "value": 7
+      },
+      {
+        "query": "one nation",
+        "value": 6
+      },
+      {
+        "query": "ben carroll",
+        "value": 4
+      },
+      {
+        "query": "greens",
+        "value": 4
+      },
+      {
+        "query": "labor party of australia",
+        "value": 4
+      },
+      {
+        "query": "labor policies",
+        "value": 3
+      },
+      {
+        "query": "anthony albanese",
+        "value": 3
+      },
+      {
+        "query": "labor immigration reform tony burke",
+        "value": 1
+      },
+      {
+        "query": "anthony albanese labor party discipline",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "ben carroll",
+        "value": 322250
+      },
+      {
+        "query": "labor immigration reform tony burke",
+        "value": 104100
+      },
+      {
+        "query": "anthony albanese labor party discipline",
+        "value": 50950
+      },
+      {
+        "query": "alp",
+        "value": 60
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal party",
+        "value": 72
+      },
+      {
+        "query": "liberal party australia",
+        "value": 15
+      },
+      {
+        "query": "liberal candidate",
+        "value": 12
+      },
+      {
+        "query": "liberal party leader",
+        "value": 10
+      },
+      {
+        "query": "liberal party victoria",
+        "value": 9
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 8
+      },
+      {
+        "query": "one nation",
+        "value": 8
+      },
+      {
+        "query": "australian liberal party",
+        "value": 6
+      },
+      {
+        "query": "labour party",
+        "value": 6
+      },
+      {
+        "query": "liberal party policies",
+        "value": 5
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 5
+      },
+      {
+        "query": "greens party",
+        "value": 4
+      },
+      {
+        "query": "greens",
+        "value": 3
+      },
+      {
+        "query": "who is the leader of the liberal party",
+        "value": 2
+      },
+      {
+        "query": "james patterson liberal",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "james patterson liberal",
+        "value": 60650
+      },
+      {
+        "query": "liberal candidate",
+        "value": 150
+      },
+      {
+        "query": "greens party",
+        "value": 150
+      }
+    ]
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      },
+      {
+        "query": "greens leader",
+        "value": 9
+      },
+      {
+        "query": "greens policies",
+        "value": 8
+      },
+      {
+        "query": "one nation",
+        "value": 6
+      },
+      {
+        "query": "the greens policies",
+        "value": 6
+      },
+      {
+        "query": "the greens leader",
+        "value": 5
+      },
+      {
+        "query": "greens mp",
+        "value": 4
+      },
+      {
+        "query": "leader of the greens",
+        "value": 4
+      },
+      {
+        "query": "liberal party",
+        "value": 3
+      },
+      {
+        "query": "greens candidates",
+        "value": 3
+      },
+      {
+        "query": "greens political party",
+        "value": 2
+      },
+      {
+        "query": "greens senators",
+        "value": 2
+      },
+      {
+        "query": "nick mckim",
+        "value": 0
+      },
+      {
+        "query": "what do the greens stand for",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "nick mckim",
+        "value": 21400
+      },
+      {
+        "query": "what do the greens stand for",
+        "value": 10750
+      },
+      {
+        "query": "greens mp",
+        "value": 300
+      },
+      {
+        "query": "greens candidates",
+        "value": 140
+      },
+      {
+        "query": "the greens policies",
+        "value": 100
+      },
+      {
+        "query": "the greens leader",
+        "value": 90
+      },
+      {
+        "query": "greens policies",
+        "value": 70
+      },
+      {
+        "query": "greens senators",
+        "value": 40
+      },
+      {
+        "query": "leader of the greens",
+        "value": 40
+      }
+    ]
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation victoria",
+        "value": 14
+      },
+      {
+        "query": "one nation candidates",
+        "value": 7
+      },
+      {
+        "query": "pauline hanson",
+        "value": 7
+      },
+      {
+        "query": "one nation party",
+        "value": 6
+      },
+      {
+        "query": "one nation policies",
+        "value": 5
+      },
+      {
+        "query": "pauline hanson one nation",
+        "value": 5
+      },
+      {
+        "query": "what is one nation",
+        "value": 5
+      },
+      {
+        "query": "one nation victoria candidates",
+        "value": 4
+      },
+      {
+        "query": "one nation policy",
+        "value": 4
+      },
+      {
+        "query": "one nation win",
+        "value": 3
+      },
+      {
+        "query": "one nation news",
+        "value": 3
+      },
+      {
+        "query": "one nation leader",
+        "value": 3
+      },
+      {
+        "query": "one nation polling",
+        "value": 3
+      },
+      {
+        "query": "labour",
+        "value": 2
+      },
+      {
+        "query": "one nation polls",
+        "value": 2
+      },
+      {
+        "query": "warren pickering",
+        "value": 2
+      },
+      {
+        "query": "pickering one nation",
+        "value": 2
+      },
+      {
+        "query": "victorian election",
+        "value": 2
+      },
+      {
+        "query": "warren pickering one nation",
+        "value": 2
+      },
+      {
+        "query": "one nation wa",
+        "value": 2
+      },
+      {
+        "query": "what is one nation australia",
+        "value": 1
+      },
+      {
+        "query": "one nation protest",
+        "value": 1
+      },
+      {
+        "query": "secret harbour",
+        "value": 1
+      },
+      {
+        "query": "liberal party",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "secret harbour",
+        "value": 102700
+      },
+      {
+        "query": "one nation 26 countries",
+        "value": 50350
+      },
+      {
+        "query": "mike newman",
+        "value": 41300
+      },
+      {
+        "query": "mike newman one nation",
+        "value": 39500
+      },
+      {
+        "query": "greg hansford one nation",
+        "value": 29750
+      },
+      {
+        "query": "greg hansford",
+        "value": 28950
+      },
+      {
+        "query": "ben carroll",
+        "value": 26850
+      },
+      {
+        "query": "luke herdegen one nation",
+        "value": 26850
+      },
+      {
+        "query": "aaron sanford",
+        "value": 23500
+      },
+      {
+        "query": "natalie adams one nation",
+        "value": 21400
+      },
+      {
+        "query": "one nation immigration policy dispute",
+        "value": 14650
+      },
+      {
+        "query": "one nation wa",
+        "value": 950
+      },
+      {
+        "query": "warren pickering one nation",
+        "value": 850
+      },
+      {
+        "query": "pickering one nation",
+        "value": 550
+      },
+      {
+        "query": "one nation protest",
+        "value": 500
+      },
+      {
+        "query": "warren pickering",
+        "value": 450
+      },
+      {
+        "query": "one nation victoria candidates",
+        "value": 350
+      },
+      {
+        "query": "one nation candidates",
+        "value": 350
+      },
+      {
+        "query": "victorian election",
+        "value": 110
+      },
+      {
+        "query": "one nation victoria",
+        "value": 90
+      },
+      {
+        "query": "one nation leader",
+        "value": 50
+      }
+    ]
+  },
+  "AJP": {
+    "top": [],
+    "rising": []
+  },
+  "RSN": {
+    "top": [],
+    "rising": []
+  },
+  "LDP": {
+    "top": [],
+    "rising": []
+  }
+}
