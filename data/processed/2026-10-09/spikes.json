@@ -1,35 +1,16 @@
 [
   {
-    "date": "2026-09-30",
+    "date": "2026-09-30T00:00:00",
     "party_code": "GRN",
     "party_name": "Greens",
-    "value": 18,
+    "value": 19,
     "rolling_avg": 2.6,
-    "ratio": 7.0,
-    "explanation": "New Australian Greens leader David Shoebridge vows to \u2018replace\u2019 Labor",
-    "news": [
-      {
-        "title": "New Australian Greens leader David Shoebridge vows to \u2018replace\u2019 Labor",
-        "source": "Politico",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOU3VKSGVJYVdIaWN4S1lqM2NHbXFQRU9qWjZkaU9vajlfR0xRWFpRLU9qOVlsazNsbG50LTQ3TW1BTTRHNTBhbHpSRzRCb1VFNjJKZVYtMEtQaGVwcFF1RVBVbXphMTNCWmdYT2taS1BMcDAyRUJNQms2SHBhWjFTbXh0Si0ydHNIRF90TThoYUx6OWZyRk1heXNtc0RpN3NOUkhOWkR0LUVVRmJiSVp6VGZFVEtnNkd2Tm1RMkp2LVNpZkZva3YycDd5Unc4cEQ5STFTLQ?oc=5",
-        "date": "2026-09-29"
-      },
-      {
-        "title": "VIDEO: David Shoebridge selected as new Greens Party leader",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPYVZHQ3pmWEVxOUZmSlNLTXVNcDE3N25SdlNnZlVBTmgwV29iSXFhelpLQzY1a21QUjVIdG9QcUpGMnN5SWZPYVJ6TlNENzQ5RGhRMU9ONVhCcHp0SkwtUEkzQkNYSmZ1dE1VZ3Z0RmhVUGpyRU52NzI0Y2JQZ0d4WDgxZkZXSjBNdTRVaDBYT2pXYjh0dWFFMjFKeENURmU2dVJr?oc=5",
-        "date": "2026-09-30"
-      },
-      {
-        "title": "Defence, veterans affairs spokesperson Senator David Shoebridge elected to lead Australian Greens",
-        "source": "Defence Connect",
-        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQRzB2d2pPa0k1N2IzZzNaNTdFM09hdHI2bWZmanh4bV8tTkN2bTZLbDFFU0I5R09GeEg1ZnhxcjBGcUUyNy1xUGFYX2lEOTZaYTdPUDJUMWh2RUZKRFpJLXY2R1E4bDFXOUZZNXZCWnFna29sZy1wT2dPcVV5QWlmUEdaZTNpYUNQVlIzeS13LWM3QWFtUjI5VWdaYk1rSHZtRUNFOVA1SDNTd0tDM2twVXhqT3ZuSzQ4Yy1VVE1HZlFuVjI5cjhJb2hpMEN2bWhuSTV6YnRNZkJnSVNXY0xBUG01SFNDU01ISDZnVkpZVE8?oc=5",
-        "date": "2026-09-30"
-      }
-    ]
+    "ratio": 7.4,
+    "explanation": "Significant spike in search interest",
+    "news": []
   },
   {
-    "date": "2026-08-30",
+    "date": "2026-08-30T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
@@ -39,7 +20,7 @@
     "news": []
   },
   {
-    "date": "2026-08-29",
+    "date": "2026-08-29T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 64,
@@ -49,7 +30,7 @@
     "news": []
   },
   {
-    "date": "2026-08-13",
+    "date": "2026-08-13T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 42,
@@ -59,22 +40,12 @@
     "news": []
   },
   {
-    "date": "2026-08-03",
+    "date": "2026-08-03T00:00:00",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 43,
     "rolling_avg": 17.1,
     "ratio": 2.5,
-    "explanation": "Significant spike in search interest",
-    "news": []
-  },
-  {
-    "date": "2026-10-03",
-    "party_code": "PHON",
-    "party_name": "One Nation",
-    "value": 32,
-    "rolling_avg": 15.7,
-    "ratio": 2.0,
     "explanation": "Significant spike in search interest",
     "news": []
   }
