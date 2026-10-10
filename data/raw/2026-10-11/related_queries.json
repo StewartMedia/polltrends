@@ -1,0 +1,229 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labor party",
+        "value": 100
+      },
+      {
+        "query": "labour",
+        "value": 81
+      },
+      {
+        "query": "liberal",
+        "value": 55
+      },
+      {
+        "query": "australian labor",
+        "value": 43
+      },
+      {
+        "query": "australian labor party",
+        "value": 33
+      },
+      {
+        "query": "labour party",
+        "value": 27
+      },
+      {
+        "query": "albanese",
+        "value": 19
+      },
+      {
+        "query": "one nation",
+        "value": 18
+      },
+      {
+        "query": "labor government",
+        "value": 18
+      },
+      {
+        "query": "australian labour party",
+        "value": 11
+      },
+      {
+        "query": "labour party australia",
+        "value": 11
+      },
+      {
+        "query": "anthony albanese",
+        "value": 11
+      },
+      {
+        "query": "one nation party",
+        "value": 9
+      },
+      {
+        "query": "liberal party australia",
+        "value": 8
+      },
+      {
+        "query": "labor policies",
+        "value": 7
+      },
+      {
+        "query": "pauline hanson",
+        "value": 5
+      }
+    ],
+    "rising": [
+      {
+        "query": "anthony albanese",
+        "value": 40
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal party australia",
+        "value": 100
+      },
+      {
+        "query": "liberal leader",
+        "value": 87
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 39
+      },
+      {
+        "query": "labor",
+        "value": 38
+      },
+      {
+        "query": "labour party",
+        "value": 32
+      },
+      {
+        "query": "labor party",
+        "value": 30
+      },
+      {
+        "query": "one nation party",
+        "value": 28
+      },
+      {
+        "query": "leader of the liberal party",
+        "value": 28
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 25
+      },
+      {
+        "query": "liberals",
+        "value": 21
+      },
+      {
+        "query": "angus taylor",
+        "value": 21
+      },
+      {
+        "query": "pauline hanson",
+        "value": 17
+      },
+      {
+        "query": "liberal party policies",
+        "value": 15
+      },
+      {
+        "query": "flávio bolsonaro",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "flávio bolsonaro",
+        "value": 2100
+      }
+    ]
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      }
+    ],
+    "rising": []
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation australia",
+        "value": 9
+      },
+      {
+        "query": "pauline hanson",
+        "value": 7
+      },
+      {
+        "query": "one nation victoria",
+        "value": 7
+      },
+      {
+        "query": "one nation party",
+        "value": 6
+      },
+      {
+        "query": "what is one nation",
+        "value": 5
+      },
+      {
+        "query": "one nation policies",
+        "value": 5
+      },
+      {
+        "query": "one nation policy",
+        "value": 4
+      },
+      {
+        "query": "one nation candidates",
+        "value": 3
+      },
+      {
+        "query": "one nation news",
+        "value": 3
+      },
+      {
+        "query": "one nation leader",
+        "value": 3
+      },
+      {
+        "query": "one nation polls",
+        "value": 2
+      },
+      {
+        "query": "one nation nsw",
+        "value": 2
+      },
+      {
+        "query": "greens",
+        "value": 1
+      },
+      {
+        "query": "liberal party",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation candidates",
+        "value": 250
+      },
+      {
+        "query": "one nation victoria",
+        "value": 150
+      },
+      {
+        "query": "one nation leader",
+        "value": 90
+      }
+    ]
+  }
+}
