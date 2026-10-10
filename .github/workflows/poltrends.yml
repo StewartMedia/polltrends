@@ -1,60 +1,51 @@
-name: PolTrends Pipeline
+name: PolTrends daily update
 
+# One pipeline, run by GitHub. No local machine, cron or model is involved.
+# 19:30 UTC = 06:30 AEDT / 05:30 AEST: fetch Google Trends, news and polls.
+# 07:30 UTC = 18:30 AEDT: refresh news and polls (Trends is skipped when today's
+# snapshot already exists, to stay well inside Google's rate limits).
 on:
   schedule:
-    - cron: '5 18 * * 1-6'
-    - cron: '15 18 * * 0'
+    - cron: '30 19 * * *'
+    - cron: '30 7 * * *'
   workflow_dispatch:
     inputs:
-      pipeline:
-        description: 'Which pipeline to run'
-        required: false
-        default: daily
-        type: choice
-        options:
-          - daily
-          - weekly
+      force_trends:
+        description: 'Refetch Google Trends even if today already has a snapshot'
+        type: boolean
+        default: false
 
 concurrency:
   group: poltrends-pipeline
   cancel-in-progress: false
 
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-    permissions:
-      contents: write
-
+    timeout-minutes: 40
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+          cache: 'pip'
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
-      - name: Run daily pipeline
-        if: ${{ (github.event_name == 'schedule' && github.event.schedule == '5 18 * * 1-6') || (github.event_name == 'workflow_dispatch' && inputs.pipeline == 'daily') }}
+      - name: Run pipeline
         env:
           PYTHONUNBUFFERED: '1'
+          POLTRENDS_FORCE_TRENDS: ${{ inputs.force_trends && '1' || '' }}
         run: python scripts/run_daily.py
 
-      - name: Run weekly pipeline
-        if: ${{ (github.event_name == 'schedule' && github.event.schedule == '15 18 * * 0') || (github.event_name == 'workflow_dispatch' && inputs.pipeline == 'weekly') }}
-        env:
-          PYTHONUNBUFFERED: '1'
-        run: python scripts/run_weekly.py
-
-      - name: Commit and push updates
+      - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -63,6 +54,6 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "Update PolTrends data: $(date -u +%Y-%m-%d)"
+          git commit -m "PolTrends update: $(TZ=Australia/Melbourne date +%Y-%m-%d\ %H:%M)"
           git pull --rebase origin main
           git push origin HEAD:main

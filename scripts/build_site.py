@@ -1,274 +1,235 @@
-"""Build the static site from templates and data."""
+"""Build the static site (docs/) from the latest snapshots."""
+import hashlib
+import json
+import shutil
 import sys
+from datetime import date, datetime
 from pathlib import Path
 from urllib.parse import urlparse
 
-import markdown
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from markupsafe import Markup, escape
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from config.settings import (
-    ENTITIES, PARTY_COLORS, RAW_DIR, PROCESSED_DIR, TEMPLATES_DIR, OUTPUT_DIR,
-    VIC_ENTITIES, VIC_PARTY_COLORS, find_latest_snapshot_date, load_snapshot_file,
+from config.settings import (  # noqa: E402
+    ENTITIES, OUTPUT_DIR, PROCESSED_DIR, RAW_DIR, SITE_DIR, SITE_URL, TEMPLATES_DIR, VIC_ENTITIES,
+    VIC_LEADERS, load_latest_file, now_local, today_local,
 )
-from scripts.generate_charts import (
-    build_interest_chart, build_weekly_bars, build_related_queries_table, load_spikes,
-)
-from scripts.generate_og_image import generate_og_image
+from scripts import generate_charts as charts  # noqa: E402
+from scripts.generate_narrative import article  # noqa: E402
+from scripts.generate_og_image import generate_og_image  # noqa: E402
+from scripts.vic_model import TIPPING_BAND  # noqa: E402
+
+PARTY_COLORS = {"ALP": "#F0524A", "LIB": "#3D8BFD", "NAT": "#F2C230", "LNP": "#3D8BFD",
+                "GRN": "#3FCB6E", "IND": "#9AA4B2", "PHON": "#FF8A1F", "ONP": "#FF8A1F"}
+SENTENCE = {"ALP": "Labor", "LIB": "The Liberals", "GRN": "The Greens", "PHON": "One Nation", "NAT": "The Nationals"}
+MID = {"ALP": "Labor", "LIB": "the Liberals", "GRN": "the Greens", "PHON": "One Nation", "NAT": "the Nationals"}
 
 
-def sanitize_url(url: str) -> str:
-    """Allow only absolute HTTP(S) URLs in rendered content."""
-    parsed = urlparse(url or "")
-    if parsed.scheme in {"http", "https"} and parsed.netloc:
-        return url
-    return ""
+# ---------- helpers ----------
+def safe_url(url: str) -> str:
+    p = urlparse(url or "")
+    return url if p.scheme in ("http", "https") and p.netloc else ""
 
 
-def sanitize_news_items(news_data: dict | None) -> dict:
-    """Strip unsafe links from fetched news items."""
-    if not news_data:
-        return {}
-
-    sanitized = {}
-    for code, articles in news_data.items():
-        sanitized[code] = []
-        for article in articles:
-            sanitized[code].append({
-                **article,
-                "url": sanitize_url(article.get("url", "")),
-            })
-    return sanitized
+def clean_articles(items):
+    if isinstance(items, dict):
+        return {k: clean_articles(v) for k, v in items.items()}
+    if isinstance(items, list):
+        return [{**a, "url": safe_url(a.get("url", ""))} if isinstance(a, dict) else a for a in items]
+    return items
 
 
-def sanitize_spikes(spikes: list[dict] | None) -> list[dict]:
-    """Strip unsafe links from spike-associated articles."""
-    if not spikes:
-        return []
-
-    sanitized = []
-    for spike in spikes:
-        spike_copy = {**spike}
-        spike_copy["news"] = [
-            {**article, "url": sanitize_url(article.get("url", ""))}
-            for article in spike.get("news", [])
-        ]
-        sanitized.append(spike_copy)
-    return sanitized
+def fmt_day(iso) -> str:
+    return date.fromisoformat(str(iso)[:10]).strftime("%-d %b") if iso else ""
 
 
+def fmt_day_long(iso) -> str:
+    return date.fromisoformat(str(iso)[:10]).strftime("%-d %B %Y") if iso else ""
+
+
+def month(iso) -> str:
+    return date.fromisoformat(str(iso)[:10]).strftime("%b")
+
+
+def day(iso) -> str:
+    return date.fromisoformat(str(iso)[:10]).strftime("%-d")
+
+
+def asset_hash(*paths: Path) -> str:
+    h = hashlib.md5()
+    for p in paths:
+        h.update(p.read_bytes())
+    return h.hexdigest()[:8]
+
+
+def copy_assets() -> str:
+    assets = OUTPUT_DIR / "assets"
+    (assets / "fonts").mkdir(parents=True, exist_ok=True)
+    for f in (SITE_DIR / "static").iterdir():
+        shutil.copy2(f, assets / f.name)
+    for f in (assets / "fonts").glob("*.ttf"):
+        f.unlink()  # web pages use the subset woff2 files; TTFs are only for share images
+    for f in (SITE_DIR / "webfonts").glob("*.woff2"):
+        shutil.copy2(f, assets / "fonts" / f.name)
+    shutil.copy2(SITE_DIR / "static" / "favicon.svg", OUTPUT_DIR / "favicon.svg")
+    return asset_hash(SITE_DIR / "static" / "site.css", SITE_DIR / "static" / "site.js")
+
+
+# ---------- headlines ----------
+def national_headline(summary: dict) -> tuple[Markup, str, str]:
+    if not summary:
+        return Markup("Who is Australia searching for?"), "", ""
+    s, leader, runner = summary["stats"], summary["leader"], summary["runner_up"]
+    lead_name = ENTITIES[leader]["short_name"]
+    ratio = summary.get("lead_ratio") or 0
+    share = s[leader]["share"]
+    if ratio and ratio < 1.15:
+        h = Markup("<em>Neck and neck</em> in the search race.")
+    elif share >= 50:
+        h = Markup(f"{escape(lead_name)} <em>owns</em> the conversation.")
+    else:
+        h = Markup(f"{escape(lead_name)} <em>leads</em> the search race.")
+    lede = (f"{SENTENCE.get(leader, lead_name)} drew {share:.0f}% of all search interest in Australia's "
+            f"main parties in the week to {fmt_day_long(summary['period']['end'])}, "
+            f"{ratio:.1f} times {MID.get(runner, runner)}. "
+            f"That is attention, not support: the headlines below show what drove it.")
+    plain = f"{lead_name} leads Australian political searches"
+    return h, lede, plain
+
+
+def victoria_headline(model: dict | None) -> tuple[Markup, str]:
+    if not model or model["average"]["tpp"]["ALP"] is None:
+        return Markup("Victoria votes on <em>28 November</em>."), "Polls and seats will appear after the next run."
+    avg = model["average"]
+    tpp, onp = avg["tpp"], avg["primary"].get("ONP") or 0
+    leader = "The Coalition" if tpp["LNP"] > tpp["ALP"] else "Labor"
+    h = Markup(f"{leader} in front. <em>One Nation</em> in the mix.") if onp >= 15 else Markup(f"{leader} <em>in front</em>.")
+    swing = model["swing_to_lnp"]
+    lede = (f"Polls average {tpp['LNP']}–{tpp['ALP']} two-party preferred, "
+            f"{article(swing)} {abs(swing):.1f}-point swing {'to the Coalition' if swing > 0 else 'to Labor'} since 2022. "
+            f"With One Nation on {onp:.0f}% of the primary vote, the classic pendulum and seat-by-seat "
+            f"modelling tell very different stories. Explore both below.")
+    return h, lede
+
+
+def seat_payload(model: dict) -> Markup:
+    keep = ("seat", "member", "holder", "margin", "vs", "classic", "region", "note", "tier")
+    data = {"majority": model["majority"], "swing": model["swing_to_lnp"],
+            "seats": [{k: s.get(k) for k in keep} for s in model["seats"]]}
+    return Markup(json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/"))
+
+
+def updated_labels(run_status: dict | None) -> tuple[str, str, bool]:
+    if run_status and run_status.get("finished_at"):
+        ts = datetime.fromisoformat(run_status["finished_at"])
+    else:
+        ts = now_local()
+    short = ts.strftime("%-d %b, %-I:%M%p").replace("AM", "am").replace("PM", "pm")
+    long = ts.strftime("%-d %B %Y at %-I:%M%p %Z").replace("AM", "am").replace("PM", "pm")
+    return short, long, False
+
+
+# ---------- build ----------
 def build():
-    """Build all site pages."""
-    env = Environment(
-        loader=FileSystemLoader(str(TEMPLATES_DIR)),
-        autoescape=select_autoescape(["html", "xml"]),
-    )
+    env = Environment(loader=FileSystemLoader(str(TEMPLATES_DIR)), autoescape=select_autoescape(["html"]),
+                      trim_blocks=True, lstrip_blocks=True)
+    env.filters.update(fmt_day=fmt_day, fmt_day_long=fmt_day_long, month=month, day=day)
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    version = copy_assets()
 
-    latest_national_raw = find_latest_snapshot_date(
-        raw_required=["interest_over_time.json", "related_queries.json", "news.json"],
+    # National
+    _, summary = load_latest_file(PROCESSED_DIR, "weekly_analysis.json")
+    iot_date, iot = load_latest_file(RAW_DIR, "interest_over_time.json")
+    _, related = load_latest_file(RAW_DIR, "related_queries.json")
+    _, news = load_latest_file(RAW_DIR, "news.json")
+    _, spikes = load_latest_file(PROCESSED_DIR, "spikes.json")
+    _, briefing = load_latest_file(PROCESSED_DIR, "briefing.json")
+    _, run_status = load_latest_file(PROCESSED_DIR, "run_status.json")
+
+    # Victoria
+    _, model = load_latest_file(PROCESSED_DIR, "seat_model.json", subdir="victoria")
+    _, vic_summary = load_latest_file(PROCESSED_DIR, "weekly_analysis.json", subdir="victoria")
+    _, leaders_summary = load_latest_file(PROCESSED_DIR, "leaders_analysis.json", subdir="victoria")
+    _, vic_iot = load_latest_file(RAW_DIR, "interest_over_time.json", subdir="victoria")
+    _, leaders_iot = load_latest_file(RAW_DIR, "leaders_interest.json", subdir="victoria")
+    _, vic_related = load_latest_file(RAW_DIR, "related_queries.json", subdir="victoria")
+    _, vic_news = load_latest_file(RAW_DIR, "news.json", subdir="victoria")
+    _, seat_news = load_latest_file(RAW_DIR, "seat_news.json", subdir="victoria")
+    _, vic_spikes = load_latest_file(PROCESSED_DIR, "spikes.json", subdir="victoria")
+    _, polls = load_latest_file(RAW_DIR, "polls.json", subdir="victoria")
+
+    news, vic_news, seat_news = clean_articles(news or {}), clean_articles(vic_news or {}), clean_articles(seat_news or {})
+    spikes = [{**s, "news": clean_articles(s.get("news", []))} for s in (spikes or [])]
+    vic_spikes = [{**s, "news": clean_articles(s.get("news", []))} for s in (vic_spikes or [])]
+
+    updated_short, updated_long, _ = updated_labels(run_status)
+    stale = bool(iot_date and (date.fromisoformat(today_local()) - date.fromisoformat(iot_date)).days > 2)
+    health = sorted((run_status or {}).get("steps", {}).items())
+    health = [(k.replace("_", " "), v) for k, v in health]
+    vic_days = model["days_to_go"] if model else (date(2026, 11, 28) - date.fromisoformat(today_local())).days
+
+    sparks = {c: charts.sparkline_svg(summary["stats"][c]["spark"], ENTITIES[c]["color"]) for c in ENTITIES} if summary else {}
+    vic_sparks = ({c: charts.sparkline_svg(vic_summary["stats"][c]["spark"], VIC_ENTITIES[c]["color"]) for c in VIC_ENTITIES}
+                  if vic_summary else {})
+
+    headline, lede, plain_headline = national_headline(summary)
+    vic_h, vic_lede = victoria_headline(model)
+
+    common = dict(
+        site_url=SITE_URL, asset_version=version, plotly_js=charts.PLOTLY_JS_URL,
+        updated_short=updated_short, updated_long=updated_long, stale=stale, health=health,
+        vic_days=vic_days, entities=ENTITIES, vic_entities=VIC_ENTITIES, leaders=VIC_LEADERS,
+        party_colors=PARTY_COLORS, summary=summary, model=model, og_image="og-image.png",
     )
-    national_snapshot = find_latest_snapshot_date(
-        raw_required=["interest_over_time.json", "related_queries.json", "news.json"],
-        processed_required=["weekly_analysis.json", "sentiment_analysis.json", "spikes.json"],
-    )
-    if not latest_national_raw:
-        raise FileNotFoundError("No national raw snapshot found to build the site.")
 
-    # --- National data ---
-    iot_data = load_snapshot_file(RAW_DIR, latest_national_raw, "interest_over_time.json") or {}
-    rq_data = load_snapshot_file(RAW_DIR, latest_national_raw, "related_queries.json") or {}
-    news_data = sanitize_news_items(
-        load_snapshot_file(RAW_DIR, latest_national_raw, "news.json") or {}
-    )
-    analysis = (
-        load_snapshot_file(PROCESSED_DIR, national_snapshot, "weekly_analysis.json")
-        if national_snapshot else None
-    )
-    sentiment = (
-        load_snapshot_file(PROCESSED_DIR, national_snapshot, "sentiment_analysis.json")
-        if national_snapshot else None
-    )
+    def render(template: str, out: str, **ctx):
+        context = {**common, "page_path": "" if out == "index.html" else out, **ctx}
+        html = env.get_template(template).render(**context)
+        (OUTPUT_DIR / out).write_text(html)
 
-    # Add enriched fields to analysis
-    if analysis:
-        winner_code = analysis.get("search_winner", "")
-        analysis["search_winner_name"] = ENTITIES.get(winner_code, {}).get("short_name", winner_code)
+    render("index.html", "index.html", page="index", uses_plotly=True,
+           title="PolTrends Australia: who Australians are searching for",
+           description=f"{plain_headline}. Daily Google Trends tracking of Australian political parties, with the headlines behind every spike.",
+           share_text=f"{plain_headline} this week. Daily search data on PolTrends Australia",
+           headline=headline, lede=lede, sparks=sparks, related=related or {}, news=news, spikes=spikes,
+           charts={
+               "interest": charts.interest_chart(iot, ENTITIES, "chart-national", spikes),
+               "share": charts.share_chart(iot, ENTITIES, "chart-share"),
+           })
 
-    # Load narrative and summary markdown plus spike annotations
-    narrative_md = (
-        load_snapshot_file(PROCESSED_DIR, national_snapshot, "narrative.md")
-        if national_snapshot else None
-    )
-    summary_md = analysis.get("summary") if analysis else None
-    narrative_html = markdown.markdown(narrative_md) if narrative_md else None
-    summary_html = markdown.markdown(summary_md) if summary_md else None
-    spikes = sanitize_spikes(load_spikes(snapshot_date=latest_national_raw))
+    other = sorted([s for s in (model or {}).get("seats", []) if not s["classic"]], key=lambda s: (s["holder"], s["margin"]))
+    vic_desc = (f"Victoria votes 28 November 2026. Poll average {model['average']['tpp']['LNP']}–{model['average']['tpp']['ALP']} "
+                f"Coalition v Labor. Swing the pendulum across all 88 seats." if model else "Victorian election tracker.")
+    render("victoria.html", "victoria.html", page="victoria", uses_plotly=True,
+           title="Victoria 2026: polls, seats and search | PolTrends Australia",
+           description=vic_desc, share_text=f"Victoria votes in {vic_days} days. Polls, seats and search on PolTrends",
+           vic_headline=vic_h, vic_lede=vic_lede, vic_summary=vic_summary, leaders_summary=leaders_summary,
+           vic_sparks=vic_sparks, vic_related=vic_related or {}, vic_news=vic_news, seat_news=seat_news,
+           vic_spikes=vic_spikes, other_contests=other, tipping_band=int(TIPPING_BAND),
+           seat_json=seat_payload(model) if model else Markup("{}"),
+           og_image="og-victoria.png",
+           charts={
+               "polls": charts.poll_trend_chart(polls["assembly"], model["trend"], model["events"], "chart-polls")
+               if polls and model else Markup(""),
+               "leaders": charts.interest_chart(leaders_iot, VIC_LEADERS, "chart-leaders", height=340),
+               "vic_interest": charts.interest_chart(vic_iot, VIC_ENTITIES, "chart-vic", vic_spikes),
+           })
 
-    # Generate national charts
-    charts = {
-        "interest_over_time": build_interest_chart(iot_data, spikes) if iot_data else "<p>No data yet.</p>",
-        "weekly_bars": build_weekly_bars(iot_data) if iot_data else "<p>No data yet.</p>",
-        "related_queries": build_related_queries_table(rq_data) if rq_data else "<p>No data yet.</p>",
-    }
+    render("analysis.html", "analysis.html", page="analysis", uses_plotly=False,
+           title="The briefing | PolTrends Australia",
+           description="A plain-English weekly briefing built from search data, headlines and published polls.",
+           share_text="This week's political search briefing on PolTrends Australia", briefing=briefing)
 
-    # Enrich entities with colors for templates
-    entities_with_colors = {}
-    for code, ent in ENTITIES.items():
-        entities_with_colors[code] = {**ent, "color": PARTY_COLORS[code]}
+    render("xreport.html", "xreport.html", page="xreport", uses_plotly=False,
+           title="Political headlines and search spikes | PolTrends Australia",
+           description="Latest Australian political headlines by party, and the search spikes they lined up with.",
+           share_text="The stories behind Australia's political searches", news=news, spikes=spikes, vic_news=vic_news)
 
-    common_ctx = {
-        "updated": latest_national_raw,
-        "entities": entities_with_colors,
-        "analysis": analysis,
-        "sentiment": sentiment,
-        "charts": charts,
-    }
-
-    # Build share message from latest winner
-    winner_name = analysis.get("search_winner_name", "") if analysis else ""
-    if winner_name:
-        share_msg = f"{winner_name} is the most-searched party this week. See the full data on PolTrends Australia"
-    else:
-        share_msg = "Which Australian political party are voters searching for most? Check the data"
-
-    # Build index
-    tpl = env.get_template("index.html")
-    html = tpl.render(
-        **common_ctx, page="index",
-        og_title="PolTrends Australia — Political Search Trends",
-        og_description=f"Daily Google Trends data tracking Australian political parties. {winner_name + ' leads this week.' if winner_name else ''}",
-        og_page="",
-        share_message=share_msg,
-    )
-    with open(OUTPUT_DIR / "index.html", "w") as f:
-        f.write(html)
-
-    # Build analysis page
-    tpl = env.get_template("analysis.html")
-    html = tpl.render(
-        **common_ctx, page="analysis", narrative=narrative_html, summary_html=summary_html,
-        og_title="PolTrends Australia — Weekly Analysis",
-        og_description="Weekly analysis of Australian political party search interest, sentiment, and news correlation.",
-        og_page="analysis.html",
-        share_message=share_msg,
-    )
-    with open(OUTPUT_DIR / "analysis.html", "w") as f:
-        f.write(html)
-
-    # Build news page
-    tpl = env.get_template("xreport.html")
-    html = tpl.render(
-        **common_ctx,
-        page="xreport",
-        news=news_data,
-        spikes=spikes,
-        og_title="PolTrends Australia — News & Spikes",
-        og_description="Latest news headlines and search interest spikes for Australian political parties.",
-        og_page="xreport.html",
-        share_message=share_msg,
-    )
-    with open(OUTPUT_DIR / "xreport.html", "w") as f:
-        f.write(html)
-
-    # --- Victoria data ---
-    latest_victoria_raw = find_latest_snapshot_date(
-        raw_required=["interest_over_time.json", "related_queries.json", "news.json"],
-        raw_subdir="victoria",
-    )
-    victoria_snapshot = find_latest_snapshot_date(
-        raw_required=["interest_over_time.json", "related_queries.json", "news.json"],
-        processed_required=["weekly_analysis.json", "sentiment_analysis.json", "spikes.json"],
-        raw_subdir="victoria",
-        processed_subdir="victoria",
-    )
-    if latest_victoria_raw:
-        vic_iot = load_snapshot_file(RAW_DIR, latest_victoria_raw, "interest_over_time.json", subdir="victoria") or {}
-        vic_rq = load_snapshot_file(RAW_DIR, latest_victoria_raw, "related_queries.json", subdir="victoria") or {}
-        vic_news = sanitize_news_items(
-            load_snapshot_file(RAW_DIR, latest_victoria_raw, "news.json", subdir="victoria") or {}
-        )
-        vic_analysis = (
-            load_snapshot_file(PROCESSED_DIR, victoria_snapshot, "weekly_analysis.json", subdir="victoria")
-            if victoria_snapshot else None
-        )
-        vic_sentiment = (
-            load_snapshot_file(PROCESSED_DIR, victoria_snapshot, "sentiment_analysis.json", subdir="victoria")
-            if victoria_snapshot else None
-        )
-        vic_spikes = sanitize_spikes(load_spikes(snapshot_date=latest_victoria_raw, subdir="victoria"))
-    else:
-        vic_iot = {}
-        vic_rq = {}
-        vic_news = {}
-        vic_analysis = None
-        vic_sentiment = None
-        vic_spikes = []
-
-    if vic_analysis:
-        winner_code = vic_analysis.get("search_winner", "")
-        vic_analysis["search_winner_name"] = VIC_ENTITIES.get(winner_code, {}).get("short_name", winner_code)
-
-    # Enrich VIC entities with colors
-    vic_entities_with_colors = {}
-    for code, ent in VIC_ENTITIES.items():
-        vic_entities_with_colors[code] = {**ent, "color": VIC_PARTY_COLORS[code]}
-
-    # Generate Victoria charts
-    vic_charts = None
-    if vic_iot:
-        vic_charts = {
-            "interest_over_time": build_interest_chart(
-                vic_iot, vic_spikes,
-                entities=VIC_ENTITIES, party_colors=VIC_PARTY_COLORS,
-                title="Victoria — Political Party Search Interest",
-            ),
-            "weekly_bars": build_weekly_bars(
-                vic_iot,
-                entities=VIC_ENTITIES, party_colors=VIC_PARTY_COLORS,
-                title_prefix="Victoria — Average Search Interest",
-            ),
-            "related_queries": build_related_queries_table(
-                vic_rq,
-                entities=VIC_ENTITIES, party_colors=VIC_PARTY_COLORS,
-            ),
-        }
-
-    # Victoria share message
-    vic_winner = vic_analysis.get("search_winner_name", "") if vic_analysis else ""
-    if vic_winner:
-        vic_share = f"{vic_winner} leads Victorian political searches this week. See the data"
-    else:
-        vic_share = "Track Victorian state election search trends — which party are voters looking up?"
-
-    # Build Victoria page
-    tpl = env.get_template("victoria.html")
-    html = tpl.render(
-        updated=latest_victoria_raw or latest_national_raw,
-        entities=entities_with_colors,
-        page="victoria",
-        vic_entities=vic_entities_with_colors,
-        vic_analysis=vic_analysis,
-        vic_charts=vic_charts,
-        vic_news=vic_news,
-        vic_spikes=vic_spikes,
-        vic_sentiment=vic_sentiment,
-        og_title="PolTrends Australia — Victoria State Election",
-        og_description="Track search interest for Victorian political parties ahead of the state election.",
-        og_page="victoria.html",
-        share_message=vic_share,
-    )
-    with open(OUTPUT_DIR / "victoria.html", "w") as f:
-        f.write(html)
-
-    # Generate OG image for social sharing
-    generate_og_image(OUTPUT_DIR / "og-image.png")
-
-    print(
-        f"Site built to {OUTPUT_DIR} "
-        f"(national raw: {latest_national_raw}, national analysis: {national_snapshot or 'none'}, "
-        f"victoria raw: {latest_victoria_raw or 'none'}, victoria analysis: {victoria_snapshot or 'none'})"
-    )
+    generate_og_image(OUTPUT_DIR / "og-image.png", summary=summary, model=model, kind="national")
+    generate_og_image(OUTPUT_DIR / "og-victoria.png", summary=vic_summary, model=model, kind="victoria")
+    print(f"Site built to {OUTPUT_DIR} (search data {iot_date}, assets v{version})")
+    return str(OUTPUT_DIR)
 
 
 def main():

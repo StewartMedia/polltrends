@@ -1,263 +1,208 @@
-"""Fetch Google Trends entity data for Australian political parties.
+"""Fetch Google Trends entity data for Australian political parties and leaders.
 
-Pulls interest-over-time and related queries daily, stores as dated JSON files.
-Supports multi-geo: national (AU) and Victoria (AU-VIC).
+Writes dated JSON snapshots (Melbourne date):
+  data/raw/<date>/interest_over_time.json            national parties
+  data/raw/<date>/related_queries.json
+  data/raw/<date>/victoria/interest_over_time.json   Victorian parties
+  data/raw/<date>/victoria/related_queries.json
+  data/raw/<date>/victoria/leaders_interest.json     Victorian leaders
 
-Note: pytrends allows max 5 entities per request. Victoria has 7 entities,
-so we batch into groups of 5 with an overlapping anchor entity to normalise
-the relative values across batches.
+Google Trends rate-limits aggressively, so every call retries with backoff and
+a failure in one dataset never blocks the others. Downstream steps carry the
+last good snapshot forward and label it with its real date.
 """
 import json
-import time
+import os
 import sys
-from datetime import datetime, date
+import time
 from pathlib import Path
 
+from pytrends import exceptions as pt_exceptions
 from pytrends.request import TrendReq
-from pytrends.exceptions import TooManyRequestsError
+from requests import exceptions as req_exceptions
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from config.settings import (
-    ENTITIES, GEO, RAW_DIR,
-    VIC_ENTITIES, VIC_GEO,
+from config.settings import (  # noqa: E402
+    ENTITIES, GEO, RAW_DIR, TIMEFRAME, VIC_ENTITIES, VIC_GEO, VIC_LEADERS,
+    now_local, today_local, write_json,
 )
 
 MAX_ENTITIES_PER_REQUEST = 5
-RETRY_DELAYS = [60, 120, 300]  # seconds to wait after 429 errors
+REQUEST_TIMEOUT = (10, 25)
+BACKOFF = [20, 45, 90, 150]  # seconds between attempts
+RETRYABLE = (
+    pt_exceptions.TooManyRequestsError,
+    pt_exceptions.ResponseError,
+    req_exceptions.ReadTimeout,
+    req_exceptions.ConnectTimeout,
+    req_exceptions.ConnectionError,
+)
 
 
-def _fetch_with_retry(pytrends, call_fn):
-    """Call call_fn() with retry on 429 rate limit errors."""
-    for attempt, delay in enumerate(RETRY_DELAYS + [None]):
+def _session() -> TrendReq:
+    # pytrends tz is minutes *behind* UTC, so AEST (UTC+10) is -600.
+    return TrendReq(hl="en-AU", tz=-600, timeout=REQUEST_TIMEOUT)
+
+
+def _retry(label: str, fn):
+    for attempt, wait in enumerate(BACKOFF + [None]):
         try:
-            return call_fn()
-        except TooManyRequestsError:
-            if delay is None:
+            return fn()
+        except RETRYABLE as exc:
+            if wait is None:
                 raise
-            print(f"  Rate limited (429). Waiting {delay}s before retry {attempt + 1}/{len(RETRY_DELAYS)}...")
-            time.sleep(delay)
+            status = getattr(getattr(exc, "response", None), "status_code", "")
+            print(f"  {label}: {exc.__class__.__name__} {status} - retry {attempt + 1}/{len(BACKOFF)} in {wait}s")
+            time.sleep(wait)
 
 
-def _batch_entities(entities: dict) -> list[list[str]]:
-    """Split entities into batches of MAX_ENTITIES_PER_REQUEST.
-
-    If more than one batch is needed, the first entity (anchor) is included
-    in every batch so values can be normalised across batches.
-    """
-    codes = list(entities.keys())
+def _batch_codes(codes: list[str]) -> list[list[str]]:
+    """Split codes into request batches. Extra batches repeat the first code
+    as an anchor so their values can be rescaled onto the first batch."""
     if len(codes) <= MAX_ENTITIES_PER_REQUEST:
         return [codes]
-
     anchor = codes[0]
-    batches = []
-
-    # First batch: first MAX entities
-    first_batch = codes[:MAX_ENTITIES_PER_REQUEST]
-    batches.append(first_batch)
-
-    # Subsequent batches: anchor + next (MAX-1) entities
-    batch_size = MAX_ENTITIES_PER_REQUEST - 1  # leave room for anchor
-    remaining = codes[MAX_ENTITIES_PER_REQUEST:]
-    while remaining:
-        batch = [anchor] + remaining[:batch_size]
-        batches.append(batch)
-        remaining = remaining[batch_size:]
-
+    batches = [codes[:MAX_ENTITIES_PER_REQUEST]]
+    rest = codes[MAX_ENTITIES_PER_REQUEST:]
+    step = MAX_ENTITIES_PER_REQUEST - 1
+    while rest:
+        batches.append([anchor] + rest[:step])
+        rest = rest[step:]
     return batches
 
 
-def fetch_interest_over_time(
-    pytrends: TrendReq,
-    entities: dict,
-    geo: str,
-    timeframe: str = "today 3-m",
-) -> dict:
-    """Fetch interest over time for all entities.
+def _frame_to_series(df, entities: dict, batch: list[str]) -> dict[str, dict[str, int]]:
+    """Convert a pytrends frame into {code: {date: value}}, dropping partial rows.
 
-    If more than 5 entities, fetches in batches with an anchor entity
-    and normalises relative values across batches.
+    Today's row is always partial and reads low, which would distort the
+    7-day averages, so it is excluded.
     """
-    batches = _batch_entities(entities)
+    if df is None or df.empty:
+        return {}
+    if "isPartial" in df.columns:
+        df = df[~df["isPartial"].astype(bool)]
+        df = df.drop(columns=["isPartial"])
+    mid_to_code = {entities[c]["mid"]: c for c in batch}
+    df = df.rename(columns=mid_to_code)
+    out: dict[str, dict[str, int]] = {}
+    for code in batch:
+        if code not in df.columns:
+            continue
+        out[code] = {dt.strftime("%Y-%m-%d"): int(v) for dt, v in df[code].items()}
+    return out
+
+
+def fetch_interest(entities: dict, geo: str, timeframe: str = TIMEFRAME, with_related: bool = True):
+    """Return (interest_payload, related_queries) for a set of entities."""
     codes = list(entities.keys())
+    series: dict[str, dict[str, int]] = {}
+    related: dict[str, dict] = {}
+    anchor = codes[0]
 
-    if len(batches) == 1:
-        # Simple case — all fit in one request
-        mids = [entities[c]["mid"] for c in batches[0]]
-        pytrends.build_payload(mids, geo=geo, timeframe=timeframe)
-        df = _fetch_with_retry(pytrends, pytrends.interest_over_time)
-
-        if df.empty:
-            print("WARNING: Empty interest_over_time response")
-            return {}
-
-        mid_to_code = {entities[c]["mid"]: c for c in batches[0]}
-        df = df.rename(columns=mid_to_code)
-        df = df.drop(columns=["isPartial"], errors="ignore")
-
-        records = []
-        for dt, row in df.iterrows():
-            record = {"date": dt.strftime("%Y-%m-%d")}
-            for code in codes:
-                record[code] = int(row.get(code, 0))
-            records.append(record)
-
-        return {"timeframe": timeframe, "geo": geo, "data": records}
-
-    # Multi-batch: fetch each batch and normalise using anchor
-    anchor_code = codes[0]
-    all_dfs = {}  # code -> {date: value}
-    anchor_values_first = None  # anchor values from first batch
-
-    for i, batch in enumerate(batches):
+    for i, batch in enumerate(_batch_codes(codes)):
+        pt = _session()
         mids = [entities[c]["mid"] for c in batch]
-        print(f"  Fetching batch {i + 1}/{len(batches)}: {', '.join(batch)}")
-        pytrends.build_payload(mids, geo=geo, timeframe=timeframe)
-        df = _fetch_with_retry(pytrends, pytrends.interest_over_time)
-
-        if df.empty:
-            print(f"  WARNING: Empty response for batch {i + 1}")
+        print(f"  batch {i + 1}: {', '.join(batch)} (geo={geo}, {timeframe})")
+        _retry("build_payload", lambda: pt.build_payload(mids, geo=geo, timeframe=timeframe))
+        df = _retry("interest_over_time", pt.interest_over_time)
+        batch_series = _frame_to_series(df, entities, batch)
+        if not batch_series:
+            print("  WARNING: empty interest response")
             continue
 
-        mid_to_code = {entities[c]["mid"]: c for c in batch}
-        df = df.rename(columns=mid_to_code)
-        df = df.drop(columns=["isPartial"], errors="ignore")
-
         if i == 0:
-            # First batch is the reference — store anchor values
-            anchor_values_first = {
-                dt.strftime("%Y-%m-%d"): int(row.get(anchor_code, 0))
-                for dt, row in df.iterrows()
-            }
-            for code in batch:
-                all_dfs[code] = {
-                    dt.strftime("%Y-%m-%d"): int(row.get(code, 0))
-                    for dt, row in df.iterrows()
-                }
+            series.update(batch_series)
         else:
-            # Normalise this batch using anchor ratio
-            anchor_values_this = {
-                dt.strftime("%Y-%m-%d"): int(row.get(anchor_code, 0))
-                for dt, row in df.iterrows()
-            }
-
+            ref = series.get(anchor, {})
+            this = batch_series.get(anchor, {})
             for code in batch:
-                if code == anchor_code:
-                    continue  # already have anchor from first batch
-                values = {}
-                for dt, row in df.iterrows():
-                    d = dt.strftime("%Y-%m-%d")
-                    raw_val = int(row.get(code, 0))
-                    anchor_this = anchor_values_this.get(d, 0)
-                    anchor_first = anchor_values_first.get(d, 0)
+                if code == anchor or code not in batch_series:
+                    continue
+                scaled = {}
+                for d, v in batch_series[code].items():
+                    a_ref, a_this = ref.get(d, 0), this.get(d, 0)
+                    scaled[d] = int(round(v * a_ref / a_this)) if a_ref and a_this else v
+                series[code] = scaled
 
-                    if anchor_this > 0 and anchor_first > 0:
-                        # Scale value based on anchor ratio
-                        scale = anchor_first / anchor_this
-                        values[d] = int(round(raw_val * scale))
-                    else:
-                        values[d] = raw_val
-                all_dfs[code] = values
+        if with_related:
+            try:
+                rq = _retry("related_queries", pt.related_queries) or {}
+            except RETRYABLE as exc:
+                print(f"  WARNING: related queries unavailable ({exc.__class__.__name__}); continuing")
+                rq = {}
+            mid_to_code = {entities[c]["mid"]: c for c in batch}
+            for mid, parts in rq.items():
+                code = mid_to_code.get(mid, mid)
+                if code in related:
+                    continue
+                parts = parts or {}
+                related[code] = {
+                    kind: (parts[kind].to_dict("records") if parts.get(kind) is not None else [])
+                    for kind in ("top", "rising")
+                }
+        time.sleep(4)
 
-        if i < len(batches) - 1:
-            time.sleep(10)  # Be gentle between batches
+    if not series:
+        return None, related
 
-    if not all_dfs:
-        return {}
-
-    # Merge all into records
-    all_dates = sorted(anchor_values_first.keys()) if anchor_values_first else []
-    records = []
-    for d in all_dates:
-        record = {"date": d}
-        for code in codes:
-            record[code] = all_dfs.get(code, {}).get(d, 0)
-        records.append(record)
-
-    return {"timeframe": timeframe, "geo": geo, "data": records}
+    dates = sorted(series[next(iter(series))].keys())
+    records = [{"date": d, **{c: series.get(c, {}).get(d, 0) for c in codes}} for d in dates]
+    payload = {
+        "timeframe": timeframe,
+        "geo": geo,
+        "fetched_at": now_local().isoformat(timespec="seconds"),
+        "data": records,
+    }
+    return payload, related
 
 
-def fetch_related_queries(
-    pytrends: TrendReq,
-    entities: dict,
-    geo: str,
-    timeframe: str = "today 3-m",
-) -> dict:
-    """Fetch related queries for each entity individually."""
-    results = {}
-
-    for code, ent in entities.items():
-        print(f"  Fetching related queries for {code}...")
+def fetch_and_save(entities: dict, geo: str, out_dir: Path, label: str, with_related: bool = True,
+                   interest_file: str = "interest_over_time.json") -> bool:
+    print(f"\nFetching {label} trends ({len(entities)} entities, geo={geo})")
+    existing = out_dir / interest_file
+    if existing.exists() and not os.getenv("POLTRENDS_FORCE_TRENDS"):
         try:
-            pytrends.build_payload([ent["mid"]], geo=geo, timeframe=timeframe)
-            related = pytrends.related_queries()
-            mid = ent["mid"]
-
-            entity_queries = {"top": [], "rising": []}
-
-            if mid in related and related[mid]["top"] is not None:
-                top_df = related[mid]["top"]
-                entity_queries["top"] = top_df.to_dict("records")
-
-            if mid in related and related[mid]["rising"] is not None:
-                rising_df = related[mid]["rising"]
-                entity_queries["rising"] = rising_df.to_dict("records")
-
-            results[code] = entity_queries
-        except Exception as e:
-            print(f"  WARNING: Failed for {code}: {e}")
-            results[code] = {"top": [], "rising": []}
-
-        time.sleep(2)  # Be gentle with Google
-
-    return results
-
-
-def fetch_and_save(entities: dict, geo: str, out_dir: Path, label: str = "national"):
-    """Fetch trends data and save to a directory."""
-    print(f"\nFetching {label} trends data (geo={geo}, {len(entities)} entities)...")
-
-    pytrends = TrendReq(hl="en-AU", tz=600)  # AEST
-
-    # Interest over time
-    print("Fetching interest over time...")
-    iot_data = fetch_interest_over_time(pytrends, entities, geo)
-
-    # Related queries
-    print("Fetching related queries...")
-    time.sleep(3)
-    rq_data = fetch_related_queries(pytrends, entities, geo)
-
-    # Save raw data
-    out_dir.mkdir(parents=True, exist_ok=True)
-
-    with open(out_dir / "interest_over_time.json", "w") as f:
-        json.dump(iot_data, f, indent=2)
-
-    with open(out_dir / "related_queries.json", "w") as f:
-        json.dump(rq_data, f, indent=2)
-
-    print(f"{label.title()} data saved to {out_dir}")
-    time.sleep(30)  # Cool down before any subsequent geo fetch
-    return iot_data, rq_data
+            prior = json.loads(existing.read_text())
+        except json.JSONDecodeError:
+            prior = {}
+        fetched = prior.get("fetched_at", "")
+        rows = prior.get("data") or [{}]
+        if fetched.startswith(today_local()) and set(rows[0]) >= set(entities):
+            print(f"  already fetched today ({fetched}); skipping. Set POLTRENDS_FORCE_TRENDS=1 to refetch.")
+            return True
+    try:
+        payload, related = fetch_interest(entities, geo, with_related=with_related)
+    except RETRYABLE as exc:
+        print(f"  FAILED {label}: {exc.__class__.__name__}: {exc}")
+        return False
+    if not payload:
+        print(f"  FAILED {label}: no data")
+        return False
+    write_json(out_dir / interest_file, payload)
+    if with_related:
+        write_json(out_dir / "related_queries.json", related)
+    print(f"  saved {label} -> {out_dir} ({len(payload['data'])} days, last {payload['data'][-1]['date']})")
+    return True
 
 
-def main():
-    """Fetch national (AU) trends data."""
-    today = date.today().isoformat()
-    print(f"Fetching trends data for {today}")
-
-    out_dir = RAW_DIR / today
-    fetch_and_save(ENTITIES, GEO, out_dir, label="national")
+def main() -> bool:
+    return fetch_and_save(ENTITIES, GEO, RAW_DIR / today_local(), "national")
 
 
-def fetch_victoria():
-    """Fetch Victoria (AU-VIC) trends data."""
-    today = date.today().isoformat()
-    print(f"Fetching Victoria trends data for {today}")
+def fetch_victoria() -> bool:
+    return fetch_and_save(VIC_ENTITIES, VIC_GEO, RAW_DIR / today_local() / "victoria", "victoria")
 
-    out_dir = RAW_DIR / today / "victoria"
-    fetch_and_save(VIC_ENTITIES, VIC_GEO, out_dir, label="victoria")
+
+def fetch_victoria_leaders() -> bool:
+    if not VIC_LEADERS:
+        return False
+    time.sleep(10)
+    return fetch_and_save(
+        VIC_LEADERS, VIC_GEO, RAW_DIR / today_local() / "victoria", "victoria leaders",
+        with_related=False, interest_file="leaders_interest.json",
+    )
 
 
 if __name__ == "__main__":
-    main()
+    results = [main(), fetch_victoria(), fetch_victoria_leaders()]
+    sys.exit(0 if any(results) else 1)

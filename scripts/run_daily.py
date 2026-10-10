@@ -1,61 +1,72 @@
-"""Daily pipeline: fetch trends data, news headlines, detect spikes, rebuild site.
+"""Daily pipeline. Runs in GitHub Actions; no local services or models needed.
 
-Runs for both national (AU) and Victoria (AU-VIC) data.
+Every step is isolated: a failed fetch is recorded and the site falls back to
+the last good snapshot for that source, labelled with its real date.
 """
 import sys
+import time
+import traceback
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
+from config.settings import PROCESSED_DIR, now_local, today_local, write_json  # noqa: E402
+from scripts import (  # noqa: E402
+    build_site, detect_spikes, fetch_news, fetch_trends, fetch_vic_polls, generate_narrative,
+    vic_model, weekly_analysis,
+)
 
-from scripts.fetch_trends import main as fetch_trends, fetch_victoria as fetch_trends_vic
-from scripts.fetch_news import main as fetch_news, fetch_victoria as fetch_news_vic
-from scripts.detect_spikes import main as detect_spikes, detect_victoria as detect_spikes_vic
-from scripts.build_site import main as build_site
+status: dict[str, dict] = {}
 
 
-def main():
-    print("=" * 50)
-    print("DAILY PIPELINE")
-    print("=" * 50)
-
-    # --- National ---
-    print("\n--- Step 1: Fetch Google Trends data (National) ---")
+def step(name: str, fn, *args):
+    print(f"\n=== {name} ===")
+    started = time.time()
     try:
-        fetch_trends()
-    except Exception as e:
-        print(f"WARNING: National trends fetch failed: {e}")
+        result = fn(*args)
+        ok = result is not False and result is not None
+    except Exception as exc:  # keep going; record the failure
+        traceback.print_exc()
+        result, ok = None, False
+        status[name] = {"ok": False, "error": f"{exc.__class__.__name__}: {exc}"[:300]}
+    else:
+        status[name] = {"ok": ok}
+    status[name]["seconds"] = round(time.time() - started, 1)
+    return result
 
-    print("\n--- Step 2: Fetch news headlines (National) ---")
-    fetch_news()
 
-    print("\n--- Step 3: Detect spikes & match news (National) ---")
-    detect_spikes()
+def main() -> int:
+    print(f"PolTrends daily pipeline - {now_local():%Y-%m-%d %H:%M %Z}")
 
-    # --- Victoria ---
-    print("\n--- Step 4: Fetch Google Trends data (Victoria) ---")
-    try:
-        fetch_trends_vic()
-    except Exception as e:
-        print(f"WARNING: Victoria trends fetch failed: {e}")
+    step("trends_national", fetch_trends.main)
+    step("trends_victoria", fetch_trends.fetch_victoria)
+    step("trends_victoria_leaders", fetch_trends.fetch_victoria_leaders)
+    step("news_national", fetch_news.main)
+    step("news_victoria", fetch_news.fetch_victoria)
+    step("polls_victoria", fetch_vic_polls.main)
 
-    print("\n--- Step 5: Fetch news headlines (Victoria) ---")
-    try:
-        fetch_news_vic()
-    except Exception as e:
-        print(f"WARNING: Victoria news fetch failed: {e}")
+    model = step("seat_model", vic_model.build)
+    if model:
+        seats = [s["seat"] for s in model.get("key_seats", [])]
+        step("seat_news", fetch_news.fetch_seat_news, seats)
 
-    print("\n--- Step 6: Detect spikes & match news (Victoria) ---")
-    try:
-        detect_spikes_vic()
-    except Exception as e:
-        print(f"WARNING: Victoria spike detection failed: {e}")
+    step("spikes_national", detect_spikes.main)
+    step("spikes_victoria", detect_spikes.detect_victoria)
+    step("summary_national", weekly_analysis.main)
+    step("summary_victoria", weekly_analysis.analyse_victoria)
+    step("summary_victoria_leaders", weekly_analysis.analyse_victoria_leaders)
+    step("briefing", generate_narrative.main)
 
-    # --- Build site ---
-    print("\n--- Step 7: Rebuild site ---")
-    build_site()
+    write_json(PROCESSED_DIR / today_local() / "run_status.json", {
+        "date": today_local(),
+        "finished_at": now_local().isoformat(timespec="seconds"),
+        "steps": status,
+    })
 
-    print("\n--- Daily pipeline complete ---")
+    step("build_site", build_site.build)
+    failed = [k for k, v in status.items() if not v["ok"]]
+    print(f"\nDone. {len(status) - len(failed)}/{len(status)} steps ok." + (f" Failed: {failed}" if failed else ""))
+    return 1 if not status.get("build_site", {}).get("ok") else 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

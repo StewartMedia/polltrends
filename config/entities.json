@@ -3,25 +3,25 @@
     "ALP": {
       "name": "Australian Labor Party",
       "mid": "/m/0q96",
-      "color": "#E53935",
+      "color": "#F0524A",
       "short_name": "Labor"
     },
     "LIB": {
       "name": "Liberal Party of Australia",
       "mid": "/m/04p4r",
-      "color": "#1565C0",
+      "color": "#3D8BFD",
       "short_name": "Liberal"
     },
     "GRN": {
       "name": "Australian Greens",
       "mid": "/m/0171c7",
-      "color": "#43A047",
+      "color": "#3FCB6E",
       "short_name": "Greens"
     },
     "PHON": {
       "name": "Pauline Hanson's One Nation",
       "mid": "/m/0l8lg",
-      "color": "#FF8F00",
+      "color": "#FF8A1F",
       "short_name": "One Nation"
     }
   },
@@ -31,46 +31,79 @@
     "geo": "AU-VIC",
     "entities": {
       "ALP": {
-        "name": "Australian Labor Party",
+        "name": "Victorian Labor",
         "mid": "/m/0q96",
-        "color": "#E53935",
+        "color": "#F0524A",
         "short_name": "Labor"
       },
       "LIB": {
-        "name": "Liberal Party of Australia",
+        "name": "Victorian Liberals",
         "mid": "/m/04p4r",
-        "color": "#1565C0",
+        "color": "#3D8BFD",
         "short_name": "Liberal"
       },
+      "NAT": {
+        "name": "The Nationals",
+        "mid": "/m/05hqv",
+        "color": "#F2C230",
+        "short_name": "Nationals"
+      },
       "GRN": {
-        "name": "Australian Greens",
+        "name": "Victorian Greens",
         "mid": "/m/0171c7",
-        "color": "#43A047",
+        "color": "#3FCB6E",
         "short_name": "Greens"
       },
       "PHON": {
-        "name": "Pauline Hanson's One Nation",
+        "name": "One Nation",
         "mid": "/m/0l8lg",
-        "color": "#FF8F00",
+        "color": "#FF8A1F",
         "short_name": "One Nation"
+      }
+    },
+    "leaders": {
+      "CARROLL": {
+        "name": "Ben Carroll",
+        "mid": "/m/0j7k4s_",
+        "party": "ALP",
+        "role": "Premier",
+        "color": "#F0524A",
+        "short_name": "Carroll"
       },
-      "AJP": {
-        "name": "Animal Justice Party",
-        "mid": "/m/0j3dlg7",
-        "color": "#8E24AA",
-        "short_name": "Animal Justice"
+      "WILSON": {
+        "name": "Jess Wilson",
+        "mid": "/g/11scc724zb",
+        "party": "LIB",
+        "role": "Opposition Leader",
+        "color": "#3D8BFD",
+        "short_name": "Wilson"
       },
-      "RSN": {
-        "name": "Reason Party",
-        "mid": "/m/04zy__7",
-        "color": "#00ACC1",
-        "short_name": "Reason"
+      "PICKERING": {
+        "name": "Warren Pickering",
+        "mid": "/g/11ryqy4j8g",
+        "party": "PHON",
+        "role": "One Nation lead candidate",
+        "color": "#FF8A1F",
+        "short_name": "Pickering"
       },
-      "LDP": {
-        "name": "Liberal Democratic Party",
-        "mid": "/m/09g1_s",
-        "color": "#F9A825",
-        "short_name": "Lib Dems"
+      "SANDELL": {
+        "name": "Ellen Sandell",
+        "mid": "/m/010ppkjc",
+        "party": "GRN",
+        "role": "Greens leader",
+        "color": "#3FCB6E",
+        "short_name": "Sandell"
+      }
+    },
+    "election": {
+      "date": "2026-11-28",
+      "seats": 88,
+      "majority": 45,
+      "baseline_2022": {
+        "source": "2022 Victorian state election, Legislative Assembly (VEC, via Wikipedia)",
+        "tpp": {"ALP": 55.0, "LNP": 45.0},
+        "primary": {"ALP": 36.66, "LNP": 34.48, "GRN": 11.5},
+        "seats": {"ALP": 56, "LIB": 19, "NAT": 9, "GRN": 4}
       }
     }
   }

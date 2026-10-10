@@ -1,479 +1,373 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PolTrends Australia — Dashboard</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="PolTrends Australia">
-    <meta property="og:title" content="PolTrends Australia — Political Search Trends">
-    <meta property="og:description" content="Daily Google Trends data tracking Australian political parties. One Nation leads this week.">
-    <meta property="og:url" content="https://poltrends.stewartmedia.com.au/">
-    <meta property="og:image" content="https://poltrends.stewartmedia.com.au/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-    <!-- Twitter/X Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="PolTrends Australia — Political Search Trends">
-    <meta name="twitter:description" content="Daily Google Trends data tracking Australian political parties. One Nation leads this week.">
-    <meta name="twitter:image" content="https://poltrends.stewartmedia.com.au/og-image.png">
-
-    <meta name="description" content="Daily Google Trends data tracking Australian political parties. One Nation leads this week.">
-
-    <script src="https://cdn.plot.ly/plotly-2.35.0.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Inter', sans-serif;
-            background: #f8f9fa;
-            color: #1a1a2e;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-        header {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: white;
-            padding: 1.5rem 2rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        header h1 { font-size: 1.6rem; font-weight: 700; }
-        header p { font-size: 0.9rem; opacity: 0.8; margin-top: 0.25rem; }
-        nav {
-            background: #16213e;
-            padding: 0.5rem 2rem;
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: rgba(255,255,255,0.7);
-            text-decoration: none;
-            font-size: 0.85rem;
-            font-weight: 500;
-            padding: 0.3rem 0;
-            border-bottom: 2px solid transparent;
-            transition: all 0.2s;
-        }
-        nav a:hover, nav a.active {
-            color: white;
-            border-bottom-color: #e94560;
-        }
-        main { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-        }
-        .card h2 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #f0f0f0;
-        }
-        .winner-banner {
-            background: linear-gradient(135deg, #e94560 0%, #c23152 100%);
-            color: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-        .winner-banner h2 { color: white; border: none; margin: 0; font-size: 1.4rem; }
-        .winner-banner p { opacity: 0.9; margin-top: 0.5rem; }
-        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
-        .rq-card {
-            background: white;
-            border-radius: 8px;
-            padding: 1rem;
-            margin-bottom: 1rem;
-        }
-        .rq-card h3 { font-size: 1rem; margin-bottom: 0.75rem; }
-        .rq-card h4 { font-size: 0.85rem; color: #666; margin-bottom: 0.5rem; }
-        .rq-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-        .rq-col { min-width: 0; }
-        .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-        .rq-card table { width: 100%; font-size: 0.8rem; border-collapse: collapse; }
-        .rq-card th, .rq-card td { padding: 0.3rem 0.5rem; text-align: left; }
-        .rq-card th { color: #888; font-weight: 500; border-bottom: 1px solid #eee; }
-        .rq-card tr:nth-child(even) { background: #fafafa; }
-        .news-item {
-            padding: 0.75rem 0;
-            border-bottom: 1px solid #f0f0f0;
-        }
-        .news-item:last-child { border-bottom: none; }
-        .news-title {
-            display: block;
-            color: #1a1a2e;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
-            line-height: 1.4;
-        }
-        .news-title:hover { color: #e94560; }
-        .news-meta { font-size: 0.75rem; color: #999; }
-        .spike-header { margin-bottom: 0.5rem; }
-        .spike-ratio { font-size: 0.8rem; color: #888; margin-left: 0.5rem; }
-        .spike-news { list-style: none; padding: 0; }
-        .spike-news li { padding: 0.3rem 0; font-size: 0.85rem; }
-        .spike-news a { color: #1565C0; text-decoration: none; }
-        .spike-news a:hover { text-decoration: underline; }
-        .spike-no-news { font-size: 0.8rem; color: #999; font-style: italic; }
-        .narrative { font-size: 0.9rem; line-height: 1.8; }
-        .narrative p { margin-bottom: 1rem; }
-        .narrative h2, .narrative h3 { margin-top: 1.2rem; margin-bottom: 0.5rem; }
-        .sentiment-bar {
-            display: flex;
-            height: 24px;
-            border-radius: 12px;
-            overflow: hidden;
-            margin: 0.5rem 0;
-        }
-        .sentiment-bar .pos { background: #43A047; }
-        .sentiment-bar .neu { background: #9E9E9E; }
-        .sentiment-bar .neg { background: #E53935; }
-        .metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
-        @media (max-width: 768px) { .metric-grid { grid-template-columns: repeat(2, 1fr); } }
-        .metric-card {
-            text-align: center;
-            padding: 1rem;
-            border-radius: 8px;
-            background: #f8f9fa;
-        }
-        .metric-card .value { font-size: 1.8rem; font-weight: 700; }
-        .metric-card .label { font-size: 0.75rem; color: #666; margin-top: 0.25rem; }
-        .metric-card .change { font-size: 0.8rem; margin-top: 0.25rem; }
-        .change.up { color: #43A047; }
-        .change.down { color: #E53935; }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #999;
-            font-size: 0.8rem;
-        }
-        .updated { font-size: 0.8rem; color: #999; text-align: right; margin-bottom: 1rem; }
-        .share-strip {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 0;
-            margin-top: 1rem;
-            border-top: 1px solid #f0f0f0;
-            font-size: 0.8rem;
-            color: #999;
-        }
-        .share-strip span { white-space: nowrap; }
-        .share-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.3rem;
-            padding: 0.35rem 0.75rem;
-            border-radius: 6px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            text-decoration: none;
-            border: 1px solid #e0e0e0;
-            color: #555;
-            background: #fafafa;
-            cursor: pointer;
-            transition: all 0.15s;
-        }
-        .share-btn:hover { background: #f0f0f0; border-color: #ccc; color: #333; }
-        .share-btn.x { border-color: #1d9bf0; color: #1d9bf0; }
-        .share-btn.x:hover { background: #e8f5fd; }
-        .share-btn.fb { border-color: #1877f2; color: #1877f2; }
-        .share-btn.fb:hover { background: #e7f0ff; }
-        .share-btn.li { border-color: #0a66c2; color: #0a66c2; }
-        .share-btn.li:hover { background: #e8f1fa; }
-        .share-btn.copy { border-color: #666; }
-        .share-btn.copy:hover { background: #eee; }
-        .js-plotly-plot, .plot-container { width: 100% !important; }
-        .js-plotly-plot .svg-container { width: 100% !important; max-width: 100% !important; }
-        @media (max-width: 768px) {
-            header {
-                padding: 1.2rem 1rem;
-            }
-            header h1 {
-                font-size: 1.3rem;
-            }
-            nav {
-                padding: 0.75rem 1rem;
-                gap: 0.75rem 1rem;
-            }
-            nav a {
-                font-size: 0.82rem;
-            }
-            main {
-                margin: 1rem auto 1.5rem;
-                padding: 0 0.85rem;
-            }
-            .card,
-            .winner-banner {
-                padding: 1rem;
-                border-radius: 10px;
-                margin-bottom: 1rem;
-            }
-            .card h2,
-            .winner-banner h2 {
-                font-size: 1.05rem;
-            }
-            .updated {
-                text-align: left;
-                margin-bottom: 0.75rem;
-            }
-            .rq-columns {
-                grid-template-columns: 1fr;
-            }
-            .metric-grid {
-                grid-template-columns: 1fr;
-            }
-            .metric-card .value {
-                font-size: 1.5rem;
-            }
-            .spike-header {
-                display: flex;
-                flex-direction: column;
-                gap: 0.2rem;
-            }
-            .spike-ratio {
-                margin-left: 0;
-            }
-            .share-strip {
-                flex-wrap: wrap;
-            }
-            .share-strip span {
-                width: 100%;
-            }
-            .share-btn {
-                flex: 1 1 calc(50% - 0.5rem);
-                justify-content: center;
-            }
-            footer {
-                padding: 1.5rem 1rem 2rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>PolTrends Australia</h1>
-        <p>Entity search interest tracking for Australian political parties</p>
-    </header>
-    <nav>
-        <a href="index.html" class="active">Dashboard</a>
-        <a href="analysis.html" class="">Weekly Analysis</a>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PolTrends Australia: who Australians are searching for</title>
+  <meta name="description" content="One Nation leads Australian political searches. Daily Google Trends tracking of Australian political parties, with the headlines behind every spike.">
+  <link rel="canonical" href="https://poltrends.stewartmedia.com.au/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="theme-color" content="#090D15">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PolTrends Australia">
+  <meta property="og:title" content="PolTrends Australia: who Australians are searching for">
+  <meta property="og:description" content="One Nation leads Australian political searches. Daily Google Trends tracking of Australian political parties, with the headlines behind every spike.">
+  <meta property="og:url" content="https://poltrends.stewartmedia.com.au/">
+  <meta property="og:image" content="https://poltrends.stewartmedia.com.au/og-image.png?v=9a651412">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PolTrends Australia: who Australians are searching for">
+  <meta name="twitter:description" content="One Nation leads Australian political searches. Daily Google Trends tracking of Australian political parties, with the headlines behind every spike.">
+  <meta name="twitter:image" content="https://poltrends.stewartmedia.com.au/og-image.png?v=9a651412">
+  <link rel="preload" href="assets/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/InstrumentSerif-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/site.css?v=9a651412">
+<script src="https://cdn.plot.ly/plotly-basic-3.4.0.min.js" defer></script></head>
+<body class="page-index">
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="PolTrends Australia home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        PolTrends <small>Australia</small>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html" class="active">National</a>
+        <a href="victoria.html" class="">Victoria 2026<span class="badge"><span data-days-left>48</span>d</span></a>
+        <a href="analysis.html" class="">Briefing</a>
         <a href="xreport.html" class="">News</a>
-        <a href="victoria.html" class="" style="border-left: 1px solid rgba(255,255,255,0.2); padding-left: 1.5rem;">Victoria</a>
-    </nav>
-    <main>
-        
-<p class="updated">Last updated: 2026-10-10</p>
-
-
-<div class="winner-banner">
-    <h2>One Nation is front of mind this week</h2>
-    <p>Avg search interest: 20.6
-    
-     (up 50.0% WoW)
-    
-    </p>
-</div>
-
-<div class="card">
-    <div class="metric-grid">
-        
-        <div class="metric-card" style="border-top: 3px solid #E53935">
-            <div class="value" style="color: #E53935">3.6</div>
-            <div class="label">Labor</div>
-            <div class="change up">
-                &#9650;
-                19.0% WoW
-            </div>
-        </div>
-        
-        <div class="metric-card" style="border-top: 3px solid #1565C0">
-            <div class="value" style="color: #1565C0">2.4</div>
-            <div class="label">Liberal</div>
-            <div class="change up">
-                &#9650;
-                6.2% WoW
-            </div>
-        </div>
-        
-        <div class="metric-card" style="border-top: 3px solid #43A047">
-            <div class="value" style="color: #43A047">7.4</div>
-            <div class="label">Greens</div>
-            <div class="change up">
-                &#9650;
-                420.0% WoW
-            </div>
-        </div>
-        
-        <div class="metric-card" style="border-top: 3px solid #FF8F00">
-            <div class="value" style="color: #FF8F00">20.6</div>
-            <div class="label">One Nation</div>
-            <div class="change up">
-                &#9650;
-                50.0% WoW
-            </div>
-        </div>
-        
+        <a href="analysis.html#method" class="">Method</a>
+      </nav>
+      <div class="updated-chip" title="Pipeline last ran 10 October 2026 at 10:54pm UTC+11:00">
+        <span class="pulse "></span>
+        <span>Updated 10 Oct, 10:54pm</span>
+      </div>
     </div>
+  </header>
+
+  <main>
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">National · Week to 9 October 2026</div>
+    <h1 class="display" style="--hl: #FF8A1F">One Nation <em>owns</em> the conversation.</h1>
+    <p class="lede">One Nation drew 74% of all search interest in Australia&#39;s main parties in the week to 9 October 2026, 7.8 times the Greens. That is attention, not support: the headlines below show what drove it.</p>
+    <div class="hero-actions">
+<a class="btn primary" href="victoria.html">Victoria votes in <span data-days-left>48</span> days <span class="arrow">→</span></a>      <a class="btn" href="analysis.html">Read the briefing <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 10px">
+  <div class="wrap">
+    <div class="grid g4">
+  <article class="card race-card reveal" style="--c: #FF8A1F">
+    <div class="race-top">
+      <span class="party"><span class="dot"></span>One Nation</span>
+      <span class="rank first">#1</span>
+    </div>
+    <div class="big tnum">32.1<small>/100</small></div>
+    <div class="race-meta">
+      <span class="chg up">▲ +99%</span>
+      <span>74% share</span>
+    </div>
+    <svg class="spark" viewBox="0 0 132 40" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="gdc76c455" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF8A1F" stop-opacity="0.35"/><stop offset="1" stop-color="#FF8A1F" stop-opacity="0"/></linearGradient></defs><path d="M0.0,14.0 L4.6,14.2 L9.1,14.0 L13.7,12.1 L18.2,7.1 L22.8,6.9 L27.3,7.1 L31.9,11.5 L36.4,11.7 L41.0,12.8 L45.5,15.6 L50.1,26.2 L54.6,28.0 L59.2,30.6 L63.7,32.9 L68.3,35.2 L72.8,36.3 L77.4,37.0 L81.9,35.1 L86.5,35.2 L91.0,35.1 L95.6,34.5 L100.1,33.3 L104.7,27.6 L109.2,23.6 L113.8,22.1 L118.3,17.4 L122.9,13.5 L127.4,7.5 L132.0,5.0 L132.0,40 L0,40 Z" fill="url(#gdc76c455)"/><path d="M0.0,14.0 L4.6,14.2 L9.1,14.0 L13.7,12.1 L18.2,7.1 L22.8,6.9 L27.3,7.1 L31.9,11.5 L36.4,11.7 L41.0,12.8 L45.5,15.6 L50.1,26.2 L54.6,28.0 L59.2,30.6 L63.7,32.9 L68.3,35.2 L72.8,36.3 L77.4,37.0 L81.9,35.1 L86.5,35.2 L91.0,35.1 L95.6,34.5 L100.1,33.3 L104.7,27.6 L109.2,23.6 L113.8,22.1 L118.3,17.4 L122.9,13.5 L127.4,7.5 L132.0,5.0" fill="none" stroke="#FF8A1F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/><circle cx="132.0" cy="5.0" r="2.6" fill="#FF8A1F"/></svg>
+  </article>
+  <article class="card race-card reveal" style="--c: #3FCB6E">
+    <div class="race-top">
+      <span class="party"><span class="dot"></span>Greens</span>
+      <span class="rank ">#2</span>
+    </div>
+    <div class="big tnum">4.1<small>/100</small></div>
+    <div class="race-meta">
+      <span class="chg down">▼ -37%</span>
+      <span>9% share</span>
+    </div>
+    <svg class="spark" viewBox="0 0 132 40" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="g6c64ae60" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3FCB6E" stop-opacity="0.35"/><stop offset="1" stop-color="#3FCB6E" stop-opacity="0"/></linearGradient></defs><path d="M0.0,28.2 L4.6,26.9 L9.1,28.2 L13.7,28.2 L18.2,28.2 L22.8,30.0 L27.3,30.9 L31.9,32.2 L36.4,33.5 L41.0,33.5 L45.5,33.5 L50.1,35.2 L54.6,35.2 L59.2,35.7 L63.7,37.0 L68.3,37.0 L72.8,36.6 L77.4,35.7 L81.9,32.2 L86.5,27.8 L91.0,16.8 L95.6,12.5 L100.1,9.4 L104.7,7.2 L109.2,5.0 L113.8,6.3 L118.3,8.1 L122.9,17.7 L127.4,19.5 L132.0,20.3 L132.0,40 L0,40 Z" fill="url(#g6c64ae60)"/><path d="M0.0,28.2 L4.6,26.9 L9.1,28.2 L13.7,28.2 L18.2,28.2 L22.8,30.0 L27.3,30.9 L31.9,32.2 L36.4,33.5 L41.0,33.5 L45.5,33.5 L50.1,35.2 L54.6,35.2 L59.2,35.7 L63.7,37.0 L68.3,37.0 L72.8,36.6 L77.4,35.7 L81.9,32.2 L86.5,27.8 L91.0,16.8 L95.6,12.5 L100.1,9.4 L104.7,7.2 L109.2,5.0 L113.8,6.3 L118.3,8.1 L122.9,17.7 L127.4,19.5 L132.0,20.3" fill="none" stroke="#3FCB6E" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/><circle cx="132.0" cy="20.3" r="2.6" fill="#3FCB6E"/></svg>
+  </article>
+  <article class="card race-card reveal" style="--c: #F0524A">
+    <div class="race-top">
+      <span class="party"><span class="dot"></span>Labor</span>
+      <span class="rank ">#3</span>
+    </div>
+    <div class="big tnum">3.9<small>/100</small></div>
+    <div class="race-meta">
+      <span class="chg flat">■ steady</span>
+      <span>9% share</span>
+    </div>
+    <svg class="spark" viewBox="0 0 132 40" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="gb5aba981" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F0524A" stop-opacity="0.35"/><stop offset="1" stop-color="#F0524A" stop-opacity="0"/></linearGradient></defs><path d="M0.0,5.0 L4.6,10.1 L9.1,20.2 L13.7,16.8 L18.2,20.2 L22.8,23.5 L27.3,20.2 L31.9,15.1 L36.4,10.1 L41.0,15.1 L45.5,23.5 L50.1,16.8 L54.6,15.1 L59.2,26.9 L63.7,31.9 L68.3,37.0 L72.8,31.9 L77.4,26.9 L81.9,33.6 L86.5,31.9 L91.0,31.9 L95.6,31.9 L100.1,31.9 L104.7,28.6 L109.2,26.9 L113.8,26.9 L118.3,26.9 L122.9,26.9 L127.4,26.9 L132.0,23.5 L132.0,40 L0,40 Z" fill="url(#gb5aba981)"/><path d="M0.0,5.0 L4.6,10.1 L9.1,20.2 L13.7,16.8 L18.2,20.2 L22.8,23.5 L27.3,20.2 L31.9,15.1 L36.4,10.1 L41.0,15.1 L45.5,23.5 L50.1,16.8 L54.6,15.1 L59.2,26.9 L63.7,31.9 L68.3,37.0 L72.8,31.9 L77.4,26.9 L81.9,33.6 L86.5,31.9 L91.0,31.9 L95.6,31.9 L100.1,31.9 L104.7,28.6 L109.2,26.9 L113.8,26.9 L118.3,26.9 L122.9,26.9 L127.4,26.9 L132.0,23.5" fill="none" stroke="#F0524A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/><circle cx="132.0" cy="23.5" r="2.6" fill="#F0524A"/></svg>
+  </article>
+  <article class="card race-card reveal" style="--c: #3D8BFD">
+    <div class="race-top">
+      <span class="party"><span class="dot"></span>Liberal</span>
+      <span class="rank ">#4</span>
+    </div>
+    <div class="big tnum">3.6<small>/100</small></div>
+    <div class="race-meta">
+      <span class="chg up">▲ +39%</span>
+      <span>8% share</span>
+    </div>
+    <svg class="spark" viewBox="0 0 132 40" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="g85bf279e" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3D8BFD" stop-opacity="0.35"/><stop offset="1" stop-color="#3D8BFD" stop-opacity="0"/></linearGradient></defs><path d="M0.0,18.7 L4.6,16.0 L9.1,15.1 L13.7,5.9 L18.2,5.0 L22.8,5.9 L27.3,6.8 L31.9,12.3 L36.4,9.6 L41.0,14.1 L45.5,25.1 L50.1,30.6 L54.6,33.3 L59.2,32.4 L63.7,32.4 L68.3,37.0 L72.8,34.3 L77.4,32.4 L81.9,27.9 L86.5,24.2 L91.0,25.1 L95.6,21.5 L100.1,18.7 L104.7,17.8 L109.2,16.0 L113.8,15.1 L118.3,12.3 L122.9,11.4 L127.4,11.4 L132.0,9.6 L132.0,40 L0,40 Z" fill="url(#g85bf279e)"/><path d="M0.0,18.7 L4.6,16.0 L9.1,15.1 L13.7,5.9 L18.2,5.0 L22.8,5.9 L27.3,6.8 L31.9,12.3 L36.4,9.6 L41.0,14.1 L45.5,25.1 L50.1,30.6 L54.6,33.3 L59.2,32.4 L63.7,32.4 L68.3,37.0 L72.8,34.3 L77.4,32.4 L81.9,27.9 L86.5,24.2 L91.0,25.1 L95.6,21.5 L100.1,18.7 L104.7,17.8 L109.2,16.0 L113.8,15.1 L118.3,12.3 L122.9,11.4 L127.4,11.4 L132.0,9.6" fill="none" stroke="#3D8BFD" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/><circle cx="132.0" cy="9.6" r="2.6" fill="#3D8BFD"/></svg>
+  </article>
+</div>
+    <div class="card reveal" style="margin-top: 16px">
+      <div class="section-head" style="margin-bottom: 12px">
+        <div><div class="kicker">Share of search · last 7 days</div></div>
+        <span class="note">vs previous week: One Nation 56%, Greens 23%, Labor 12%, Liberal 9%</span>
+      </div>
+      <div class="sharebar" role="img" aria-label="Share of search interest">
+<span style="--c: #FF8A1F; width: 73.5%" title="One Nation 73.5%"></span><span style="--c: #3FCB6E; width: 9.4%" title="Greens 9.4%"></span><span style="--c: #F0524A; width: 8.9%" title="Labor 8.9%"></span><span style="--c: #3D8BFD; width: 8.2%" title="Liberal 8.2%"></span></div>
+<div class="share-legend">
+<span><i class="dot" style="--c: #FF8A1F; display:inline-block; vertical-align: 0;"></i> One Nation<b>74%</b></span><span><i class="dot" style="--c: #3FCB6E; display:inline-block; vertical-align: 0;"></i> Greens<b>9%</b></span><span><i class="dot" style="--c: #F0524A; display:inline-block; vertical-align: 0;"></i> Labor<b>9%</b></span><span><i class="dot" style="--c: #3D8BFD; display:inline-block; vertical-align: 0;"></i> Liberal<b>8%</b></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">90 days</div>
+        <h2>Search interest over time</h2>
+      </div>
+      <p>Google Trends topic interest for each party, scaled 0–100 to the busiest day in the window. Rings mark spikes; hover for the headline that matched.</p>
+    </div>
+    <div class="card chart-card reveal"><div>                            <div id="chart-national" class="plotly-graph-div" style="height:420px; width:100%;"></div>            <script>document.addEventListener('DOMContentLoaded',function(){                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("chart-national")) {                    Plotly.newPlot(                        "chart-national",                        [{"hovertemplate":"Labor %{y:.1f}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"ALP","line":{"color":"#F0524A","shape":"spline","smoothing":0.6,"width":2.6},"mode":"lines","name":"Labor","x":["2026-07-10","2026-07-11","2026-07-12","2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-18","2026-07-19","2026-07-20","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-25","2026-07-26","2026-07-27","2026-07-28","2026-07-29","2026-07-30","2026-07-31","2026-08-01","2026-08-02","2026-08-03","2026-08-04","2026-08-05","2026-08-06","2026-08-07","2026-08-08","2026-08-09","2026-08-10","2026-08-11","2026-08-12","2026-08-13","2026-08-14","2026-08-15","2026-08-16","2026-08-17","2026-08-18","2026-08-19","2026-08-20","2026-08-21","2026-08-22","2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30","2026-10-01","2026-10-02","2026-10-03","2026-10-04","2026-10-05","2026-10-06","2026-10-07","2026-10-08","2026-10-09"],"y":[3.0,2.5,2.3,2.8,3.0,2.8,2.9,2.9,3.0,2.7,2.6,2.6,2.7,3.3,3.7,4.4,5.7,6.7,8.0,8.4,8.0,7.9,6.7,5.7,4.7,3.4,3.3,3.3,3.0,3.6,3.9,4.0,4.1,3.9,4.0,4.1,4.0,3.7,3.9,4.0,4.1,3.9,3.9,3.9,3.9,3.6,3.1,3.3,3.4,3.7,4.1,4.7,5.1,5.6,5.6,5.7,5.6,5.6,5.1,5.0,4.9,5.1,5.0,4.7,4.1,4.3,4.1,3.9,4.1,4.4,4.7,4.4,3.9,4.3,4.4,3.7,3.4,3.1,3.4,3.7,3.3,3.4,3.4,3.4,3.4,3.6,3.7,3.7,3.7,3.7,3.7,3.9],"type":"scatter"},{"hovertemplate":"Liberal %{y:.1f}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"LIB","line":{"color":"#3D8BFD","shape":"spline","smoothing":0.6,"width":2.6},"mode":"lines","name":"Liberal","x":["2026-07-10","2026-07-11","2026-07-12","2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-18","2026-07-19","2026-07-20","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-25","2026-07-26","2026-07-27","2026-07-28","2026-07-29","2026-07-30","2026-07-31","2026-08-01","2026-08-02","2026-08-03","2026-08-04","2026-08-05","2026-08-06","2026-08-07","2026-08-08","2026-08-09","2026-08-10","2026-08-11","2026-08-12","2026-08-13","2026-08-14","2026-08-15","2026-08-16","2026-08-17","2026-08-18","2026-08-19","2026-08-20","2026-08-21","2026-08-22","2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30","2026-10-01","2026-10-02","2026-10-03","2026-10-04","2026-10-05","2026-10-06","2026-10-07","2026-10-08","2026-10-09"],"y":[3.0,3.0,3.0,3.2,3.2,3.2,3.3,2.9,2.4,2.9,2.3,2.1,2.3,2.0,2.3,2.7,2.3,2.9,3.4,3.4,3.6,3.7,3.7,3.7,3.6,3.3,3.1,3.1,2.7,2.3,2.3,2.3,2.0,1.9,2.0,2.4,2.9,2.4,2.4,2.6,2.7,2.9,2.9,2.4,2.4,2.4,2.4,2.4,2.1,2.1,2.6,3.1,3.1,3.1,3.1,3.3,2.9,2.7,2.4,2.4,2.4,2.6,2.6,2.9,3.0,4.0,4.1,4.0,3.9,3.3,3.6,3.1,1.9,1.3,1.0,1.1,1.1,0.6,0.9,1.1,1.6,2.0,1.9,2.3,2.6,2.7,2.9,3.0,3.3,3.4,3.4,3.6],"type":"scatter"},{"hovertemplate":"Greens %{y:.1f}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"GRN","line":{"color":"#3FCB6E","shape":"spline","smoothing":0.6,"width":2.6},"mode":"lines","name":"Greens","x":["2026-07-10","2026-07-11","2026-07-12","2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-18","2026-07-19","2026-07-20","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-25","2026-07-26","2026-07-27","2026-07-28","2026-07-29","2026-07-30","2026-07-31","2026-08-01","2026-08-02","2026-08-03","2026-08-04","2026-08-05","2026-08-06","2026-08-07","2026-08-08","2026-08-09","2026-08-10","2026-08-11","2026-08-12","2026-08-13","2026-08-14","2026-08-15","2026-08-16","2026-08-17","2026-08-18","2026-08-19","2026-08-20","2026-08-21","2026-08-22","2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30","2026-10-01","2026-10-02","2026-10-03","2026-10-04","2026-10-05","2026-10-06","2026-10-07","2026-10-08","2026-10-09"],"y":[0.0,0.0,1.0,1.2,1.0,0.8,1.0,1.0,1.3,0.9,0.6,1.0,1.0,0.7,1.0,0.7,0.7,1.1,1.0,1.3,1.7,1.4,1.4,1.4,1.3,1.3,1.0,0.9,0.9,0.9,0.9,0.9,1.0,1.3,1.4,1.7,2.0,2.0,1.7,1.7,1.7,1.6,1.3,1.3,1.6,1.9,1.9,1.6,1.6,1.6,1.7,1.9,1.9,1.7,2.1,2.1,2.1,2.0,1.6,1.7,1.9,2.0,2.3,2.6,2.3,2.3,2.3,1.9,1.7,1.4,1.1,1.1,1.1,0.7,0.7,0.6,0.3,0.3,0.4,0.6,1.4,2.4,4.9,5.9,6.6,7.1,7.6,7.3,6.9,4.7,4.3,4.1],"type":"scatter"},{"hovertemplate":"One Nation %{y:.1f}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"PHON","line":{"color":"#FF8A1F","shape":"spline","smoothing":0.6,"width":2.6},"mode":"lines","name":"One Nation","x":["2026-07-10","2026-07-11","2026-07-12","2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-18","2026-07-19","2026-07-20","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-25","2026-07-26","2026-07-27","2026-07-28","2026-07-29","2026-07-30","2026-07-31","2026-08-01","2026-08-02","2026-08-03","2026-08-04","2026-08-05","2026-08-06","2026-08-07","2026-08-08","2026-08-09","2026-08-10","2026-08-11","2026-08-12","2026-08-13","2026-08-14","2026-08-15","2026-08-16","2026-08-17","2026-08-18","2026-08-19","2026-08-20","2026-08-21","2026-08-22","2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30","2026-10-01","2026-10-02","2026-10-03","2026-10-04","2026-10-05","2026-10-06","2026-10-07","2026-10-08","2026-10-09"],"y":[14.0,14.5,15.0,15.8,16.2,15.5,15.4,16.0,17.1,17.4,17.1,17.4,18.3,19.1,18.6,17.7,17.3,17.9,18.3,17.9,17.1,17.3,16.7,17.0,20.4,20.3,20.9,20.6,20.6,20.3,19.9,16.0,15.0,15.7,19.9,21.6,22.6,23.4,24.4,25.6,25.3,21.6,19.9,19.3,19.6,18.9,17.7,16.6,16.1,17.4,24.7,35.9,41.4,44.1,47.0,48.9,48.4,41.6,30.0,26.9,25.6,24.9,27.0,26.9,27.0,28.1,30.9,31.0,30.9,28.4,28.3,27.7,26.1,20.1,19.1,17.6,16.3,15.0,14.4,14.0,15.1,15.0,15.1,15.4,16.1,19.3,21.6,22.4,25.1,27.3,30.7,32.1],"type":"scatter"},{"hovertemplate":"Labor %{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"ALP","line":{"color":"#F0524A","width":1.6},"mode":"lines","name":"Labor","showlegend":false,"visible":false,"x":["2026-07-10","2026-07-11","2026-07-12","2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-18","2026-07-19","2026-07-20","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-25","2026-07-26","2026-07-27","2026-07-28","2026-07-29","2026-07-30","2026-07-31","2026-08-01","2026-08-02","2026-08-03","2026-08-04","2026-08-05","2026-08-06","2026-08-07","2026-08-08","2026-08-09","2026-08-10","2026-08-11","2026-08-12","2026-08-13","2026-08-14","2026-08-15","2026-08-16","2026-08-17","2026-08-18","2026-08-19","2026-08-20","2026-08-21","2026-08-22","2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30","2026-10-01","2026-10-02","2026-10-03","2026-10-04","2026-10-05","2026-10-06","2026-10-07","2026-10-08","2026-10-09"],"y":[3,2,2,4,4,2,3,3,3,0,3,4,3,7,6,8,9,10,13,6,4,5,0,2,3,4,5,4,3,4,4,4,5,3,5,4,3,2,5,6,4,3,4,3,2,3,3,5,4,6,6,6,6,6,5,5,5,6,3,5,5,7,4,3,2,4,4,3,9,6,5,0,0,7,4,4,4,3,2,2,4,5,4,4,3,3,3,4,5,4,4,4],"type":"scatter"},{"hovertemplate":"Liberal %{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"LIB","line":{"color":"#3D8BFD","width":1.6},"mode":"lines","name":"Liberal","showlegend":false,"visible":false,"x":["2026-07-10","2026-07-11","2026-07-12","2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-18","2026-07-19","2026-07-20","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-25","2026-07-26","2026-07-27","2026-07-28","2026-07-29","2026-07-30","2026-07-31","2026-08-01","2026-08-02","2026-08-03","2026-08-04","2026-08-05","2026-08-06","2026-08-07","2026-08-08","2026-08-09","2026-08-10","2026-08-11","2026-08-12","2026-08-13","2026-08-14","2026-08-15","2026-08-16","2026-08-17","2026-08-18","2026-08-19","2026-08-20","2026-08-21","2026-08-22","2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30","2026-10-01","2026-10-02","2026-10-03","2026-10-04","2026-10-05","2026-10-06","2026-10-07","2026-10-08","2026-10-09"],"y":[3,3,3,4,3,3,4,0,0,6,0,2,4,2,2,3,3,4,6,4,3,3,3,3,3,4,3,3,0,0,3,3,2,2,4,3,3,0,3,3,3,5,3,0,0,3,3,3,3,3,3,4,3,3,3,4,0,2,2,3,3,4,4,2,3,9,4,2,3,0,4,0,0,0,0,4,0,0,2,2,3,3,3,3,2,3,3,4,5,4,3,3],"type":"scatter"},{"hovertemplate":"Greens %{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"GRN","line":{"color":"#3FCB6E","width":1.6},"mode":"lines","name":"Greens","showlegend":false,"visible":false,"x":["2026-07-10","2026-07-11","2026-07-12","2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-18","2026-07-19","2026-07-20","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-25","2026-07-26","2026-07-27","2026-07-28","2026-07-29","2026-07-30","2026-07-31","2026-08-01","2026-08-02","2026-08-03","2026-08-04","2026-08-05","2026-08-06","2026-08-07","2026-08-08","2026-08-09","2026-08-10","2026-08-11","2026-08-12","2026-08-13","2026-08-14","2026-08-15","2026-08-16","2026-08-17","2026-08-18","2026-08-19","2026-08-20","2026-08-21","2026-08-22","2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30","2026-10-01","2026-10-02","2026-10-03","2026-10-04","2026-10-05","2026-10-06","2026-10-07","2026-10-08","2026-10-09"],"y":[0,0,3,2,0,0,2,0,2,0,0,3,0,0,2,0,0,3,2,2,3,0,0,0,2,2,0,2,0,0,0,2,3,2,3,2,2,0,0,3,2,2,0,2,2,2,3,0,2,0,3,3,2,2,3,2,0,2,0,3,3,4,4,2,0,0,3,0,3,2,0,0,0,0,0,2,0,0,1,1,6,7,19,7,5,5,4,4,4,4,4,4],"type":"scatter"},{"hovertemplate":"One Nation %{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"PHON","line":{"color":"#FF8A1F","width":1.6},"mode":"lines","name":"One Nation","showlegend":false,"visible":false,"x":["2026-07-10","2026-07-11","2026-07-12","2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-18","2026-07-19","2026-07-20","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-25","2026-07-26","2026-07-27","2026-07-28","2026-07-29","2026-07-30","2026-07-31","2026-08-01","2026-08-02","2026-08-03","2026-08-04","2026-08-05","2026-08-06","2026-08-07","2026-08-08","2026-08-09","2026-08-10","2026-08-11","2026-08-12","2026-08-13","2026-08-14","2026-08-15","2026-08-16","2026-08-17","2026-08-18","2026-08-19","2026-08-20","2026-08-21","2026-08-22","2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30","2026-10-01","2026-10-02","2026-10-03","2026-10-04","2026-10-05","2026-10-06","2026-10-07","2026-10-08","2026-10-09"],"y":[14,15,16,18,18,12,15,18,23,18,16,20,18,21,14,17,15,20,23,15,16,15,13,17,44,22,19,14,15,11,14,17,15,24,43,27,18,20,24,23,22,17,15,14,22,19,15,14,14,24,65,100,58,34,34,27,21,17,19,36,25,29,42,20,18,27,55,26,28,25,19,14,16,13,19,17,16,10,10,13,21,18,18,18,15,32,29,27,37,33,42,25],"type":"scatter"},{"hovertemplate":"\u003cb\u003eGreens spike\u003c\u002fb\u003e 7.8\u00d7 normal\u003cbr\u003eNew Australian Greens leader David Shoebridge vows to \u2018replace\u2019 Labor\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"GRN","marker":{"color":"#0B0F17","line":{"color":"#3FCB6E","width":2.5},"size":11},"mode":"markers","showlegend":false,"x":["2026-09-30"],"y":[19],"type":"scatter"},{"hovertemplate":"\u003cb\u003eLabor spike\u003c\u002fb\u003e 2.3\u00d7 normal\u003cbr\u003eIn Australia, ACT Greens end agreement to support Labor government\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"ALP","marker":{"color":"#0B0F17","line":{"color":"#F0524A","width":2.5},"size":11},"mode":"markers","showlegend":false,"x":["2026-09-16"],"y":[9],"type":"scatter"},{"hovertemplate":"\u003cb\u003eLiberal spike\u003c\u002fb\u003e 3.0\u00d7 normal\u003cbr\u003eHastie the answer for struggling Coalition but not just yet\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"LIB","marker":{"color":"#0B0F17","line":{"color":"#3D8BFD","width":2.5},"size":11},"mode":"markers","showlegend":false,"x":["2026-09-13"],"y":[9],"type":"scatter"},{"hovertemplate":"\u003cb\u003eOne Nation spike\u003c\u002fb\u003e 4.0\u00d7 normal\u003cbr\u003eOne Nation\u2019s Secret Harbour byelection win shows Labor is at a loss when it comes to calmi\u2026\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"PHON","marker":{"color":"#0B0F17","line":{"color":"#FF8A1F","width":2.5},"size":11},"mode":"markers","showlegend":false,"x":["2026-08-30"],"y":[100],"type":"scatter"},{"hovertemplate":"\u003cb\u003eOne Nation spike\u003c\u002fb\u003e 2.7\u00d7 normal\u003cbr\u003eHanson rejects ex-One Nation candidate&#x27;s claim homosexuality is a &#x27;mental illness&#x27;\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"PHON","marker":{"color":"#0B0F17","line":{"color":"#FF8A1F","width":2.5},"size":11},"mode":"markers","showlegend":false,"x":["2026-08-13"],"y":[43],"type":"scatter"},{"hovertemplate":"\u003cb\u003eOne Nation spike\u003c\u002fb\u003e 2.6\u00d7 normal\u003cbr\u003eView from The Hill: Hanson announces One Nation Victorian leader, bans major media outlets\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"PHON","marker":{"color":"#0B0F17","line":{"color":"#FF8A1F","width":2.5},"size":11},"mode":"markers","showlegend":false,"x":["2026-08-03"],"y":[44],"type":"scatter"},{"hovertemplate":"\u003cb\u003eLiberal spike\u003c\u002fb\u003e 2.1\u00d7 normal\u003cbr\u003eDivided Liberals need a coalition with themselves, not One Nation\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"LIB","marker":{"color":"#0B0F17","line":{"color":"#3D8BFD","width":2.5},"size":11},"mode":"markers","showlegend":false,"x":["2026-07-28"],"y":[6],"type":"scatter"},{"hovertemplate":"\u003cb\u003eLabor spike\u003c\u002fb\u003e 2.0\u00d7 normal\u003cbr\u003e&#x27;Critical frontline services&#x27;: Labor makes big call on agencies&#x27; call centre staffing\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"ALP","marker":{"color":"#0B0F17","line":{"color":"#F0524A","width":2.5},"size":11},"mode":"markers","showlegend":false,"x":["2026-07-26"],"y":[9],"type":"scatter"},{"hovertemplate":"\u003cb\u003eLiberal spike\u003c\u002fb\u003e 2.5\u00d7 normal\u003cbr\u003eSky News Australia. . Shadow Assistant Citizenship Minister Dave Sharma says the Coalition\u2026\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"LIB","marker":{"color":"#0B0F17","line":{"color":"#3D8BFD","width":2.5},"size":11},"mode":"markers","showlegend":false,"x":["2026-07-19"],"y":[6],"type":"scatter"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"font":{"family":"Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif","color":"#C7CEDA","size":12},"margin":{"l":8,"r":8,"t":44,"b":64},"hoverlabel":{"font":{"family":"Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif","color":"#E8ECF3","size":12},"bgcolor":"#141B2A","bordercolor":"rgba(255,255,255,0.12)"},"legend":{"font":{"color":"#C7CEDA","size":12},"orientation":"h","yanchor":"top","y":-0.12,"xanchor":"left","x":0,"bgcolor":"rgba(0,0,0,0)","itemclick":"toggle","itemdoubleclick":"toggleothers"},"xaxis":{"tickfont":{"color":"#7D879A"},"gridcolor":"rgba(255,255,255,0.06)","zeroline":false,"showline":false,"tickformat":"%-d %b","automargin":true,"fixedrange":true},"yaxis":{"tickfont":{"color":"#7D879A"},"gridcolor":"rgba(255,255,255,0.06)","zeroline":false,"showline":false,"automargin":true,"fixedrange":true,"rangemode":"tozero"},"height":420,"autosize":true,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","hovermode":"x unified","showlegend":true,"updatemenus":[{"active":0,"bgcolor":"rgba(255,255,255,0.04)","bordercolor":"rgba(255,255,255,0.10)","borderwidth":1,"buttons":[{"args":[{"visible":[true,true,true,true,false,false,false,false,true,true,true,true,true,true,true,true,true]}],"label":"7-day average","method":"update"},{"args":[{"visible":[false,false,false,false,true,true,true,true,true,true,true,true,true,true,true,true,true]}],"label":"Daily","method":"update"}],"direction":"right","font":{"color":"#C7CEDA","size":11},"pad":{"b":2,"l":4,"r":4,"t":2},"showactive":true,"type":"buttons","x":0,"xanchor":"left","y":1.02,"yanchor":"bottom"}]},                        {"responsive": true, "displayModeBar": false, "scrollZoom": false}                    )                };            });</script>        </div></div>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card chart-card reveal">
+        <h3>Share of the conversation</h3>
+        <p class="sub">Each party's slice of combined search interest, 7-day smoothed.</p>
+        <div>                            <div id="chart-share" class="plotly-graph-div" style="height:300px; width:100%;"></div>            <script>document.addEventListener('DOMContentLoaded',function(){                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("chart-share")) {                    Plotly.newPlot(                        "chart-share",                        [{"fillcolor":"rgba(240,82,74,0.78)","groupnorm":"percent","hovertemplate":"Labor %{y:.0f}%\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#F0524A","width":0.5},"mode":"lines","name":"Labor","stackgroup":"one","x":["2026-07-10","2026-07-11","2026-07-12","2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-18","2026-07-19","2026-07-20","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-25","2026-07-26","2026-07-27","2026-07-28","2026-07-29","2026-07-30","2026-07-31","2026-08-01","2026-08-02","2026-08-03","2026-08-04","2026-08-05","2026-08-06","2026-08-07","2026-08-08","2026-08-09","2026-08-10","2026-08-11","2026-08-12","2026-08-13","2026-08-14","2026-08-15","2026-08-16","2026-08-17","2026-08-18","2026-08-19","2026-08-20","2026-08-21","2026-08-22","2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30","2026-10-01","2026-10-02","2026-10-03","2026-10-04","2026-10-05","2026-10-06","2026-10-07","2026-10-08","2026-10-09"],"y":[3.0,2.5,2.3,2.8,3.0,2.8,2.9,2.9,3.0,2.7,2.6,2.6,2.7,3.3,3.7,4.4,5.7,6.7,8.0,8.4,8.0,7.9,6.7,5.7,4.7,3.4,3.3,3.3,3.0,3.6,3.9,4.0,4.1,3.9,4.0,4.1,4.0,3.7,3.9,4.0,4.1,3.9,3.9,3.9,3.9,3.6,3.1,3.3,3.4,3.7,4.1,4.7,5.1,5.6,5.6,5.7,5.6,5.6,5.1,5.0,4.9,5.1,5.0,4.7,4.1,4.3,4.1,3.9,4.1,4.4,4.7,4.4,3.9,4.3,4.4,3.7,3.4,3.1,3.4,3.7,3.3,3.4,3.4,3.4,3.4,3.6,3.7,3.7,3.7,3.7,3.7,3.9],"type":"scatter"},{"fillcolor":"rgba(61,139,253,0.78)","groupnorm":"percent","hovertemplate":"Liberal %{y:.0f}%\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#3D8BFD","width":0.5},"mode":"lines","name":"Liberal","stackgroup":"one","x":["2026-07-10","2026-07-11","2026-07-12","2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-18","2026-07-19","2026-07-20","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-25","2026-07-26","2026-07-27","2026-07-28","2026-07-29","2026-07-30","2026-07-31","2026-08-01","2026-08-02","2026-08-03","2026-08-04","2026-08-05","2026-08-06","2026-08-07","2026-08-08","2026-08-09","2026-08-10","2026-08-11","2026-08-12","2026-08-13","2026-08-14","2026-08-15","2026-08-16","2026-08-17","2026-08-18","2026-08-19","2026-08-20","2026-08-21","2026-08-22","2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30","2026-10-01","2026-10-02","2026-10-03","2026-10-04","2026-10-05","2026-10-06","2026-10-07","2026-10-08","2026-10-09"],"y":[3.0,3.0,3.0,3.2,3.2,3.2,3.3,2.9,2.4,2.9,2.3,2.1,2.3,2.0,2.3,2.7,2.3,2.9,3.4,3.4,3.6,3.7,3.7,3.7,3.6,3.3,3.1,3.1,2.7,2.3,2.3,2.3,2.0,1.9,2.0,2.4,2.9,2.4,2.4,2.6,2.7,2.9,2.9,2.4,2.4,2.4,2.4,2.4,2.1,2.1,2.6,3.1,3.1,3.1,3.1,3.3,2.9,2.7,2.4,2.4,2.4,2.6,2.6,2.9,3.0,4.0,4.1,4.0,3.9,3.3,3.6,3.1,1.9,1.3,1.0,1.1,1.1,0.6,0.9,1.1,1.6,2.0,1.9,2.3,2.6,2.7,2.9,3.0,3.3,3.4,3.4,3.6],"type":"scatter"},{"fillcolor":"rgba(63,203,110,0.78)","groupnorm":"percent","hovertemplate":"Greens %{y:.0f}%\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#3FCB6E","width":0.5},"mode":"lines","name":"Greens","stackgroup":"one","x":["2026-07-10","2026-07-11","2026-07-12","2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-18","2026-07-19","2026-07-20","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-25","2026-07-26","2026-07-27","2026-07-28","2026-07-29","2026-07-30","2026-07-31","2026-08-01","2026-08-02","2026-08-03","2026-08-04","2026-08-05","2026-08-06","2026-08-07","2026-08-08","2026-08-09","2026-08-10","2026-08-11","2026-08-12","2026-08-13","2026-08-14","2026-08-15","2026-08-16","2026-08-17","2026-08-18","2026-08-19","2026-08-20","2026-08-21","2026-08-22","2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30","2026-10-01","2026-10-02","2026-10-03","2026-10-04","2026-10-05","2026-10-06","2026-10-07","2026-10-08","2026-10-09"],"y":[0.0,0.0,1.0,1.2,1.0,0.8,1.0,1.0,1.3,0.9,0.6,1.0,1.0,0.7,1.0,0.7,0.7,1.1,1.0,1.3,1.7,1.4,1.4,1.4,1.3,1.3,1.0,0.9,0.9,0.9,0.9,0.9,1.0,1.3,1.4,1.7,2.0,2.0,1.7,1.7,1.7,1.6,1.3,1.3,1.6,1.9,1.9,1.6,1.6,1.6,1.7,1.9,1.9,1.7,2.1,2.1,2.1,2.0,1.6,1.7,1.9,2.0,2.3,2.6,2.3,2.3,2.3,1.9,1.7,1.4,1.1,1.1,1.1,0.7,0.7,0.6,0.3,0.3,0.4,0.6,1.4,2.4,4.9,5.9,6.6,7.1,7.6,7.3,6.9,4.7,4.3,4.1],"type":"scatter"},{"fillcolor":"rgba(255,138,31,0.78)","groupnorm":"percent","hovertemplate":"One Nation %{y:.0f}%\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#FF8A1F","width":0.5},"mode":"lines","name":"One Nation","stackgroup":"one","x":["2026-07-10","2026-07-11","2026-07-12","2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-18","2026-07-19","2026-07-20","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-25","2026-07-26","2026-07-27","2026-07-28","2026-07-29","2026-07-30","2026-07-31","2026-08-01","2026-08-02","2026-08-03","2026-08-04","2026-08-05","2026-08-06","2026-08-07","2026-08-08","2026-08-09","2026-08-10","2026-08-11","2026-08-12","2026-08-13","2026-08-14","2026-08-15","2026-08-16","2026-08-17","2026-08-18","2026-08-19","2026-08-20","2026-08-21","2026-08-22","2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-25","2026-09-26","2026-09-27","2026-09-28","2026-09-29","2026-09-30","2026-10-01","2026-10-02","2026-10-03","2026-10-04","2026-10-05","2026-10-06","2026-10-07","2026-10-08","2026-10-09"],"y":[14.0,14.5,15.0,15.8,16.2,15.5,15.4,16.0,17.1,17.4,17.1,17.4,18.3,19.1,18.6,17.7,17.3,17.9,18.3,17.9,17.1,17.3,16.7,17.0,20.4,20.3,20.9,20.6,20.6,20.3,19.9,16.0,15.0,15.7,19.9,21.6,22.6,23.4,24.4,25.6,25.3,21.6,19.9,19.3,19.6,18.9,17.7,16.6,16.1,17.4,24.7,35.9,41.4,44.1,47.0,48.9,48.4,41.6,30.0,26.9,25.6,24.9,27.0,26.9,27.0,28.1,30.9,31.0,30.9,28.4,28.3,27.7,26.1,20.1,19.1,17.6,16.3,15.0,14.4,14.0,15.1,15.0,15.1,15.4,16.1,19.3,21.6,22.4,25.1,27.3,30.7,32.1],"type":"scatter"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"font":{"family":"Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif","color":"#C7CEDA","size":12},"margin":{"l":8,"r":8,"t":8,"b":60},"hoverlabel":{"font":{"family":"Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif","color":"#E8ECF3","size":12},"bgcolor":"#141B2A","bordercolor":"rgba(255,255,255,0.12)"},"legend":{"font":{"color":"#C7CEDA","size":12},"orientation":"h","yanchor":"top","y":-0.12,"xanchor":"left","x":0,"bgcolor":"rgba(0,0,0,0)","itemclick":"toggle","itemdoubleclick":"toggleothers"},"xaxis":{"tickfont":{"color":"#7D879A"},"gridcolor":"rgba(255,255,255,0.06)","zeroline":false,"showline":false,"tickformat":"%-d %b","automargin":true,"fixedrange":true},"yaxis":{"tickfont":{"color":"#7D879A"},"gridcolor":"rgba(255,255,255,0.06)","ticksuffix":"%","range":[0,100],"fixedrange":true,"zeroline":false},"height":300,"autosize":true,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","hovermode":"x unified","showlegend":true},                        {"responsive": true, "displayModeBar": false, "scrollZoom": false}                    )                };            });</script>        </div>
+      </div>
+      <div class="card reveal">
+        <h3>Rising searches</h3>
+        <p class="sub">Queries growing fastest alongside each party over 90 days.</p>
+          <div class="q-party">
+    <div class="party" style="--c: #F0524A"><span class="dot"></span>Labor</div>
+    <div class="chips">
+        <span class="chip breakout">labor immigration reform tony burke<b>Breakout</b></span>
+        <span class="chip breakout">anthony albanese labor party discipline<b>Breakout</b></span>
+        <span class="chip ">labour day<b>+180%</b></span>
+        <span class="chip ">anthony albanese<b>+60%</b></span>
+        <span class="chip ">alp<b>+50%</b></span>
+    </div>
+  </div>
+  <div class="q-party">
+    <div class="party" style="--c: #3D8BFD"><span class="dot"></span>Liberal</div>
+    <div class="chips">
+        <span class="chip breakout">brazil election<b>Breakout</b></span>
+        <span class="chip ">flávio bolsonaro<b>+4300%</b></span>
+        <span class="chip ">james patterson liberal<b>+3150%</b></span>
+        <span class="chip ">greens party<b>+100%</b></span>
+        <span class="chip ">liberal candidate<b>+80%</b></span>
+        <span class="chip ">greens<b>+60%</b></span>
+    </div>
+  </div>
+  <div class="q-party">
+    <div class="party" style="--c: #3FCB6E"><span class="dot"></span>Greens</div>
+    <div class="chips">
+        <span class="chip ">what do the greens stand for<b>+400%</b></span>
+        <span class="chip ">the greens leader<b>+140%</b></span>
+        <span class="chip ">the greens policies<b>+130%</b></span>
+        <span class="chip ">greens leader<b>+90%</b></span>
+        <span class="chip ">greens policies<b>+80%</b></span>
+        <span class="chip ">leader of the greens<b>+80%</b></span>
+    </div>
+  </div>
+  <div class="q-party">
+    <div class="party" style="--c: #FF8A1F"><span class="dot"></span>One Nation</div>
+    <div class="chips">
+        <span class="chip breakout">mike newman<b>Breakout</b></span>
+        <span class="chip breakout">mike newman one nation<b>Breakout</b></span>
+        <span class="chip breakout">secret harbour by election<b>Breakout</b></span>
+        <span class="chip breakout">luke herdegen<b>Breakout</b></span>
+        <span class="chip breakout">luke herdegen one nation<b>Breakout</b></span>
+        <span class="chip breakout">parminder singh<b>Breakout</b></span>
+    </div>
+  </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">What moved the needle</div>
+        <h2>Spikes and the stories behind them</h2>
+      </div>
+      <p>Days when a party's searches hit at least twice their weekly norm, matched to headlines published within a day or two.</p>
+    </div>
+    <div class="timeline">
+  <div class="tl-item reveal" style="--c: #3FCB6E">
+    <div class="tl-date">Sep<b>30</b></div>
+    <div class="tl-body">
+      <div class="tl-tags"><span class="pill">Greens</span><span class="pill ghost">7.8× normal · peak 19</span></div>
+        <div class="tl-title"><a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxOU3VKSGVJYVdIaWN4S1lqM2NHbXFQRU9qWjZkaU9vajlfR0xRWFpRLU9qOVlsazNsbG50LTQ3TW1BTTRHNTBhbHpSRzRCb1VFNjJKZVYtMEtQaGVwcFF1RVBVbXphMTNCWmdYT2taS1BMcDAyRUJNQms2SHBhWjFTbXh0Si0ydHNIRF90TThoYUx6OWZyRk1heXNtc0RpN3NOUkhOWkR0LUVVRmJiSVp6VGZFVEtnNkd2Tm1RMkp2LVNpZkZva3YycDd5Unc4cEQ5STFTLQ?oc=5" target="_blank" rel="noopener">New Australian Greens leader David Shoebridge vows to ‘replace’ Labor</a></div>
+        <div class="tl-src">Politico · 30 Sep · +2 more</div>
+    </div>
+  </div>
+  <div class="tl-item reveal" style="--c: #F0524A">
+    <div class="tl-date">Sep<b>16</b></div>
+    <div class="tl-body">
+      <div class="tl-tags"><span class="pill">Labor</span><span class="pill ghost">2.3× normal · peak 9</span></div>
+        <div class="tl-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQME9hY0VuYnI1N2FUQUhCT29WUjBKMHJZaV90MGdhR01OVklwYjR1VkhObi1BblhMVnpUZ3V6OTFwY3F6WHFwUFFWVEdMbUhYRzNRTUo3V2xxSTVWYWN3UjllS2F5Y0NSM3UzaVVHTldlREhkUTlCdThoeEwxMUZmRW53ZkZZcGVLd2dWLTcwc1VDejkyN05pa2RtUmdmdw?oc=5" target="_blank" rel="noopener">In Australia, ACT Greens end agreement to support Labor government</a></div>
+        <div class="tl-src">UA.NEWS · 16 Sep · +2 more</div>
+    </div>
+  </div>
+  <div class="tl-item reveal" style="--c: #3D8BFD">
+    <div class="tl-date">Sep<b>13</b></div>
+    <div class="tl-body">
+      <div class="tl-tags"><span class="pill">Liberal</span><span class="pill ghost">3.0× normal · peak 9</span></div>
+        <div class="tl-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxQNi1QeWlhYm0tbHZFaVVOZVAzLTk5NmpHN1F6Vm1NSDNHRWFSXzRYSEpfSmlLZEcyLWZvX0RBOHlPQUJPbUhHSjJQSzZFUlJWaTM1bUx5NDNZb2lqNVNJaWhNR3pPOWcxcE03WEtZUmNqNDZGMnlwdjZDNzVzTkY0UGRWalo5bDVFb01WWnNzRFduVkdxeWZETTltejA1czFsTkVPZlJnME9RQnktejYxejhVZGY3eGM?oc=5" target="_blank" rel="noopener">Hastie the answer for struggling Coalition but not just yet</a></div>
+        <div class="tl-src">SMH.com.au · 13 Sep · +2 more</div>
+    </div>
+  </div>
+  <div class="tl-item reveal" style="--c: #FF8A1F">
+    <div class="tl-date">Aug<b>30</b></div>
+    <div class="tl-body">
+      <div class="tl-tags"><span class="pill">One Nation</span><span class="pill ghost">4.0× normal · peak 100</span></div>
+        <div class="tl-title"><a href="https://news.google.com/rss/articles/CBMi8AFBVV95cUxQeEN5SWJXcV80bkZrbi1SeHFYZ0wySFZNYTFiUlR0dWNDcS00VTZxRWhmcy1RSGlmVS1tRUQ5Y3NHSk9pS1ZWNWlVZW55bVhSMUFQYzY2LWdJdHgwRGZVY1hfcEM3X2ZlSmZaUm15RlNxNjBEUkVSdWI0MmJwTjlJWkJvU1BrTDg5NzVkVmFma3FWVzlLeVVqMzFLWGUzR0l1TXJPbldySi1DVmJpMDItT3BQOTNneVZhRXluVldOd01jeDJqUS1KSzBxSzc4N29EaE9qenRyd1pVblZpcWwxTHNjRWdrdTBObm1HOWVsbW0?oc=5" target="_blank" rel="noopener">One Nation’s Secret Harbour byelection win shows Labor is at a loss when it comes to calming angry voters | Analysis</a></div>
+        <div class="tl-src">The Guardian · 30 Aug · +2 more</div>
+    </div>
+  </div>
+  <div class="tl-item reveal" style="--c: #FF8A1F">
+    <div class="tl-date">Aug<b>13</b></div>
+    <div class="tl-body">
+      <div class="tl-tags"><span class="pill">One Nation</span><span class="pill ghost">2.7× normal · peak 43</span></div>
+        <div class="tl-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNVnpOVXo1OUQyUUZKUkY2bDNhSXB4NlVLcENEdC1XN0kxQVJmVzRReU5Ra1lVVkJDZHNRWmFSLUpMTUNzRF81U0Y3VGhudFZGUmJYRVJjOE9hckg2SWVOYnFnZllvMldISGF5RXRybnZNcDhaX1J4RXVNRE1SMmRUM0hoZzNYRTgxNWVrQ3I1dWFKYW9aZjdlTE1HbnZrNlh6T3dkWk0xSUxIcHhER2dF?oc=5" target="_blank" rel="noopener">Hanson rejects ex-One Nation candidate&#39;s claim homosexuality is a &#39;mental illness&#39;</a></div>
+        <div class="tl-src">ABC News &amp; Headlines – Australian Broadcasting Corporation · 13 Aug · +2 more</div>
+    </div>
+  </div>
+  <div class="tl-item reveal" style="--c: #FF8A1F">
+    <div class="tl-date">Aug<b>3</b></div>
+    <div class="tl-body">
+      <div class="tl-tags"><span class="pill">One Nation</span><span class="pill ghost">2.6× normal · peak 44</span></div>
+        <div class="tl-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxOR0o5MVJnOUxVQmdmZXh6elpoaV90M3M1MkVPLUgtS3lNcnV6cXE5Nk5kQUtiQnpZX0k4MTNqd0tzSWdBRlhfSVFTOWl5a3JDU2hmdzNxbXhaSU4zWUlyM1I2dWh3U1NwTXQ3SmEwQzdLWmdud1BCTGZWMVJScXhCcXhmUjFVd1d3YWFsYVEyQ2VINUlUcHlpYldHeGtaT05MVE90RUYxcmVFREY1ZE1SRVVNTHdiVWFKX2J3WkxlMUw?oc=5" target="_blank" rel="noopener">View from The Hill: Hanson announces One Nation Victorian leader, bans major media outlets</a></div>
+        <div class="tl-src">The Conversation · 3 Aug · +2 more</div>
+    </div>
+  </div>
 </div>
 
+  </div>
+</section>
 
-<div class="card">
-    <h2>Search Interest Over Time</h2>
-    <div style="height:550px; width:100%;">                            <div id="16330e0c-8619-4af1-a94d-a9944cc252f7" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("16330e0c-8619-4af1-a94d-a9944cc252f7")) {                    Plotly.newPlot(                        "16330e0c-8619-4af1-a94d-a9944cc252f7",                        [{"hovertemplate":"Labor: %{y}\u003cbr\u003e%{x}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#E53935","width":2.5},"mode":"lines","name":"Labor","x":["2026-07-09T00:00:00","2026-07-10T00:00:00","2026-07-11T00:00:00","2026-07-12T00:00:00","2026-07-13T00:00:00","2026-07-14T00:00:00","2026-07-15T00:00:00","2026-07-16T00:00:00","2026-07-17T00:00:00","2026-07-18T00:00:00","2026-07-19T00:00:00","2026-07-20T00:00:00","2026-07-21T00:00:00","2026-07-22T00:00:00","2026-07-23T00:00:00","2026-07-24T00:00:00","2026-07-25T00:00:00","2026-07-26T00:00:00","2026-07-27T00:00:00","2026-07-28T00:00:00","2026-07-29T00:00:00","2026-07-30T00:00:00","2026-07-31T00:00:00","2026-08-01T00:00:00","2026-08-02T00:00:00","2026-08-03T00:00:00","2026-08-04T00:00:00","2026-08-05T00:00:00","2026-08-06T00:00:00","2026-08-07T00:00:00","2026-08-08T00:00:00","2026-08-09T00:00:00","2026-08-10T00:00:00","2026-08-11T00:00:00","2026-08-12T00:00:00","2026-08-13T00:00:00","2026-08-14T00:00:00","2026-08-15T00:00:00","2026-08-16T00:00:00","2026-08-17T00:00:00","2026-08-18T00:00:00","2026-08-19T00:00:00","2026-08-20T00:00:00","2026-08-21T00:00:00","2026-08-22T00:00:00","2026-08-23T00:00:00","2026-08-24T00:00:00","2026-08-25T00:00:00","2026-08-26T00:00:00","2026-08-27T00:00:00","2026-08-28T00:00:00","2026-08-29T00:00:00","2026-08-30T00:00:00","2026-08-31T00:00:00","2026-09-01T00:00:00","2026-09-02T00:00:00","2026-09-03T00:00:00","2026-09-04T00:00:00","2026-09-05T00:00:00","2026-09-06T00:00:00","2026-09-07T00:00:00","2026-09-08T00:00:00","2026-09-09T00:00:00","2026-09-10T00:00:00","2026-09-11T00:00:00","2026-09-12T00:00:00","2026-09-13T00:00:00","2026-09-14T00:00:00","2026-09-15T00:00:00","2026-09-16T00:00:00","2026-09-17T00:00:00","2026-09-18T00:00:00","2026-09-19T00:00:00","2026-09-20T00:00:00","2026-09-21T00:00:00","2026-09-22T00:00:00","2026-09-23T00:00:00","2026-09-24T00:00:00","2026-09-25T00:00:00","2026-09-26T00:00:00","2026-09-27T00:00:00","2026-09-28T00:00:00","2026-09-29T00:00:00","2026-09-30T00:00:00","2026-10-01T00:00:00","2026-10-02T00:00:00","2026-10-03T00:00:00","2026-10-04T00:00:00","2026-10-05T00:00:00","2026-10-06T00:00:00","2026-10-07T00:00:00","2026-10-08T00:00:00","2026-10-09T00:00:00"],"y":[3,4,2,3,4,3,2,3,2,4,0,3,5,7,7,6,7,9,9,12,6,6,4,3,2,3,3,6,4,4,5,3,4,4,4,5,4,3,0,5,6,4,5,3,2,0,3,3,4,3,6,5,6,6,6,4,3,5,4,4,4,4,6,4,3,3,4,5,3,8,6,5,7,0,6,5,4,4,3,2,2,3,5,4,4,3,3,3,4,5,4,4,3],"type":"scatter"},{"hovertemplate":"Liberal: %{y}\u003cbr\u003e%{x}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#1565C0","width":2.5},"mode":"lines","name":"Liberal","x":["2026-07-09T00:00:00","2026-07-10T00:00:00","2026-07-11T00:00:00","2026-07-12T00:00:00","2026-07-13T00:00:00","2026-07-14T00:00:00","2026-07-15T00:00:00","2026-07-16T00:00:00","2026-07-17T00:00:00","2026-07-18T00:00:00","2026-07-19T00:00:00","2026-07-20T00:00:00","2026-07-21T00:00:00","2026-07-22T00:00:00","2026-07-23T00:00:00","2026-07-24T00:00:00","2026-07-25T00:00:00","2026-07-26T00:00:00","2026-07-27T00:00:00","2026-07-28T00:00:00","2026-07-29T00:00:00","2026-07-30T00:00:00","2026-07-31T00:00:00","2026-08-01T00:00:00","2026-08-02T00:00:00","2026-08-03T00:00:00","2026-08-04T00:00:00","2026-08-05T00:00:00","2026-08-06T00:00:00","2026-08-07T00:00:00","2026-08-08T00:00:00","2026-08-09T00:00:00","2026-08-10T00:00:00","2026-08-11T00:00:00","2026-08-12T00:00:00","2026-08-13T00:00:00","2026-08-14T00:00:00","2026-08-15T00:00:00","2026-08-16T00:00:00","2026-08-17T00:00:00","2026-08-18T00:00:00","2026-08-19T00:00:00","2026-08-20T00:00:00","2026-08-21T00:00:00","2026-08-22T00:00:00","2026-08-23T00:00:00","2026-08-24T00:00:00","2026-08-25T00:00:00","2026-08-26T00:00:00","2026-08-27T00:00:00","2026-08-28T00:00:00","2026-08-29T00:00:00","2026-08-30T00:00:00","2026-08-31T00:00:00","2026-09-01T00:00:00","2026-09-02T00:00:00","2026-09-03T00:00:00","2026-09-04T00:00:00","2026-09-05T00:00:00","2026-09-06T00:00:00","2026-09-07T00:00:00","2026-09-08T00:00:00","2026-09-09T00:00:00","2026-09-10T00:00:00","2026-09-11T00:00:00","2026-09-12T00:00:00","2026-09-13T00:00:00","2026-09-14T00:00:00","2026-09-15T00:00:00","2026-09-16T00:00:00","2026-09-17T00:00:00","2026-09-18T00:00:00","2026-09-19T00:00:00","2026-09-20T00:00:00","2026-09-21T00:00:00","2026-09-22T00:00:00","2026-09-23T00:00:00","2026-09-24T00:00:00","2026-09-25T00:00:00","2026-09-26T00:00:00","2026-09-27T00:00:00","2026-09-28T00:00:00","2026-09-29T00:00:00","2026-09-30T00:00:00","2026-10-01T00:00:00","2026-10-02T00:00:00","2026-10-03T00:00:00","2026-10-04T00:00:00","2026-10-05T00:00:00","2026-10-06T00:00:00","2026-10-07T00:00:00","2026-10-08T00:00:00","2026-10-09T00:00:00"],"y":[2,3,2,3,4,3,3,2,2,0,0,3,3,4,4,3,2,2,5,6,4,3,3,3,3,0,4,3,3,2,3,3,3,2,2,4,4,3,3,3,3,4,2,3,3,0,3,2,3,2,2,3,2,3,0,3,3,2,2,3,3,3,4,3,2,3,7,4,2,3,0,4,0,0,6,5,3,2,2,2,2,3,3,3,2,2,2,3,3,5,4,3,3],"type":"scatter"},{"hovertemplate":"Greens: %{y}\u003cbr\u003e%{x}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#43A047","width":2.5},"mode":"lines","name":"Greens","x":["2026-07-09T00:00:00","2026-07-10T00:00:00","2026-07-11T00:00:00","2026-07-12T00:00:00","2026-07-13T00:00:00","2026-07-14T00:00:00","2026-07-15T00:00:00","2026-07-16T00:00:00","2026-07-17T00:00:00","2026-07-18T00:00:00","2026-07-19T00:00:00","2026-07-20T00:00:00","2026-07-21T00:00:00","2026-07-22T00:00:00","2026-07-23T00:00:00","2026-07-24T00:00:00","2026-07-25T00:00:00","2026-07-26T00:00:00","2026-07-27T00:00:00","2026-07-28T00:00:00","2026-07-29T00:00:00","2026-07-30T00:00:00","2026-07-31T00:00:00","2026-08-01T00:00:00","2026-08-02T00:00:00","2026-08-03T00:00:00","2026-08-04T00:00:00","2026-08-05T00:00:00","2026-08-06T00:00:00","2026-08-07T00:00:00","2026-08-08T00:00:00","2026-08-09T00:00:00","2026-08-10T00:00:00","2026-08-11T00:00:00","2026-08-12T00:00:00","2026-08-13T00:00:00","2026-08-14T00:00:00","2026-08-15T00:00:00","2026-08-16T00:00:00","2026-08-17T00:00:00","2026-08-18T00:00:00","2026-08-19T00:00:00","2026-08-20T00:00:00","2026-08-21T00:00:00","2026-08-22T00:00:00","2026-08-23T00:00:00","2026-08-24T00:00:00","2026-08-25T00:00:00","2026-08-26T00:00:00","2026-08-27T00:00:00","2026-08-28T00:00:00","2026-08-29T00:00:00","2026-08-30T00:00:00","2026-08-31T00:00:00","2026-09-01T00:00:00","2026-09-02T00:00:00","2026-09-03T00:00:00","2026-09-04T00:00:00","2026-09-05T00:00:00","2026-09-06T00:00:00","2026-09-07T00:00:00","2026-09-08T00:00:00","2026-09-09T00:00:00","2026-09-10T00:00:00","2026-09-11T00:00:00","2026-09-12T00:00:00","2026-09-13T00:00:00","2026-09-14T00:00:00","2026-09-15T00:00:00","2026-09-16T00:00:00","2026-09-17T00:00:00","2026-09-18T00:00:00","2026-09-19T00:00:00","2026-09-20T00:00:00","2026-09-21T00:00:00","2026-09-22T00:00:00","2026-09-23T00:00:00","2026-09-24T00:00:00","2026-09-25T00:00:00","2026-09-26T00:00:00","2026-09-27T00:00:00","2026-09-28T00:00:00","2026-09-29T00:00:00","2026-09-30T00:00:00","2026-10-01T00:00:00","2026-10-02T00:00:00","2026-10-03T00:00:00","2026-10-04T00:00:00","2026-10-05T00:00:00","2026-10-06T00:00:00","2026-10-07T00:00:00","2026-10-08T00:00:00","2026-10-09T00:00:00"],"y":[0,2,0,3,2,0,0,2,0,0,0,3,3,3,3,2,0,0,3,3,3,2,0,0,0,2,0,0,0,0,0,2,2,3,2,2,0,2,0,2,3,2,0,0,0,2,2,2,0,2,0,2,3,2,2,3,2,2,2,2,3,2,3,4,2,0,0,3,0,3,3,2,0,0,0,0,2,0,1,1,1,6,7,19,7,5,5,4,4,4,4,4,3],"type":"scatter"},{"hovertemplate":"One Nation: %{y}\u003cbr\u003e%{x}\u003cextra\u003e\u003c\u002fextra\u003e","line":{"color":"#FF8F00","width":2.5},"mode":"lines","name":"One Nation","x":["2026-07-09T00:00:00","2026-07-10T00:00:00","2026-07-11T00:00:00","2026-07-12T00:00:00","2026-07-13T00:00:00","2026-07-14T00:00:00","2026-07-15T00:00:00","2026-07-16T00:00:00","2026-07-17T00:00:00","2026-07-18T00:00:00","2026-07-19T00:00:00","2026-07-20T00:00:00","2026-07-21T00:00:00","2026-07-22T00:00:00","2026-07-23T00:00:00","2026-07-24T00:00:00","2026-07-25T00:00:00","2026-07-26T00:00:00","2026-07-27T00:00:00","2026-07-28T00:00:00","2026-07-29T00:00:00","2026-07-30T00:00:00","2026-07-31T00:00:00","2026-08-01T00:00:00","2026-08-02T00:00:00","2026-08-03T00:00:00","2026-08-04T00:00:00","2026-08-05T00:00:00","2026-08-06T00:00:00","2026-08-07T00:00:00","2026-08-08T00:00:00","2026-08-09T00:00:00","2026-08-10T00:00:00","2026-08-11T00:00:00","2026-08-12T00:00:00","2026-08-13T00:00:00","2026-08-14T00:00:00","2026-08-15T00:00:00","2026-08-16T00:00:00","2026-08-17T00:00:00","2026-08-18T00:00:00","2026-08-19T00:00:00","2026-08-20T00:00:00","2026-08-21T00:00:00","2026-08-22T00:00:00","2026-08-23T00:00:00","2026-08-24T00:00:00","2026-08-25T00:00:00","2026-08-26T00:00:00","2026-08-27T00:00:00","2026-08-28T00:00:00","2026-08-29T00:00:00","2026-08-30T00:00:00","2026-08-31T00:00:00","2026-09-01T00:00:00","2026-09-02T00:00:00","2026-09-03T00:00:00","2026-09-04T00:00:00","2026-09-05T00:00:00","2026-09-06T00:00:00","2026-09-07T00:00:00","2026-09-08T00:00:00","2026-09-09T00:00:00","2026-09-10T00:00:00","2026-09-11T00:00:00","2026-09-12T00:00:00","2026-09-13T00:00:00","2026-09-14T00:00:00","2026-09-15T00:00:00","2026-09-16T00:00:00","2026-09-17T00:00:00","2026-09-18T00:00:00","2026-09-19T00:00:00","2026-09-20T00:00:00","2026-09-21T00:00:00","2026-09-22T00:00:00","2026-09-23T00:00:00","2026-09-24T00:00:00","2026-09-25T00:00:00","2026-09-26T00:00:00","2026-09-27T00:00:00","2026-09-28T00:00:00","2026-09-29T00:00:00","2026-09-30T00:00:00","2026-10-01T00:00:00","2026-10-02T00:00:00","2026-10-03T00:00:00","2026-10-04T00:00:00","2026-10-05T00:00:00","2026-10-06T00:00:00","2026-10-07T00:00:00","2026-10-08T00:00:00","2026-10-09T00:00:00"],"y":[12,13,14,16,18,17,12,15,18,22,18,15,20,18,20,15,17,14,21,24,16,15,15,12,17,43,22,18,15,15,11,13,16,17,24,42,27,18,19,24,23,22,16,14,14,22,20,14,14,14,23,64,100,58,34,34,25,20,16,20,35,25,29,42,19,18,25,54,25,29,25,19,15,16,17,16,15,16,11,10,13,20,18,18,17,15,29,27,26,37,32,39,24],"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"title":{"font":{"size":20},"text":"Australian Political Party Search Interest"},"legend":{"orientation":"h","yanchor":"bottom","y":1.02,"xanchor":"right","x":1},"margin":{"l":60,"r":30,"t":80,"b":60},"xaxis":{"title":{"text":"Date"}},"yaxis":{"title":{"text":"Search Interest (relative)"}},"hovermode":"x unified","height":550,"autosize":true},                        {"responsive": true, "displayModeBar": false}                    )                };            </script>        </div>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="kicker">Latest</div><h2>In the news</h2></div>
+      <a class="btn" href="xreport.html">All headlines <span class="arrow">→</span></a>
+    </div>
+    <div class="grid g4">
+      <div class="card reveal" style="--c: #F0524A">
+        <div class="news-card-head"><span class="party"><span class="dot"></span>Labor</span></div>
+        <div class="news-list">
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi-AFBVV95cUxQZmJrVERteklZZlpPM2p4UFUwR1hJUTdpWUZYSTR1SGxrNDV4YzVTeTVUeExVLTZzMzhOcVNRWVpQTmE2emRKdVFrUGVSZ09YT2VNYlRsSjlaTGM2ZDEwektoYWRvM2F5Zy01U3lYYnpfd0lwRWhmUHNEMnNEb3llRzBEUjlZNHhRc2NQaXVaNkMwb0k0QVlxODhYWmlvR2swRkNQUkhHcHdUX1dDVTg2WFhCREJIWVJCcmtUeEJoRnRXaUwtLXU0M3FVQ0RDZmlhRDZSMnA0UGNHVEZub0JmblY3Z2lXZy1zU2Qtb01PcHdEZ1R3ZDZyZg?oc=5" target="_blank" rel="noopener">
+    <div class="t">‘Reinstate HECS’: Albo’s wild comedy cameo</div>
+    <div class="m">The Australian · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPVDBqMnJPbG1ub1FPQTVSTi1EbUE5emY3V0M3Z2FXVkl0d0ZNakVtS0RRQ19rYXBHWm1jRFpsbGVqWFNBb04wZVh3V3NJLWRWcXJLdXJXVTl6RFEtMHFzNlVZc0hOQjM4TWhHckpldXVqbVN4Y1hOa3VPN093N0o2b1hyREdqYjY3bFpRSmdjYWtCOFJ5MURyR3I1ZEVYMlRvZ0Fva2NWRWFvNEE2QjNkSFZhUk9lMjhvQTFfbzF3?oc=5" target="_blank" rel="noopener">
+    <div class="t">Albanese dips toe back into comedy after ‘melon’ podcast gaffe</div>
+    <div class="m">SMH.com.au · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxPSkRYT3ZTV0JhZmZPN2t6LWFNRTZQQmhFRVpvTS1YSENjTEV1Zy1IMU14dHdndGlteTA5ZzdzY0F6RkNHTzItUGZubmN0a2Yya01HY2xsXzdLSXhSR0hZT3EtM1BycmxFd25UXy1RZzVtQVM4cWkzUjVXbVFoZFdMUEhkS1A5ZHBCNnFPZ1c4Vk5icFhRbjEzaVFSVGdHOXo5aXFZNkxRbzhFUTB6R3hsYnRPcUE0Ynp5OS1WTFpjemdVQjFIVXpxcElqRWttX21kNGtfMHRzSG1YenfSAeABQVVfeXFMTWhDdVdKNWMzaGJuTmtoWGZKaDNQX3Azd1oxZGN2aEM4RW5JUkxjcUJmV2pVTnNtNkR2eW1tRkVwWUxfekh4ckJfLXJyQ09LT3lmaDFWN0pWWkJiUjNfMW4zaklJUENBVHVPcVBTam11MVRsUUNFejZaMW1rTVRuLVZyaU9kaDhfWm4xRF9Bc1pKQ2dqbzBMT1Z3Wm1iNUl5Z2EwZHR4X0J6amVneXZMM1NxNFRYQ0F6Q2JHTHBoSUUya2szNFBnc2RWSS1KV25iX0JFeXlnb1VuSlU2NTBsZ1c?oc=5" target="_blank" rel="noopener">
+    <div class="t">‘I could reinstate your HECS’: Albanese stars in bizarre Instagram reel</div>
+    <div class="m">News24 · 10 Oct</div>
+  </a>
 </div>
-
-<div class="card">
-    <h2>Last 7 Days Comparison</h2>
-    <div style="height:400px; width:100%;">                            <div id="194ae14d-404e-4fc0-ba5d-21c3f81cbc84" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("194ae14d-404e-4fc0-ba5d-21c3f81cbc84")) {                    Plotly.newPlot(                        "194ae14d-404e-4fc0-ba5d-21c3f81cbc84",                        [{"marker":{"color":["#E53935","#1565C0","#43A047","#FF8F00"]},"text":["3.7","3.3","4.0","30.6"],"textposition":"auto","x":["Labor","Liberal","Greens","One Nation"],"y":[3.7142857142857144,3.2857142857142856,4.0,30.571428571428573],"type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"title":{"font":{"size":18},"text":"Average Search Interest \u2014 Last 7 Days (2026-10-03T00:00:00 to 2026-10-09T00:00:00)"},"margin":{"l":60,"r":30,"t":80,"b":60},"yaxis":{"title":{"text":"Avg Search Interest"}},"height":400,"autosize":true},                        {"responsive": true, "displayModeBar": false}                    )                };            </script>        </div>
+      </div>
+      <div class="card reveal" style="--c: #3D8BFD">
+        <div class="news-card-head"><span class="party"><span class="dot"></span>Liberal</span></div>
+        <div class="news-list">
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1fQTEzV1BadG5qa1B4OTlKVEQtRlFMeGpobTloaTFEdVhWMURITGE3R21yVlZkVll2aFpXekJ3WUdDSmNJZE00SFRYbExmY0tuWk5FVUUxQ2kyQUktY0dUcVJOZUdlT0NvdzBfdE1hNA?oc=5" target="_blank" rel="noopener">
+    <div class="t">Angus Taylor: CPAC speech</div>
+    <div class="m">The Spectator Australia · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMizAFBVV95cUxONm1sS1IwSVZmLVlFUHFlVjVUUXlnSWFhV1d6SGp3cUQ1UmxQR2l6UUpmNVBET291UVZzWmRDWHZJd2M3V3NlY1hJT0tjSGR6RDFsSmRoazJ2N0N2czV3Nm13UUNIM2N1QW93SkRFMV9jQ0tZTncwVHlqTG8xckVXUjZ2MnFJa05uUzdqbXVwRjctN3E0RDR2SHFRMmZTWmZ5bU00dUJZV05CekM0MHNnWGwxbzdhc3hLbFc3UmhWUl9OeldkRDNMN21QTnc?oc=5" target="_blank" rel="noopener">
+    <div class="t">‘Smarmy management consultant’: Angus Taylor criticised by Pauline Hanson and heckled at CPAC event</div>
+    <div class="m">The Guardian · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxOclota0ZWQVAwTDVaQ0x4clVIZkVqemZsbnhDUm9ldExvb2pDVkk4c2dFcXdjbVh3Zk5jSmVtOGxYcHVvUG5sV2hPZWNSN0haY1M1RXZlWS1Cb0NYVHlrRFdxajEtZ3VSTUg0X1pJRVBZdDRoRWxNakk1cHhVR25UclhDYU43WmQxbW9SaFJfR2tnaEtIU3o4VGp2YXZJM3VXSXJsdEUtanhkd3ZrMzYxVFoycEVLUVNRbVYwYzdycnNnMUVpOTZPQnpPZDNmNkptM0c3MFFyaTdDUFMyVGJNblhmdjdNRUZ4bWlpS212REtHWHlrMTJxT3ZFUQ?oc=5" target="_blank" rel="noopener">
+    <div class="t">Angus Taylor takes aim at Pauline Hanson in bid to win over conservative voters</div>
+    <div class="m">The Australian · 10 Oct</div>
+  </a>
 </div>
-
-<div class="card">
-    <h2>Related Queries</h2>
-    <div class="rq-card" style="border-left: 4px solid #E53935">
-<h3>Labor — Related Queries</h3>
-<div class="rq-columns">
-<div class="rq-col"><h4>Top</h4><div class="table-scroll"><table><tr><th>Query</th><th>Score</th></tr>
-<tr><td>labor</td><td>100</td></tr>
-<tr><td>labor party</td><td>46</td></tr>
-<tr><td>liberal</td><td>25</td></tr>
-<tr><td>labor australia</td><td>21</td></tr>
-<tr><td>australian labor</td><td>20</td></tr>
-<tr><td>australian labor party</td><td>15</td></tr>
-<tr><td>alp</td><td>13</td></tr>
-<tr><td>labour party</td><td>12</td></tr>
-<tr><td>labour australia</td><td>11</td></tr>
-<tr><td>albanese</td><td>9</td></tr>
-</table></div></div>
-<div class="rq-col"><h4>Rising</h4><div class="table-scroll"><table><tr><th>Query</th><th>Change</th></tr>
-<tr><td>ben carroll</td><td>122200</td></tr>
-<tr><td>labor immigration reform tony burke</td><td>68850</td></tr>
-<tr><td>anthony albanese labor party discipline</td><td>41300</td></tr>
-<tr><td>alp</td><td>50</td></tr>
-<tr><td>anthony albanese</td><td>50</td></tr>
-</table></div></div>
-</div></div>
-<div class="rq-card" style="border-left: 4px solid #1565C0">
-<h3>Liberal — Related Queries</h3>
-<div class="rq-columns">
-<div class="rq-col"><h4>Top</h4><div class="table-scroll"><table><tr><th>Query</th><th>Score</th></tr>
-<tr><td>liberal</td><td>100</td></tr>
-<tr><td>liberal party</td><td>75</td></tr>
-<tr><td>the liberal party</td><td>29</td></tr>
-<tr><td>liberal australia</td><td>27</td></tr>
-<tr><td>liberal party australia</td><td>20</td></tr>
-<tr><td>liberal party leader</td><td>13</td></tr>
-<tr><td>liberal party of australia</td><td>11</td></tr>
-<tr><td>labor</td><td>8</td></tr>
-<tr><td>australian liberal party</td><td>7</td></tr>
-<tr><td>one nation</td><td>7</td></tr>
-</table></div></div>
-<div class="rq-col"><h4>Rising</h4><div class="table-scroll"><table><tr><th>Query</th><th>Change</th></tr>
-<tr><td>brazil election</td><td>51800</td></tr>
-<tr><td>flávio bolsonaro</td><td>120</td></tr>
-<tr><td>the greens</td><td>100</td></tr>
-<tr><td>liberal candidate</td><td>100</td></tr>
-<tr><td>greens party</td><td>70</td></tr>
-<tr><td>greens</td><td>50</td></tr>
-</table></div></div>
-</div></div>
-<div class="rq-card" style="border-left: 4px solid #43A047">
-<h3>Greens — Related Queries</h3>
-<div class="rq-columns">
-<div class="rq-col"><h4>Top</h4><div class="table-scroll"><table><tr><th>Query</th><th>Score</th></tr>
-<tr><td>greens</td><td>100</td></tr>
-<tr><td>greens leader</td><td>12</td></tr>
-<tr><td>the greens australia</td><td>10</td></tr>
-<tr><td>greens policies</td><td>8</td></tr>
-<tr><td>the greens leader</td><td>7</td></tr>
-<tr><td>one nation</td><td>6</td></tr>
-<tr><td>the greens policies</td><td>5</td></tr>
-<tr><td>labor</td><td>4</td></tr>
-<tr><td>leader of the greens</td><td>4</td></tr>
-<tr><td>labour</td><td>4</td></tr>
-</table></div></div>
-<div class="rq-col"><h4>Rising</h4><div class="table-scroll"><table><tr><th>Query</th><th>Change</th></tr>
-<tr><td>the greens policies</td><td>120</td></tr>
-<tr><td>the greens leader</td><td>100</td></tr>
-<tr><td>greens leader</td><td>70</td></tr>
-<tr><td>greens policies</td><td>70</td></tr>
-<tr><td>leader of the greens</td><td>70</td></tr>
-</table></div></div>
-</div></div>
-<div class="rq-card" style="border-left: 4px solid #FF8F00">
-<h3>One Nation — Related Queries</h3>
-<div class="rq-columns">
-<div class="rq-col"><h4>Top</h4><div class="table-scroll"><table><tr><th>Query</th><th>Score</th></tr>
-<tr><td>one nation</td><td>100</td></tr>
-<tr><td>one nation australia</td><td>9</td></tr>
-<tr><td>pauline hanson</td><td>7</td></tr>
-<tr><td>one nation victoria</td><td>7</td></tr>
-<tr><td>one nation party</td><td>6</td></tr>
-<tr><td>pauline hanson one nation</td><td>6</td></tr>
-<tr><td>one nation policies</td><td>5</td></tr>
-<tr><td>what is one nation</td><td>5</td></tr>
-<tr><td>one nation policy</td><td>4</td></tr>
-<tr><td>one nation candidates</td><td>3</td></tr>
-</table></div></div>
-<div class="rq-col"><h4>Rising</h4><div class="table-scroll"><table><tr><th>Query</th><th>Change</th></tr>
-<tr><td>mike newman</td><td>85700</td></tr>
-<tr><td>mike newman one nation</td><td>74400</td></tr>
-<tr><td>secret harbour by election</td><td>58850</td></tr>
-<tr><td>one nation 26 countries</td><td>48600</td></tr>
-<tr><td>luke herdegen</td><td>43300</td></tr>
-<tr><td>luke herdegen one nation</td><td>41300</td></tr>
-<tr><td>hollie hughes one nation comments</td><td>31950</td></tr>
-<tr><td>mark nicholson</td><td>27050</td></tr>
-<tr><td>ben carroll</td><td>17200</td></tr>
-<tr><td>one nation immigration policy dispute</td><td>16850</td></tr>
-</table></div></div>
-</div></div>
-
+      </div>
+      <div class="card reveal" style="--c: #3FCB6E">
+        <div class="news-card-head"><span class="party"><span class="dot"></span>Greens</span></div>
+        <div class="news-list">
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxQYkhBWkNlanVrUU43S0F1RDVBOGNVSnRjS3I0ajdqT1U5bUpfTGRCZ3E3aGJyUmpVZnBpekJHcEFOTV92MjZWbkJpRll0QkJ3VDZTZHRNUEotcVpTVWFkYWllMGZVNGVXbFI5RTVWaTcxdVNoOTRzalFFLXdtVW1NM2tvaVpzZnZXWVF4Y045cm9xblZmeUUtUHdJMmlEUDlwbnZTMjQ2aEF3MnJMNkpLTTc1TmVVUGFrTWpoQWtyRFdtaFc4R0pmYVJ6RGR1cmVIWG1Da2FkZi1VaUVWcGNlNG4xdkM?oc=5" target="_blank" rel="noopener">
+    <div class="t">Ridiculous ideas are having a moment. Here’s why the doomsayers are wrong</div>
+    <div class="m">SMH.com.au · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxOWFZTbXJrdFUtUVlEb2pZSTJJWVVvcmJKZUpGakh1UUdQMG5lb3JCM3Z0VVh2aUlkY1FxVGt4MWxfMzljUG8zWGNfT2M2R2JyVzN6UlBGOG9vRG5jQXYwbjB6cXpyczc1Ym41VzMyWm5ZS2h1UnBBWkttaXJxcm5YNENPa3RoRGhveE9IRFJJUFRURlR1TUJaUU9taHJ3NjhGZlBEWHlTWlJLUlpYREpHRG9iNVdjY05Hd0ljYk9udkZIS0t1R0U0U1I4cTIyUi1mWTRTX19HNlJkMVRmZ1dWWDZHLTNZUQ?oc=5" target="_blank" rel="noopener">
+    <div class="t">Greens continue to play hardball with Labor’s agenda</div>
+    <div class="m">Crikey · 9 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi-AFBVV95cUxPU0NINExNV2Q3S2J0TzRsY2V3bEJhVmk2SHlKdWJMRjZ3alNJUGpWVzJuR0pBcGVzNDhlaHB5Uk83ZlhmSlpRNGJ1d0VXN3JGNVVCNmhsVnREWHhiRXRBckp0TzFqeWJheVVTV1NIZm1JdFpqaE9RSnlEWjZXeklva19sTWxSZEQxaFEwTnV5X1hQdXlUTmFfLXR0YnhSbWJzaU9QbVFaVWc4TU1UWUpZMWVKM004Mzk2cFRGRjZvV1ZhMUFYZnlEcEZ4OXRjMFpwZmJUcEtrdFdtQzAzblNDSG0wN0JBQS1YZU5OTnBBUEE4X19PN1E2YtIB_gFBVV95cUxNR28tOVVqYTdicGpaWHVaWlgtRkF4NnZMVS1UQ2U0ODNYbWFDcW9HZnJ2RDVNSnpMbW1vZ3cxTjFwM0d1dUlqSHRSUEl4T1d3aTFxRnZ3STRKNUVlY1hQdWRvVHRUc2RsWFA2MnpYdmt0SFRudEVpSHpWNEs1U0NVQnhoTWlzcmRqX0RVbk5FQ3daaGhQMDB6cEFDQU9raXpySXVlUTV1MFlMd0xKZEZtaWk3QUlOTHFzU2F1MDhaTjFNQVY5WHlVNENwVUlQYW9OcUlvTDY5T09aLTFENlJxZ1dkNG4wVUVKVnpGTW9XdlBTdG5tX3VzekVyazdxdw?oc=5" target="_blank" rel="noopener">
+    <div class="t">New Greens leader warns Labor over Senate budget bills</div>
+    <div class="m">News24 · 9 Oct</div>
+  </a>
 </div>
-
-<div class="card">
-    
-
-
-<div class="share-strip">
-    <span>Share:</span>
-    <a class="share-btn x"
-       href="https://twitter.com/intent/tweet?text=One%20Nation%20is%20the%20most-searched%20party%20this%20week.%20See%20the%20full%20data%20on%20PolTrends%20Australia&url=https%3A//poltrends.stewartmedia.com.au/"
-       target="_blank" rel="noopener">X</a>
-    <a class="share-btn fb"
-       href="https://www.facebook.com/sharer/sharer.php?u=https%3A//poltrends.stewartmedia.com.au/"
-       target="_blank" rel="noopener">Facebook</a>
-    <a class="share-btn li"
-       href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//poltrends.stewartmedia.com.au/"
-       target="_blank" rel="noopener">LinkedIn</a>
-    <button class="share-btn copy" id="copy-btn" onclick="copyLink()">Copy link</button>
+      </div>
+      <div class="card reveal" style="--c: #FF8A1F">
+        <div class="news-card-head"><span class="party"><span class="dot"></span>One Nation</span></div>
+        <div class="news-list">
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOZnRnNGZlUWF0X2JxZXNqd0RueTU5ZmJWMEQ2YXVFM1NMM1k4VUZQVkUtS0hWSHU0MnRsNTJ0YnlWX0t1Tmc0YmJfdjZhMDJFZTFRdnZwS0pSX0VlUXJCRC0td1NaU2FuWjhiclFuN01MUUkyZWd6OHRocXRNYXR2aERVclFHRi0xMGl6cFU5ZzdhUmxNZlNQcm9jQUlrM1pfSjJrRg?oc=5" target="_blank" rel="noopener">
+    <div class="t">Hanson takes aim at Coalition in fiery pitch to conservative voters</div>
+    <div class="m">ABC News &amp; Headlines – Australian Broadcasting Corporation · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdjZYeTNMRVpmSmJjSVBFSTZicjA4bERyRTFiSndCUkNDWHNNQlRQQnZEYTMwZ2FTVXFsaDFITmdSR3ZpTjJCNDZqcU54NTNjZ0VDY091WElVVUtWT0JTYl9fOWZSNDZ5SDBXQVhNNTcxXzFEVGpIQnM4Mk4yVnJpODlkdHhJR0NnVWs5d1JxM0JRN0YtdTBjbzJWTVN4MUlnMl9QX19ubDFDZDUwX1p3Z1hnaEU4YzRNN3MtczhsUUczQkl2MWIyMkJTdHpkcUFNd0hqd3Z3?oc=5" target="_blank" rel="noopener">
+    <div class="t">Jacqui Lambie is right about Pauline Hanson. There’s only one way to stop her ascension</div>
+    <div class="m">SMH.com.au · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMixgFBVV95cUxPTEFaTE5QSjhZSjI4VTgzczdmdTg4dkxZT2pOODVOU3ZJb0tNWERwX0lJRXYyd1JNUDJCa21JbThockFXcHNBM09PYlY2TjhLXzZqbGwyTGt6V01FRXlweWJWcFM0V2xEbzU2S1dITHBQWDEtdVl6Qk8yc1BMUVRwUXh2LTNURkdGWmgwcE8taF9fR3lSU2l4aDlxcGplWUg1WHh0WmdqWGpFMjdiRHpZbzB5Mjg2cE5lS0xibldzWWJ2bEhIbGc?oc=5" target="_blank" rel="noopener">
+    <div class="t">Seeing orange: Nationals under threat in regional Victoria as angry voters consider One Nation</div>
+    <div class="m">The Guardian · 10 Oct</div>
+  </a>
 </div>
-</div>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
 
-    </main>
-    <footer>
-        PolTrends Australia &mdash; Entity search data from Google Trends &mdash; Updated 2026-10-10
-    </footer>
-    <script>
-    function copyLink(){
-        navigator.clipboard.writeText(window.location.href).then(function(){
-            var btn=document.getElementById('copy-btn');
-            btn.textContent='Copied!';
-            setTimeout(function(){btn.textContent='Copy link';},2000);
-        });
-    }
-    </script>
+  <footer>
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>PolTrends <small>Australia</small></a>
+          <p class="note" style="margin-top:12px; max-width:52ch">
+            Independent tracker of what Australians search for about political parties, alongside published polls and an open seat model for the 2026 Victorian election.
+            Search interest shows attention, not support. Built and updated automatically every day.
+          </p>
+          <div class="share-row">
+            <a href="https://twitter.com/intent/tweet?text=One%20Nation%20leads%20Australian%20political%20searches%20this%20week.%20Daily%20search%20data%20on%20PolTrends%20Australia&url=https%3A//poltrends.stewartmedia.com.au/" target="_blank" rel="noopener">Share on X</a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//poltrends.stewartmedia.com.au/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//poltrends.stewartmedia.com.au/" target="_blank" rel="noopener">Facebook</a>
+            <button type="button" data-copy="https://poltrends.stewartmedia.com.au/">Copy link</button>
+          </div>
+        </div>
+        <div>
+          <h4>Sources</h4>
+          <ul>
+            <li><a href="https://trends.google.com/trends/explore?geo=AU&date=today%203-m" target="_blank" rel="noopener">Google Trends</a> (topic entities)</li>
+            <li><a href="https://news.google.com/" target="_blank" rel="noopener">Google News</a> headlines</li>
+            <li><a href="https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Victorian_state_election" target="_blank" rel="noopener">Published Victorian polls</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/2026_Victorian_state_election#Pre-electoral_pendulum" target="_blank" rel="noopener">2022 pendulum</a> (VEC results)</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Data health</h4>
+          <p class="note">Last run 10 October 2026 at 10:54pm UTC+11:00.</p>
+          <div class="health">
+<span class="ok" title="">briefing</span><span class="ok" title="">news national</span><span class="ok" title="">news victoria</span><span class="ok" title="">polls victoria</span><span class="ok" title="">seat model</span><span class="ok" title="">seat news</span><span class="ok" title="">spikes national</span><span class="ok" title="">spikes victoria</span><span class="ok" title="">summary national</span><span class="ok" title="">summary victoria</span><span class="ok" title="">summary victoria leaders</span><span class="ok" title="">trends national</span><span class="ok" title="">trends victoria</span><span class="ok" title="">trends victoria leaders</span>          </div>
+          <p class="note" style="margin-top:10px">A source that fails keeps its last good copy, labelled with its date.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/site.js?v=9a651412" defer></script>
 </body>
 </html>

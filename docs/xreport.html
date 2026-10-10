@@ -1,321 +1,465 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PolTrends Australia — News</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="PolTrends Australia">
-    <meta property="og:title" content="PolTrends Australia — News &amp; Spikes">
-    <meta property="og:description" content="Latest news headlines and search interest spikes for Australian political parties.">
-    <meta property="og:url" content="https://poltrends.stewartmedia.com.au/xreport.html">
-    <meta property="og:image" content="https://poltrends.stewartmedia.com.au/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-    <!-- Twitter/X Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="PolTrends Australia — News &amp; Spikes">
-    <meta name="twitter:description" content="Latest news headlines and search interest spikes for Australian political parties.">
-    <meta name="twitter:image" content="https://poltrends.stewartmedia.com.au/og-image.png">
-
-    <meta name="description" content="Latest news headlines and search interest spikes for Australian political parties.">
-
-    <script src="https://cdn.plot.ly/plotly-2.35.0.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Inter', sans-serif;
-            background: #f8f9fa;
-            color: #1a1a2e;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-        header {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: white;
-            padding: 1.5rem 2rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        header h1 { font-size: 1.6rem; font-weight: 700; }
-        header p { font-size: 0.9rem; opacity: 0.8; margin-top: 0.25rem; }
-        nav {
-            background: #16213e;
-            padding: 0.5rem 2rem;
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: rgba(255,255,255,0.7);
-            text-decoration: none;
-            font-size: 0.85rem;
-            font-weight: 500;
-            padding: 0.3rem 0;
-            border-bottom: 2px solid transparent;
-            transition: all 0.2s;
-        }
-        nav a:hover, nav a.active {
-            color: white;
-            border-bottom-color: #e94560;
-        }
-        main { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-        }
-        .card h2 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #f0f0f0;
-        }
-        .winner-banner {
-            background: linear-gradient(135deg, #e94560 0%, #c23152 100%);
-            color: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-        .winner-banner h2 { color: white; border: none; margin: 0; font-size: 1.4rem; }
-        .winner-banner p { opacity: 0.9; margin-top: 0.5rem; }
-        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
-        .rq-card {
-            background: white;
-            border-radius: 8px;
-            padding: 1rem;
-            margin-bottom: 1rem;
-        }
-        .rq-card h3 { font-size: 1rem; margin-bottom: 0.75rem; }
-        .rq-card h4 { font-size: 0.85rem; color: #666; margin-bottom: 0.5rem; }
-        .rq-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-        .rq-col { min-width: 0; }
-        .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-        .rq-card table { width: 100%; font-size: 0.8rem; border-collapse: collapse; }
-        .rq-card th, .rq-card td { padding: 0.3rem 0.5rem; text-align: left; }
-        .rq-card th { color: #888; font-weight: 500; border-bottom: 1px solid #eee; }
-        .rq-card tr:nth-child(even) { background: #fafafa; }
-        .news-item {
-            padding: 0.75rem 0;
-            border-bottom: 1px solid #f0f0f0;
-        }
-        .news-item:last-child { border-bottom: none; }
-        .news-title {
-            display: block;
-            color: #1a1a2e;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
-            line-height: 1.4;
-        }
-        .news-title:hover { color: #e94560; }
-        .news-meta { font-size: 0.75rem; color: #999; }
-        .spike-header { margin-bottom: 0.5rem; }
-        .spike-ratio { font-size: 0.8rem; color: #888; margin-left: 0.5rem; }
-        .spike-news { list-style: none; padding: 0; }
-        .spike-news li { padding: 0.3rem 0; font-size: 0.85rem; }
-        .spike-news a { color: #1565C0; text-decoration: none; }
-        .spike-news a:hover { text-decoration: underline; }
-        .spike-no-news { font-size: 0.8rem; color: #999; font-style: italic; }
-        .narrative { font-size: 0.9rem; line-height: 1.8; }
-        .narrative p { margin-bottom: 1rem; }
-        .narrative h2, .narrative h3 { margin-top: 1.2rem; margin-bottom: 0.5rem; }
-        .sentiment-bar {
-            display: flex;
-            height: 24px;
-            border-radius: 12px;
-            overflow: hidden;
-            margin: 0.5rem 0;
-        }
-        .sentiment-bar .pos { background: #43A047; }
-        .sentiment-bar .neu { background: #9E9E9E; }
-        .sentiment-bar .neg { background: #E53935; }
-        .metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
-        @media (max-width: 768px) { .metric-grid { grid-template-columns: repeat(2, 1fr); } }
-        .metric-card {
-            text-align: center;
-            padding: 1rem;
-            border-radius: 8px;
-            background: #f8f9fa;
-        }
-        .metric-card .value { font-size: 1.8rem; font-weight: 700; }
-        .metric-card .label { font-size: 0.75rem; color: #666; margin-top: 0.25rem; }
-        .metric-card .change { font-size: 0.8rem; margin-top: 0.25rem; }
-        .change.up { color: #43A047; }
-        .change.down { color: #E53935; }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #999;
-            font-size: 0.8rem;
-        }
-        .updated { font-size: 0.8rem; color: #999; text-align: right; margin-bottom: 1rem; }
-        .share-strip {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 0;
-            margin-top: 1rem;
-            border-top: 1px solid #f0f0f0;
-            font-size: 0.8rem;
-            color: #999;
-        }
-        .share-strip span { white-space: nowrap; }
-        .share-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.3rem;
-            padding: 0.35rem 0.75rem;
-            border-radius: 6px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            text-decoration: none;
-            border: 1px solid #e0e0e0;
-            color: #555;
-            background: #fafafa;
-            cursor: pointer;
-            transition: all 0.15s;
-        }
-        .share-btn:hover { background: #f0f0f0; border-color: #ccc; color: #333; }
-        .share-btn.x { border-color: #1d9bf0; color: #1d9bf0; }
-        .share-btn.x:hover { background: #e8f5fd; }
-        .share-btn.fb { border-color: #1877f2; color: #1877f2; }
-        .share-btn.fb:hover { background: #e7f0ff; }
-        .share-btn.li { border-color: #0a66c2; color: #0a66c2; }
-        .share-btn.li:hover { background: #e8f1fa; }
-        .share-btn.copy { border-color: #666; }
-        .share-btn.copy:hover { background: #eee; }
-        .js-plotly-plot, .plot-container { width: 100% !important; }
-        .js-plotly-plot .svg-container { width: 100% !important; max-width: 100% !important; }
-        @media (max-width: 768px) {
-            header {
-                padding: 1.2rem 1rem;
-            }
-            header h1 {
-                font-size: 1.3rem;
-            }
-            nav {
-                padding: 0.75rem 1rem;
-                gap: 0.75rem 1rem;
-            }
-            nav a {
-                font-size: 0.82rem;
-            }
-            main {
-                margin: 1rem auto 1.5rem;
-                padding: 0 0.85rem;
-            }
-            .card,
-            .winner-banner {
-                padding: 1rem;
-                border-radius: 10px;
-                margin-bottom: 1rem;
-            }
-            .card h2,
-            .winner-banner h2 {
-                font-size: 1.05rem;
-            }
-            .updated {
-                text-align: left;
-                margin-bottom: 0.75rem;
-            }
-            .rq-columns {
-                grid-template-columns: 1fr;
-            }
-            .metric-grid {
-                grid-template-columns: 1fr;
-            }
-            .metric-card .value {
-                font-size: 1.5rem;
-            }
-            .spike-header {
-                display: flex;
-                flex-direction: column;
-                gap: 0.2rem;
-            }
-            .spike-ratio {
-                margin-left: 0;
-            }
-            .share-strip {
-                flex-wrap: wrap;
-            }
-            .share-strip span {
-                width: 100%;
-            }
-            .share-btn {
-                flex: 1 1 calc(50% - 0.5rem);
-                justify-content: center;
-            }
-            footer {
-                padding: 1.5rem 1rem 2rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Political headlines and search spikes | PolTrends Australia</title>
+  <meta name="description" content="Latest Australian political headlines by party, and the search spikes they lined up with.">
+  <link rel="canonical" href="https://poltrends.stewartmedia.com.au/xreport.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="theme-color" content="#090D15">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PolTrends Australia">
+  <meta property="og:title" content="Political headlines and search spikes | PolTrends Australia">
+  <meta property="og:description" content="Latest Australian political headlines by party, and the search spikes they lined up with.">
+  <meta property="og:url" content="https://poltrends.stewartmedia.com.au/xreport.html">
+  <meta property="og:image" content="https://poltrends.stewartmedia.com.au/og-image.png?v=9a651412">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Political headlines and search spikes | PolTrends Australia">
+  <meta name="twitter:description" content="Latest Australian political headlines by party, and the search spikes they lined up with.">
+  <meta name="twitter:image" content="https://poltrends.stewartmedia.com.au/og-image.png?v=9a651412">
+  <link rel="preload" href="assets/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/InstrumentSerif-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/site.css?v=9a651412">
 </head>
-<body>
-    <header>
-        <h1>PolTrends Australia</h1>
-        <p>Entity search interest tracking for Australian political parties</p>
-    </header>
-    <nav>
-        <a href="index.html" class="">Dashboard</a>
-        <a href="analysis.html" class="">Weekly Analysis</a>
+<body class="page-xreport">
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="PolTrends Australia home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        PolTrends <small>Australia</small>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html" class="">National</a>
+        <a href="victoria.html" class="">Victoria 2026<span class="badge"><span data-days-left>48</span>d</span></a>
+        <a href="analysis.html" class="">Briefing</a>
         <a href="xreport.html" class="active">News</a>
-        <a href="victoria.html" class="" style="border-left: 1px solid rgba(255,255,255,0.2); padding-left: 1.5rem;">Victoria</a>
-    </nav>
-    <main>
-        
-<p class="updated">Last updated: 2026-10-10</p>
+        <a href="analysis.html#method" class="">Method</a>
+      </nav>
+      <div class="updated-chip" title="Pipeline last ran 10 October 2026 at 10:54pm UTC+11:00">
+        <span class="pulse "></span>
+        <span>Updated 10 Oct, 10:54pm</span>
+      </div>
+    </div>
+  </header>
 
+  <main>
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Headlines · collected 10 Oct, 10:54pm</div>
+    <h1 class="display">The stories behind the <em>searches</em>.</h1>
+    <p class="lede">Latest coverage for each party from Google News, refreshed twice a day, and the spikes those stories lined up with.</p>
+  </div>
+</section>
 
-<div class="card">
-    <p style="color: #999;">No news data available yet. News is fetched daily from Google News.</p>
+<section class="section" style="padding-top: 0">
+  <div class="wrap">
+    <div class="section-head"><div><div class="kicker">Federal</div><h2>National headlines</h2></div></div>
+    <div class="grid g2">
+      <div class="card reveal" style="--c: #F0524A">
+        <div class="news-card-head"><span class="party"><span class="dot"></span>Australian Labor Party</span><span class="note">12 stories</span></div>
+        <div class="news-list">
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi-AFBVV95cUxQZmJrVERteklZZlpPM2p4UFUwR1hJUTdpWUZYSTR1SGxrNDV4YzVTeTVUeExVLTZzMzhOcVNRWVpQTmE2emRKdVFrUGVSZ09YT2VNYlRsSjlaTGM2ZDEwektoYWRvM2F5Zy01U3lYYnpfd0lwRWhmUHNEMnNEb3llRzBEUjlZNHhRc2NQaXVaNkMwb0k0QVlxODhYWmlvR2swRkNQUkhHcHdUX1dDVTg2WFhCREJIWVJCcmtUeEJoRnRXaUwtLXU0M3FVQ0RDZmlhRDZSMnA0UGNHVEZub0JmblY3Z2lXZy1zU2Qtb01PcHdEZ1R3ZDZyZg?oc=5" target="_blank" rel="noopener">
+    <div class="t">‘Reinstate HECS’: Albo’s wild comedy cameo</div>
+    <div class="m">The Australian · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPVDBqMnJPbG1ub1FPQTVSTi1EbUE5emY3V0M3Z2FXVkl0d0ZNakVtS0RRQ19rYXBHWm1jRFpsbGVqWFNBb04wZVh3V3NJLWRWcXJLdXJXVTl6RFEtMHFzNlVZc0hOQjM4TWhHckpldXVqbVN4Y1hOa3VPN093N0o2b1hyREdqYjY3bFpRSmdjYWtCOFJ5MURyR3I1ZEVYMlRvZ0Fva2NWRWFvNEE2QjNkSFZhUk9lMjhvQTFfbzF3?oc=5" target="_blank" rel="noopener">
+    <div class="t">Albanese dips toe back into comedy after ‘melon’ podcast gaffe</div>
+    <div class="m">SMH.com.au · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxPSkRYT3ZTV0JhZmZPN2t6LWFNRTZQQmhFRVpvTS1YSENjTEV1Zy1IMU14dHdndGlteTA5ZzdzY0F6RkNHTzItUGZubmN0a2Yya01HY2xsXzdLSXhSR0hZT3EtM1BycmxFd25UXy1RZzVtQVM4cWkzUjVXbVFoZFdMUEhkS1A5ZHBCNnFPZ1c4Vk5icFhRbjEzaVFSVGdHOXo5aXFZNkxRbzhFUTB6R3hsYnRPcUE0Ynp5OS1WTFpjemdVQjFIVXpxcElqRWttX21kNGtfMHRzSG1YenfSAeABQVVfeXFMTWhDdVdKNWMzaGJuTmtoWGZKaDNQX3Azd1oxZGN2aEM4RW5JUkxjcUJmV2pVTnNtNkR2eW1tRkVwWUxfekh4ckJfLXJyQ09LT3lmaDFWN0pWWkJiUjNfMW4zaklJUENBVHVPcVBTam11MVRsUUNFejZaMW1rTVRuLVZyaU9kaDhfWm4xRF9Bc1pKQ2dqbzBMT1Z3Wm1iNUl5Z2EwZHR4X0J6amVneXZMM1NxNFRYQ0F6Q2JHTHBoSUUya2szNFBnc2RWSS1KV25iX0JFeXlnb1VuSlU2NTBsZ1c?oc=5" target="_blank" rel="noopener">
+    <div class="t">‘I could reinstate your HECS’: Albanese stars in bizarre Instagram reel</div>
+    <div class="m">News24 · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNLWdtd0psaU5WTlExbVRBb1czY1V6dFY4YUFOcmZobl85Z0ZsWi1MOUYwWWZUM3JJSXF3aFBqSGhHSU9zTjgtb0VwdGMwRUt5SHJVdzUwRzhJeHlMSFYzUktPZWZoSVhMVW9JM05nUkJ2MmlNaTQ0cTZ3OFZ5QWVfQkgzOXNmbGJlMzVIRUlMbXlWdV9pQU1LZDM5ZWdFa2xWNVFMWWh3?oc=5" target="_blank" rel="noopener">
+    <div class="t">Department bombshell exposes the truth behind election grants</div>
+    <div class="m">The Canberra Times · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMiigJBVV95cUxPOEU0LVVmWW92YmhoSFpUNUNYekNfVVhpV1pCZ3ltSDYwM0FHajhwN3lXc3AwN25qTUx2TnFqSkNpMF9jaUJkbEp3bW9JR1JaQ3RyTHA5dGdHVEhhUmpPYkNuTUN2UjZnLUR2MTJ6cnBfc0tvOW5LdE9lbENLbjZEeDk4S09SRHNMRmF2X01oRDN2RDFSb09VNzdOb1F6S0VKYjlETVNDUTNCMF9URlBkZlBNRDZOa2wzQW9IMUlteHQ2UjZCcXY5UVJzYkJtLTB3WWkwRUVyM0pXUDZGc0Y0TE10bGRUY0VwTmNzTlZsaUd5T2xEVTdnMnBoM2ZaV0hFT3dvSU9WWG1IUQ?oc=5" target="_blank" rel="noopener">
+    <div class="t">Albo’s failed coffee promise leaves bitter taste in consumers’ mouths</div>
+    <div class="m">Adelaide Now · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQS0JJa3htY2J4enk1SGdpaTVzcDEwdm9QR3dCV2J4c0pVMjliZVpqbHRBRFowbWhyU01uNEdwdVVpZlU1SXJZS2FiY1F3STI3MTlpbmJacHlzeDRzVjNOcDlZbXA4MWVjcGdQbmNXNnNTZnI1TTk3WDdfZ1ljUk51eG1QUTBCQTRoMWx2R1BpZU1pS0RfcnBtczhvTm9HN2p4OThjSVdB?oc=5" target="_blank" rel="noopener">
+    <div class="t">The ‘pure ratfuckery’ between Minns and Albanese</div>
+    <div class="m">The Saturday Paper · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMigAJBVV95cUxNUHYxb3dfYkxfbURLMURmWl9rSnI4R3Vra3NmUVU1TDZ4ekd0TlZDZUxJM2k4Sm94d0g1LWFuenkxN3h2R1FPMVhHV0RMSG5WTnpDQzZOZ0xSSGlTd1Q3cl93MnZoeUdnNThNS2hIR1JRV1FRMWZwOW96X0lzTktfZ2dGa3ItREI5YUR3bWJreW0wNHlZdGlSSzJDVkg0Qlc3QnljUkZCc05IQ01yOUVmTW1tMVd4TXhQZnhZNmg3NlU4LUl5WjhWSmtlX1FIdmxCVlFUeDFDUUhWeXh3TmZORWNPMlJrS1Q0cVBMdUVqenRlTXhPRkg5dHdxcWw5R2pS0gGGAkFVX3lxTE9sVWk4R04yZnI3UHRBY2ZxazdDZ0tnYjR3TVVJd2RDbENuT3ZaZmJPdFZIR1I5OUNZajMwQzI3a29qR2xCeWpSdHBRVFNYTDJLV3JpUGNiUDBtb3JSdlROTTR1YnIzMnQzdGdZbnk5dWJ1VGVDUmdXNWFOdGRqZ3BudVlTcVljWEl0SzE5X2loRF9XX1FQaEpTWDhBa2p4M1Voc3lpeXJRdDM2cVo5MUtsV1ZJQTkwcl9BQ1llX01CRVpNQ1Vqb1BOR2VTVVdzUnppR3gwcmxoVGZBdjFlSWhTcXdtX2FTcHpFd2c3Tm1TRkFVMEZodURnTVZvVk9xTEdoWTZPenc?oc=5" target="_blank" rel="noopener">
+    <div class="t">‘Hello darling’: PM’s shock appearance stuns</div>
+    <div class="m">News.com.au · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRkhzZy01dk9NMkl3ekEtcTFKWm9nTDhHOGFEWS1nUjB4R0RKRVJraHpVaDNiaDVhVzZJWnpNcUVYY205c21Qcnc5ald2TTVhbWdtQTR6ZmdEVXV1emJnWEZmaWJjVjdZS01VWGlnLUNIbmh1S3Azb3U0el9Hb3BaWjZRTFN3NjJ0WGNFRkNMbWlTZVlVU1RBeUxkcVZPQTRwMld1cmVBbkYzVE5FTi12QzZpb2VqZGc3LUtJUU1rWlg?oc=5" target="_blank" rel="noopener">
+    <div class="t">No Proof of Authority, No Termination, Germany’s Federal Labor Court Rules</div>
+    <div class="m">Ogletree · 10 Oct</div>
+  </a>
+</div>
+      </div>
+      <div class="card reveal" style="--c: #3D8BFD">
+        <div class="news-card-head"><span class="party"><span class="dot"></span>Liberal Party of Australia</span><span class="note">12 stories</span></div>
+        <div class="news-list">
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1fQTEzV1BadG5qa1B4OTlKVEQtRlFMeGpobTloaTFEdVhWMURITGE3R21yVlZkVll2aFpXekJ3WUdDSmNJZE00SFRYbExmY0tuWk5FVUUxQ2kyQUktY0dUcVJOZUdlT0NvdzBfdE1hNA?oc=5" target="_blank" rel="noopener">
+    <div class="t">Angus Taylor: CPAC speech</div>
+    <div class="m">The Spectator Australia · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMizAFBVV95cUxONm1sS1IwSVZmLVlFUHFlVjVUUXlnSWFhV1d6SGp3cUQ1UmxQR2l6UUpmNVBET291UVZzWmRDWHZJd2M3V3NlY1hJT0tjSGR6RDFsSmRoazJ2N0N2czV3Nm13UUNIM2N1QW93SkRFMV9jQ0tZTncwVHlqTG8xckVXUjZ2MnFJa05uUzdqbXVwRjctN3E0RDR2SHFRMmZTWmZ5bU00dUJZV05CekM0MHNnWGwxbzdhc3hLbFc3UmhWUl9OeldkRDNMN21QTnc?oc=5" target="_blank" rel="noopener">
+    <div class="t">‘Smarmy management consultant’: Angus Taylor criticised by Pauline Hanson and heckled at CPAC event</div>
+    <div class="m">The Guardian · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxOclota0ZWQVAwTDVaQ0x4clVIZkVqemZsbnhDUm9ldExvb2pDVkk4c2dFcXdjbVh3Zk5jSmVtOGxYcHVvUG5sV2hPZWNSN0haY1M1RXZlWS1Cb0NYVHlrRFdxajEtZ3VSTUg0X1pJRVBZdDRoRWxNakk1cHhVR25UclhDYU43WmQxbW9SaFJfR2tnaEtIU3o4VGp2YXZJM3VXSXJsdEUtanhkd3ZrMzYxVFoycEVLUVNRbVYwYzdycnNnMUVpOTZPQnpPZDNmNkptM0c3MFFyaTdDUFMyVGJNblhmdjdNRUZ4bWlpS212REtHWHlrMTJxT3ZFUQ?oc=5" target="_blank" rel="noopener">
+    <div class="t">Angus Taylor takes aim at Pauline Hanson in bid to win over conservative voters</div>
+    <div class="m">The Australian · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMivgFBVV95cUxQb3pCc0FLNlRCbklLVF9rUEJLSVRhRFRaTUxZdkFPQVhTSmN6M201NzRuaDVOLTB5VUtjdVliM3JSQ3hGMmM1eVlvWEtsWXgybUlFZ0dERFBfUnJWX3lFSmd5UmF0aGtUbHhlSnJpbnJYUkRoQmlTdThpbGkzUXlmSzg5OUc3SHZ4Q21Lc3hCWk4zTElMMmQ5N1FfMGpWRHBBUktOWmwxT01wVkREX3Zpbl9OUXJ1WDI0OFlvYWxn?oc=5" target="_blank" rel="noopener">
+    <div class="t">Angus Taylor and Pauline Hanson clash at conservative conference</div>
+    <div class="m">WAtoday · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMihwJBVV95cUxNdEFZSzlwQ3V3aVVrRjlDMDljZjZqUjhlUFRMR0Q4am14dUQ1QXlvSVNNUGh5ajFkT09EbWdYcXZuRHRRcU9PSTFDU3R3MGkzWXhfVXN0M2R6dHVvWDBjM205Z1Y1Q3RsQzhWSHAyUU1Ic3M0WHdZMjlhRHVjX19XN1NXWm54UlpZWm1WRlE4SUxxQUZOVkpwRDdvZjh5WEhUTzhROHFMSkZNd1dzQ3BpbXc4WW10dlNJcHJyaHY1U0RBV2I2RC1kOWphRUVhTC1YenBPZDNSSGs4ZnZLNzBIcXAza2pxVEZkaVoxVzItYVFITjJCa1pMZS0xdVpRSzNnYS0yal9GZw?oc=5" target="_blank" rel="noopener">
+    <div class="t">‘Answer the question’: Taylor grilled over One Nation deal</div>
+    <div class="m">The Daily Telegraph · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxNcVFKOHhMaXdId1RaZFhsSXh3REQ5NkF5d2JxU1UxVkxBZTE4R2NLRnc1dFVOSVNUTmNIeUN1SmF6Wi04Y3lrRzFLVnhITUxkTmc4NVJMYXJ1WTlYYWZWOFFqMUw0M0N1MHRwVHdWVnZVZ19CYTdsNFIwd3BxNGlwdUFhT0FSVlJiLUgxbHJIS3M1ZGg1WHh4dFdZbU1qbVF0SnlMUjVNVUE2cmlhLTdHZFJmYmVidG10SWVWOXJmT2RhbUJ4QXYzcnBJNmx5UDh5aXJpX0JKYVM?oc=5" target="_blank" rel="noopener">
+    <div class="t">‘Smarmy management consultant’: Hanson attacks Taylor, Liberals in fiery CPAC speech</div>
+    <div class="m">SMH.com.au · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMizAFBVV95cUxOVVJobmh3dG44ZkJvUzE0WUJ2U3B4Qk1kMHZZdERPZ0VpcnQ0VGZGa2pZaEswMno1bmk0UnhPR2dXOGRUUkhCcnRvQzNjTFRvNHRKX0hYYzU2b1R4X3ZGMThnSXFTcFROWi1vd1FqMU14YU5NaDU1ZGUxQ05HM3J4cnRzUzEyd0VTdXEzY0lpM1p5NFJETnhaT2p2WVJPMlZHMmRXZXlSMUp5RFZYY2Rld29DMzJLQmY2R1ZFenptVlFBdU43VHJzejA2OW0?oc=5" target="_blank" rel="noopener">
+    <div class="t">‘Smarmy management consultant’: Pauline Hanson slams Angus Taylor during CPAC</div>
+    <div class="m">Nine.com.au · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxQdTZKdkNLMHptZkYxWEVNLWl4ZDVYUS0xOVZ1ZkVQb01GNDljTUNPam40SFNKOWs4a1RDc3dMLUdqUTF3amlnZ2c0RERaeWpkdGlvS3VrVVRFUm9qNElzaHhLWnM4SDVJUDdMYWNpNkVWcl9kQ0w1OVdhR255NlJZRlpsbDRKUC1oWWN2aVppcDd5N2pjZVlBdHJxLVhPcGZoWWl2TGx2Y3dqV2xhVFZXNUxhV2dHOFBoeXdwLUYyWmxBRExsTG5CQnhIb0ozdGdsSnB0OW4tb1c5dEpXSGhNNEdXOTA?oc=5" target="_blank" rel="noopener">
+    <div class="t">Hanson unloads on ‘smarmy’ Taylor in explosive attack</div>
+    <div class="m">The Nightly · 10 Oct</div>
+  </a>
+</div>
+      </div>
+      <div class="card reveal" style="--c: #3FCB6E">
+        <div class="news-card-head"><span class="party"><span class="dot"></span>Australian Greens</span><span class="note">12 stories</span></div>
+        <div class="news-list">
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxQYkhBWkNlanVrUU43S0F1RDVBOGNVSnRjS3I0ajdqT1U5bUpfTGRCZ3E3aGJyUmpVZnBpekJHcEFOTV92MjZWbkJpRll0QkJ3VDZTZHRNUEotcVpTVWFkYWllMGZVNGVXbFI5RTVWaTcxdVNoOTRzalFFLXdtVW1NM2tvaVpzZnZXWVF4Y045cm9xblZmeUUtUHdJMmlEUDlwbnZTMjQ2aEF3MnJMNkpLTTc1TmVVUGFrTWpoQWtyRFdtaFc4R0pmYVJ6RGR1cmVIWG1Da2FkZi1VaUVWcGNlNG4xdkM?oc=5" target="_blank" rel="noopener">
+    <div class="t">Ridiculous ideas are having a moment. Here’s why the doomsayers are wrong</div>
+    <div class="m">SMH.com.au · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxOWFZTbXJrdFUtUVlEb2pZSTJJWVVvcmJKZUpGakh1UUdQMG5lb3JCM3Z0VVh2aUlkY1FxVGt4MWxfMzljUG8zWGNfT2M2R2JyVzN6UlBGOG9vRG5jQXYwbjB6cXpyczc1Ym41VzMyWm5ZS2h1UnBBWkttaXJxcm5YNENPa3RoRGhveE9IRFJJUFRURlR1TUJaUU9taHJ3NjhGZlBEWHlTWlJLUlpYREpHRG9iNVdjY05Hd0ljYk9udkZIS0t1R0U0U1I4cTIyUi1mWTRTX19HNlJkMVRmZ1dWWDZHLTNZUQ?oc=5" target="_blank" rel="noopener">
+    <div class="t">Greens continue to play hardball with Labor’s agenda</div>
+    <div class="m">Crikey · 9 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi-AFBVV95cUxPU0NINExNV2Q3S2J0TzRsY2V3bEJhVmk2SHlKdWJMRjZ3alNJUGpWVzJuR0pBcGVzNDhlaHB5Uk83ZlhmSlpRNGJ1d0VXN3JGNVVCNmhsVnREWHhiRXRBckp0TzFqeWJheVVTV1NIZm1JdFpqaE9RSnlEWjZXeklva19sTWxSZEQxaFEwTnV5X1hQdXlUTmFfLXR0YnhSbWJzaU9QbVFaVWc4TU1UWUpZMWVKM004Mzk2cFRGRjZvV1ZhMUFYZnlEcEZ4OXRjMFpwZmJUcEtrdFdtQzAzblNDSG0wN0JBQS1YZU5OTnBBUEE4X19PN1E2YtIB_gFBVV95cUxNR28tOVVqYTdicGpaWHVaWlgtRkF4NnZMVS1UQ2U0ODNYbWFDcW9HZnJ2RDVNSnpMbW1vZ3cxTjFwM0d1dUlqSHRSUEl4T1d3aTFxRnZ3STRKNUVlY1hQdWRvVHRUc2RsWFA2MnpYdmt0SFRudEVpSHpWNEs1U0NVQnhoTWlzcmRqX0RVbk5FQ3daaGhQMDB6cEFDQU9raXpySXVlUTV1MFlMd0xKZEZtaWk3QUlOTHFzU2F1MDhaTjFNQVY5WHlVNENwVUlQYW9OcUlvTDY5T09aLTFENlJxZ1dkNG4wVUVKVnpGTW9XdlBTdG5tX3VzekVyazdxdw?oc=5" target="_blank" rel="noopener">
+    <div class="t">New Greens leader warns Labor over Senate budget bills</div>
+    <div class="m">News24 · 9 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPSVdESGkyQ3pBWjhJZzNTc3RPUkdSa1NWNXRudy0xVlhhMTZsS3lTV2xwNnJMczJGVnVhTk1hTjlBWjhLRG5ncjFCZEZsWW50N044TXExTkw5ZXp0TEN0OXhPZHJWMjBNWjlhcVkyQ3JrNFhYSVZDOHhEeks3ODhfVGs0aV9QMWpMYXIyVllvSXFKNWVXdVB0dVdMRDh3cHk5a3d1algtcEtPbzdYdnMtSnV6bW1LZw?oc=5" target="_blank" rel="noopener">
+    <div class="t">Beating Pauline Hanson at her own game. Outrage politics gets a new player</div>
+    <div class="m">The Canberra Times · 9 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbHUySTQzeEZTUnFPcUNYaURWOUtxbkpaMlU4VVc3a1ROc1FveG9tU2F5VGQ4YVBvOVlPQktRS1d2S0FHVE1sTmxtbDNQZmp4ZnNzX2FPRVBQWnNidFJEWk1meUk5RDlWRmxmSElFOUhZSTJmRVREUU9KM0gxVmNwLVNsTzc5cTZHOU1xX3FVY3NsSU92MHBxQTdKV3JzN256NjVobmlLRG5zMm94V2tqME1YZFE5eFNOclRvTE9RenVCOHY3YnUtSGNIVlZGS0hqbDIw?oc=5" target="_blank" rel="noopener">
+    <div class="t">Vegetarian buffet and a ‘free dental’ raffle prize: Greens launch bullish bid to ‘take our country back’ in Victoria</div>
+    <div class="m">The Guardian · 9 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxPdHNMZllCUmRaWXpIN0UzVzZZVnRWQy1MN2JOdmFiMmFNNjVvQWhDcW5YbXF2ZkZCcjMxRFhSM2dVa3FyRk9Qa2k1NW8tMVhoOGk4bEpFWmNzSDd1YUtsaElUckhaTF9vQVQ2OF8xWncybENOVGkxY3BPVXVydEZ6ZkxSZXdVUUZMQlJxS21HQkFSbjJZSHIxaDJnR2haWHlnYUl3X084UUVMdm1DSmpweWFiOU8zYlZGT0J2eEJvZDNhSFpob2htWjR1UDZxZ2oxX2RONzdyUno3VHRFUkE?oc=5" target="_blank" rel="noopener">
+    <div class="t">Shoebridge’s Ukraine stand blasted by world leaders</div>
+    <div class="m">The Nightly · 9 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMixgFBVV95cUxPTFdvNE9mVEIwbHhzNWh5c2g0M3BINVZqV2NxYV9QNEE5RnVDV0VUajlLdE54bkcwRzFuV0dQWWQyRHh4U29Uc29VUFR0MkV6UTJyVkFmN1Nvd2x2bDFwYlMxVEd2czRGR0lpWWlGTTl4NWpvM0taLWc5VnQyY3FDcHMxT20yc1dqXzNueTVVUDBwcWVPcjN3cm5yQU1WejQ1NkI2c3VMNUZ2Z2t2OUhYOUVoUXV5b0NJdWdGVUxaNVc5WjZxalE?oc=5" target="_blank" rel="noopener">
+    <div class="t">‘Biggest surge in new members’: Greens celebrate the leadership bump in their numbers</div>
+    <div class="m">SMH.com.au · 8 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMivwFBVV95cUxQd2djMS03OHdiQlJZMkQ4SVVuMjhTaUZPUTg4RmlNd053ZFRWRm5LZ0Fwc1NGbUhWNzZUdVphUGxoN3R5cVo0bkFBdi1yaF8zX2loUkpRS3R4b1psajRpNmdDZXZESWNKZnl0YkxTN0d5Q2YtcXNkR0xsTlc2SnFNZ3I5VTNER25BSDRJWFdFYlptS01GWkp2OEpxX1lCVTZWdnF3UHRva0pVUDJwbmkzdXd4b2x1TFA0eUpXdEZMQQ?oc=5" target="_blank" rel="noopener">
+    <div class="t">Shoebridge’s jump to left, as Australia goes right, is a risky strategy</div>
+    <div class="m">AFR · 8 Oct</div>
+  </a>
+</div>
+      </div>
+      <div class="card reveal" style="--c: #FF8A1F">
+        <div class="news-card-head"><span class="party"><span class="dot"></span>Pauline Hanson&#39;s One Nation</span><span class="note">12 stories</span></div>
+        <div class="news-list">
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOZnRnNGZlUWF0X2JxZXNqd0RueTU5ZmJWMEQ2YXVFM1NMM1k4VUZQVkUtS0hWSHU0MnRsNTJ0YnlWX0t1Tmc0YmJfdjZhMDJFZTFRdnZwS0pSX0VlUXJCRC0td1NaU2FuWjhiclFuN01MUUkyZWd6OHRocXRNYXR2aERVclFHRi0xMGl6cFU5ZzdhUmxNZlNQcm9jQUlrM1pfSjJrRg?oc=5" target="_blank" rel="noopener">
+    <div class="t">Hanson takes aim at Coalition in fiery pitch to conservative voters</div>
+    <div class="m">ABC News &amp; Headlines – Australian Broadcasting Corporation · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdjZYeTNMRVpmSmJjSVBFSTZicjA4bERyRTFiSndCUkNDWHNNQlRQQnZEYTMwZ2FTVXFsaDFITmdSR3ZpTjJCNDZqcU54NTNjZ0VDY091WElVVUtWT0JTYl9fOWZSNDZ5SDBXQVhNNTcxXzFEVGpIQnM4Mk4yVnJpODlkdHhJR0NnVWs5d1JxM0JRN0YtdTBjbzJWTVN4MUlnMl9QX19ubDFDZDUwX1p3Z1hnaEU4YzRNN3MtczhsUUczQkl2MWIyMkJTdHpkcUFNd0hqd3Z3?oc=5" target="_blank" rel="noopener">
+    <div class="t">Jacqui Lambie is right about Pauline Hanson. There’s only one way to stop her ascension</div>
+    <div class="m">SMH.com.au · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMixgFBVV95cUxPTEFaTE5QSjhZSjI4VTgzczdmdTg4dkxZT2pOODVOU3ZJb0tNWERwX0lJRXYyd1JNUDJCa21JbThockFXcHNBM09PYlY2TjhLXzZqbGwyTGt6V01FRXlweWJWcFM0V2xEbzU2S1dITHBQWDEtdVl6Qk8yc1BMUVRwUXh2LTNURkdGWmgwcE8taF9fR3lSU2l4aDlxcGplWUg1WHh0WmdqWGpFMjdiRHpZbzB5Mjg2cE5lS0xibldzWWJ2bEhIbGc?oc=5" target="_blank" rel="noopener">
+    <div class="t">Seeing orange: Nationals under threat in regional Victoria as angry voters consider One Nation</div>
+    <div class="m">The Guardian · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQjE5bzY4SGRBbHozdzh0QXJwMlZlbEZzXzBZV2JlN1BoYkdxM19mRmtzZkNiOHc2RUlybzFNUlhrRlBnMEcwNF9YbUVldFJMbDNSSjlQbzhFN1VPVUlsMV8xeUYxOFVwU0M3YWVRemRfN1QyV25zQTl1R3NVVkZaM205bkliSGloWHVkYWE5Um92cWVzZlU5eFJyQzFEZG1yWDhyZVNUV1p0RmJidk54Q3M4MWx0TmNIOTJzMlBKTk9rZw?oc=5" target="_blank" rel="noopener">
+    <div class="t">Inside the Libs’ One Nation problem: ‘We’re in a fierce, three-corner contest’</div>
+    <div class="m">The Saturday Paper · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPMTI1QWNPbVlCS1Z6R0I0MjE5OU9CQUNhNklxOXA2enVuZHU4TjNrblpZVGhQYmJaSnlLMEVrMmFCZ2VWLU1MZDBNdHg2a0tVTV92NVdTTVJYcUpoaG5uUHhMN0g1MjkzNm1wdlpFVlBLR3RWeUpic0JwS3M3dlFFOEprcDFNSUF0VjBDUnd2UUFkcmJCTjZ1ekJYOVE3QkpsNHAxOQ?oc=5" target="_blank" rel="noopener">
+    <div class="t">Conservatives one, and all over the place at conference</div>
+    <div class="m">The Canberra Times · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMiigJBVV95cUxQaW9GaE5yMXRKb05XNTd0ZFd5ajl4WDRxZlFkdzNVMDYtV1ZmUWlDQ1BuU0RCYU1NR1YyMGhUeWJtLWtRMVl3cU1IQWJ4by1fSmgyY3h2VEh1TVhQSnJhbDlldlZHdDkybm1YOFZET2JhY2I4Qi10Zmd5ZEVsRHJxRm1mTk9lS3lsWld0My1HM2ZDa1AtMmNNeG9MLUpQU3E5VVR1WTN5bkw3RS1BejZlSlJIeWRPcG9JaEhIQjQ2bDlMWmpuWEphUlFqMUN2OUZMTzQwZzN0blhTZEhBWHNvcnZCYTRIRExrWV9TcWpSZ2NldzJzMW9RenJnWGNiNTdBOVVrd2M0LWI0dw?oc=5" target="_blank" rel="noopener">
+    <div class="t">CPAC: Hanson receives standing ovation as Canavan calls for unity against Labor</div>
+    <div class="m">The Daily Telegraph · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMizAFBVV95cUxOVVJobmh3dG44ZkJvUzE0WUJ2U3B4Qk1kMHZZdERPZ0VpcnQ0VGZGa2pZaEswMno1bmk0UnhPR2dXOGRUUkhCcnRvQzNjTFRvNHRKX0hYYzU2b1R4X3ZGMThnSXFTcFROWi1vd1FqMU14YU5NaDU1ZGUxQ05HM3J4cnRzUzEyd0VTdXEzY0lpM1p5NFJETnhaT2p2WVJPMlZHMmRXZXlSMUp5RFZYY2Rld29DMzJLQmY2R1ZFenptVlFBdU43VHJzejA2OW0?oc=5" target="_blank" rel="noopener">
+    <div class="t">‘Smarmy management consultant’: Pauline Hanson slams Angus Taylor during CPAC</div>
+    <div class="m">Nine.com.au · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxPLXBlMlJCbTRHcnhLMGVKNUZTbTM5b3FLUGs3aHdENXdmSXVyVVZFZVMyTDhCd2ppMzY3U3lOTGRXdzFxM1N5Rl9xVFdXVk1nMGQxb2UwSHdfN0hxUDFpbnNGb3ZiQmRUMHN4QnRsRUU5eThoRUVmdzVpdjJWSTlQcmZWVHpGdmJlUzR6S2RONlY2SEEyZjA2NlV3bl9GMFZDWUxRVlJpclN3MlVsMXpfX2ZUYzc0aTRpdk1lRGZUMFhpeFN2NlBxN2YtTGRvSDdxcXUyR1FjRnNlY1dZYmVZRQ?oc=5" target="_blank" rel="noopener">
+    <div class="t">Pauline Hanson hits back at claims she’s against ‘every Muslim’</div>
+    <div class="m">Herald Sun · 10 Oct</div>
+  </a>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><div class="kicker">Spikes · national</div><h2>When searches jumped</h2></div></div>
+    <div class="timeline">
+  <div class="tl-item reveal" style="--c: #3FCB6E">
+    <div class="tl-date">Sep<b>30</b></div>
+    <div class="tl-body">
+      <div class="tl-tags"><span class="pill">Greens</span><span class="pill ghost">7.8× normal · peak 19</span></div>
+        <div class="tl-title"><a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxOU3VKSGVJYVdIaWN4S1lqM2NHbXFQRU9qWjZkaU9vajlfR0xRWFpRLU9qOVlsazNsbG50LTQ3TW1BTTRHNTBhbHpSRzRCb1VFNjJKZVYtMEtQaGVwcFF1RVBVbXphMTNCWmdYT2taS1BMcDAyRUJNQms2SHBhWjFTbXh0Si0ydHNIRF90TThoYUx6OWZyRk1heXNtc0RpN3NOUkhOWkR0LUVVRmJiSVp6VGZFVEtnNkd2Tm1RMkp2LVNpZkZva3YycDd5Unc4cEQ5STFTLQ?oc=5" target="_blank" rel="noopener">New Australian Greens leader David Shoebridge vows to ‘replace’ Labor</a></div>
+        <div class="tl-src">Politico · 30 Sep · +2 more</div>
+    </div>
+  </div>
+  <div class="tl-item reveal" style="--c: #F0524A">
+    <div class="tl-date">Sep<b>16</b></div>
+    <div class="tl-body">
+      <div class="tl-tags"><span class="pill">Labor</span><span class="pill ghost">2.3× normal · peak 9</span></div>
+        <div class="tl-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQME9hY0VuYnI1N2FUQUhCT29WUjBKMHJZaV90MGdhR01OVklwYjR1VkhObi1BblhMVnpUZ3V6OTFwY3F6WHFwUFFWVEdMbUhYRzNRTUo3V2xxSTVWYWN3UjllS2F5Y0NSM3UzaVVHTldlREhkUTlCdThoeEwxMUZmRW53ZkZZcGVLd2dWLTcwc1VDejkyN05pa2RtUmdmdw?oc=5" target="_blank" rel="noopener">In Australia, ACT Greens end agreement to support Labor government</a></div>
+        <div class="tl-src">UA.NEWS · 16 Sep · +2 more</div>
+    </div>
+  </div>
+  <div class="tl-item reveal" style="--c: #3D8BFD">
+    <div class="tl-date">Sep<b>13</b></div>
+    <div class="tl-body">
+      <div class="tl-tags"><span class="pill">Liberal</span><span class="pill ghost">3.0× normal · peak 9</span></div>
+        <div class="tl-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxQNi1QeWlhYm0tbHZFaVVOZVAzLTk5NmpHN1F6Vm1NSDNHRWFSXzRYSEpfSmlLZEcyLWZvX0RBOHlPQUJPbUhHSjJQSzZFUlJWaTM1bUx5NDNZb2lqNVNJaWhNR3pPOWcxcE03WEtZUmNqNDZGMnlwdjZDNzVzTkY0UGRWalo5bDVFb01WWnNzRFduVkdxeWZETTltejA1czFsTkVPZlJnME9RQnktejYxejhVZGY3eGM?oc=5" target="_blank" rel="noopener">Hastie the answer for struggling Coalition but not just yet</a></div>
+        <div class="tl-src">SMH.com.au · 13 Sep · +2 more</div>
+    </div>
+  </div>
+  <div class="tl-item reveal" style="--c: #FF8A1F">
+    <div class="tl-date">Aug<b>30</b></div>
+    <div class="tl-body">
+      <div class="tl-tags"><span class="pill">One Nation</span><span class="pill ghost">4.0× normal · peak 100</span></div>
+        <div class="tl-title"><a href="https://news.google.com/rss/articles/CBMi8AFBVV95cUxQeEN5SWJXcV80bkZrbi1SeHFYZ0wySFZNYTFiUlR0dWNDcS00VTZxRWhmcy1RSGlmVS1tRUQ5Y3NHSk9pS1ZWNWlVZW55bVhSMUFQYzY2LWdJdHgwRGZVY1hfcEM3X2ZlSmZaUm15RlNxNjBEUkVSdWI0MmJwTjlJWkJvU1BrTDg5NzVkVmFma3FWVzlLeVVqMzFLWGUzR0l1TXJPbldySi1DVmJpMDItT3BQOTNneVZhRXluVldOd01jeDJqUS1KSzBxSzc4N29EaE9qenRyd1pVblZpcWwxTHNjRWdrdTBObm1HOWVsbW0?oc=5" target="_blank" rel="noopener">One Nation’s Secret Harbour byelection win shows Labor is at a loss when it comes to calming angry voters | Analysis</a></div>
+        <div class="tl-src">The Guardian · 30 Aug · +2 more</div>
+    </div>
+  </div>
+  <div class="tl-item reveal" style="--c: #FF8A1F">
+    <div class="tl-date">Aug<b>13</b></div>
+    <div class="tl-body">
+      <div class="tl-tags"><span class="pill">One Nation</span><span class="pill ghost">2.7× normal · peak 43</span></div>
+        <div class="tl-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNVnpOVXo1OUQyUUZKUkY2bDNhSXB4NlVLcENEdC1XN0kxQVJmVzRReU5Ra1lVVkJDZHNRWmFSLUpMTUNzRF81U0Y3VGhudFZGUmJYRVJjOE9hckg2SWVOYnFnZllvMldISGF5RXRybnZNcDhaX1J4RXVNRE1SMmRUM0hoZzNYRTgxNWVrQ3I1dWFKYW9aZjdlTE1HbnZrNlh6T3dkWk0xSUxIcHhER2dF?oc=5" target="_blank" rel="noopener">Hanson rejects ex-One Nation candidate&#39;s claim homosexuality is a &#39;mental illness&#39;</a></div>
+        <div class="tl-src">ABC News &amp; Headlines – Australian Broadcasting Corporation · 13 Aug · +2 more</div>
+    </div>
+  </div>
+  <div class="tl-item reveal" style="--c: #FF8A1F">
+    <div class="tl-date">Aug<b>3</b></div>
+    <div class="tl-body">
+      <div class="tl-tags"><span class="pill">One Nation</span><span class="pill ghost">2.6× normal · peak 44</span></div>
+        <div class="tl-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxOR0o5MVJnOUxVQmdmZXh6elpoaV90M3M1MkVPLUgtS3lNcnV6cXE5Nk5kQUtiQnpZX0k4MTNqd0tzSWdBRlhfSVFTOWl5a3JDU2hmdzNxbXhaSU4zWUlyM1I2dWh3U1NwTXQ3SmEwQzdLWmdud1BCTGZWMVJScXhCcXhmUjFVd1d3YWFsYVEyQ2VINUlUcHlpYldHeGtaT05MVE90RUYxcmVFREY1ZE1SRVVNTHdiVWFKX2J3WkxlMUw?oc=5" target="_blank" rel="noopener">View from The Hill: Hanson announces One Nation Victorian leader, bans major media outlets</a></div>
+        <div class="tl-src">The Conversation · 3 Aug · +2 more</div>
+    </div>
+  </div>
+  <div class="tl-item reveal" style="--c: #3D8BFD">
+    <div class="tl-date">Jul<b>28</b></div>
+    <div class="tl-body">
+      <div class="tl-tags"><span class="pill">Liberal</span><span class="pill ghost">2.1× normal · peak 6</span></div>
+        <div class="tl-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxOMXVBa0tqampyM09UWUxDdkVFRTJIaE1CV25IREtqWkhaN09tdjJuSTluQnlsR2R3c2xYblFFNGRSOF8zUDZvN1ZwUnZJVUtBZlFNNnpudmhmT1JtRjdxUWlvZnVKV3VoZ3AtbF9MMWc0SlU0b0l2eE10YWNxZnJTdVhWaTNQT3NIdmpUT3k5emN5YzRnaFp2T05WVE9FSU5udENHRk5zUVl0cjhIQ09LaXNXQ3NwMUlfSVk1UzFB?oc=5" target="_blank" rel="noopener">Divided Liberals need a coalition with themselves, not One Nation</a></div>
+        <div class="tl-src">SMH.com.au · 28 Jul · +2 more</div>
+    </div>
+  </div>
+  <div class="tl-item reveal" style="--c: #F0524A">
+    <div class="tl-date">Jul<b>26</b></div>
+    <div class="tl-body">
+      <div class="tl-tags"><span class="pill">Labor</span><span class="pill ghost">2.0× normal · peak 9</span></div>
+        <div class="tl-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQQndOejJJOTdiS2gyS3FHcnFyZzhKbnBwQTRscHFUQTcwMFVWbFh0emVHbWhmRV8tZzIxaHFuTjk0a2tzellDd24wUlhObVhtdC1HOWxEeDUzcnBET2V3dFIxa1N4YU5qVXRNY1g0bEktczZSYzRxci1IbHhsQUJuOERvbEJ3cHFYN08zNHFKWkVNdXoySUJKbDBsRFlOVDlZSGlnMDd5d0NHRkY0X1EwYQ?oc=5" target="_blank" rel="noopener">&#39;Critical frontline services&#39;: Labor makes big call on agencies&#39; call centre staffing</a></div>
+        <div class="tl-src">The Canberra Times · 26 Jul · +2 more</div>
+    </div>
+  </div>
+  <div class="tl-item reveal" style="--c: #3D8BFD">
+    <div class="tl-date">Jul<b>19</b></div>
+    <div class="tl-body">
+      <div class="tl-tags"><span class="pill">Liberal</span><span class="pill ghost">2.5× normal · peak 6</span></div>
+        <div class="tl-title"><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxOVXRJRFJ1X092c2MyZzVzWmozb2Q5SGt0aGVJSHZqWlk5cDRJMDc2clFJWnVHak1SZWFmbmF5ZjNZcjgxelJiWFpvLWxVUjJfeUJBandHejRyaHFFeFQyeXpfTmhYM0g3dzNEWlJjS0prMHNFc3FuYTR4aTI2a2dqMENZZzhjZFp5cXBnb3BsaUJraTJoN2E3c0xodUJFTWpPSEFDYWREa0RScW14QVJNZFNpWFA0cDRvY3VQak5pUUVFbDZoSVRXLTNjdWc?oc=5" target="_blank" rel="noopener">Sky News Australia. . Shadow Assistant Citizenship Minister Dave Sharma says the Coalition wants a “forward-leaning” policy on artificial intelligence.</a></div>
+        <div class="tl-src">facebook.com · 19 Jul · +2 more</div>
+    </div>
+  </div>
 </div>
 
+  </div>
+</section>
 
-
-
-<div class="card">
-    
-
-
-<div class="share-strip">
-    <span>Share:</span>
-    <a class="share-btn x"
-       href="https://twitter.com/intent/tweet?text=One%20Nation%20is%20the%20most-searched%20party%20this%20week.%20See%20the%20full%20data%20on%20PolTrends%20Australia&url=https%3A//poltrends.stewartmedia.com.au/xreport.html"
-       target="_blank" rel="noopener">X</a>
-    <a class="share-btn fb"
-       href="https://www.facebook.com/sharer/sharer.php?u=https%3A//poltrends.stewartmedia.com.au/xreport.html"
-       target="_blank" rel="noopener">Facebook</a>
-    <a class="share-btn li"
-       href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//poltrends.stewartmedia.com.au/xreport.html"
-       target="_blank" rel="noopener">LinkedIn</a>
-    <button class="share-btn copy" id="copy-btn" onclick="copyLink()">Copy link</button>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><div class="kicker">State</div><h2>Victorian campaign</h2></div><a class="btn" href="victoria.html#vic-news">Victoria 2026 <span class="arrow">→</span></a></div>
+    <div class="grid g3">
+      <div class="card reveal" style="--c: #F0524A">
+        <div class="news-card-head"><span class="party"><span class="dot"></span>Victorian Labor</span></div>
+        <div class="news-list">
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMirgJBVV95cUxPTVJVVDB6UWJQY29aTDlNWGUwYmtmSmJYZG5BVGRHcThRT0Q3SWJIWlE5aEpuN0d5RGFnTFBMQzBEdHFUMjFSU3FiNEZYQmFiZWJVNENkbkY3RXVYNVM5YldCNDZTMGtKV3lad2M0QUthbWY0RUpaMTRSR2wxbXBQUmU5andzRFZYMzBvX2pqdUw0czdOT29vaVRzUzhEbHZZaWwxSXlFT1hHMXdydjRxVWJvWVdQZDh2MFBfdXBET1V6emczdmkweVVrM1p5RGRFWExkOWNKZS1xR3d3cy1GdGVDd0lrVDA5SU1Dd21LUkpKNTU5Vlc3bXl6aHJ1bk9wWm9xSGJIbUVZRjM5alB3VDg2T2VaaEhnTUZUcGhHVTNyVmxFM3dEY1g4MjRXdw?oc=5" target="_blank" rel="noopener">
+    <div class="t">Ben Carroll forced out of cafe in ugly election ambush over youth crime</div>
+    <div class="m">Herald Sun · 9 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMijwFBVV95cUxOQmx3RmtwekZENkQ1NFlMN18yY0lmSDZBMzItempDYkl4VmJtTDJ0MVRuN0lZNFF2UFlGOG8wejhCSnAwVkZuQk1WTHZCZkNPc20yWS1kOU5vTjMxRlZ5ZU1YYWVOeXNlT2pHYjZRY1VOSF9kY1E3UHE4aXdBOFN1cEJlbkFOU2hxZzR4YzFzWdIBlAFBVV95cUxNbVEtZHNTOEJrMWt1Rm9oSVZCOW5HTkVVdW1FY1FPbnE2QmhMcjlIT3hqeUx3OXkybXJmakpUWV8xVnJZQXlSb1UyLVdpckJqYW5kSkpzVzVaUGlncnRzUE1LMFRhdVRmN0M4X0V1anNJQks0UGE0TmNmM1piellDQkFodVJFMFg4eXI3VGVpOEIwWlNs?oc=5" target="_blank" rel="noopener">
+    <div class="t">Victorian Premier apologises to Jewish community</div>
+    <div class="m">The Australian Jewish News · 9 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNOWZyTHROcGJJV1d1V3FjVWk1TFJxUEl1ckxIbU5hS3NVRUMtNjF2WlZWQzdsWlhrMFZJcWhOdHpoWV9Odi16eThGMGJjQkVjVzNuM1E1MV9mR3RDTHIyMm5vWDNmQjBES2w1R0wyeG9VR2dEdFdCTTdLWXl6OUJfRkRRQmh5Mjl4WXlnS3VJbVZBYy1xWTVxWTYzOVdSSzN3QUF1a05R?oc=5" target="_blank" rel="noopener">
+    <div class="t">Seven requests, zero visits: Why is Premier Ben Carroll avoiding the south-west?</div>
+    <div class="m">The Standard | Warrnambool, VIC · 9 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPeVNFMF9SUngzempWczFnY19JNkdiWHNnOHFHb2M4NEdObDVtcEYtcjNKd0I0SFNPQVFobTZkQl9oT1hiUW5sZ2NfSE5VR0x3OU5xZzFYTEplMnhrU1g2U2pLcVpQMmJZNDZNaEwwUXdZZWZDRmRzS1RvQXBRa3R5ai16azgzYklBY1VoRm40MVNLenRVbFdsTnlwN0RpQVVBV3VOUDY3OWEtWmc4?oc=5" target="_blank" rel="noopener">
+    <div class="t">How new Labor leader Ben Carroll plans to win back disillusioned voters</div>
+    <div class="m">The Courier | Ballarat, VIC · 9 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNWUZsd0ZYYVFMclZmVTY1WExRY2ZxX2ZFMGkwRGtMcmoxaXB3c0l4MjFyQWh6Y3J3TG5UQ2c3TFdtTHp3aEhLRVUyWkhFRkp2NGVYY3h0eTVaeXVpQzR2T1poalUyaUhrUGllbTZCOFpGOGpYdWc1TUt2d1ZwY0VCbg?oc=5" target="_blank" rel="noopener">
+    <div class="t">Victorian Premier addresses Mount Scopus students on Oct 7</div>
+    <div class="m">J-Wire · 9 Oct</div>
+  </a>
 </div>
+      </div>
+      <div class="card reveal" style="--c: #3D8BFD">
+        <div class="news-card-head"><span class="party"><span class="dot"></span>Victorian Liberals</span></div>
+        <div class="news-list">
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMixgFBVV95cUxOMmZhYWRyU2dPOTFydGN6LXdmLVRWaFExYkgxa1hTa0wtOGpGUU5uQWRKeWF1Ym1POGlGZVJfSzIzaEYwbzBQQ2J2Mkc1SnpndVdGZTh4azR1eVFKYWRYankxcElLMkRoVmU1eHROLTViT01GWFVJWnFTVy1SZk4weFctNEhDcVF1YXd4Y1ZmVWtPUTZGT2VIWHhXMDJ1XzZFVE5kVmpqcmNnNnBRN2RzYlZDTHc3OHBYa1V3NzY1N0VpQzRwRVE?oc=5" target="_blank" rel="noopener">
+    <div class="t">Victorian election 2026: Voters deserve clarity on party deals and election preferences</div>
+    <div class="m">The Age · 10 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMixwJBVV95cUxPRGowY21HU3BVZzl1UERJYzd2MFl5N25FajdWZV9ibnBlVUJJeW0zclBTeXFyWkxGQXJtLUpXRW9oNmVjWWlLdUV2VXZpbmZhVi1zWmtjS0R1cGJXQlNpS0FicEN6U25DM0pJVGpRb2ptalpwMUxDbklRTTUtamZZV3JsVnpGREZMYnJNZW1yS2g2YkpVMHAtajhDazRzMS1tV0RDc2lBcXV1U3h2alozdl9lTDRMUUtnLXotY0d6b19VejRqOHRPRnh0WGxVSGxnRXFBNFpTNVktLVpDOFYwTlI3LVB4bFJ3NEJzWG5Fb25qYTBmUkhMZy04X29rdE85WFByVE9qRFZ0elV4TG1uTHZ6Ulg0TXZEekJKcnNFTWVYNG9nck5Sbm44WV9ZSnBWZkh5Z1plNDlDM2FrenF3dDdRSFIxY0XSAcwCQVVfeXFMTW9ZQjEzbEwtTk9nOEFOX0xmQThfdC1rU3lJVWx1dmZoNDRpRldoS25va2lLN05HRHhVeVV1LWN3NU1PbjU2UzgtcFBMR0xMTmJSY2tBc0VEWm9PYkc0cnJ1bUZRZGVMbFh6WnlaUnd0THlHMjNzMk1vN21aOWlMQmhwT3pmSGI2M1JlWGpoRlhEaWtpeDllb1dUbWNFanowQkUtWDI5cHNhekpfUVV4ZDN1WkxDVnItRkRJMm53TGlyekhjcTdRMUxMcW1ldUpsTXNxclotSVVZcHktMjFQd0Q5TDBtZVpNN2JwdkIwSVdxQkdwRTIwUmIyYVl6aldKdUFoUW5HbkJBQjdpNUdkcjVvZjRvOVdVcUYxaUIxQXUzVHJnNlBRQUs5ZzB4UGlsTXU1ZGtVdHNlWU0wTGstNFY3SzVpMGlvVmgzS0s?oc=5" target="_blank" rel="noopener">
+    <div class="t">‘Weak on crime is in Labor’s DNA’: Jess Wilson blasts youth offender caution directive</div>
+    <div class="m">News24 · 9 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPUDFmTXVVR1d1QVBSc2htT3o0eUNTbFJuOGtldWRFMlZfVTZGRVhPd1Z1bUl0VkpsdHhPczl2NVQ1RE1ibS1OQzFiRERsb043ZUpqYWVLS09tOVJXZFl6NThtT3VGZHhSVkxYUzdrb2pxTUtpQ2N1bnFmeVR0VE1xRFN3SGVUOUJDTGh0NjkxOC1fVzdGT0R4ejB0TklySVNfQk40R29kQ29IN2ZKcVE?oc=5" target="_blank" rel="noopener">
+    <div class="t">‘It makes my blood boil’: Jess Wilson’s message to Victorians after tragic civilian death</div>
+    <div class="m">3AW · 9 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxQVllxOHQtclY1Y3R5cFE4WVV3S2h0QlIyVG1MR2wyOHQtZDljeXlEaFpmbC1QTmtJenpzcjBHdm5DcnFEcDJpSVV1akNKRl9TS0tWZDFxUWFkM0dmSzU5bHE1dTVvb28zUFF6emJOSC1IUW9yYnhpMjNRUEl4cVIwcTlyT0RkR2llNnRlQ2NMOXlIc0dzaFFRcFZRbi1xM056YXlxeTNhOXlpb0NTX3pKLTJiMl91UXhrYUlndHgzOWV2bV9BbjdPWVdCcmxwc3ZTVms4dnlNSlR4dTBH?oc=5" target="_blank" rel="noopener">
+    <div class="t">Jess Wilson bets multicultural voters want the same thing as everyone else — lower costs and better services</div>
+    <div class="m">The Australia Today · 9 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQak9SQWVIbFlzZDFPWFFKSXJMT281Yml6OFBueE5xZEJZNlRqNU53Mk1fUkY1cFlvRUp6RFRPcVNac1ZxbGhnMW1xWEJnMk9UY3MwdzdNTzJESHB3UHBsNy16RUZlRWFNR3Y1U2hPS0NfeUNZQUItdWhSQlpMOC1GYUhNVW1kb3AxZ0YzdTFhNUN2R3E1NEJPTU9UQTR2MVJERDJHUFRRdlJQdFNnRTFib1UxTW9NNk53Xy15T1Q2cDVLZTZCNTItb1VIU0pSMUp4Y0c2UWd5OW9jUQ?oc=5" target="_blank" rel="noopener">
+    <div class="t">Ben Carroll’s One Nation attack on Jess Wilson collides with what she actually told him three metres away</div>
+    <div class="m">The Australia Today · 9 Oct</div>
+  </a>
 </div>
+      </div>
+      <div class="card reveal" style="--c: #F2C230">
+        <div class="news-card-head"><span class="party"><span class="dot"></span>The Nationals</span></div>
+        <div class="news-list">
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNUlFBR0lFc0RrbzRpbjk4eGVVRXdrM2hiOVRKcHd2NVNOUXBEZWF1azdSVEw2VklYOVJoaFdJeGZSY295RTBrbzRBTHZqbks1Mi10bEJVODlfRW55REM0TFkyNUJRbWFwSURXRG9YWFBscGI5a1dNS1pRelh1OGEtNFBPRmplb0RWck1mWUZ6UGlwQ0xXeFVJSHA4M25VQ1RWY1FFT0FUeUxXcC1z?oc=5" target="_blank" rel="noopener">
+    <div class="t">2029 QB JD Gillum Visits Virginia Tech, Talks Next Steps With QB Coach Danny O&#39;Brien</div>
+    <div class="m">247Sports · 4 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNR09YZ0NtMGFwUFRWSk82NzNIelctMDQ5U201RzUzb01pRnVDclJfYS1LcE9uY21kWGN2bXNTQjA2d01Nd2l1QmhhaGdGUnU0c1VYSkF5b2xmSHZYXzFxUmlPSDZIS1RGc215T2pfS1I1SE5mSWdxLVM1TzA0S2tyUV84T2l5M2s?oc=5" target="_blank" rel="noopener">
+    <div class="t">Putney School leader to step down after nearly five years</div>
+    <div class="m">reformer.com · 2 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1zb3JIaWo2VXpuUkJzb0NRMlBpeHpUVV93SnlnY0JDdVdzbjlrNHdPb2VnQzlSRVVTc3d0MXRkNmZDZUxGN3VuV2NLVXlLa1ZyZUZSbVh3?oc=5" target="_blank" rel="noopener">
+    <div class="t">Danny O&#39;Brien</div>
+    <div class="m">Racing.com · 26 Sep</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBGbXEtdXR1cVFvbWR3QUNnaXkwRmU3bHpRcXdwNTZyNXY5NEFiM0dnMENCWDh1Uk1JWkR6MG9VenU1eXlqM3oydy1MOHhTTGZaR1VRUzQteEEyekFZRFBrZGtDdWp4NHNQTElz?oc=5" target="_blank" rel="noopener">
+    <div class="t">Death Notice Danny O&#39;Brien (Ballymena)</div>
+    <div class="m">Funeral Times · 18 Sep</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9uWHpxY01vYUgxVE1NLXNMUEk2TTduWnNpTGJEWFZ0QmQyUjFMQ19na09SYjItVTFpVkctS1BuX0lQOFRqZjA4OXZfS29faWdJeWYwbUxzZkRlZ3UwZ2h4bkYyWnlYd3gtYU5XSzlCUFNvcldIVkhNVWIyMA?oc=5" target="_blank" rel="noopener">
+    <div class="t">Danny O&#39;Brien Availability (9/16/26)</div>
+    <div class="m">Virginia Tech Athletics · 16 Sep</div>
+  </a>
+</div>
+      </div>
+      <div class="card reveal" style="--c: #3FCB6E">
+        <div class="news-card-head"><span class="party"><span class="dot"></span>Victorian Greens</span></div>
+        <div class="news-list">
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbHUySTQzeEZTUnFPcUNYaURWOUtxbkpaMlU4VVc3a1ROc1FveG9tU2F5VGQ4YVBvOVlPQktRS1d2S0FHVE1sTmxtbDNQZmp4ZnNzX2FPRVBQWnNidFJEWk1meUk5RDlWRmxmSElFOUhZSTJmRVREUU9KM0gxVmNwLVNsTzc5cTZHOU1xX3FVY3NsSU92MHBxQTdKV3JzN256NjVobmlLRG5zMm94V2tqME1YZFE5eFNOclRvTE9RenVCOHY3YnUtSGNIVlZGS0hqbDIw?oc=5" target="_blank" rel="noopener">
+    <div class="t">Vegetarian buffet and a ‘free dental’ raffle prize: Greens launch bullish bid to ‘take our country back’ in Victoria</div>
+    <div class="m">The Guardian · 9 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOeEJtdnB0bDdWay1xTUM0dThKSjhFdVAyam1NVGhjSDBmT2gxbFNjZS1mUVlmeFpNWDV5Wlg4TnRETXhsWkY2LXZJN1lzMXhRRFZyQ3dZQ0EyVjN3eXVyQURLWHM3bVRMcmthZTBaME8wVjFyZVZKcERKaERtNFRfN1JVcElFamQ5U3cxNi1RMGdteU5BNjhYdFJ3ci0?oc=5" target="_blank" rel="noopener">
+    <div class="t">Greens hints state at &#39;crossroads&#39; at party launch</div>
+    <div class="m">The Canberra Times · 9 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMingJBVV95cUxPNWljbUNrRUdqZWhpV1U0TU9EVHhER1UtZk1zZi1iRVNYOTl4QndJN1pWb0YxUU1ta2pnd0hmS1NxRThwcUdnNVZaTENkVEc3aWJpeUdrSFJCVjNoS2ZOVXVLMFhPd3hqNlA4OHc0S0o2U0dWQnh5YnJIeGh5YmdKSVFKd0k4R3ZJSU1URUhMMTFDMFE4alllVTdBQlgxTG0wekJoNXNiZkp1U0VVNnZDMTBUWXlCX05PYUhUQXVfdkF0aGItM0k4WWNnWHZBQS1oWEZZUzV5X1NCX2dmV2dxM2hOSTFKZ3draXJQcTdWR2dXMUh2UWc0eVhXSHRhc1BSeFBZUUFDNXU0TXRYcWZWUlRGU0I1YlpKLWZRTjNn?oc=5" target="_blank" rel="noopener">
+    <div class="t">NY’s socialist mayor has pledged 5 taxpayer-funded supermarkets. Vic Greens say hold my vegan beer</div>
+    <div class="m">Herald Sun · 9 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9qSXFmSXBCeWM4MnR5NHBEa2trSWhSZGZfMEEybS14bVJNTGFKaDg1aFFUSFBEWHBkd0lHMlFudkZsODlQVW5jQzY4SlU2ZUpldjFYREJoY2NUbmh3SDZfbWx0Y2hzRk9ONXZJQTlKejNCRS04MHpz?oc=5" target="_blank" rel="noopener">
+    <div class="t">Greens launch campaign with public grocery pledge</div>
+    <div class="m">Yahoo News Australia · 8 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMimAJBVV95cUxNYmluQmY2MlVLUnZmNFhURVZEdFNOSDRNenRXTUlnWnU0RksyOU5jeDBSbWJKX3RLdll1TE5GSHVxX3VLSm15ZklWRS1MbXNISTE0aDRMVjM3anY4SWlac2tRY0piVDZsWGR2ZXhabWVSYVVDblB0Wl9TMUd0al84NFliUzRPUjZBaU1UYzBKX2RjMkZJYlBuWkN2QUgxREt4TE5fa3lkNzViZzh6YWlocmRJel9aNXdISXFsX25SczNreVFsTWgzMWRGWVdZbm9mY1ZFRVJIWW8tOGNocDlXb2U4d3RTMTlyWHpBbmVGUFJJdlhyRGVqVVU2Q3pXLTFtQ21sMmt3OGxyN0JNTTVMT3JfeEdCd3Fr?oc=5" target="_blank" rel="noopener">
+    <div class="t">The Greens were set to make a major announcement on crime. Nobody showed</div>
+    <div class="m">Herald Sun · 8 Oct</div>
+  </a>
+</div>
+      </div>
+      <div class="card reveal" style="--c: #FF8A1F">
+        <div class="news-card-head"><span class="party"><span class="dot"></span>One Nation</span></div>
+        <div class="news-list">
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxNaFFrMlpES2FFZjFHaWZwS09OMGs5ZUlzWjI2emxWSjFqWm9oenRpTWx3SHM3OUlWbVN1Z3M2MjZzZnJQaUlKVUR6R3d0c1VKX0hhaHo3WUstNnctMFh5eEVvMXFkcUFXRjRkVlJheVdwTTZJY2V1aUZDajZFX0Z1N0VEVHRQRUcwX2xjYXpUYXpQTjBUSUp3cUtScnlGcGNIdzQxVmpydkF1ZDVxc09GdWlGc0lqZ1dSLU5IZ2txZEZmVHlzcWprbWlzMV9KS0Z1STlZYVVXSWNFMHBD?oc=5" target="_blank" rel="noopener">
+    <div class="t">One Nation’s promise to repair Victoria’s finances creates $4 billion black hole</div>
+    <div class="m">The Age · 6 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMiigJBVV95cUxNbzB3aDdsUGZ0Y0lDVFV6UjhRYkw0YVpNWTRsTFZ4UFdzZTk1ZVB1bVp1RzZmdzROd1lVQnFQZ0xaX2lEc0R3TzlKYzlPT1FQblM1ZGlKSHRnSHFGNVNueHFYci1EZzVMY0hFNlowNlhWX3J2ZmtfMFpsSWdQaEVLVnlCamJJcUhqdFpXMzRxQ1dqYV9CbmxJUVNycmtGY0pmVkJuZWtObEdSeFh3S2dSS3lYVlhHbUVwZmFzVUx6ZkZ1NlppUVphSG1fX1RlbkdIcXJvbURCRFIxS3N0ZlNSSm81OUlFLWNiXzNhY21hNHBpekxyOUI2Z2RIbzhXUzRnbGZucWZnanJodw?oc=5" target="_blank" rel="noopener">
+    <div class="t">One Nation unveils uncosted Victorian election platform</div>
+    <div class="m">The Weekly Times · 6 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOS253VEVKTlVfdXh0WVVQbDhTbHJJSDhTeHlQQ1Vmb1k1LVBlZkd3ZjdnckMyNEF1aUEwcjNBbG1Xc3FsMEp4a25Xa1hybEdTdlpjN0FOVzBIc1NPa0VtdGZlS2FsRVpRdTVmSEtlMUJqODJ6SWQtT1hBRmZXcEtzdEFfSmo2VnppcW82SHVIVXJXOThHZG1Mb2VDdWlpVndPVjZSUHJ3ODFSMmM?oc=5" target="_blank" rel="noopener">
+    <div class="t">An inside look into One Nation&#39;s launch event and a Border veteran&#39;s concerns</div>
+    <div class="m">The Border Mail · 6 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxNc0loUW8wc3NkYURrR1R2MTZ4SXpscjhlVUpVTF90VGtOQU93ZXFab01ET21kQTlYcWp0QmJfZlVNd2czSWNTcnA0cGlmRnIxemk4TTJVc2U4b284MHR0a2t5T1Y3VU5NV2ZYMkJCODQ2UTlwVHBZVEVjTHJFbEh1RV9OOENxZWtLcEFyRzFfSTJrZm1PR1VXZ0lKU2VRVEZlMDlGVExxRHpGSENjMzdla3dmV1NiT19uMmpSU1ZLaXRMWmgyVTNVcDQwNHJyblRoNHZib1licnB4SGFnSWxV?oc=5" target="_blank" rel="noopener">
+    <div class="t">Thunderstruck: Hanson’s battle cry to take Victoria back</div>
+    <div class="m">The Australian · 3 Oct</div>
+  </a>
+  <a class="news-item" href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxNUHc3UXNzQURCaTBwWS1qNjFvNk9RZENCWFQyU01JUEVPVkp3VkpRc3NyWVB5M1hGTVJ4X3AzSkZ6M0xYUWN1bHdJQVh2YnJ1ZVVXOXRkVENuZ3JSbWxUQm1HTEJ6NU9MWVNfMEZGbEl1aGFJOGRySTFZaENnNTluR0Z1a3BSdC1hRHBrZ2E4eDFPdzMtQnBHNi1wMXpGUnFOblBrSFMyWkhKNDVIaDh2UDJ6N0NCTWV2UXdSUHpMLVM0Y19SbDdlOFpHdDFRUGFrN3dZc3A2Ylp6Z3hNdWF1bjNHd3JfQTUySHdJ?oc=5" target="_blank" rel="noopener">
+    <div class="t">One Nation ramps up election fight with major policy reveal</div>
+    <div class="m">The Nightly · 3 Oct</div>
+  </a>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
 
-    </main>
-    <footer>
-        PolTrends Australia &mdash; Entity search data from Google Trends &mdash; Updated 2026-10-10
-    </footer>
-    <script>
-    function copyLink(){
-        navigator.clipboard.writeText(window.location.href).then(function(){
-            var btn=document.getElementById('copy-btn');
-            btn.textContent='Copied!';
-            setTimeout(function(){btn.textContent='Copy link';},2000);
-        });
-    }
-    </script>
+  <footer>
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>PolTrends <small>Australia</small></a>
+          <p class="note" style="margin-top:12px; max-width:52ch">
+            Independent tracker of what Australians search for about political parties, alongside published polls and an open seat model for the 2026 Victorian election.
+            Search interest shows attention, not support. Built and updated automatically every day.
+          </p>
+          <div class="share-row">
+            <a href="https://twitter.com/intent/tweet?text=The%20stories%20behind%20Australia%27s%20political%20searches&url=https%3A//poltrends.stewartmedia.com.au/xreport.html" target="_blank" rel="noopener">Share on X</a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//poltrends.stewartmedia.com.au/xreport.html" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//poltrends.stewartmedia.com.au/xreport.html" target="_blank" rel="noopener">Facebook</a>
+            <button type="button" data-copy="https://poltrends.stewartmedia.com.au/xreport.html">Copy link</button>
+          </div>
+        </div>
+        <div>
+          <h4>Sources</h4>
+          <ul>
+            <li><a href="https://trends.google.com/trends/explore?geo=AU&date=today%203-m" target="_blank" rel="noopener">Google Trends</a> (topic entities)</li>
+            <li><a href="https://news.google.com/" target="_blank" rel="noopener">Google News</a> headlines</li>
+            <li><a href="https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Victorian_state_election" target="_blank" rel="noopener">Published Victorian polls</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/2026_Victorian_state_election#Pre-electoral_pendulum" target="_blank" rel="noopener">2022 pendulum</a> (VEC results)</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Data health</h4>
+          <p class="note">Last run 10 October 2026 at 10:54pm UTC+11:00.</p>
+          <div class="health">
+<span class="ok" title="">briefing</span><span class="ok" title="">news national</span><span class="ok" title="">news victoria</span><span class="ok" title="">polls victoria</span><span class="ok" title="">seat model</span><span class="ok" title="">seat news</span><span class="ok" title="">spikes national</span><span class="ok" title="">spikes victoria</span><span class="ok" title="">summary national</span><span class="ok" title="">summary victoria</span><span class="ok" title="">summary victoria leaders</span><span class="ok" title="">trends national</span><span class="ok" title="">trends victoria</span><span class="ok" title="">trends victoria leaders</span>          </div>
+          <p class="note" style="margin-top:10px">A source that fails keeps its last good copy, labelled with its date.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/site.js?v=9a651412" defer></script>
 </body>
 </html>

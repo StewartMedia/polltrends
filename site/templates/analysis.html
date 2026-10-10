@@ -1,67 +1,56 @@
 {% extends "base.html" %}
-{% block title %}PolTrends Australia — Weekly Analysis{% endblock %}
 {% block content %}
-<p class="updated">Last updated: {{ updated }}</p>
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">The briefing · {{ briefing.date | fmt_day_long if briefing else updated_short }}</div>
+    <h1 class="display">What the numbers <em>say</em> this week.</h1>
+    <p class="lede">Written straight from the data every morning: search interest, the stories behind the spikes, the Victorian polls and what they mean for seats. No commentary, no guesswork.</p>
+  </div>
+</section>
 
-{% if analysis %}
-<div class="card">
-    <h2>Week in Review: {{ analysis.period.start }} to {{ analysis.period.end }}</h2>
-    <div class="metric-grid">
-        {% for code, ent in entities.items() %}
-        <div class="metric-card" style="border-top: 3px solid {{ ent.color }}">
-            <div class="value" style="color: {{ ent.color }}">{{ analysis.combined_scores[code] }}</div>
-            <div class="label">{{ ent.short_name }} (combined)</div>
-        </div>
-        {% endfor %}
-    </div>
-</div>
-{% endif %}
+<section class="section" style="padding-top: 0">
+  <div class="wrap briefing-grid">
+    <article class="prose">
+      {% if briefing and briefing.victoria %}
+      <h2 style="margin-top:0">Victoria</h2>
+      {% for p in briefing.victoria %}<p>{{ p }}</p>{% endfor %}
+      {% endif %}
+      {% if briefing and briefing.national %}
+      <h2>National</h2>
+      {% for p in briefing.national %}<p>{{ p }}</p>{% endfor %}
+      {% endif %}
+      {% if not briefing %}<p>The briefing is generated after the next daily run.</p>{% endif %}
 
-{% if sentiment %}
-<div class="card">
-    <h2>Query Sentiment Analysis</h2>
-    {% for code, data in sentiment.items() %}
-    <div style="margin-bottom: 1.5rem;">
-        <h3 style="font-size: 0.95rem; margin-bottom: 0.5rem;">
-            <span style="color: {{ entities[code].color }}">&#9632;</span>
-            {{ entities[code].short_name }}
-            <span style="font-weight: 400; color: #999;">({{ data.queries_analysed }} queries)</span>
-        </h3>
-        {% set counts = data.sentiment_counts %}
-        {% set total = counts.positive + counts.negative + counts.neutral %}
-        {% if total > 0 %}
-        <div class="sentiment-bar">
-            <div class="pos" style="width: {{ (counts.positive / total * 100)|round }}%"></div>
-            <div class="neu" style="width: {{ (counts.neutral / total * 100)|round }}%"></div>
-            <div class="neg" style="width: {{ (counts.negative / total * 100)|round }}%"></div>
-        </div>
-        <div style="display: flex; gap: 1.5rem; font-size: 0.8rem; color: #666;">
-            <span>&#9632; Positive: {{ counts.positive }}</span>
-            <span style="color: #9E9E9E;">&#9632; Neutral: {{ counts.neutral }}</span>
-            <span style="color: #E53935;">&#9632; Negative: {{ counts.negative }}</span>
-            <span style="margin-left: auto;">Score: {{ data.sentiment_score }}</span>
-        </div>
-        {% endif %}
-    </div>
-    {% endfor %}
-</div>
-{% endif %}
+      <h2 id="method">Method</h2>
+      <p><strong>Search interest.</strong> Daily Google Trends interest for each party's topic entity (not a single keyword), for Australia and for Victoria, over the last 90 days. Google scales each series 0–100 against the busiest day in the window, so values compare parties within a snapshot, not across days. Today's partial day is excluded. Interest measures attention, which can be positive or negative. It is not support.</p>
+      <p><strong>Spikes.</strong> A day counts as a spike when a party's interest is at least twice its trailing 7-day average and at least 3 points above it. Back-to-back spike days collapse to the peak. Each spike is matched to headlines collected from Google News within a day either side.</p>
+      <p><strong>Polls.</strong> Published Victorian voting-intention polls are read each day from the public record on Wikipedia, which links every figure to its original report. The average uses the latest poll from each pollster in the last 30 days, weighted equally. The two-party average only uses polls that publish a Coalition–Labor figure.</p>
+      <p><strong>Seat model.</strong> The swing is Labor's 2022 two-party vote (55.0%) minus the poll average. It is applied evenly to every seat that was a Labor–Coalition contest in 2022, using the published pre-election pendulum. Seats contested against the Greens or independents are held constant. This is a transparent reference point, not a forecast; the published MRP is shown beside it because One Nation's vote breaks the two-party assumptions.</p>
+      <p><strong>Briefing.</strong> These paragraphs are assembled from the computed figures by fixed rules. No language model writes or edits them.</p>
+      <p><strong>Code and data.</strong> Every snapshot is committed to the <a href="https://github.com/StewartMedia/polltrends" target="_blank" rel="noopener">project repository</a>, so any figure on this site can be traced to its source file.</p>
+    </article>
 
-{% if narrative %}
-<div class="card">
-    <h2>Weekly Narrative</h2>
-    <div class="narrative">{{ narrative | safe }}</div>
-</div>
-{% endif %}
-
-{% if summary_html %}
-<div class="card">
-    <h2>Data Summary</h2>
-    <div class="narrative">{{ summary_html | safe }}</div>
-</div>
-{% endif %}
-
-<div class="card">
-    {% include "share_strip.html" %}
-</div>
+    <aside class="aside">
+      {% if summary %}
+      <div class="card" style="--c: {{ entities[summary.leader].color }}">
+        <div class="kicker">National leader this week</div>
+        <div class="party" style="font-size:18px; margin: 6px 0 4px"><span class="dot"></span>{{ entities[summary.leader].short_name }}</div>
+        <div class="note">{{ '%.0f'|format(summary.stats[summary.leader].share) }}% share of search · avg {{ summary.stats[summary.leader].avg }}</div>
+      </div>
+      {% endif %}
+      {% if model %}
+      <div class="card">
+        <div class="kicker">Victoria</div>
+        <div style="font-size: 26px; font-weight: 650; letter-spacing: -0.02em; margin: 6px 0 2px"><span style="color: var(--lnp)">{{ model.average.tpp.LNP }}</span><span style="color: var(--faint)"> – </span><span style="color: var(--alp)">{{ model.average.tpp.ALP }}</span></div>
+        <div class="note">Coalition v Labor, two-party preferred · {{ model.days_to_go }} days to go</div>
+        <a class="btn" href="victoria.html" style="margin-top: 14px">Seat explorer <span class="arrow">→</span></a>
+      </div>
+      {% endif %}
+      <div class="card">
+        <div class="kicker">Read with care</div>
+        <p class="note" style="margin-top:6px">Search spikes often follow controversy. A party can dominate searches during a bad week. Use the headlines to see why.</p>
+      </div>
+    </aside>
+  </div>
+</section>
 {% endblock %}

@@ -1,459 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PolTrends Australia — Weekly Analysis</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="PolTrends Australia">
-    <meta property="og:title" content="PolTrends Australia — Weekly Analysis">
-    <meta property="og:description" content="Weekly analysis of Australian political party search interest, sentiment, and news correlation.">
-    <meta property="og:url" content="https://poltrends.stewartmedia.com.au/analysis.html">
-    <meta property="og:image" content="https://poltrends.stewartmedia.com.au/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-    <!-- Twitter/X Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="PolTrends Australia — Weekly Analysis">
-    <meta name="twitter:description" content="Weekly analysis of Australian political party search interest, sentiment, and news correlation.">
-    <meta name="twitter:image" content="https://poltrends.stewartmedia.com.au/og-image.png">
-
-    <meta name="description" content="Weekly analysis of Australian political party search interest, sentiment, and news correlation.">
-
-    <script src="https://cdn.plot.ly/plotly-2.35.0.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Inter', sans-serif;
-            background: #f8f9fa;
-            color: #1a1a2e;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-        header {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: white;
-            padding: 1.5rem 2rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        header h1 { font-size: 1.6rem; font-weight: 700; }
-        header p { font-size: 0.9rem; opacity: 0.8; margin-top: 0.25rem; }
-        nav {
-            background: #16213e;
-            padding: 0.5rem 2rem;
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: rgba(255,255,255,0.7);
-            text-decoration: none;
-            font-size: 0.85rem;
-            font-weight: 500;
-            padding: 0.3rem 0;
-            border-bottom: 2px solid transparent;
-            transition: all 0.2s;
-        }
-        nav a:hover, nav a.active {
-            color: white;
-            border-bottom-color: #e94560;
-        }
-        main { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-        }
-        .card h2 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #f0f0f0;
-        }
-        .winner-banner {
-            background: linear-gradient(135deg, #e94560 0%, #c23152 100%);
-            color: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-        .winner-banner h2 { color: white; border: none; margin: 0; font-size: 1.4rem; }
-        .winner-banner p { opacity: 0.9; margin-top: 0.5rem; }
-        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
-        .rq-card {
-            background: white;
-            border-radius: 8px;
-            padding: 1rem;
-            margin-bottom: 1rem;
-        }
-        .rq-card h3 { font-size: 1rem; margin-bottom: 0.75rem; }
-        .rq-card h4 { font-size: 0.85rem; color: #666; margin-bottom: 0.5rem; }
-        .rq-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-        .rq-col { min-width: 0; }
-        .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-        .rq-card table { width: 100%; font-size: 0.8rem; border-collapse: collapse; }
-        .rq-card th, .rq-card td { padding: 0.3rem 0.5rem; text-align: left; }
-        .rq-card th { color: #888; font-weight: 500; border-bottom: 1px solid #eee; }
-        .rq-card tr:nth-child(even) { background: #fafafa; }
-        .news-item {
-            padding: 0.75rem 0;
-            border-bottom: 1px solid #f0f0f0;
-        }
-        .news-item:last-child { border-bottom: none; }
-        .news-title {
-            display: block;
-            color: #1a1a2e;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
-            line-height: 1.4;
-        }
-        .news-title:hover { color: #e94560; }
-        .news-meta { font-size: 0.75rem; color: #999; }
-        .spike-header { margin-bottom: 0.5rem; }
-        .spike-ratio { font-size: 0.8rem; color: #888; margin-left: 0.5rem; }
-        .spike-news { list-style: none; padding: 0; }
-        .spike-news li { padding: 0.3rem 0; font-size: 0.85rem; }
-        .spike-news a { color: #1565C0; text-decoration: none; }
-        .spike-news a:hover { text-decoration: underline; }
-        .spike-no-news { font-size: 0.8rem; color: #999; font-style: italic; }
-        .narrative { font-size: 0.9rem; line-height: 1.8; }
-        .narrative p { margin-bottom: 1rem; }
-        .narrative h2, .narrative h3 { margin-top: 1.2rem; margin-bottom: 0.5rem; }
-        .sentiment-bar {
-            display: flex;
-            height: 24px;
-            border-radius: 12px;
-            overflow: hidden;
-            margin: 0.5rem 0;
-        }
-        .sentiment-bar .pos { background: #43A047; }
-        .sentiment-bar .neu { background: #9E9E9E; }
-        .sentiment-bar .neg { background: #E53935; }
-        .metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
-        @media (max-width: 768px) { .metric-grid { grid-template-columns: repeat(2, 1fr); } }
-        .metric-card {
-            text-align: center;
-            padding: 1rem;
-            border-radius: 8px;
-            background: #f8f9fa;
-        }
-        .metric-card .value { font-size: 1.8rem; font-weight: 700; }
-        .metric-card .label { font-size: 0.75rem; color: #666; margin-top: 0.25rem; }
-        .metric-card .change { font-size: 0.8rem; margin-top: 0.25rem; }
-        .change.up { color: #43A047; }
-        .change.down { color: #E53935; }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #999;
-            font-size: 0.8rem;
-        }
-        .updated { font-size: 0.8rem; color: #999; text-align: right; margin-bottom: 1rem; }
-        .share-strip {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 0;
-            margin-top: 1rem;
-            border-top: 1px solid #f0f0f0;
-            font-size: 0.8rem;
-            color: #999;
-        }
-        .share-strip span { white-space: nowrap; }
-        .share-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.3rem;
-            padding: 0.35rem 0.75rem;
-            border-radius: 6px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            text-decoration: none;
-            border: 1px solid #e0e0e0;
-            color: #555;
-            background: #fafafa;
-            cursor: pointer;
-            transition: all 0.15s;
-        }
-        .share-btn:hover { background: #f0f0f0; border-color: #ccc; color: #333; }
-        .share-btn.x { border-color: #1d9bf0; color: #1d9bf0; }
-        .share-btn.x:hover { background: #e8f5fd; }
-        .share-btn.fb { border-color: #1877f2; color: #1877f2; }
-        .share-btn.fb:hover { background: #e7f0ff; }
-        .share-btn.li { border-color: #0a66c2; color: #0a66c2; }
-        .share-btn.li:hover { background: #e8f1fa; }
-        .share-btn.copy { border-color: #666; }
-        .share-btn.copy:hover { background: #eee; }
-        .js-plotly-plot, .plot-container { width: 100% !important; }
-        .js-plotly-plot .svg-container { width: 100% !important; max-width: 100% !important; }
-        @media (max-width: 768px) {
-            header {
-                padding: 1.2rem 1rem;
-            }
-            header h1 {
-                font-size: 1.3rem;
-            }
-            nav {
-                padding: 0.75rem 1rem;
-                gap: 0.75rem 1rem;
-            }
-            nav a {
-                font-size: 0.82rem;
-            }
-            main {
-                margin: 1rem auto 1.5rem;
-                padding: 0 0.85rem;
-            }
-            .card,
-            .winner-banner {
-                padding: 1rem;
-                border-radius: 10px;
-                margin-bottom: 1rem;
-            }
-            .card h2,
-            .winner-banner h2 {
-                font-size: 1.05rem;
-            }
-            .updated {
-                text-align: left;
-                margin-bottom: 0.75rem;
-            }
-            .rq-columns {
-                grid-template-columns: 1fr;
-            }
-            .metric-grid {
-                grid-template-columns: 1fr;
-            }
-            .metric-card .value {
-                font-size: 1.5rem;
-            }
-            .spike-header {
-                display: flex;
-                flex-direction: column;
-                gap: 0.2rem;
-            }
-            .spike-ratio {
-                margin-left: 0;
-            }
-            .share-strip {
-                flex-wrap: wrap;
-            }
-            .share-strip span {
-                width: 100%;
-            }
-            .share-btn {
-                flex: 1 1 calc(50% - 0.5rem);
-                justify-content: center;
-            }
-            footer {
-                padding: 1.5rem 1rem 2rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The briefing | PolTrends Australia</title>
+  <meta name="description" content="A plain-English weekly briefing built from search data, headlines and published polls.">
+  <link rel="canonical" href="https://poltrends.stewartmedia.com.au/analysis.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="theme-color" content="#090D15">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PolTrends Australia">
+  <meta property="og:title" content="The briefing | PolTrends Australia">
+  <meta property="og:description" content="A plain-English weekly briefing built from search data, headlines and published polls.">
+  <meta property="og:url" content="https://poltrends.stewartmedia.com.au/analysis.html">
+  <meta property="og:image" content="https://poltrends.stewartmedia.com.au/og-image.png?v=9a651412">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The briefing | PolTrends Australia">
+  <meta name="twitter:description" content="A plain-English weekly briefing built from search data, headlines and published polls.">
+  <meta name="twitter:image" content="https://poltrends.stewartmedia.com.au/og-image.png?v=9a651412">
+  <link rel="preload" href="assets/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/InstrumentSerif-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/site.css?v=9a651412">
 </head>
-<body>
-    <header>
-        <h1>PolTrends Australia</h1>
-        <p>Entity search interest tracking for Australian political parties</p>
-    </header>
-    <nav>
-        <a href="index.html" class="">Dashboard</a>
-        <a href="analysis.html" class="active">Weekly Analysis</a>
+<body class="page-analysis">
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="PolTrends Australia home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        PolTrends <small>Australia</small>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html" class="">National</a>
+        <a href="victoria.html" class="">Victoria 2026<span class="badge"><span data-days-left>48</span>d</span></a>
+        <a href="analysis.html" class="active">Briefing</a>
         <a href="xreport.html" class="">News</a>
-        <a href="victoria.html" class="" style="border-left: 1px solid rgba(255,255,255,0.2); padding-left: 1.5rem;">Victoria</a>
-    </nav>
-    <main>
-        
-<p class="updated">Last updated: 2026-10-10</p>
-
-
-<div class="card">
-    <h2>Week in Review: 2026-09-28T00:00:00 to 2026-10-04T00:00:00</h2>
-    <div class="metric-grid">
-        
-        <div class="metric-card" style="border-top: 3px solid #E53935">
-            <div class="value" style="color: #E53935">0.26</div>
-            <div class="label">Labor (combined)</div>
-        </div>
-        
-        <div class="metric-card" style="border-top: 3px solid #1565C0">
-            <div class="value" style="color: #1565C0">0.26</div>
-            <div class="label">Liberal (combined)</div>
-        </div>
-        
-        <div class="metric-card" style="border-top: 3px solid #43A047">
-            <div class="value" style="color: #43A047">0.422</div>
-            <div class="label">Greens (combined)</div>
-        </div>
-        
-        <div class="metric-card" style="border-top: 3px solid #FF8F00">
-            <div class="value" style="color: #FF8F00">0.859</div>
-            <div class="label">One Nation (combined)</div>
-        </div>
-        
+        <a href="analysis.html#method" class="">Method</a>
+      </nav>
+      <div class="updated-chip" title="Pipeline last ran 10 October 2026 at 10:54pm UTC+11:00">
+        <span class="pulse "></span>
+        <span>Updated 10 Oct, 10:54pm</span>
+      </div>
     </div>
-</div>
+  </header>
 
+  <main>
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">The briefing · 10 October 2026</div>
+    <h1 class="display">What the numbers <em>say</em> this week.</h1>
+    <p class="lede">Written straight from the data every morning: search interest, the stories behind the spikes, the Victorian polls and what they mean for seats. No commentary, no guesswork.</p>
+  </div>
+</section>
 
+<section class="section" style="padding-top: 0">
+  <div class="wrap briefing-grid">
+    <article class="prose">
+      <h2 style="margin-top:0">Victoria</h2>
+<p>48 days until Victorians vote on Saturday 28 November 2026.</p><p>Across the latest poll from each of 4 pollsters, the Coalition averages 29.0% of the primary vote, Labor 24.5%, One Nation 22.5% and the Greens 13.8%. On two-party-preferred the Coalition leads 53.7 to 46.3 (3 polls), an 8.7-point swing to the Coalition since 2022.</p><p>Applied uniformly to the 2022 pendulum, that swing points to a Coalition majority (50 seats, 45 needed). Treat this as the classic two-party read only: it cannot see One Nation winning seats.</p><p>The YouGov MRP (July 2026), which models seats one by one, projects Coalition 39, Labor 29, One Nation 17 and Greens 3: a hung parliament.</p><p>Preferred premier (Freshwater, 24–28 Sep 2026): Wilson 37%, Carroll 30%, Pickering 13%.</p><p>One Nation led Victorian search interest in the week to 9 October, averaging 54.4 on Google&#39;s 0-100 scale, 9.5 times the next party (the Liberals). That is 76% of all search interest across the parties tracked.</p><p>Among the leaders, search interest ran Wilson 60%, Carroll 34%, Pickering 6%, Sandell under 1% of the combined total this week.</p><p>Searches for the Greens jumped to 19 on 30 September, 7.4 times the previous week&#39;s average. Coverage around that day: “New Australian Greens leader David Shoebridge vows to ‘replace’ Labor” (Politico).</p><p>Searches for Labor jumped to 5 on 29 September, 3.5 times the previous week&#39;s average. Coverage around that day: “Data reveals voter’s confidence in Labor govt collapsing” (The Nightly).</p>      <h2>National</h2>
+<p>One Nation led national search interest in the week to 9 October, averaging 32.1 on Google&#39;s 0-100 scale, 7.8 times the next party (the Greens). That is 74% of all search interest across the parties tracked.</p><p>One Nation rose the most on the previous week, up 16.0 points (+99%); the Greens fell furthest, down 2.4 points (-37%).</p><p>Searches for the Greens jumped to 19 on 30 September, 7.8 times the previous week&#39;s average. Coverage around that day: “New Australian Greens leader David Shoebridge vows to ‘replace’ Labor” (Politico).</p><p>Fastest-rising searches alongside One Nation: “mike newman”, “mike newman one nation”, “secret harbour by election”.</p>
+      <h2 id="method">Method</h2>
+      <p><strong>Search interest.</strong> Daily Google Trends interest for each party's topic entity (not a single keyword), for Australia and for Victoria, over the last 90 days. Google scales each series 0–100 against the busiest day in the window, so values compare parties within a snapshot, not across days. Today's partial day is excluded. Interest measures attention, which can be positive or negative. It is not support.</p>
+      <p><strong>Spikes.</strong> A day counts as a spike when a party's interest is at least twice its trailing 7-day average and at least 3 points above it. Back-to-back spike days collapse to the peak. Each spike is matched to headlines collected from Google News within a day either side.</p>
+      <p><strong>Polls.</strong> Published Victorian voting-intention polls are read each day from the public record on Wikipedia, which links every figure to its original report. The average uses the latest poll from each pollster in the last 30 days, weighted equally. The two-party average only uses polls that publish a Coalition–Labor figure.</p>
+      <p><strong>Seat model.</strong> The swing is Labor's 2022 two-party vote (55.0%) minus the poll average. It is applied evenly to every seat that was a Labor–Coalition contest in 2022, using the published pre-election pendulum. Seats contested against the Greens or independents are held constant. This is a transparent reference point, not a forecast; the published MRP is shown beside it because One Nation's vote breaks the two-party assumptions.</p>
+      <p><strong>Briefing.</strong> These paragraphs are assembled from the computed figures by fixed rules. No language model writes or edits them.</p>
+      <p><strong>Code and data.</strong> Every snapshot is committed to the <a href="https://github.com/StewartMedia/polltrends" target="_blank" rel="noopener">project repository</a>, so any figure on this site can be traced to its source file.</p>
+    </article>
 
-<div class="card">
-    <h2>Query Sentiment Analysis</h2>
-    
-    <div style="margin-bottom: 1.5rem;">
-        <h3 style="font-size: 0.95rem; margin-bottom: 0.5rem;">
-            <span style="color: #E53935">&#9632;</span>
-            Labor
-            <span style="font-weight: 400; color: #999;">(13 queries)</span>
-        </h3>
-        
-        
-        
-        <div class="sentiment-bar">
-            <div class="pos" style="width: 0.0%"></div>
-            <div class="neu" style="width: 92.0%"></div>
-            <div class="neg" style="width: 8.0%"></div>
+    <aside class="aside">
+      <div class="card" style="--c: #FF8A1F">
+        <div class="kicker">National leader this week</div>
+        <div class="party" style="font-size:18px; margin: 6px 0 4px"><span class="dot"></span>One Nation</div>
+        <div class="note">74% share of search · avg 32.1</div>
+      </div>
+      <div class="card">
+        <div class="kicker">Victoria</div>
+        <div style="font-size: 26px; font-weight: 650; letter-spacing: -0.02em; margin: 6px 0 2px"><span style="color: var(--lnp)">53.7</span><span style="color: var(--faint)"> – </span><span style="color: var(--alp)">46.3</span></div>
+        <div class="note">Coalition v Labor, two-party preferred · 48 days to go</div>
+        <a class="btn" href="victoria.html" style="margin-top: 14px">Seat explorer <span class="arrow">→</span></a>
+      </div>
+      <div class="card">
+        <div class="kicker">Read with care</div>
+        <p class="note" style="margin-top:6px">Search spikes often follow controversy. A party can dominate searches during a bad week. Use the headlines to see why.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>PolTrends <small>Australia</small></a>
+          <p class="note" style="margin-top:12px; max-width:52ch">
+            Independent tracker of what Australians search for about political parties, alongside published polls and an open seat model for the 2026 Victorian election.
+            Search interest shows attention, not support. Built and updated automatically every day.
+          </p>
+          <div class="share-row">
+            <a href="https://twitter.com/intent/tweet?text=This%20week%27s%20political%20search%20briefing%20on%20PolTrends%20Australia&url=https%3A//poltrends.stewartmedia.com.au/analysis.html" target="_blank" rel="noopener">Share on X</a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//poltrends.stewartmedia.com.au/analysis.html" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//poltrends.stewartmedia.com.au/analysis.html" target="_blank" rel="noopener">Facebook</a>
+            <button type="button" data-copy="https://poltrends.stewartmedia.com.au/analysis.html">Copy link</button>
+          </div>
         </div>
-        <div style="display: flex; gap: 1.5rem; font-size: 0.8rem; color: #666;">
-            <span>&#9632; Positive: 0</span>
-            <span style="color: #9E9E9E;">&#9632; Neutral: 12</span>
-            <span style="color: #E53935;">&#9632; Negative: 1</span>
-            <span style="margin-left: auto;">Score: -0.08</span>
+        <div>
+          <h4>Sources</h4>
+          <ul>
+            <li><a href="https://trends.google.com/trends/explore?geo=AU&date=today%203-m" target="_blank" rel="noopener">Google Trends</a> (topic entities)</li>
+            <li><a href="https://news.google.com/" target="_blank" rel="noopener">Google News</a> headlines</li>
+            <li><a href="https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Victorian_state_election" target="_blank" rel="noopener">Published Victorian polls</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/2026_Victorian_state_election#Pre-electoral_pendulum" target="_blank" rel="noopener">2022 pendulum</a> (VEC results)</li>
+          </ul>
         </div>
-        
+        <div>
+          <h4>Data health</h4>
+          <p class="note">Last run 10 October 2026 at 10:54pm UTC+11:00.</p>
+          <div class="health">
+<span class="ok" title="">briefing</span><span class="ok" title="">news national</span><span class="ok" title="">news victoria</span><span class="ok" title="">polls victoria</span><span class="ok" title="">seat model</span><span class="ok" title="">seat news</span><span class="ok" title="">spikes national</span><span class="ok" title="">spikes victoria</span><span class="ok" title="">summary national</span><span class="ok" title="">summary victoria</span><span class="ok" title="">summary victoria leaders</span><span class="ok" title="">trends national</span><span class="ok" title="">trends victoria</span><span class="ok" title="">trends victoria leaders</span>          </div>
+          <p class="note" style="margin-top:10px">A source that fails keeps its last good copy, labelled with its date.</p>
+        </div>
+      </div>
     </div>
-    
-    <div style="margin-bottom: 1.5rem;">
-        <h3 style="font-size: 0.95rem; margin-bottom: 0.5rem;">
-            <span style="color: #1565C0">&#9632;</span>
-            Liberal
-            <span style="font-weight: 400; color: #999;">(22 queries)</span>
-        </h3>
-        
-        
-        
-        <div class="sentiment-bar">
-            <div class="pos" style="width: 18.0%"></div>
-            <div class="neu" style="width: 82.0%"></div>
-            <div class="neg" style="width: 0.0%"></div>
-        </div>
-        <div style="display: flex; gap: 1.5rem; font-size: 0.8rem; color: #666;">
-            <span>&#9632; Positive: 4</span>
-            <span style="color: #9E9E9E;">&#9632; Neutral: 18</span>
-            <span style="color: #E53935;">&#9632; Negative: 0</span>
-            <span style="margin-left: auto;">Score: 0.18</span>
-        </div>
-        
-    </div>
-    
-    <div style="margin-bottom: 1.5rem;">
-        <h3 style="font-size: 0.95rem; margin-bottom: 0.5rem;">
-            <span style="color: #43A047">&#9632;</span>
-            Greens
-            <span style="font-weight: 400; color: #999;">(15 queries)</span>
-        </h3>
-        
-        
-        
-        <div class="sentiment-bar">
-            <div class="pos" style="width: 13.0%"></div>
-            <div class="neu" style="width: 87.0%"></div>
-            <div class="neg" style="width: 0.0%"></div>
-        </div>
-        <div style="display: flex; gap: 1.5rem; font-size: 0.8rem; color: #666;">
-            <span>&#9632; Positive: 2</span>
-            <span style="color: #9E9E9E;">&#9632; Neutral: 13</span>
-            <span style="color: #E53935;">&#9632; Negative: 0</span>
-            <span style="margin-left: auto;">Score: 0.13</span>
-        </div>
-        
-    </div>
-    
-    <div style="margin-bottom: 1.5rem;">
-        <h3 style="font-size: 0.95rem; margin-bottom: 0.5rem;">
-            <span style="color: #FF8F00">&#9632;</span>
-            One Nation
-            <span style="font-weight: 400; color: #999;">(16 queries)</span>
-        </h3>
-        
-        
-        
-        <div class="sentiment-bar">
-            <div class="pos" style="width: 12.0%"></div>
-            <div class="neu" style="width: 81.0%"></div>
-            <div class="neg" style="width: 6.0%"></div>
-        </div>
-        <div style="display: flex; gap: 1.5rem; font-size: 0.8rem; color: #666;">
-            <span>&#9632; Positive: 2</span>
-            <span style="color: #9E9E9E;">&#9632; Neutral: 13</span>
-            <span style="color: #E53935;">&#9632; Negative: 1</span>
-            <span style="margin-left: auto;">Score: 0.06</span>
-        </div>
-        
-    </div>
-    
-</div>
-
-
-
-
-
-<div class="card">
-    <h2>Data Summary</h2>
-    <div class="narrative"><h2>Week in Review: 2026-09-28T00:00:00 to 2026-10-04T00:00:00</h2>
-<p><strong>One Nation</strong> led search interest this week with an average score of 20.6.
-The strongest combined search-and-sentiment score belonged to <strong>One Nation</strong>.</p>
-<h3>Party Breakdown</h3>
-<ul>
-<li><strong>Labor</strong>: Avg interest 3.6 (+19.0% WoW), sentiment: neutral (-0.08)</li>
-<li><strong>Liberal</strong>: Avg interest 2.4 (+6.2% WoW), sentiment: positive (+0.18)</li>
-<li><strong>Greens</strong>: Avg interest 7.4 (+420.0% WoW), sentiment: positive (+0.13)</li>
-<li><strong>One Nation</strong>: Avg interest 20.6 (+50.0% WoW), sentiment: neutral (+0.06)</li>
-</ul></div>
-</div>
-
-
-<div class="card">
-    
-
-
-<div class="share-strip">
-    <span>Share:</span>
-    <a class="share-btn x"
-       href="https://twitter.com/intent/tweet?text=One%20Nation%20is%20the%20most-searched%20party%20this%20week.%20See%20the%20full%20data%20on%20PolTrends%20Australia&url=https%3A//poltrends.stewartmedia.com.au/analysis.html"
-       target="_blank" rel="noopener">X</a>
-    <a class="share-btn fb"
-       href="https://www.facebook.com/sharer/sharer.php?u=https%3A//poltrends.stewartmedia.com.au/analysis.html"
-       target="_blank" rel="noopener">Facebook</a>
-    <a class="share-btn li"
-       href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//poltrends.stewartmedia.com.au/analysis.html"
-       target="_blank" rel="noopener">LinkedIn</a>
-    <button class="share-btn copy" id="copy-btn" onclick="copyLink()">Copy link</button>
-</div>
-</div>
-
-    </main>
-    <footer>
-        PolTrends Australia &mdash; Entity search data from Google Trends &mdash; Updated 2026-10-10
-    </footer>
-    <script>
-    function copyLink(){
-        navigator.clipboard.writeText(window.location.href).then(function(){
-            var btn=document.getElementById('copy-btn');
-            btn.textContent='Copied!';
-            setTimeout(function(){btn.textContent='Copy link';},2000);
-        });
-    }
-    </script>
+  </footer>
+  <script src="assets/site.js?v=9a651412" defer></script>
 </body>
 </html>

@@ -1,0 +1,94 @@
+{# Shared components #}
+
+{% macro change_pill(st) -%}
+  {%- if st.momentum_pct is not none and st.change_pts|abs >= 0.5 -%}
+    <span class="chg {{ 'up' if st.change_pts > 0 else 'down' }}">{{ '▲' if st.change_pts > 0 else '▼' }} {{ '%+d'|format(st.momentum_pct) }}%</span>
+  {%- elif st.change_pts|abs >= 0.5 -%}
+    <span class="chg {{ 'up' if st.change_pts > 0 else 'down' }}">{{ '▲' if st.change_pts > 0 else '▼' }} {{ '%+.1f'|format(st.change_pts) }} pts</span>
+  {%- else -%}
+    <span class="chg flat">■ steady</span>
+  {%- endif -%}
+{%- endmacro %}
+
+{% macro race_cards(summary, entities, sparks) -%}
+<div class="grid g{{ entities|length if entities|length <= 5 else 4 }}">
+  {% for code in summary.ranking %}{% set st = summary.stats[code] %}{% set ent = entities[code] %}
+  <article class="card race-card reveal" style="--c: {{ ent.color }}">
+    <div class="race-top">
+      <span class="party"><span class="dot"></span>{{ ent.short_name }}</span>
+      <span class="rank {{ 'first' if st.rank == 1 }}">#{{ st.rank }}</span>
+    </div>
+    <div class="big tnum">{{ '%.1f'|format(st.avg) }}<small>/100</small></div>
+    <div class="race-meta">
+      {{ change_pill(st) }}
+      <span>{{ '%.0f'|format(st.share) }}% share</span>
+    </div>
+    {{ sparks[code] }}
+  </article>
+  {% endfor %}
+</div>
+{%- endmacro %}
+
+{% macro share_bar(summary, entities) -%}
+<div class="sharebar" role="img" aria-label="Share of search interest">
+  {% for code in summary.ranking %}<span style="--c: {{ entities[code].color }}; width: {{ summary.stats[code].share }}%" title="{{ entities[code].short_name }} {{ summary.stats[code].share }}%"></span>{% endfor %}
+</div>
+<div class="share-legend">
+  {% for code in summary.ranking %}<span><i class="dot" style="--c: {{ entities[code].color }}; display:inline-block; vertical-align: 0;"></i> {{ entities[code].short_name }}<b>{{ '%.0f'|format(summary.stats[code].share) if summary.stats[code].share >= 1 else '<1' }}%</b></span>{% endfor %}
+</div>
+{%- endmacro %}
+
+{% macro spike_timeline(spikes, entities, limit=6) -%}
+{% if spikes %}
+<div class="timeline">
+  {% for s in spikes[:limit] %}{% set ent = entities.get(s.party_code, {}) %}
+  <div class="tl-item reveal" style="--c: {{ ent.color or '#999' }}">
+    <div class="tl-date">{{ s.date | month }}<b>{{ s.date | day }}</b></div>
+    <div class="tl-body">
+      <div class="tl-tags"><span class="pill">{{ s.party_name }}</span><span class="pill ghost">{{ '%.1f'|format(s.ratio) }}× normal · peak {{ s.value }}</span></div>
+      {% if s.news %}{% set n = s.news[0] %}
+        <div class="tl-title">{% if n.url %}<a href="{{ n.url }}" target="_blank" rel="noopener">{{ n.title }}</a>{% else %}{{ n.title }}{% endif %}</div>
+        <div class="tl-src">{{ n.source }}{% if n.date %} · {{ n.date | fmt_day }}{% endif %}{% if s.news|length > 1 %} · +{{ s.news|length - 1 }} more{% endif %}</div>
+      {% else %}
+        <div class="tl-title" style="color: var(--muted); font-weight: 450;">No matching headline in the news collected for this date.</div>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<p class="empty">No unusual spikes in the last 90 days.</p>
+{% endif %}
+{%- endmacro %}
+
+{% macro query_chips(related, entities, kind='rising', limit=6) -%}
+{% for code, ent in entities.items() %}{% set qs = (related.get(code) or {}).get(kind, [])[:limit] %}
+  {% if qs %}
+  <div class="q-party">
+    <div class="party" style="--c: {{ ent.color }}"><span class="dot"></span>{{ ent.short_name }}</div>
+    <div class="chips">
+      {% for q in qs %}{% set v = q.value %}
+        <span class="chip {{ 'breakout' if v is number and v >= 5000 }}">{{ q.query }}{% if kind == 'rising' %}<b>{{ 'Breakout' if v is number and v >= 5000 else ('+' ~ v ~ '%') }}</b>{% endif %}</span>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+{% endfor %}
+{%- endmacro %}
+
+{% macro news_list(articles, limit=6) -%}
+<div class="news-list">
+  {% for a in articles[:limit] %}
+  <a class="news-item" href="{{ a.url or '#' }}" target="_blank" rel="noopener">
+    <div class="t">{{ a.title }}</div>
+    <div class="m">{{ a.source }}{% if a.date %} · {{ a.date | fmt_day }}{% endif %}</div>
+  </a>
+  {% else %}
+  <p class="empty">No recent headlines.</p>
+  {% endfor %}
+</div>
+{%- endmacro %}
+
+{% macro source_note(date, label='Search data') -%}
+<span class="note">{{ label }} as of {{ date | fmt_day_long }}</span>
+{%- endmacro %}

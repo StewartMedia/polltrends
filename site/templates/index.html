@@ -1,52 +1,91 @@
 {% extends "base.html" %}
-{% block title %}PolTrends Australia — Dashboard{% endblock %}
+{% from "_macros.html" import race_cards, share_bar, spike_timeline, query_chips, news_list %}
 {% block content %}
-<p class="updated">Last updated: {{ updated }}</p>
-
-{% if analysis %}
-<div class="winner-banner">
-    <h2>{{ analysis.search_winner_name }} is front of mind this week</h2>
-    <p>Avg search interest: {{ analysis.avg_interest[analysis.search_winner] }}
-    {% if analysis.momentum_pct[analysis.search_winner] > 0 %}
-     (up {{ analysis.momentum_pct[analysis.search_winner] }}% WoW)
-    {% elif analysis.momentum_pct[analysis.search_winner] < 0 %}
-     (down {{ analysis.momentum_pct[analysis.search_winner]|abs }}% WoW)
+<section class="hero">
+  <div class="wrap">
+    {% if summary %}
+    <div class="eyebrow">National · Week to {{ summary.period.end | fmt_day_long }}</div>
+    <h1 class="display" style="--hl: {{ entities[summary.leader].color }}">{{ headline }}</h1>
+    <p class="lede">{{ lede }}</p>
+    {% else %}
+    <div class="eyebrow">National</div>
+    <h1 class="display">Who is Australia searching for?</h1>
+    <p class="lede">Search data is being collected. Check back after the next daily run.</p>
     {% endif %}
-    </p>
-</div>
-
-<div class="card">
-    <div class="metric-grid">
-        {% for code, ent in entities.items() %}
-        <div class="metric-card" style="border-top: 3px solid {{ ent.color }}">
-            <div class="value" style="color: {{ ent.color }}">{{ analysis.avg_interest[code] }}</div>
-            <div class="label">{{ ent.short_name }}</div>
-            <div class="change {{ 'up' if analysis.momentum_pct[code] > 0 else 'down' }}">
-                {% if analysis.momentum_pct[code] > 0 %}&#9650;{% elif analysis.momentum_pct[code] < 0 %}&#9660;{% endif %}
-                {{ analysis.momentum_pct[code] }}% WoW
-            </div>
-        </div>
-        {% endfor %}
+    <div class="hero-actions">
+      {% if vic_days is not none and vic_days >= 0 %}<a class="btn primary" href="victoria.html">Victoria votes in <span data-days-left>{{ vic_days }}</span> days <span class="arrow">→</span></a>{% endif %}
+      <a class="btn" href="analysis.html">Read the briefing <span class="arrow">→</span></a>
     </div>
-</div>
+  </div>
+</section>
+
+{% if summary %}
+<section class="section" style="padding-top: 10px">
+  <div class="wrap">
+    {{ race_cards(summary, entities, sparks) }}
+    <div class="card reveal" style="margin-top: 16px">
+      <div class="section-head" style="margin-bottom: 12px">
+        <div><div class="kicker">Share of search · last 7 days</div></div>
+        <span class="note">vs previous week: {% for code in summary.ranking %}{{ entities[code].short_name }} {{ '%.0f'|format(summary.stats[code].prev_share) }}%{{ ', ' if not loop.last }}{% endfor %}</span>
+      </div>
+      {{ share_bar(summary, entities) }}
+    </div>
+  </div>
+</section>
 {% endif %}
 
-<div class="card">
-    <h2>Search Interest Over Time</h2>
-    {{ charts.interest_over_time | safe }}
-</div>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">90 days</div>
+        <h2>Search interest over time</h2>
+      </div>
+      <p>Google Trends topic interest for each party, scaled 0–100 to the busiest day in the window. Rings mark spikes; hover for the headline that matched.</p>
+    </div>
+    <div class="card chart-card reveal">{{ charts.interest }}</div>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card chart-card reveal">
+        <h3>Share of the conversation</h3>
+        <p class="sub">Each party's slice of combined search interest, 7-day smoothed.</p>
+        {{ charts.share }}
+      </div>
+      <div class="card reveal">
+        <h3>Rising searches</h3>
+        <p class="sub">Queries growing fastest alongside each party over 90 days.</p>
+        {{ query_chips(related, entities) }}
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="card">
-    <h2>Last 7 Days Comparison</h2>
-    {{ charts.weekly_bars | safe }}
-</div>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">What moved the needle</div>
+        <h2>Spikes and the stories behind them</h2>
+      </div>
+      <p>Days when a party's searches hit at least twice their weekly norm, matched to headlines published within a day or two.</p>
+    </div>
+    {{ spike_timeline(spikes, entities, 6) }}
+  </div>
+</section>
 
-<div class="card">
-    <h2>Related Queries</h2>
-    {{ charts.related_queries | safe }}
-</div>
-
-<div class="card">
-    {% include "share_strip.html" %}
-</div>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="kicker">Latest</div><h2>In the news</h2></div>
+      <a class="btn" href="xreport.html">All headlines <span class="arrow">→</span></a>
+    </div>
+    <div class="grid g4">
+      {% for code, ent in entities.items() %}
+      <div class="card reveal" style="--c: {{ ent.color }}">
+        <div class="news-card-head"><span class="party"><span class="dot"></span>{{ ent.short_name }}</span></div>
+        {{ news_list(news.get(code, []), 3) }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 {% endblock %}

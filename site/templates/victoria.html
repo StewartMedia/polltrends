@@ -1,140 +1,324 @@
 {% extends "base.html" %}
-{% block title %}PolTrends Australia — Victoria State Election{% endblock %}
+{% from "_macros.html" import race_cards, share_bar, spike_timeline, query_chips, news_list %}
 {% block content %}
-<p class="updated">Last updated: {{ updated }}</p>
+{% set m = model %}
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Victorian state election · Saturday 28 November 2026</div>
+    <h1 class="display" style="--hl: var(--onp)">{{ vic_headline }}</h1>
+    <p class="lede">{{ vic_lede }}</p>
+    <div class="countdown" data-countdown="2026-11-28T08:00:00+11:00" aria-label="Time until polls open">
+      <div class="cd-unit days"><b data-u="d">{{ vic_days }}</b><span>days</span></div>
+      <div class="cd-unit"><b data-u="h">--</b><span>hours</span></div>
+      <div class="cd-unit"><b data-u="m">--</b><span>mins</span></div>
+      <div class="cd-unit"><b data-u="s">--</b><span>secs</span></div>
+    </div>
+  </div>
+</section>
 
-<div class="card" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white;">
-    <h2 style="color: white; border-bottom-color: rgba(255,255,255,0.2);">Victoria — State Election Tracker</h2>
-    <p style="opacity: 0.8; font-size: 0.9rem;">Tracking entity search interest for Victorian political parties (geo: AU-VIC)</p>
-</div>
+{% if m %}
+{% set avg = m.average %}{% set t = m.uniform_swing_tally %}
+<section class="section" style="padding-top: 6px">
+  <div class="wrap">
+    <div class="grid g4">
+      <div class="card stat reveal">
+        <div class="label">Two-party preferred</div>
+        <div class="value tnum"><span style="color: var(--lnp)">{{ avg.tpp.LNP }}</span><span class="vs">–</span><span style="color: var(--alp)">{{ avg.tpp.ALP }}</span></div>
+        <div class="hint">Coalition v Labor · average of {{ avg.n_tpp }} polls</div>
+      </div>
+      <div class="card stat reveal">
+        <div class="label">Swing since 2022</div>
+        <div class="value tnum" style="color: {{ 'var(--lnp)' if m.swing_to_lnp > 0 else 'var(--alp)' }}">{{ '%.1f'|format(m.swing_to_lnp|abs) }}<small style="font-size:16px;color:var(--muted)"> pts</small></div>
+        <div class="hint">to the {{ 'Coalition' if m.swing_to_lnp > 0 else 'Labor' }} · Labor won 55.0–45.0</div>
+      </div>
+      <div class="card stat reveal">
+        <div class="label">Uniform swing</div>
+        <div class="value tnum"><span style="color: var(--lnp)">{{ t.get('LNP', 0) }}</span><span class="vs">·</span><span style="color: var(--alp)">{{ t.get('ALP', 0) }}</span><span class="vs">·</span><span style="color: var(--grn)">{{ t.get('GRN', 0) }}</span></div>
+        <div class="hint">Coalition · Labor · Greens seats, {{ m.majority }} to govern</div>
+      </div>
+      <div class="card stat reveal">
+        <div class="label">Seat-by-seat MRP</div>
+        {% if m.mrp %}{% set coal = (m.mrp.seats_LIB or 0) + (m.mrp.seats_NAT or 0) %}
+        <div class="value tnum"><span style="color: var(--lnp)">{{ coal|int }}</span><span class="vs">·</span><span style="color: var(--alp)">{{ (m.mrp.seats_ALP or 0)|int }}</span><span class="vs">·</span><span style="color: var(--onp)">{{ (m.mrp.seats_ONP or 0)|int }}</span></div>
+        <div class="hint">Coalition · Labor · One Nation · {{ m.mrp.firm }}, {{ m.mrp.fieldwork }}</div>
+        {% else %}<div class="value">—</div><div class="hint">No published MRP yet</div>{% endif %}
+      </div>
+    </div>
+  </div>
+</section>
 
-{% if vic_analysis %}
-<div class="winner-banner">
-    <h2>{{ vic_analysis.search_winner_name }} is front of mind this week in Victoria</h2>
-    <p>Avg search interest: {{ vic_analysis.avg_interest[vic_analysis.search_winner] }}
-    {% if vic_analysis.momentum_pct[vic_analysis.search_winner] > 0 %}
-     (up {{ vic_analysis.momentum_pct[vic_analysis.search_winner] }}% WoW)
-    {% elif vic_analysis.momentum_pct[vic_analysis.search_winner] < 0 %}
-     (down {{ vic_analysis.momentum_pct[vic_analysis.search_winner]|abs }}% WoW)
-    {% endif %}
-    </p>
-</div>
-
-<div class="card">
-    <div class="metric-grid" style="grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));">
-        {% for code, ent in vic_entities.items() %}
-        <div class="metric-card" style="border-top: 3px solid {{ ent.color }}">
-            <div class="value" style="color: {{ ent.color }}">{{ vic_analysis.avg_interest[code] }}</div>
-            <div class="label">{{ ent.short_name }}</div>
-            <div class="change {{ 'up' if vic_analysis.momentum_pct[code] > 0 else 'down' }}">
-                {% if vic_analysis.momentum_pct[code] > 0 %}&#9650;{% elif vic_analysis.momentum_pct[code] < 0 %}&#9660;{% endif %}
-                {{ vic_analysis.momentum_pct[code] }}% WoW
+<!-- ============ POLLS ============ -->
+<section class="section" id="polls">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="kicker">The polls</div><h2>Where the vote sits</h2></div>
+      <p>Average of the latest poll from each pollster in the last {{ avg.window_days }} days ({{ avg.n_polls }} polls). White ticks show the 2022 result.</p>
+    </div>
+    <div class="grid g2">
+      <div class="card reveal">
+        <h3>Primary vote average</h3>
+        <p class="sub">Legislative Assembly voting intention</p>
+        {% set base = m.baseline_2022.primary %}
+        <div class="pbars" style="margin-top: 26px">
+          {% for key, label, color in [('LNP','Coalition','var(--lnp)'), ('ALP','Labor','var(--alp)'), ('ONP','One Nation','var(--onp)'), ('GRN','Greens','var(--grn)'), ('OTH_ALL','Ind. & others','var(--ind)')] %}
+          {% set v = avg.primary[key] %}
+          {% if v is not none %}
+          <div class="pbar" style="--c: {{ color }}">
+            <div class="nm"><span class="dot"></span>{{ label }}</div>
+            <div class="track">
+              <div class="fill" style="width: {{ (v / 45 * 100)|round(1) }}%"></div>
+              {% if base.get(key) %}<div class="ghost" style="left: {{ (base[key] / 45 * 100)|round(1) }}%" data-l="2022: {{ '%.1f'|format(base[key]) }}"></div>{% endif %}
             </div>
+            <div class="v tnum">{{ '%.1f'|format(v) }}</div>
+          </div>
+          {% endif %}
+          {% endfor %}
         </div>
-        {% endfor %}
-    </div>
-</div>
-{% endif %}
-
-{% if vic_charts %}
-<div class="card">
-    <h2>Victoria — Search Interest Over Time</h2>
-    {{ vic_charts.interest_over_time | safe }}
-</div>
-
-<div class="card">
-    <h2>Victoria — Last 7 Days Comparison</h2>
-    {{ vic_charts.weekly_bars | safe }}
-</div>
-
-<div class="card">
-    <h2>Victoria — Related Queries</h2>
-    {{ vic_charts.related_queries | safe }}
-</div>
-{% else %}
-<div class="card">
-    <p style="color: #999;">No Victoria trends data available yet. Data is fetched daily.</p>
-</div>
-{% endif %}
-
-{% if vic_news %}
-<div class="card">
-    <h2>Victoria — Latest News</h2>
-    {% for code, ent in vic_entities.items() %}
-    {% set articles = vic_news.get(code, []) %}
-    {% if articles %}
-    <div style="margin-bottom: 1.5rem;">
-        <h3 style="font-size: 0.95rem; border-left: 4px solid {{ ent.color }}; padding-left: 0.75rem; margin-bottom: 0.5rem;">
-            {{ ent.short_name }}
-        </h3>
-        {% for article in articles[:5] %}
-        <div class="news-item">
-            <a href="{{ article.url }}" target="_blank" rel="noopener" class="news-title">{{ article.title }}</a>
-            <span class="news-meta">{{ article.source }} — {{ article.date }}</span>
-        </div>
-        {% endfor %}
-    </div>
-    {% endif %}
-    {% endfor %}
-</div>
-{% endif %}
-
-{% if vic_spikes %}
-<div class="card">
-    <h2>Victoria — Recent Spikes &amp; Associated News</h2>
-    {% for spike in vic_spikes %}
-    <div class="spike-item" style="border-left: 4px solid {{ vic_entities[spike.party_code].color }}; padding-left: 1rem; margin-bottom: 1.5rem;">
-        <div class="spike-header">
-            <strong>{{ spike.party_name }}</strong> — {{ spike.date }}
-            <span class="spike-ratio">{{ spike.ratio }}x above average (score: {{ spike.value }})</span>
-        </div>
-        {% if spike.news %}
-        <ul class="spike-news">
-            {% for article in spike.news %}
-            <li><a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title }}</a>
-                <span class="news-meta">{{ article.source }}</span>
-            </li>
+      </div>
+      <div class="card reveal">
+        <h3>Polls in the average</h3>
+        <p class="sub">Primary vote and two-party preferred (Coalition–Labor)</p>
+        <div class="table-wrap">
+          <table class="data" style="min-width: 460px">
+            <thead><tr><th>Pollster</th><th class="num">L/NP</th><th class="num">ALP</th><th class="num">ONP</th><th class="num">GRN</th><th class="num">2PP</th></tr></thead>
+            <tbody>
+            {% for p in avg.polls %}
+              <tr>
+                <td><div class="seat-name" style="font-size:13.5px">{{ p.firm }}</div><div class="muted">{{ p.fieldwork }}{% if p.client and 'N/a' not in p.client %} · {{ p.client }}{% endif %}</div></td>
+                <td class="num">{{ p.p_LNP|int if p.p_LNP is not none else '–' }}</td>
+                <td class="num">{{ p.p_ALP|int if p.p_ALP is not none else '–' }}</td>
+                <td class="num">{{ p.p_ONP|int if p.p_ONP is not none else '–' }}</td>
+                <td class="num">{{ p.p_GRN|int if p.p_GRN is not none else '–' }}</td>
+                <td class="num">{% if p.tpp_LNP is not none %}{{ p.tpp_LNP|int }}–{{ p.tpp_ALP|int }}{% else %}<span class="muted">n/a</span>{% endif %}</td>
+              </tr>
             {% endfor %}
-        </ul>
-        {% else %}
-        <p class="spike-no-news">No matching news articles found for this date.</p>
-        {% endif %}
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
-    {% endfor %}
-</div>
+    <div class="card chart-card reveal" style="margin-top:16px">
+      <h3>Primary vote trend</h3>
+      <p class="sub">Each dot is a published poll; lines are the rolling pollster average. Dotted lines mark leadership changes.</p>
+      {{ charts.polls }}
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEATS ============ -->
+<section class="section" id="seats">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="kicker">The seats</div><h2>Swing the pendulum</h2></div>
+      <p>All 88 Assembly seats placed by their 2022 margin. Drag the swing to see which Labor-versus-Coalition seats change hands if every seat moves by the same amount.</p>
+    </div>
+    <div class="card reveal" style="padding: 24px 24px 20px">
+      <div class="grid g2" style="align-items:end; gap: 24px">
+        <div>
+          <div class="kicker">At this swing</div>
+          <div class="verdict" id="verdict">–</div>
+          <div class="note" id="flip-count"></div>
+        </div>
+        <div class="tally">
+          <div class="tally-bar" id="tally-bar">
+            <span data-k="ALP" style="--c: var(--alp)"></span><span data-k="GRN" style="--c: var(--grn)"></span><span data-k="IND" style="--c: var(--ind)"></span><span data-k="LNP" style="--c: var(--lnp)"></span>
+            <div class="tally-mid" title="45 seats for a majority"></div>
+          </div>
+          <div class="tally-labels" id="tally-labels"></div>
+        </div>
+      </div>
+
+      <div class="swing-control">
+        <label for="swing">Uniform swing</label>
+        <input type="range" id="swing" min="-6" max="16" step="0.1" value="{{ '%.1f'|format(m.swing_to_lnp) }}" aria-describedby="swing-readout">
+        <div class="swing-readout tnum" id="swing-readout"></div>
+      </div>
+      <div class="presets">
+        <button type="button" data-swing="0">2022 result</button>
+        <button type="button" data-swing="{{ '%.1f'|format(m.swing_to_lnp) }}">Poll average ({{ '%.1f'|format(m.swing_to_lnp) }})</button>
+        {% if m.thresholds.alp_loses_majority %}<button type="button" data-swing="{{ '%.1f'|format(m.thresholds.alp_loses_majority + 0.1) }}">Labor loses majority ({{ '%.1f'|format(m.thresholds.alp_loses_majority + 0.1) }})</button>{% endif %}
+        {% if m.thresholds.lnp_wins_majority %}<button type="button" data-swing="{{ '%.1f'|format(m.thresholds.lnp_wins_majority + 0.1) }}">Coalition majority ({{ '%.1f'|format(m.thresholds.lnp_wins_majority + 0.1) }})</button>{% endif %}
+      </div>
+
+      <div class="pendulum-wrap" style="margin-top: 22px">
+        <div class="pendulum-scroll" id="pendulum-scroll">
+          <svg id="pendulum" role="img" aria-label="Electoral pendulum of 88 Victorian seats"></svg>
+        </div>
+        <div class="tooltip" id="seat-tip" role="status"></div>
+        <p class="note swipe-hint">Swipe sideways to see every seat. Tap a dot for details.</p>
+      </div>
+      <div class="legend">
+        <span><i style="--c: var(--alp)"></i>Labor</span>
+        <span><i style="--c: var(--lib)"></i>Liberal / Coalition</span>
+        <span><i style="--c: var(--nat)"></i>Nationals</span>
+        <span><i class="ring" style="--c: #fff"></i>White ring = changes hands at this swing</span>
+      </div>
+      <div class="kicker" style="margin-top: 18px">Seats changing hands</div>
+      <div class="flip-list" id="flip-list"></div>
+
+      <div class="divider" style="margin: 20px 0 16px"></div>
+      <div class="kicker">Not on the Labor–Coalition line ({{ other_contests|length }} seats)</div>
+      <p class="note" style="margin-bottom: 10px">These were Greens or independent contests in 2022, so a two-party swing does not move them. The model keeps them with their current holder.</p>
+      <div class="chips">
+        {% for s in other_contests %}
+          <span class="chip" title="{{ s.member }} · {{ s.region }}{% if s.note %} · {{ s.note }}{% endif %}" style="border-color: color-mix(in srgb, {{ party_colors[s.holder] }} 45%, transparent)"><span class="dot" style="--c: {{ party_colors[s.holder] }}; display:inline-block; width:7px; height:7px; margin-right:6px; vertical-align: 1px"></span>{{ s.seat }} <b style="color: var(--muted)">{{ s.holder }} {{ '%.1f'|format(s.margin) }} v {{ s.vs }}</b></span>
+        {% endfor %}
+      </div>
+    </div>
+    <script type="application/json" id="seat-data">{{ seat_json }}</script>
+
+    <div class="grid g2" style="margin-top: 16px">
+      <div class="card model-card reveal">
+        <span class="tag">Classic read · uniform swing</span>
+        <h3>{{ 'Coalition majority' if t.get('LNP',0) >= m.majority else ('Labor majority' if t.get('ALP',0) >= m.majority else 'Hung parliament') }}</h3>
+        <p class="sub">The poll-average swing applied to every Labor–Coalition seat.</p>
+        {% for key, label, color in [('LNP','Coalition','var(--lnp)'), ('ALP','Labor','var(--alp)'), ('GRN','Greens','var(--grn)')] %}
+        <div class="seat-row" style="--c: {{ color }}"><span class="nm">{{ label }}</span><span class="bar"><span style="width: {{ (t.get(key,0) / 60 * 100)|round(1) }}%"></span></span><span class="n tnum">{{ t.get(key, 0) }}</span></div>
+        {% endfor %}
+        <p class="note" style="margin-top: 12px">Blind spot: assumes One Nation preferences behave like 2022 minor-party flows and that One Nation wins no seats.</p>
+      </div>
+      <div class="card model-card reveal">
+        <span class="tag">Seat-by-seat · MRP</span>
+        {% if m.mrp %}{% set coal = (m.mrp.seats_LIB or 0) + (m.mrp.seats_NAT or 0) %}
+        <h3>{{ 'Hung parliament' if [coal, m.mrp.seats_ALP or 0]|max < m.majority else 'Majority' }}</h3>
+        <p class="sub">{{ m.mrp.firm }} for {{ m.mrp.client }}, {{ m.mrp.fieldwork }} · sample {{ m.mrp.sample }}</p>
+        {% for label, n, color in [('Coalition', coal, 'var(--lnp)'), ('Labor', m.mrp.seats_ALP or 0, 'var(--alp)'), ('One Nation', m.mrp.seats_ONP or 0, 'var(--onp)'), ('Greens', m.mrp.seats_GRN or 0, 'var(--grn)'), ('Independents', m.mrp.seats_IND or 0, 'var(--ind)')] %}
+        <div class="seat-row" style="--c: {{ color }}"><span class="nm">{{ label }}</span><span class="bar"><span style="width: {{ (n / 60 * 100)|round(1) }}%"></span></span><span class="n tnum">{{ n|int }}</span></div>
+        {% endfor %}
+        <p class="note" style="margin-top: 12px">MRP models each seat from a large national sample and demographics, so it can see One Nation wins. It is one projection, taken before the July leadership change settled.</p>
+        {% else %}<p class="empty">No published MRP yet.</p>{% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KEY SEATS ============ -->
+<section class="section" id="key-seats">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="kicker">Seats to watch</div><h2>Where it will be decided</h2></div>
+      <p>Labor seats within {{ tipping_band }} points of the poll-average swing, plus the closest Greens and independent contests. Headlines are the latest local coverage that names the seat.</p>
+    </div>
+    <div class="card reveal" style="padding: 8px 18px">
+      <div class="table-wrap">
+        <table class="data">
+          <thead><tr><th>Seat</th><th>Held by</th><th class="num">2022 margin</th><th>Why it matters</th><th>Latest local headline</th></tr></thead>
+          <tbody>
+          {% for s in m.key_seats %}{% set hl = (seat_news.get(s.seat) or [None])[0] %}
+            <tr>
+              <td><div class="seat-name">{{ s.seat }}</div><div class="muted">{{ s.region }}</div></td>
+              <td><span class="party" style="--c: {{ party_colors[s.holder] }}; font-weight:500; font-size:13.5px"><span class="dot"></span>{{ s.member }}</span>{% if s.note %}<div class="muted" style="margin-top:3px">{{ s.note }}</div>{% endif %}</td>
+              <td class="num"><span class="margin-chip" style="--c: {{ party_colors[s.holder] }}">{{ '%.1f'|format(s.margin) }}%</span><div class="muted" style="margin-top:4px">v {{ s.vs }}</div></td>
+              <td>{{ s.reason }}{% if s.classic %}<div class="muted">{{ 'Falls' if s.projected != s.holder else 'Holds' }} at the {{ '%.1f'|format(m.swing_to_lnp) }}-pt poll swing</div>{% endif %}</td>
+              <td style="max-width: 320px">{% if hl %}<a class="hl" href="{{ hl.url }}" target="_blank" rel="noopener">{{ hl.title }}</a><div class="muted">{{ hl.source }}{% if hl.date %} · {{ hl.date | fmt_day }}{% endif %}</div>{% else %}<span class="muted">No recent headline found</span>{% endif %}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if m.substate %}
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><div class="kicker">By region</div><h2>Where the vote is moving</h2></div><p>Latest published regional breakdowns (fieldwork within 120 days).</p></div>
+    <div class="grid g3">
+      {% for region, p in m.substate.items() %}
+      <div class="card reveal">
+        <h3>{{ region }}</h3><p class="sub">{{ p.firm }} · {{ p.fieldwork }}</p>
+        {% for key, label, color in [('LNP','Coalition','var(--lnp)'), ('ALP','Labor','var(--alp)'), ('ONP','One Nation','var(--onp)'), ('GRN','Greens','var(--grn)')] %}{% set v = p.get('p_' ~ key) %}
+          {% if v is not none %}<div class="seat-row" style="--c: {{ color }}"><span class="nm">{{ label }}</span><span class="bar"><span style="width: {{ (v / 50 * 100)|round(1) }}%"></span></span><span class="n tnum">{{ v|round|int }}</span></div>{% endif %}
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
 {% endif %}
 
-{% if vic_sentiment %}
-<div class="card">
-    <h2>Victoria — Query Sentiment</h2>
-    {% for code, data in vic_sentiment.items() %}
-    <div style="margin-bottom: 1.5rem;">
-        <h3 style="font-size: 0.95rem; margin-bottom: 0.5rem;">
-            <span style="color: {{ vic_entities[code].color }}">&#9632;</span>
-            {{ vic_entities[code].short_name }}
-            <span style="font-weight: 400; color: #999;">({{ data.queries_analysed }} queries)</span>
-        </h3>
-        {% set counts = data.sentiment_counts %}
-        {% set total = counts.positive + counts.negative + counts.neutral %}
-        {% if total > 0 %}
-        <div class="sentiment-bar">
-            <div class="pos" style="width: {{ (counts.positive / total * 100)|round }}%"></div>
-            <div class="neu" style="width: {{ (counts.neutral / total * 100)|round }}%"></div>
-            <div class="neg" style="width: {{ (counts.negative / total * 100)|round }}%"></div>
-        </div>
-        <div style="display: flex; gap: 1.5rem; font-size: 0.8rem; color: #666;">
-            <span>&#9632; Positive: {{ counts.positive }}</span>
-            <span style="color: #9E9E9E;">&#9632; Neutral: {{ counts.neutral }}</span>
-            <span style="color: #E53935;">&#9632; Negative: {{ counts.negative }}</span>
-            <span style="margin-left: auto;">Score: {{ data.sentiment_score }}</span>
-        </div>
-        {% endif %}
+<!-- ============ LEADERS ============ -->
+<section class="section" id="leaders">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="kicker">The leaders</div><h2>Who voters prefer, and who they look up</h2></div>
+      <p>Preferred premier from the latest published poll, next to each leader's share of Victorian search interest this week.</p>
     </div>
-    {% endfor %}
-</div>
+    <div class="grid g2">
+      <div class="card reveal">
+        {% set pp = m.preferred_premier if m else None %}
+        <h3>Preferred premier</h3>
+        {% if pp %}{% set dk = pp.get("lead_Don't know") or 0 %}
+        <p class="sub">{{ pp.firm }}{% if pp.client %}, {{ pp.client }}{% endif %} · {{ pp.fieldwork }}</p>
+        <div class="stackbar">
+          {% for key, color in [('lead_Wilson', 'var(--lib)'), ('lead_Carroll', 'var(--alp)'), ('lead_Pickering', 'var(--onp)')] %}{% if pp.get(key) %}<span style="--c: {{ color }}; width: {{ pp[key] }}%">{{ pp[key]|int }}%</span>{% endif %}{% endfor %}
+          <span style="--c: #2A3142; width: {{ dk }}%; color: var(--muted)">{{ dk|int }}% unsure</span>
+        </div>
+        {% else %}<p class="empty">No preferred-premier poll yet.</p>{% endif %}
+        <div class="grid" style="gap: 2px; margin-top: 10px">
+          {% for code in (leaders_summary.ranking if leaders_summary else leaders.keys()) %}{% set L = leaders[code] %}
+          <div class="leader" style="--c: {{ L.color }}; padding: 12px 0; border-bottom: 1px solid var(--line)">
+            <div class="avatar">{{ L.name.split(' ')[0][0] }}{{ L.name.split(' ')[-1][0] }}</div>
+            <div><div class="who">{{ L.name }}</div><div class="role">{{ L.role }}</div></div>
+            <div class="val">{% if leaders_summary %}<b class="tnum">{{ '%.0f'|format(leaders_summary.stats[code].share) if leaders_summary.stats[code].share >= 1 else '<1' }}%</b><span>search share</span>{% endif %}</div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="card chart-card reveal">
+        <h3>Leader search interest</h3>
+        <p class="sub">Victoria only, 0–100 relative to the busiest day in 90 days.</p>
+        {{ charts.leaders }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEARCH ============ -->
+{% if vic_summary %}
+<section class="section" id="search">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="kicker">Search interest · Victoria</div><h2>What Victorians are looking up</h2></div>
+      <p>Party topic searches from Victoria only, week to {{ vic_summary.period.end | fmt_day_long }}.</p>
+    </div>
+    {{ race_cards(vic_summary, vic_entities, vic_sparks) }}
+    <div class="card chart-card reveal" style="margin-top:16px">{{ charts.vic_interest }}</div>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card reveal"><h3>Rising searches in Victoria</h3><p class="sub">Fastest-growing related queries over 90 days.</p>{{ query_chips(vic_related, vic_entities) }}</div>
+      <div class="card reveal"><h3>Spikes</h3><p class="sub">Unusual days and the coverage around them.</p>{{ spike_timeline(vic_spikes, vic_entities, 4) }}</div>
+    </div>
+  </div>
+</section>
 {% endif %}
 
-<div class="card">
-    {% include "share_strip.html" %}
-</div>
+<section class="section" id="vic-news">
+  <div class="wrap">
+    <div class="section-head"><div><div class="kicker">Latest</div><h2>Campaign headlines</h2></div></div>
+    <div class="grid g3">
+      {% for code, ent in vic_entities.items() %}
+      <div class="card reveal" style="--c: {{ ent.color }}">
+        <div class="news-card-head"><span class="party"><span class="dot"></span>{{ ent.name }}</span></div>
+        {{ news_list(vic_news.get(code, []), 4) }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="card reveal">
+      <h3>How to read this page</h3>
+      <p class="note" style="margin-top:8px; max-width: 95ch">
+        Polls come from the public record collated on <a href="{{ m.polls_source if m else '#' }}" target="_blank" rel="noopener">Wikipedia</a> (snapshot {{ m.polls_date | fmt_day_long if m else '–' }}), each linked there to the original report.
+        Seat margins are the 2022 two-candidate-preferred results from the published pre-election pendulum, with Prahran shown as a Liberal seat after the 2025 by-election.
+        The uniform-swing model is the classic back-of-envelope read, not a forecast: real swings vary seat to seat, sitting members matter, and One Nation on {{ m.average.primary.ONP if m else '–' }}% makes 2022 preference flows a weak guide.
+        Search interest measures attention, not voting intention. <a href="analysis.html#method">Full method</a>.
+      </p>
+    </div>
+  </div>
+</section>
 {% endblock %}
