@@ -10,7 +10,8 @@ A single workflow, `.github/workflows/poltrends.yml`, runs `scripts/run_daily.py
 
 - 19:30 UTC (06:30 AEDT / 05:30 AEST): full run with Google Trends, news, polls and site.
 - 07:30 UTC (18:30 AEDT): refresh of news, polls and site. Trends is skipped because today's snapshot already exists.
-- Manual: Actions → *PolTrends daily update* → *Run workflow*. Tick *force_trends* to refetch Trends.
+- Manual: Actions → *PolTrends daily update* → *Run workflow* (needs repo admin). Tick *force_trends* to refetch Trends.
+- Push: any push to `main` that changes `scripts/`, `config/`, `site/`, `requirements.txt` or the workflow runs the pipeline and redeploys.
 
 No local machine, cron job or language model is involved. Each step is isolated. If one source fails, the site keeps its last good snapshot and labels it with its date. The footer's *Data health* panel shows the result of every step in the last run.
 

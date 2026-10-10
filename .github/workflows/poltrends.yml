@@ -4,10 +4,20 @@ name: PolTrends daily update
 # 19:30 UTC = 06:30 AEDT / 05:30 AEST: fetch Google Trends, news and polls.
 # 07:30 UTC = 18:30 AEDT: refresh news and polls (Trends is skipped when today's
 # snapshot already exists, to stay well inside Google's rate limits).
+# A push that changes pipeline code also runs it, so code changes are tested in
+# CI and deployed straight away. The bot's own data/docs commits do not trigger it.
 on:
   schedule:
     - cron: '30 19 * * *'
     - cron: '30 7 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'config/**'
+      - 'site/**'
+      - 'requirements.txt'
+      - '.github/workflows/poltrends.yml'
   workflow_dispatch:
     inputs:
       force_trends:
