@@ -3,7 +3,7 @@
   "polls_date": "2026-10-11",
   "polls_source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Victorian_state_election",
   "election_date": "2026-11-28",
-  "days_to_go": 48,
+  "days_to_go": 47,
   "majority": 45,
   "baseline_2022": {
     "source": "2022 Victorian state election, Legislative Assembly (VEC, via Wikipedia)",
@@ -108,16 +108,16 @@
     "lnp_wins_majority": 7.6
   },
   "mrp": {
-    "date": "2026-07-15",
-    "fieldwork": "July 2026",
-    "firm": "YouGov",
-    "client": "Common Threads",
-    "sample": "4003",
-    "seats_ALP": 29.0,
+    "date": "2026-09-15",
+    "fieldwork": "March 2026 - September 2026",
+    "firm": "Roy Morgan",
+    "client": "nan",
+    "sample": "7708",
+    "seats_ALP": 40.0,
     "seats_LIB": 31.0,
-    "seats_NAT": 8.0,
-    "seats_GRN": 3.0,
-    "seats_ONP": 17.0,
+    "seats_NAT": 31.0,
+    "seats_GRN": 6.0,
+    "seats_ONP": 11.0,
     "seats_IND": 0.0
   },
   "preferred_premier": {

@@ -1,7 +1,7 @@
 {
   "source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Victorian_state_election",
-  "revision": 1379166401,
-  "fetched_at": "2026-10-11T06:35:45+11:00",
+  "revision": 1379669213,
+  "fetched_at": "2026-10-11T18:42:49+11:00",
   "assembly": [
     {
       "date": "2026-09-28",
@@ -1232,6 +1232,19 @@
     ]
   },
   "mrp": [
+    {
+      "date": "2026-09-15",
+      "fieldwork": "March 2026 - September 2026",
+      "firm": "Roy Morgan",
+      "client": "nan",
+      "sample": "7708",
+      "seats_ALP": 40.0,
+      "seats_LIB": 31.0,
+      "seats_NAT": 31.0,
+      "seats_GRN": 6.0,
+      "seats_ONP": 11.0,
+      "seats_IND": 0.0
+    },
     {
       "date": "2026-07-15",
       "fieldwork": "July 2026",
