@@ -27,8 +27,18 @@ No local machine, cron job or language model is involved. Each step is isolated.
 | Rolling 7-day summary | `weekly_analysis.py` | `weekly_analysis.json`, `victoria/leaders_analysis.json` |
 | Briefing (rule-based, no LLM) | `generate_narrative.py` | `briefing.json` |
 | Site and share images | `build_site.py`, `generate_charts.py`, `generate_og_image.py` | `docs/` |
+| X posts (separate workflow step) | `post_x.py` | `data/x/ledger.json`, `drafts.json` |
 
 Snapshot folders use the Melbourne calendar date.
+
+## Posting to X (@poltrendsau)
+
+`scripts/post_x.py` runs after the pipeline. It builds posts from fixed templates (no language model) for three events: a newly published Victorian poll, Monday's share-of-search summary, and a strong search spike from the last three days (at least 3x the 7-day average and an index of 8 or more). Each post attaches that day's share image and contains no link, because X charges $0.015 per post but $0.20 per post with a URL.
+
+- **Mode:** repository variable `X_POST_MODE` = `off`, `dry-run` (default) or `live`. Dry-run writes drafts to `data/x/drafts.json` and the Actions run summary and never calls X.
+- **Guardrails:** at most 1 post per run and 2 per Melbourne day; `data/x/ledger.json` records every event so nothing posts twice; the first run baselines existing events; a poll that looks like a Wikipedia edit of a known poll (same firm within 7 days, or same date and figures) is not announced as new; failed posts retry once.
+- **Credentials:** GitHub Actions secrets `X_API_KEY`, `X_API_SECRET` (Jim's X app) and `X_ACCESS_TOKEN`, `X_ACCESS_TOKEN_SECRET` (the @poltrendsau account). Create the account tokens by running `.venv/bin/python scripts/x_authorise.py` locally while logged in to X as @poltrendsau. It never prints the tokens.
+- **Preview:** `.venv/bin/python scripts/post_x.py --preview` prints a sample of each post type from the latest data.
 
 ## Victorian seats
 
