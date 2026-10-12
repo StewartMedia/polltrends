@@ -261,8 +261,28 @@ def _oauth():
                   os.environ["X_ACCESS_TOKEN"], os.environ["X_ACCESS_TOKEN_SECRET"])
 
 
+CRED_NAMES = ("X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_TOKEN_SECRET")
+
+
 def have_credentials() -> bool:
-    return all(os.getenv(k) for k in ("X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_TOKEN_SECRET"))
+    return all(os.getenv(k) for k in CRED_NAMES)
+
+
+def credential_status() -> str:
+    """One line for the run log. Checks presence, and app-key validity with X's free
+    app-only token endpoint. Never prints values and never spends API credit."""
+    missing = [k for k in CRED_NAMES if not os.getenv(k)]
+    if missing:
+        return "X credentials: missing " + ", ".join(missing)
+    import requests
+    try:
+        r = requests.post("https://api.x.com/oauth2/token", timeout=20,
+                          auth=(os.environ["X_API_KEY"], os.environ["X_API_SECRET"]),
+                          data={"grant_type": "client_credentials"})
+        app = "app keys accepted by X" if r.ok else f"app keys REJECTED by X ({r.status_code})"
+    except requests.RequestException as exc:
+        app = f"app keys not checked ({exc.__class__.__name__})"
+    return f"X credentials: all 4 present; {app}"
 
 
 def publish(text: str, image: Path | None) -> str:
@@ -300,6 +320,10 @@ def main() -> int:
     if mode == "live" and not have_credentials():
         print("X_POST_MODE=live but X credentials are missing; running as dry-run.")
         mode = "dry-run"
+
+    creds = credential_status()
+    print(creds)
+    _summary([f"_{creds}_", ""])
 
     today, now = today_local(), now_local()
     stamp = now.isoformat(timespec="seconds")
