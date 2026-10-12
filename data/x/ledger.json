@@ -1,0 +1,594 @@
+{
+  "created": "2026-10-12T13:45:04+11:00",
+  "seen": {
+    "poll:2026-09-28:Freshwater": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "freshwater",
+        "date": "2026-09-28",
+        "sig": "24/29/22/14/53"
+      }
+    },
+    "poll:2026-10-08:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2026-10-08",
+        "sig": "24/30/24/16/56"
+      }
+    },
+    "weekly:2026-W41": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00"
+    },
+    "poll:2026-09-20:DemosAU/Premier National": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "demosaupremiernational",
+        "date": "2026-09-20",
+        "sig": "25/30/20/14/52"
+      }
+    },
+    "poll:2026-09-14:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2026-09-14",
+        "sig": "24/29/25/15/56"
+      }
+    },
+    "poll:2026-09-13:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2026-09-13",
+        "sig": "25/28/23/12/None"
+      }
+    },
+    "poll:2026-08-16:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2026-08-16",
+        "sig": "25/27/23/12/None"
+      }
+    },
+    "poll:2026-08-11:DemosAU/Premier National": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "demosaupremiernational",
+        "date": "2026-08-11",
+        "sig": "23/32/22/13/55"
+      }
+    },
+    "poll:2026-08-07:Roy Morgan": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "roymorgan",
+        "date": "2026-08-07",
+        "sig": "26/26/23.5/12.5/51"
+      }
+    },
+    "poll:2026-08-03:Freshwater": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "freshwater",
+        "date": "2026-08-03",
+        "sig": "25/30/22/14/52"
+      }
+    },
+    "poll:2026-08-01:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2026-08-01",
+        "sig": "23/30/22/14/57"
+      }
+    },
+    "poll:2026-07-26:Newspoll": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "newspoll",
+        "date": "2026-07-26",
+        "sig": "28/31/19/13/52"
+      }
+    },
+    "poll:2026-07-14:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2026-07-14",
+        "sig": "26/26/27/12/None"
+      }
+    },
+    "poll:2026-07-12:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2026-07-12",
+        "sig": "27/27/22/12/None"
+      }
+    },
+    "poll:2026-07-10:YouGov (MRP)": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "yougovmrp",
+        "date": "2026-07-10",
+        "sig": "23/26/24/13/53.8"
+      }
+    },
+    "poll:2026-06-28:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2026-06-28",
+        "sig": "26/26/27/13/54"
+      }
+    },
+    "poll:2026-06-15:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2026-06-15",
+        "sig": "26/26/24/12/None"
+      }
+    },
+    "poll:2026-06-11:DemosAU/Premier National": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "demosaupremiernational",
+        "date": "2026-06-11",
+        "sig": "21/30/23/15/55"
+      }
+    },
+    "poll:2026-06-08:Freshwater": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "freshwater",
+        "date": "2026-06-08",
+        "sig": "23/27/25/14/53"
+      }
+    },
+    "poll:2026-04-24:Roy Morgan": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "roymorgan",
+        "date": "2026-04-24",
+        "sig": "25.5/24/24.5/13.5/49"
+      }
+    },
+    "poll:2026-04-15:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2026-04-15",
+        "sig": "27/29/21/10/None"
+      }
+    },
+    "poll:2026-03-23:Freshwater": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "freshwater",
+        "date": "2026-03-23",
+        "sig": "27/30/20/14/52"
+      }
+    },
+    "poll:2026-02-27:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2026-02-27",
+        "sig": "25/28/24/13/52"
+      }
+    },
+    "poll:2026-02-23:Freshwater": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "freshwater",
+        "date": "2026-02-23",
+        "sig": "28/27/23/13/50"
+      }
+    },
+    "poll:2026-02-16:Roy Morgan": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "roymorgan",
+        "date": "2026-02-16",
+        "sig": "25.5/21.5/26.5/13.5/48"
+      }
+    },
+    "poll:2026-02-14:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2026-02-14",
+        "sig": "28/30/11/12/None"
+      }
+    },
+    "poll:2026-02-10:DemosAU/Premier National": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "demosaupremiernational",
+        "date": "2026-02-10",
+        "sig": "23/29/21/15/53"
+      }
+    },
+    "poll:2025-12-08:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2025-12-08",
+        "sig": "31/40/None/12/50"
+      }
+    },
+    "poll:2025-12-07:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2025-12-07",
+        "sig": "28/39/None/12/None"
+      }
+    },
+    "poll:2025-11-24:Freshwater": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "freshwater",
+        "date": "2025-11-24",
+        "sig": "30/37/None/15/50"
+      }
+    },
+    "poll:2025-11-20:Newspoll": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "newspoll",
+        "date": "2025-11-20",
+        "sig": "28/36/None/14/51"
+      }
+    },
+    "poll:2025-11-17:Freshwater": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "freshwater",
+        "date": "2025-11-17",
+        "sig": "30/37/None/15/51"
+      }
+    },
+    "poll:2025-10-27:DemosAU/Premier National": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "demosaupremiernational",
+        "date": "2025-10-27",
+        "sig": "26/37/None/15/51"
+      }
+    },
+    "poll:2025-10-14:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2025-10-14",
+        "sig": "32/37/None/13/48"
+      }
+    },
+    "poll:2025-10-12:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2025-10-12",
+        "sig": "30/33/None/12/None"
+      }
+    },
+    "poll:2025-09-11:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2025-09-11",
+        "sig": "32/37/None/13/48"
+      }
+    },
+    "poll:2025-09-09:DemosAU/Premier National": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "demosaupremiernational",
+        "date": "2025-09-09",
+        "sig": "26/38/None/15/51"
+      }
+    },
+    "poll:2025-08-17:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2025-08-17",
+        "sig": "32/33/None/12/None"
+      }
+    },
+    "poll:2025-06-30:Newspoll": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "newspoll",
+        "date": "2025-06-30",
+        "sig": "35/35/None/12/47"
+      }
+    },
+    "poll:2025-06-30:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2025-06-30",
+        "sig": "33/38/None/14/48.5"
+      }
+    },
+    "poll:2025-04-02:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2025-04-02",
+        "sig": "29/41/None/13/51"
+      }
+    },
+    "poll:2025-03-30:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2025-03-30",
+        "sig": "24/41/None/14/None"
+      }
+    },
+    "poll:2025-03-21:DemosAU/Premier National": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "demosaupremiernational",
+        "date": "2025-03-21",
+        "sig": "25/39/None/15/52"
+      }
+    },
+    "poll:2024-11-20:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2024-11-20",
+        "sig": "30/43/None/14/51"
+      }
+    },
+    "poll:2024-11-10:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2024-11-10",
+        "sig": "28/38/None/13/None"
+      }
+    },
+    "poll:2024-10-03:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2024-10-03",
+        "sig": "30/40/None/12/51"
+      }
+    },
+    "poll:2024-09-18:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2024-09-18",
+        "sig": "30/40/None/12/50"
+      }
+    },
+    "poll:2024-09-07:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2024-09-07",
+        "sig": "27/37/None/14/None"
+      }
+    },
+    "poll:2024-08-29:Wolf & Smith": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "wolfsmith",
+        "date": "2024-08-29",
+        "sig": "28/40/None/14/52"
+      }
+    },
+    "poll:2024-08-05:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2024-08-05",
+        "sig": "31/40/None/12/50"
+      }
+    },
+    "poll:2024-07-14:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2024-07-14",
+        "sig": "27/37/None/15/None"
+      }
+    },
+    "poll:2024-06-07:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2024-06-07",
+        "sig": "35/38/None/14/45"
+      }
+    },
+    "poll:2024-05-19:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2024-05-19",
+        "sig": "28/37/None/13/None"
+      }
+    },
+    "poll:2024-03-24:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2024-03-24",
+        "sig": "33/35/None/13/45.4"
+      }
+    },
+    "poll:2024-03-20:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2024-03-20",
+        "sig": "36/38/None/10/46"
+      }
+    },
+    "poll:2024-01-15:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2024-01-15",
+        "sig": "22/42/None/13/None"
+      }
+    },
+    "poll:2023-12-12:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2023-12-12",
+        "sig": "37/None/None/13/44.1"
+      }
+    },
+    "poll:2023-12-03:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2023-12-03",
+        "sig": "37/None/None/11/None"
+      }
+    },
+    "poll:2023-10-15:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2023-10-15",
+        "sig": "39/None/None/12/None"
+      }
+    },
+    "poll:2023-09-14:RedBridge/Accent": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2023-09-14",
+        "sig": "37/None/None/13/43.5"
+      }
+    },
+    "poll:2023-08-15:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2023-08-15",
+        "sig": "39/None/None/13/None"
+      }
+    },
+    "poll:2023-07-20:Roy Morgan": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "roymorgan",
+        "date": "2023-07-20",
+        "sig": "33/None/None/12.5/47"
+      }
+    },
+    "poll:2023-06-15:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2023-06-15",
+        "sig": "41/None/None/15/None"
+      }
+    },
+    "poll:2023-05-22:Roy Morgan": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "roymorgan",
+        "date": "2023-05-22",
+        "sig": "42/None/None/12.5/38.5"
+      }
+    },
+    "poll:2023-04-22:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2023-04-22",
+        "sig": "42/None/None/10/None"
+      }
+    },
+    "poll:2023-02-18:Resolve": {
+      "status": "baseline",
+      "at": "2026-10-12T13:45:04+11:00",
+      "poll": {
+        "firm": "resolve",
+        "date": "2023-02-18",
+        "sig": "41/None/None/13/None"
+      }
+    }
+  }
+}
