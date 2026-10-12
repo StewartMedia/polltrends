@@ -55,14 +55,14 @@ jobs:
           POLTRENDS_FORCE_TRENDS: ${{ inputs.force_trends && '1' || '' }}
         run: python scripts/run_daily.py
 
-      # Posts to X (@poltrendsau) from fixed templates. Mode comes from the repository
-      # variable X_POST_MODE: off, dry-run (default: drafts only) or live.
+      # Posts to X (@poltrendsau) from fixed templates. Live since 12 Oct 2026. To pause,
+      # set the repository variable X_POST_MODE to off (or dry-run for drafts only).
       # A failure here never blocks the site update.
       - name: Post to X
         continue-on-error: true
         env:
           PYTHONUNBUFFERED: '1'
-          X_POST_MODE: ${{ vars.X_POST_MODE || 'dry-run' }}
+          X_POST_MODE: ${{ vars.X_POST_MODE || 'live' }}
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}

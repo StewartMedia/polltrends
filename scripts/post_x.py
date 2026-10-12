@@ -303,6 +303,19 @@ def publish(text: str, image: Path | None) -> str:
     return r.json()["data"]["id"]
 
 
+EXPECTED_ACCOUNT = "poltrendsau"
+
+
+def account_username() -> str:
+    """Username the access token posts as. Costs one user read ($0.010), so main() calls it
+    only until a match is recorded in the ledger."""
+    import requests
+    r = requests.get("https://api.x.com/2/users/me", auth=_oauth(), timeout=30)
+    if r.status_code >= 400:
+        raise RuntimeError(f"X API {r.status_code}: {r.text[:200]}")
+    return r.json()["data"]["username"]
+
+
 # --------------------------------------------------------------------------- run
 
 def _summary(lines: list[str]) -> None:
@@ -335,6 +348,24 @@ def main() -> int:
         print(f"First run: baselined {len(seen)} existing events. Nothing posted.")
         _summary(["## X posts", f"First run: baselined {len(seen)} existing events. Nothing posted."])
         return 0
+
+    # Before the first live post, confirm the token really posts as @poltrendsau, so a
+    # mis-pasted secret can never publish to another account. Recorded once, then skipped.
+    if mode == "live" and (ledger.get("account") or {}).get("username", "").lower() != EXPECTED_ACCOUNT:
+        try:
+            username = account_username()
+        except Exception as exc:
+            username, why = None, f"could not confirm the account ({str(exc)[:160]})"
+        else:
+            why = None if username.lower() == EXPECTED_ACCOUNT else f"token posts as @{username}"
+        if why:
+            print(f"Not posting: {why}. Running as dry-run.")
+            _summary([f"**Not posting:** {why}. Running as dry-run.", ""])
+            mode = "dry-run"
+        else:
+            ledger["account"] = {"username": username, "verified_at": stamp}
+            print(f"Confirmed the X token posts as @{username}.")
+            _summary([f"Confirmed the X token posts as @{username}.", ""])
 
     seen = ledger.setdefault("seen", {})
     done = ("baseline", "posted", "drafted", "skipped", "edit")
