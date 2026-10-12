@@ -1,8 +1,22 @@
 {
   "source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Victorian_state_election",
-  "revision": 1379684516,
-  "fetched_at": "2026-10-12T16:12:53+11:00",
+  "revision": 1379848283,
+  "fetched_at": "2026-10-12T19:06:42+11:00",
   "assembly": [
+    {
+      "date": "2026-10-10",
+      "fieldwork": "6-10 Oct",
+      "firm": "Resolve",
+      "client": "The Age",
+      "sample": "1000",
+      "p_ALP": 25.0,
+      "p_LNP": 28.0,
+      "p_GRN": 15.0,
+      "p_ONP": 23.0,
+      "p_IND": 4.0,
+      "p_OTH": 5.0,
+      "p_OTH_ALL": 9.0
+    },
     {
       "date": "2026-10-08",
       "fieldwork": "2–8 Oct",
@@ -1278,6 +1292,28 @@
     }
   ],
   "preferred_premier": [
+    {
+      "date": "2026-10-10",
+      "fieldwork": "6–10 Oct 2026",
+      "firm": "Resolve",
+      "client": "The Age",
+      "sample": "1000",
+      "lead_Carroll": 22.0,
+      "lead_Wilson": 29.0,
+      "lead_Pickering": 14.0,
+      "lead_Don't know": 35.0
+    },
+    {
+      "date": "2026-10-08",
+      "fieldwork": "2–8 Oct 2026",
+      "firm": "RedBridge/Accent",
+      "client": "Australian Financial Review",
+      "sample": "1008",
+      "lead_Carroll": 19.0,
+      "lead_Wilson": 28.0,
+      "lead_Pickering": 8.0,
+      "lead_Don't know": 45.0
+    },
     {
       "date": "2026-09-28",
       "fieldwork": "24–28 Sep 2026",

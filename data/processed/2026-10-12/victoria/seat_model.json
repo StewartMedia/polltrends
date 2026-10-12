@@ -30,8 +30,8 @@
       "ALP": 24.5,
       "LNP": 29.2,
       "ONP": 22.2,
-      "GRN": 14.0,
-      "OTH_ALL": 10.0
+      "GRN": 14.8,
+      "OTH_ALL": 9.2
     },
     "tpp": {
       "ALP": 46.3,
@@ -39,6 +39,20 @@
     },
     "n_tpp": 3,
     "polls": [
+      {
+        "date": "2026-10-10",
+        "fieldwork": "6-10 Oct",
+        "firm": "Resolve",
+        "client": "The Age",
+        "sample": "1000",
+        "p_ALP": 25.0,
+        "p_LNP": 28.0,
+        "p_ONP": 23.0,
+        "p_GRN": 15.0,
+        "p_OTH_ALL": 9.0,
+        "tpp_ALP": null,
+        "tpp_LNP": null
+      },
       {
         "date": "2026-10-08",
         "fieldwork": "2–8 Oct",
@@ -80,20 +94,6 @@
         "p_OTH_ALL": 11.0,
         "tpp_ALP": 48.0,
         "tpp_LNP": 52.0
-      },
-      {
-        "date": "2026-09-13",
-        "fieldwork": "13 Sept",
-        "firm": "Resolve",
-        "client": "The Age",
-        "sample": "1000",
-        "p_ALP": 25.0,
-        "p_LNP": 28.0,
-        "p_ONP": 23.0,
-        "p_GRN": 12.0,
-        "p_OTH_ALL": 12.0,
-        "tpp_ALP": null,
-        "tpp_LNP": null
       }
     ]
   },
@@ -121,15 +121,15 @@
     "seats_IND": 0.0
   },
   "preferred_premier": {
-    "date": "2026-09-28",
-    "fieldwork": "24–28 Sep 2026",
-    "firm": "Freshwater",
-    "client": "Herald Sun",
-    "sample": "1030",
-    "lead_Carroll": 30.0,
-    "lead_Wilson": 37.0,
-    "lead_Pickering": 13.0,
-    "lead_Don't know": 20.0
+    "date": "2026-10-10",
+    "fieldwork": "6–10 Oct 2026",
+    "firm": "Resolve",
+    "client": "The Age",
+    "sample": "1000",
+    "lead_Carroll": 22.0,
+    "lead_Wilson": 29.0,
+    "lead_Pickering": 14.0,
+    "lead_Don't know": 35.0
   },
   "events": [
     {
@@ -443,6 +443,15 @@
       "ONP": 22.2,
       "GRN": 14.0,
       "OTH_ALL": 10.0,
+      "tpp_ALP": 46.3
+    },
+    {
+      "date": "2026-10-10",
+      "ALP": 24.5,
+      "LNP": 29.2,
+      "ONP": 22.2,
+      "GRN": 14.8,
+      "OTH_ALL": 9.2,
       "tpp_ALP": 46.3
     }
   ],
