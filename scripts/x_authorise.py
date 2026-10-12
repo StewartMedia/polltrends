@@ -4,8 +4,12 @@ Run this yourself in a terminal (it never prints the tokens):
 
     cd ~/coding/poltrends && .venv/bin/python scripts/x_authorise.py
 
-1. It reads the app key and secret (X_API_KEY, X_API_SECRET) from the environment or
-   ~/.hermes/.env.
+1. It looks for the X app's API Key and API Key Secret (POLTRENDS_X_API_KEY /
+   POLTRENDS_X_API_SECRET, then X_API_KEY / X_API_SECRET) in the environment or
+   ~/.hermes/.env. If none are valid it asks for them at hidden prompts, checks them with
+   X, and saves them as POLTRENDS_X_API_KEY / POLTRENDS_X_API_SECRET. Copy them from
+   console.x.com (the X developer console, not console.x.ai): your app -> Keys and tokens
+   -> Consumer keys.
 2. It opens an X authorisation page. Make sure you are logged in as @poltrendsau there,
    approve the app, and copy the PIN that X shows.
 3. Paste the PIN at the hidden prompt.
@@ -54,6 +58,46 @@ def save_env(values: dict[str, str]) -> None:
     ENV_FILE.chmod(0o600)
 
 
+def app_keys_problem(key: str | None, secret: str | None) -> str | None:
+    """Why these are not usable X app keys, or None if X accepts them."""
+    import requests
+    if not key or not secret:
+        return "not set"
+    if key.startswith("xai-") or secret.startswith("xai-"):
+        return "these are xAI (Grok) API keys, not X API keys"
+    try:
+        r = requests.post("https://api.x.com/oauth2/token", auth=(key, secret),
+                          data={"grant_type": "client_credentials"}, timeout=20)
+    except requests.RequestException as exc:
+        return f"could not reach X: {exc}"
+    if r.ok:
+        return None
+    return f"X rejected them ({r.status_code}: {r.text[:120]})"
+
+
+def get_app_keys() -> tuple[str, str] | None:
+    for kname, sname in (("POLTRENDS_X_API_KEY", "POLTRENDS_X_API_SECRET"), ("X_API_KEY", "X_API_SECRET")):
+        key, secret = env_value(kname), env_value(sname)
+        problem = app_keys_problem(key, secret)
+        if problem is None:
+            print(f"Using the X app keys in {kname} / {sname}.")
+            return key, secret
+        if key or secret:
+            print(f"Skipping {kname} / {sname}: {problem}.")
+    print("\nPaste your X app's Consumer keys from console.x.com -> your app -> Keys and tokens.")
+    print("(The input is hidden. The API Key is about 25 characters, the secret about 50.)")
+    for _ in range(3):
+        key = getpass.getpass("API Key: ").strip()
+        secret = getpass.getpass("API Key Secret: ").strip()
+        problem = app_keys_problem(key, secret)
+        if problem is None:
+            save_env({"POLTRENDS_X_API_KEY": key, "POLTRENDS_X_API_SECRET": secret})
+            print(f"X accepted them. Saved to {ENV_FILE} as POLTRENDS_X_API_KEY / POLTRENDS_X_API_SECRET.")
+            return key, secret
+        print(f"Not usable: {problem}. Try again.")
+    return None
+
+
 def gh_set(name: str, value: str) -> bool:
     r = subprocess.run(["gh", "secret", "set", name, "--repo", REPO], input=value, text=True,
                        capture_output=True)
@@ -72,10 +116,11 @@ def clipboard_walkthrough(secrets: dict[str, str]) -> None:
 
 
 def main() -> int:
-    key, secret = env_value("X_API_KEY"), env_value("X_API_SECRET")
-    if not key or not secret:
-        print("X_API_KEY / X_API_SECRET not found in the environment or ~/.hermes/.env.")
+    keys = get_app_keys()
+    if not keys:
+        print("No usable X app keys. Nothing changed.")
         return 1
+    key, secret = keys
 
     last_error = None
     for host in HOSTS:
@@ -87,8 +132,9 @@ def main() -> int:
             last_error = exc
     else:
         print(f"X refused the request token: {last_error}")
-        print("Check the app in the X developer console: User authentication settings must be set up "
-              "with 'Read and write' permission (any callback URL is fine; this script uses a PIN).")
+        print("The keys are valid, so check the app in console.x.com: User authentication settings must "
+              "be set up (OAuth 1.0a, 'Read and write', type 'Web App, Automated App or Bot', callback "
+              "https://poltrends.stewartmedia.com.au/).")
         return 1
 
     auth_url = oauth.authorization_url(f"{host}/oauth/authorize")
