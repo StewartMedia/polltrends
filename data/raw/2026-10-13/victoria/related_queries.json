@@ -1,0 +1,147 @@
+{
+  "ALP": {
+    "top": [],
+    "rising": []
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal party australia",
+        "value": 100
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 45
+      },
+      {
+        "query": "leader of the liberal party",
+        "value": 42
+      },
+      {
+        "query": "one nation party",
+        "value": 40
+      },
+      {
+        "query": "labor party",
+        "value": 36
+      },
+      {
+        "query": "labour party",
+        "value": 35
+      },
+      {
+        "query": "liberals",
+        "value": 30
+      },
+      {
+        "query": "liberal party policies",
+        "value": 29
+      },
+      {
+        "query": "angus taylor",
+        "value": 22
+      },
+      {
+        "query": "liberal leaders",
+        "value": 19
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 18
+      }
+    ],
+    "rising": [
+      {
+        "query": "liberal leaders",
+        "value": 60
+      }
+    ]
+  },
+  "NAT": {
+    "top": [],
+    "rising": []
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      }
+    ],
+    "rising": []
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation australia",
+        "value": 8
+      },
+      {
+        "query": "one nation candidates",
+        "value": 7
+      },
+      {
+        "query": "pauline hanson",
+        "value": 6
+      },
+      {
+        "query": "one nation party",
+        "value": 6
+      },
+      {
+        "query": "one nation policies",
+        "value": 5
+      },
+      {
+        "query": "pauline hanson one nation",
+        "value": 5
+      },
+      {
+        "query": "what is one nation",
+        "value": 5
+      },
+      {
+        "query": "one nation policy",
+        "value": 4
+      },
+      {
+        "query": "one nation leader",
+        "value": 3
+      },
+      {
+        "query": "one nation news",
+        "value": 3
+      },
+      {
+        "query": "one nation polls",
+        "value": 2
+      },
+      {
+        "query": "liberal party",
+        "value": 1
+      },
+      {
+        "query": "one nation ai video",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation ai video",
+        "value": 17200
+      },
+      {
+        "query": "one nation candidates",
+        "value": 350
+      },
+      {
+        "query": "one nation leader",
+        "value": 50
+      }
+    ]
+  }
+}
