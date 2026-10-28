@@ -1,0 +1,441 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labor party",
+        "value": 100
+      },
+      {
+        "query": "labour",
+        "value": 88
+      },
+      {
+        "query": "liberal",
+        "value": 76
+      },
+      {
+        "query": "australian labor party",
+        "value": 27
+      },
+      {
+        "query": "labour party",
+        "value": 26
+      },
+      {
+        "query": "labor government",
+        "value": 16
+      },
+      {
+        "query": "one nation",
+        "value": 15
+      },
+      {
+        "query": "labor or labour",
+        "value": 15
+      },
+      {
+        "query": "labor policies",
+        "value": 14
+      },
+      {
+        "query": "australian labour party",
+        "value": 10
+      },
+      {
+        "query": "liberal party australia",
+        "value": 9
+      },
+      {
+        "query": "labour party australia",
+        "value": 8
+      },
+      {
+        "query": "one nation party",
+        "value": 7
+      },
+      {
+        "query": "labor vs liberal",
+        "value": 7
+      }
+    ],
+    "rising": [
+      {
+        "query": "labor or labour",
+        "value": 70
+      },
+      {
+        "query": "labor policies",
+        "value": 70
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal party",
+        "value": 100
+      },
+      {
+        "query": "liberal leader",
+        "value": 16
+      },
+      {
+        "query": "labor",
+        "value": 10
+      },
+      {
+        "query": "one nation party",
+        "value": 9
+      },
+      {
+        "query": "labor party",
+        "value": 8
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 8
+      },
+      {
+        "query": "labour party",
+        "value": 8
+      },
+      {
+        "query": "liberals",
+        "value": 6
+      },
+      {
+        "query": "liberal party policies",
+        "value": 6
+      },
+      {
+        "query": "pauline hanson",
+        "value": 4
+      }
+    ],
+    "rising": []
+  },
+  "NAT": {
+    "top": [],
+    "rising": []
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      },
+      {
+        "query": "the greens",
+        "value": 51
+      },
+      {
+        "query": "greens party",
+        "value": 19
+      },
+      {
+        "query": "australia greens",
+        "value": 18
+      },
+      {
+        "query": "australian greens",
+        "value": 13
+      },
+      {
+        "query": "the greens party",
+        "value": 13
+      },
+      {
+        "query": "greens senator",
+        "value": 11
+      },
+      {
+        "query": "greens leader",
+        "value": 10
+      },
+      {
+        "query": "greens policies",
+        "value": 9
+      },
+      {
+        "query": "liberal",
+        "value": 6
+      },
+      {
+        "query": "australian greens party",
+        "value": 6
+      },
+      {
+        "query": "one nation",
+        "value": 5
+      },
+      {
+        "query": "labor",
+        "value": 5
+      },
+      {
+        "query": "leader of greens",
+        "value": 5
+      },
+      {
+        "query": "greens policy",
+        "value": 5
+      },
+      {
+        "query": "the greens policies",
+        "value": 4
+      },
+      {
+        "query": "labour",
+        "value": 4
+      },
+      {
+        "query": "greens senator jordon steele john",
+        "value": 4
+      },
+      {
+        "query": "liberal party",
+        "value": 4
+      },
+      {
+        "query": "leader of the greens",
+        "value": 4
+      },
+      {
+        "query": "david shoebridge",
+        "value": 3
+      },
+      {
+        "query": "greens political party",
+        "value": 3
+      },
+      {
+        "query": "jordon steele-john",
+        "value": 0
+      },
+      {
+        "query": "car wash sign bans mazda suvs",
+        "value": 0
+      },
+      {
+        "query": "greens senator jordon steele-john",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "greens senator jordon steele john",
+        "value": 396350
+      },
+      {
+        "query": "jordon steele-john",
+        "value": 33350
+      },
+      {
+        "query": "car wash sign bans mazda suvs",
+        "value": 23600
+      },
+      {
+        "query": "greens senator jordon steele-john",
+        "value": 22400
+      },
+      {
+        "query": "carnival cruise line fleet australia 2028",
+        "value": 22350
+      },
+      {
+        "query": "jordan steele john",
+        "value": 16650
+      },
+      {
+        "query": "isaac rouse james bond",
+        "value": 9700
+      },
+      {
+        "query": "david shoebridge",
+        "value": 300
+      },
+      {
+        "query": "greens senator",
+        "value": 250
+      },
+      {
+        "query": "leader of greens",
+        "value": 70
+      },
+      {
+        "query": "greens policies",
+        "value": 60
+      },
+      {
+        "query": "leader of the greens",
+        "value": 60
+      }
+    ]
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation victoria",
+        "value": 13
+      },
+      {
+        "query": "one nation australia",
+        "value": 8
+      },
+      {
+        "query": "one nation candidates",
+        "value": 6
+      },
+      {
+        "query": "one nation party",
+        "value": 6
+      },
+      {
+        "query": "one nation policies",
+        "value": 5
+      },
+      {
+        "query": "pauline hanson",
+        "value": 5
+      },
+      {
+        "query": "what is one nation",
+        "value": 5
+      },
+      {
+        "query": "pauline hanson one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation candidates victoria",
+        "value": 3
+      },
+      {
+        "query": "one nation policy",
+        "value": 3
+      },
+      {
+        "query": "one nation win",
+        "value": 3
+      },
+      {
+        "query": "one nation leader",
+        "value": 2
+      },
+      {
+        "query": "one nation news",
+        "value": 2
+      },
+      {
+        "query": "labor",
+        "value": 2
+      },
+      {
+        "query": "one nation polling",
+        "value": 2
+      },
+      {
+        "query": "labour",
+        "value": 2
+      },
+      {
+        "query": "victorian election",
+        "value": 2
+      },
+      {
+        "query": "one nation polls",
+        "value": 2
+      },
+      {
+        "query": "one nation ad",
+        "value": 2
+      },
+      {
+        "query": "warren pickering",
+        "value": 2
+      },
+      {
+        "query": "one nation wa",
+        "value": 1
+      },
+      {
+        "query": "liberal party",
+        "value": 1
+      },
+      {
+        "query": "one nation party australia",
+        "value": 1
+      },
+      {
+        "query": "secret harbour",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation wa",
+        "value": 134550
+      },
+      {
+        "query": "secret harbour",
+        "value": 93950
+      },
+      {
+        "query": "mark nicholson one nation",
+        "value": 81600
+      },
+      {
+        "query": "one nation secret harbour",
+        "value": 80700
+      },
+      {
+        "query": "one nation ai ad",
+        "value": 58450
+      },
+      {
+        "query": "mark nicholson",
+        "value": 55650
+      },
+      {
+        "query": "one nation ai video",
+        "value": 38600
+      },
+      {
+        "query": "mike newman one nation",
+        "value": 35800
+      },
+      {
+        "query": "luke herdegen one nation",
+        "value": 12650
+      },
+      {
+        "query": "warren pickering",
+        "value": 550
+      },
+      {
+        "query": "one nation candidates victoria",
+        "value": 400
+      },
+      {
+        "query": "one nation ad",
+        "value": 400
+      },
+      {
+        "query": "one nation candidates",
+        "value": 300
+      },
+      {
+        "query": "victorian election",
+        "value": 100
+      },
+      {
+        "query": "one nation victoria",
+        "value": 90
+      }
+    ]
+  }
+}
