@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-30",
+  "finished_at": "2026-10-30T06:35:15+11:00",
+  "steps": {
+    "trends_national": {
+      "ok": true,
+      "seconds": 9.7
+    },
+    "trends_victoria": {
+      "ok": true,
+      "seconds": 9.3
+    },
+    "trends_victoria_leaders": {
+      "ok": true,
+      "seconds": 14.6
+    },
+    "news_national": {
+      "ok": true,
+      "seconds": 5.8
+    },
+    "news_victoria": {
+      "ok": true,
+      "seconds": 7.4
+    },
+    "polls_victoria": {
+      "ok": true,
+      "seconds": 0.5
+    },
+    "seat_model": {
+      "ok": true,
+      "seconds": 0.0
+    },
+    "seat_news": {
+      "ok": true,
+      "seconds": 23.1
+    },
+    "spikes_national": {
+      "ok": true,
+      "seconds": 0.1
+    },
+    "spikes_victoria": {
+      "ok": true,
+      "seconds": 0.1
+    },
+    "summary_national": {
+      "ok": true,
+      "seconds": 0.0
+    },
+    "summary_victoria": {
+      "ok": true,
+      "seconds": 0.0
+    },
+    "summary_victoria_leaders": {
+      "ok": true,
+      "seconds": 0.0
+    },
+    "briefing": {
+      "ok": false,
+      "error": "TypeError: unsupported format string passed to NoneType.__format__",
+      "seconds": 0.0
+    }
+  }
+}
