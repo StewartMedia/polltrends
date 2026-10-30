@@ -1,0 +1,326 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labor party",
+        "value": 100
+      },
+      {
+        "query": "labour",
+        "value": 90
+      },
+      {
+        "query": "liberal",
+        "value": 77
+      },
+      {
+        "query": "labour party",
+        "value": 28
+      },
+      {
+        "query": "australian labor party",
+        "value": 25
+      },
+      {
+        "query": "one nation",
+        "value": 19
+      },
+      {
+        "query": "labor government",
+        "value": 18
+      },
+      {
+        "query": "liberal party australia",
+        "value": 14
+      },
+      {
+        "query": "albanese",
+        "value": 12
+      },
+      {
+        "query": "labor policies",
+        "value": 12
+      },
+      {
+        "query": "labour party australia",
+        "value": 10
+      },
+      {
+        "query": "one nation party",
+        "value": 9
+      },
+      {
+        "query": "australian labour party",
+        "value": 9
+      },
+      {
+        "query": "labor vs liberal",
+        "value": 7
+      }
+    ],
+    "rising": [
+      {
+        "query": "labor policies",
+        "value": 50
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal australia",
+        "value": 22
+      },
+      {
+        "query": "one nation",
+        "value": 10
+      },
+      {
+        "query": "liberal party victoria",
+        "value": 10
+      },
+      {
+        "query": "liberal party leader",
+        "value": 8
+      },
+      {
+        "query": "liberal party of australia",
+        "value": 8
+      },
+      {
+        "query": "labor",
+        "value": 8
+      },
+      {
+        "query": "labor party",
+        "value": 6
+      },
+      {
+        "query": "greens",
+        "value": 5
+      },
+      {
+        "query": "australian liberal party",
+        "value": 5
+      },
+      {
+        "query": "liberal party policies",
+        "value": 4
+      },
+      {
+        "query": "pauline hanson",
+        "value": 4
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 4
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 3
+      },
+      {
+        "query": "angus taylor",
+        "value": 3
+      },
+      {
+        "query": "liberal leaders",
+        "value": 3
+      }
+    ],
+    "rising": [
+      {
+        "query": "greens",
+        "value": 80
+      }
+    ]
+  },
+  "NAT": {
+    "top": [],
+    "rising": []
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "the greens",
+        "value": 100
+      },
+      {
+        "query": "greens party",
+        "value": 37
+      },
+      {
+        "query": "the greens party",
+        "value": 25
+      },
+      {
+        "query": "greens policies",
+        "value": 18
+      },
+      {
+        "query": "one nation",
+        "value": 12
+      },
+      {
+        "query": "australian greens party",
+        "value": 9
+      },
+      {
+        "query": "labour",
+        "value": 8
+      },
+      {
+        "query": "liberal party",
+        "value": 7
+      },
+      {
+        "query": "labor party",
+        "value": 6
+      },
+      {
+        "query": "leader of the greens",
+        "value": 5
+      }
+    ],
+    "rising": [
+      {
+        "query": "greens policies",
+        "value": 40
+      }
+    ]
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation australia",
+        "value": 8
+      },
+      {
+        "query": "one nation candidates",
+        "value": 6
+      },
+      {
+        "query": "one nation party",
+        "value": 6
+      },
+      {
+        "query": "one nation policies",
+        "value": 5
+      },
+      {
+        "query": "pauline hanson",
+        "value": 5
+      },
+      {
+        "query": "what is one nation",
+        "value": 5
+      },
+      {
+        "query": "pauline hanson one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation policy",
+        "value": 4
+      },
+      {
+        "query": "one nation win",
+        "value": 3
+      },
+      {
+        "query": "one nation leader",
+        "value": 3
+      },
+      {
+        "query": "one nation cartoon",
+        "value": 2
+      },
+      {
+        "query": "one nation news",
+        "value": 2
+      },
+      {
+        "query": "one nation polling",
+        "value": 2
+      },
+      {
+        "query": "warren pickering",
+        "value": 2
+      },
+      {
+        "query": "liberal party",
+        "value": 1
+      },
+      {
+        "query": "wa one nation",
+        "value": 1
+      },
+      {
+        "query": "one nation secret harbour",
+        "value": 1
+      },
+      {
+        "query": "mike newman one nation",
+        "value": 0
+      },
+      {
+        "query": "one nation ai video",
+        "value": 0
+      },
+      {
+        "query": "what are pauline hanson's policies",
+        "value": 0
+      },
+      {
+        "query": "one nation immigration policy dispute",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation secret harbour",
+        "value": 84900
+      },
+      {
+        "query": "what are pauline hanson's policies",
+        "value": 18000
+      },
+      {
+        "query": "one nation immigration policy dispute",
+        "value": 13500
+      },
+      {
+        "query": "one nation cartoon",
+        "value": 1300
+      },
+      {
+        "query": "one nation ai video",
+        "value": 600
+      },
+      {
+        "query": "mike newman one nation",
+        "value": 600
+      },
+      {
+        "query": "warren pickering",
+        "value": 500
+      },
+      {
+        "query": "wa one nation",
+        "value": 350
+      },
+      {
+        "query": "one nation candidates",
+        "value": 200
+      }
+    ]
+  }
+}
