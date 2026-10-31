@@ -1,0 +1,465 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labor",
+        "value": 100
+      },
+      {
+        "query": "labor party",
+        "value": 42
+      },
+      {
+        "query": "labour",
+        "value": 38
+      },
+      {
+        "query": "liberal",
+        "value": 33
+      },
+      {
+        "query": "labor australia",
+        "value": 19
+      },
+      {
+        "query": "labor party australia",
+        "value": 12
+      },
+      {
+        "query": "labour party",
+        "value": 12
+      },
+      {
+        "query": "liberal party",
+        "value": 11
+      },
+      {
+        "query": "australian labor party",
+        "value": 10
+      },
+      {
+        "query": "labour australia",
+        "value": 9
+      },
+      {
+        "query": "alp",
+        "value": 8
+      },
+      {
+        "query": "labor government",
+        "value": 7
+      },
+      {
+        "query": "labor or liberal",
+        "value": 7
+      },
+      {
+        "query": "the australian labor party",
+        "value": 6
+      },
+      {
+        "query": "greens",
+        "value": 6
+      },
+      {
+        "query": "labor policies",
+        "value": 5
+      },
+      {
+        "query": "labor mp",
+        "value": 5
+      },
+      {
+        "query": "labor or labour",
+        "value": 5
+      },
+      {
+        "query": "labour policies",
+        "value": 5
+      },
+      {
+        "query": "labor party of australia",
+        "value": 5
+      },
+      {
+        "query": "liberal party australia",
+        "value": 4
+      },
+      {
+        "query": "labour party australia",
+        "value": 4
+      },
+      {
+        "query": "alp party",
+        "value": 3
+      },
+      {
+        "query": "labor vs liberal",
+        "value": 3
+      },
+      {
+        "query": "labour vs liberal policies",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "labour vs liberal policies",
+        "value": 66550
+      },
+      {
+        "query": "peter dutton",
+        "value": 7150
+      },
+      {
+        "query": "alp party",
+        "value": 140
+      },
+      {
+        "query": "labour policies",
+        "value": 70
+      },
+      {
+        "query": "labor policies",
+        "value": 70
+      },
+      {
+        "query": "the australian labor party",
+        "value": 50
+      },
+      {
+        "query": "labor or labour",
+        "value": 50
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal party",
+        "value": 100
+      },
+      {
+        "query": "liberal party australia",
+        "value": 21
+      },
+      {
+        "query": "liberal leader",
+        "value": 15
+      },
+      {
+        "query": "one nation party",
+        "value": 11
+      },
+      {
+        "query": "labor",
+        "value": 11
+      },
+      {
+        "query": "labor party",
+        "value": 8
+      },
+      {
+        "query": "labour party",
+        "value": 8
+      },
+      {
+        "query": "liberal party policies",
+        "value": 6
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 6
+      },
+      {
+        "query": "liberals",
+        "value": 5
+      },
+      {
+        "query": "leader of the liberal party",
+        "value": 5
+      }
+    ],
+    "rising": []
+  },
+  "NAT": {
+    "top": [],
+    "rising": []
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      },
+      {
+        "query": "the greens",
+        "value": 50
+      },
+      {
+        "query": "greens party",
+        "value": 18
+      },
+      {
+        "query": "australian greens",
+        "value": 14
+      },
+      {
+        "query": "the greens party",
+        "value": 13
+      },
+      {
+        "query": "greens leader",
+        "value": 10
+      },
+      {
+        "query": "greens senator",
+        "value": 10
+      },
+      {
+        "query": "greens policies",
+        "value": 7
+      },
+      {
+        "query": "liberal",
+        "value": 6
+      },
+      {
+        "query": "one nation",
+        "value": 6
+      },
+      {
+        "query": "labor",
+        "value": 5
+      },
+      {
+        "query": "greens policy",
+        "value": 5
+      },
+      {
+        "query": "leader of the greens",
+        "value": 4
+      },
+      {
+        "query": "greens senator jordon steele john",
+        "value": 4
+      },
+      {
+        "query": "the greens policies",
+        "value": 4
+      },
+      {
+        "query": "labour",
+        "value": 4
+      },
+      {
+        "query": "liberal party",
+        "value": 4
+      },
+      {
+        "query": "david shoebridge",
+        "value": 3
+      },
+      {
+        "query": "greens political party",
+        "value": 3
+      },
+      {
+        "query": "greens news",
+        "value": 2
+      },
+      {
+        "query": "carnival cruise line fleet australia 2028",
+        "value": 0
+      },
+      {
+        "query": "jordan steele john",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "greens senator jordon steele john",
+        "value": 404250
+      },
+      {
+        "query": "david shoebridge",
+        "value": 284100
+      },
+      {
+        "query": "carnival cruise line fleet australia 2028",
+        "value": 12750
+      },
+      {
+        "query": "jordan steele john",
+        "value": 11150
+      },
+      {
+        "query": "greens senator",
+        "value": 170
+      }
+    ]
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation victoria",
+        "value": 13
+      },
+      {
+        "query": "one nation australia",
+        "value": 8
+      },
+      {
+        "query": "one nation candidates",
+        "value": 6
+      },
+      {
+        "query": "one nation party",
+        "value": 6
+      },
+      {
+        "query": "one nation policies",
+        "value": 5
+      },
+      {
+        "query": "what is one nation",
+        "value": 5
+      },
+      {
+        "query": "pauline hanson",
+        "value": 5
+      },
+      {
+        "query": "pauline hanson one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation policy",
+        "value": 4
+      },
+      {
+        "query": "one nation leader",
+        "value": 3
+      },
+      {
+        "query": "one nation news",
+        "value": 2
+      },
+      {
+        "query": "labor",
+        "value": 2
+      },
+      {
+        "query": "one nation polling",
+        "value": 2
+      },
+      {
+        "query": "one nation polls",
+        "value": 2
+      },
+      {
+        "query": "victorian election",
+        "value": 2
+      },
+      {
+        "query": "warren pickering",
+        "value": 2
+      },
+      {
+        "query": "one nation ad",
+        "value": 2
+      },
+      {
+        "query": "liberal party",
+        "value": 1
+      },
+      {
+        "query": "one nation party australia",
+        "value": 1
+      },
+      {
+        "query": "one nation video",
+        "value": 1
+      },
+      {
+        "query": "one nation victoria leader",
+        "value": 1
+      },
+      {
+        "query": "secret harbour",
+        "value": 1
+      },
+      {
+        "query": "one nation secret harbour",
+        "value": 1
+      },
+      {
+        "query": "mark nicholson one nation",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation secret harbour",
+        "value": 76500
+      },
+      {
+        "query": "one nation ai ad",
+        "value": 51600
+      },
+      {
+        "query": "mike newman",
+        "value": 35600
+      },
+      {
+        "query": "one nation ai video",
+        "value": 14350
+      },
+      {
+        "query": "luke herdegen one nation",
+        "value": 12700
+      },
+      {
+        "query": "one nation immigration policy dispute",
+        "value": 8250
+      },
+      {
+        "query": "mark nicholson one nation",
+        "value": 1250
+      },
+      {
+        "query": "secret harbour",
+        "value": 1200
+      },
+      {
+        "query": "one nation ad",
+        "value": 550
+      },
+      {
+        "query": "one nation video",
+        "value": 500
+      },
+      {
+        "query": "warren pickering",
+        "value": 450
+      },
+      {
+        "query": "one nation candidates",
+        "value": 250
+      },
+      {
+        "query": "victorian election",
+        "value": 90
+      },
+      {
+        "query": "one nation victoria",
+        "value": 80
+      }
+    ]
+  }
+}
