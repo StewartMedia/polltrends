@@ -3,7 +3,7 @@
   "polls_date": "2026-11-06",
   "polls_source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Victorian_state_election",
   "election_date": "2026-11-28",
-  "days_to_go": 22,
+  "days_to_go": 21,
   "majority": 45,
   "baseline_2022": {
     "source": "2022 Victorian state election, Legislative Assembly (VEC, via Wikipedia)",
@@ -25,13 +25,13 @@
   },
   "average": {
     "window_days": 30,
-    "n_polls": 5,
+    "n_polls": 6,
     "primary": {
-      "ALP": 24.1,
-      "LNP": 30.5,
-      "ONP": 20.6,
-      "GRN": 14.5,
-      "OTH_ALL": 10.3
+      "ALP": 23.8,
+      "LNP": 30.6,
+      "ONP": 21.0,
+      "GRN": 14.4,
+      "OTH_ALL": 10.2
     },
     "tpp": {
       "ALP": 44.8,
@@ -39,6 +39,20 @@
     },
     "n_tpp": 4,
     "polls": [
+      {
+        "date": "2026-11-01",
+        "fieldwork": "19 Oct-1 Nov",
+        "firm": "Lighthouse/Growth Intelligence Centre",
+        "client": "Herald Sun",
+        "sample": "1289",
+        "p_ALP": 22.0,
+        "p_LNP": 31.0,
+        "p_ONP": 23.0,
+        "p_GRN": 14.0,
+        "p_OTH_ALL": 10.0,
+        "tpp_ALP": null,
+        "tpp_LNP": null
+      },
       {
         "date": "2026-10-29",
         "fieldwork": "26–29 Oct",
@@ -502,6 +516,15 @@
       "ONP": 20.6,
       "GRN": 14.5,
       "OTH_ALL": 10.3,
+      "tpp_ALP": 44.8
+    },
+    {
+      "date": "2026-11-01",
+      "ALP": 23.8,
+      "LNP": 30.6,
+      "ONP": 21.0,
+      "GRN": 14.4,
+      "OTH_ALL": 10.2,
       "tpp_ALP": 44.8
     }
   ],

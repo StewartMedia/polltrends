@@ -1,8 +1,22 @@
 {
   "source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Victorian_state_election",
-  "revision": 1383160647,
-  "fetched_at": "2026-11-06T06:34:09+11:00",
+  "revision": 1383997076,
+  "fetched_at": "2026-11-06T18:34:42+11:00",
   "assembly": [
+    {
+      "date": "2026-11-01",
+      "fieldwork": "19 Oct-1 Nov",
+      "firm": "Lighthouse/Growth Intelligence Centre",
+      "client": "Herald Sun",
+      "sample": "1289",
+      "p_ALP": 22.0,
+      "p_LNP": 31.0,
+      "p_GRN": 14.0,
+      "p_ONP": 23.0,
+      "p_IND": 10.0,
+      "p_OTH": 10.0,
+      "p_OTH_ALL": 10.0
+    },
     {
       "date": "2026-10-29",
       "fieldwork": "26–29 Oct",
