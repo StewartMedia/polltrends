@@ -1,8 +1,24 @@
 {
   "source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Victorian_state_election",
-  "revision": 1383997076,
-  "fetched_at": "2026-11-09T06:34:55+11:00",
+  "revision": 1384559499,
+  "fetched_at": "2026-11-09T18:34:37+11:00",
   "assembly": [
+    {
+      "date": "2026-11-05",
+      "fieldwork": "30 Oct – 5 Nov",
+      "firm": "DemosAU/Premier National",
+      "client": "—N/a",
+      "sample": "1562",
+      "p_ALP": 18.0,
+      "p_LNP": 33.0,
+      "p_GRN": 17.0,
+      "p_ONP": 21.0,
+      "p_IND": 11.0,
+      "p_OTH": 11.0,
+      "tpp_ALP": 44.0,
+      "tpp_LNP": 56.0,
+      "p_OTH_ALL": 11.0
+    },
     {
       "date": "2026-11-01",
       "fieldwork": "19 Oct-1 Nov",

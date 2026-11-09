@@ -663,9 +663,19 @@
       "status": "posted",
       "at": "2026-11-09T06:37:33+11:00",
       "post_id": "2119514682189123955"
+    },
+    "poll:2026-11-05:DemosAU/Premier National": {
+      "status": "posted",
+      "at": "2026-11-09T18:35:02+11:00",
+      "post_id": "2119695245285749238",
+      "poll": {
+        "firm": "demosaupremiernational",
+        "date": "2026-11-05",
+        "sig": "18/33/21/17/56"
+      }
     }
   },
-  "updated": "2026-11-09T06:37:33+11:00",
+  "updated": "2026-11-09T18:35:02+11:00",
   "account": {
     "username": "poltrendsau",
     "verified_at": "2026-10-12T22:52:44+11:00"
