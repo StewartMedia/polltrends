@@ -1,0 +1,493 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "labor",
+        "value": 100
+      },
+      {
+        "query": "labor party",
+        "value": 41
+      },
+      {
+        "query": "labour",
+        "value": 37
+      },
+      {
+        "query": "liberal",
+        "value": 36
+      },
+      {
+        "query": "labor australia",
+        "value": 19
+      },
+      {
+        "query": "labour party",
+        "value": 13
+      },
+      {
+        "query": "labour australia",
+        "value": 11
+      },
+      {
+        "query": "liberal party",
+        "value": 11
+      },
+      {
+        "query": "labor party australia",
+        "value": 11
+      },
+      {
+        "query": "alp",
+        "value": 10
+      },
+      {
+        "query": "labor or liberal",
+        "value": 8
+      },
+      {
+        "query": "australian labor party",
+        "value": 8
+      },
+      {
+        "query": "labor government",
+        "value": 7
+      },
+      {
+        "query": "albanese",
+        "value": 6
+      },
+      {
+        "query": "labor policies",
+        "value": 6
+      },
+      {
+        "query": "labor or labour",
+        "value": 5
+      },
+      {
+        "query": "labour party australia",
+        "value": 5
+      },
+      {
+        "query": "australia labour party",
+        "value": 5
+      },
+      {
+        "query": "greens party",
+        "value": 5
+      },
+      {
+        "query": "liberal party australia",
+        "value": 4
+      },
+      {
+        "query": "liberal policies",
+        "value": 4
+      },
+      {
+        "query": "labor vs labour",
+        "value": 2
+      },
+      {
+        "query": "peter dutton",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "labor vs labour",
+        "value": 148000
+      },
+      {
+        "query": "peter dutton",
+        "value": 54400
+      },
+      {
+        "query": "labor policies",
+        "value": 200
+      },
+      {
+        "query": "liberal policies",
+        "value": 140
+      },
+      {
+        "query": "greens party",
+        "value": 110
+      },
+      {
+        "query": "labor or liberal",
+        "value": 50
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal leader",
+        "value": 100
+      },
+      {
+        "query": "labor",
+        "value": 73
+      },
+      {
+        "query": "one nation party",
+        "value": 71
+      },
+      {
+        "query": "labor party",
+        "value": 55
+      },
+      {
+        "query": "labour party",
+        "value": 54
+      },
+      {
+        "query": "liberal party policies",
+        "value": 47
+      },
+      {
+        "query": "leader of liberal party",
+        "value": 43
+      },
+      {
+        "query": "liberals",
+        "value": 38
+      },
+      {
+        "query": "leader of the liberal party",
+        "value": 36
+      },
+      {
+        "query": "liberal leader australia",
+        "value": 29
+      }
+    ],
+    "rising": []
+  },
+  "NAT": {
+    "top": [],
+    "rising": []
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      },
+      {
+        "query": "the greens",
+        "value": 50
+      },
+      {
+        "query": "greens party",
+        "value": 18
+      },
+      {
+        "query": "australia greens",
+        "value": 17
+      },
+      {
+        "query": "australian greens",
+        "value": 14
+      },
+      {
+        "query": "the greens party",
+        "value": 12
+      },
+      {
+        "query": "greens policies",
+        "value": 9
+      },
+      {
+        "query": "greens senator",
+        "value": 9
+      },
+      {
+        "query": "one nation",
+        "value": 7
+      },
+      {
+        "query": "labor",
+        "value": 6
+      },
+      {
+        "query": "greens senator jordon steele john",
+        "value": 5
+      },
+      {
+        "query": "labour",
+        "value": 5
+      },
+      {
+        "query": "australian greens party",
+        "value": 5
+      },
+      {
+        "query": "leader of greens",
+        "value": 5
+      },
+      {
+        "query": "liberal party",
+        "value": 4
+      },
+      {
+        "query": "greens policy",
+        "value": 4
+      },
+      {
+        "query": "the greens party australia",
+        "value": 4
+      },
+      {
+        "query": "leader of the greens",
+        "value": 3
+      },
+      {
+        "query": "greens political party",
+        "value": 3
+      }
+    ],
+    "rising": [
+      {
+        "query": "greens senator jordon steele john",
+        "value": 511750
+      },
+      {
+        "query": "greens senator",
+        "value": 170
+      },
+      {
+        "query": "leader of greens",
+        "value": 130
+      },
+      {
+        "query": "the greens party australia",
+        "value": 120
+      },
+      {
+        "query": "one nation",
+        "value": 60
+      },
+      {
+        "query": "liberal party",
+        "value": 60
+      },
+      {
+        "query": "greens policies",
+        "value": 50
+      },
+      {
+        "query": "australian greens party",
+        "value": 40
+      }
+    ]
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation australia",
+        "value": 8
+      },
+      {
+        "query": "one nation party",
+        "value": 6
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "what is one nation",
+        "value": 5
+      },
+      {
+        "query": "one nation candidates",
+        "value": 5
+      },
+      {
+        "query": "pauline hanson",
+        "value": 5
+      },
+      {
+        "query": "pauline hanson one nation",
+        "value": 4
+      },
+      {
+        "query": "one nation policy",
+        "value": 4
+      },
+      {
+        "query": "one nation win",
+        "value": 3
+      },
+      {
+        "query": "one nation cartoon",
+        "value": 2
+      },
+      {
+        "query": "one nation news",
+        "value": 2
+      },
+      {
+        "query": "one nation leader",
+        "value": 2
+      },
+      {
+        "query": "victorian election",
+        "value": 2
+      },
+      {
+        "query": "labour",
+        "value": 2
+      },
+      {
+        "query": "greens",
+        "value": 2
+      },
+      {
+        "query": "one nation polls",
+        "value": 2
+      },
+      {
+        "query": "one nation ad",
+        "value": 2
+      },
+      {
+        "query": "one nation polling",
+        "value": 2
+      },
+      {
+        "query": "liberal party",
+        "value": 2
+      },
+      {
+        "query": "warren pickering",
+        "value": 1
+      },
+      {
+        "query": "one nation party australia",
+        "value": 1
+      },
+      {
+        "query": "how to vote one nation",
+        "value": 1
+      },
+      {
+        "query": "one nation wa",
+        "value": 1
+      },
+      {
+        "query": "one nation abortion",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "bluey one nation",
+        "value": 64300
+      },
+      {
+        "query": "one nation ai ad",
+        "value": 61850
+      },
+      {
+        "query": "one nation hastie cartoon",
+        "value": 43050
+      },
+      {
+        "query": "one nation jacqui lambie cartoon",
+        "value": 43000
+      },
+      {
+        "query": "mike newman",
+        "value": 39300
+      },
+      {
+        "query": "one nation new ad",
+        "value": 26150
+      },
+      {
+        "query": "mike newman one nation",
+        "value": 25100
+      },
+      {
+        "query": "one nation bluey cartoon",
+        "value": 23100
+      },
+      {
+        "query": "secret harbour by election",
+        "value": 19750
+      },
+      {
+        "query": "labor and one nation poll",
+        "value": 10200
+      },
+      {
+        "query": "chris taylor one nation",
+        "value": 9700
+      },
+      {
+        "query": "one nation immigration policy dispute",
+        "value": 8550
+      },
+      {
+        "query": "one nation secret harbour",
+        "value": 1450
+      },
+      {
+        "query": "one nation cartoon",
+        "value": 1200
+      },
+      {
+        "query": "mark nicholson",
+        "value": 950
+      },
+      {
+        "query": "one nation volunteer",
+        "value": 700
+      },
+      {
+        "query": "one nation ad",
+        "value": 650
+      },
+      {
+        "query": "one nation wa",
+        "value": 600
+      },
+      {
+        "query": "how to vote one nation",
+        "value": 300
+      },
+      {
+        "query": "secret harbour",
+        "value": 250
+      },
+      {
+        "query": "jess wilson",
+        "value": 130
+      },
+      {
+        "query": "victorian election",
+        "value": 90
+      },
+      {
+        "query": "greens",
+        "value": 70
+      },
+      {
+        "query": "warren pickering",
+        "value": 60
+      },
+      {
+        "query": "one nation candidates",
+        "value": 40
+      }
+    ]
+  }
+}
