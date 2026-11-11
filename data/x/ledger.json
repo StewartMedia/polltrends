@@ -683,9 +683,19 @@
         "date": "2026-11-07",
         "sig": "22/30/23/13/None"
       }
+    },
+    "poll:2026-11-10:RedBridge/Accent": {
+      "status": "posted",
+      "at": "2026-11-12T06:34:43+11:00",
+      "post_id": "2120601136441024941",
+      "poll": {
+        "firm": "redbridgeaccent",
+        "date": "2026-11-10",
+        "sig": "23/31/22/15/57"
+      }
     }
   },
-  "updated": "2026-11-11T18:35:09+11:00",
+  "updated": "2026-11-12T06:34:43+11:00",
   "account": {
     "username": "poltrendsau",
     "verified_at": "2026-10-12T22:52:44+11:00"
