@@ -3,8 +3,8 @@
     "date": "2026-11-03",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 52,
-    "rolling_avg": 25.9,
+    "value": 53,
+    "rolling_avg": 26.1,
     "ratio": 2.0,
     "news": [
       {
@@ -29,68 +29,10 @@
     "explanation": "One Nation volunteer allegedly beaten with bat after dispute over signage"
   },
   {
-    "date": "2026-10-26",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 6,
-    "rolling_avg": 2.9,
-    "ratio": 2.1,
-    "news": [
-      {
-        "title": "Angus Taylor criticised for ‘tone deaf’ response to alleged attack on Helen Haines",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQUFVrcVE5LTFtajhSaWpBZzJFWEs4ZlRDa1BqaTB3dlgxUmZ3LTFWVEpMR0xKTHAwR0FPWTE4TEFZaTNQQVBlaTlSc3o1ZHNucUM1Nms1MEJBY05KQU5IRzE1QVBjVGNQMUF6SHJnelhOTThlWi1TRjNTUFV5cnowMGVOMllhcmlEdEc3dzE1LWo2MWxWX1VTNEEzVm45SmNnRGxDaDdNd2MyNHg5enBqa1RyZTZxRExKOU9SNTFWd19qQXkxQUpXb182ZUhseUpMMlZLaHNNQUx3UQ?oc=5",
-        "date": "2026-10-26"
-      },
-      {
-        "title": "Taylor bets voters are ready for budget discipline",
-        "source": "AFR",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbGhQWGJmX08yX2NVbjUzVThaS3RhekNBU1pEMlVxRGZWeC1jWC1vekRtMWN4WTF3alRrdjhlQWZwMi0xY2tiSDJwcWZUUC1QTWFHdVcyV05uelZDWktKX3p5eHZRS1JDQ3pMUnJoNHhsU0YtV0VUc19SRFhfelJOME9BdUtvOElBZlFOLTNwYV9CN25UcG1Xd0xIOWI4WGhYX2hsemhR?oc=5",
-        "date": "2026-10-26"
-      },
-      {
-        "title": "Coalition says cuts to climate, housing and more would save $31 billion",
-        "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMG5Od2xxOC1MX2VGWEtPVVpxM095RkoxeDZKUGNiOXVnZjZZX2g2Zmk0MlFaUlo2aklFRWJQUXhSWk1OOUdBbTFHU2trNC1pYUdsUU9MZUJHMUthZ0lhQzItaG9xWGtCYVotWU9vZDV2ZF8zVVJEZ3lNeldoaGFzVWNNS3YzR0hKM0ZabGQtMmdKSFRSVHVuSnBB?oc=5",
-        "date": "2026-10-26"
-      }
-    ],
-    "explanation": "Angus Taylor criticised for ‘tone deaf’ response to alleged attack on Helen Haines"
-  },
-  {
-    "date": "2026-10-20",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 8,
-    "rolling_avg": 3.7,
-    "ratio": 2.2,
-    "news": [
-      {
-        "title": "Will Albanese ignore Palestine’s broken promises?",
-        "source": "The Australian",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNM1A3S1ZfY3pLLXYwM3RlZUdBTnZEWWoxXzhxZzl5QXF6WGYxN0ktQkRTbFhRajZXN1FVT3RNSUJSRUFPQmZOYmVsR0xZWVlpcHBGZU1NMzFZOFlOem9TN0VscGRDV2JSMEdlT3lHcFNpRUMwRjR6T2ViWld3aWJSb2drX0pjVEh2Mnp5cklIeXNROUJkenJIV1pOT19kMnBvZWpYUDd0WnFMNEtJUUlMdmlxVjZpOG5wUmRsanlhS1dpdw?oc=5",
-        "date": "2026-10-20"
-      },
-      {
-        "title": "Anthony Albanese gives update on Victorian MP Helen Haines car attack",
-        "source": "7NEWS",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRXF4aHBaeFZSV1JkYTE1R01lQzRQSWZWemhDLWt4YXFkcjZmeVhXdUpaZk05Q3VuTDF4YzdVQXV6a2NDMzhkc1lzSzlieDBfT0g1US1sRUJxQ1lEOGpKZ0tod1hmOGV1d1NCUEhVdElITVlCWnRaWkQtMDlmM2lBUHd3RW5lU2ZoOGJXTkJiQkdQY1VILWdjREkzNnNZdC1rN2JSSzhGTkQtOGtSVEd0TTFoM29NdGpQdWc?oc=5",
-        "date": "2026-10-20"
-      },
-      {
-        "title": "Anthony Albanese provides update on Helen Haines",
-        "source": "The Age",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZHVMUXgyNHJnbldCTm5rQUZKRXpuWjNySC11XzFQZnN0dXppUm0yZ09pNTV3Yk03OEhpYXBxdDlITlJFOHpjbGZneHZLVTVyb3NjLXhFcXp5WjZlME14N19JdUZoZURod2FXa2I1WTg3Z0Y3SEJSakJucE1WSVlRY2Z4cHRBQzZxLXEzc1duREFhNjR5ZjFxWUNzdmx1NjhZcEZYYzBvbw?oc=5",
-        "date": "2026-10-20"
-      }
-    ],
-    "explanation": "Will Albanese ignore Palestine’s broken promises?"
-  },
-  {
     "date": "2026-10-19",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 50,
+    "value": 51,
     "rolling_avg": 19.6,
     "ratio": 2.6,
     "news": [
@@ -120,8 +62,8 @@
     "party_code": "GRN",
     "party_name": "Greens",
     "value": 18,
-    "rolling_avg": 3.7,
-    "ratio": 4.8,
+    "rolling_avg": 3.9,
+    "ratio": 4.7,
     "news": [
       {
         "title": "Shoebridge says Greens taking allegations against senator 'incredibly seriously' — as it happened",
@@ -145,12 +87,41 @@
     "explanation": "Shoebridge says Greens taking allegations against senator 'incredibly seriously' — as it happened"
   },
   {
+    "date": "2026-10-06",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 6,
+    "rolling_avg": 3.0,
+    "ratio": 2.0,
+    "news": [
+      {
+        "title": "Graduate visas face the axe in Coalition migration overhaul",
+        "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOT1NnelVJaHFMb1RHeHZjdHk2QjFjeFp0bkgxSFZKZTdNZnNzeFFZeEoxdzQ1X3N5X2VfaDZaRjdOYUhiMENBTDN4VzJsSWQtcmdhUHdkWnRWVkdTQlhLNXM0TWVVb3lXUlp6SGVQU0QxV2N2NVJfLUtQbzhsc1JBUzVOSW91czM3RFVCQ2ZiTm9XY2JDbUVn?oc=5",
+        "date": "2026-10-06"
+      },
+      {
+        "title": "The Coalition’s migration policy rests on a series of false premises",
+        "source": "The Conversation",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQb0xhRWllZ1pENUhFbTRaem02S0JLZDcya29MYXNfemJ3ZV9RLVh4d1otRjE0QWZ2emthUmk3WDNhWktmV2o2QTdZUE1WbzA4alN3WUs1N3NYVmtjNjNiMHg3dzhrdWFCVjR4OXZpSjl4ZlVmVGxDWm9OZ05UTGlnd0IwdnFweWM4QlpVRDdNVVo1b2xzMEVRcW9ITGNJRWNGS1NSRA?oc=5",
+        "date": "2026-10-06"
+      },
+      {
+        "title": "Coalition’s proposed cut to refugee places short-sighted and out of touch, Refugee Council says",
+        "source": "Refugee Council of Australia",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBuVDlhcVFDNGFoaHlsQzhFZUZTclhFa3ZFNkVJNVdJR0h6cW5PT09MODE4eXg3dWpDcW1kS095eXdDdzVFV01EM3pGeldQM1FmR0RfSnZlSGpVOGJrSVA0NmRyTkhDV2tqa294c2lSeDN2R0REZEJMZmhiOERvUQ?oc=5",
+        "date": "2026-10-06"
+      }
+    ],
+    "explanation": "Graduate visas face the axe in Coalition migration overhaul"
+  },
+  {
     "date": "2026-10-03",
     "party_code": "PHON",
     "party_name": "One Nation",
-    "value": 31,
-    "rolling_avg": 15.1,
-    "ratio": 2.0,
+    "value": 32,
+    "rolling_avg": 15.0,
+    "ratio": 2.1,
     "news": [
       {
         "title": "One Nation promises law-and-order boost in Victorian campaign launch",
@@ -177,9 +148,9 @@
     "date": "2026-09-30",
     "party_code": "GRN",
     "party_name": "Greens",
-    "value": 20,
-    "rolling_avg": 2.3,
-    "ratio": 8.8,
+    "value": 21,
+    "rolling_avg": 2.9,
+    "ratio": 7.3,
     "news": [
       {
         "title": "New Australian Greens leader David Shoebridge vows to ‘replace’ Labor",
@@ -235,9 +206,9 @@
     "date": "2026-09-13",
     "party_code": "LIB",
     "party_name": "Liberal",
-    "value": 8,
-    "rolling_avg": 3.0,
-    "ratio": 2.7,
+    "value": 9,
+    "rolling_avg": 2.4,
+    "ratio": 3.7,
     "news": [
       {
         "title": "Hastie the answer for struggling Coalition but not just yet",
@@ -265,7 +236,7 @@
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 24.6,
+    "rolling_avg": 24.1,
     "ratio": 4.1,
     "news": [
       {
@@ -294,8 +265,8 @@
     "party_code": "ALP",
     "party_name": "Labor",
     "value": 6,
-    "rolling_avg": 2.7,
-    "ratio": 2.2,
+    "rolling_avg": 2.9,
+    "ratio": 2.1,
     "news": [
       {
         "title": "Price: Bulldust Benny makes bag of fantasy promises to save tired, dying Labor government",

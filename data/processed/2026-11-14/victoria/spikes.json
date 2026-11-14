@@ -1,11 +1,40 @@
 [
   {
-    "date": "2026-10-26",
+    "date": "2026-10-29",
+    "party_code": "GRN",
+    "party_name": "Greens",
+    "value": 9,
+    "rolling_avg": 1.0,
+    "ratio": 9.0,
+    "news": [
+      {
+        "title": "Victorian Greens senator confronts man over 'deeply offensive' comment",
+        "source": "SMH.com.au",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTHE0WWhNZnRzVkloZzN0VDdSbU9zU0tWS3R4Q0ZIdllPTlgzZElmbm9XaTlvelNtR1pJQkpTaVhxS0NiTElSSTNEaFRqR1Y0OUZNd3Z4ODdMZC05cFdtM0Q2SHRUX2xSbWU5cVd5Tm0tQXBNNXNCLUVmNXpqcWVoVVZQano3Tm1DcWlpTkNRbldyZ0JrY0dDYXJYT3ZzNGYwczk0c2M2LWhXeVltLTdSdlVMVVJseWRPdVV2YVZn?oc=5",
+        "date": "2026-10-29"
+      },
+      {
+        "title": "‘Appalling’: Greens senator confronts online abuser amid stream of harassment",
+        "source": "Nine.com.au",
+        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZ3VvWUxzejdhWC1BTmtXYkoxNGZoS2hET1Y4MV95cGVxZDlDMi1OdHlGbHFHUW1pSGhlMHpBTWlaUjhFak9kRXJCOE9GQ3l0UHNiN2hOZDVuTzNMMWtoTXRtUVU4LUltY243OU5iNlRMODZOUTB0YjdsVGpTc0YxX3BET3p4YTdEdVlqbW1OQnJlTkp6c3BUVDY0VkNpZ3BJanpmaVlUVE5sSDVWcDJncDVoM2pNVnY0aTNNTjBEOGhwRmlzUURfZ2l6bUdaQ1JMOC1COUpNNkZIbUZOenJ3Smt0cw?oc=5",
+        "date": "2026-10-29"
+      },
+      {
+        "title": "A New Land Tax on Large Residential Investors: The Victorian Greens' Plan Before the State Election",
+        "source": "Kalkine Media",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQ2IwOEIycngtcnZ6OXFWZWtyOWRmRkMzdzhBNlN1QmFHTlh5Rk5QYUoyNmlWTWw2NHl4TFdKTlJFU3NmQ3NMV2huNS1vQ2tVLWRJM0NJeHVFMmkzMlpuZENfMFROYXZuZTVNQ3ZMemo0R0FEaUwxOFdfTW5OazFoMXpSbW9ycHlCT0VKMkhOMlM1U3dHOEZVSzRUQlA1VFd6bmdDbTFuOC0wTnBtLUowTno0WXhvQXhsVllncUVudGRFMkFMVkw5RjRGa1FfQ3c3cVhvUkxLMWI5Zw?oc=5",
+        "date": "2026-10-29"
+      }
+    ],
+    "explanation": "Victorian Greens senator confronts man over 'deeply offensive' comment"
+  },
+  {
+    "date": "2026-10-25",
     "party_code": "GRN",
     "party_name": "Greens",
     "value": 7,
-    "rolling_avg": 1.0,
-    "ratio": 7.0,
+    "rolling_avg": 1.4,
+    "ratio": 4.9,
     "news": [
       {
         "title": "Awkward moment Greens leader booed after acknowledging Indigenous history at Vic Barracks rally",
@@ -29,12 +58,41 @@
     "explanation": "Awkward moment Greens leader booed after acknowledging Indigenous history at Vic Barracks rally"
   },
   {
+    "date": "2026-10-19",
+    "party_code": "ALP",
+    "party_name": "Labor",
+    "value": 11,
+    "rolling_avg": 2.3,
+    "ratio": 4.8,
+    "news": [
+      {
+        "title": "Ben Carroll ‘rejected out of hand’ push to join ‘red shirts’",
+        "source": "The Australian",
+        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPYjd4QzNNNXh0Q1FFRVBIelU3NlNsbF9hSGRlb0tVa1k5bUhYS2hzQ1g2UDJad0J1alZTaHFWeXFnUEtUaWtGTWsySTh0RGNVOUxkZ2Rxc21ySzduemJyZ0EwWFdWSlZOdm1saFcxMnJYRndNTkZzTVVaTEJiWUVaZHFSSzdrUXN2UTRKeFNkM1FwaGFDZ2lxcDZETHZ6R2p6azM1SmRFU29mRmFCNTZPYVZ3LTNybXoxeVg5LUJmNjdFTTU3UGdYU2JMSTNxMVNiV19palBEVVVUTzdKSEs2WWswdnJ3N3hPZFJqV2VYTXU?oc=5",
+        "date": "2026-10-19"
+      },
+      {
+        "title": "Vic Chamber of Commerce warns over Labor's $30-a-week transport cap",
+        "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdHdQT1Vxdll6dzgtTTlITVNNcmxjT1VvRF9FNTFlLVN1ME9LX3VMUGVHb1JRdkJnQVB4RmU1Mm81c1kybmdEWmtmSUVpTFIxTXM0dmU0NXdpYWpsbmdqTWlLbUpQU2NSV2Q3VTJJNFR5THNELTZmc2UzVHJ1WnE0LU9vei1iQ2U0Q0RTaUJkTVh2UlE1UndIU1pocVowWlk?oc=5",
+        "date": "2026-10-19"
+      },
+      {
+        "title": "‘Unsustainable’: Carroll’s splurge on cheap public transport fares raises debt alarm",
+        "source": "Herald Sun",
+        "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxORTBwWVhkaGdCeERiSGcxYnZ1cWlUSWU5WDJxbDJHbWc3TGNHV2xVR3NtWXUyY0hUNFJzS3pjZzFqRWdVdjc0MmRJRjA3cExrZ3lWS0ZNTmNVR2NOR2phT1N6SFUxN19GMTVKbWhmTl9KbjMzaGtid2txaXZQcHBKN0VBWEJrLTRPZ3UteXBud29XLXpiSWNsaTNLNVV1WFlMQm91VGxJc0xpS2Z2ZGxUMEJaby0wWUZkaFhoblFwcGtXYklIWkY0YVJyR3VMUWJRR2RicUZjVXN4SlRQenVHdExya1JhekFGdkpsRjZxSVNWbW1Na1F1VEZKU3IzZzdVdk40Mi1TcVRfYkhQanYwWVFYU1NoR3l1QmJ0bmFRR1VWV1YyWUc3bkIxNXVHOFFuS0lWVE9FbGxYel9fWEFJME5R?oc=5",
+        "date": "2026-10-19"
+      }
+    ],
+    "explanation": "Ben Carroll ‘rejected out of hand’ push to join ‘red shirts’"
+  },
+  {
     "date": "2026-10-15",
     "party_code": "GRN",
     "party_name": "Greens",
-    "value": 16,
-    "rolling_avg": 1.1,
-    "ratio": 14.0,
+    "value": 17,
+    "rolling_avg": 1.9,
+    "ratio": 9.2,
     "news": [
       {
         "title": "Why you should vote according to Ellen Sandell",
@@ -58,70 +116,70 @@
     "explanation": "Why you should vote according to Ellen Sandell"
   },
   {
-    "date": "2026-10-12",
+    "date": "2026-10-07",
     "party_code": "ALP",
     "party_name": "Labor",
-    "value": 12,
-    "rolling_avg": 1.7,
-    "ratio": 7.0,
+    "value": 7,
+    "rolling_avg": 1.6,
+    "ratio": 4.5,
     "news": [
       {
-        "title": "Watch: Ben Carroll says Victorian election is a 'fight for the soul of the state'",
-        "source": "AFR",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNY1R5eUhxVjVYcHRJMGlyZTBfZ3h5X05qVHBad281SmdoZUpxMVdlWEtEUGpQeTFxRFNkc3M1ZG5pN2QyTkdLQnNEbHhIRENNZDFmQVF3TGVZMzB3WEJNU3lUa2JqWTVYVFhLLURVWjBVSHFNbURwWTB0bml1SHVWZmVUMDByZS1LSVpDXzlzRlFDV1Z3ZEV6V1RKOXR3MEpkVHdNNUFIaXVVdlp6X3pfR3lQVHY0VVpMQUdpS0d5VjE?oc=5",
-        "date": "2026-10-12"
+        "title": "‘ALP has never liked trusts’: Government denounced for rushing trust tax reform",
+        "source": "Accountants Daily",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPLWdRZ3lOQzI4VUVYNWRtajZxME9nS3B4OHZfZjZZc3h3ODRyRDVycU1nVnhSaFBHOENHUTBZajNQS2hJX0hOQTJZTHBiMUltci1CN29oWlgzWjlYWDZ4amtEZmVxZld4RHdidVc3ZlV1UzBMdFJDVUV5OGZlcU5sT0Y0dWVTeThRTXBPYTRzYXgxVjZKR2ZsMDFnaTdfdFNvR2dtTVEtM3ROTTdoOWlxYkNjcUVLVUQ4cmxsV0FYcw?oc=5",
+        "date": "2026-10-07"
       },
       {
-        "title": "Victorian Labor withdraws attack on RAFFWU ahead of election",
-        "source": "Green Left",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZlV2S19hWlZqdTQwX1h1OHVfWHJBb0pGVHduSmI1czF5aHFrdklNODV2OGVzdXJpRGhiQUwwMFFlYjUzcmx1X21MOWdtb19vQlhjVXM3TWIxRzg1RGtSc3RYS2RlTFFJdUJXc3hYc01IY2pPZXFzVk5UdHptU1VRYkhNa1VUbUVZUmZZNkYxS1FFTWl2Z1AxeFlycC1zNjlCWXRraw?oc=5",
-        "date": "2026-10-12"
+        "title": "Labor government has ‘lost control’ of Australia’s immigration intake",
+        "source": "The Australian",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPbXhhUEl1Z0kyRjducUdSemFzUVJBQU5LS3lLX0x3akZkUW16eTYyWGJKUHh4TENjeUJCdkdzQjRaN0Ftd0RnQWpZQjNMaVJ2djk5cHlmMXJqWlhRSmp3TkttVVdua1FadFQ0WlJDMmwwMWRzTEZ6S3ZmcGpYc1BzaDVYRVB3X015NWd3c1dQRVFoYlI3emRtb0ZNNEhDaDg4ZFhxQUU0NEY2anJ2VWZEUF9nVzJuSTRCbWxRbmRPMTEwVzFYX0Z3TzRDMzJJSXVYNzhnTlZtMS1DTnozS0xsY0drSnptdHNYdVE?oc=5",
+        "date": "2026-10-07"
       },
       {
-        "title": "Premier Ben Carroll doubles down on tougher sentencing reform",
-        "source": "3AW",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONFVmcko5WTAxUy1UUGlPSUlRemFTRTI3bnJlTFhhbDRSbVJQYWp1WXJ3VUhRbFNob0FSdFc3ZjhaNVZqOU1nWEhGRUc1Nlk5MUtJUUJTdzZWbVZvaVVaQ1VBUy1TSGlkcTc5aXE0ZXRITF81UWxscUE2dl9OZ1dvUmFhUnhrYVpyZ3I2Qm9R?oc=5",
-        "date": "2026-10-12"
+        "title": "Western Australian Labor government mounts huge police operation to block protests outside weapons expo",
+        "source": "World Socialist Web Site",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBQd3VsdC1IWGwtdUFhdmR1NDcxQWlCSWg0cERPVjBsRkt2YWFwZWpvOHlsWU9CQUxRNmJnUDZkN1pBVWtaZGhTb0JycW9id2hWSkY2WU9kNG93VzBGem5PN1l4X01FTnRq?oc=5",
+        "date": "2026-10-07"
       }
     ],
-    "explanation": "Watch: Ben Carroll says Victorian election is a 'fight for the soul of the state'"
+    "explanation": "‘ALP has never liked trusts’: Government denounced for rushing trust tax reform"
   },
   {
-    "date": "2026-10-09",
-    "party_code": "GRN",
-    "party_name": "Greens",
-    "value": 8,
+    "date": "2026-10-06",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 12,
     "rolling_avg": 1.9,
-    "ratio": 4.3,
+    "ratio": 6.5,
     "news": [
       {
-        "title": "Greens hints state at 'crossroads' at party launch",
-        "source": "The Canberra Times",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOeEJtdnB0bDdWay1xTUM0dThKSjhFdVAyam1NVGhjSDBmT2gxbFNjZS1mUVlmeFpNWDV5Wlg4TnRETXhsWkY2LXZJN1lzMXhRRFZyQ3dZQ0EyVjN3eXVyQURLWHM3bVRMcmthZTBaME8wVjFyZVZKcERKaERtNFRfN1JVcElFamQ5U3cxNi1RMGdteU5BNjhYdFJ3ci0?oc=5",
-        "date": "2026-10-09"
+        "title": "Watch: Jess Wilson’s three-point plan to make Victoria the 'best place in the country to do business'",
+        "source": "AFR",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPTEpyS2dBLV91VmctazJEcEIzQkRjckxmZW1WSDRGYjlBVlNKOW9tdXJZcERVZElRbmI5N0dYWHNRTHU5M0xtZkc1WURuLTJYTVBjaWYwLUhoNzdjX1htZElrYjc5RkdkSzBiV2FpRHlmZFBfWWFZTFAtcl9ZY0JpYVAxTG1MTnNraUlnVm02dHRZVWEyZ0FENkpTcXBhR3BCT2VBNEFmQngzaVBZejR1SGZDenNQQzVVV0ZGS01SSndqbkJRNXpCMTdwUTRtbnVUaThjTi16bTRmcFE?oc=5",
+        "date": "2026-10-06"
       },
       {
-        "title": "Greens continue to play hardball with Labor’s agenda",
-        "source": "Crikey",
-        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOWFZTbXJrdFUtUVlEb2pZSTJJWVVvcmJKZUpGakh1UUdQMG5lb3JCM3Z0VVh2aUlkY1FxVGt4MWxfMzljUG8zWGNfT2M2R2JyVzN6UlBGOG9vRG5jQXYwbjB6cXpyczc1Ym41VzMyWm5ZS2h1UnBBWkttaXJxcm5YNENPa3RoRGhveE9IRFJJUFRURlR1TUJaUU9taHJ3NjhGZlBEWHlTWlJLUlpYREpHRG9iNVdjY05Hd0ljYk9udkZIS0t1R0U0U1I4cTIyUi1mWTRTX19HNlJkMVRmZ1dWWDZHLTNZUQ?oc=5",
-        "date": "2026-10-09"
-      },
-      {
-        "title": "New Greens leader warns Labor over Senate budget bills",
+        "title": "Jess Wilson dodges questions about One Nation support in event of hung parliament",
         "source": "News24",
-        "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPU0NINExNV2Q3S2J0TzRsY2V3bEJhVmk2SHlKdWJMRjZ3alNJUGpWVzJuR0pBcGVzNDhlaHB5Uk83ZlhmSlpRNGJ1d0VXN3JGNVVCNmhsVnREWHhiRXRBckp0TzFqeWJheVVTV1NIZm1JdFpqaE9RSnlEWjZXeklva19sTWxSZEQxaFEwTnV5X1hQdXlUTmFfLXR0YnhSbWJzaU9QbVFaVWc4TU1UWUpZMWVKM004Mzk2cFRGRjZvV1ZhMUFYZnlEcEZ4OXRjMFpwZmJUcEtrdFdtQzAzblNDSG0wN0JBQS1YZU5OTnBBUEE4X19PN1E2YtIB_gFBVV95cUxNR28tOVVqYTdicGpaWHVaWlgtRkF4NnZMVS1UQ2U0ODNYbWFDcW9HZnJ2RDVNSnpMbW1vZ3cxTjFwM0d1dUlqSHRSUEl4T1d3aTFxRnZ3STRKNUVlY1hQdWRvVHRUc2RsWFA2MnpYdmt0SFRudEVpSHpWNEs1U0NVQnhoTWlzcmRqX0RVbk5FQ3daaGhQMDB6cEFDQU9raXpySXVlUTV1MFlMd0xKZEZtaWk3QUlOTHFzU2F1MDhaTjFNQVY5WHlVNENwVUlQYW9OcUlvTDY5T09aLTFENlJxZ1dkNG4wVUVKVnpGTW9XdlBTdG5tX3VzekVyazdxdw?oc=5",
-        "date": "2026-10-09"
+        "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNLTZXa000U0ZUVEdFNldaR2puX1pYbm04dm1RZUtKNjBrc2UzdXNrU0pxTkZHUzAwUjdiTTdQQlBaaEFYTUcxU0dRcF9LaXNXWkt3NUNSWHJLTEsza0EtNUUzZVNDTXlLQWdHVDVjZTd0SjFySUpkWnZ1UE55TFFLcUliMmFGb0ktSG53Qk1RU2c5RFZiV0hQRjdvTDUwcTJ2dGdpOXBBeC1lRDJYVWo2MV9OQWkyX1dKN1h6QjJBa2x1ODNWSzhqUHFydVdFeGg3ZldPdFJUYTl2N2dlUWhyOGdIcWxVdmVoM05ZTzNqckRQeGtabjUxYWFTMm9kSTNndHJOX3RybzdVWG8xWmQzOXhybW9KdzBLUWhlVzdhUU5wYTIwTlIzaDU1VmNGa3lncXfSAbcCQVVfeXFMUFp5SWx3c3VRTzcwRlpwTVk4ZlVrMUZBWnNfTnBKYTNHQ1NzQWlPaFVXM3ZsN3pZSV8yNEtDOUsySDlFNmxCbm9SOXFveThWNHE5VmxvRm1CZG4yOGRXN3ZZWXpJZUNhZkdhTVJlOVRBUHNoaGxNM21Mbmt1TU8zUHBHaUE0VldkZ0tQbTktRlBqcHROTVA2dVlZbGFGeUFZa0xheWs2QzZQdl9Eb0swZGR6QlVpc1d6dmtZbGlCYnczVEUxWUdRLVRFd2twMVhucGFHS1htbmFpUXZmS3Y1eFE2VjhSLUxkczRJNk5sdFdnMElaRk5GNW1yZVNrMVhWNnRhajFIMDk4OEgyc1BiS0ZnUmQtSzRPX0t4Z3dhNEU2eWp2TlFlVi1jbjJrbnZwSHBjVTN6Nk0?oc=5",
+        "date": "2026-10-06"
+      },
+      {
+        "title": "Graduate visas face the axe in Coalition migration overhaul",
+        "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOT1NnelVJaHFMb1RHeHZjdHk2QjFjeFp0bkgxSFZKZTdNZnNzeFFZeEoxdzQ1X3N5X2VfaDZaRjdOYUhiMENBTDN4VzJsSWQtcmdhUHdkWnRWVkdTQlhLNXM0TWVVb3lXUlp6SGVQU0QxV2N2NVJfLUtQbzhsc1JBUzVOSW91czM3RFVCQ2ZiTm9XY2JDbUVn?oc=5",
+        "date": "2026-10-06"
       }
     ],
-    "explanation": "Greens hints state at 'crossroads' at party launch"
+    "explanation": "Watch: Jess Wilson’s three-point plan to make Victoria the 'best place in the country to do business'"
   },
   {
     "date": "2026-09-30",
     "party_code": "GRN",
     "party_name": "Greens",
     "value": 19,
-    "rolling_avg": 1.7,
-    "ratio": 11.1,
+    "rolling_avg": 1.6,
+    "ratio": 12.1,
     "news": [
       {
         "title": "New Australian Greens leader David Shoebridge vows to ‘replace’ Labor",
@@ -145,157 +203,99 @@
     "explanation": "New Australian Greens leader David Shoebridge vows to ‘replace’ Labor"
   },
   {
-    "date": "2026-09-30",
-    "party_code": "LIB",
-    "party_name": "Liberal",
-    "value": 8,
-    "rolling_avg": 1.3,
-    "ratio": 6.2,
-    "news": [
-      {
-        "title": "Guardian Essential poll: One Nation’s primary vote climbs again as Coalition’s sinks to lowest level yet",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQYmo2VUdXMldQcUI5ZTgwakNTbHVnWDVqUENrNFpZSEkwanh2Vk5Xb0M1djlXc3hJY1F4TURnN21hYmxtWml1OTRhRmt4Q0xkbDNnUWU0Q1B4elpsd0dEcEl1SlpIRVYwYk5FTGducWxCSGpULWR0eE1ZXzJ1TDZZakFSbGp2RFU1d3dENy1uZUJfVmdWeDc4MFZ5VWhMbGdtaXA1NWR4aXVDblNFQzBNcEJzRlhSQXlDeUZMT1lMWVZtYWJ4cDRSdl9XRU5TNjZyXzhVanFDOS1pNllON0JuWGpFQmwzNVRTcWFsN1dvMnhFZ1NtQzExTzNkOTZiLUk?oc=5",
-        "date": "2026-09-30"
-      },
-      {
-        "title": "‘Second-class citizens’: Liberals refuse to campaign after preselection snub",
-        "source": "The Age",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOcTRrMElWLUl0T2Jicm5WVGJ1bGFEbHhFVVNUNE9rdExjbThQQndyT21MYzNXcV9nbU5tOFJaWmxtVWFZbzU3YTQ0UGp1TXM1MzhhNkdjaS1FMmlwc05BbHR5c1VRc3FWYzNNUDUtMmpmd010d0ZZMGJILVctcWkxaEk3V2R6MFhDZzMyTzZlSXBSNmxRYy1USlR6LVYtWmNXdzVZZjRpVXBLeGZFUk1Gel9iRV84aTVTMGlWYk81UGVoR180czlKNFZ4YmNzQkpIaWdZbQ?oc=5",
-        "date": "2026-09-30"
-      },
-      {
-        "title": "The Liberal Party is drowning. This 29-year-old ‘rebel’ wants to be its lifeboat",
-        "source": "SMH.com.au",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOYTdxalVKZ3ltSGNtYURYNUstY1Z4Z2diUlZtRkhabURFSGRvbDVyLWstZlA5ZTFlSjlvbU1zOWRFNmoySlZHTTZEd2UyaWN4S1hKZU9KalNXV2lKcGZwSzVBTHdkUEhrSEJERHVZVlo3NTFzenJKZ2xJMzd4ZHRPY25PcjAzbmRjZVJsMFRnbGdiM09yZGpNb1ozQlV0ajBkMUo2SWZ3X2s0MTlPRW5ZN0pjVElnOGhCczN3dnBXeFh3U0taOFdOaGdEMlFvX3M?oc=5",
-        "date": "2026-09-30"
-      }
-    ],
-    "explanation": "Guardian Essential poll: One Nation’s primary vote climbs again as Coalition’s sinks to lowest level yet"
-  },
-  {
-    "date": "2026-09-16",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 8,
-    "rolling_avg": 1.1,
-    "ratio": 7.0,
-    "news": [
-      {
-        "title": "Victorian Labor slips to third on primary vote as Coalition leads and One Nation surges in new poll",
-        "source": "The Australia Today",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOcTF2dmlUaE9wNzBfMHREVlV1WVFwUy1KRjM4NzJTVlFvYlBTTEFJdmhsUmlYZExZNEQ4VDl2UXBDbUllNk9vbHpKcXNRb3pqeDMwTk1NVk90dUtzUktrYmJpUndnczNyQ09MMUhveGRwTV92WC1yemtIMW55bmlwQUFJTHl3M2ZsXzN6SVhXSnZnVV9fcmdMUGIweFFva0djd041YWF2MENPbEhpbkNvV1Mxdm9lb015VEYwZEptRFpoeEp5aUpkM20tQjN5VVp0YzZr?oc=5",
-        "date": "2026-09-16"
-      },
-      {
-        "title": "Jack Beasley’s parents hail ‘good result’ as Victorian Labor government backflips on knife crime laws",
-        "source": "7NEWS",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZXV6bTR5cUlQTjhHOThpcVlMX3RUSmY1eUtRMlk2TFFDS2lXZTk4Rk83RzlDQldHSVpjdnNFOEhqR1hlRHAxLUwtUnhUWGF2UUNkS2dodGFkb2JLeDQ2c3Fma1RMMGhVaUsyaVB3dnc2SW41emJLc2htX1NEcFVmR2FRQnNRakRSUFNHX2RHMW9FYUw1ZUVzSkxQSnRjRmVKbk95R3RpazVWZ1JLaWJwa1QzcUtqVERtTkVJZTJVT1RIUWhENlduUUdJUnNNaWtmd1QtQdIB2gFBVV95cUxNZi1zei1oTnlndHFTTGFRYll2YWdrM0Q3M1FzdXRjNXliTC03eldKY2tlSTJpTmRaQ3k0SklrRW1lZnNlRFgya0JEcV85YlFRdXA2Z01XUDlERk5LZHlMWTNWbmlaY2c4dmJtb2plSnBQQ0N6WFY4Ym1SUThwa25acU4tSk5mSVMwcWJnZzd1Yzd0ckFzbE5ERy1TYkVubVJjZVVGZjdqTXhtVl8xNGdJTWhfOS1vVTN6OUlQQWV4VGd0VDdTUlZNdThNc2RGdWFSYWVSM01KR05DUQ?oc=5",
-        "date": "2026-09-16"
-      },
-      {
-        "title": "In Australia, ACT Greens end agreement to support Labor government",
-        "source": "UA.NEWS",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQME9hY0VuYnI1N2FUQUhCT29WUjBKMHJZaV90MGdhR01OVklwYjR1VkhObi1BblhMVnpUZ3V6OTFwY3F6WHFwUFFWVEdMbUhYRzNRTUo3V2xxSTVWYWN3UjllS2F5Y0NSM3UzaVVHTldlREhkUTlCdThoeEwxMUZmRW53ZkZZcGVLd2dWLTcwc1VDejkyN05pa2RtUmdmdw?oc=5",
-        "date": "2026-09-16"
-      }
-    ],
-    "explanation": "Victorian Labor slips to third on primary vote as Coalition leads and One Nation surges in new poll"
-  },
-  {
-    "date": "2026-09-10",
+    "date": "2026-09-17",
     "party_code": "LIB",
     "party_name": "Liberal",
     "value": 7,
-    "rolling_avg": 1.9,
-    "ratio": 3.8,
+    "rolling_avg": 1.3,
+    "ratio": 5.4,
     "news": [
       {
-        "title": "The Coalition wants to make flag burning a crime. It’s a revival of a decades-old battle",
-        "source": "The Conversation",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSWFjMGVxWEU0aWd5TjBoVHlEd1YyQ1BFUVVtejJPc2ZJM3JpSGY4cmJTM0RZNm5JYkprbkpuaUhublNYdV9pQnp5SXd2LUN0MFFsVW9IajZaN3lNdnFRMmJ5WVJSVm4tRXlfRlhsRVRRbUEyeE9uWkxOMW85cThXbml4c2VMckhxc001WUlBRW1mRWN5dlhXVWRiLU02ZVFqeGVicnVkbUwwc29nZ0FhTjlQalpRcjBpREFzMThn?oc=5",
-        "date": "2026-09-10"
+        "title": "Liberal Party grapples with promoting Alex Antic at high-stakes AGM",
+        "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOOWRMc1BGSmMxcDNhWFhTUzlyWm8zUEEtcGdLdS1iZHFjQk4xaGtuNXp5TnJvOGZUSS1KY0Y1LUFBUWdONjdJWXBrclRmOTZaaklLTW1SQ3VRamZZUkV3djl3YTRBb3dKaXJnVUFfSkZreUFkb0tsSlRwRlExam04SndPWjBwTGhJT2s2dTJxSkY4SDdJRXgtdTZ6STBiNjlPanlBdUttRQ?oc=5",
+        "date": "2026-09-17"
       },
       {
-        "title": "The Coalition is betting that people mistrust Albanese more than big tech",
-        "source": "SMH.com.au",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNVW51R19DV0JXbkdZcGtESXoxWXJQTmNTaDUzVU1YTXdaT3l1UXBUN09FVjd6WG9zNzFfWHNDMmlKdUJNREtnRko2VUsxb1ZfSEk4QkMyeFhYUVlEUHFBTHZ2M1d1bnNtb0hsa0FjRnI4MHo5VGlDRXdMNmNqNmhheHE2NmlBajdqWDBsUTE1NU1ZNmxUQXllU0gtSy1QdzMyOG1sX1A1LWtISTRWM3Z1aFpDNUdQZndidFM3QmdPYXU5ZGJDVVA3TkpiWDdDcUU?oc=5",
-        "date": "2026-09-10"
+        "title": "How Trump’s Winning Coalition Sees Foreign Policy as the Midterms Approach",
+        "source": "Council on Foreign Relations",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQcmI0b0tDYXZENjM4aDBFT1JUcDlicXpWdk5oQUQ3X3lwZVlwZmFGUjR5S1ZMSDlENTJNT2JGXzlmaGhtSzN1WWxfR2tMZVgxLXktZklSSHFxVFZkYjMyOHRTMGVydGVPcVgtUEJ0eHpZcUVMUy05UUoyWTR3UnJyV0NNRGNLUmw2WlVDXzRjTWh2T0pHVl8tTGpHTGFqX3RBa29naA?oc=5",
+        "date": "2026-09-17"
       },
       {
-        "title": "'Ashamed': coalition cops blast for social media stance",
-        "source": "The Canberra Times",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOR1VhWTZIX0xhZk9YWFB5a3NMeTJ3WFJCODdiU0d6eUwtNmxwZmJLTVpmNkVOd0JiNDVHV2hQdEszYmk2R0FZd2gxekNXY2xDaVJZOWZiazRaZjBJZDhJUUY3cG1hM0ZHYm1BWUZiWjY2dzVNeEVrRmFLNUZ3c2huSGhnUXFPbnZiV3FiQ012dVN4b0RxR1RZellselhMUHZRWlE?oc=5",
-        "date": "2026-09-10"
+        "title": "Alex Antic runs for South Australian Liberal Party president",
+        "source": "UA.NEWS",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOREdjZTdfRE1MLWR2Vm1Vdk04NHVsSWJzYkNtemstNUhNem4tNnZucWtOMzdSOVk4LXNIYXR5TlQ5R0Q3SDVKVjBkMUxLQ3Z2d1FCclZMM0VpNmMtWWVIOGNjaHN4cGMyVVlLZ1F3aWx4YnhycXp5VENWQjZYd1NHRl90ZjlCQ3oydnVYNV9lM2F3QlJHaUdqd2Q4MExmQ2xCTWtmRzdLSWhoSm1MYXZQakdHSE1UMGJQa1k3ekVR?oc=5",
+        "date": "2026-09-17"
       }
     ],
-    "explanation": "The Coalition wants to make flag burning a crime. It’s a revival of a decades-old battle"
+    "explanation": "Liberal Party grapples with promoting Alex Antic at high-stakes AGM"
   },
   {
-    "date": "2026-09-09",
+    "date": "2026-09-13",
+    "party_code": "LIB",
+    "party_name": "Liberal",
+    "value": 9,
+    "rolling_avg": 0.9,
+    "ratio": 10.5,
+    "news": [
+      {
+        "title": "Hastie the answer for struggling Coalition but not just yet",
+        "source": "SMH.com.au",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQNi1QeWlhYm0tbHZFaVVOZVAzLTk5NmpHN1F6Vm1NSDNHRWFSXzRYSEpfSmlLZEcyLWZvX0RBOHlPQUJPbUhHSjJQSzZFUlJWaTM1bUx5NDNZb2lqNVNJaWhNR3pPOWcxcE03WEtZUmNqNDZGMnlwdjZDNzVzTkY0UGRWalo5bDVFb01WWnNzRFduVkdxeWZETTltejA1czFsTkVPZlJnME9RQnktejYxejhVZGY3eGM?oc=5",
+        "date": "2026-09-13"
+      },
+      {
+        "title": "Sweden election: Center-left coalition leads initial polls",
+        "source": "DW.com",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNb0RFV2htRHJ5blVEb1Jud1NTU2M4V2c1bVBqcTVVR1pVQW1OdTBhUTd3eHFRUlNWRjFrTkhiU3hjQTdEYjY2bHltZjlwdEV3NTVkUGREeW1qOTdZQV9uaEJxeXlNcHVaQmtpZ09VZFFVTjU2X0xET2cydkVaa1pyLTI0cEswZTVCbnVZaFVfNTBBdTI10gGUAUFVX3lxTE5tRmdZcFRDeGljUFRCYmQ0TjB3NjRNblIyb0lpX1F4Nm5FTG5YZ3AzUTN2MUZfSkZJazRWY2sxNF9lNGt1azFJMGo5angzSVp4QlNyN2tqS0RjeVlualVqRE0ydXBWVmgzOTgzdVFXWnJ1d3prUkU5b2FmNUxCSDkzRHVZbWJxUUNvYTYtenFvVmU4Qzc?oc=5",
+        "date": "2026-09-13"
+      },
+      {
+        "title": "‘Who knows’: Andrew Hastie makes revealing admission on Liberal leadership",
+        "source": "news24.com.au",
+        "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQaTQ5ZlhEc0RDSlFVWDc1TF85WS1GVDNYRU5IbFRYRTU2VjB6WG5CNVVvb0gzY0sxaEN6bGVqVmhXODVmblFEMTNUZ19BUVB1cU1saXNuSGNiSFZWTWV5eWZVZVdKYXNuWjh1V3hHT1dIUjkzSHdZUVlxcTdDc3RSbi1wOFRSWU1fQ1ZYek9oejlRMW9pNURjYmN0THk2a3ZQT1g4WUtBemRMaW1rWmkzQ0NnN3RaRWdjMnNBUFBQaW1JNUtYQnoydXNueDNuSnJ1bllXenpqbkl6THM4WkhGOHhReFFBU2ZGbDZhdFhtc3FYNlJxbk5ndHdQbU9Kc0VQM1dTcGVvLTJ3ODhaTm9lLTQwdnpBZkRF0gGeAkFVX3lxTE02YUg5Vk9xZXYyano0dVZZc3B4NG5kcW9jNnU3U0tBNzFrLWxJN0dmR2N4TmRVc2VMeXpicXkyM0k3eWFBbXNqb01VZ1Jjd0lhcXBPMUhQemk1WHV3WXhZZm1fZklwNnpwbXdsV2Q1WXZHamZURHNRQVFmU3VkV1ZPUlJPM3o5ZmNxZ2owS2xoakwwRTc5WVRzN3hHS0N4cXMwUGNURnNRN2FONk5zNVo0U3p1d2RodnJodkdibUF1OE9MdncwMnBSMnFBSzBQTjhaeTIwM2lMNFpSUEJ4Q3BaeEk2V3dWWnNvSVc0dXpqWFhRcWFpR2NsWUZrV1AzZjM4ZDlBcUJYdC0xZjR5YjBVMEQ1T3g2dmVVa2hxZ3c?oc=5",
+        "date": "2026-09-13"
+      }
+    ],
+    "explanation": "Hastie the answer for struggling Coalition but not just yet"
+  },
+  {
+    "date": "2026-09-10",
     "party_code": "ALP",
     "party_name": "Labor",
-    "value": 8,
-    "rolling_avg": 0.7,
-    "ratio": 11.2,
+    "value": 10,
+    "rolling_avg": 2.1,
+    "ratio": 4.7,
     "news": [
+      {
+        "title": "‘Stunning ambush’; Carroll’s WFH laws on brink of defeat",
+        "source": "The Australian",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNOGs5dTZjYk1nMUlXS3N4MmFIbVdYVDM4MGY1aUV1ZFJmMkxJUkFPMTZGa3l1Mll1RkhpYi1TZ0ZRbUJGN2g2eFd6dGRxQWpPZjBmdDFqVDhRYlFsZVprR0RmZU1HNExPZ09qQ0plM2FfVUQ0cnNBQUlCRkdDMWM5WnF1cl85Sl9udms0bUNrNUMyRXhRel9xQXlwdzNxd1FBSkhuV2ZOOW1fZWtib0JJcEYzRVV0b1E3VWJ2Ym0yVHV4N0JaVmxmenNB0gHPAUFVX3lxTFBKNEQ1TlBpU2VmNTVPeWExR1pCaHpPWjVWR0NxVWRkZjYyZTlqa3pveW05UDNUZktKb2s4VjdiWUN5OHRrQjRTVVhvYjBVOHE1ZXJ4RDM4VUdLVUJrNzFhNFE5S2R4QVIxMzhta1VKUlA5TXliaHFLbkgxS0J4MUJieWJLNzgtLVZHbVBOeWQyTEtYTVdzd2xRVkxoNV93RkJGRXkwUXVSejNGdkZRVUxSbl8yc0ljX0loc2pRenU4MGhxUjQ3azFCblhLdnIwUQ?oc=5",
+        "date": "2026-09-10"
+      },
+      {
+        "title": "Minns Labor Government to invest in NSW science, technology and innovation",
+        "source": "NSW Government",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSG9YNktXdERlYUpyeFY4M3dwdkVtU1d2eEhWLTVRWHRoZWN1bHlPRk16VmRKYl9uOExsWE0yNTV3VVhnMGs3OERzOE9EdGpUN0hHbHhBSjBnUHRGdkRPMC1QV1FXWFJoSDNOMlV6YU8zRGpsaVAxVDI1MThGQVdtMnphZjg2eFF2NGg0QjVFODF0bC1tVHo0VEJ5SUNlNkt1TnFGal9RZldJQ1hORTBUdlRRRzU?oc=5",
+        "date": "2026-09-10"
+      },
       {
         "title": "‘I was used’: Brittany Higgins blasts Labor over broken promise to sex assault victims",
         "source": "The Age",
         "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPc091TUowaGRFTklLa3NDY2VQd3g0MFEzbVgydDlZb3ZIZ0ltcjFJU2NjQ0JYUDZtV3k5TlNSYXF0eGVidDdmdW94NnhPYW93azJCVzhhTm0yM3R1T3lQTzd5SnNNM2UwdFVWZWZTWEtiaVBxWGlBdzRKUWZGV3h6dmZSMm9aV2Q3VEVkX29zck5kVjh4WnF5ZXlfZXBmWEZyQWIxMjVLWURNcTVqeEc4UGRZR05tc0MxajlvUVVBdW5Wc19xUVZIRHJEeXZ2dkctUThjTU9GcEx1V2J6S1hQNFlR?oc=5",
         "date": "2026-09-09"
-      },
-      {
-        "title": "MINNS LABOR GOVERNMENT STALLS ON SUICIDE PREVENTION",
-        "source": "NSW Nationals",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQTWpsQU1zVWw3aFFveS1XcFNVMXdIWmpCZmU1ZzV3X0RLUmdGemp4ZXFvTC0tSUZGdGpJdnUwN1VwbXVDOG1SSE9mQzZrUHVXQnhLVzN0bUU2dmZVcHNMc2F0eERTaHQ1bC1vX3NrLXM5dS1QMWk3aW1qRU9Hal91cTMydlU2Z0VxUk42bA?oc=5",
-        "date": "2026-09-09"
-      },
-      {
-        "title": "Australian state Labor government announces more police-state laws",
-        "source": "World Socialist Web Site",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE83dlR5cUFaTzFNaGx4OWRoSXdESlF6dmUya3VDZllzOERZRnNiSzc3bDBVM3ZoSm1oSG9wcHJYc2FhUnVQUXFsa3RrTkg4dlFNSlNSNDV1SG1UU3QwTEdTZTFKamI2T1Ft?oc=5",
-        "date": "2026-09-09"
       }
     ],
-    "explanation": "‘I was used’: Brittany Higgins blasts Labor over broken promise to sex assault victims"
-  },
-  {
-    "date": "2026-09-02",
-    "party_code": "ALP",
-    "party_name": "Labor",
-    "value": 5,
-    "rolling_avg": 1.0,
-    "ratio": 5.0,
-    "news": [
-      {
-        "title": "‘You simply cannot trust him’: Victorian Labor accused of hiding rail tax from voters",
-        "source": "news24.com.au",
-        "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOV2kxUFRsVzk2b2NPTEttMjRlQWpoSGl4U3hWbWg3WFV0TXFOTGxjUkV0Q2FpNXhlbk02Mm1KZW1iXzRBTEZrWVdTM3I5Tmc3RENyWlhDclVHZWp0QjFmaWlrY3BKSnZEclNMc3JFTG9qbm1QcXBtbExmUGUwQTR2Tlk5WDAxTUxVZHV6S3AzcFlOMEhZMFVfcFFNZ0xrTVBHRWZfOWxXaFZUb2dWMFhqYXRaQXYyWUF6OWVELXQ2VzMwendLR3FDZEV5RHpSalR1RGstb21LMUNkeG1JTmdidmdLMUU1eUh4MHBDdmNOOHQ5ZXlzdHdoXzJNVktTRm8zQk9ZaUNqTdIBjAJBVV95cUxOWV9zWW5OUjZxSlVMLTdjY1N5VjV4el80am1HREV0NXpMNjBtSXhyOEZCMUJaZTNjdzdZdXVZM3hLRG4wVk9OWEl5dVlUTWpxMnRiTTMxek16QVFIalh5RU1aZDJTcHd5Zk5pSTJPdnVCLVc4Qm9aVnkzTldsZDl6MHhNUkdsY1lqbFk5Y1VLazByOUF6TFNxS2xQcDFiS1l6SmVfVmNBSHhsdFF6UHZzdlJhYjVpTzZqOS1zN2k0WFBBbmd4LW80SHRqN3hjd1JNZHVEWmZTU1dpTzV2Qlo4eHVBMklnRF9nMzRhanZZTmdtNGZSdHdTVEZwQ181dVZLd2FJbzNJVXVHdGlo?oc=5",
-        "date": "2026-09-02"
-      },
-      {
-        "title": "The future at high altitude: meet the new Crispi Futura Alp GTX",
-        "source": "All4Shooters.com",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONGJBblExRU9leUFHbEVkLV9DSUYwaHp0X1UwYzFubEp0NDdNbW9zMFNtSlljUXVPVUhKc1p4VXhyOFg5REdaODRfN0hHdmxDYTExTlJiNXRBT3pQWHVrVlV1SWtRWDM5ME5YTUpVbXByWklQaF9rX1dKZWNkSkFDd1RzZF9tby1Qd2F2SA?oc=5",
-        "date": "2026-09-02"
-      },
-      {
-        "title": "Labor’s last minute road and rail promises ‘a thought bubble’",
-        "source": "weeklytimesnow.com.au",
-        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQMktDOE1qNGpVVFFIUmZ3UWFLT2pEbW5HNmRodU96TzBYQnhCWFhiQkNKVEJQV1VvMml0d0NLZE54LWlhTEczZDdPWnRFNHBqRVNsZ2Z4azZzeGdFYm1Nb2E1VHhVenBxSWl3NlNpN2hONnpEUHlsN0VLS1haY1ZnakNJOUQ3dEE0YmVRYklzcTM4bWJvT191YzRTYk9KNGp6QTVqeVpadURELWlIc3VKbGV5V1RIdWk1REhhLTRCeTZuTFhHaHc2NXZOOEpHV2ZUSzhmU3ZyNzZlUl9fZGR3Z3REcHnSAeoBQVVfeXFMTTBCemx4RmtvbFBmbjVjVldaSk5hNHlLZXAtTWg5bkpzVjJqNER2bEJsXzgzMU5NUWFoOWJEcWxNU2YtVC1kT2FLNGtQd2FuOXFaeEZYM1d4aWNHU3ZMeGVPSEdsb2FfcmVRZE1aN1FhX1RuaW5UcDZtTDI1bHpKVDBsTGU2NzJzX1AyQ2pfZ3NPb21RNnJRTGxXVmw4TzBKenY1NEZXN213bUltdjBTMVdqdWk3bW9aTnVlOFp0U1NJSUtzUGtzN1UwUTZYX3VPNDlaWHJ6V3lPbzV1ZWhCTi1FZTZ3Y2ZVMFpR?oc=5",
-        "date": "2026-09-01"
-      }
-    ],
-    "explanation": "‘You simply cannot trust him’: Victorian Labor accused of hiding rail tax from voters"
+    "explanation": "‘Stunning ambush’; Carroll’s WFH laws on brink of defeat"
   },
   {
     "date": "2026-08-30",
     "party_code": "PHON",
     "party_name": "One Nation",
     "value": 100,
-    "rolling_avg": 23.7,
-    "ratio": 4.2,
+    "rolling_avg": 23.1,
+    "ratio": 4.3,
     "news": [
       {
         "title": "Hanson, Joyce touch down in Victoria as One Nation announces four more candidates",
@@ -319,32 +319,32 @@
     "explanation": "Hanson, Joyce touch down in Victoria as One Nation announces four more candidates"
   },
   {
-    "date": "2026-08-26",
+    "date": "2026-08-28",
     "party_code": "ALP",
     "party_name": "Labor",
-    "value": 7,
+    "value": 9,
     "rolling_avg": 0.9,
-    "ratio": 8.2,
+    "ratio": 10.5,
     "news": [
       {
-        "title": "Ben Carroll looks more like Dan and Jacinta after SRL spin",
-        "source": "The Australian",
-        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxORVBLMmYxQnFMNkFxa05jTHQyZk9iRGFqanhaaDl5X05DdGFDTlNOcWFoTTQzbThLc1BUbHJyVmFwYTd4dm1USHZld0JCdGZCd0hhODFmSFZGRm03YWpWSFhzaHUtMEtuZXh3Sm1qSndNQkx2ZHUzVzl5SnNnWkpxVHUybS1KaUNKcUV5ck9yTkVtNkxnOFZvc0NGRnVsOEozRk8zWTRkbWFaQXc2clRTdTloRzFUZlJIOFlELUJibVE4TTAwM3JwcU53LW5ONk9hZXp2RFd1ZFFMaW1nZWpFNHp6UW1sY2xiWG50OTlGVzI3MUFiTGllaHhaZTbSAYICQVVfeXFMTTdmeGg1VE1QZ0hYVTFUaVBsYjFQWFhtR21UNkozUFV6VGk1NzgxdDY5Y1ZFT0IyUC1NUVBDTS1Nd0VmVXNabWNFSGUtb0doVTZjV1VudjFGanNSc24xbGF4LWdoWVhJNzR5VVhmRzVtcDMzS2wwVDh5ekVGcWU5blQ1eGROOGhuTHUxRmNxS2U1M2piYXMtTG1ya3RUQUdFaFg4R2hROWJmaG1yRzZiTnA1T29IaklIc29TeWZsekRYS09qWnFpTEpfTlQ3QklNNHM0RWNadk1yaVpjX1ppUVhlcjJQcWcybVhOSG5xLUJadFJ3bUZfdDF6dlpCcEVtb2FR?oc=5",
-        "date": "2026-08-26"
+        "title": "The secret tax that says everything about Victorian Labor",
+        "source": "AFR",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ0J4LXpVdDRjZTBLTEdpbzBmZFFVZnp0UU02TVBZWmtzcE9EWHZZNlVQMkhEQTA2VkFKNWxxT1IwZzlJWWNkMWV1MkpNS1FEbWlSZUhKb3lVZGhDc2ZCTVVTQlZfSFVlUHdDZ0QzUjNGd211UVpIcDNFc3lxOHprRmh1VXhqVEtDU1hKalY5V2VJdXFFVldrV283aEtpVFBsOVRuZg?oc=5",
+        "date": "2026-08-28"
       },
       {
-        "title": "How Allan, ministers decided to hide public transport levy in secret talks",
-        "source": "The Age",
-        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPYTJ2M1l6V3J2T3VBQkdkMktHZXdJMm1USUhLWGlPS2FLQ0dNa084NXNLWmhOaEt0WmtZem45dlZCckIxUVBYbWNsZXNOYlpaSDhubmpfZUVyLVFxQlNaYzVPV3Y0OTY4TnpJNXEtV3dkOFNXbTJtZFZOM1NJMExacWZjRVE0MExhcnpsSnhUcVFDUEVIVWh0eEYySlJTbHc1RlZBTlFCeDNxQ3N0M29VamMyOU54czZtSmJ1Y1FfeUFoZnIzazBiRUViLXV6Vjd4V0lYX05xMy1YSGctWWc?oc=5",
-        "date": "2026-08-26"
+        "title": "Tell Victorian Labor – hands off RAFFWU",
+        "source": "solidarity.net.au",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBjVjloR3owZFpORkZWb3c1UUFiRndiRlM1VVVLNGJNWm9DZVdqLWhqcS1wYnljTkZJX2pzd0I0blBLYnFud0lTdFNNR04wWVBXSWdpZjUtLWVXdVYwcEtwbTZnbWZhSzBFbC02QmdTLUpCaloxTktv?oc=5",
+        "date": "2026-08-28"
       },
       {
-        "title": "The secret transport levy is a chilling deception by the Victorian Labor government",
-        "source": "The Age",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPODB4VkY2U29iTGdJVTN1RkpTalpyV2VZYzlvMXlwVDR5UFpFZ2NKdW8xbndiLTl0LWxEV3gxRzVyWk9MV0VpUHBGcHN4YUlhdGFaOXk5aHA3cXIxQTZrVTl3SE5lcHRrZDhvVkJRUzEzbGNZTzIwY1pXSVhhRXI1UkwzODBHYWJLZWItd1VGdy1DTXJNNEg2cHBvd041WllySWZBN1FwR091QUI5TzBZ?oc=5",
-        "date": "2026-08-26"
+        "title": "Victorian Labor’s promise for free public dental clinics, under the microscope",
+        "source": "Croakey Health Media",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPN0YwWFlRSEJ0TFpfV2d0anF6NUFmYVFFZW1yckI2Mlo0MDhsSVNTVS1LWlFXeW5LWWtDMml6RjNtWDNuMXhpcEtZdjFyMGJ0dnptSjdzbWkyeWllaHdnSlFwekJTZi1GRFlDdnFVczFHMFlHYlAzOHdZUlc2NVZtZnZ6Y0NJb2lwYWJmR19CbDJmSEJRR0hRaHBiR3R6NnNPQjdZ?oc=5",
+        "date": "2026-08-28"
       }
     ],
-    "explanation": "Ben Carroll looks more like Dan and Jacinta after SRL spin"
+    "explanation": "The secret tax that says everything about Victorian Labor"
   }
 ]
