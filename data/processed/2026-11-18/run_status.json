@@ -1,14 +1,14 @@
 {
   "date": "2026-11-18",
-  "finished_at": "2026-11-18T12:20:08+11:00",
+  "finished_at": "2026-11-18T18:35:28+11:00",
   "steps": {
     "trends_national": {
       "ok": true,
-      "seconds": 8.4
+      "seconds": 0.0
     },
     "trends_victoria": {
       "ok": true,
-      "seconds": 8.4
+      "seconds": 0.0
     },
     "trends_victoria_leaders": {
       "ok": true,
@@ -20,15 +20,15 @@
     },
     "news_national": {
       "ok": true,
-      "seconds": 6.5
+      "seconds": 5.6
     },
     "news_victoria": {
       "ok": true,
-      "seconds": 19.8
+      "seconds": 6.9
     },
     "polls_victoria": {
       "ok": true,
-      "seconds": 0.7
+      "seconds": 0.4
     },
     "seat_model": {
       "ok": true,
@@ -36,7 +36,7 @@
     },
     "seat_news": {
       "ok": true,
-      "seconds": 39.4
+      "seconds": 22.6
     },
     "spikes_national": {
       "ok": true,
