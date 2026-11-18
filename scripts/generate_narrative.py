@@ -12,7 +12,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from config.settings import (  # noqa: E402
-    ENTITIES, PROCESSED_DIR, RAW_DIR, VIC_ENTITIES, VIC_LEADERS, load_latest_file, now_local,
+    ENTITIES, PROCESSED_DIR, RAW_DIR, VIC_ENTITIES, VIC_LEADERS, has_related_rows, load_latest_file, now_local,
     today_local, write_json,
 )
 
@@ -103,7 +103,7 @@ def national(as_of: str) -> list[str]:
     if not summary:
         return []
     _, spikes = load_latest_file(PROCESSED_DIR, "spikes.json")
-    _, related = load_latest_file(RAW_DIR, "related_queries.json")
+    _, related = load_latest_file(RAW_DIR, "related_queries.json", valid=has_related_rows)
     paras = [lead_sentence(summary, ENTITIES, "national")]
     move = movement_sentence(summary, ENTITIES)
     if move:

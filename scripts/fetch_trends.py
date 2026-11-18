@@ -5,6 +5,7 @@ Writes dated JSON snapshots (Melbourne date):
   data/raw/<date>/related_queries.json
   data/raw/<date>/victoria/interest_over_time.json   Victorian parties
   data/raw/<date>/victoria/related_queries.json
+  data/raw/<date>/victoria/related_queries_7d.json   Victorian parties, last 7 days
   data/raw/<date>/victoria/leaders_interest.json     Victorian leaders
 
 Google Trends rate-limits aggressively, so every call retries with backoff and
@@ -24,12 +25,18 @@ from requests import exceptions as req_exceptions
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from config.settings import (  # noqa: E402
     ENTITIES, GEO, RAW_DIR, TIMEFRAME, VIC_ENTITIES, VIC_GEO, VIC_LEADERS,
-    now_local, today_local, write_json,
+    has_related_rows, now_local, today_local, write_json,
 )
 
 MAX_ENTITIES_PER_REQUEST = 5
 REQUEST_TIMEOUT = (10, 25)
 BACKOFF = [20, 45, 90, 150]  # seconds between attempts
+# Short window for the Victorian "who are voters comparing" panel. The 90-day
+# related queries move too slowly to show campaign-week behaviour.
+RELATED_7D_TIMEFRAME = "now 7-d"
+# The Nationals topic has returned no Victorian related queries since tracking
+# began (too little volume), so it is left out to save a rate-limited request.
+RELATED_7D_EXCLUDE = {"NAT"}
 RETRYABLE = (
     pt_exceptions.TooManyRequestsError,
     pt_exceptions.ResponseError,
@@ -92,6 +99,47 @@ def _frame_to_series(df, entities: dict, batch: list[str]) -> dict[str, dict[str
     return out
 
 
+def _parse_related(rq: dict, entities: dict, batch: list[str], related: dict) -> None:
+    mid_to_code = {entities[c]["mid"]: c for c in batch}
+    for mid, parts in (rq or {}).items():
+        code = mid_to_code.get(mid, mid)
+        if code in related:
+            continue
+        parts = parts or {}
+        related[code] = {
+            kind: (parts[kind].to_dict("records") if parts.get(kind) is not None else [])
+            for kind in ("top", "rising")
+        }
+
+
+def fetch_related(entities: dict, geo: str, timeframe: str) -> dict:
+    """Related queries only. Returns {} when Google gives nothing back."""
+    related: dict[str, dict] = {}
+    for i, batch in enumerate(_batch_codes(list(entities.keys()))):
+        pt = _session()
+        mids = [entities[c]["mid"] for c in batch]
+        print(f"  related batch {i + 1}: {', '.join(batch)} (geo={geo}, {timeframe})")
+        _retry("build_payload", lambda: pt.build_payload(mids, geo=geo, timeframe=timeframe))
+        try:
+            rq = _retry("related_queries", pt.related_queries) or {}
+        except RETRYABLE as exc:
+            print(f"  WARNING: related queries unavailable ({exc.__class__.__name__})")
+            rq = {}
+        _parse_related(rq, entities, batch, related)
+        time.sleep(4)
+    return related if has_related_rows(related) else {}
+
+
+def save_related(path: Path, related: dict) -> bool:
+    """Write related queries only when they hold data, so an empty
+    rate-limited response never replaces the last good snapshot."""
+    if has_related_rows(related):
+        write_json(path, related)
+        return True
+    print(f"  WARNING: related queries empty; not writing {path.name} (last good copy is used)")
+    return False
+
+
 def fetch_interest(entities: dict, geo: str, timeframe: str = TIMEFRAME, with_related: bool = True):
     """Return (interest_payload, related_queries) for a set of entities."""
     codes = list(entities.keys())
@@ -130,16 +178,7 @@ def fetch_interest(entities: dict, geo: str, timeframe: str = TIMEFRAME, with_re
             except RETRYABLE as exc:
                 print(f"  WARNING: related queries unavailable ({exc.__class__.__name__}); continuing")
                 rq = {}
-            mid_to_code = {entities[c]["mid"]: c for c in batch}
-            for mid, parts in rq.items():
-                code = mid_to_code.get(mid, mid)
-                if code in related:
-                    continue
-                parts = parts or {}
-                related[code] = {
-                    kind: (parts[kind].to_dict("records") if parts.get(kind) is not None else [])
-                    for kind in ("top", "rising")
-                }
+            _parse_related(rq, entities, batch, related)
         time.sleep(4)
 
     if not series:
@@ -169,6 +208,13 @@ def fetch_and_save(entities: dict, geo: str, out_dir: Path, label: str, with_rel
         rows = prior.get("data") or [{}]
         if fetched.startswith(today_local()) and set(rows[0]) >= set(entities):
             print(f"  already fetched today ({fetched}); skipping. Set POLTRENDS_FORCE_TRENDS=1 to refetch.")
+            related_path = out_dir / "related_queries.json"
+            if with_related and not _has_rows_on_disk(related_path):
+                print("  related queries missing or empty for today; retrying them only")
+                try:
+                    save_related(related_path, fetch_related(entities, geo, TIMEFRAME))
+                except RETRYABLE as exc:
+                    print(f"  WARNING: related retry failed ({exc.__class__.__name__}); keeping last good copy")
             return True
     try:
         payload, related = fetch_interest(entities, geo, with_related=with_related)
@@ -180,8 +226,49 @@ def fetch_and_save(entities: dict, geo: str, out_dir: Path, label: str, with_rel
         return False
     write_json(out_dir / interest_file, payload)
     if with_related:
-        write_json(out_dir / "related_queries.json", related)
+        save_related(out_dir / "related_queries.json", related)
     print(f"  saved {label} -> {out_dir} ({len(payload['data'])} days, last {payload['data'][-1]['date']})")
+    return True
+
+
+def _has_rows_on_disk(path: Path) -> bool:
+    if not path.exists():
+        return False
+    try:
+        return has_related_rows(json.loads(path.read_text()))
+    except json.JSONDecodeError:
+        return False
+
+
+def fetch_victoria_related_7d() -> bool:
+    """Victorian related queries over the last 7 days (one snapshot per day).
+
+    Feeds the "who are voters comparing" panel. Optional: a failure leaves the
+    panel on its last good snapshot, labelled with its date.
+    """
+    out = RAW_DIR / today_local() / "victoria" / "related_queries_7d.json"
+    print(f"\nFetching victoria related queries ({RELATED_7D_TIMEFRAME})")
+    if _has_rows_on_disk(out) and not os.getenv("POLTRENDS_FORCE_TRENDS"):
+        print("  already fetched today; skipping. Set POLTRENDS_FORCE_TRENDS=1 to refetch.")
+        return True
+    entities = {c: e for c, e in VIC_ENTITIES.items() if c not in RELATED_7D_EXCLUDE}
+    time.sleep(8)
+    try:
+        related = fetch_related(entities, VIC_GEO, RELATED_7D_TIMEFRAME)
+    except RETRYABLE as exc:
+        print(f"  FAILED: {exc.__class__.__name__}: {exc}")
+        return False
+    if not related:
+        print("  FAILED: no related queries returned")
+        return False
+    write_json(out, {
+        "timeframe": RELATED_7D_TIMEFRAME,
+        "geo": VIC_GEO,
+        "fetched_at": now_local().isoformat(timespec="seconds"),
+        "excluded": sorted(RELATED_7D_EXCLUDE),
+        "parties": related,
+    })
+    print(f"  saved -> {out}")
     return True
 
 
@@ -204,5 +291,5 @@ def fetch_victoria_leaders() -> bool:
 
 
 if __name__ == "__main__":
-    results = [main(), fetch_victoria(), fetch_victoria_leaders()]
+    results = [main(), fetch_victoria(), fetch_victoria_leaders(), fetch_victoria_related_7d()]
     sys.exit(0 if any(results) else 1)

@@ -294,6 +294,109 @@
 </section>
 {% endif %}
 
+<!-- ============ COMPARING ============ -->
+{% if rel %}
+{% set cols = vic_entities.keys() | list + ['MINOR'] %}
+<section class="section" id="comparing">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="kicker">Related searches · Victoria</div><h2>Who are voters comparing?</h2></div>
+      <p>When Victorians search for a party, which other parties turn up in the same searches, and why they are searching. {{ rel.window_label | capitalize }} to {{ rel.source_date | fmt_day_long }}.</p>
+    </div>
+    <div class="grid g2">
+      <div class="card reveal">
+        <h3>Cross-party links</h3>
+        <p class="sub">Share of each party's top related searches that name another party. Read across a row. Arrows compare with the 90-day pattern.</p>
+        <div class="table-wrap">
+          <table class="rel-grid">
+            <thead><tr><th>Searching for</th>{% for o in cols %}<th>{% if o == 'MINOR' %}Minor{% else %}<span class="party" style="--c: {{ vic_entities[o].color }}"><span class="dot"></span>{{ vic_entities[o].short_name }}</span>{% endif %}</th>{% endfor %}</tr></thead>
+            <tbody>
+            {% for p, ent in vic_entities.items() %}{% set prof = rel.profiles.get(p) %}{% set base = (rel.baseline or {}).get(p) %}
+              <tr>
+                <th scope="row"><span class="party" style="--c: {{ ent.color }}"><span class="dot"></span>{{ ent.short_name }}</span></th>
+                {% if prof %}
+                  {% for o in cols %}
+                    {% if o == p %}<td class="self">–</td>
+                    {% else %}{% set v = prof.links.get(o, 0) %}{% set b = (base.links.get(o, 0) if base else none) %}
+                      {% set c = vic_entities[o].color if o != 'MINOR' else '#9AA4B2' %}
+                      <td style="--c: {{ c }}; --a: {{ [ (v * 260) | round | int, 70 ] | min }}%"><span class="v">{{ (v * 100) | round | int }}%</span>{% if b is not none and rel.window == '7d' %}{% set d = v - b %}{% if d >= 0.03 %}<span class="up" title="90-day: {{ (b * 100) | round | int }}%">▲</span>{% elif d <= -0.03 %}<span class="down" title="90-day: {{ (b * 100) | round | int }}%">▼</span>{% endif %}{% endif %}</td>
+                    {% endif %}
+                  {% endfor %}
+                {% else %}
+                  <td colspan="{{ cols | length }}" class="muted">Too few Victorian searches for Google to report related queries.</td>
+                {% endif %}
+              </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card reveal">
+        <h3>Why people are searching</h3>
+        <p class="sub">Each party's top related searches grouped by intent, as a share of that party's searches.</p>
+        {% for p, ent in vic_entities.items() %}{% set prof = rel.profiles.get(p) %}
+          {% if prof %}
+          <div class="intent-row">
+            <div class="party" style="--c: {{ ent.color }}"><span class="dot"></span>{{ ent.short_name }}</div>
+            <div class="intent-bar">
+              {% for k, label in rel.intent_labels.items() %}{% set v = prof.intents.get(k, 0) %}
+                {% if v > 0 %}<span class="i-{{ k }}" style="width: {{ (v * 100) | round(1) }}%" title="{{ label }}: {{ (v * 100) | round | int }}%"></span>{% endif %}
+              {% endfor %}
+            </div>
+            {% set practical = prof.intents.get('vote', 0) + prof.intents.get('candidates', 0) %}
+            <div class="intent-num tnum" title="How to vote, candidates and seats">{{ (practical * 100) | round | int }}%</div>
+          </div>
+          {% endif %}
+        {% endfor %}
+        <div class="legend">{% for k, label in rel.intent_labels.items() %}<span><i class="i-{{ k }}"></i>{{ label }}</span>{% endfor %}</div>
+        <p class="note" style="margin-top:10px">The figure on the right is how-to-vote plus candidate searches: the practical research people do before voting.</p>
+      </div>
+    </div>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card reveal">
+        <h3>Working theories</h3>
+        <p class="sub">Rule-based readings of the data. Leads to test against polls and results, not findings.</p>
+        {% if rel.hypotheses %}
+        <ol class="theories">
+          {% for h in rel.hypotheses %}<li><p>{{ h.text }}</p><p class="note">{{ h.evidence }}</p></li>{% endfor %}
+        </ol>
+        {% else %}<p class="empty">No pattern clears the thresholds today.</p>{% endif %}
+      </div>
+      <div class="card reveal">
+        <h3>Links on the move</h3>
+        <p class="sub">Cross-party links that changed most over two weeks{% if rel.history_start %}, daily since {{ rel.history_start | fmt_day_long }}{% endif %}. Uses Google's 90-day window, so it moves slower than the grid above and the figures differ.</p>
+        {% set moving = rel_shifts | selectattr('moved') | list %}
+        {% if moving %}
+        <div class="shift-list">
+          {% for s in moving %}
+          <div class="shift">
+            <div class="shift-head">
+              <span class="party" style="--c: {{ vic_entities[s.party].color }}"><span class="dot"></span>{{ vic_entities[s.party].short_name }}</span>
+              <span class="muted">searches naming</span>
+              <span class="party" style="--c: {{ vic_entities[s.other].color }}"><span class="dot"></span>{{ vic_entities[s.other].short_name }}</span>
+              <span class="tnum shift-val">{{ (s.before * 100) | round | int }}% → <b>{{ (s.now * 100) | round | int }}%</b></span>
+            </div>
+            {{ s.spark }}
+          </div>
+          {% endfor %}
+        </div>
+        {% else %}<p class="empty">No cross-party link has moved by more than 3 points in two weeks.</p>{% endif %}
+        {% set fresh = rel.new_rising.items() | selectattr('1') | list %}
+        {% if rel.has_previous and fresh %}
+        <h3 style="margin-top:18px">New rising searches today</h3>
+        <p class="sub">Rising related searches that were not in the previous snapshot.</p>
+        {% for p, qs in fresh %}
+          <div class="q-party"><div class="party" style="--c: {{ vic_entities[p].color }}"><span class="dot"></span>{{ vic_entities[p].short_name }}</div>
+          <div class="chips">{% for q in qs %}<span class="chip">{{ q.query }}</span>{% endfor %}</div></div>
+        {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+    <p class="note" style="margin-top:14px">How to read this: Google scales each party's related searches against that party's own busiest query, so these are shares <em>within</em> a party's searches, not search volume, and cannot be compared as counts across parties. Each daily 7-day snapshot is one sample from Google and varies between pulls. Queries about other states or countries are removed. Search behaviour is not voting intention.{% if rel.window != '7d' %} The 7-day snapshot is unavailable, so this shows the 90-day window from {{ rel.source_date | fmt_day_long }}.{% endif %}</p>
+  </div>
+</section>
+{% endif %}
+
 <section class="section" id="vic-news">
   <div class="wrap">
     <div class="section-head"><div><div class="kicker">Latest</div><h2>Campaign headlines</h2></div></div>

@@ -13,7 +13,7 @@ from markupsafe import Markup, escape
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from config.settings import (  # noqa: E402
     ENTITIES, OUTPUT_DIR, PROCESSED_DIR, RAW_DIR, SITE_DIR, SITE_URL, TEMPLATES_DIR, VIC_ENTITIES,
-    VIC_LEADERS, load_latest_file, now_local, today_local,
+    VIC_LEADERS, has_related_rows, load_latest_file, now_local, today_local,
 )
 from scripts import generate_charts as charts  # noqa: E402
 from scripts.generate_narrative import article  # noqa: E402
@@ -141,7 +141,7 @@ def build():
     # National
     _, summary = load_latest_file(PROCESSED_DIR, "weekly_analysis.json")
     iot_date, iot = load_latest_file(RAW_DIR, "interest_over_time.json")
-    _, related = load_latest_file(RAW_DIR, "related_queries.json")
+    _, related = load_latest_file(RAW_DIR, "related_queries.json", valid=has_related_rows)
     _, news = load_latest_file(RAW_DIR, "news.json")
     _, spikes = load_latest_file(PROCESSED_DIR, "spikes.json")
     _, briefing = load_latest_file(PROCESSED_DIR, "briefing.json")
@@ -153,11 +153,17 @@ def build():
     _, leaders_summary = load_latest_file(PROCESSED_DIR, "leaders_analysis.json", subdir="victoria")
     _, vic_iot = load_latest_file(RAW_DIR, "interest_over_time.json", subdir="victoria")
     _, leaders_iot = load_latest_file(RAW_DIR, "leaders_interest.json", subdir="victoria")
-    _, vic_related = load_latest_file(RAW_DIR, "related_queries.json", subdir="victoria")
+    _, vic_related = load_latest_file(RAW_DIR, "related_queries.json", subdir="victoria", valid=has_related_rows)
     _, vic_news = load_latest_file(RAW_DIR, "news.json", subdir="victoria")
     _, seat_news = load_latest_file(RAW_DIR, "seat_news.json", subdir="victoria")
     _, vic_spikes = load_latest_file(PROCESSED_DIR, "spikes.json", subdir="victoria")
     _, polls = load_latest_file(RAW_DIR, "polls.json", subdir="victoria")
+    _, rel = load_latest_file(PROCESSED_DIR, "related_analysis.json", subdir="victoria")
+    rel_shifts = [
+        {**sh, "moved": abs(sh["now"] - sh["before"]) >= 0.03,
+         "spark": charts.sparkline_svg(sh["spark"], VIC_ENTITIES[sh["other"]]["color"], height=32)}
+        for sh in (rel or {}).get("shifts", [])
+    ]
 
     news, vic_news, seat_news = clean_articles(news or {}), clean_articles(vic_news or {}), clean_articles(seat_news or {})
     spikes = [{**s, "news": clean_articles(s.get("news", []))} for s in (spikes or [])]
@@ -206,7 +212,7 @@ def build():
            description=vic_desc, share_text=f"Victoria votes in {vic_days} days. Polls, seats and search on PolTrends",
            vic_headline=vic_h, vic_lede=vic_lede, vic_summary=vic_summary, leaders_summary=leaders_summary,
            vic_sparks=vic_sparks, vic_related=vic_related or {}, vic_news=vic_news, seat_news=seat_news,
-           vic_spikes=vic_spikes, other_contests=other, tipping_band=int(TIPPING_BAND),
+           vic_spikes=vic_spikes, rel=rel, rel_shifts=rel_shifts, other_contests=other, tipping_band=int(TIPPING_BAND),
            seat_json=seat_payload(model) if model else Markup("{}"),
            og_image="og-victoria.png",
            charts={

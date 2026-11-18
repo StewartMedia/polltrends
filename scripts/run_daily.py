@@ -12,7 +12,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from config.settings import PROCESSED_DIR, now_local, today_local, write_json  # noqa: E402
 from scripts import (  # noqa: E402
     build_site, detect_spikes, fetch_news, fetch_trends, fetch_vic_polls, generate_narrative,
-    vic_model, weekly_analysis,
+    related_analysis, vic_model, weekly_analysis,
 )
 
 status: dict[str, dict] = {}
@@ -40,6 +40,7 @@ def main() -> int:
     step("trends_national", fetch_trends.main)
     step("trends_victoria", fetch_trends.fetch_victoria)
     step("trends_victoria_leaders", fetch_trends.fetch_victoria_leaders)
+    step("trends_victoria_related_7d", fetch_trends.fetch_victoria_related_7d)
     step("news_national", fetch_news.main)
     step("news_victoria", fetch_news.fetch_victoria)
     step("polls_victoria", fetch_vic_polls.main)
@@ -54,6 +55,7 @@ def main() -> int:
     step("summary_national", weekly_analysis.main)
     step("summary_victoria", weekly_analysis.analyse_victoria)
     step("summary_victoria_leaders", weekly_analysis.analyse_victoria_leaders)
+    step("related_victoria", related_analysis.main)
     step("briefing", generate_narrative.main)
 
     write_json(PROCESSED_DIR / today_local() / "run_status.json", {

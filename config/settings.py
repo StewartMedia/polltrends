@@ -126,19 +126,37 @@ def load_latest_file(
     filename: str,
     subdir: str | None = None,
     on_or_before: str | None = None,
+    valid=None,
 ) -> tuple[str | None, Any]:
     """Return (date, data) for the newest snapshot that has `filename`.
 
     Used for carry-forward: if today's fetch for one source failed, the site
     still renders the last good copy and labels it with its real date.
+    `valid` is an optional predicate; snapshots it rejects are skipped.
     """
     for d in reversed(list_dated_directories(directory)):
         if on_or_before and d.name > on_or_before:
             continue
         data = load_snapshot_file(directory, d.name, filename, subdir)
-        if data:
+        if data and (valid is None or valid(data)):
             return d.name, data
     return None, None
+
+
+def has_related_rows(data: Any) -> bool:
+    """True when a related-queries snapshot holds at least one query.
+
+    A rate-limited fetch returns {"ALP": {"top": [], "rising": []}, ...}, which
+    is truthy but empty. Treat it as missing so the last good copy is used.
+    Accepts the bare {code: {...}} form and the {"parties": {...}} form.
+    """
+    if not isinstance(data, dict):
+        return False
+    parties = data.get("parties", data)
+    return any(
+        isinstance(v, dict) and (v.get("top") or v.get("rising"))
+        for v in parties.values()
+    )
 
 
 def write_json(path: Path, data) -> None:

@@ -20,10 +20,12 @@ No local machine, cron job or language model is involved. Each step is isolated.
 | Step | Script | Output |
 | --- | --- | --- |
 | Search interest (AU, VIC parties, VIC leaders) | `fetch_trends.py` | `data/raw/<date>/[victoria/]interest_over_time.json`, `related_queries.json`, `victoria/leaders_interest.json` |
+| Victorian related queries, last 7 days | `fetch_trends.py` | `victoria/related_queries_7d.json` |
 | Headlines (Google News RSS) | `fetch_news.py` | `news.json`, `victoria/seat_news.json` |
 | Victorian polls (Wikipedia poll table) | `fetch_vic_polls.py` | `victoria/polls.json` |
 | Seat model | `vic_model.py` | `data/processed/<date>/victoria/seat_model.json` |
 | Spikes and headline matching | `detect_spikes.py` | `spikes.json` |
+| Who are voters comparing? (cross-party links, search intent, rule-based theories) | `related_analysis.py` | `victoria/related_analysis.json` |
 | Rolling 7-day summary | `weekly_analysis.py` | `weekly_analysis.json`, `victoria/leaders_analysis.json` |
 | Briefing (rule-based, no LLM) | `generate_narrative.py` | `briefing.json` |
 | Site and share images | `build_site.py`, `generate_charts.py`, `generate_og_image.py` | `docs/` |
