@@ -3,8 +3,8 @@
   "window": "7d",
   "window_label": "last 7 days",
   "source_date": "2026-11-18",
-  "baseline_date": "2026-11-17",
-  "history_days": 89,
+  "baseline_date": "2026-11-18",
+  "history_days": 90,
   "history_start": "2026-08-20",
   "intent_labels": {
     "vote": "How to vote",
@@ -104,83 +104,83 @@
   },
   "baseline": {
     "ALP": {
-      "n_top": 8,
+      "n_top": 15,
       "links": {
-        "LIB": 0.055,
+        "LIB": 0.222,
         "NAT": 0.0,
-        "GRN": 0.0,
-        "PHON": 0.05,
-        "MINOR": 0.0
-      },
-      "intents": {
-        "vote": 0.0,
-        "candidates": 0.0,
-        "compare": 0.064,
-        "policy": 0.06,
-        "leader": 0.0,
-        "outcome": 0.0,
-        "name": 0.876
-      },
-      "minor_names": {}
-    },
-    "LIB": {
-      "n_top": 14,
-      "links": {
-        "ALP": 0.106,
-        "NAT": 0.0,
-        "GRN": 0.03,
-        "PHON": 0.05,
+        "GRN": 0.032,
+        "PHON": 0.04,
         "MINOR": 0.0
       },
       "intents": {
         "vote": 0.0,
         "candidates": 0.0,
         "compare": 0.0,
-        "policy": 0.025,
-        "leader": 0.07,
+        "policy": 0.028,
+        "leader": 0.0,
         "outcome": 0.0,
-        "name": 0.905
+        "name": 0.972
+      },
+      "minor_names": {}
+    },
+    "LIB": {
+      "n_top": 15,
+      "links": {
+        "ALP": 0.063,
+        "NAT": 0.0,
+        "GRN": 0.114,
+        "PHON": 0.117,
+        "MINOR": 0.0
+      },
+      "intents": {
+        "vote": 0.0,
+        "candidates": 0.134,
+        "compare": 0.0,
+        "policy": 0.096,
+        "leader": 0.147,
+        "outcome": 0.0,
+        "name": 0.624
       },
       "minor_names": {}
     },
     "NAT": null,
     "GRN": {
-      "n_top": 7,
+      "n_top": 10,
       "links": {
-        "ALP": 0.077,
-        "LIB": 0.046,
+        "ALP": 0.161,
+        "LIB": 0.066,
         "NAT": 0.0,
-        "PHON": 0.0,
+        "PHON": 0.099,
         "MINOR": 0.0
       },
       "intents": {
         "vote": 0.0,
-        "candidates": 0.0,
+        "candidates": 0.051,
         "compare": 0.0,
-        "policy": 0.0,
-        "leader": 0.0,
+        "policy": 0.073,
+        "leader": 0.199,
         "outcome": 0.0,
-        "name": 1.0
+        "name": 0.678
       },
       "minor_names": {}
     },
     "PHON": {
-      "n_top": 20,
+      "n_top": 22,
       "links": {
-        "ALP": 0.018,
-        "LIB": 0.018,
+        "ALP": 0.0,
+        "LIB": 0.02,
         "NAT": 0.0,
-        "GRN": 0.012,
+        "GRN": 0.013,
         "MINOR": 0.0
       },
       "intents": {
         "vote": 0.0,
-        "candidates": 0.03,
+        "candidates": 0.013,
         "compare": 0.0,
-        "policy": 0.059,
-        "leader": 0.012,
-        "outcome": 0.03,
-        "name": 0.87
+        "policy": 0.065,
+        "leader": 0.013,
+        "outcome": 0.033,
+        "name": 0.876
       },
       "minor_names": {}
     }
@@ -312,8 +312,8 @@
     {
       "party": "LIB",
       "other": "ALP",
-      "now": 0.281,
-      "before": 0.078,
+      "now": 0.166,
+      "before": 0.084,
       "spark": [
         0.093,
         0.097,
@@ -401,14 +401,15 @@
         0.345,
         0.408,
         0.329,
-        0.106
+        0.106,
+        0.063
       ]
     },
     {
       "party": "LIB",
       "other": "PHON",
-      "now": 0.099,
-      "before": 0.069,
+      "now": 0.12,
+      "before": 0.067,
       "spark": [
         0.074,
         0.058,
@@ -496,13 +497,14 @@
         0.136,
         0.055,
         0.193,
-        0.05
+        0.05,
+        0.117
       ]
     },
     {
       "party": "PHON",
       "other": "ALP",
-      "now": 0.027,
+      "now": 0.017,
       "before": 0.004,
       "spark": [
         0.0,
@@ -591,13 +593,14 @@
         0.016,
         0.03,
         0.032,
-        0.018
+        0.018,
+        0.0
       ]
     },
     {
       "party": "PHON",
       "other": "GRN",
-      "now": 0.013,
+      "now": 0.012,
       "before": 0.0,
       "spark": [
         0.0,
@@ -686,13 +689,14 @@
         0.011,
         0.015,
         0.011,
-        0.012
+        0.012,
+        0.013
       ]
     },
     {
       "party": "PHON",
       "other": "LIB",
-      "now": 0.015,
+      "now": 0.016,
       "before": 0.008,
       "spark": [
         0.005,
@@ -781,7 +785,8 @@
         0.016,
         0.015,
         0.011,
-        0.018
+        0.018,
+        0.02
       ]
     },
     {
@@ -790,6 +795,7 @@
       "now": 0.0,
       "before": 0.0,
       "spark": [
+        0.0,
         0.0,
         0.0,
         0.0,
