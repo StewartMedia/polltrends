@@ -1,0 +1,334 @@
+{
+  "timeframe": "now 7-d",
+  "geo": "AU-VIC",
+  "fetched_at": "2026-11-19T18:35:04+11:00",
+  "excluded": [
+    "NAT"
+  ],
+  "parties": {
+    "ALP": {
+      "top": [
+        {
+          "query": "how to vote",
+          "value": 100
+        },
+        {
+          "query": "build a ballot",
+          "value": 9
+        }
+      ],
+      "rising": [
+        {
+          "query": "build a ballot",
+          "value": 37850
+        },
+        {
+          "query": "how to vote",
+          "value": 190
+        }
+      ]
+    },
+    "LIB": {
+      "top": [
+        {
+          "query": "liberal",
+          "value": 100
+        },
+        {
+          "query": "liberal party",
+          "value": 64
+        },
+        {
+          "query": "how to vote",
+          "value": 22
+        },
+        {
+          "query": "liberal how to vote",
+          "value": 22
+        },
+        {
+          "query": "liberal party victoria",
+          "value": 14
+        },
+        {
+          "query": "liberal candidate",
+          "value": 14
+        },
+        {
+          "query": "one nation",
+          "value": 12
+        },
+        {
+          "query": "liberal party how to vote",
+          "value": 10
+        },
+        {
+          "query": "labour",
+          "value": 10
+        },
+        {
+          "query": "australia liberal party",
+          "value": 9
+        },
+        {
+          "query": "one nation party",
+          "value": 9
+        },
+        {
+          "query": "labour party",
+          "value": 8
+        },
+        {
+          "query": "liberal vic",
+          "value": 7
+        },
+        {
+          "query": "liberal party policies",
+          "value": 6
+        },
+        {
+          "query": "labor party",
+          "value": 5
+        },
+        {
+          "query": "liberal party leader",
+          "value": 5
+        },
+        {
+          "query": "liberal party how to vote card",
+          "value": 4
+        },
+        {
+          "query": "jess wilson",
+          "value": 4
+        },
+        {
+          "query": "victorian election",
+          "value": 3
+        },
+        {
+          "query": "one nation victoria",
+          "value": 3
+        },
+        {
+          "query": "labour dlp",
+          "value": 1
+        },
+        {
+          "query": "liberal voting guide",
+          "value": 1
+        }
+      ],
+      "rising": [
+        {
+          "query": "labour dlp",
+          "value": 100900
+        },
+        {
+          "query": "liberal voting guide",
+          "value": 60000
+        },
+        {
+          "query": "how to vote",
+          "value": 550
+        },
+        {
+          "query": "liberal how to vote",
+          "value": 500
+        },
+        {
+          "query": "liberal party how to vote card",
+          "value": 400
+        },
+        {
+          "query": "liberal party how to vote",
+          "value": 300
+        }
+      ]
+    },
+    "GRN": {
+      "top": [
+        {
+          "query": "greens",
+          "value": 100
+        },
+        {
+          "query": "the greens",
+          "value": 60
+        },
+        {
+          "query": "greens party",
+          "value": 23
+        },
+        {
+          "query": "greens victoria",
+          "value": 19
+        },
+        {
+          "query": "the greens party",
+          "value": 19
+        },
+        {
+          "query": "greens policies",
+          "value": 18
+        },
+        {
+          "query": "the greens victoria",
+          "value": 11
+        },
+        {
+          "query": "liberal",
+          "value": 11
+        },
+        {
+          "query": "greens australia",
+          "value": 11
+        },
+        {
+          "query": "labour",
+          "value": 10
+        },
+        {
+          "query": "one nation",
+          "value": 10
+        },
+        {
+          "query": "australian greens",
+          "value": 9
+        },
+        {
+          "query": "the greens policies",
+          "value": 9
+        },
+        {
+          "query": "vic greens",
+          "value": 9
+        },
+        {
+          "query": "greens candidates",
+          "value": 8
+        },
+        {
+          "query": "labor",
+          "value": 7
+        },
+        {
+          "query": "liberal party",
+          "value": 7
+        },
+        {
+          "query": "greens policy",
+          "value": 6
+        },
+        {
+          "query": "greens policies victoria",
+          "value": 6
+        },
+        {
+          "query": "victorian election",
+          "value": 6
+        },
+        {
+          "query": "election victoria",
+          "value": 6
+        },
+        {
+          "query": "greens leader",
+          "value": 5
+        },
+        {
+          "query": "labour party",
+          "value": 5
+        },
+        {
+          "query": "greens candidate",
+          "value": 5
+        },
+        {
+          "query": "victorian socialists",
+          "value": 4
+        }
+      ],
+      "rising": [
+        {
+          "query": "sustainable australia party",
+          "value": 140250
+        },
+        {
+          "query": "labour vs liberal australia",
+          "value": 35900
+        },
+        {
+          "query": "build a ballot",
+          "value": 28250
+        },
+        {
+          "query": "anthony albanese",
+          "value": 10000
+        },
+        {
+          "query": "family first party",
+          "value": 1050
+        },
+        {
+          "query": "labour dlp",
+          "value": 650
+        },
+        {
+          "query": "family first",
+          "value": 500
+        },
+        {
+          "query": "animal justice party",
+          "value": 350
+        },
+        {
+          "query": "family first policies",
+          "value": 350
+        },
+        {
+          "query": "socialist alliance",
+          "value": 350
+        },
+        {
+          "query": "victorian socialist party",
+          "value": 250
+        },
+        {
+          "query": "labour dlp party",
+          "value": 250
+        },
+        {
+          "query": "animal justice party policies",
+          "value": 250
+        },
+        {
+          "query": "victorian socialists",
+          "value": 70
+        },
+        {
+          "query": "labour party",
+          "value": 60
+        }
+      ]
+    },
+    "PHON": {
+      "top": [
+        {
+          "query": "one nation",
+          "value": 100
+        },
+        {
+          "query": "how to vote",
+          "value": 23
+        }
+      ],
+      "rising": [
+        {
+          "query": "how to vote",
+          "value": 300
+        }
+      ]
+    }
+  }
+}

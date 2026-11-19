@@ -2,9 +2,9 @@
   "as_of": "2026-11-19",
   "window": "7d",
   "window_label": "last 7 days",
-  "source_date": "2026-11-18",
-  "baseline_date": "2026-11-18",
-  "history_days": 89,
+  "source_date": "2026-11-19",
+  "baseline_date": "2026-11-19",
+  "history_days": 90,
   "history_start": "2026-08-21",
   "intent_labels": {
     "vote": "How to vote",
@@ -17,170 +17,154 @@
   },
   "profiles": {
     "ALP": {
-      "n_top": 25,
+      "n_top": 2,
       "links": {
-        "LIB": 0.285,
+        "LIB": 0.0,
         "NAT": 0.0,
-        "GRN": 0.043,
-        "PHON": 0.047,
+        "GRN": 0.0,
+        "PHON": 0.0,
         "MINOR": 0.0
       },
       "intents": {
-        "vote": 0.0,
+        "vote": 1.0,
         "candidates": 0.0,
-        "compare": 0.086,
-        "policy": 0.037,
+        "compare": 0.0,
+        "policy": 0.0,
         "leader": 0.0,
         "outcome": 0.0,
-        "name": 0.876
+        "name": 0.0
       },
       "minor_names": {}
     },
     "LIB": {
-      "n_top": 25,
+      "n_top": 22,
       "links": {
-        "ALP": 0.084,
+        "ALP": 0.069,
         "NAT": 0.0,
-        "GRN": 0.027,
-        "PHON": 0.078,
-        "MINOR": 0.0
+        "GRN": 0.0,
+        "PHON": 0.072,
+        "MINOR": 0.003
       },
       "intents": {
-        "vote": 0.0,
-        "candidates": 0.054,
+        "vote": 0.174,
+        "candidates": 0.042,
         "compare": 0.0,
-        "policy": 0.039,
-        "leader": 0.024,
+        "policy": 0.018,
+        "leader": 0.015,
         "outcome": 0.0,
-        "name": 0.884
+        "name": 0.751
       },
-      "minor_names": {}
+      "minor_names": {
+        "DLP": 0.003
+      }
     },
     "NAT": null,
     "GRN": {
       "n_top": 25,
       "links": {
-        "ALP": 0.043,
-        "LIB": 0.049,
+        "ALP": 0.057,
+        "LIB": 0.047,
         "NAT": 0.0,
-        "PHON": 0.057,
-        "MINOR": 0.011
+        "PHON": 0.026,
+        "MINOR": 0.01
       },
       "intents": {
-        "vote": 0.052,
-        "candidates": 0.022,
+        "vote": 0.0,
+        "candidates": 0.034,
         "compare": 0.0,
-        "policy": 0.095,
-        "leader": 0.0,
+        "policy": 0.102,
+        "leader": 0.013,
         "outcome": 0.0,
-        "name": 0.832
+        "name": 0.852
       },
       "minor_names": {
-        "Victorian Socialists": 0.011
+        "Victorian Socialists": 0.01
       }
     },
     "PHON": {
-      "n_top": 25,
+      "n_top": 2,
       "links": {
-        "ALP": 0.026,
-        "LIB": 0.109,
+        "ALP": 0.0,
+        "LIB": 0.0,
         "NAT": 0.0,
-        "GRN": 0.023,
-        "MINOR": 0.004
+        "GRN": 0.0,
+        "MINOR": 0.0
       },
       "intents": {
-        "vote": 0.233,
-        "candidates": 0.019,
+        "vote": 0.187,
+        "candidates": 0.0,
         "compare": 0.0,
-        "policy": 0.038,
-        "leader": 0.008,
+        "policy": 0.0,
+        "leader": 0.0,
         "outcome": 0.0,
-        "name": 0.703
+        "name": 0.813
       },
-      "minor_names": {
-        "Victorian Socialists": 0.004
-      }
+      "minor_names": {}
     }
   },
   "baseline": {
-    "ALP": {
-      "n_top": 15,
+    "ALP": null,
+    "LIB": {
+      "n_top": 18,
       "links": {
-        "LIB": 0.222,
+        "ALP": 0.096,
         "NAT": 0.0,
-        "GRN": 0.032,
-        "PHON": 0.04,
+        "GRN": 0.0,
+        "PHON": 0.077,
+        "MINOR": 0.0
+      },
+      "intents": {
+        "vote": 0.04,
+        "candidates": 0.059,
+        "compare": 0.004,
+        "policy": 0.018,
+        "leader": 0.026,
+        "outcome": 0.0,
+        "name": 0.853
+      },
+      "minor_names": {
+        "Libertarian": 0.0,
+        "DLP": 0.0
+      }
+    },
+    "NAT": null,
+    "GRN": {
+      "n_top": 25,
+      "links": {
+        "ALP": 0.034,
+        "LIB": 0.034,
+        "NAT": 0.0,
+        "PHON": 0.025,
+        "MINOR": 0.0
+      },
+      "intents": {
+        "vote": 0.0,
+        "candidates": 0.022,
+        "compare": 0.0,
+        "policy": 0.071,
+        "leader": 0.056,
+        "outcome": 0.0,
+        "name": 0.851
+      },
+      "minor_names": {}
+    },
+    "PHON": {
+      "n_top": 1,
+      "links": {
+        "ALP": 0.0,
+        "LIB": 0.0,
+        "NAT": 0.0,
+        "GRN": 0.0,
         "MINOR": 0.0
       },
       "intents": {
         "vote": 0.0,
         "candidates": 0.0,
         "compare": 0.0,
-        "policy": 0.028,
+        "policy": 0.0,
         "leader": 0.0,
         "outcome": 0.0,
-        "name": 0.972
-      },
-      "minor_names": {}
-    },
-    "LIB": {
-      "n_top": 15,
-      "links": {
-        "ALP": 0.063,
-        "NAT": 0.0,
-        "GRN": 0.114,
-        "PHON": 0.117,
-        "MINOR": 0.0
-      },
-      "intents": {
-        "vote": 0.0,
-        "candidates": 0.134,
-        "compare": 0.0,
-        "policy": 0.096,
-        "leader": 0.147,
-        "outcome": 0.0,
-        "name": 0.624
-      },
-      "minor_names": {}
-    },
-    "NAT": null,
-    "GRN": {
-      "n_top": 10,
-      "links": {
-        "ALP": 0.161,
-        "LIB": 0.066,
-        "NAT": 0.0,
-        "PHON": 0.099,
-        "MINOR": 0.0
-      },
-      "intents": {
-        "vote": 0.0,
-        "candidates": 0.051,
-        "compare": 0.0,
-        "policy": 0.073,
-        "leader": 0.199,
-        "outcome": 0.0,
-        "name": 0.678
-      },
-      "minor_names": {}
-    },
-    "PHON": {
-      "n_top": 22,
-      "links": {
-        "ALP": 0.0,
-        "LIB": 0.02,
-        "NAT": 0.0,
-        "GRN": 0.013,
-        "MINOR": 0.0
-      },
-      "intents": {
-        "vote": 0.0,
-        "candidates": 0.013,
-        "compare": 0.0,
-        "policy": 0.065,
-        "leader": 0.013,
-        "outcome": 0.033,
-        "name": 0.876
+        "name": 1.0
       },
       "minor_names": {}
     }
@@ -188,227 +172,151 @@
   "rising": {
     "ALP": [
       {
-        "query": "peter dutton",
-        "value": 64200
+        "query": "build a ballot",
+        "value": 37850
       },
       {
-        "query": "scott morrison",
-        "value": 47400
-      },
-      {
-        "query": "victorian socialists",
-        "value": 250
-      },
-      {
-        "query": "liberal policies victoria",
-        "value": 150
-      },
-      {
-        "query": "the greens party",
-        "value": 90
-      },
-      {
-        "query": "anthony albanese",
-        "value": 80
-      },
-      {
-        "query": "liberal victoria",
-        "value": 60
-      },
-      {
-        "query": "australian labour party",
-        "value": 60
+        "query": "how to vote",
+        "value": 190
       }
     ],
     "LIB": [
       {
         "query": "labour dlp",
-        "value": 68150
+        "value": 100900
       },
       {
-        "query": "family first party",
-        "value": 200
+        "query": "liberal voting guide",
+        "value": 60000
       },
       {
-        "query": "liberal candidate",
-        "value": 50
+        "query": "how to vote",
+        "value": 550
+      },
+      {
+        "query": "liberal how to vote",
+        "value": 500
+      },
+      {
+        "query": "liberal party how to vote card",
+        "value": 400
+      },
+      {
+        "query": "liberal party how to vote",
+        "value": 300
       }
     ],
     "NAT": [],
     "GRN": [
       {
+        "query": "sustainable australia party",
+        "value": 140250
+      },
+      {
+        "query": "labour vs liberal australia",
+        "value": 35900
+      },
+      {
+        "query": "build a ballot",
+        "value": 28250
+      },
+      {
+        "query": "anthony albanese",
+        "value": 10000
+      },
+      {
+        "query": "family first party",
+        "value": 1050
+      },
+      {
+        "query": "labour dlp",
+        "value": 650
+      },
+      {
+        "query": "family first",
+        "value": 500
+      },
+      {
         "query": "animal justice party",
-        "value": 187350
-      },
-      {
-        "query": "greens immigration policy",
-        "value": 44350
-      },
-      {
-        "query": "are the greens liberal or labour",
-        "value": 250
-      },
-      {
-        "query": "how to vote greens",
-        "value": 200
-      },
-      {
-        "query": "victorian socialists policies",
-        "value": 160
-      },
-      {
-        "query": "one nations policies",
-        "value": 130
-      },
-      {
-        "query": "australian democrats",
-        "value": 100
-      },
-      {
-        "query": "libertarian party",
-        "value": 60
+        "value": 350
       }
     ],
     "PHON": [
       {
-        "query": "labour dlp",
-        "value": 38750
-      },
-      {
-        "query": "one nation how to vote guide",
-        "value": 350
-      },
-      {
         "query": "how to vote",
         "value": 300
-      },
-      {
-        "query": "one nation how to vote",
-        "value": 300
-      },
-      {
-        "query": "victorian socialists",
-        "value": 250
-      },
-      {
-        "query": "how to vote for one nation",
-        "value": 190
-      },
-      {
-        "query": "vote one nation",
-        "value": 160
       }
     ]
   },
   "new_rising": {
-    "ALP": [],
-    "LIB": [],
+    "ALP": [
+      {
+        "query": "build a ballot",
+        "value": 37850
+      },
+      {
+        "query": "how to vote",
+        "value": 190
+      }
+    ],
+    "LIB": [
+      {
+        "query": "liberal voting guide",
+        "value": 60000
+      },
+      {
+        "query": "how to vote",
+        "value": 550
+      },
+      {
+        "query": "liberal how to vote",
+        "value": 500
+      },
+      {
+        "query": "liberal party how to vote card",
+        "value": 400
+      },
+      {
+        "query": "liberal party how to vote",
+        "value": 300
+      }
+    ],
     "NAT": [],
-    "GRN": [],
+    "GRN": [
+      {
+        "query": "sustainable australia party",
+        "value": 140250
+      },
+      {
+        "query": "labour vs liberal australia",
+        "value": 35900
+      },
+      {
+        "query": "build a ballot",
+        "value": 28250
+      },
+      {
+        "query": "anthony albanese",
+        "value": 10000
+      },
+      {
+        "query": "family first party",
+        "value": 1050
+      },
+      {
+        "query": "labour dlp",
+        "value": 650
+      }
+    ],
     "PHON": []
   },
-  "has_previous": false,
+  "has_previous": true,
   "shifts": [
     {
       "party": "LIB",
-      "other": "ALP",
-      "now": 0.166,
-      "before": 0.084,
-      "spark": [
-        0.097,
-        0.05,
-        0.098,
-        0.087,
-        0.081,
-        0.095,
-        0.083,
-        0.056,
-        0.05,
-        0.078,
-        0.04,
-        0.076,
-        0.042,
-        0.064,
-        0.067,
-        0.06,
-        0.05,
-        0.065,
-        0.069,
-        0.048,
-        0.066,
-        0.044,
-        0.056,
-        0.059,
-        0.027,
-        0.059,
-        0.04,
-        0.042,
-        0.063,
-        0.065,
-        0.025,
-        0.02,
-        0.036,
-        0.035,
-        0.04,
-        0.037,
-        0.031,
-        0.031,
-        0.061,
-        0.032,
-        0.028,
-        0.042,
-        0.0,
-        0.189,
-        0.023,
-        0.025,
-        0.068,
-        0.031,
-        0.069,
-        0.176,
-        0.171,
-        0.115,
-        0.107,
-        0.075,
-        0.08,
-        0.04,
-        0.032,
-        0.033,
-        0.138,
-        0.09,
-        0.104,
-        0.075,
-        0.157,
-        0.067,
-        0.114,
-        0.058,
-        0.149,
-        0.134,
-        0.069,
-        0.138,
-        0.046,
-        0.051,
-        0.154,
-        0.037,
-        0.049,
-        0.105,
-        0.358,
-        0.046,
-        0.303,
-        0.333,
-        0.047,
-        0.327,
-        0.345,
-        0.408,
-        0.329,
-        0.106,
-        0.063
-      ]
-    },
-    {
-      "party": "LIB",
       "other": "PHON",
-      "now": 0.12,
-      "before": 0.067,
+      "now": 0.081,
+      "before": 0.066,
       "spark": [
         0.058,
         0.069,
@@ -496,108 +404,14 @@
         0.055,
         0.193,
         0.05,
-        0.117
-      ]
-    },
-    {
-      "party": "PHON",
-      "other": "ALP",
-      "now": 0.017,
-      "before": 0.004,
-      "spark": [
-        0.0,
-        0.0,
-        0.017,
-        0.015,
-        0.0,
-        0.0,
-        0.0,
-        0.017,
-        0.016,
-        0.0,
-        0.0,
-        0.0,
-        0.017,
-        0.017,
-        0.012,
-        0.0,
-        0.018,
-        0.012,
-        0.013,
-        0.0,
-        0.0,
-        0.0,
-        0.014,
-        0.013,
-        0.012,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.011,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.011,
-        0.0,
-        0.01,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.011,
-        0.012,
-        0.011,
-        0.012,
-        0.01,
-        0.0,
-        0.0,
-        0.0,
-        0.012,
-        0.011,
-        0.011,
-        0.012,
-        0.006,
-        0.005,
-        0.0,
-        0.011,
-        0.012,
-        0.011,
-        0.0,
-        0.012,
-        0.0,
-        0.011,
-        0.0,
-        0.022,
-        0.011,
-        0.0,
-        0.011,
-        0.0,
-        0.0,
-        0.012,
-        0.0,
-        0.0,
-        0.0,
-        0.027,
-        0.0,
-        0.011,
-        0.012,
-        0.0,
-        0.027,
-        0.016,
-        0.03,
-        0.032,
-        0.018,
-        0.0
+        0.117,
+        0.077
       ]
     },
     {
       "party": "PHON",
       "other": "GRN",
-      "now": 0.012,
+      "now": 0.008,
       "before": 0.0,
       "spark": [
         0.0,
@@ -686,14 +500,111 @@
         0.015,
         0.011,
         0.012,
-        0.013
+        0.013,
+        0.0
+      ]
+    },
+    {
+      "party": "LIB",
+      "other": "ALP",
+      "now": 0.088,
+      "before": 0.081,
+      "spark": [
+        0.097,
+        0.05,
+        0.098,
+        0.087,
+        0.081,
+        0.095,
+        0.083,
+        0.056,
+        0.05,
+        0.078,
+        0.04,
+        0.076,
+        0.042,
+        0.064,
+        0.067,
+        0.06,
+        0.05,
+        0.065,
+        0.069,
+        0.048,
+        0.066,
+        0.044,
+        0.056,
+        0.059,
+        0.027,
+        0.059,
+        0.04,
+        0.042,
+        0.063,
+        0.065,
+        0.025,
+        0.02,
+        0.036,
+        0.035,
+        0.04,
+        0.037,
+        0.031,
+        0.031,
+        0.061,
+        0.032,
+        0.028,
+        0.042,
+        0.0,
+        0.189,
+        0.023,
+        0.025,
+        0.068,
+        0.031,
+        0.069,
+        0.176,
+        0.171,
+        0.115,
+        0.107,
+        0.075,
+        0.08,
+        0.04,
+        0.032,
+        0.033,
+        0.138,
+        0.09,
+        0.104,
+        0.075,
+        0.157,
+        0.067,
+        0.114,
+        0.058,
+        0.149,
+        0.134,
+        0.069,
+        0.138,
+        0.046,
+        0.051,
+        0.154,
+        0.037,
+        0.049,
+        0.105,
+        0.358,
+        0.046,
+        0.303,
+        0.333,
+        0.047,
+        0.327,
+        0.345,
+        0.408,
+        0.329,
+        0.106,
+        0.063,
+        0.096
       ]
     },
     {
       "party": "PHON",
       "other": "LIB",
-      "now": 0.016,
-      "before": 0.008,
+      "now": 0.013,
+      "before": 0.01,
       "spark": [
         0.0,
         0.0,
@@ -781,7 +692,104 @@
         0.015,
         0.011,
         0.018,
-        0.02
+        0.02,
+        0.0
+      ]
+    },
+    {
+      "party": "PHON",
+      "other": "ALP",
+      "now": 0.006,
+      "before": 0.004,
+      "spark": [
+        0.0,
+        0.0,
+        0.017,
+        0.015,
+        0.0,
+        0.0,
+        0.0,
+        0.017,
+        0.016,
+        0.0,
+        0.0,
+        0.0,
+        0.017,
+        0.017,
+        0.012,
+        0.0,
+        0.018,
+        0.012,
+        0.013,
+        0.0,
+        0.0,
+        0.0,
+        0.014,
+        0.013,
+        0.012,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.011,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.011,
+        0.0,
+        0.01,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.011,
+        0.012,
+        0.011,
+        0.012,
+        0.01,
+        0.0,
+        0.0,
+        0.0,
+        0.012,
+        0.011,
+        0.011,
+        0.012,
+        0.006,
+        0.005,
+        0.0,
+        0.011,
+        0.012,
+        0.011,
+        0.0,
+        0.012,
+        0.0,
+        0.011,
+        0.0,
+        0.022,
+        0.011,
+        0.0,
+        0.011,
+        0.0,
+        0.0,
+        0.012,
+        0.0,
+        0.0,
+        0.0,
+        0.027,
+        0.0,
+        0.011,
+        0.012,
+        0.0,
+        0.027,
+        0.016,
+        0.03,
+        0.032,
+        0.018,
+        0.0,
+        0.0
       ]
     },
     {
@@ -880,19 +888,14 @@
   ],
   "hypotheses": [
     {
-      "kind": "one-way",
-      "text": "Labor searches lead to Liberal far more than the reverse. One reading: people starting from Labor are checking Liberal as the alternative.",
-      "evidence": "28% of Labor's top related searches name Liberal; 8% of Liberal's name Labor (this week)."
-    },
-    {
       "kind": "prepoll",
-      "text": "Prepoll research is showing up. One Nation draws the most practical searches (how-to-vote cards, candidates and seats). That looks more like people planning a vote than general curiosity.",
-      "evidence": "How-to-vote and candidate searches as a share of each party's top related searches this week: One Nation 25%."
+      "text": "Prepoll research is showing up. Labor draws the most practical searches (how-to-vote cards, candidates and seats). That looks more like people planning a vote than general curiosity.",
+      "evidence": "How-to-vote and candidate searches as a share of each party's top related searches this week: Labor 100%, Liberal 22%, One Nation 19%."
     },
     {
       "kind": "minors",
       "text": "Minor parties are turning up in major-party searches. That points to preference and upper-house shopping, where minor parties matter most.",
-      "evidence": "Minor parties named in related searches this week: Victorian Socialists (Greens, One Nation, Labor); DLP (Liberal, One Nation); Family First (Liberal); Animal Justice (Greens)."
+      "evidence": "Minor parties named in related searches this week: DLP (Liberal, Greens); Victorian Socialists (Greens); Sustainable Australia (Greens); Family First (Greens)."
     }
   ]
 }
