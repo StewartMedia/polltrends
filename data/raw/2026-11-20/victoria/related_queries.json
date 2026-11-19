@@ -1,0 +1,394 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "victoria election",
+        "value": 56
+      }
+    ],
+    "rising": [
+      {
+        "query": "victoria election",
+        "value": 700
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "liberal party",
+        "value": 68
+      },
+      {
+        "query": "liberal candidate",
+        "value": 15
+      },
+      {
+        "query": "liberal party australia",
+        "value": 14
+      },
+      {
+        "query": "liberal party victoria",
+        "value": 12
+      },
+      {
+        "query": "one nation",
+        "value": 10
+      },
+      {
+        "query": "labour",
+        "value": 9
+      },
+      {
+        "query": "one nation party",
+        "value": 8
+      },
+      {
+        "query": "liberal party leader",
+        "value": 7
+      },
+      {
+        "query": "liberal vic",
+        "value": 7
+      },
+      {
+        "query": "labour party",
+        "value": 7
+      },
+      {
+        "query": "how to vote liberal",
+        "value": 5
+      },
+      {
+        "query": "labor party",
+        "value": 5
+      },
+      {
+        "query": "how to vote",
+        "value": 5
+      },
+      {
+        "query": "liberal party policies",
+        "value": 5
+      },
+      {
+        "query": "victorian election",
+        "value": 4
+      },
+      {
+        "query": "liberal party how to vote",
+        "value": 3
+      },
+      {
+        "query": "liberal party policies victoria",
+        "value": 1
+      },
+      {
+        "query": "what does liberal party stand for",
+        "value": 1
+      },
+      {
+        "query": "labour vs liberal australia",
+        "value": 1
+      },
+      {
+        "query": "victorian socialists",
+        "value": 1
+      },
+      {
+        "query": "labour dlp",
+        "value": 0
+      },
+      {
+        "query": "libertarian party",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "liberal party policies victoria",
+        "value": 131650
+      },
+      {
+        "query": "what does liberal party stand for",
+        "value": 73250
+      },
+      {
+        "query": "labour vs liberal australia",
+        "value": 53500
+      },
+      {
+        "query": "victorian socialists",
+        "value": 44650
+      },
+      {
+        "query": "labour dlp",
+        "value": 18500
+      },
+      {
+        "query": "libertarian party",
+        "value": 18250
+      },
+      {
+        "query": "how to vote",
+        "value": 1500
+      },
+      {
+        "query": "liberal party how to vote",
+        "value": 650
+      },
+      {
+        "query": "how to vote liberal",
+        "value": 550
+      },
+      {
+        "query": "liberal candidate",
+        "value": 160
+      },
+      {
+        "query": "liberal party victoria",
+        "value": 80
+      },
+      {
+        "query": "victorian election",
+        "value": 70
+      },
+      {
+        "query": "liberal vic",
+        "value": 60
+      }
+    ]
+  },
+  "NAT": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      }
+    ],
+    "rising": []
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "greens",
+        "value": 100
+      },
+      {
+        "query": "the greens",
+        "value": 54
+      },
+      {
+        "query": "greens party",
+        "value": 19
+      },
+      {
+        "query": "australia greens",
+        "value": 15
+      },
+      {
+        "query": "the greens party",
+        "value": 14
+      },
+      {
+        "query": "australian greens",
+        "value": 12
+      },
+      {
+        "query": "greens policies",
+        "value": 12
+      },
+      {
+        "query": "greens victoria",
+        "value": 10
+      },
+      {
+        "query": "greens leader",
+        "value": 9
+      },
+      {
+        "query": "one nation",
+        "value": 8
+      },
+      {
+        "query": "liberal",
+        "value": 7
+      },
+      {
+        "query": "the greens victoria",
+        "value": 6
+      },
+      {
+        "query": "labour",
+        "value": 6
+      },
+      {
+        "query": "victorian greens",
+        "value": 6
+      },
+      {
+        "query": "labor",
+        "value": 6
+      },
+      {
+        "query": "the greens policies",
+        "value": 6
+      },
+      {
+        "query": "greens policy",
+        "value": 5
+      },
+      {
+        "query": "liberal party",
+        "value": 5
+      },
+      {
+        "query": "greens senator jordon steele john",
+        "value": 4
+      },
+      {
+        "query": "australian greens party",
+        "value": 4
+      },
+      {
+        "query": "leader of greens",
+        "value": 4
+      },
+      {
+        "query": "david shoebridge",
+        "value": 4
+      },
+      {
+        "query": "greens candidates",
+        "value": 4
+      },
+      {
+        "query": "liberal party victoria",
+        "value": 3
+      },
+      {
+        "query": "state election",
+        "value": 3
+      }
+    ],
+    "rising": [
+      {
+        "query": "greens senator jordon steele john",
+        "value": 424750
+      },
+      {
+        "query": "liberal party victoria",
+        "value": 331300
+      },
+      {
+        "query": "one nation victoria",
+        "value": 215250
+      },
+      {
+        "query": "greens policies victoria",
+        "value": 213050
+      },
+      {
+        "query": "socialist party",
+        "value": 155350
+      },
+      {
+        "query": "greens senators",
+        "value": 154850
+      },
+      {
+        "query": "who do the greens preference votes go to",
+        "value": 144100
+      },
+      {
+        "query": "labour party victoria",
+        "value": 130150
+      },
+      {
+        "query": "victorian election 2026",
+        "value": 121300
+      },
+      {
+        "query": "greens policies 2026",
+        "value": 118100
+      },
+      {
+        "query": "adam bandt",
+        "value": 116700
+      },
+      {
+        "query": "labor party victoria",
+        "value": 110500
+      },
+      {
+        "query": "labour party policies",
+        "value": 105750
+      },
+      {
+        "query": "australian democrats",
+        "value": 88800
+      },
+      {
+        "query": "labour policies 2026",
+        "value": 81150
+      },
+      {
+        "query": "are the greens liberal or labour",
+        "value": 79750
+      },
+      {
+        "query": "animal justice party",
+        "value": 72550
+      },
+      {
+        "query": "pauline hanson policies",
+        "value": 63600
+      },
+      {
+        "query": "australian democrats party",
+        "value": 60100
+      },
+      {
+        "query": "socialist alliance",
+        "value": 54300
+      },
+      {
+        "query": "bob brown greens",
+        "value": 52800
+      },
+      {
+        "query": "liberal policies victoria",
+        "value": 50350
+      },
+      {
+        "query": "family first party",
+        "value": 49650
+      },
+      {
+        "query": "greens policy victoria",
+        "value": 42650
+      },
+      {
+        "query": "jess wilson",
+        "value": 36750
+      }
+    ]
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      }
+    ],
+    "rising": []
+  }
+}
