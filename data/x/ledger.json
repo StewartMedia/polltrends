@@ -708,9 +708,19 @@
       "status": "posted",
       "at": "2026-11-16T06:34:20+11:00",
       "post_id": "2122050588724588573"
+    },
+    "poll:2026-11-20:Lighthouse/Growth Intelligence Centre": {
+      "status": "edit",
+      "at": "2026-11-21T06:35:17+11:00",
+      "of": "poll:2026-11-13:Lighthouse/Growth Intelligence Centre",
+      "poll": {
+        "firm": "lighthousegrowthintelligencecentre",
+        "date": "2026-11-20",
+        "sig": "22/31/24/15/None"
+      }
     }
   },
-  "updated": "2026-11-20T18:34:41+11:00",
+  "updated": "2026-11-21T06:35:17+11:00",
   "account": {
     "username": "poltrendsau",
     "verified_at": "2026-10-12T22:52:44+11:00"
