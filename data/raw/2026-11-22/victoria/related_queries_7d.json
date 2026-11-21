@@ -1,0 +1,65 @@
+{
+  "timeframe": "now 7-d",
+  "geo": "AU-VIC",
+  "fetched_at": "2026-11-22T06:33:59+11:00",
+  "excluded": [
+    "NAT"
+  ],
+  "parties": {
+    "ALP": {
+      "top": [
+        {
+          "query": "how to vote",
+          "value": 100
+        }
+      ],
+      "rising": [
+        {
+          "query": "how to vote",
+          "value": 140
+        }
+      ]
+    },
+    "LIB": {
+      "top": [
+        {
+          "query": "liberal party of australia",
+          "value": 100
+        }
+      ],
+      "rising": []
+    },
+    "GRN": {
+      "top": [
+        {
+          "query": "how to vote",
+          "value": 100
+        },
+        {
+          "query": "victorian socialists",
+          "value": 38
+        }
+      ],
+      "rising": [
+        {
+          "query": "how to vote",
+          "value": 200
+        }
+      ]
+    },
+    "PHON": {
+      "top": [
+        {
+          "query": "how to vote",
+          "value": 100
+        }
+      ],
+      "rising": [
+        {
+          "query": "how to vote",
+          "value": 200
+        }
+      ]
+    }
+  }
+}

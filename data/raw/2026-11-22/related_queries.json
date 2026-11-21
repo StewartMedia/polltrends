@@ -1,0 +1,42 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "victorian socialists",
+        "value": 100
+      }
+    ],
+    "rising": [
+      {
+        "query": "victorian socialists",
+        "value": 36850
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal party of australia",
+        "value": 100
+      },
+      {
+        "query": "victorian socialists",
+        "value": 1
+      }
+    ],
+    "rising": [
+      {
+        "query": "victorian socialists",
+        "value": 10700
+      }
+    ]
+  },
+  "GRN": {
+    "top": [],
+    "rising": []
+  },
+  "PHON": {
+    "top": [],
+    "rising": []
+  }
+}
