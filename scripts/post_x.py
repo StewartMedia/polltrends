@@ -110,9 +110,13 @@ def poll_meta(p: dict) -> dict:
     return {"firm": _norm_firm(p.get("firm")), "date": p.get("date"), "sig": sig}
 
 
-def edited_from(p: dict, seen: dict) -> str | None:
+def edited_from(p: dict, seen: dict, current: set[str] | frozenset = frozenset()) -> str | None:
     """Key of a known poll that this one is probably a Wikipedia edit of (same firm within a
-    week, or same date and identical figures), so an edit is never announced as a new poll."""
+    week, or same date and identical figures), so an edit is never announced as a new poll.
+
+    `current` holds the keys of every poll in today's table. A known poll whose row is still
+    there cannot have been edited into this one, so it is ignored. Without this, weekly
+    trackers (Lighthouse for the Herald Sun) were suppressed as edits of the previous week."""
     m = poll_meta(p)
     try:
         d = date.fromisoformat(m["date"])
@@ -120,7 +124,7 @@ def edited_from(p: dict, seen: dict) -> str | None:
         return None
     for key, v in seen.items():
         old = v.get("poll")
-        if not old or key == poll_key(p):
+        if not old or key == poll_key(p) or key in current:
             continue
         try:
             close = abs((date.fromisoformat(old["date"]) - d).days) <= 7
@@ -373,13 +377,14 @@ def main() -> int:
                      if v.get("status") in ("posted", "drafted") and v.get("at", "")[:10] == today)
     room = max(0, min(MAX_PER_RUN, MAX_PER_DAY - used_today))
 
+    current = {poll_key(p) for p in (_load("polls.json", "victoria", raw=True) or {}).get("assembly", [])}
     candidates = []
     for c in collect_candidates(today, now):
         prior = seen.get(c["key"], {})
         if prior.get("status") in done or prior.get("attempts", 0) >= MAX_ATTEMPTS:
             continue
         if c["kind"] == "poll" and c["key"] not in seen:
-            original = edited_from(c["poll"], seen)
+            original = edited_from(c["poll"], seen, current)
             if original:
                 seen[c["key"]] = {"status": "edit", "at": stamp, "of": original, "poll": poll_meta(c["poll"])}
                 print(f"{c['key']} looks like an edit of {original}; not posting.")
