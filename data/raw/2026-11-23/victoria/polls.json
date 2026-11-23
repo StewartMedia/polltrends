@@ -1,7 +1,7 @@
 {
   "source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Victorian_state_election",
-  "revision": 1387080210,
-  "fetched_at": "2026-11-23T11:21:07+11:00",
+  "revision": 1387275959,
+  "fetched_at": "2026-11-23T18:34:35+11:00",
   "assembly": [
     {
       "date": "2026-11-20",
@@ -34,6 +34,24 @@
       "tpp_ALP_vs_ONP": 50.0,
       "tpp_ONP_vs_ALP": 50.0,
       "p_OTH_ALL": 7.0
+    },
+    {
+      "date": "2026-11-19",
+      "fieldwork": "18–19 Nov",
+      "firm": "Roy Morgan",
+      "client": "—N/a",
+      "sample": "1563",
+      "p_ALP": 22.5,
+      "p_LNP": 31.0,
+      "p_GRN": 13.0,
+      "p_ONP": 20.0,
+      "p_IND": 5.0,
+      "p_OTH": 8.5,
+      "tpp_ALP": 45.0,
+      "tpp_LNP": 55.0,
+      "tpp_ALP_vs_ONP": 54.0,
+      "tpp_ONP_vs_ALP": 46.0,
+      "p_OTH_ALL": 13.5
     },
     {
       "date": "2026-11-18",

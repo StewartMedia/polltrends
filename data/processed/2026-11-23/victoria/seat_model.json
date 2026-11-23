@@ -28,14 +28,14 @@
     "n_polls": 7,
     "primary": {
       "ALP": 22.4,
-      "LNP": 31.6,
-      "ONP": 21.6,
+      "LNP": 31.9,
+      "ONP": 21.3,
       "GRN": 14.1,
       "OTH_ALL": 10.4
     },
     "tpp": {
-      "ALP": 43.4,
-      "LNP": 56.6
+      "ALP": 43.6,
+      "LNP": 56.4
     },
     "n_tpp": 5,
     "polls": [
@@ -66,6 +66,20 @@
         "p_OTH_ALL": 7.0,
         "tpp_ALP": 42.0,
         "tpp_LNP": 58.0
+      },
+      {
+        "date": "2026-11-19",
+        "fieldwork": "18–19 Nov",
+        "firm": "Roy Morgan",
+        "client": "—N/a",
+        "sample": "1563",
+        "p_ALP": 22.5,
+        "p_LNP": 31.0,
+        "p_ONP": 20.0,
+        "p_GRN": 13.0,
+        "p_OTH_ALL": 13.5,
+        "tpp_ALP": 45.0,
+        "tpp_LNP": 55.0
       },
       {
         "date": "2026-11-18",
@@ -110,20 +124,6 @@
         "tpp_LNP": 56.0
       },
       {
-        "date": "2026-10-29",
-        "fieldwork": "26–29 Oct",
-        "firm": "Roy Morgan",
-        "client": "—N/a",
-        "sample": "3610",
-        "p_ALP": 22.5,
-        "p_LNP": 29.5,
-        "p_ONP": 22.0,
-        "p_GRN": 12.5,
-        "p_OTH_ALL": 13.5,
-        "tpp_ALP": 44.0,
-        "tpp_LNP": 56.0
-      },
-      {
         "date": "2026-10-26",
         "fieldwork": "14–26 Oct",
         "firm": "Online Research Unit",
@@ -139,7 +139,7 @@
       }
     ]
   },
-  "swing_to_lnp": 11.6,
+  "swing_to_lnp": 11.4,
   "uniform_swing_tally": {
     "LNP": 63,
     "ALP": 22,
@@ -587,13 +587,22 @@
       "tpp_ALP": 43.8
     },
     {
+      "date": "2026-11-19",
+      "ALP": 22.6,
+      "LNP": 31.9,
+      "ONP": 20.9,
+      "GRN": 14.0,
+      "OTH_ALL": 10.7,
+      "tpp_ALP": 44.0
+    },
+    {
       "date": "2026-11-20",
       "ALP": 22.6,
-      "LNP": 31.8,
-      "ONP": 21.4,
+      "LNP": 32.0,
+      "ONP": 21.1,
       "GRN": 14.1,
       "OTH_ALL": 10.2,
-      "tpp_ALP": 43.7
+      "tpp_ALP": 43.8
     }
   ],
   "substate": {},
@@ -1942,7 +1951,7 @@
       "projected": "ALP",
       "changes": false,
       "reason": "On the tipping point",
-      "distance": 0.0
+      "distance": 0.1999999999999993
     },
     {
       "seat": "Northcote",
@@ -1962,23 +1971,6 @@
       "distance": 0.2
     },
     {
-      "seat": "Wendouree",
-      "member": "Juliana Addison",
-      "holder": "ALP",
-      "margin": 11.9,
-      "vs": "LNP",
-      "tier": "Safe",
-      "sitting_independent": false,
-      "classic": true,
-      "region": "Western Victoria",
-      "region_type": "Country",
-      "flips_at": 11.9,
-      "projected": "ALP",
-      "changes": false,
-      "reason": "On the tipping point",
-      "distance": 0.3000000000000007
-    },
-    {
       "seat": "Albert Park",
       "member": "Nina Taylor",
       "holder": "ALP",
@@ -1993,7 +1985,24 @@
       "projected": "LNP",
       "changes": true,
       "reason": "On the tipping point",
-      "distance": 0.40000000000000036
+      "distance": 0.20000000000000107
+    },
+    {
+      "seat": "Wendouree",
+      "member": "Juliana Addison",
+      "holder": "ALP",
+      "margin": 11.9,
+      "vs": "LNP",
+      "tier": "Safe",
+      "sitting_independent": false,
+      "classic": true,
+      "region": "Western Victoria",
+      "region_type": "Country",
+      "flips_at": 11.9,
+      "projected": "ALP",
+      "changes": false,
+      "reason": "On the tipping point",
+      "distance": 0.5
     },
     {
       "seat": "Werribee",
@@ -2011,7 +2020,25 @@
       "projected": "LNP",
       "changes": true,
       "reason": "On the tipping point",
-      "distance": 0.6999999999999993
+      "distance": 0.5
+    },
+    {
+      "seat": "Bendigo East",
+      "member": "Jacinta Allan",
+      "holder": "ALP",
+      "margin": 10.8,
+      "vs": "LNP",
+      "tier": "Safe",
+      "sitting_independent": false,
+      "note": "Former premier Jacinta Allan is leaving politics.",
+      "classic": true,
+      "region": "Northern Victoria",
+      "region_type": "Country",
+      "flips_at": 10.8,
+      "projected": "LNP",
+      "changes": true,
+      "reason": "On the tipping point",
+      "distance": 0.5999999999999996
     },
     {
       "seat": "Mornington",
@@ -2031,41 +2058,6 @@
       "distance": 0.7
     },
     {
-      "seat": "Tarneit",
-      "member": "Dylan Wight",
-      "holder": "ALP",
-      "margin": 12.3,
-      "vs": "LNP",
-      "tier": "Safe",
-      "sitting_independent": false,
-      "classic": true,
-      "region": "Western Metropolitan",
-      "region_type": "Metropolitan",
-      "flips_at": 12.3,
-      "projected": "ALP",
-      "changes": false,
-      "reason": "On the tipping point",
-      "distance": 0.7000000000000011
-    },
-    {
-      "seat": "Bendigo East",
-      "member": "Jacinta Allan",
-      "holder": "ALP",
-      "margin": 10.8,
-      "vs": "LNP",
-      "tier": "Safe",
-      "sitting_independent": false,
-      "note": "Former premier Jacinta Allan is leaving politics.",
-      "classic": true,
-      "region": "Northern Victoria",
-      "region_type": "Country",
-      "flips_at": 10.8,
-      "projected": "LNP",
-      "changes": true,
-      "reason": "On the tipping point",
-      "distance": 0.7999999999999989
-    },
-    {
       "seat": "Benambra",
       "member": "Bill Tilley",
       "holder": "LIB",
@@ -2083,6 +2075,23 @@
       "distance": 0.9
     },
     {
+      "seat": "Tarneit",
+      "member": "Dylan Wight",
+      "holder": "ALP",
+      "margin": 12.3,
+      "vs": "LNP",
+      "tier": "Safe",
+      "sitting_independent": false,
+      "classic": true,
+      "region": "Western Metropolitan",
+      "region_type": "Metropolitan",
+      "flips_at": 12.3,
+      "projected": "ALP",
+      "changes": false,
+      "reason": "On the tipping point",
+      "distance": 0.9000000000000004
+    },
+    {
       "seat": "Essendon",
       "member": "Danny Pearson",
       "holder": "ALP",
@@ -2094,23 +2103,6 @@
       "region": "Northern Metropolitan",
       "region_type": "Metropolitan",
       "flips_at": 12.5,
-      "projected": "ALP",
-      "changes": false,
-      "reason": "On the tipping point",
-      "distance": 0.9000000000000004
-    },
-    {
-      "seat": "Bundoora",
-      "member": "Colin Brooks",
-      "holder": "ALP",
-      "margin": 12.7,
-      "vs": "LNP",
-      "tier": "Safe",
-      "sitting_independent": false,
-      "classic": true,
-      "region": "North-Eastern Metropolitan",
-      "region_type": "Metropolitan",
-      "flips_at": 12.7,
       "projected": "ALP",
       "changes": false,
       "reason": "On the tipping point",
@@ -2134,6 +2126,40 @@
       "distance": 1.2
     },
     {
+      "seat": "Clarinda",
+      "member": "Meng Heang Tak",
+      "holder": "ALP",
+      "margin": 10.2,
+      "vs": "LNP",
+      "tier": "Safe",
+      "sitting_independent": false,
+      "classic": true,
+      "region": "South-Eastern Metropolitan",
+      "region_type": "Metropolitan",
+      "flips_at": 10.2,
+      "projected": "LNP",
+      "changes": true,
+      "reason": "On the tipping point",
+      "distance": 1.200000000000001
+    },
+    {
+      "seat": "Bundoora",
+      "member": "Colin Brooks",
+      "holder": "ALP",
+      "margin": 12.7,
+      "vs": "LNP",
+      "tier": "Safe",
+      "sitting_independent": false,
+      "classic": true,
+      "region": "North-Eastern Metropolitan",
+      "region_type": "Metropolitan",
+      "flips_at": 12.7,
+      "projected": "ALP",
+      "changes": false,
+      "reason": "On the tipping point",
+      "distance": 1.299999999999999
+    },
+    {
       "seat": "Prahran",
       "member": "Rachel Westaway",
       "holder": "LIB",
@@ -2152,21 +2178,21 @@
       "distance": 1.4
     },
     {
-      "seat": "Clarinda",
-      "member": "Meng Heang Tak",
+      "seat": "Carrum",
+      "member": "Sonya Kilkenny",
       "holder": "ALP",
-      "margin": 10.2,
+      "margin": 9.8,
       "vs": "LNP",
-      "tier": "Safe",
+      "tier": "Fairly safe",
       "sitting_independent": false,
       "classic": true,
       "region": "South-Eastern Metropolitan",
       "region_type": "Metropolitan",
-      "flips_at": 10.2,
+      "flips_at": 9.8,
       "projected": "LNP",
       "changes": true,
       "reason": "On the tipping point",
-      "distance": 1.4000000000000004
+      "distance": 1.5999999999999996
     },
     {
       "seat": "Ivanhoe",
@@ -2183,24 +2209,7 @@
       "projected": "ALP",
       "changes": false,
       "reason": "On the tipping point",
-      "distance": 1.4000000000000004
-    },
-    {
-      "seat": "Carrum",
-      "member": "Sonya Kilkenny",
-      "holder": "ALP",
-      "margin": 9.8,
-      "vs": "LNP",
-      "tier": "Fairly safe",
-      "sitting_independent": false,
-      "classic": true,
-      "region": "South-Eastern Metropolitan",
-      "region_type": "Metropolitan",
-      "flips_at": 9.8,
-      "projected": "LNP",
-      "changes": true,
-      "reason": "On the tipping point",
-      "distance": 1.799999999999999
+      "distance": 1.5999999999999996
     },
     {
       "seat": "South Barwon",
@@ -2218,22 +2227,22 @@
       "projected": "LNP",
       "changes": true,
       "reason": "On the tipping point",
-      "distance": 1.799999999999999
+      "distance": 1.5999999999999996
     },
     {
-      "seat": "Williamstown",
-      "member": "Melissa Horne",
+      "seat": "St Albans",
+      "member": "Natalie Suleyman",
       "holder": "ALP",
-      "margin": 13.4,
+      "margin": 9.6,
       "vs": "LNP",
-      "tier": "Safe",
+      "tier": "Fairly safe",
       "sitting_independent": false,
       "classic": true,
       "region": "Western Metropolitan",
       "region_type": "Metropolitan",
-      "flips_at": 13.4,
-      "projected": "ALP",
-      "changes": false,
+      "flips_at": 9.6,
+      "projected": "LNP",
+      "changes": true,
       "reason": "On the tipping point",
       "distance": 1.8000000000000007
     }
