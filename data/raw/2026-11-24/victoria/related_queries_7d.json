@@ -1,0 +1,36 @@
+{
+  "timeframe": "now 7-d",
+  "geo": "AU-VIC",
+  "fetched_at": "2026-11-24T06:36:34+11:00",
+  "excluded": [
+    "NAT"
+  ],
+  "parties": {
+    "ALP": {
+      "top": [
+        {
+          "query": "how to vote",
+          "value": 100
+        }
+      ],
+      "rising": [
+        {
+          "query": "how to vote",
+          "value": 80
+        }
+      ]
+    },
+    "LIB": {
+      "top": [],
+      "rising": []
+    },
+    "GRN": {
+      "top": [],
+      "rising": []
+    },
+    "PHON": {
+      "top": [],
+      "rising": []
+    }
+  }
+}
