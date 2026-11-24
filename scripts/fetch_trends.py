@@ -25,7 +25,7 @@ from requests import exceptions as req_exceptions
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from config.settings import (  # noqa: E402
     ENTITIES, GEO, RAW_DIR, TIMEFRAME, VIC_ENTITIES, VIC_GEO, VIC_LEADERS,
-    has_related_rows, now_local, today_local, write_json,
+    has_complete_related, has_related_rows, now_local, today_local, write_json,
 )
 
 MAX_ENTITIES_PER_REQUEST = 5
@@ -240,6 +240,15 @@ def _has_rows_on_disk(path: Path) -> bool:
         return False
 
 
+def _is_complete_on_disk(path: Path) -> bool:
+    if not path.exists():
+        return False
+    try:
+        return has_complete_related(json.loads(path.read_text()))
+    except json.JSONDecodeError:
+        return False
+
+
 def fetch_victoria_related_7d() -> bool:
     """Victorian related queries over the last 7 days (one snapshot per day).
 
@@ -248,7 +257,7 @@ def fetch_victoria_related_7d() -> bool:
     """
     out = RAW_DIR / today_local() / "victoria" / "related_queries_7d.json"
     print(f"\nFetching victoria related queries ({RELATED_7D_TIMEFRAME})")
-    if _has_rows_on_disk(out) and not os.getenv("POLTRENDS_FORCE_TRENDS"):
+    if _is_complete_on_disk(out) and not os.getenv("POLTRENDS_FORCE_TRENDS"):
         print("  already fetched today; skipping. Set POLTRENDS_FORCE_TRENDS=1 to refetch.")
         return True
     entities = {c: e for c, e in VIC_ENTITIES.items() if c not in RELATED_7D_EXCLUDE}
@@ -260,6 +269,11 @@ def fetch_victoria_related_7d() -> bool:
         return False
     if not related:
         print("  FAILED: no related queries returned")
+        return False
+    if not has_complete_related(related):
+        # Usually rate limiting. Saving it would replace a full sample with a partial one.
+        empty = sorted(c for c, v in related.items() if not v.get("top"))
+        print(f"  FAILED: partial pull, no top queries for {', '.join(empty)}; last complete copy is used")
         return False
     write_json(out, {
         "timeframe": RELATED_7D_TIMEFRAME,

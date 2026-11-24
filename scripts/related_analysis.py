@@ -20,7 +20,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from config.settings import (  # noqa: E402
-    PROCESSED_DIR, RAW_DIR, VIC_ENTITIES, has_related_rows, list_dated_directories, load_latest_file,
+    PROCESSED_DIR, RAW_DIR, VIC_ENTITIES, has_complete_related, has_related_rows, list_dated_directories,
+    load_latest_file,
     load_snapshot_file, today_local, write_json,
 )
 
@@ -244,7 +245,7 @@ def analyse(as_of: str | None = None) -> dict | None:
     names = {c: e["short_name"] for c, e in VIC_ENTITIES.items()} | {MINOR: "minor parties"}
 
     d7, raw7 = load_latest_file(RAW_DIR, "related_queries_7d.json", subdir="victoria",
-                                on_or_before=as_of, valid=has_related_rows)
+                                on_or_before=as_of, valid=has_complete_related)
     d90, raw90 = load_latest_file(RAW_DIR, "related_queries.json", subdir="victoria",
                                   on_or_before=as_of, valid=has_related_rows)
     if not raw7 and not raw90:
@@ -265,7 +266,8 @@ def analyse(as_of: str | None = None) -> dict | None:
     prev_file = "related_queries_7d.json" if use_7d else "related_queries.json"
     prev_day = (date.fromisoformat(src_date).toordinal() - 1)
     _, prev = load_latest_file(RAW_DIR, prev_file, subdir="victoria",
-                               on_or_before=date.fromordinal(prev_day).isoformat(), valid=has_related_rows)
+                               on_or_before=date.fromordinal(prev_day).isoformat(),
+                               valid=has_complete_related if use_7d else has_related_rows)
     prev_parties = (prev or {}).get("parties", prev or {})
     rising, new_rising = {}, {}
     for c in VIC_ENTITIES:

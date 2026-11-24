@@ -159,6 +159,21 @@ def has_related_rows(data: Any) -> bool:
     )
 
 
+def has_complete_related(data: Any) -> bool:
+    """True when every party in a related-queries snapshot has top queries.
+
+    Rate limiting often cuts a pull short: on 24 Nov 2026 Labor came back with one
+    query and the other parties with none. That passes has_related_rows, so the
+    panel reported "too few searches" for three parties. Use this for the 7-day
+    Victorian file, whose parties all normally return rows. Do not use it for the
+    90-day files: the Nationals are always empty there.
+    """
+    if not has_related_rows(data):
+        return False
+    parties = data.get("parties", data)
+    return all(isinstance(v, dict) and v.get("top") for v in parties.values())
+
+
 def write_json(path: Path, data) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w") as f:
