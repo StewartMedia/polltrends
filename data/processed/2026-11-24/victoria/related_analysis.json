@@ -2,7 +2,7 @@
   "as_of": "2026-11-24",
   "window": "7d",
   "window_label": "last 7 days",
-  "source_date": "2026-11-24",
+  "source_date": "2026-11-23",
   "baseline_date": "2026-11-23",
   "history_days": 89,
   "history_start": "2026-08-26",
@@ -17,29 +17,90 @@
   },
   "profiles": {
     "ALP": {
-      "n_top": 1,
+      "n_top": 25,
       "links": {
-        "LIB": 0.0,
+        "LIB": 0.299,
         "NAT": 0.0,
-        "GRN": 0.0,
-        "PHON": 0.0,
+        "GRN": 0.064,
+        "PHON": 0.03,
         "MINOR": 0.0
       },
       "intents": {
-        "vote": 1.0,
+        "vote": 0.0,
         "candidates": 0.0,
-        "compare": 0.0,
-        "policy": 0.0,
+        "compare": 0.097,
+        "policy": 0.036,
         "leader": 0.0,
         "outcome": 0.0,
-        "name": 0.0
+        "name": 0.866
       },
       "minor_names": {}
     },
-    "LIB": null,
+    "LIB": {
+      "n_top": 25,
+      "links": {
+        "ALP": 0.09,
+        "NAT": 0.0,
+        "GRN": 0.028,
+        "PHON": 0.065,
+        "MINOR": 0.0
+      },
+      "intents": {
+        "vote": 0.085,
+        "candidates": 0.037,
+        "compare": 0.0,
+        "policy": 0.037,
+        "leader": 0.011,
+        "outcome": 0.0,
+        "name": 0.831
+      },
+      "minor_names": {}
+    },
     "NAT": null,
-    "GRN": null,
-    "PHON": null
+    "GRN": {
+      "n_top": 25,
+      "links": {
+        "ALP": 0.063,
+        "LIB": 0.044,
+        "NAT": 0.0,
+        "PHON": 0.022,
+        "MINOR": 0.0
+      },
+      "intents": {
+        "vote": 0.06,
+        "candidates": 0.033,
+        "compare": 0.0,
+        "policy": 0.074,
+        "leader": 0.014,
+        "outcome": 0.0,
+        "name": 0.82
+      },
+      "minor_names": {}
+    },
+    "PHON": {
+      "n_top": 25,
+      "links": {
+        "ALP": 0.038,
+        "LIB": 0.118,
+        "NAT": 0.0,
+        "GRN": 0.017,
+        "MINOR": 0.017
+      },
+      "intents": {
+        "vote": 0.113,
+        "candidates": 0.017,
+        "compare": 0.0,
+        "policy": 0.055,
+        "leader": 0.0,
+        "outcome": 0.0,
+        "name": 0.815
+      },
+      "minor_names": {
+        "Family First": 0.013,
+        "DLP": 0.004,
+        "Australian Democrats": 0.0
+      }
+    }
   },
   "baseline": {
     "ALP": {
@@ -127,26 +188,248 @@
   "rising": {
     "ALP": [
       {
-        "query": "how to vote",
-        "value": 80
+        "query": "the west party",
+        "value": 98100
+      },
+      {
+        "query": "labour vs liberal pros and cons",
+        "value": 69150
+      },
+      {
+        "query": "citizens party",
+        "value": 66750
+      },
+      {
+        "query": "is anthony albanese labour or liberal",
+        "value": 63800
+      },
+      {
+        "query": "australian democrats party",
+        "value": 1100
+      },
+      {
+        "query": "australian democrats",
+        "value": 450
+      },
+      {
+        "query": "labour dlp party",
+        "value": 350
+      },
+      {
+        "query": "labour dlp",
+        "value": 350
       }
     ],
-    "LIB": [],
+    "LIB": [
+      {
+        "query": "family first party victoria",
+        "value": 81250
+      },
+      {
+        "query": "victorian socialist party",
+        "value": 64700
+      },
+      {
+        "query": "labour dlp",
+        "value": 300
+      },
+      {
+        "query": "australian democrats",
+        "value": 250
+      },
+      {
+        "query": "what are the liberal party policies",
+        "value": 160
+      },
+      {
+        "query": "animal justice party",
+        "value": 150
+      },
+      {
+        "query": "family first party",
+        "value": 140
+      },
+      {
+        "query": "how to vote",
+        "value": 140
+      }
+    ],
     "NAT": [],
-    "GRN": [],
-    "PHON": []
+    "GRN": [
+      {
+        "query": "ellen sandell",
+        "value": 102950
+      },
+      {
+        "query": "socialist alliance",
+        "value": 75350
+      },
+      {
+        "query": "labour dlp",
+        "value": 300
+      },
+      {
+        "query": "australian democrats policies",
+        "value": 250
+      },
+      {
+        "query": "family first party",
+        "value": 190
+      },
+      {
+        "query": "labour dlp party",
+        "value": 190
+      },
+      {
+        "query": "greens leader victoria",
+        "value": 170
+      },
+      {
+        "query": "australian democrats party",
+        "value": 160
+      }
+    ],
+    "PHON": [
+      {
+        "query": "labour dlp",
+        "value": 250
+      },
+      {
+        "query": "australian democrats",
+        "value": 250
+      },
+      {
+        "query": "one nation immigration reform cost",
+        "value": 190
+      },
+      {
+        "query": "how to vote",
+        "value": 140
+      },
+      {
+        "query": "victorian socialists policies",
+        "value": 130
+      },
+      {
+        "query": "victorian socialist party",
+        "value": 110
+      },
+      {
+        "query": "family first policies",
+        "value": 110
+      },
+      {
+        "query": "family first",
+        "value": 100
+      }
+    ]
   },
   "new_rising": {
     "ALP": [
       {
-        "query": "how to vote",
-        "value": 80
+        "query": "the west party",
+        "value": 98100
+      },
+      {
+        "query": "labour vs liberal pros and cons",
+        "value": 69150
+      },
+      {
+        "query": "citizens party",
+        "value": 66750
+      },
+      {
+        "query": "is anthony albanese labour or liberal",
+        "value": 63800
+      },
+      {
+        "query": "australian democrats party",
+        "value": 1100
+      },
+      {
+        "query": "australian democrats",
+        "value": 450
       }
     ],
-    "LIB": [],
+    "LIB": [
+      {
+        "query": "family first party victoria",
+        "value": 81250
+      },
+      {
+        "query": "victorian socialist party",
+        "value": 64700
+      },
+      {
+        "query": "labour dlp",
+        "value": 300
+      },
+      {
+        "query": "australian democrats",
+        "value": 250
+      },
+      {
+        "query": "what are the liberal party policies",
+        "value": 160
+      },
+      {
+        "query": "animal justice party",
+        "value": 150
+      }
+    ],
     "NAT": [],
-    "GRN": [],
-    "PHON": []
+    "GRN": [
+      {
+        "query": "ellen sandell",
+        "value": 102950
+      },
+      {
+        "query": "socialist alliance",
+        "value": 75350
+      },
+      {
+        "query": "labour dlp",
+        "value": 300
+      },
+      {
+        "query": "australian democrats policies",
+        "value": 250
+      },
+      {
+        "query": "family first party",
+        "value": 190
+      },
+      {
+        "query": "labour dlp party",
+        "value": 190
+      }
+    ],
+    "PHON": [
+      {
+        "query": "labour dlp",
+        "value": 250
+      },
+      {
+        "query": "australian democrats",
+        "value": 250
+      },
+      {
+        "query": "one nation immigration reform cost",
+        "value": 190
+      },
+      {
+        "query": "victorian socialists policies",
+        "value": 130
+      },
+      {
+        "query": "victorian socialist party",
+        "value": 110
+      },
+      {
+        "query": "family first policies",
+        "value": 110
+      }
+    ]
   },
   "has_previous": true,
   "shifts": [
@@ -711,19 +994,26 @@
     }
   ],
   "no_data": [
-    "LIB",
-    "NAT",
-    "GRN",
-    "PHON"
+    "NAT"
   ],
   "excluded": [
     "NAT"
   ],
   "hypotheses": [
     {
+      "kind": "one-way",
+      "text": "Labor searches lead to Liberal far more than the reverse. One reading: people starting from Labor are checking Liberal as the alternative.",
+      "evidence": "30% of Labor's top related searches name Liberal; 9% of Liberal's name Labor (this week)."
+    },
+    {
       "kind": "prepoll",
-      "text": "Prepoll research is showing up. Labor draws the most practical searches (how-to-vote cards, candidates and seats). That looks more like people planning a vote than general curiosity.",
-      "evidence": "How-to-vote and candidate searches as a share of each party's top related searches this week: Labor 100%."
+      "text": "Prepoll research is showing up. One Nation draws the most practical searches (how-to-vote cards, candidates and seats). That looks more like people planning a vote than general curiosity.",
+      "evidence": "How-to-vote and candidate searches as a share of each party's top related searches this week: One Nation 13%, Liberal 12%."
+    },
+    {
+      "kind": "minors",
+      "text": "Minor parties are turning up in major-party searches. That points to preference and upper-house shopping, where minor parties matter most.",
+      "evidence": "Minor parties named in related searches this week: Family First (One Nation, Liberal, Greens); DLP (One Nation, Labor, Liberal, Greens); Australian Democrats (One Nation, Labor, Liberal, Greens); Citizens Party (Labor)."
     }
   ]
 }
