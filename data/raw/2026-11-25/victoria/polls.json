@@ -1,8 +1,24 @@
 {
   "source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Victorian_state_election",
-  "revision": 1387312545,
-  "fetched_at": "2026-11-25T06:34:31+11:00",
+  "revision": 1387716271,
+  "fetched_at": "2026-11-25T18:35:23+11:00",
   "assembly": [
+    {
+      "date": "2026-11-23",
+      "fieldwork": "20-23 Nov",
+      "firm": "Resolve",
+      "client": "The Age",
+      "sample": "1000",
+      "p_ALP": 20.0,
+      "p_LNP": 31.0,
+      "p_GRN": 13.0,
+      "p_ONP": 25.0,
+      "p_IND": 4.0,
+      "p_OTH": 7.0,
+      "tpp_ALP": 41.0,
+      "tpp_LNP": 59.0,
+      "p_OTH_ALL": 11.0
+    },
     {
       "date": "2026-11-23",
       "fieldwork": "6–23 Nov",
@@ -1518,6 +1534,17 @@
     }
   ],
   "preferred_premier": [
+    {
+      "date": "2026-11-23",
+      "fieldwork": "20–23 Nov 2026",
+      "firm": "Resolve",
+      "client": "The Age",
+      "sample": "1000",
+      "lead_Carroll": 23.0,
+      "lead_Wilson": 34.0,
+      "lead_Pickering": 19.0,
+      "lead_Don't know": 25.0
+    },
     {
       "date": "2026-11-23",
       "fieldwork": "6–23 Nov 2026",

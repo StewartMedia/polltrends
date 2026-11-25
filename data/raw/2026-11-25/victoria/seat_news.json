@@ -1,27 +1,17 @@
 {
-  "Mill Park": [],
-  "Northcote": [
-    {
-      "title": "Battle for Northcote: Labor’s century-old stronghold faces its toughest test yet",
-      "source": "Neos Kosmos",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNT2RxVWlJeWVVMV9QMnJLNndjdDZxbW9GRlVHcTZYQzlRZjFOeUh0OVdaZ1F3Q0NGVlhmd0xCMFphYUlkM0FMRGNKQWc0eHhvNlNpYlo3MzBMVjJjRkdQSGlFM3NtcHc3TU9oNy13MjlMRHlJRmxIb2pJZ0k1SWxVYnRKb0YwZ0J6NDRhWm5jOE5TTGFOaVYxU25LZVgxb3ZiUC1CZjBjSHRuaF9TSHROWFlKcjgxdFBobFFFeFk5aGJxZGEydk5CdklQMA?oc=5",
-      "date": "2026-11-13",
-      "party_code": "Northcote"
-    },
-    {
-      "title": "VIDEO: The fight for the Victorian seat of Northcote",
-      "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNS1VWW12MFNBcHJ5bHVSWWJtUE1UM0s1UUNWSG9xQUREUS02c3NxaW9CY2J1QkpvcWpoNjU4UVRjdEI5WHBDNGZ2RHBmdjNsR3lMSlJjdFdvS19zaHhRckN5Z1ctbkZMX3dBdlFDMmN0QzZmOHBzLWo0MlpyVkhnTFlKVExTY1QwcC1scXZmelZsQkxuNDloUEFB?oc=5",
-      "date": "2026-11-12",
-      "party_code": "Northcote"
-    }
-  ],
   "Wendouree": [
     {
       "title": "Meet Wendouree’s minor party state election candidates",
       "source": "Times News Group",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRVhzMzlCWnVNcU1ZR1p3eG1qTW1fbGN5MzBFR0ljY0FlRC1xbENGN0RlYlozN2hQSlZGLXlTUk5SVEZKbWJxUlhjMWFSd0NWOVRNdElYemFWWWRERGdPalplckt1QmlHMlhlVF9NemloMm4xcEdsV1Ffbi0zREJqWG9ycFJ5M1pEM3ExeXhUeTRGSXdEOFVZTjljX3VrYkk?oc=5",
       "date": "2026-11-20",
+      "party_code": "Wendouree"
+    },
+    {
+      "title": "We put your questions to every Wendouree candidate. Here's what they said",
+      "source": "The Courier | Ballarat, VIC",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOU2FqQ3FaWGlMNk1JNEppVU1yWWZ5RGxBZGVoRWlMM29NdFNjTHN6NEZHN0JreWM5TzUyMTQ4THVnOGlYR3YwZkVsSTBGTk56VmUyWFF4dHZ2ZWJMbDVnam5pWFc4VjFjTG1IWUtMWm1KVV9XOEZuUWJZZl9QZGRQMmRDdUFxbXFPT2ZobFVDTTQ1UmZEUE1qSXRxTUVBZERZTEtSamhSQV90QQ?oc=5",
+      "date": "2026-11-19",
       "party_code": "Wendouree"
     },
     {
@@ -39,7 +29,15 @@
       "party_code": "Wendouree"
     }
   ],
-  "Albert Park": [],
+  "Northcote": [
+    {
+      "title": "Battle for Northcote: Labor’s century-old stronghold faces its toughest test yet",
+      "source": "Neos Kosmos",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNT2RxVWlJeWVVMV9QMnJLNndjdDZxbW9GRlVHcTZYQzlRZjFOeUh0OVdaZ1F3Q0NGVlhmd0xCMFphYUlkM0FMRGNKQWc0eHhvNlNpYlo3MzBMVjJjRkdQSGlFM3NtcHc3TU9oNy13MjlMRHlJRmxIb2pJZ0k1SWxVYnRKb0YwZ0J6NDRhWm5jOE5TTGFOaVYxU25LZVgxb3ZiUC1CZjBjSHRuaF9TSHROWFlKcjgxdFBobFFFeFk5aGJxZGEydk5CdklQMA?oc=5",
+      "date": "2026-11-13",
+      "party_code": "Northcote"
+    }
+  ],
   "Tarneit": [
     {
       "title": "Tarneit prepares to vote",
@@ -70,7 +68,17 @@
       "party_code": "Tarneit"
     }
   ],
+  "Mill Park": [],
+  "Essendon": [],
+  "Bundoora": [],
   "Mornington": [
+    {
+      "title": "Liberals commit $2m to new Mornington soccer pavilion",
+      "source": "Mornington Peninsula News",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPSTgtVEpRaHAwU3hQODFHWlhJTGV5dEZtdENSSVhxUjVrSmpJWVAybmk1YTJIY2FMTTVHRHJsaDhwbDBJYmdUVHBOVm4wQU9PX0VTUVRlUzNDWUpwN3JFSldhR0JCZS1VWHJONVVvemk5cjFiY2tVenNIa3VGRlFlYW1iaE9HY3JxOUpPdUthdkdmSUFN?oc=5",
+      "date": "2026-11-13",
+      "party_code": "Mornington"
+    },
     {
       "title": "Victorian Election 2026 Ballot Order Confirmed for Frankston and Mornington Peninsula",
       "source": "STPL News",
@@ -91,46 +99,15 @@
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSU9PNUVFX2Z5WURNb2lYNndpeXVGZWtlUmVwb196Z2xVNjJvZmFObVQyOFdrYk05Zi1YWjdNbTQ2NkplSldvTm53amlvVnlkVUdIMjJXOGluS1dnTXVxR21HOEJmNVA5ci1mV3RqbGlSblFlWmZIaUMtcmxQejBjY3FSaHh6ck5YRWhXN3Uwc3dUcUE4X0JFS3V3?oc=5",
       "date": "2026-10-29",
       "party_code": "Mornington"
-    },
-    {
-      "title": "Full suite of candidates address issues at Mornington forum",
-      "source": "Mornington Peninsula News",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZGRUTlFOMERtNHh0SHFJNnNPUXJMa1FwV1U3eUVqTklJc0RlUWhfa1dlZUZJZTZrb3ZQZ01wS0ZhaHJDdU1TbTQ1UXhDVXB0ZmsxdFRocGV6YXdQNnc4VjRWUVVtNlM4aEZQcUd4d1pWbWNvbHBuME1YdTRvT1Rkdkp6MHBaU29ZWjlQbDN4eUswREJidnBmMXdTTHJIZw?oc=5",
-      "date": "2026-10-28",
-      "party_code": "Mornington"
     }
   ],
-  "Werribee": [
-    {
-      "title": "Labor MP John Lister lashes out at media on Victorian election trail in Werribee",
-      "source": "Herald Sun",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQcVpIUnJzNnhRem9scmR0bkYwUXpkY1JwRzlmYXd5RDN0OWJGVWFkRzhYTnE4UktjTXJLVENhb093TEUzdUt2Wjl3SERjUlAyZnFOZVg3WTU1RzF0ejBwUkIzUHN0ZGd6aEJoQVl4NVBiR1hlaW43UDhpQkFLbDQ1UF9IdUVCeTRpX3FmaWk5c1JYai1FNWI0SnZkMXlnYkhzZ3RGMW9OZUpwNTIzVlBmcjg3S0hRbWJFYUlGY193dkk0YzVwMnU1NW9DajFUdkpmY2hXYVNJZ2FXTzctZHN6VDFxM3JsT1lpQXpZakhfcFc4a1o3?oc=5",
-      "date": "2026-11-21",
-      "party_code": "Werribee"
-    },
-    {
-      "title": "Werribee prepares to vote",
-      "source": "Wyndham | Star Weekly",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5Kd2tONnlQU3hjWi1ka1lPMk1EbFpuQjVXVUhOTlIxRlNxMkRMdHRPWEdFQTVGRWtRSFJQZ3RPcWZHQkdDWVc4Z0lZVUgtbXF1YkJIRTg5ZWc5eFVLWGM4YjFVa1M0TFM1X1FRYWJkaVRzdDA?oc=5",
-      "date": "2026-11-18",
-      "party_code": "Werribee"
-    },
-    {
-      "title": "Werribee, Tarneit and Point Cook in spotlight as Greens leave preferences to voters to rank Labor and Liberals",
-      "source": "The Australia Today",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOdlB4RWJDbkJQQkt0aFpvby1VWWJfUzRJNENvNnJVQjk4SUo1dmZjbENuc3RTcmdXa1BUNUxWUEMzZkdOaWlXRi1BRlpMZ1lXT3lBemg4RHh4MUR2cjI1TGhRLXlfdVYyUktnUjNIZTBWTGQyQjlNRmVrSFhRczItUmdVWDR0YlhaZXA4UWt1ZDEwV0RGOUJVdkl2SWFfeXptbDZJQW5ra2ZYYUVTcnQ2VmRsb0d3emctdEFuOWFSanl0LUNKNzJjSHRyUUhTVUxjMTR4SnBNc0lIVFQ3bmZINg?oc=5",
-      "date": "2026-11-13",
-      "party_code": "Werribee"
-    }
-  ],
-  "Essendon": [],
-  "Bendigo East": [],
+  "Albert Park": [],
   "Benambra": [
     {
       "title": "Youth mental health is front of mind for Benambra's One Nation candidate",
       "source": "The Border Mail",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaWJyRTlsN2RwZmZsYU56M1ZpeVZNZmFjam5XOFlCbTdOS1NweFZwWUlKVWtSS1FId1EwT1ZnY0tNR0psT3ZSV3JfdWNzdjd4OU1yY1EtWXVlbTdpblZadkhHZktzRVNyaWMwNHY2NTdndmRhaU5FNkVOMHVfdWFkbTQ4TUZjeW9OVloxODlmRnZUWE9nVHl3aW1FOXp3Smo3MmtuSGdyR08tWk12WjhR?oc=5",
-      "date": "2026-11-23",
+      "date": "2026-11-25",
       "party_code": "Benambra"
     },
     {
@@ -155,7 +132,31 @@
       "party_code": "Benambra"
     }
   ],
-  "Bundoora": [],
+  "Ivanhoe": [],
+  "Werribee": [
+    {
+      "title": "Labor MP John Lister lashes out at media on Victorian election trail in Werribee",
+      "source": "Herald Sun",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQcVpIUnJzNnhRem9scmR0bkYwUXpkY1JwRzlmYXd5RDN0OWJGVWFkRzhYTnE4UktjTXJLVENhb093TEUzdUt2Wjl3SERjUlAyZnFOZVg3WTU1RzF0ejBwUkIzUHN0ZGd6aEJoQVl4NVBiR1hlaW43UDhpQkFLbDQ1UF9IdUVCeTRpX3FmaWk5c1JYai1FNWI0SnZkMXlnYkhzZ3RGMW9OZUpwNTIzVlBmcjg3S0hRbWJFYUlGY193dkk0YzVwMnU1NW9DajFUdkpmY2hXYVNJZ2FXTzctZHN6VDFxM3JsT1lpQXpZakhfcFc4a1o3?oc=5",
+      "date": "2026-11-21",
+      "party_code": "Werribee"
+    },
+    {
+      "title": "Werribee prepares to vote",
+      "source": "Wyndham | Star Weekly",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5Kd2tONnlQU3hjWi1ka1lPMk1EbFpuQjVXVUhOTlIxRlNxMkRMdHRPWEdFQTVGRWtRSFJQZ3RPcWZHQkdDWVc4Z0lZVUgtbXF1YkJIRTg5ZWc5eFVLWGM4YjFVa1M0TFM1X1FRYWJkaVRzdDA?oc=5",
+      "date": "2026-11-18",
+      "party_code": "Werribee"
+    },
+    {
+      "title": "Werribee, Tarneit and Point Cook in spotlight as Greens leave preferences to voters to rank Labor and Liberals",
+      "source": "The Australia Today",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOdlB4RWJDbkJQQkt0aFpvby1VWWJfUzRJNENvNnJVQjk4SUo1dmZjbENuc3RTcmdXa1BUNUxWUEMzZkdOaWlXRi1BRlpMZ1lXT3lBemg4RHh4MUR2cjI1TGhRLXlfdVYyUktnUjNIZTBWTGQyQjlNRmVrSFhRczItUmdVWDR0YlhaZXA4UWt1ZDEwV0RGOUJVdkl2SWFfeXptbDZJQW5ra2ZYYUVTcnQ2VmRsb0d3emctdEFuOWFSanl0LUNKNzJjSHRyUUhTVUxjMTR4SnBNc0lIVFQ3bmZINg?oc=5",
+      "date": "2026-11-13",
+      "party_code": "Werribee"
+    }
+  ],
+  "Bendigo East": [],
   "Mildura": [
     {
       "title": "One Nation leads Coalition 49-32 in Mildura as Labor polling reveals Victorian election threat",
@@ -163,10 +164,37 @@
       "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQRV8taUdLYlRidHZaNGhtbV9meHV4X0xjZEw5bGlBamtfMG9POVNjeDBjN1phTGtyWkw0T0UyNVJESEFrMmI5OGh3Wnl6UWp2bndSRVl3UENRZUFjdWNRQ016OTNvUXpKTXI1UEhjUFJiQTgxcER1MDV2UmRKYVp6bGdEaVNJbUJRbjNrMk9DQWwyOGhQX2hUSm1zYlVSSngyM0VyczBBUjB4N0w2bFBsWGVKTUNHbWlENFZhbjlyNUQ1bWh3NUxySklzc09MWWNjczRrbnlGcEt0TFJkc1hvTW10dzY4QQ?oc=5",
       "date": "2026-11-22",
       "party_code": "Mildura"
+    },
+    {
+      "title": "Vic election: Ali Cupper pulls out of Mildura race",
+      "source": "The Weekly Times",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPRzlsb2pISmZZSDEwX2NqdGhDS21EUXRoc0ZRUGlmbWE4YW1fZ0xjZXJzWGVlYVQwU2JseDViSHhwc0dHRTFDcDNibElzd25mVDY0dGlxMm02bXd3RXlpaWpZNkRETnJVTTFZYXFfQTRxQVRadGRMeUU0ZENvQjZVWXllMmF0YktJWFdnQVUtWGpIOVIxNV9Kdkl2NnlnS3I5SHpiVnR2d3JDdFR5Z3ktWDVsQUtpVjlpaFJSTDM4QU9WaDBkeG1lNTZGNHBsdTAtOHNUTmJVelFnZ244WFNXeVB0TGlIbHF2YW0td2JvYUZkUW54a082T2w0cERSenVHNmVHM19B?oc=5",
+      "date": "2026-11-06",
+      "party_code": "Mildura"
+    },
+    {
+      "title": "These candidates are all vying to represent Mildura. We asked them the same five questions",
+      "source": "Herald Sun",
+      "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNUW1oeDI0WGI2NmdKYmtncEp6TFZrR3V2aWJ0Y2tKOFpfMkxtUWdadzlubURqem43Q2xHd3lfa20ySGo4YjRSbkUxYnI1cWFZZ2I4QnNDTHNBMDZWSTFXSHlIeFMxcXk1RmlZTmpSaXBzLUhveW1rTTFzcUdGeUtNWVVIM1lGWXI5QmJXczI2c2VKRXpCd19Tb2FzT1dVc2Z2T2lxXzNrZmVLZjNBa3M1Z1hESHFlTWkyY3FYbkVHRHBDUVpjZGdJVEFkQmVtMnBNcUJVakFzTlBXZzNBWFpUNjEyMkhkOGJ2amtPbEtKWkFGWnVDTmJEWVIxcFJSQW53Z3ZTVWRsZlVaRVJ1YnhYSVFjRkVsUG1nYldNVVZWaldidkdV?oc=5",
+      "date": "2026-11-04",
+      "party_code": "Mildura"
+    },
+    {
+      "title": "Coalition promises return of passenger trains to Mildura",
+      "source": "Herald Sun",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNenJ5amJzeFVFMmlZZ0hFb2h4RjlrMDhSbzNwTUFIUmtBcG80cnVzd3Q3REZfMEN2cDRJRGlsRVlwT1dtVk5PLTlPZDdka2pNUHZYRXJKN1dURm5oejV1QXF5NGxldlN1Ul96cjBfemhQVFBsWEpGUkx3R2N5ZXJERzFGZEZWTUEtWEZVQ0pXLVJzWE1LSWp4OGk4U04tWnFtaVFjdkdUX2swSi0yRzVzMVZXWXA4VmczdmlpNk9xdFNYS3hSdXdpNXZmVk9fX2Z3aUFTSEdQSHdpb2ZvQXhzOElaZ3dCWXhfUVFnZU1tUUZ4Z3JnV2w3RWVNdS1sbUI1NVJXSGFOTW03dEF2bHdN?oc=5",
+      "date": "2026-10-19",
+      "party_code": "Mildura"
     }
   ],
-  "Ivanhoe": [],
   "Prahran": [
+    {
+      "title": "WATCH: Avi Yemini confronts Greens hypocrisy at the Prahran polling station as Labor volunteers run cover",
+      "source": "Rebel News",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSW9qRzV4TTNaUGQ0VHRmdTMxeVV0N2pRWElEd0ZkZG9kV1dLQnZlMTVzUUM5WlM3Z0hPQWxUamFpNzNUaDhRVUtvenl6REVtUXRIVmRTbFp3Vml0VkpxY1RLSDVOSXk5UWxQVXlfWHhsOUxyLUtLQ1B1a1NPdVR4MFpULUo5MEpSdTVYTWVuUGhOVzdhWHlLeXdIS05HbEU4UVZsZ0pvd3JJMTZEOTVYZ1ZOR19TYXVqaFMtb3dYSmdaZw?oc=5",
+      "date": "2026-11-24",
+      "party_code": "Prahran"
+    },
     {
       "title": "Greens win court fight against Prahran independent how to-vote-cards",
       "source": "ABC News & Headlines – Australian Broadcasting Corporation",
@@ -180,36 +208,6 @@
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE45UDhUTUpVaWlWT1E5dl90MHlEQ3ZVclBXcnhBVHVNMFVoblFocXF6cG5rMlJNdlUxWTlVWHVLREVVcWRzR1p4RUVRenpBRW8zOE5QRWdCbGpxZw?oc=5",
       "date": "2026-11-09",
       "party_code": "Prahran"
-    }
-  ],
-  "Clarinda": [
-    {
-      "title": "Clarinda, Mulgrave voters in ‘mood for change’",
-      "source": "Endeavour Hills Hallam Doveton Star Journal",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVXhWd1JQQmNsLTJrM19nbkp2SzNMMm5JaTJ1YmVtNEtqY0RWN2FaaHFJUFZ6UHM4aEdTUHM3VmhaUWw2aDcyY0VGLTdMRGJkd01RaEVZLVlKY0pFeFpUaUstN3dYS2RCWlAzakhSRGdYSUVIbnZqY1lCSHRLb1hXZ1B3azI5azlrQTVPMjVZelgyeU95bTFmMW9MaGdTSnRvcHpHVFJJQmduZzZfMmhoVVJmVlRkY19u?oc=5",
-      "date": "2026-11-18",
-      "party_code": "Clarinda"
-    },
-    {
-      "title": "State Election: Meet the Clarinda candidates",
-      "source": "Endeavour Hills Hallam Doveton Star Journal",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdmtPdGFjbkhIYy02c2pzSFVBV0hkMEE5NV9IclJUMmM1cG5ITVRjUS00UU15X3pkcDZzeUZSUmlqVnVmSzV5d1lzNzUxQ3piSWU2ejk1cGVwRG9USWVLZHZNanFGNVlTTUlaRzhBRGlOdjhQRVkxQmJXYVpldE9ITXFWNkZDeDY0dTE0M1oydVF1T0VnVlMwc2RxLW5USTdsOGQ3V1dRVVdXSzZLNWM3M0JrN1lNdTN4?oc=5",
-      "date": "2026-11-15",
-      "party_code": "Clarinda"
-    },
-    {
-      "title": "OPINION – Clarinda deserves fair funding, recognition and multicultural leadership",
-      "source": "Dandenong Star Journal",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPc3ZCS2FuUG1BMU5CQS1YLUJXVHI1QmlnNjU3LWVzOXVBV2t6MFc3SEFEUDVrSFRlTkhseXNQc19iZ1ZIdHl4QWJ2Vms0WGVQM21yem5Zck5qd0xwSmh0OElxODlhb0V0alRmQVRUVUVsaVRzcVZYWDgzQ09qN3J4XzdOMU9tTkpXMjgzU0dFeERYV2htaUE3WXVJTXNzYU1XcUppek9SR05SMzRwTVZqb3RRWUpIR1pqYzBZbnJiQklDc1dVMl9vODNJYndsSFVv?oc=5",
-      "date": "2026-11-14",
-      "party_code": "Clarinda"
-    },
-    {
-      "title": "John Paganis launches election campaign for seat of Clarinda",
-      "source": "Neos Kosmos",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQejF4S3dqb1RsRmtaaDdEY2t5UnNSSEtjNXpmbHBXY2hrVFZSR1ZwcTFFNE53aERYY3cyM0JxWmx5bTR4ei1nbzh1MDBOdVBSalN4QWk2OG1UT0drTlB1RlBNRHdCQlU2LUxvb1V6ZjFmLWZxLWVsU2hJb3JvQ3lEYnBzRmp0by01T05SY2NKT0lSZlJiaDhHZzY5UVloY2VIMTVOSVJLTHpUS2hiTlBmRm1XOA?oc=5",
-      "date": "2026-10-21",
-      "party_code": "Clarinda"
     }
   ],
   "Williamstown": [
@@ -251,5 +249,50 @@
       "party_code": "Oakleigh"
     }
   ],
-  "Carrum": []
+  "Clarinda": [
+    {
+      "title": "Clarinda, Mulgrave voters in ‘mood for change’",
+      "source": "Endeavour Hills Hallam Doveton Star Journal",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVXhWd1JQQmNsLTJrM19nbkp2SzNMMm5JaTJ1YmVtNEtqY0RWN2FaaHFJUFZ6UHM4aEdTUHM3VmhaUWw2aDcyY0VGLTdMRGJkd01RaEVZLVlKY0pFeFpUaUstN3dYS2RCWlAzakhSRGdYSUVIbnZqY1lCSHRLb1hXZ1B3azI5azlrQTVPMjVZelgyeU95bTFmMW9MaGdTSnRvcHpHVFJJQmduZzZfMmhoVVJmVlRkY19u?oc=5",
+      "date": "2026-11-18",
+      "party_code": "Clarinda"
+    },
+    {
+      "title": "State Election: Meet the Clarinda candidates",
+      "source": "Endeavour Hills Hallam Doveton Star Journal",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdmtPdGFjbkhIYy02c2pzSFVBV0hkMEE5NV9IclJUMmM1cG5ITVRjUS00UU15X3pkcDZzeUZSUmlqVnVmSzV5d1lzNzUxQ3piSWU2ejk1cGVwRG9USWVLZHZNanFGNVlTTUlaRzhBRGlOdjhQRVkxQmJXYVpldE9ITXFWNkZDeDY0dTE0M1oydVF1T0VnVlMwc2RxLW5USTdsOGQ3V1dRVVdXSzZLNWM3M0JrN1lNdTN4?oc=5",
+      "date": "2026-11-15",
+      "party_code": "Clarinda"
+    },
+    {
+      "title": "OPINION – Clarinda deserves fair funding, recognition and multicultural leadership",
+      "source": "Dandenong Star Journal",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPc3ZCS2FuUG1BMU5CQS1YLUJXVHI1QmlnNjU3LWVzOXVBV2t6MFc3SEFEUDVrSFRlTkhseXNQc19iZ1ZIdHl4QWJ2Vms0WGVQM21yem5Zck5qd0xwSmh0OElxODlhb0V0alRmQVRUVUVsaVRzcVZYWDgzQ09qN3J4XzdOMU9tTkpXMjgzU0dFeERYV2htaUE3WXVJTXNzYU1XcUppek9SR05SMzRwTVZqb3RRWUpIR1pqYzBZbnJiQklDc1dVMl9vODNJYndsSFVv?oc=5",
+      "date": "2026-11-14",
+      "party_code": "Clarinda"
+    },
+    {
+      "title": "John Paganis launches election campaign for seat of Clarinda",
+      "source": "Neos Kosmos",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQejF4S3dqb1RsRmtaaDdEY2t5UnNSSEtjNXpmbHBXY2hrVFZSR1ZwcTFFNE53aERYY3cyM0JxWmx5bTR4ei1nbzh1MDBOdVBSalN4QWk2OG1UT0drTlB1RlBNRHdCQlU2LUxvb1V6ZjFmLWZxLWVsU2hJb3JvQ3lEYnBzRmp0by01T05SY2NKT0lSZlJiaDhHZzY5UVloY2VIMTVOSVJLTHpUS2hiTlBmRm1XOA?oc=5",
+      "date": "2026-10-21",
+      "party_code": "Clarinda"
+    }
+  ],
+  "Pascoe Vale": [
+    {
+      "title": "Angelica Panopoulos sparks abortion row with Labor in marginal Pascoe Vale seat",
+      "source": "The Greek Herald",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdUZvd1JhaGhnQlBCVWJYaFlzV2s3bVFVSmZ4Y3FuM0k4VkhNc05jay1ybW9YWUJwWTE3NFhhSF96VER5cnc2b21VT2x1MGE0bjRDUy10bDBKRDQ0dl9UeTd3NmtsTU53aTQ0RzlsMVV3SEE0cmZ5elpBNS1hdF91N3l2TldEUFNxdWFTRHJ3LWJMRnFyWm9kd1VnNFNBVEFrWXcwX2RzOXJaMUg4TmR4MnlsMFR5aVVHaGZpN0l3?oc=5",
+      "date": "2026-11-17",
+      "party_code": "Pascoe Vale"
+    },
+    {
+      "title": "‘Rage baiting’: Labor and Greens clash over Pascoe Vale candidate’s abortion social media post",
+      "source": "Herald Sun",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPX3ZUQnRULUpCcFFvVlJfakZkcUhtLXFtV1hKdUNVWjk5QUlSTm9wM3BWMFM3c1p3MnlXYnpGdldMUkNya0NCWXVySk5XQzVENHlSc21obGFteUFRejBvT3VIZnFhYWthMkZyUXFoNVlhZ2dsdlNYd3BCTDBKU19ZbllWbDZxUF9oWEQxZlo1ZEs4WmFkbGthOFhCZzRwamRKbXZFYjFLa1dHbjgxdkdIb0w3QXNIVWtFNGdrV2hWUTBsZnJKM245YmNhRkdXcWZpT3RzckVwc0RWUDZGcDN2enJEdUx5OFpnbmpvNWpQT2ZpWnl2dFlqUUhfcGxNS1REV1JkSVVLQ3BsNWpSalJUTk5aYw?oc=5",
+      "date": "2026-11-14",
+      "party_code": "Pascoe Vale"
+    }
+  ]
 }

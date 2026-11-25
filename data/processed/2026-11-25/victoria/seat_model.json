@@ -3,7 +3,7 @@
   "polls_date": "2026-11-25",
   "polls_source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Victorian_state_election",
   "election_date": "2026-11-28",
-  "days_to_go": 3,
+  "days_to_go": 2,
   "majority": 45,
   "baseline_2022": {
     "source": "2022 Victorian state election, Legislative Assembly (VEC, via Wikipedia)",
@@ -27,18 +27,32 @@
     "window_days": 30,
     "n_polls": 8,
     "primary": {
-      "ALP": 22.1,
-      "LNP": 31.8,
-      "ONP": 21.2,
+      "ALP": 21.8,
+      "LNP": 31.9,
+      "ONP": 21.5,
       "GRN": 14.4,
-      "OTH_ALL": 10.6
+      "OTH_ALL": 10.4
     },
     "tpp": {
-      "ALP": 43.3,
-      "LNP": 56.7
+      "ALP": 43.0,
+      "LNP": 57.0
     },
-    "n_tpp": 6,
+    "n_tpp": 7,
     "polls": [
+      {
+        "date": "2026-11-23",
+        "fieldwork": "20-23 Nov",
+        "firm": "Resolve",
+        "client": "The Age",
+        "sample": "1000",
+        "p_ALP": 20.0,
+        "p_LNP": 31.0,
+        "p_ONP": 25.0,
+        "p_GRN": 13.0,
+        "p_OTH_ALL": 11.0,
+        "tpp_ALP": 41.0,
+        "tpp_LNP": 59.0
+      },
       {
         "date": "2026-11-23",
         "fieldwork": "6–23 Nov",
@@ -110,20 +124,6 @@
         "tpp_LNP": 59.0
       },
       {
-        "date": "2026-11-07",
-        "fieldwork": "2-7 Nov",
-        "firm": "Resolve",
-        "client": "The Age",
-        "sample": "1000",
-        "p_ALP": 22.0,
-        "p_LNP": 30.0,
-        "p_ONP": 23.0,
-        "p_GRN": 13.0,
-        "p_OTH_ALL": 12.0,
-        "tpp_ALP": null,
-        "tpp_LNP": null
-      },
-      {
         "date": "2026-11-05",
         "fieldwork": "30 Oct – 5 Nov",
         "firm": "DemosAU/Premier National",
@@ -153,10 +153,10 @@
       }
     ]
   },
-  "swing_to_lnp": 11.7,
+  "swing_to_lnp": 12.0,
   "uniform_swing_tally": {
-    "LNP": 64,
-    "ALP": 21,
+    "LNP": 65,
+    "ALP": 20,
     "GRN": 3
   },
   "thresholds": {
@@ -178,14 +178,14 @@
   },
   "preferred_premier": {
     "date": "2026-11-23",
-    "fieldwork": "6–23 Nov 2026",
-    "firm": "YouGov",
-    "client": "News24/Herald Sun",
-    "sample": "3890",
-    "lead_Carroll": 19.0,
+    "fieldwork": "20–23 Nov 2026",
+    "firm": "Resolve",
+    "client": "The Age",
+    "sample": "1000",
+    "lead_Carroll": 23.0,
     "lead_Wilson": 34.0,
     "lead_Pickering": 19.0,
-    "lead_Don't know": 29.0
+    "lead_Don't know": 25.0
   },
   "events": [
     {
@@ -620,12 +620,12 @@
     },
     {
       "date": "2026-11-23",
-      "ALP": 22.1,
-      "LNP": 31.8,
-      "ONP": 21.2,
+      "ALP": 21.8,
+      "LNP": 31.9,
+      "ONP": 21.5,
       "GRN": 14.4,
-      "OTH_ALL": 10.6,
-      "tpp_ALP": 43.3
+      "OTH_ALL": 10.4,
+      "tpp_ALP": 43.0
     }
   ],
   "substate": {},
@@ -1908,8 +1908,8 @@
       "region": "Western Victoria",
       "region_type": "Country",
       "flips_at": 11.9,
-      "projected": "ALP",
-      "changes": false
+      "projected": "LNP",
+      "changes": true
     },
     {
       "seat": "Werribee",
@@ -1960,17 +1960,17 @@
   ],
   "key_seats": [
     {
-      "seat": "Mill Park",
-      "member": "Lily D'Ambrosio",
+      "seat": "Wendouree",
+      "member": "Juliana Addison",
       "holder": "ALP",
-      "margin": 11.6,
+      "margin": 11.9,
       "vs": "LNP",
       "tier": "Safe",
       "sitting_independent": false,
       "classic": true,
-      "region": "North-Eastern Metropolitan",
-      "region_type": "Metropolitan",
-      "flips_at": 11.6,
+      "region": "Western Victoria",
+      "region_type": "Country",
+      "flips_at": 11.9,
       "projected": "LNP",
       "changes": true,
       "reason": "On the tipping point",
@@ -1994,40 +1994,6 @@
       "distance": 0.2
     },
     {
-      "seat": "Wendouree",
-      "member": "Juliana Addison",
-      "holder": "ALP",
-      "margin": 11.9,
-      "vs": "LNP",
-      "tier": "Safe",
-      "sitting_independent": false,
-      "classic": true,
-      "region": "Western Victoria",
-      "region_type": "Country",
-      "flips_at": 11.9,
-      "projected": "ALP",
-      "changes": false,
-      "reason": "On the tipping point",
-      "distance": 0.20000000000000107
-    },
-    {
-      "seat": "Albert Park",
-      "member": "Nina Taylor",
-      "holder": "ALP",
-      "margin": 11.2,
-      "vs": "LNP",
-      "tier": "Safe",
-      "sitting_independent": false,
-      "classic": true,
-      "region": "Southern Metropolitan",
-      "region_type": "Metropolitan",
-      "flips_at": 11.2,
-      "projected": "LNP",
-      "changes": true,
-      "reason": "On the tipping point",
-      "distance": 0.5
-    },
-    {
       "seat": "Tarneit",
       "member": "Dylan Wight",
       "holder": "ALP",
@@ -2042,7 +2008,58 @@
       "projected": "ALP",
       "changes": false,
       "reason": "On the tipping point",
-      "distance": 0.6000000000000014
+      "distance": 0.3000000000000007
+    },
+    {
+      "seat": "Mill Park",
+      "member": "Lily D'Ambrosio",
+      "holder": "ALP",
+      "margin": 11.6,
+      "vs": "LNP",
+      "tier": "Safe",
+      "sitting_independent": false,
+      "classic": true,
+      "region": "North-Eastern Metropolitan",
+      "region_type": "Metropolitan",
+      "flips_at": 11.6,
+      "projected": "LNP",
+      "changes": true,
+      "reason": "On the tipping point",
+      "distance": 0.40000000000000036
+    },
+    {
+      "seat": "Essendon",
+      "member": "Danny Pearson",
+      "holder": "ALP",
+      "margin": 12.5,
+      "vs": "LNP",
+      "tier": "Safe",
+      "sitting_independent": false,
+      "classic": true,
+      "region": "Northern Metropolitan",
+      "region_type": "Metropolitan",
+      "flips_at": 12.5,
+      "projected": "ALP",
+      "changes": false,
+      "reason": "On the tipping point",
+      "distance": 0.5
+    },
+    {
+      "seat": "Bundoora",
+      "member": "Colin Brooks",
+      "holder": "ALP",
+      "margin": 12.7,
+      "vs": "LNP",
+      "tier": "Safe",
+      "sitting_independent": false,
+      "classic": true,
+      "region": "North-Eastern Metropolitan",
+      "region_type": "Metropolitan",
+      "flips_at": 12.7,
+      "projected": "ALP",
+      "changes": false,
+      "reason": "On the tipping point",
+      "distance": 0.6999999999999993
     },
     {
       "seat": "Mornington",
@@ -2062,57 +2079,21 @@
       "distance": 0.7
     },
     {
-      "seat": "Werribee",
-      "member": "John Lister",
+      "seat": "Albert Park",
+      "member": "Nina Taylor",
       "holder": "ALP",
-      "margin": 10.9,
+      "margin": 11.2,
       "vs": "LNP",
       "tier": "Safe",
       "sitting_independent": false,
-      "note": "Labor held it by 0.8% at the Feb 2025 by-election; the 2022 margin is used.",
       "classic": true,
-      "region": "Western Metropolitan",
+      "region": "Southern Metropolitan",
       "region_type": "Metropolitan",
-      "flips_at": 10.9,
+      "flips_at": 11.2,
       "projected": "LNP",
       "changes": true,
-      "reason": "On the tipping point",
-      "distance": 0.7999999999999989
-    },
-    {
-      "seat": "Essendon",
-      "member": "Danny Pearson",
-      "holder": "ALP",
-      "margin": 12.5,
-      "vs": "LNP",
-      "tier": "Safe",
-      "sitting_independent": false,
-      "classic": true,
-      "region": "Northern Metropolitan",
-      "region_type": "Metropolitan",
-      "flips_at": 12.5,
-      "projected": "ALP",
-      "changes": false,
       "reason": "On the tipping point",
       "distance": 0.8000000000000007
-    },
-    {
-      "seat": "Bendigo East",
-      "member": "Jacinta Allan",
-      "holder": "ALP",
-      "margin": 10.8,
-      "vs": "LNP",
-      "tier": "Safe",
-      "sitting_independent": false,
-      "note": "Former premier Jacinta Allan is leaving politics.",
-      "classic": true,
-      "region": "Northern Victoria",
-      "region_type": "Country",
-      "flips_at": 10.8,
-      "projected": "LNP",
-      "changes": true,
-      "reason": "On the tipping point",
-      "distance": 0.8999999999999986
     },
     {
       "seat": "Benambra",
@@ -2132,21 +2113,57 @@
       "distance": 0.9
     },
     {
-      "seat": "Bundoora",
-      "member": "Colin Brooks",
+      "seat": "Ivanhoe",
+      "member": "Anthony Carbines",
       "holder": "ALP",
-      "margin": 12.7,
+      "margin": 13.0,
       "vs": "LNP",
       "tier": "Safe",
       "sitting_independent": false,
       "classic": true,
       "region": "North-Eastern Metropolitan",
       "region_type": "Metropolitan",
-      "flips_at": 12.7,
+      "flips_at": 13.0,
       "projected": "ALP",
       "changes": false,
       "reason": "On the tipping point",
       "distance": 1.0
+    },
+    {
+      "seat": "Werribee",
+      "member": "John Lister",
+      "holder": "ALP",
+      "margin": 10.9,
+      "vs": "LNP",
+      "tier": "Safe",
+      "sitting_independent": false,
+      "note": "Labor held it by 0.8% at the Feb 2025 by-election; the 2022 margin is used.",
+      "classic": true,
+      "region": "Western Metropolitan",
+      "region_type": "Metropolitan",
+      "flips_at": 10.9,
+      "projected": "LNP",
+      "changes": true,
+      "reason": "On the tipping point",
+      "distance": 1.0999999999999996
+    },
+    {
+      "seat": "Bendigo East",
+      "member": "Jacinta Allan",
+      "holder": "ALP",
+      "margin": 10.8,
+      "vs": "LNP",
+      "tier": "Safe",
+      "sitting_independent": false,
+      "note": "Former premier Jacinta Allan is leaving politics.",
+      "classic": true,
+      "region": "Northern Victoria",
+      "region_type": "Country",
+      "flips_at": 10.8,
+      "projected": "LNP",
+      "changes": true,
+      "reason": "On the tipping point",
+      "distance": 1.1999999999999993
     },
     {
       "seat": "Mildura",
@@ -2164,23 +2181,6 @@
       "changes": false,
       "reason": "Close NAT v IND contest",
       "distance": 1.2
-    },
-    {
-      "seat": "Ivanhoe",
-      "member": "Anthony Carbines",
-      "holder": "ALP",
-      "margin": 13.0,
-      "vs": "LNP",
-      "tier": "Safe",
-      "sitting_independent": false,
-      "classic": true,
-      "region": "North-Eastern Metropolitan",
-      "region_type": "Metropolitan",
-      "flips_at": 13.0,
-      "projected": "ALP",
-      "changes": false,
-      "reason": "On the tipping point",
-      "distance": 1.3000000000000007
     },
     {
       "seat": "Prahran",
@@ -2201,23 +2201,6 @@
       "distance": 1.4
     },
     {
-      "seat": "Clarinda",
-      "member": "Meng Heang Tak",
-      "holder": "ALP",
-      "margin": 10.2,
-      "vs": "LNP",
-      "tier": "Safe",
-      "sitting_independent": false,
-      "classic": true,
-      "region": "South-Eastern Metropolitan",
-      "region_type": "Metropolitan",
-      "flips_at": 10.2,
-      "projected": "LNP",
-      "changes": true,
-      "reason": "On the tipping point",
-      "distance": 1.5
-    },
-    {
       "seat": "Williamstown",
       "member": "Melissa Horne",
       "holder": "ALP",
@@ -2232,7 +2215,7 @@
       "projected": "ALP",
       "changes": false,
       "reason": "On the tipping point",
-      "distance": 1.700000000000001
+      "distance": 1.4000000000000004
     },
     {
       "seat": "Oakleigh",
@@ -2249,24 +2232,41 @@
       "projected": "ALP",
       "changes": false,
       "reason": "On the tipping point",
-      "distance": 1.8000000000000007
+      "distance": 1.5
     },
     {
-      "seat": "Carrum",
-      "member": "Sonya Kilkenny",
+      "seat": "Clarinda",
+      "member": "Meng Heang Tak",
       "holder": "ALP",
-      "margin": 9.8,
+      "margin": 10.2,
       "vs": "LNP",
-      "tier": "Fairly safe",
+      "tier": "Safe",
       "sitting_independent": false,
       "classic": true,
       "region": "South-Eastern Metropolitan",
       "region_type": "Metropolitan",
-      "flips_at": 9.8,
+      "flips_at": 10.2,
       "projected": "LNP",
       "changes": true,
       "reason": "On the tipping point",
-      "distance": 1.8999999999999986
+      "distance": 1.8000000000000007
+    },
+    {
+      "seat": "Pascoe Vale",
+      "member": "Anthony Cianflone",
+      "holder": "ALP",
+      "margin": 2.0,
+      "vs": "GRN",
+      "tier": "Marginal",
+      "sitting_independent": false,
+      "classic": false,
+      "region": "Northern Metropolitan",
+      "region_type": "Metropolitan",
+      "flips_at": null,
+      "projected": "ALP",
+      "changes": false,
+      "reason": "Close ALP v GRN contest",
+      "distance": 2.0
     }
   ],
   "seats_source": "Wikipedia: 2026 Victorian state election (pre-election pendulum) and Electoral districts of Victoria"
