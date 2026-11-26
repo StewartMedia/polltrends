@@ -1,0 +1,34 @@
+<div class="card chart-card" id="search-call" style="margin-top:16px">
+  <div class="kicker">Independent of the polls · Experimental</div>
+  <h3>PolTrends election call</h3>
+  {% if search_pred %}
+  <p><strong>{{ search_pred.prediction_text }}</strong></p>
+  <p class="sub">Assessed {{ search_pred.assessment_date }} · Search observations through {{ search_pred.source_date }} · {{ search_pred.methodology_version }}</p>
+  <p>{{ search_pred.evidence }}</p>
+  {% if search_pred.note_on_stale_or_missing %}<p class="note">{{ search_pred.note_on_stale_or_missing }}</p>{% endif %}
+  <div class="table-wrap">
+    <table class="data">
+      <thead><tr><th>Party</th><th class="num">7-day search index</th><th class="num">Change from prior week</th><th class="num">Practical-voting query weight</th></tr></thead>
+      <tbody>
+      {% for p in search_pred.ranking_by_entity_interest %}
+      <tr><td>{{ vic_entities[p].short_name }}</td>
+        <td class="num">{{ '%.1f'|format(search_pred.last7_avg[p]) }}</td>
+        <td class="num">{% if search_pred.momentum_pct_change[p] is not none %}{{ '%+.1f'|format(search_pred.momentum_pct_change[p]) }}%{% else %}Unavailable{% endif %}</td>
+        <td class="num">{% if p in search_pred.query_weight_vote_intent_pct %}{{ '%.1f'|format(search_pred.query_weight_vote_intent_pct[p]) }}%{% else %}Unavailable{% endif %}</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Search indices are comparable across these five party topics, not absolute search volumes. Query weight is measured within each party's sampled related queries, not across parties and not as a vote share.
+  {% if search_pred.query_weight_vote_intent_pct %}Related-query sample: {{ search_pred.related_source_date }}, seven-day window.{% endif %}</p>
+  <details><summary>Why this call, and what could make it wrong</summary>
+    <p>{{ search_pred.hypothesis }}</p>
+    <p>A call needs a seven-day mean more than 10% above the runner-up, measured relative to the leader, and a daily lead on at least five of seven days. Observations older than three days withhold the current call. These thresholds are uncalibrated rules, not probabilities. Momentum and practical-voting research provide context, not adjustments to the prediction.</p>
+    <ul>{% for reason in search_pred.counterarguments %}<li>{{ reason }}</li>{% endfor %}</ul>
+    {% for limitation in search_pred.limitations %}<p>{{ limitation }}</p>{% endfor %}
+  </details>
+  {% else %}
+  <p><strong>No current call: comparable Victorian search data is unavailable.</strong></p>
+  <p class="note">We need fourteen consecutive days with valid coverage before issuing a prediction. The polling outlook above is independent.</p>
+  {% endif %}
+</div>

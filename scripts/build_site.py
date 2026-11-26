@@ -16,6 +16,7 @@ from config.settings import (  # noqa: E402
     VIC_LEADERS, has_related_rows, load_latest_file, now_local, today_local,
 )
 from scripts import generate_charts as charts  # noqa: E402
+from scripts import search_prediction  # noqa: E402
 from scripts.generate_narrative import article  # noqa: E402
 from scripts.generate_og_image import generate_og_image  # noqa: E402
 from scripts.vic_model import TIPPING_BAND  # noqa: E402
@@ -159,6 +160,7 @@ def build():
     _, vic_spikes = load_latest_file(PROCESSED_DIR, "spikes.json", subdir="victoria")
     _, polls = load_latest_file(RAW_DIR, "polls.json", subdir="victoria")
     _, rel = load_latest_file(PROCESSED_DIR, "related_analysis.json", subdir="victoria")
+    search_pred = search_prediction.build(today_local())
     rel_shifts = [
         {**sh, "moved": abs(sh["now"] - sh["before"]) >= 0.03,
          "spark": charts.sparkline_svg(sh["spark"], VIC_ENTITIES[sh["other"]]["color"], height=32)}
@@ -186,7 +188,7 @@ def build():
         site_url=SITE_URL, asset_version=version, plotly_js=charts.PLOTLY_JS_URL,
         updated_short=updated_short, updated_long=updated_long, stale=stale, health=health,
         vic_days=vic_days, entities=ENTITIES, vic_entities=VIC_ENTITIES, leaders=VIC_LEADERS,
-        party_colors=PARTY_COLORS, summary=summary, model=model, og_image="og-image.png",
+        party_colors=PARTY_COLORS, summary=summary, model=model, og_image="og-image.png", search_pred=search_pred,
     )
 
     def render(template: str, out: str, **ctx):

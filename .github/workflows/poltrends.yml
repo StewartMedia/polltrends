@@ -59,6 +59,8 @@ jobs:
       # set the repository variable X_POST_MODE to off (or dry-run for drafts only).
       # A failure here never blocks the site update.
       - name: Post to X
+        # Code deployments update the site, not the social feed.
+        if: github.event_name != 'push'
         continue-on-error: true
         env:
           PYTHONUNBUFFERED: '1'

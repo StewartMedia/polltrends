@@ -56,6 +56,18 @@ python scripts/build_site.py         # rebuild docs/ from existing data
 python -m http.server 8080 --directory docs
 ```
 
+
+## Search-only prediction (experimental)
+`scripts/search_prediction.py` writes `data/processed/<assessment-date>/victoria/search_prediction.json`. The daily pipeline and standalone site build both assess the current date. Polls, MRP, booth observations and seat models are not inputs.
+
+Run `python scripts/search_prediction.py` for today, or `python scripts/search_prediction.py 2026-11-24` for a retrospective assessment. Retrospective output is a reconstruction, not proof a prediction was published that day. Source snapshot and observation dates are retained. Git history records published revisions; same-day builds replace that day's local assessment.
+
+**Method v1.2:** rank the five party topics by their seven-day mean in the same Victorian Trends request. Tip the leader to finish with the largest primary vote among the tracked parties only when its mean exceeds the runner-up by more than 10% of the leader's mean and it leads on at least five of seven days. These are explicit heuristic thresholds, not fitted confidence levels. Liberal and Nationals remain separate parties. Fourteen contiguous daily rows are required; missing/non-finite/negative values or all-zero major-party coverage fail validation. Observations older than three days withhold the current call.
+
+Week-on-week momentum and fresh, complete seven-day practical-voting query profiles provide context only. Related-query percentages are shares of sampled query weight within each party, not absolute volumes or vote shares. Stale or incomplete intent context is withheld. No seat counts, government outcome or win probabilities are inferred. The hypothesis has not been backtested here; news, controversy, federal-topic leakage and unrepresentative search users can invalidate it.
+
+Tests: `.venv/bin/python -m unittest discover -s tests -v`. Build locally: `.venv/bin/python scripts/build_site.py`. Neither requires live collectors or X posting. Next bounded action: review the local panel and methodology, then approve publication and refresh source data.
+
 ## Config
 
 - `config/entities.json`: parties, leaders (Google Trends topic IDs), colours, election date and the 2022 baseline.
