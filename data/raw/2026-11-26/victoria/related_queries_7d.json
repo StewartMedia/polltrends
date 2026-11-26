@@ -1,0 +1,378 @@
+{
+  "timeframe": "now 7-d",
+  "geo": "AU-VIC",
+  "fetched_at": "2026-11-26T16:09:00+11:00",
+  "excluded": [
+    "NAT"
+  ],
+  "parties": {
+    "ALP": {
+      "top": [
+        {
+          "query": "liberal",
+          "value": 100
+        },
+        {
+          "query": "one nation",
+          "value": 23
+        },
+        {
+          "query": "how to vote",
+          "value": 11
+        },
+        {
+          "query": "one nation victoria",
+          "value": 10
+        },
+        {
+          "query": "victorian election",
+          "value": 10
+        },
+        {
+          "query": "one nation policies",
+          "value": 6
+        }
+      ],
+      "rising": [
+        {
+          "query": "one nation policies",
+          "value": 60
+        }
+      ]
+    },
+    "LIB": {
+      "top": [
+        {
+          "query": "liberal",
+          "value": 100
+        },
+        {
+          "query": "liberal victoria",
+          "value": 19
+        },
+        {
+          "query": "liberal party victoria",
+          "value": 16
+        },
+        {
+          "query": "one nation",
+          "value": 13
+        },
+        {
+          "query": "liberal party australia",
+          "value": 11
+        },
+        {
+          "query": "one nation party",
+          "value": 10
+        },
+        {
+          "query": "how to vote",
+          "value": 9
+        },
+        {
+          "query": "liberal policies",
+          "value": 9
+        },
+        {
+          "query": "how to vote liberal",
+          "value": 9
+        },
+        {
+          "query": "liberal party policies",
+          "value": 8
+        },
+        {
+          "query": "labor party",
+          "value": 6
+        },
+        {
+          "query": "liberal leader",
+          "value": 6
+        },
+        {
+          "query": "liberal party vic",
+          "value": 5
+        },
+        {
+          "query": "greens party",
+          "value": 5
+        },
+        {
+          "query": "liberal party leader",
+          "value": 5
+        },
+        {
+          "query": "australian liberal party",
+          "value": 5
+        },
+        {
+          "query": "one nation victoria",
+          "value": 4
+        },
+        {
+          "query": "jess wilson",
+          "value": 4
+        },
+        {
+          "query": "liberal policies victoria",
+          "value": 4
+        },
+        {
+          "query": "the greens",
+          "value": 4
+        },
+        {
+          "query": "liberal party policy",
+          "value": 4
+        },
+        {
+          "query": "liberal party victoria policies",
+          "value": 4
+        },
+        {
+          "query": "labour party victoria",
+          "value": 3
+        },
+        {
+          "query": "the greens party",
+          "value": 3
+        },
+        {
+          "query": "family first",
+          "value": 3
+        }
+      ],
+      "rising": [
+        {
+          "query": "leah blyth",
+          "value": 42250
+        },
+        {
+          "query": "jacinta allan",
+          "value": 12450
+        },
+        {
+          "query": "victorian socialists policies",
+          "value": 200
+        },
+        {
+          "query": "greens victoria policies",
+          "value": 200
+        },
+        {
+          "query": "family first party victoria",
+          "value": 160
+        },
+        {
+          "query": "liberal immigration policy",
+          "value": 160
+        },
+        {
+          "query": "australian democrats party",
+          "value": 150
+        },
+        {
+          "query": "family first party",
+          "value": 140
+        },
+        {
+          "query": "labor or liberal australia",
+          "value": 130
+        },
+        {
+          "query": "family first policies",
+          "value": 110
+        },
+        {
+          "query": "family first",
+          "value": 100
+        },
+        {
+          "query": "liberal policies victoria",
+          "value": 90
+        },
+        {
+          "query": "victorian socialist party",
+          "value": 90
+        },
+        {
+          "query": "liberal party victoria policies",
+          "value": 80
+        },
+        {
+          "query": "liberal party policy",
+          "value": 60
+        },
+        {
+          "query": "liberal party policies",
+          "value": 60
+        },
+        {
+          "query": "labour party victoria",
+          "value": 60
+        },
+        {
+          "query": "liberal policies",
+          "value": 50
+        }
+      ]
+    },
+    "GRN": {
+      "top": [
+        {
+          "query": "greens",
+          "value": 100
+        },
+        {
+          "query": "the greens",
+          "value": 38
+        },
+        {
+          "query": "vote greens",
+          "value": 22
+        },
+        {
+          "query": "greens party",
+          "value": 20
+        },
+        {
+          "query": "how to vote",
+          "value": 13
+        },
+        {
+          "query": "how to vote greens",
+          "value": 13
+        },
+        {
+          "query": "the greens party",
+          "value": 12
+        },
+        {
+          "query": "greens policies",
+          "value": 12
+        },
+        {
+          "query": "labour",
+          "value": 10
+        },
+        {
+          "query": "liberal",
+          "value": 10
+        },
+        {
+          "query": "one nation",
+          "value": 8
+        },
+        {
+          "query": "labor",
+          "value": 7
+        },
+        {
+          "query": "greens party victoria",
+          "value": 6
+        },
+        {
+          "query": "greens candidate",
+          "value": 6
+        },
+        {
+          "query": "australian greens",
+          "value": 6
+        },
+        {
+          "query": "the greens policies",
+          "value": 6
+        },
+        {
+          "query": "greens candidates",
+          "value": 5
+        },
+        {
+          "query": "greens leader",
+          "value": 5
+        },
+        {
+          "query": "greens policy",
+          "value": 5
+        },
+        {
+          "query": "liberal party",
+          "value": 5
+        },
+        {
+          "query": "labour party",
+          "value": 4
+        },
+        {
+          "query": "greens victoria policies",
+          "value": 4
+        },
+        {
+          "query": "greens party australia",
+          "value": 4
+        },
+        {
+          "query": "victorian socialists",
+          "value": 3
+        },
+        {
+          "query": "one nation party",
+          "value": 3
+        }
+      ],
+      "rising": [
+        {
+          "query": "greens voting guide",
+          "value": 550
+        },
+        {
+          "query": "how to vote greens",
+          "value": 90
+        },
+        {
+          "query": "how to vote",
+          "value": 90
+        },
+        {
+          "query": "vote greens",
+          "value": 70
+        },
+        {
+          "query": "labour dlp",
+          "value": 60
+        },
+        {
+          "query": "greens candidate",
+          "value": 40
+        }
+      ]
+    },
+    "PHON": {
+      "top": [
+        {
+          "query": "one nation",
+          "value": 100
+        },
+        {
+          "query": "how to vote one nation",
+          "value": 21
+        },
+        {
+          "query": "victoria election",
+          "value": 4
+        },
+        {
+          "query": "leah blyth",
+          "value": 0
+        }
+      ],
+      "rising": [
+        {
+          "query": "leah blyth",
+          "value": 600
+        }
+      ]
+    }
+  }
+}

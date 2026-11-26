@@ -32,12 +32,12 @@
   ],
   "leading_days": 7,
   "query_weight_vote_intent_pct": {
-    "ALP": 0.0,
-    "LIB": 8.5,
-    "GRN": 6.0,
-    "PHON": 11.3
+    "ALP": 6.9,
+    "LIB": 6.7,
+    "GRN": 14.7,
+    "PHON": 16.8
   },
-  "related_source_date": "2026-11-23",
+  "related_source_date": "2026-11-26",
   "related_window": "7d",
   "evidence": "One Nation leads on 7 of the last seven days. Observations end 2026-11-24.",
   "hypothesis": "The sustained party-entity search leader will finish with the largest primary vote among tracked parties. This is an unvalidated hypothesis, not a calibrated election model.",
