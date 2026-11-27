@@ -1,4 +1,5 @@
 {
+  "Essendon": [],
   "Tarneit": [
     {
       "title": "Tarneit prepares to vote",
@@ -15,13 +16,6 @@
       "party_code": "Tarneit"
     },
     {
-      "title": "Labor pledges $200,000 for security at Tarneit Hindu temple following repeated vandalism",
-      "source": "The Indian Sun",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNRUJoNUt5RVF4NmtzWWlzT18xaUg3RFBVOXdJNUttNVB5NS1OSEJ0SUdUMEZfakhiZ09jVGJHQ0lJUW1uRjBTWTE3amFMQy1jZ1FiZnJFMWhzdFM1RThqNzNKZkhqWUJmVWZNN3dFaVBhVHQxN2pYV2VqUGx3RzQyNklhN2g1UzVIN2lUbWRVa0pmZTVpV1h4VnBscDM1Q0RHWFR1SW1nMFFMQmF2dUs1Q0F6amRtNkZRa0pZVzlNSm1OOVJybHRTRkp3?oc=5",
-      "date": "2026-11-09",
-      "party_code": "Tarneit"
-    },
-    {
       "title": "Tarneit school to receive funding",
       "source": "Wyndham | Star Weekly",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9ndElmalJhOWpvSGtIeDdCTERNRzFoLS1iQVJJcTJtcWlrZW53MXlTOWlodldGbzIyUnFNNnpLQ1hjbXA4Um9CNmJyRmhTd0JxTkI2N2tKOG5pRHl2Q2hnaVBqMU9WOTZKNm5fWTlKLXZLbFBIa2RYMDl2anhRdw?oc=5",
@@ -29,13 +23,19 @@
       "party_code": "Tarneit"
     }
   ],
-  "Essendon": [],
   "Northcote": [
     {
       "title": "Battle for Northcote: Labor’s century-old stronghold faces its toughest test yet",
       "source": "Neos Kosmos",
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNT2RxVWlJeWVVMV9QMnJLNndjdDZxbW9GRlVHcTZYQzlRZjFOeUh0OVdaZ1F3Q0NGVlhmd0xCMFphYUlkM0FMRGNKQWc0eHhvNlNpYlo3MzBMVjJjRkdQSGlFM3NtcHc3TU9oNy13MjlMRHlJRmxIb2pJZ0k1SWxVYnRKb0YwZ0J6NDRhWm5jOE5TTGFOaVYxU25LZVgxb3ZiUC1CZjBjSHRuaF9TSHROWFlKcjgxdFBobFFFeFk5aGJxZGEydk5CdklQMA?oc=5",
       "date": "2026-11-13",
+      "party_code": "Northcote"
+    },
+    {
+      "title": "VIDEO: The fight for the Victorian seat of Northcote",
+      "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNS1VWW12MFNBcHJ5bHVSWWJtUE1UM0s1UUNWSG9xQUREUS02c3NxaW9CY2J1QkpvcWpoNjU4UVRjdEI5WHBDNGZ2RHBmdjNsR3lMSlJjdFdvS19zaHhRckN5Z1ctbkZMX3dBdlFDMmN0QzZmOHBzLWo0MlpyVkhnTFlKVExTY1QwcC1scXZmelZsQkxuNDloUEFB?oc=5",
+      "date": "2026-11-12",
       "party_code": "Northcote"
     }
   ],
@@ -66,6 +66,13 @@
   "Ivanhoe": [],
   "Mornington": [
     {
+      "title": "Liberals commit $2m to new Mornington soccer pavilion",
+      "source": "Mornington Peninsula News",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPSTgtVEpRaHAwU3hQODFHWlhJTGV5dEZtdENSSVhxUjVrSmpJWVAybmk1YTJIY2FMTTVHRHJsaDhwbDBJYmdUVHBOVm4wQU9PX0VTUVRlUzNDWUpwN3JFSldhR0JCZS1VWHJONVVvemk5cjFiY2tVenNIa3VGRlFlYW1iaE9HY3JxOUpPdUthdkdmSUFN?oc=5",
+      "date": "2026-11-13",
+      "party_code": "Mornington"
+    },
+    {
       "title": "Victorian Election 2026 Ballot Order Confirmed for Frankston and Mornington Peninsula",
       "source": "STPL News",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQkV4azJmZnBnOWstRS1BS3psVmhhT01yX1JSNmQzMW5BRk5xLURlRWNHX3NrRkRGNFBreFpJcEZSYzV3ZU05aThwYmdpbFNRdmpzNkdlS2FYUERjdjRZb1hKN080R0NCRVdhdnNFZTlXNnVFWk4zVFBHY21pNERqRFRtMEs1TmRtTzZ2cHNnTHVGSGRtWUUyVnotX2ZmM0F0?oc=5",
@@ -85,21 +92,21 @@
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSU9PNUVFX2Z5WURNb2lYNndpeXVGZWtlUmVwb196Z2xVNjJvZmFObVQyOFdrYk05Zi1YWjdNbTQ2NkplSldvTm53amlvVnlkVUdIMjJXOGluS1dnTXVxR21HOEJmNVA5ci1mV3RqbGlSblFlWmZIaUMtcmxQejBjY3FSaHh6ck5YRWhXN3Uwc3dUcUE4X0JFS3V3?oc=5",
       "date": "2026-10-29",
       "party_code": "Mornington"
-    },
-    {
-      "title": "Full suite of candidates address issues at Mornington forum",
-      "source": "Mornington Peninsula News",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZGRUTlFOMERtNHh0SHFJNnNPUXJMa1FwV1U3eUVqTklJc0RlUWhfa1dlZUZJZTZrb3ZQZ01wS0ZhaHJDdU1TbTQ1UXhDVXB0ZmsxdFRocGV6YXdQNnc4VjRWUVVtNlM4aEZQcUd4d1pWbWNvbHBuME1YdTRvT1Rkdkp6MHBaU29ZWjlQbDN4eUswREJidnBmMXdTTHJIZw?oc=5",
-      "date": "2026-10-28",
-      "party_code": "Mornington"
     }
   ],
   "Mill Park": [
     {
+      "title": "Mill Park prepares to vote",
+      "source": "Northern | Star Weekly",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9jVnJQSnFLMW9qckxJRWdFU3pPcW9TQmtjNFp5bTBxeW1CREFLZjlVOHlwZWFES21ueWlsWlVYQUw2eTBiSFhPTERQQi1hZDZfbms4M2p2SXliaFFJeWhkOWRqelR3MmFWT3phdzE5Ti1PNkFBbHc?oc=5",
+      "date": "2026-11-27",
+      "party_code": "Mill Park"
+    },
+    {
       "title": "Premier heckled at Mill Park polling booth; Liberal candidate court battle; inflation surges",
       "source": "7NEWS",
       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZEVpNy1aS0Y3cmRlSHVZMzNnOVNPMmhZSm1kQzEwWmJqVC1Qbi0zTUVvd3hsUUhXUjd3dWdFNEx1dTZ4Tzlqa0dxR1dqYjJIdzRPUnY1cG1DWHdaWG5QMDlNR3ZLV3JmY2lDa2o3MTI4RlVPaFBKRFRfSXBhQk1ab3IyeG8ySmdQTXJlOXVPM1BxUXA0c04wR2dVRU1SSzdYckZkQlBqb2lmenNhUkV1VGltZmM2VkdlMzQwN1htVkFkNFYwX2FnVDZWXzdoMy1uWlc4ZUZ0TQ?oc=5",
-      "date": "2026-11-27",
+      "date": "2026-11-25",
       "party_code": "Mill Park"
     }
   ],
@@ -163,17 +170,15 @@
       "party_code": "Williamstown"
     }
   ],
-  "Albert Park": [
-    {
-      "title": "TWiSK Albert Park Election Forum",
-      "source": "This Week In St Kilda",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4wRXppTkY1dkhQTGFyTEtZYmF2RmUwWTNibkg3Wk9FU25xWVNzVzVXTTh6dzR0dVBpSzE1S3BKbnlyRUxFQ05Pb0E3N3o2S1Vld0tmSkFSZTJsTFB1bWNQQw?oc=5",
-      "date": "2026-11-18",
-      "party_code": "Albert Park"
-    }
-  ],
   "Oakleigh": [],
   "Mildura": [
+    {
+      "title": "Labor ‘fights for the working people of Mildura’",
+      "source": "Sunraysia Daily",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQLUpVZHVSZWlmTUYwdTNOWDFpcGxRd0kyaUtqUHhVdzVMazdMbjdDM2xPcEdKaVZkZGxqZ3d2ZU92UHdBSzdTc0VpeU1GbE93aEtzVTZjN0NLSGk1aHZCUXh0VjB0UHQ5UVhESXljeHA5VHRlUUV4SVRWMUgybW5TcDF3S2t3ajRXTjFFT1lXSEthSDFpWVcyNw?oc=5",
+      "date": "2026-11-27",
+      "party_code": "Mildura"
+    },
     {
       "title": "One Nation leads Coalition 49-32 in Mildura as Labor polling reveals Victorian election threat",
       "source": "The Australian",
@@ -194,16 +199,25 @@
       "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNUW1oeDI0WGI2NmdKYmtncEp6TFZrR3V2aWJ0Y2tKOFpfMkxtUWdadzlubURqem43Q2xHd3lfa20ySGo4YjRSbkUxYnI1cWFZZ2I4QnNDTHNBMDZWSTFXSHlIeFMxcXk1RmlZTmpSaXBzLUhveW1rTTFzcUdGeUtNWVVIM1lGWXI5QmJXczI2c2VKRXpCd19Tb2FzT1dVc2Z2T2lxXzNrZmVLZjNBa3M1Z1hESHFlTWkyY3FYbkVHRHBDUVpjZGdJVEFkQmVtMnBNcUJVakFzTlBXZzNBWFpUNjEyMkhkOGJ2amtPbEtKWkFGWnVDTmJEWVIxcFJSQW53Z3ZTVWRsZlVaRVJ1YnhYSVFjRkVsUG1nYldNVVZWaldidkdV?oc=5",
       "date": "2026-11-04",
       "party_code": "Mildura"
-    },
+    }
+  ],
+  "Albert Park": [
     {
-      "title": "Coalition promises return of passenger trains to Mildura",
-      "source": "Herald Sun",
-      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNenJ5amJzeFVFMmlZZ0hFb2h4RjlrMDhSbzNwTUFIUmtBcG80cnVzd3Q3REZfMEN2cDRJRGlsRVlwT1dtVk5PLTlPZDdka2pNUHZYRXJKN1dURm5oejV1QXF5NGxldlN1Ul96cjBfemhQVFBsWEpGUkx3R2N5ZXJERzFGZEZWTUEtWEZVQ0pXLVJzWE1LSWp4OGk4U04tWnFtaVFjdkdUX2swSi0yRzVzMVZXWXA4VmczdmlpNk9xdFNYS3hSdXdpNXZmVk9fX2Z3aUFTSEdQSHdpb2ZvQXhzOElaZ3dCWXhfUVFnZU1tUUZ4Z3JnV2w3RWVNdS1sbUI1NVJXSGFOTW03dEF2bHdN?oc=5",
-      "date": "2026-10-19",
-      "party_code": "Mildura"
+      "title": "TWiSK Albert Park Election Forum",
+      "source": "This Week In St Kilda",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4wRXppTkY1dkhQTGFyTEtZYmF2RmUwWTNibkg3Wk9FU25xWVNzVzVXTTh6dzR0dVBpSzE1S3BKbnlyRUxFQ05Pb0E3N3o2S1Vld0tmSkFSZTJsTFB1bWNQQw?oc=5",
+      "date": "2026-11-18",
+      "party_code": "Albert Park"
     }
   ],
   "Prahran": [
+    {
+      "title": "WATCH: Avi Yemini confronts Greens hypocrisy at the Prahran polling station as Labor volunteers run cover",
+      "source": "Rebel News",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSW9qRzV4TTNaUGQ0VHRmdTMxeVV0N2pRWElEd0ZkZG9kV1dLQnZlMTVzUUM5WlM3Z0hPQWxUamFpNzNUaDhRVUtvenl6REVtUXRIVmRTbFp3Vml0VkpxY1RLSDVOSXk5UWxQVXlfWHhsOUxyLUtLQ1B1a1NPdVR4MFpULUo5MEpSdTVYTWVuUGhOVzdhWHlLeXdIS05HbEU4UVZsZ0pvd3JJMTZEOTVYZ1ZOR19TYXVqaFMtb3dYSmdaZw?oc=5",
+      "date": "2026-11-24",
+      "party_code": "Prahran"
+    },
     {
       "title": "Greens win court fight against Prahran independent how to-vote-cards",
       "source": "ABC News & Headlines – Australian Broadcasting Corporation",
@@ -240,6 +254,13 @@
       "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOdlB4RWJDbkJQQkt0aFpvby1VWWJfUzRJNENvNnJVQjk4SUo1dmZjbENuc3RTcmdXa1BUNUxWUEMzZkdOaWlXRi1BRlpMZ1lXT3lBemg4RHh4MUR2cjI1TGhRLXlfdVYyUktnUjNIZTBWTGQyQjlNRmVrSFhRczItUmdVWDR0YlhaZXA4UWt1ZDEwV0RGOUJVdkl2SWFfeXptbDZJQW5ra2ZYYUVTcnQ2VmRsb0d3emctdEFuOWFSanl0LUNKNzJjSHRyUUhTVUxjMTR4SnBNc0lIVFQ3bmZINg?oc=5",
       "date": "2026-11-13",
       "party_code": "Werribee"
+    },
+    {
+      "title": "Werribee South Could Cost Labor",
+      "source": "Wyndham TV",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5sdGh3dnBQUlVyUlhHakM2Mk94V0Q4VEYwNXh1Z0NFVDJya1dIVmM4SFhCQkFDblM3Zmc4YlhHTXg2WEdfWUs4UXU2MF82aDhxSURVLWpXd3kzQ0ljeW9hQkpteWZQQUJ1bno2aE93?oc=5",
+      "date": "2026-11-09",
+      "party_code": "Werribee"
     }
   ],
   "Bendigo East": [
@@ -274,13 +295,20 @@
       "party_code": "Pascoe Vale"
     }
   ],
-  "Preston": [
+  "Kororoit": [
     {
-      "title": "Candidate Conversations: Prosecuting Attorney Candidates Preston McCollum and Danny Tarkenton",
-      "source": "The Spokesman-Review",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQ0Vmd1Z3OFVoeWt6Q2RreHZTXzJsSFZvZXNVdEpXd21paGE3ZFNJcFM5eWhsQ1hBT0pfMTRINnNiZktMLXJ0M3A3LTlxSHg2NjBkV1lGcTcydElDUWIxSFg2OXRqNm1vQndZUzR2YTRsZ0lKNjBsNGJ3QzQ2OGtqOXlUQ3Z5NEUyQ0dQckpHTVNpTXl6cTc4MVYzWQ?oc=5",
-      "date": "2026-11-03",
-      "party_code": "Preston"
+      "title": "Kororoit gets ready to vote",
+      "source": "Brimbank & North West | Star Weekly",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNU3VkNEZsR2hYZEdra1p5ZHozQjd4bUJvV0I0bHBwbUJCZWV3em9nOERxa3hTaWJvZFFMejZxVGJSVFJFZTI0TS1STjhkaHc4SHFrbTRTNGxualFCbkhPeTFILUszUk9UdWpackQ5bTNBTzVEdnVVU2tjMWtWUDNvWWNzZw?oc=5",
+      "date": "2026-11-13",
+      "party_code": "Kororoit"
+    },
+    {
+      "title": "One Nation’s Seva Melnikov seeks blessings at Hindu temples ahead of Kororoit contest",
+      "source": "The Australia Today",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSTJDRUJ6Q3ZvM3gwWnZKcXlyODBCRzVFbEVoX3Bxc3A3Rks3T1FzTjE3c3JWS2tSdEpaOWdIU3RzczdFUUtpRXk0MXVkS3V6Vm9QSUZLZldmSWIyZ1FEUW9mYmZqaVlQc0xLUjZEZ0Mxb0U2Uk5USi1ZYmIzaUx4YjRwS3FMTjJhRzFXUFlWWElMb2dpLWs1eTdHZFZiWVFtYTE5UGlhekMxYXFFUDIwRzJtcC01T296RmVabjhBUQ?oc=5",
+      "date": "2026-11-01",
+      "party_code": "Kororoit"
     }
   ]
 }

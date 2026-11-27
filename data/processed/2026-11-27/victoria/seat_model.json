@@ -3,7 +3,7 @@
   "polls_date": "2026-11-27",
   "polls_source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Victorian_state_election",
   "election_date": "2026-11-28",
-  "days_to_go": 1,
+  "days_to_go": 0,
   "majority": 45,
   "baseline_2022": {
     "source": "2022 Victorian state election, Legislative Assembly (VEC, via Wikipedia)",
@@ -25,20 +25,34 @@
   },
   "average": {
     "window_days": 30,
-    "n_polls": 7,
+    "n_polls": 8,
     "primary": {
-      "ALP": 21.5,
-      "LNP": 32.0,
-      "ONP": 21.9,
-      "GRN": 14.1,
-      "OTH_ALL": 10.5
+      "ALP": 21.3,
+      "LNP": 32.1,
+      "ONP": 21.4,
+      "GRN": 14.5,
+      "OTH_ALL": 10.7
     },
     "tpp": {
-      "ALP": 42.7,
-      "LNP": 57.3
+      "ALP": 42.6,
+      "LNP": 57.4
     },
-    "n_tpp": 6,
+    "n_tpp": 7,
     "polls": [
+      {
+        "date": "2026-11-25",
+        "fieldwork": "20–25 Nov",
+        "firm": "Newspoll",
+        "client": "The Australian(subscription required)",
+        "sample": "1506",
+        "p_ALP": 20.0,
+        "p_LNP": 33.0,
+        "p_ONP": 18.0,
+        "p_GRN": 17.0,
+        "p_OTH_ALL": 12.0,
+        "tpp_ALP": 42.5,
+        "tpp_LNP": 57.5
+      },
       {
         "date": "2026-11-25",
         "fieldwork": "21 – 25 Nov",
@@ -139,10 +153,10 @@
       }
     ]
   },
-  "swing_to_lnp": 12.3,
+  "swing_to_lnp": 12.4,
   "uniform_swing_tally": {
-    "LNP": 65,
-    "ALP": 20,
+    "LNP": 66,
+    "ALP": 19,
     "GRN": 3
   },
   "thresholds": {
@@ -615,11 +629,11 @@
     },
     {
       "date": "2026-11-25",
-      "ALP": 21.9,
-      "LNP": 32.0,
-      "ONP": 20.9,
-      "GRN": 14.2,
-      "OTH_ALL": 10.9,
+      "ALP": 21.7,
+      "LNP": 32.1,
+      "ONP": 20.6,
+      "GRN": 14.6,
+      "OTH_ALL": 11.1,
       "tpp_ALP": 43.1
     }
   ],
@@ -1858,8 +1872,8 @@
       "region": "Western Metropolitan",
       "region_type": "Metropolitan",
       "flips_at": 12.3,
-      "projected": "ALP",
-      "changes": false
+      "projected": "LNP",
+      "changes": true
     },
     {
       "seat": "Thomastown",
@@ -1955,23 +1969,6 @@
   ],
   "key_seats": [
     {
-      "seat": "Tarneit",
-      "member": "Dylan Wight",
-      "holder": "ALP",
-      "margin": 12.3,
-      "vs": "LNP",
-      "tier": "Safe",
-      "sitting_independent": false,
-      "classic": true,
-      "region": "Western Metropolitan",
-      "region_type": "Metropolitan",
-      "flips_at": 12.3,
-      "projected": "ALP",
-      "changes": false,
-      "reason": "On the tipping point",
-      "distance": 0.0
-    },
-    {
       "seat": "Essendon",
       "member": "Danny Pearson",
       "holder": "ALP",
@@ -1986,7 +1983,24 @@
       "projected": "ALP",
       "changes": false,
       "reason": "On the tipping point",
-      "distance": 0.1999999999999993
+      "distance": 0.09999999999999964
+    },
+    {
+      "seat": "Tarneit",
+      "member": "Dylan Wight",
+      "holder": "ALP",
+      "margin": 12.3,
+      "vs": "LNP",
+      "tier": "Safe",
+      "sitting_independent": false,
+      "classic": true,
+      "region": "Western Metropolitan",
+      "region_type": "Metropolitan",
+      "flips_at": 12.3,
+      "projected": "LNP",
+      "changes": true,
+      "reason": "On the tipping point",
+      "distance": 0.09999999999999964
     },
     {
       "seat": "Northcote",
@@ -2020,7 +2034,7 @@
       "projected": "ALP",
       "changes": false,
       "reason": "On the tipping point",
-      "distance": 0.3999999999999986
+      "distance": 0.29999999999999893
     },
     {
       "seat": "Wendouree",
@@ -2037,7 +2051,7 @@
       "projected": "LNP",
       "changes": true,
       "reason": "On the tipping point",
-      "distance": 0.40000000000000036
+      "distance": 0.5
     },
     {
       "seat": "Ivanhoe",
@@ -2054,7 +2068,7 @@
       "projected": "ALP",
       "changes": false,
       "reason": "On the tipping point",
-      "distance": 0.6999999999999993
+      "distance": 0.5999999999999996
     },
     {
       "seat": "Mornington",
@@ -2088,7 +2102,7 @@
       "projected": "LNP",
       "changes": true,
       "reason": "On the tipping point",
-      "distance": 0.7000000000000011
+      "distance": 0.8000000000000007
     },
     {
       "seat": "Benambra",
@@ -2122,24 +2136,7 @@
       "projected": "ALP",
       "changes": false,
       "reason": "On the tipping point",
-      "distance": 1.0999999999999996
-    },
-    {
-      "seat": "Albert Park",
-      "member": "Nina Taylor",
-      "holder": "ALP",
-      "margin": 11.2,
-      "vs": "LNP",
-      "tier": "Safe",
-      "sitting_independent": false,
-      "classic": true,
-      "region": "Southern Metropolitan",
-      "region_type": "Metropolitan",
-      "flips_at": 11.2,
-      "projected": "LNP",
-      "changes": true,
-      "reason": "On the tipping point",
-      "distance": 1.1000000000000014
+      "distance": 1.0
     },
     {
       "seat": "Oakleigh",
@@ -2156,7 +2153,7 @@
       "projected": "ALP",
       "changes": false,
       "reason": "On the tipping point",
-      "distance": 1.1999999999999993
+      "distance": 1.0999999999999996
     },
     {
       "seat": "Mildura",
@@ -2174,6 +2171,23 @@
       "changes": false,
       "reason": "Close NAT v IND contest",
       "distance": 1.2
+    },
+    {
+      "seat": "Albert Park",
+      "member": "Nina Taylor",
+      "holder": "ALP",
+      "margin": 11.2,
+      "vs": "LNP",
+      "tier": "Safe",
+      "sitting_independent": false,
+      "classic": true,
+      "region": "Southern Metropolitan",
+      "region_type": "Metropolitan",
+      "flips_at": 11.2,
+      "projected": "LNP",
+      "changes": true,
+      "reason": "On the tipping point",
+      "distance": 1.200000000000001
     },
     {
       "seat": "Prahran",
@@ -2209,7 +2223,7 @@
       "projected": "LNP",
       "changes": true,
       "reason": "On the tipping point",
-      "distance": 1.4000000000000004
+      "distance": 1.5
     },
     {
       "seat": "Bendigo East",
@@ -2227,7 +2241,7 @@
       "projected": "LNP",
       "changes": true,
       "reason": "On the tipping point",
-      "distance": 1.5
+      "distance": 1.5999999999999996
     },
     {
       "seat": "Pascoe Vale",
@@ -2247,21 +2261,21 @@
       "distance": 2.0
     },
     {
-      "seat": "Preston",
-      "member": "Nathan Lambert",
+      "seat": "Kororoit",
+      "member": "Luba Grigorovitch",
       "holder": "ALP",
-      "margin": 2.1,
-      "vs": "GRN",
-      "tier": "Marginal",
+      "margin": 14.5,
+      "vs": "LNP",
+      "tier": "Safe",
       "sitting_independent": false,
-      "classic": false,
-      "region": "Northern Metropolitan",
+      "classic": true,
+      "region": "Western Metropolitan",
       "region_type": "Metropolitan",
-      "flips_at": null,
+      "flips_at": 14.5,
       "projected": "ALP",
       "changes": false,
-      "reason": "Close ALP v GRN contest",
-      "distance": 2.1
+      "reason": "On the tipping point",
+      "distance": 2.0999999999999996
     }
   ],
   "seats_source": "Wikipedia: 2026 Victorian state election (pre-election pendulum) and Electoral districts of Victoria"
