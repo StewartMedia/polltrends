@@ -1,0 +1,56 @@
+{
+  "assessment_date": "2026-11-28",
+  "source_date": "2026-11-26",
+  "source_snapshot": "2026-11-28",
+  "fetched_at": "2026-11-28T06:33:59+11:00",
+  "age_days": 2,
+  "stale": false,
+  "methodology_version": "search-pred-v1.2",
+  "clear_leader": true,
+  "predicted_primary_vote_leader": "PHON",
+  "prediction_text": "One Nation tipped to finish with the largest primary vote among the tracked parties under our experimental search-leadership hypothesis.",
+  "last7_avg": {
+    "ALP": 8.71,
+    "LIB": 13.0,
+    "NAT": 1.0,
+    "GRN": 18.86,
+    "PHON": 68.57
+  },
+  "momentum_pct_change": {
+    "ALP": 48.8,
+    "LIB": 35.8,
+    "NAT": 16.7,
+    "GRN": 187.0,
+    "PHON": 39.5
+  },
+  "ranking_by_entity_interest": [
+    "PHON",
+    "GRN",
+    "LIB",
+    "ALP",
+    "NAT"
+  ],
+  "leading_days": 7,
+  "query_weight_vote_intent_pct": {
+    "ALP": 0.0,
+    "LIB": 0.0,
+    "GRN": 0.0,
+    "PHON": 0.0
+  },
+  "related_source_date": "2026-11-28",
+  "related_window": "7d",
+  "evidence": "One Nation leads on 7 of the last seven days. Observations end 2026-11-26.",
+  "hypothesis": "The sustained party-entity search leader will finish with the largest primary vote among tracked parties. This is an unvalidated hypothesis, not a calibrated election model.",
+  "counterarguments": [
+    "News or controversy can drive attention without support.",
+    "Search users are not a representative sample of voters.",
+    "National party topics filtered to Victoria can include federal political interest.",
+    "Leader and party indices use separate batches and cannot be compared as absolute volumes."
+  ],
+  "limitations": [
+    "No seat totals, winning probabilities or government-formation prediction. Liberal and Nationals are separate parties here.",
+    "Intent percentages are shares of sampled related-query weight within each party, not search counts or vote shares. They contextualise but do not change the call."
+  ],
+  "note_on_stale_or_missing": null,
+  "comparable_inputs": true
+}

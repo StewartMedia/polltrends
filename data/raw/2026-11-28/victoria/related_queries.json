@@ -1,0 +1,326 @@
+{
+  "ALP": {
+    "top": [
+      {
+        "query": "liberal",
+        "value": 100
+      },
+      {
+        "query": "labour",
+        "value": 96
+      },
+      {
+        "query": "liberal party",
+        "value": 35
+      },
+      {
+        "query": "labour party",
+        "value": 34
+      },
+      {
+        "query": "labour or liberal",
+        "value": 25
+      },
+      {
+        "query": "labour australia",
+        "value": 24
+      },
+      {
+        "query": "australian labor party",
+        "value": 24
+      },
+      {
+        "query": "one nation",
+        "value": 23
+      },
+      {
+        "query": "greens",
+        "value": 22
+      },
+      {
+        "query": "australia labor party",
+        "value": 20
+      },
+      {
+        "query": "alp",
+        "value": 18
+      },
+      {
+        "query": "labor vic",
+        "value": 16
+      },
+      {
+        "query": "labor vs liberal",
+        "value": 15
+      },
+      {
+        "query": "liberal policies",
+        "value": 13
+      },
+      {
+        "query": "one nation party",
+        "value": 13
+      },
+      {
+        "query": "australia labour party",
+        "value": 13
+      },
+      {
+        "query": "greens party",
+        "value": 12
+      },
+      {
+        "query": "australian labour party",
+        "value": 12
+      },
+      {
+        "query": "liberal party australia",
+        "value": 12
+      },
+      {
+        "query": "victorian election",
+        "value": 11
+      },
+      {
+        "query": "the greens",
+        "value": 11
+      },
+      {
+        "query": "labor government",
+        "value": 11
+      },
+      {
+        "query": "labor or labour",
+        "value": 10
+      },
+      {
+        "query": "liberal party victoria",
+        "value": 9
+      },
+      {
+        "query": "labor policies victoria",
+        "value": 7
+      }
+    ],
+    "rising": [
+      {
+        "query": "labor policies victoria",
+        "value": 208550
+      },
+      {
+        "query": "greens policies",
+        "value": 127150
+      },
+      {
+        "query": "labor immigration reform tony burke",
+        "value": 110650
+      },
+      {
+        "query": "victorian socialists",
+        "value": 101500
+      },
+      {
+        "query": "are the greens liberal or labour",
+        "value": 90550
+      },
+      {
+        "query": "labor poll",
+        "value": 67400
+      },
+      {
+        "query": "labor vs liberal policies",
+        "value": 61200
+      },
+      {
+        "query": "peter dutton",
+        "value": 45750
+      },
+      {
+        "query": "is albanese labour or liberal",
+        "value": 23850
+      },
+      {
+        "query": "victorian election",
+        "value": 450
+      },
+      {
+        "query": "liberal policies",
+        "value": 250
+      },
+      {
+        "query": "liberal party victoria",
+        "value": 250
+      },
+      {
+        "query": "greens",
+        "value": 170
+      },
+      {
+        "query": "labor vs liberal",
+        "value": 170
+      },
+      {
+        "query": "greens party",
+        "value": 120
+      },
+      {
+        "query": "the greens",
+        "value": 100
+      },
+      {
+        "query": "liberal",
+        "value": 70
+      },
+      {
+        "query": "labor vic",
+        "value": 60
+      },
+      {
+        "query": "labour or liberal",
+        "value": 60
+      },
+      {
+        "query": "liberal party",
+        "value": 40
+      }
+    ]
+  },
+  "LIB": {
+    "top": [
+      {
+        "query": "liberal vic",
+        "value": 100
+      },
+      {
+        "query": "liberals",
+        "value": 44
+      },
+      {
+        "query": "victorian election",
+        "value": 40
+      }
+    ],
+    "rising": [
+      {
+        "query": "victorian election",
+        "value": 150
+      },
+      {
+        "query": "liberal vic",
+        "value": 40
+      }
+    ]
+  },
+  "NAT": {
+    "top": [],
+    "rising": []
+  },
+  "GRN": {
+    "top": [
+      {
+        "query": "labour",
+        "value": 100
+      },
+      {
+        "query": "victorian election",
+        "value": 42
+      }
+    ],
+    "rising": [
+      {
+        "query": "victorian election",
+        "value": 180
+      },
+      {
+        "query": "labour",
+        "value": 100
+      }
+    ]
+  },
+  "PHON": {
+    "top": [
+      {
+        "query": "one nation",
+        "value": 100
+      },
+      {
+        "query": "one nation policies",
+        "value": 6
+      },
+      {
+        "query": "one nation cartoon",
+        "value": 2
+      },
+      {
+        "query": "one nation ai ad",
+        "value": 0
+      },
+      {
+        "query": "mark nicholson",
+        "value": 0
+      },
+      {
+        "query": "mike newman one nation",
+        "value": 0
+      },
+      {
+        "query": "one nation hastie cartoon",
+        "value": 0
+      },
+      {
+        "query": "one nation new ad",
+        "value": 0
+      },
+      {
+        "query": "one nation volunteer attacked",
+        "value": 0
+      },
+      {
+        "query": "secret harbour by election",
+        "value": 0
+      },
+      {
+        "query": "one nation bluey cartoon",
+        "value": 0
+      }
+    ],
+    "rising": [
+      {
+        "query": "one nation ai ad",
+        "value": 40550
+      },
+      {
+        "query": "mike newman one nation",
+        "value": 26650
+      },
+      {
+        "query": "one nation hastie cartoon",
+        "value": 22400
+      },
+      {
+        "query": "one nation new ad",
+        "value": 18250
+      },
+      {
+        "query": "one nation volunteer attacked",
+        "value": 17200
+      },
+      {
+        "query": "secret harbour by election",
+        "value": 13650
+      },
+      {
+        "query": "one nation bluey cartoon",
+        "value": 12400
+      },
+      {
+        "query": "mark nicholson",
+        "value": 750
+      },
+      {
+        "query": "one nation cartoon",
+        "value": 650
+      }
+    ]
+  }
+}

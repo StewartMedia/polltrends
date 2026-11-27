@@ -1,0 +1,237 @@
+{
+  "timeframe": "now 7-d",
+  "geo": "AU-VIC",
+  "fetched_at": "2026-11-28T06:34:29+11:00",
+  "excluded": [
+    "NAT"
+  ],
+  "parties": {
+    "ALP": {
+      "top": [
+        {
+          "query": "liberal",
+          "value": 100
+        },
+        {
+          "query": "labour",
+          "value": 90
+        },
+        {
+          "query": "labour party",
+          "value": 35
+        },
+        {
+          "query": "liberal party",
+          "value": 32
+        },
+        {
+          "query": "one nation",
+          "value": 23
+        },
+        {
+          "query": "greens",
+          "value": 23
+        },
+        {
+          "query": "labour or liberal",
+          "value": 22
+        },
+        {
+          "query": "australian labor party",
+          "value": 21
+        },
+        {
+          "query": "labor vs liberal",
+          "value": 20
+        },
+        {
+          "query": "labour australia",
+          "value": 18
+        },
+        {
+          "query": "liberal policies",
+          "value": 17
+        },
+        {
+          "query": "australian labour party",
+          "value": 15
+        },
+        {
+          "query": "labor vic",
+          "value": 14
+        },
+        {
+          "query": "the greens",
+          "value": 14
+        },
+        {
+          "query": "liberal party victoria",
+          "value": 12
+        },
+        {
+          "query": "one nation party",
+          "value": 12
+        },
+        {
+          "query": "labor party australia",
+          "value": 11
+        },
+        {
+          "query": "australian liberal party",
+          "value": 10
+        },
+        {
+          "query": "victorian election",
+          "value": 10
+        },
+        {
+          "query": "alp",
+          "value": 10
+        },
+        {
+          "query": "australia labour party",
+          "value": 9
+        },
+        {
+          "query": "labor policies victoria",
+          "value": 8
+        },
+        {
+          "query": "one nation policies",
+          "value": 7
+        },
+        {
+          "query": "labor vs liberal australia",
+          "value": 4
+        },
+        {
+          "query": "difference between liberal and labour",
+          "value": 1
+        }
+      ],
+      "rising": [
+        {
+          "query": "peter dutton",
+          "value": 12500
+        },
+        {
+          "query": "difference between liberal and labour",
+          "value": 120
+        },
+        {
+          "query": "was john howard liberal or labour",
+          "value": 80
+        },
+        {
+          "query": "one nation policies",
+          "value": 70
+        },
+        {
+          "query": "labor vs liberal australia",
+          "value": 70
+        },
+        {
+          "query": "labor policies victoria",
+          "value": 50
+        }
+      ]
+    },
+    "LIB": {
+      "top": [
+        {
+          "query": "liberal one nation",
+          "value": 100
+        },
+        {
+          "query": "victorian election",
+          "value": 33
+        },
+        {
+          "query": "liberals",
+          "value": 29
+        },
+        {
+          "query": "labor vs liberal",
+          "value": 15
+        },
+        {
+          "query": "is coalition liberal",
+          "value": 13
+        },
+        {
+          "query": "is the coalition the liberal party",
+          "value": 6
+        },
+        {
+          "query": "leah blyth",
+          "value": 4
+        },
+        {
+          "query": "labor vs liberal policies",
+          "value": 3
+        }
+      ],
+      "rising": [
+        {
+          "query": "leah blyth",
+          "value": 650
+        },
+        {
+          "query": "labor vs liberal policies",
+          "value": 350
+        },
+        {
+          "query": "labor vs liberal",
+          "value": 170
+        },
+        {
+          "query": "is coalition liberal",
+          "value": 150
+        },
+        {
+          "query": "is the coalition the liberal party",
+          "value": 110
+        }
+      ]
+    },
+    "GRN": {
+      "top": [
+        {
+          "query": "labour",
+          "value": 100
+        },
+        {
+          "query": "victorian election",
+          "value": 54
+        }
+      ],
+      "rising": []
+    },
+    "PHON": {
+      "top": [
+        {
+          "query": "one nation",
+          "value": 100
+        },
+        {
+          "query": "one nation policies",
+          "value": 8
+        },
+        {
+          "query": "liberal and one nation",
+          "value": 3
+        },
+        {
+          "query": "leah blyth",
+          "value": 0
+        }
+      ],
+      "rising": [
+        {
+          "query": "leah blyth",
+          "value": 21300
+        }
+      ]
+    }
+  }
+}
