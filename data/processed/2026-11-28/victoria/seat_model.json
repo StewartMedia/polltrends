@@ -28,10 +28,10 @@
     "n_polls": 9,
     "primary": {
       "ALP": 21.3,
-      "LNP": 32.3,
-      "ONP": 21.6,
+      "LNP": 32.0,
+      "ONP": 21.8,
       "GRN": 14.6,
-      "OTH_ALL": 10.3
+      "OTH_ALL": 10.4
     },
     "tpp": {
       "ALP": 42.6,
@@ -110,16 +110,16 @@
         "tpp_LNP": 58.0
       },
       {
-        "date": "2026-11-20",
-        "fieldwork": "20 Nov",
+        "date": "2026-11-22",
+        "fieldwork": "9–22 Nov",
         "firm": "Lighthouse/Growth Intelligence Centre",
         "client": "Herald Sun",
-        "sample": "1221",
+        "sample": "1200",
         "p_ALP": 22.0,
-        "p_LNP": 31.0,
-        "p_ONP": 24.0,
+        "p_LNP": 28.0,
+        "p_ONP": 26.0,
         "p_GRN": 15.0,
-        "p_OTH_ALL": 8.0,
+        "p_OTH_ALL": 9.0,
         "tpp_ALP": null,
         "tpp_LNP": null
       },
@@ -588,16 +588,16 @@
       "tpp_ALP": 44.6
     },
     {
-      "date": "2026-11-10",
-      "ALP": 22.4,
-      "LNP": 31.4,
-      "ONP": 20.7,
-      "GRN": 14.4,
-      "OTH_ALL": 11.2,
-      "tpp_ALP": 44.4
+      "date": "2026-11-08",
+      "ALP": 22.1,
+      "LNP": 31.6,
+      "ONP": 20.5,
+      "GRN": 14.2,
+      "OTH_ALL": 11.6,
+      "tpp_ALP": 44.8
     },
     {
-      "date": "2026-11-13",
+      "date": "2026-11-10",
       "ALP": 22.2,
       "LNP": 31.5,
       "ONP": 20.7,
@@ -606,21 +606,30 @@
       "tpp_ALP": 44.4
     },
     {
+      "date": "2026-11-15",
+      "ALP": 22.4,
+      "LNP": 31.4,
+      "ONP": 20.9,
+      "GRN": 14.5,
+      "OTH_ALL": 10.9,
+      "tpp_ALP": 44.4
+    },
+    {
       "date": "2026-11-18",
-      "ALP": 22.6,
-      "LNP": 31.7,
-      "ONP": 21.1,
-      "GRN": 13.9,
-      "OTH_ALL": 10.7,
+      "ALP": 22.7,
+      "LNP": 31.6,
+      "ONP": 21.2,
+      "GRN": 14.1,
+      "OTH_ALL": 10.4,
       "tpp_ALP": 43.8
     },
     {
       "date": "2026-11-19",
-      "ALP": 22.6,
-      "LNP": 31.9,
-      "ONP": 20.9,
-      "GRN": 14.0,
-      "OTH_ALL": 10.7,
+      "ALP": 22.7,
+      "LNP": 31.8,
+      "ONP": 21.0,
+      "GRN": 14.1,
+      "OTH_ALL": 10.4,
       "tpp_ALP": 44.0
     },
     {
@@ -633,30 +642,39 @@
       "tpp_ALP": 43.8
     },
     {
+      "date": "2026-11-22",
+      "ALP": 22.4,
+      "LNP": 31.4,
+      "ONP": 21.6,
+      "GRN": 14.1,
+      "OTH_ALL": 10.5,
+      "tpp_ALP": 43.6
+    },
+    {
       "date": "2026-11-23",
       "ALP": 21.8,
-      "LNP": 31.9,
-      "ONP": 21.5,
+      "LNP": 31.5,
+      "ONP": 21.8,
       "GRN": 14.4,
-      "OTH_ALL": 10.4,
+      "OTH_ALL": 10.6,
       "tpp_ALP": 43.0
     },
     {
       "date": "2026-11-25",
       "ALP": 21.7,
-      "LNP": 32.1,
-      "ONP": 20.6,
+      "LNP": 31.8,
+      "ONP": 20.8,
       "GRN": 14.6,
-      "OTH_ALL": 11.1,
+      "OTH_ALL": 11.2,
       "tpp_ALP": 43.1
     },
     {
       "date": "2026-11-26",
       "ALP": 21.3,
-      "LNP": 32.3,
-      "ONP": 21.6,
+      "LNP": 32.0,
+      "ONP": 21.8,
       "GRN": 14.6,
-      "OTH_ALL": 10.3,
+      "OTH_ALL": 10.4,
       "tpp_ALP": 42.6
     }
   ],
